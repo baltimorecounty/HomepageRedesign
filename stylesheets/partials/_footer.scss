@@ -1,0 +1,19 @@
+footer {
+	background: $darker-gray;
+
+	a {
+		color: $white;
+	}
+
+	ul, ol {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+	.primary-footer, .secondary-footer {
+		padding: 20px 10px;
+	}
+	.secondary-footer {
+		background: #222;
+	}
+}

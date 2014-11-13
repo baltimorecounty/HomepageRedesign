@@ -3,25 +3,29 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Baltimore County Homepage Redesign</title>
-		<link rel="stylesheet" href="css/grid.css">
+		<link rel="stylesheet" type="text/css" href="stylesheets/main.css"/>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/slick.min.js"></script>
+		<script src="js/template.js"></script>
 	</head>
 	<body>
 		<header class="header">
-			<section class="secondary-nav grid">
-				<nav class="grid__col grid__col--3-of-6">
-					<ul class="secondary-nav-list">
+			<section class="secondary-nav">
+				<div class="container">
+				<nav class="six columns">
+					<ul class="secondary-nav-list inline-list">
 						<li class="secondary-nav-list-item">
-							<a href="">County Executive</a>
+							<a href="">Executive</a>
 						</li>
 						<li class="secondary-nav-list-item">
-							<a href="">County Council</a>
+							<a href="">Legislative</a>
 						</li>
 						<li class="secondary-nav-list-item">
-							<a href="">Courts</a>
+							<a href="">Judicial</a>
 						</li>
 					</ul>
 				</nav>
-				<ul class="social-media-list social-media-list-small grid__col grid__col--2-of-6">
+				<ul class="social-media-list social-media-list-small inline-list six columns">
 					<li class="social-media-list-item social-media-list-item-facebook">
 						<a href="">
 							<img src="" alt="">Social Icon
@@ -48,9 +52,9 @@
 						</a>
 					</li>
 				</ul>
-				<div class="page-tools grid__col grid__col--1-of-6">
+				<div class="page-tools four columns">
 					<a href="">Subscribe</a>
-					<ul class="text-resizer">
+					<ul class="text-resizer inline-list">
 						<li class="decrease-text-size">
 							<a href="">a</a>
 						</li>
@@ -62,14 +66,16 @@
 						</li>
 					</ul>
 				</div>
+				</div>
 			</section>
-			<section class="primary-nav grid">
-				<div class="brand grid__col grid__col--3-of-6">
+			<section class="primary-nav">
+			<div class="container">
+				<div class="brand eight columns">
 					<img src="" alt="" class="county-seal" />
 					<h1>Baltimore County Governement</h1>
 				</div>
-				<nav class="grid__col grid__col--3-of-6">
-					<ul class="primary-nav-list">
+				<nav class="eight columns">
+					<ul class="primary-nav-list inline-list">
 						<li class="primary-nav-list-item">
 							<a href="">I Want To...</a>
 						</li>
@@ -81,66 +87,83 @@
 						</li>
 					</ul>
 				</nav>
+				</div>
 			</section>
 		</header>
-		<section class="primary-search">
-			<input class="input primary-search-input" type="text" />
-			<button class="btn primary-search-btn">Search</button>
-			<div class="top-visited">
-				<span class="top-visited-label">Top Visited:</span>
-				<ul class="top-visited-list">
-					<li class="top-visited-list-item">
-						<a href="">Item 1</a>
-					</li>
-					<li class="top-visited-list-item">
-						<a href="">Item 2</a>
-					</li>
-					<li class="top-visited-list-item">
-						<a href="">Item 3</a>
-					</li>
-					<li class="top-visited-list-item">
-						<a href="">Item 4</a>
-					</li>
-					<li class="top-visited-list-item">
-						<a href="">Item 5</a>
-					</li>
-				</ul>
-			</div>
-			
-		</section>
-		<section class="carousel">
-			<div class="corousel-item">
-				<img src="" alt="" />
-				<h3 class="carousel-item-headline">Some Headline Text</h3>
-				<span class="carousel-item-description">Some description here.</span>
-			</div>
-			<div class="corousel-item">
-				<img src="" alt="" />
-				<h3 class="carousel-item-headline">Some Headline Text</h3>
-				<span class="carousel-item-description">Some description here.</span>
-			</div>
-			<div class="corousel-item">
-				<img src="" alt="" />
-				<h3 class="carousel-item-headline">Some Headline Text</h3>
-				<span class="carousel-item-description">Some description here.</span>
-			</div>
-			<div class="corousel-item">
-				<img src="" alt="" />
-				<h3 class="carousel-item-headline">Some Headline Text</h3>
-				<span class="carousel-item-description">Some description here.</span>
-			</div>
-			<div class="corousel-item">
-				<img src="" alt="" />
-				<h3 class="carousel-item-headline">Some Headline Text</h3>
-				<span class="carousel-item-description">Some description here.</span>
-			</div>
-			<div class="corousel-item">
-				<img src="" alt="" />
-				<h3 class="carousel-item-headline">Some Headline Text</h3>
-				<span class="carousel-item-description">Some description here.</span>
+		<section class="primary-search container">
+			<div class="sixteen columns">
+				<input class="input primary-search-input" type="text" />
+				<button class="btn primary-search-btn">Search</button>
+				<div class="top-visited">
+					<span class="top-visited-label">Top Visited:</span>
+					<ul class="top-visited-list inline-list">
+						<li class="top-visited-list-item">
+							<a href="">Item 1</a>
+						</li>
+						<li class="top-visited-list-item">
+							<a href="">Item 2</a>
+						</li>
+						<li class="top-visited-list-item">
+							<a href="">Item 3</a>
+						</li>
+						<li class="top-visited-list-item">
+							<a href="">Item 4</a>
+						</li>
+						<li class="top-visited-list-item">
+							<a href="">Item 5</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</section>
-		<section class="news-feed">
+		<section class="carousel-container container">
+			<div class="carousel sixteen columns">
+				<div class="corousel-item">
+					<img src="img/courthouse1.jpg" alt="" />
+					<div class="carousel-message">
+						<h3 class="carousel-item-headline">Some Headline Text</h3>
+						<span class="carousel-item-description">Some description here.</span>
+					</div>
+				</div>
+				<div class="corousel-item">
+					<img src="img/courthouse1.jpg" alt="" />
+					<div class="carousel-message">
+						<h3 class="carousel-item-headline">Some Headline Text</h3>
+						<span class="carousel-item-description">Some description here.</span>
+					</div>
+				</div>
+				<div class="corousel-item">
+					<img src="img/courthouse1.jpg" alt="" />
+					<div class="carousel-message">
+						<h3 class="carousel-item-headline">Some Headline Text</h3>
+						<span class="carousel-item-description">Some description here.</span>
+					</div>
+				</div>
+				<div class="corousel-item">
+					<img src="img/courthouse1.jpg" alt="" />
+					<div class="carousel-message">
+						<h3 class="carousel-item-headline">Some Headline Text</h3>
+						<span class="carousel-item-description">Some description here.</span>
+					</div>
+				</div>
+				<div class="corousel-item">
+					<img src="img/courthouse1.jpg" alt="" />
+					<div class="carousel-message">
+						<h3 class="carousel-item-headline">Some Headline Text</h3>
+						<span class="carousel-item-description">Some description here.</span>
+					</div>
+				</div>
+				<div class="corousel-item">
+					<img src="img/courthouse1.jpg" alt="" />
+					<div class="carousel-message">
+						<h3 class="carousel-item-headline">Some Headline Text</h3>
+						<span class="carousel-item-description">Some description here.</span>
+					</div>
+				</div>
+				</div>
+		</section>
+		<div class="container">
+		<section class="news-feed ten columns">
 			<ul class="news-feed-list">
 				<li class="news-feed-item">
 					<img src="" alt="" class="news-feed-item-image">
@@ -173,33 +196,33 @@
 			</ul>
 			<a href="" class="news-feed-read-more">Read More</a>
 		</section>
-		<section class="elected-officials">
+		<section class="elected-officials six columns">
 			<section class="county-executive">
-				<img src="" alt="">
-				<ul class="social-media-list social-media-list-small">
+				<img src="http://www.trbimg.com/img-5062feeb/turbine/bs-md-co-recher-folo-20120925-001/600" alt="" width="100%">
+				<ul class="social-media-list social-media-list-small inline-list">
 					<li class="social-media-list-item social-media-list-item-facebook">
 						<a href="">
-							<img src="" alt="">
+							<img src="" alt="">Social Icon
 						</a>
 					</li>
 					<li class="social-media-list-item social-media-list-item-twitter">
 						<a href="">
-							<img src="" alt="">
+							<img src="" alt="">Social Icon
 						</a>
 					</li>
 					<li class="social-media-list-item social-media-list-item-photos">
 						<a href="">
-							<img src="" alt="">
+							<img src="" alt="">Social Icon
 						</a>
 					</li>
 					<li class="social-media-list-item social-media-list-item-youtube">
 						<a href="">
-							<img src="" alt="">
+							<img src="" alt="">Social Icon
 						</a>
 					</li>
 					<li class="social-media-list-item social-media-list-item-bcnow">
 						<a href="">
-							<img src="" alt="">
+							<img src="" alt="">Social Icon
 						</a>
 					</li>
 				</ul>
@@ -217,40 +240,46 @@
 				<a title="Find your representative." href="http://egov2.baltimorecountymd.gov/votingweb/Address.aspx?pageid=3">Who is my Representative?</a>
 			</section>
 		</section>
+		</div>
 		<section class="social-media">
-			<h1>Stay Connected</h1>
-			<ul class="social-media-list social-media-list-large">
+			<div class="container">
+			<h1 class="eight columns">Stay Connected</h1>
+			<ul class="social-media-list social-media-list-large eight columns inline-list">
 				<li class="social-media-list-item social-media-list-item-facebook">
 					<a href="">
-						<img src="" alt="">
+						<img src="" alt="">Social Icon
 					</a>
 				</li>
 				<li class="social-media-list-item social-media-list-item-twitter">
 					<a href="">
-						<img src="" alt="">
+						<img src="" alt="">Social Icon
 					</a>
 				</li>
 				<li class="social-media-list-item social-media-list-item-photos">
 					<a href="">
-						<img src="" alt="">
+						<img src="" alt="">Social Icon
 					</a>
 				</li>
 				<li class="social-media-list-item social-media-list-item-youtube">
 					<a href="">
-						<img src="" alt="">
+						<img src="" alt="">Social Icon
 					</a>
 				</li>
 				<li class="social-media-list-item social-media-list-item-bcnow">
 					<a href="">
-						<img src="" alt="">
+						<img src="" alt="">Social Icon
 					</a>
 				</li>
 			</ul>
+			</div>
 		</section>
 		<footer class="footer">
-			<section class="primary-footer">
-			<section class="county-information"></section>
-			<section class="county-help">
+			<section class="primary-footer container">
+			<section class="county-information four columns">
+				<img src="" alt="">
+				<p>Address Goes Here</p>
+			</section>
+			<section class="county-help four columns">
 				<ul class="county-help-list">
 					<li class="county-help-list-item">
 						<a href="">Phone Numbers</a>
@@ -263,7 +292,7 @@
 					</li>
 				</ul>
 			</section>
-			<section class="tranlate-page">
+			<section class="tranlate-page four columns">
 				<ul class="translate-page-list">
 					<li class="american"><a title="English" href="http://baltimorecountymd.gov//">English</a></li>
 					<li class="translate-page-list-item translate-page-list-item-arabic">
@@ -283,7 +312,7 @@
 					</li>
 				</ul>
 			</section>
-			<section class="county-awards">
+			<section class="county-awards four columns">
 				<ul class="county-awards-list">
 					<li class="county-awards-list-item">
 						<img src="http://baltimorecountymd.gov/sebin/n/b/footer-map-digital-counties.jpg" alt="" />
@@ -295,11 +324,12 @@
 			</section>
 		</section>
 		<section class="secondary-footer">
-			<section class="copyright">
+			<div class="container">
+			<section class="copyright eight columns">
 				<span>Copyright 2014 Baltimore County Government</span>
 			</section>
-			<nav class="county-links">
-				<ul class="county-links-list">
+			<nav class="county-links eight columns">
+				<ul class="county-links-list inline-list">
 					<li class="county-links-list-item">
 						<a href="">Contact Baltimore County</a>
 					</li>
@@ -314,6 +344,7 @@
 					</li>
 				</ul>
 			</nav>
+			</div>
 		</section>
 	</footer>
 </body>

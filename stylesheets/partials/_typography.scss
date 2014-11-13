@@ -1,0 +1,58 @@
+body {
+    font-size: 1em;
+    line-height: 1.5em;
+    color: $dark-gray;
+}
+
+p {
+    margin: 0 0 20px;
+}
+
+small {
+    font-size: 85%;
+}
+
+h1, h2, h3, {
+    line-height: 40px;
+}
+
+h4, h5, h6 {
+    line-height: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Patua one;
+    color: $dark-red;
+    margin: 20px 0;
+}
+
+h1 {
+    font-size: 2.375em;
+}
+
+h2 {
+    font-size: 1.938em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+h4 {
+    font-size: 1.125em;
+}
+
+h5 {
+    font-size: 1em;
+}
+
+h6 {
+    font-size: .9em;
+}
+
+a {
+    color: $navy;
+    &:hover {
+        color: $gold;
+    }
+}

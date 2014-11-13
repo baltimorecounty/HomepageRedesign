@@ -1,0 +1,24 @@
+header {
+	a {
+		color: white;
+	}
+
+	.secondary-nav {
+		background: $dark-gray;
+		color: white;
+		padding: 10px 0;
+	}
+
+	.primary-nav {
+		background: $red;
+		color: $white;
+	}
+
+	.page-tools {
+		a, ul {
+			display: inline-block;
+		}
+	}
+
+
+}

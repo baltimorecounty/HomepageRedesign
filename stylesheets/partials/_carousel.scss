@@ -1,0 +1,27 @@
+.carousel {
+	position: relative;
+
+	img {
+		height: 300px;
+		width: 100%;
+	}
+	
+	.carousel-message {
+		position: absolute;
+		bottom: 10%;
+		margin-left: 20px;
+		padding: 10px;
+		
+		background: rgba($dark-gray, .9);
+		color: white;
+	}
+	.carousel-item-headline {
+		color: $white;
+		margin: 0;
+		
+	}
+	.carousel-item-description {
+		
+	}
+
+}
