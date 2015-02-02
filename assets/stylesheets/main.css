@@ -2,11 +2,11 @@
 /* Modules and Variables */
 @import url(http://fonts.googleapis.com/css?family=Patua+One);
 html, body {
+  background: #ebebeb;
   color: #444;
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
-  padding: 0; 
-  font-size:.9em;}
+  padding: 0; }
 
 /* Partials */
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
@@ -729,54 +729,34 @@ p {
 small {
   font-size: 85%; }
 
-/* HEADINGS */  
+h1, h2, h3 {
+  line-height: 40px; }
 
-h1.homepage{
-}
-h2.homepage{
-	border-top:5px solid #ebebeb;
-	border-bottom:1px solid #ebebeb;
-	color:#c51110;
-	font-size:2.083em;
-	padding:7px 0;
-}
-h1, h2{
-	color:#444;font-family:Patua One;
-	font-weight:normal;
-}
-h3,h4,h5{
-	color:#444;
-	font-family:Arial, Helvetica, sans-serif;
-	font-weight:normal;
-}
+h4, h5, h6 {
+  line-height: 20px; }
 
-h1{
-	border-bottom:1px solid #ebebeb;
-	border-top:5px solid #ebebeb;
-	color:#c51110;
-	font-size:2.083em;
-	line-height:40px;
-	padding:7px 0;
-}
-h2{
-	font-size:1.6em;
-	line-height:30px;
-}
-h3{
-	font-size:1.2em;
-	font-weight:bold;
-	line-height:30px;
-}
-h4{
-	font-size:1.1em;
-	font-weight:bold;
-	line-height:20px;
-}
-h5{
-	font-size:1em;
-	font-weight:bold;
-	line-height:20px;
-}
+h1, h2, h3, h4, h5, h6 {
+  font-family: Patua one;
+  color: #990000;
+  margin: 20px 0; }
+
+h1 {
+  font-size: 2.375em; }
+
+h2 {
+  font-size: 1.938em; }
+
+h3 {
+  font-size: 1.5em; }
+
+h4 {
+  font-size: 1.125em; }
+
+h5 {
+  font-size: 1em; }
+
+h6 {
+  font-size: .9em; }
 
 a {
   color: #002280; }
@@ -801,68 +781,6 @@ header .primary-nav {
   color: #fff; }
 header .page-tools a, header .page-tools ul {
   display: inline-block; }
-
-/* IMAGE STYLES */  
-
-.img-border {
-	border: 1px solid #ccc;
-	color: #000;font-size: 11px;
-	padding: 5px;
-}
-.img-pull-left {
-	float: left;
-	margin: 10px 15px 10px 0px;
-}
-.img-pull-right {
-	float: right;
-	margin: 10px 15px 10px 15px;
-}
-
-/* TABLE STYLES */  
-
-table {
-	background-color: rgba(0, 0, 0, 0);
-	border-collapse: collapse;
-	border-spacing: 0;
-	max-width: 100%;
-}
-.table{
-	width:100%;
-}
-.table tbody tr:hover > td, .table tbody tr:hover > th {
-	background-color: #ebebeb;
-}
-.table th {
-	font-weight: bold;
-	border-bottom:1px solid #C51110;
-}
-.table thead th {
-	vertical-align: bottom;
-}
-.table th, .table td {
-	border-top: 1px solid #DDDDDD;
-	line-height: 20px;padding: 8px;
-	text-align: left;
-	vertical-align: top;
-}
-
-
-/* SE BLOG CONTAINERS */
-
-#county_news{
-}
-.SESyndicationModule{
-}
-.feedDetails{
-}
-.feedDetails h1 {
-	display:none;
-}
-
-.feedItems{
-}
-.item{
-}
 
 .brand h1 {
   color: #fff; }
