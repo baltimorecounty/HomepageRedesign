@@ -7,9 +7,26 @@
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script type="text/javascript" src="assets/js/lib/slick.min.js"></script>
 		<script src="assets/js/template.js"></script>
+        <script type="text/javascript">
+		$(document).ready(function() {
+			  var $newsItems = $('.item');
+			
+			  $newsItems.each(function($item) {
+				var $newsItem = $(this),
+					$newsItemDesc = $newsItem.find('.description').find('seml');
+				
+				$('p:not(:nth-child(2))', $newsItemDesc).hide();
+			
+			  });
+
+
+		});
+		</script>
 	</head>
-	<body>
+<!--HEADER START-->
 		<header class="header">
+        
+		<!--TERTIARY NAVIGATION START-->        
 			<section class="secondary-nav">
 				<div class="container">
 				<nav class="six columns">
@@ -68,6 +85,9 @@
 				</div>
 				</div>
 			</section>
+		<!--TERTIARY NAVIGATION END-->
+            
+		<!--PORTAL NAVIGATION START-->
 			<section class="primary-nav">
 			<div class="container">
 				<div class="brand eight columns">
@@ -89,7 +109,13 @@
 				</nav>
 				</div>
 			</section>
+		<!--PORTAL NAVIGATION END-->
 		</header>
+        
+ <!--HEADER END-->
+ 
+ <!--CAROUSEL AND SEARCH START-->
+ <div>
 		<section class="primary-search container">
 			<div class="sixteen columns">
 				<input class="input primary-search-input" type="text" />
@@ -162,86 +188,65 @@
 				</div>
 				</div>
 		</section>
-		<div class="container">
+        
+ <!--CAROUSEL AND SEARCH END-->
+        
+<!--CONTENT AREA START-->
+<div class="container">
+		<!--BALTIMORE COUNTY NEWS-->
 		<section class="news-feed ten columns">
-			<ul class="news-feed-list">
-				<li class="news-feed-item">
-					<img src="" alt="" class="news-feed-item-image">
-					<span class="news-feed-item-date">11.7.14</span>
-					<h3 class="news-feed-item-headline">News Headline</h3>
-					<p class="news-feed-item-description">Here is some text describing this item. Here is some text describing this item.  Here is some text describing this item.  Here is some text describing this item.</p>
-					<a href="" class="news-feed-item-link">Read More</a>
-				</li>
-				<li class="news-feed-item">
-					<img src="" alt="" class="news-feed-item-image">
-					<span class="news-feed-item-date">11.7.14</span>
-					<h3 class="news-feed-item-headline">Blog Entry</h3>
-					<p class="news-feed-item-description">Here is some text describing this item. Here is some text describing this item.  Here is some text describing this item.  Here is some text describing this item.</p>
-					<a href="" class="news-feed-item-link">Read More</a>
-				</li>
-				<li class="news-feed-item">
-					<img src="" alt="" class="news-feed-item-image">
-					<span class="news-feed-item-date">11.7.14</span>
-					<h3 class="news-feed-item-headline">News Headline</h3>
-					<p class="news-feed-item-description">Here is some text describing this item. Here is some text describing this item.  Here is some text describing this item.  Here is some text describing this item.</p>
-					<a href="" class="news-feed-item-link">Read More</a>
-				</li>
-				<li class="news-feed-item">
-					<img src="" alt="" class="news-feed-item-image">
-					<span class="news-feed-item-date">11.7.14</span>
-					<h3 class="news-feed-item-headline">News Headline</h3>
-					<p class="news-feed-item-description">Here is some text describing this item. Here is some text describing this item.  Here is some text describing this item.  Here is some text describing this item.</p>
-					<a href="" class="news-feed-item-link">Read More</a>
-				</li>
-			</ul>
+			<div id="county_news"><div class="SESyndicationModule">
+<div class="feedDetails">
+
+<div class="description">Stay informed of what's happening in Baltimore County.</div>
+</div>
+<ol class="feedItems">
+<li class="item">
+<h3 class="title">
+<a href="http://www.baltimorecountymd.gov/News/BaltimoreCountyNow/Honoring_a_legacy_that_built_America">Honoring a legacy that built America</a>
+</h3>
+<div class="description"><seml><p><seimage vspace="0" hspace="0" align="LEFT" alt="photo of Star of Bethlehem at Sparrows Point" height="408" width="230" objectid="738CB12DAF595EF6842507A6FFF03C11"><em>Kevin Kamenetz, Baltimore County Executive</em></seimage></p><p>It’s hard to find a longtime Baltimore County resident who doesn’t know someone who worked at Sparrows Point -- a family member, a friend, a neighbor, or a co-worker.<span>&nbsp; </span>Over more than 125 years, tens of thousands of men and women worked at the Sparrows Point steel mill, and at many other businesses connected to steelmaking.</p>  <p>The Point provided good paying jobs that supported families for generations.</p>    <p>Working here was more than a job.<span>&nbsp; </span>Whether you were in the hot mill, the tin mill or the cold mill; whether you worked in the office or drove a truck, working at the Point meant knowing that your hard work was making a difference.</p>  <p>Baltimore County steel helped keep America strong -- it was vital to the effort during two World Wars. Baltimore County steel stands in our nation’s infrastructure, from the Golden Gate Bridge to the Chesapeake Bay Bridge.<span>&nbsp;&nbsp;&nbsp; </span></p>  <p>Part of my job as Baltimore County Executive is to step back and look at the big picture, to see how we can make the most of what makes our County great. At Sparrows Point, I see everything we need to bring back jobs for this generation -- and for generations to come.</p>  <p>The basis for our optimism is simple. Sparrows Point has a unique combination of assets that just can’t be found anywhere else along the East Coast: more than five square miles of industrially zoned land, deepwater access, and infrastructure and transportation, including rail service right to the front door.</p>  <p>Most exciting are the opportunities for expansion of the Port and port-related uses. We have every reason to believe that the Port could easily bring 10,000 new, family-supporting jobs back to the Point. <strong><span>&nbsp;</span></strong>Advanced manufacturing, distribution and logistics, and clean energy could add even more jobs.<span>&nbsp;&nbsp;&nbsp;&nbsp; </span></p>    <p><span>There’s one more vital asset:<span>&nbsp; </span>we have people who work hard and work smart.<span>&nbsp; </span>These are workers who know what it means to put in a good day’s work for a good day’s pay.<span>&nbsp; </span></span></p>    <p>Let’s face it: being a steelworker wasn’t the easiest job. The work was always hard and often dangerous. It took a combination of brains and brawn. But talk to any steelworker from any generation, and you’ll learn there’s something about working here that created a special bond that will last for generations, through good times and bad.</p>  <p><span>Shortly after the mighty L-furnace was built, steelworkers welded the “Star of Bethlehem” to its tower and lit it as a symbol of strength, pride and hope. I am pleased that the new owners of the property, Sparrows Point Terminal, are preserving the Star to help all of us, and future generations, stay connected to these values.</span></p>    <p><span>Let’s join with former steelworkers and their families as we look toward a bright future for the men and women of steel. We can all learn from their legacy.</span></p></seml></div>
+<div class="extras">
+<span class="pubDate">Wed, 28 Jan 2015 18:29:00 GMT</span><span class="itemURL">http://www.baltimorecountymd.gov/News/BaltimoreCountyNow/Honoring_a_legacy_that_built_America</span>
+</div>
+</li>
+<li class="item">
+<h3 class="title">
+<a href="http://www.baltimorecountymd.gov/News/BaltimoreCountyNow/New_Cyber_Businesses_Get_Cynced">New Cyber Businesses Get “Cync’ed”</a>
+</h3>
+<div class="description"><seml><p><seimage vspace="0" hspace="0" align="LEFT" alt="bwtech" height="164" width="300" objectid="361C4C8106C7685FA26505B4FE3C6DED"><em>Todd Dolbin, Business Development Representative,&nbsp;</em><em>Baltimore County Department of Economic and Workforce Development&nbsp;</em></seimage></p><p>With hackers in the headlines everyday, a growing force of cybersecurity entrepreneurs is developing technologies to stay ahead of the threats. &nbsp;</p><p>But like all new businesses, these cyber startups need office space, business connections, funding, and access to research.</p><p>The Cync Program at UMBC is a unique partnership between Northrop Grumman and the Cyber Incubator@bwtech, with an eye toward commercializing technologies that protect the nation from a growing range of cyber threats. The program builds on bwtech@UMBC’s successful business incubator framework by offering a scholarship program for companies with the most promising cybersecurity ideas.</p><p>The competitive Cync Program is currently accepting applications from high-potential, early-stage companies from across the country looking to further develop and commercialize their technologies. If you’re an innovative, technology-driven startup company involved with&nbsp;Cyber, Data Sciences, Big Data, Secure Mobility, or Physical Systems, then this program is right for you.&nbsp; &nbsp;</p><p>Selected participants will be able to draw on UMBC’s extensive research resources and have onsite access to senior representatives from Northrop Grumman who will provide technical and business advisory support. In addition, Cync companies will be provided with the same furnished, class-A office space and business support services that other Cyber Incubator companies enjoy &ndash; a value of more than $20,000 a year &ndash; all at no cost.</p><p>Check out the <selink linkanchor="" localanchor="" accesskey="" rel="" title="" popupheight="" popupwidth="" objectid="" showtoolbar="No" newwindow="No" externallink="http://www.bwtechumbc.com/cync/" linktype="EXTERNAL">Cync Program Information Page</selink> and the <selink linkanchor="" localanchor="" accesskey="" rel="" title="" popupheight="" popupwidth="" objectid="" showtoolbar="No" newwindow="No" externallink="http://www.bwtechumbc.com/pdf/cyncfactsheet.pdf" linktype="EXTERNAL">Cync FAQ Sheet</selink> for more information about the program and how to apply. Good Luck!</p><p><em>bwtech@UMBC is the only Maryland enterprise to combine business incubators with a research and technology park serving companies by offering a full spectrum of company support: early-stage, emerging, and mature. &nbsp;With over 118 tenants and almost 1,200 employees, bwtech@UMBC generates over $168 million in spending in the Baltimore region. &nbsp;</em></p><p><em>For more information on locating in Baltimore County, contact the Baltimore County Department of Economic and Workforce Development at businesshelp@baltimorecountymd.gov or 410-887-8000, or visit our <selink linkanchor="" localanchor="" accesskey="" rel="" title="" popupheight="" popupwidth="" objectid="" showtoolbar="No" newwindow="No" externallink="http://www.baltimorecountymd.gov/Agencies/economicdev/baltimorecountybusiness/index.html" linktype="EXTERNAL">website</selink>.&nbsp;</em></p></seml></div>
+<div class="extras">
+<span class="pubDate">Thu, 22 Jan 2015 21:09:00 GMT</span><span class="itemURL">http://www.baltimorecountymd.gov/News/BaltimoreCountyNow/New_Cyber_Businesses_Get_Cynced</span>
+</div>
+</li>
+</ol>
+</div></div>
 			<a href="" class="news-feed-read-more">Read More</a>
 		</section>
-		<section class="elected-officials six columns">
+		<!--BALTIMORE COUNTY NEWS END-->
+        
+        
+        <!--EXECUTIVE AND COUNCIL SECTION START-->
+        <section class="elected-officials six columns">
 			<section class="county-executive">
-				<img src="http://www.trbimg.com/img-5062feeb/turbine/bs-md-co-recher-folo-20120925-001/600" alt="" width="100%">
-				<ul class="social-media-list social-media-list-small inline-list">
-					<li class="social-media-list-item social-media-list-item-facebook">
-						<a href="">
-							<img src="" alt="">Social Icon
-						</a>
-					</li>
-					<li class="social-media-list-item social-media-list-item-twitter">
-						<a href="">
-							<img src="" alt="">Social Icon
-						</a>
-					</li>
-					<li class="social-media-list-item social-media-list-item-photos">
-						<a href="">
-							<img src="" alt="">Social Icon
-						</a>
-					</li>
-					<li class="social-media-list-item social-media-list-item-youtube">
-						<a href="">
-							<img src="" alt="">Social Icon
-						</a>
-					</li>
-					<li class="social-media-list-item social-media-list-item-bcnow">
-						<a href="">
-							<img src="" alt="">Social Icon
-						</a>
-					</li>
-				</ul>
-				<ul class="county-executive-about-list">
-					<li class="county-executive-about-list-item">
-						<a href="">Biography</a>
-					</li>
-					<li class="county-executive-about-list-item">
-						<a href="">Contact</a>
-					</li>
-				</ul>
+                        <h2 class="homepage">County Executive</h2>
+                <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="http://www.getskeleton.com">Skeleton documentation</a>.</p>
+                
+                <h2 class="homepage">County Council</h2>
+                <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="http://www.getskeleton.com">Skeleton documentation</a>.</p>
 			</section>
 			<section class="county-council">
 				<p>Carousel Goes here</p>
 				<a title="Find your representative." href="http://egov2.baltimorecountymd.gov/votingweb/Address.aspx?pageid=3">Who is my Representative?</a>
 			</section>
 		</section>
+        <!--EXECUTIVE AND COUNCIL SECTION END-->
+        
 		</div>
-		
+        
+<!--CONTENT AREA END-->
+
+<!--FOOTER START-->
 		<footer class="footer">
 			<section class="primary-footer container">
 			<section class="county-information four columns">
@@ -316,5 +321,6 @@
 			</div>
 		</section>
 	</footer>
+<!--FOOTER END-->
 </body>
 </html>
