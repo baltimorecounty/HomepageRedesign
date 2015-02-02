@@ -1,8 +1,7 @@
 @charset "UTF-8";
 /* Modules and Variables */
-@import url(http://fonts.googleapis.com/css?family=Patua+One);
 html, body {
-  background: #ebebeb;
+  background: #dbdbdb;
   color: #444;
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
