@@ -806,6 +806,9 @@ header .page-tools a, header .page-tools ul {
     color: #fff;
     margin: 0; }
 
+.county-information {
+  background: #fff; }
+
 .social-media {
   background: #444;
   padding: 20px 10px;
