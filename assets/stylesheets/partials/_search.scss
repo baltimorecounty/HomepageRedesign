@@ -1,8 +1,66 @@
-.primary-search {
-	padding: 10px;
-	text-align: center;
+/*Search Box*/
+.search {
+  background-color: $light-gray;
+  background: rgba(230, 230, 230, 0.89);
+  margin: 40px auto;
+  max-width: 900px;
+  width: 80%;
+  padding: 20px;
 
-	.top-visited-label, .top-visited-list {
-		display: inline-block;
-	}
+  .search-input, button {
+    border: none;
+    height: 55px;
+    margin: 0;
+  }
+  
+  .search-text {
+    overflow: hidden;
+  }
+  
+  .search-input {
+    font-size: 1.2em;
+    float: left;
+    padding: 10px 20px;
+    width: 100%;
+  }
+  
+  button {
+    background: $gold;
+    float: right;
+    font-size: 1.1em;
+    font-weight: 700;
+    padding: 0 20px;
+  }
+}
+
+/*Popular Services*/
+.top-visited {
+  padding-top: 20px;
+}
+.top-visited-label {
+  display: block;
+  float: left;
+  font-weight: bold;
+  width: 12.5%;
+}
+.top-visited-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+
+  display: table;
+  float: left;
+  
+  width: 87.5%;
+
+  li {
+    border-right: 1px solid $navy;
+    display: table-cell;
+    padding: 0 10px;
+    text-align: center;
+    
+    &:last-child {
+      border: none;
+    }
+  }
 }
