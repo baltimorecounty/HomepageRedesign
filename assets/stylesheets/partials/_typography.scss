@@ -11,43 +11,63 @@ p {
 small {
     font-size: 85%;
 }
-
-h1, h2, h3, {
-    line-height: 40px;
+h2.homepage{
+    font-size:2.083em;
+    color:#c51110;
+    border-top:5px solid #ebebeb;
+    border-bottom:1px solid #ebebeb;
+    padding:7px 0;
+}
+h1, h2{
+    font-family:Patua One;
+    color:dark-gray;
+    font-weight:normal;
 }
 
-h4, h5, h6 {
-    line-height: 20px;
+h3,h4,h5{
+    font-family:$default-font-family;
+    color:$dark-gray;
+    font-weight:normal;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: Patua one;
-    color: $dark-red;
-    margin: 20px 0;
+
+h1{
+    line-height:40px;
+}
+h2{
+    line-height:30px;
+}
+h3{
+    line-height:30px;
+    font-weight:bold;
+}
+h4{
+    line-height:20px;
+    font-weight:bold;
+}
+h5{
+    line-height:20px;
+    font-weight:bold;
 }
 
-h1 {
-    font-size: 2.375em;
+h1{
+    font-size:2.083em;
+    color:#c51110;
+    border-top:5px solid #ebebeb;
+    border-bottom:1px solid #ebebeb;
+    padding:7px 0;
 }
-
-h2 {
-    font-size: 1.938em;
+h2{
+    font-size:1.6em;
 }
-
-h3 {
-    font-size: 1.5em;
+h3{
+    font-size:1.2em;
 }
-
-h4 {
-    font-size: 1.125em;
+h4{
+    font-size:1.1em;
 }
-
-h5 {
-    font-size: 1em;
-}
-
-h6 {
-    font-size: .9em;
+h5{
+    font-size:1em;
 }
 
 a {

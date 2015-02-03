@@ -4,15 +4,29 @@
 	}
 }
 .feedDetails{
-	.h1{display:none;}
+	h1{display:none;}
 	.description{display:none;}
 }
 .feedItems{
-	.item{
-	float: left;
-    padding: 0 1.5em 0 0;
-    width: 45%;
-    }
+		.item{
+			float: left;
+    		padding: 0 1.5em 0 0;
+    		width: 45%;
+    		}
+    	.pubDate{
+    		font-weight:bold;
+    	}
+    	h3.title{
+    		font-family:Patua One;color:dark-gray;font-weight:normal;
+    		font-size:1.3em;
+    		}
+    	h3 a{
+    		color:$dark-gray;
+    		text-decoration:none;
+    		}
+    	h3 a:hover{
+    		text-decoration:none;
+    		}
 }
 ol.feedItems{
 	margin:0;
