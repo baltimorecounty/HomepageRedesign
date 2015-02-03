@@ -14,14 +14,17 @@
     padding: 0 1.5em 0 0;
     width: 45%;
   }
-  .pubDate{
+  .pub-date{
     font-weight:900;
+    display:table;
+    margin:0 0 5px;
   }
   h3.title{
     font-family:Patua One;
     color: $dark-gray;
     font-weight:normal;
     font-size:1.3em;
+    margin: 25px 0 7px;
   }
   h3 a{
     color:$dark-gray;
