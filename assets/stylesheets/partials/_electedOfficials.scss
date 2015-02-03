@@ -4,3 +4,17 @@
 		width: 100%;
 	}
 }
+
+.county-executive-about-list {
+	padding: 10px 0;
+	
+	.county-executive-about-list-item {
+		padding: 0 10px;
+
+		&:first-child {
+			border-right: 1px solid $navy;
+			padding-left: 0;
+		}
+	}
+
+}
