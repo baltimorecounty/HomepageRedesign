@@ -1,9 +1,10 @@
+/*Contains the stylse for Baltimore County Now*/
 .news {
   .news-headline {
     font-weight: 900;
   }
 }
-.feedDetails{
+.feedDetails {
   h1, .description {
     display:none;
   }
@@ -19,7 +20,7 @@
     display:table;
     margin:0 0 5px;
   }
-  h3.title{
+  .title{
     font-family:Patua One;
     color: $dark-gray;
     font-weight:normal;
@@ -34,10 +35,20 @@
     text-decoration:none;
   }
 }
-ol.feedItems{
+.feedItems{
   margin:0;
   padding:0;
   list-style-type:none;
+}
+
+.county-photo-feed {
+	.county-photo-feed-item {
+		margin: 0 10px;
+
+		&:first-child {
+			margin-left: 0;
+		}
+	}
 }
 
 /*This is based on Site Executive Structure, we do not want to show the extra
