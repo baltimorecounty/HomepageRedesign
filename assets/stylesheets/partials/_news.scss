@@ -4,10 +4,7 @@
   }
 }
 .feedDetails{
-  h1 {
-    display:none;
-  }
-  .description {
+  h1, .description {
     display:none;
   }
 }
@@ -18,10 +15,12 @@
     width: 45%;
   }
   .pubDate{
-    font-weight:bold;
+    font-weight:900;
   }
   h3.title{
-    font-family:Patua One;color:dark-gray;font-weight:normal;
+    font-family:Patua One;
+    color: $dark-gray;
+    font-weight:normal;
     font-size:1.3em;
   }
   h3 a{
