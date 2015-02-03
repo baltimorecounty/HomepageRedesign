@@ -2,10 +2,11 @@
 /* Modules and Variables */
 html, body {
   background: #dbdbdb;
-  color: #444;
+  color: #dbdbdb;
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  border-bottom: 1px solid blue; }
 
 /* Partials */
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
@@ -828,6 +829,9 @@ footer {
     padding: 20px 10px; }
   footer .secondary-footer {
     background: #222; }
+
+.news .news-headline {
+  font-weight: 900; }
 
 /* Third Party */
 /* Slider */
