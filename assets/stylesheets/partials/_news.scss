@@ -1,43 +1,47 @@
 .news {
-	.news-headline {
-		font-weight: 900;
-	}
+  .news-headline {
+    font-weight: 900;
+  }
 }
 .feedDetails{
-	h1{display:none;}
-	.description{display:none;}
+  h1 {
+    display:none;
+  }
+  .description {
+    display:none;
+  }
 }
 .feedItems{
-		.item{
-			float: left;
-    		padding: 0 1.5em 0 0;
-    		width: 45%;
-    		}
-    	.pubDate{
-    		font-weight:bold;
-    	}
-    	h3.title{
-    		font-family:Patua One;color:dark-gray;font-weight:normal;
-    		font-size:1.3em;
-    		}
-    	h3 a{
-    		color:$dark-gray;
-    		text-decoration:none;
-    		}
-    	h3 a:hover{
-    		text-decoration:none;
-    		}
+  .item {
+    float: left;
+    padding: 0 1.5em 0 0;
+    width: 45%;
+  }
+  .pubDate{
+    font-weight:bold;
+  }
+  h3.title{
+    font-family:Patua One;color:dark-gray;font-weight:normal;
+    font-size:1.3em;
+  }
+  h3 a{
+    color:$dark-gray;
+    text-decoration:none;
+  }
+  h3 a:hover{
+    text-decoration:none;
+  }
 }
 ol.feedItems{
-	margin:0;
-	padding:0;
-	list-style-type:none;
+  margin:0;
+  padding:0;
+  list-style-type:none;
 }
 
 /*This is based on Site Executive Structure, we do not want to show the extra
 information on the homepage*/
 .news-feed .item {
-	.extras {
-		display: none;
-	}
+  .extras {
+    display: none;
+  }
 }
