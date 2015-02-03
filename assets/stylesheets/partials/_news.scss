@@ -19,3 +19,11 @@ ol.feedItems{
 	padding:0;
 	list-style-type:none;
 }
+
+/*This is based on Site Executive Structure, we do not want to show the extra
+information on the homepage*/
+.news-feed .item {
+	.extras {
+		display: none;
+	}
+}
