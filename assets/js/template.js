@@ -62,10 +62,9 @@
             });
         },
         showFlickrFeed = function(data, $container) {
-            console.log(flickrTemplate)
-            var htmlTemplate = Handlebars.compile(flickrTemplate);
-            var html = htmlTemplate(data);
-            console.log(data, htmlTemplate, html);
+            var htmlTemplate = Handlebars.compile(flickrTemplate),
+                html = htmlTemplate(data);
+                
             //Append the generated html to the container
             $container.html(html);
         };
