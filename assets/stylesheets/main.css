@@ -1,14 +1,5 @@
-@charset "UTF-8";
-/* Modules and Variables */
-html, body {
-  background: #dbdbdb;
-  color: #dbdbdb;
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-  padding: 0;
-  border-bottom: 1px solid blue; }
-
-/* Partials */
+@import url(http://fonts.googleapis.com/css?family=Patua+One);
+/*Resets*/
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -367,6 +358,41 @@ td,
 th {
   padding: 0; }
 
+/* Modules and Variables */
+.inline-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+  .inline-list li {
+    display: inline; }
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+.clearfix {
+  *zoom: 1; }
+
+* {
+  box-sizing: border-box; }
+
+html, body {
+  background: #dbdbdb;
+  color: #dbdbdb;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0; }
+
+img {
+  border: 1px solid lightgray;
+  margin: 5px;
+  padding: 5px; }
+
+/* Partials */
 /*
 * Skeleton V1.1
 * Copyright 2011, Dave Gamache
@@ -719,9 +745,9 @@ or wrap each row of columns in a <div class="row"> */
   height: 0; }
 
 body {
-  font-size: 1em;
+  font-size: .95em;
   line-height: 1.5em;
-  color: #444; }
+  color: #444444; }
 
 p {
   margin: 0 0 20px; }
@@ -729,34 +755,57 @@ p {
 small {
   font-size: 85%; }
 
-h1, h2, h3 {
-  line-height: 40px; }
+.homepage h2 {
+  font-size: 2.083em;
+  color: #c51110;
+  border-top: 5px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+  padding: 7px 0; }
 
-h4, h5, h6 {
-  line-height: 20px; }
+h1, h2 {
+  font-family: Patua One;
+  color: dark-gray;
+  font-weight: normal; }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: Patua one;
-  color: #990000;
-  margin: 20px 0; }
+h3, h4, h5 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #444444;
+  font-weight: normal; }
 
 h1 {
-  font-size: 2.375em; }
+  line-height: 40px; }
 
 h2 {
-  font-size: 1.938em; }
+  line-height: 30px; }
 
 h3 {
-  font-size: 1.5em; }
+  line-height: 30px;
+  font-weight: bold; }
 
 h4 {
-  font-size: 1.125em; }
+  line-height: 20px;
+  font-weight: bold; }
+
+h5 {
+  line-height: 20px;
+  font-weight: bold; }
+
+h1 {
+  font-size: 2.083em;
+  color: #c51110;
+  padding: 7px 0; }
+
+h2 {
+  font-size: 1.6em; }
+
+h3 {
+  font-size: 1.2em; }
+
+h4 {
+  font-size: 1.1em; }
 
 h5 {
   font-size: 1em; }
-
-h6 {
-  font-size: .9em; }
 
 a {
   color: #002280; }
@@ -773,23 +822,68 @@ a {
 header a {
   color: white; }
 header .secondary-nav {
-  background: #444;
+  background: #444444;
   color: white;
   padding: 10px 0; }
 header .primary-nav {
   background: #c51110;
-  color: #fff; }
+  color: white; }
 header .page-tools a, header .page-tools ul {
   display: inline-block; }
 
 .brand h1 {
-  color: #fff; }
+  color: white; }
 
-.primary-search {
-  padding: 10px;
-  text-align: center; }
-  .primary-search .top-visited-label, .primary-search .top-visited-list {
-    display: inline-block; }
+/*Search Box*/
+.search {
+  background-color: #dbdbdb;
+  background: rgba(230, 230, 230, 0.89);
+  margin: 40px auto;
+  max-width: 900px;
+  width: 80%;
+  padding: 20px; }
+  .search .search-input, .search button {
+    border: none;
+    height: 55px;
+    margin: 0; }
+  .search .search-text {
+    overflow: hidden; }
+  .search .search-input {
+    font-size: 1.2em;
+    float: left;
+    padding: 10px 20px;
+    width: 100%; }
+  .search button {
+    background: #feb30c;
+    float: right;
+    font-size: 1.1em;
+    font-weight: 700;
+    padding: 0 20px; }
+
+/*Popular Services*/
+.top-visited {
+  padding-top: 20px; }
+
+.top-visited-label {
+  display: block;
+  float: left;
+  font-weight: bold;
+  width: 12.5%; }
+
+.top-visited-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: table;
+  float: left;
+  width: 87.5%; }
+  .top-visited-list li {
+    border-right: 1px solid #002280;
+    display: table-cell;
+    padding: 0 10px;
+    text-align: center; }
+    .top-visited-list li:last-child {
+      border: none; }
 
 .carousel {
   position: relative; }
@@ -804,23 +898,61 @@ header .page-tools a, header .page-tools ul {
     background: rgba(68, 68, 68, 0.9);
     color: white; }
   .carousel .carousel-item-headline {
-    color: #fff;
+    color: white;
     margin: 0; }
 
 .county-information {
-  background: #fff; }
+  background: white; }
 
-.social-media {
-  background: #444;
+.elected-officials img {
+  margin: 0;
+  width: 100%; }
+
+.county-executive-about-list {
+  padding: 10px 0; }
+  .county-executive-about-list .county-executive-about-list-item {
+    padding: 0 10px; }
+    .county-executive-about-list .county-executive-about-list-item:first-child {
+      border-right: 1px solid #002280;
+      padding-left: 0; }
+
+.social-media-list {
+  list-style-type: none;
   padding: 20px 10px;
   text-align: center; }
-  .social-media h1, .social-media a {
-    color: #fff; }
+  .social-media-list h1, .social-media-list a {
+    color: white; }
+
+.social-media-list-item {
+  height: 38px;
+  width: 38px;
+  margin-right: 20px; }
+  .social-media-list-item a {
+    border: none;
+    display: block;
+    text-decoration: none;
+    height: 38px;
+    width: 38px; }
+
+.social-media-list-item-facebook {
+  background: url(../../assets/img/social-icons-sprite.png) 0 0; }
+
+.social-media-list-item-twitter {
+  background: url(../../assets/img/social-icons-sprite.png) -38px 0; }
+
+.social-media-list-item-photos {
+  background: url(../../assets/img/social-icons-sprite.png) -76px 0; }
+
+.social-media-list-item-youtube {
+  background: url(../../assets/img/social-icons-sprite.png) -114px 0; }
+
+.social-media-list-item-bcnow {
+  background: url(../../assets/img/social-icons-sprite.png) -152px 0; }
 
 footer {
-  background: #333; }
+  background: #333333; }
   footer a {
-    color: #fff; }
+    color: white; }
   footer ul, footer ol {
     list-style-type: none;
     margin: 0;
@@ -830,8 +962,47 @@ footer {
   footer .secondary-footer {
     background: #222; }
 
+/*Contains the stylse for Baltimore County Now*/
 .news .news-headline {
   font-weight: 900; }
+
+.feedDetails h1, .feedDetails .description {
+  display: none; }
+
+.feedItems .item {
+  float: left;
+  padding: 0 1.5em 0 0;
+  width: 45%; }
+.feedItems .pub-date {
+  font-weight: 900;
+  display: table;
+  margin: 0 0 5px; }
+.feedItems .title {
+  font-family: Patua One;
+  color: #444444;
+  font-weight: normal;
+  font-size: 1.3em;
+  margin: 25px 0 7px; }
+.feedItems h3 a {
+  color: #444444;
+  text-decoration: none; }
+.feedItems h3 a:hover {
+  text-decoration: none; }
+
+.feedItems {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+
+.county-photo-feed .county-photo-feed-item {
+  margin: 0 10px; }
+  .county-photo-feed .county-photo-feed-item:first-child {
+    margin-left: 0; }
+
+/*This is based on Site Executive Structure, we do not want to show the extra
+information on the homepage*/
+.news-feed .item .extras {
+  display: none; }
 
 /* Third Party */
 /* Slider */
@@ -859,7 +1030,7 @@ footer {
   .slick-list:focus {
     outline: none; }
   .slick-loading .slick-list {
-    background: #fff url("./ajax-loader.gif") center center no-repeat; }
+    background: white image-url("ajax-loader.gif", false, false) center center no-repeat; }
   .slick-list.dragging {
     cursor: pointer;
     cursor: hand; }
@@ -909,10 +1080,11 @@ footer {
 /* Icons */
 @font-face {
   font-family: "slick";
-  src: url("./fonts/slick.eot");
-  src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/slick.woff") format("woff"), url("./fonts/slick.ttf") format("truetype"), url("./fonts/slick.svg#slick") format("svg");
+  src: font-url("slick.eot");
+  src: font-url("slick.eot?#iefix") format("embedded-opentype"), font-url("slick.woff") format("woff"), font-url("slick.ttf") format("truetype"), font-url("slick.svg#slick") format("svg");
   font-weight: normal;
   font-style: normal; }
+
 /* Arrows */
 .slick-prev,
 .slick-next {
@@ -959,9 +1131,9 @@ footer {
     left: auto;
     right: -25px; }
   .slick-prev:before {
-    content: "←"; }
+    content: "\2190"; }
     [dir="rtl"] .slick-prev:before {
-      content: "→"; }
+      content: "\2192"; }
 
 .slick-next {
   right: -25px; }
@@ -969,9 +1141,9 @@ footer {
     left: -25px;
     right: auto; }
   .slick-next:before {
-    content: "→"; }
+    content: "\2192"; }
     [dir="rtl"] .slick-next:before {
-      content: "←"; }
+      content: "\2190"; }
 
 /* Dots */
 .slick-slider {
@@ -1013,7 +1185,7 @@ footer {
         position: absolute;
         top: 0;
         left: 0;
-        content: "•";
+        content: "\2022";
         width: 20px;
         height: 20px;
         font-family: "slick";
@@ -1027,5 +1199,3 @@ footer {
     .slick-dots li.slick-active button:before {
       color: black;
       opacity: 0.75; }
-
-/*# sourceMappingURL=main.css.map */
