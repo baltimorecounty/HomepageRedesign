@@ -833,6 +833,8 @@ header .page-tools a, header .page-tools ul {
 
 .brand h1 {
   color: white; }
+.brand img {
+  border: none; }
 
 /*Search Box*/
 .search {
@@ -918,7 +920,6 @@ header .page-tools a, header .page-tools ul {
 
 .social-media-list {
   list-style-type: none;
-  padding: 20px 10px;
   text-align: center; }
   .social-media-list h1, .social-media-list a {
     color: white; }
