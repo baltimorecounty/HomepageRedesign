@@ -47,3 +47,79 @@ header {
 
 
 }
+
+.primary-header {
+  background: $red;
+  color: white;
+  height: 100%;
+}
+
+.brand {
+  display: inline-block;
+  float: left;
+  padding: 10px 0;
+  
+  .brand-logo, .brand-heading {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  .brand-heading {
+    font-size: 1.7em;
+  }
+  
+  .brand-logo {
+    margin-right: 20px;
+  }
+}
+
+.primary-nav {
+  height: 100%;
+  list-style-type: none;
+  float: right;
+  margin: 0;
+  padding: 0;
+  
+
+  h2 {
+  	border: none;
+  	font-size: 1.7em;
+  }
+
+  .primary-nav-item {
+    background-color: darken($red, 6);
+    display: inline-block;
+    font-family: 'Patua One', sans-serif;
+    height: 100%;
+    min-width: 280px;
+    
+    &:hover {
+      a {
+        background-color: rgba(red, .5);
+      }
+    }
+    
+    .primary-nav-item__headline {
+      letter-spacing: 1px;
+      margin: 0;
+      
+    }
+    
+    .primary-nav-item__tagline {
+      display: block;
+      font-family: Arial, sans-serif;
+      font-size: .5em;
+      font-weight: 100;
+      letter-spacing: 0;
+      margin-top: 10px;
+    }
+    
+    a {
+       background: url('http://staging.baltimorecountymd.gov/Redesign/assets/images/little-arrow.png') no-repeat 12.5px 37px;
+      color: white;
+      display: block;
+      padding: 30px 0px 37px 40px;
+      text-decoration: none;
+    }
+  }
+}
