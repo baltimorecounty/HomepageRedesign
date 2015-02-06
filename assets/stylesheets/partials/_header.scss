@@ -1,17 +1,42 @@
 header {
-	a {
-		color: white;
-	}
-
 	.secondary-nav {
 		background: $dark-gray;
-		color: white;
 		padding: 10px 0;
+
+
+		.secondary-nav-list {
+			padding: 8px 0;
+			.secondary-nav-list-item {
+				border-right: 1px solid $light-gray;
+				padding: 0 10px;
+
+				&:first-child {
+					padding-left: 0;
+				}
+
+				&:last-child {
+					border: none;
+					padding-right: 0;
+				}
+			}
+		}
+
+		a {
+			color: $light-gray;
+
+			&:hover {
+				color: $gold;
+			}
+		}
 	}
 
 	.primary-nav {
 		background: $red;
 		color: $white;
+
+		a {
+			color: $white;
+		}
 	}
 
 	.page-tools {
