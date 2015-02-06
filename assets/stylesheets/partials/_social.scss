@@ -1,9 +1,31 @@
 .social-media {
 	background: $dark-gray;
+	list-style-type: none;
 	padding: 20px 10px;
 	text-align: center;
 
 	h1, a {
 		color: $white;
 	}
+
+	.social-media-list-item {
+		height: 38px;
+		width: 38px;
+	}
+}
+
+.social-media-list-item-facebook {
+	background: url(../../assets/img/social-icons-sprite.png) 0 0;
+}
+.social-media-list-item-twitter {
+	background: url(../../assets/img/social-icons-sprite.png) 38 0;
+}
+.social-media-list-item-photos {
+	background: url(../../assets/img/social-icons-sprite.png) 76 0;
+}
+.social-media-list-item-youtube {
+	background: url(../../assets/img/social-icons-sprite.png) 114 0;
+}
+.social-media-list-item-bcnow {
+	background: url(../../assets/img/social-icons-sprite.png) 152 0;
 }
