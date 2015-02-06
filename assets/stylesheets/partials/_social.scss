@@ -25,16 +25,69 @@
 }
 .social-media-list-item-facebook {
 	background: url(../../assets/img/social-icons-sprite.png) 0 0;
+	&:hover {
+		background: url(../../assets/img/social-icons-sprite.png) 0 -37px;
+	}
 }
 .social-media-list-item-twitter {
 	background: url(../../assets/img/social-icons-sprite.png) -38px 0;
+	&:hover {
+		background: url(../../assets/img/social-icons-sprite.png) -38px -37px;
+	}
 }
 .social-media-list-item-photos {
 	background: url(../../assets/img/social-icons-sprite.png) -76px 0;
+	&:hover {
+		background: url(../../assets/img/social-icons-sprite.png) -76px -37px;
+	}
 }
 .social-media-list-item-youtube {
-	background: url(../../assets/img/social-icons-sprite.png) -114px 0;
+	background: url(../../assets/img/social-icons-sprite.png) -76px 0;
+	&:hover {
+		background: url(../../assets/img/social-icons-sprite.png) -76px -37px;
+	}
 }
 .social-media-list-item-bcnow {
 	background: url(../../assets/img/social-icons-sprite.png) -152px 0;
+	&:hover {
+		background: url(../../assets/img/social-icons-sprite.png) -152px -37px;
+	}
+}
+
+.social-media-list-gold {
+	.social-media-list-item-facebook {
+		background: url(../../assets/img/social-icons-sprite.png) 0 -74px;
+
+		&:hover {
+			background: url(../../assets/img/social-icons-sprite.png) 0 -111px;
+		}
+	}
+	.social-media-list-item-twitter {
+		background: url(../../assets/img/social-icons-sprite.png) -38px -74px;
+
+		&:hover {
+			background: url(../../assets/img/social-icons-sprite.png) -38px -111px;
+		}
+	}
+	.social-media-list-item-photos {
+		background: url(../../assets/img/social-icons-sprite.png) -76px -74px;
+
+		&:hover {
+			background: url(../../assets/img/social-icons-sprite.png) -76px -111px;
+		}
+	}
+	.social-media-list-item-youtube {
+		background: url(../../assets/img/social-icons-sprite.png) -114px -74px;
+
+		&:hover {
+			background: url(../../assets/img/social-icons-sprite.png) -114px -111px;
+		}
+	}
+	.social-media-list-item-bcnow {
+		background: url(../../assets/img/social-icons-sprite.png) -152px -74px;
+
+		&:hover {
+			background: url(../../assets/img/social-icons-sprite.png) -152px -111px;
+		}
+	}
 }
