@@ -61,6 +61,7 @@ header {
   
   .brand-logo, .brand-heading {
     display: inline-block;
+    padding: 0;
     vertical-align: middle;
   }
   
@@ -84,6 +85,7 @@ header {
   h2 {
   	border: none;
   	font-size: 1.7em;
+    padding: 0;
   }
 
   .primary-nav-item {
