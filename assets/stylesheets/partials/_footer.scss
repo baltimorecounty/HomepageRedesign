@@ -1,8 +1,17 @@
 footer {
 	background: $darker-gray;
+	font-size:.85em;
+	color:$light-gray;
 
 	a {
-		color: $white;
+		color: $light-gray;
+		&:hover{
+			color:$white;
+		}
+	}
+
+	img {
+		border:none;
 	}
 
 	ul, ol {
@@ -15,5 +24,11 @@ footer {
 	}
 	.secondary-footer {
 		background: $red;
+		color: $white;
+
+		.county-links-list-item{
+			border-right: 1px solid $white;
+			padding: 0 5px;
+		}
 	}
 }
