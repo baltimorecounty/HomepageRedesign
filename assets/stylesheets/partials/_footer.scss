@@ -31,6 +31,32 @@ footer {
 		h2 {
 			margin: 0;
 		}
+
+		.translate-page-list-item{
+
+		}
+
+		.american,.translate-page-list-item-arabic, .translate-page-list-item-chinese, .translate-page-list-item-french, .translate-page-list-item-russian, .translate-page-list-item-spanish{
+			
+    		padding: 0 0 0 25px;
+		}
+
+		.american{
+			background:url("../../assets/img/footer-flags-sprite.jpg") no-repeat scroll 0px 5px rgba(0, 0, 0, 0);
+    		padding: 0 0 0 25px;
+		}
+
+		.translate-page-list-item-arabic{
+			background:url("../../assets/img/footer-flags-sprite.jpg") no-repeat scroll 0px -11px rgba(0, 0, 0, 0);
+		}
+
+		.translate-page-list-item-chinese{}
+
+		.translate-page-list-item-french{}
+
+		.translate-page-list-item-russian{}
+
+		.translate-page-list-item-spanish{}
 	}
 	.primary-footer, .secondary-footer {
 		padding: 20px 0;
