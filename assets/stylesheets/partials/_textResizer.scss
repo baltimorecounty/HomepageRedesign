@@ -5,15 +5,16 @@
 .resizer-list {
   display: inline-block;
   margin: 0 0 10px 0;
+  vertical-align: middle;
 
   li a {
-    text-decoration: none;
     padding: 5px;
   }
 }
 
 .resizer-item {
   font-weight: bold;
+  line-height: 29px;
 }
 .resizer-item-smaller {
   font-size: 1.4em;
