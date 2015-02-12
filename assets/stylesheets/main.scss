@@ -6,6 +6,9 @@
 /* Modules and Variables */
 @import "partials/base";
 
+/* Third Party */
+@import "vendor/slick-carousel";
+
 /* Partials */
 @import "partials/grid";
 @import "partials/typography";
@@ -20,5 +23,4 @@
 @import "partials/footer";
 @import "partials/news";
 
-/* Third Party */
-@import "vendor/slick-carousel";
+
