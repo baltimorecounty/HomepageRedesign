@@ -82,9 +82,14 @@
         loadFlickrFeed(flickrUrl, $flickFeedContainer);
 
         //Initialize the Slick Carousel for County Promotions
-        $('.carousel').slick({
-            dots: true
+        $('.promotions').slick({
+            autoplay: true,
+            autoplaySpeed: 5000,
+            autoHideArrows: true,
+            dots: true, /*Show dot navigation*/
+            nextArrow: "<img src='http://baltimorecountymd.gov/sebin/v/h/carousel-arrow-right.png' class='slick-next' />",/*Starts on slide 4*/
+            prevArrow: "<img src='http://baltimorecountymd.gov/sebin/f/l/carousel-arrow-left.png'class='slick-prev' />"
+          });
         });
-    });
 
 })(jQuery, Handlebars);
