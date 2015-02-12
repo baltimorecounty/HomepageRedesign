@@ -1,4 +1,12 @@
 .county-information {
 	background: $white;
 	padding-bottom: 25px;
+
+	h2 {
+	    font-size:2.083em;
+	    color:#c51110;
+	    border-top:5px solid #ebebeb;
+	    border-bottom:1px solid #ebebeb;
+	    padding:7px 0;
+	}
 }
