@@ -55,26 +55,6 @@ header {
   height: 100%;
 }
 
-.brand {
-  display: inline-block;
-  float: left;
-  padding: 10px 0;
-  
-  .brand-logo, .brand-heading {
-    display: inline-block;
-    padding: 0;
-    vertical-align: middle;
-  }
-  
-  .brand-heading {
-    font-size: 1.7em;
-  }
-  
-  .brand-logo {
-    margin-right: 20px;
-  }
-}
-
 .primary-nav {
   height: 100%;
   list-style-type: none;
