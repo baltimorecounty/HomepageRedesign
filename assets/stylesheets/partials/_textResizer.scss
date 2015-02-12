@@ -1,0 +1,26 @@
+.resizer {
+  display: inline-block;
+}
+
+.resizer-list {
+  display: inline-block;
+  margin: 0 0 10px 0;
+
+  li a {
+    text-decoration: none;
+    padding: 5px;
+  }
+}
+
+.resizer-item {
+  font-weight: bold;
+}
+.resizer-item-smaller {
+  font-size: 1.4em;
+}
+.resizer-item-default {
+  font-size: 2em;
+}
+.resizer-item-larger {
+  font-size: 2.3em;
+}

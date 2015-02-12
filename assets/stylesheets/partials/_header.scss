@@ -25,7 +25,6 @@ header {
 		a {
 			color: $light-gray;
       display: block;
-      font-size: 14px;
       line-height: 11px;
 
 			&:hover {
@@ -109,4 +108,10 @@ header {
       text-decoration: none;
     }
   }
+}
+
+.subscribe {
+  border-right: 1px solid $light-gray;
+  display: inline-block;
+  padding-right: 10px;
 }

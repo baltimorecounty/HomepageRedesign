@@ -69,6 +69,28 @@
             $container.html(html);
         };
 
+    /*Text Resizer Methods*/
+    var resizeText = function(multiplier) {
+         var mainContent = document.getElementById('main-content'),
+            currentFontSize = mainContent.style.fontSize;
+
+            //Resizer is used for the first time or had been reset
+            if(!currentFontSize) {
+                mainContent.style.fontSize = parseFloat(1 + (multiplier * 0.2)) + "em";
+            }   
+            else {
+                //Font Size has not been set or Current Font Size is not too big
+                if (parseFloat(currentFontSize) >= .6 && parseFloat(currentFontSize) <= 1.6) {
+                    mainContent.style.fontSize = parseFloat(currentFontSize) + (multiplier * 0.2) + "em";
+                }
+            }  
+            
+      }, 
+      resetText = function() {
+        var mainContent = document.getElementById('main-content');
+            mainContent.style.fontSize = null;
+      };
+
 
     $(document).ready(function () {
         var $flickFeedContainer = $('.county-photo-feed');
@@ -89,7 +111,21 @@
             dots: true, /*Show dot navigation*/
             nextArrow: "<img src='assets/img/carousel-arrow-right.png' class='slick-next' />",/*Starts on slide 4*/
             prevArrow: "<img src='assets/img/carousel-arrow-left.png'class='slick-prev' />"
-          });
         });
+    });
+
+
+    /*Text Resizer Events*/
+    $(document).on('click', '#increase-text', function() {
+      resizeText(1);
+    });
+
+    $(document).on('click', '#decrease-text', function() {
+      resizeText(-1);
+    });
+
+    $(document).on('click', '#reset-text', function() {
+      resetText();
+    });
 
 })(jQuery, Handlebars);
