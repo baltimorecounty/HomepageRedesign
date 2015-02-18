@@ -1,0 +1,22 @@
+/*Alert Box*/
+.alert{
+  a{
+    text-decoration:none;
+
+    &:hover {
+      color:#003399;
+    }
+  }
+
+  h1{
+    font-family:$default-font-family;
+    font-weight:bold;
+    border:none;
+  }
+  
+  background-color:$gold;
+  font-family:$default-font-family;
+  font-size:.6em;
+  margin:-20px 0 10px;
+  text-align:center;
+}
