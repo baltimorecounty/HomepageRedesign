@@ -5,6 +5,7 @@
   
   h1 {
 		color: $white;
+    border:none;
 	}
 	img {
 		border: none;
@@ -19,10 +20,13 @@
   .brand-heading {
     font-size: 1.7em;
     line-height: 28px;
-    padding: 15px 0;
+    padding: 20px 0;
+    font-family:Raleway;
+    letter-spacing:.4px;
+    margin: 13px 0 0;
   }
   
   .brand-logo {
-    margin-right: 20px;
+    margin-right: 10px;
   }
 }

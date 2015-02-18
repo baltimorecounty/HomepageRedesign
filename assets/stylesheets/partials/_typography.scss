@@ -48,6 +48,9 @@ h1{
     font-size:2.083em;
     color:#c51110;
     padding:7px 0;
+    border-top:5px solid #ebebeb;
+    border-bottom:1px solid #ebebeb;
+    margin:0 0 13px;
 }
 h2{
     font-size:1.6em;
@@ -67,4 +70,10 @@ a {
     &:hover {
         color: $gold;
     }
+}
+.uppercase{
+    text-transform:uppercase;
+}
+.smaller-text{
+    font-size:65%;
 }

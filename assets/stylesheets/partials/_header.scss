@@ -43,6 +43,7 @@ header {
 	}
 
 	.page-tools {
+    text-align:right;
 		a, ul {
 			display: inline-block;
 		}
@@ -85,7 +86,7 @@ header {
     }
     
     .primary-nav-item__headline {
-      letter-spacing: 1px;
+      letter-spacing: .5px;
       margin: 0;
       
     }
