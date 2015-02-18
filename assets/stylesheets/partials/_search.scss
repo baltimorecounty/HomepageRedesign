@@ -12,18 +12,18 @@
     height: 55px;
     margin: 0;
   }
-  
+
   .search-text {
     overflow: hidden;
   }
-  
+
   .search-input {
     font-size: 1.2em;
     float: left;
     padding: 10px 20px;
     width: 100%;
   }
-  
+
   button {
     background: $gold;
     float: right;
@@ -50,7 +50,7 @@
 
   display: table;
   float: left;
-  
+
   width: 87.5%;
 
   li {
@@ -58,28 +58,9 @@
     display: table-cell;
     padding: 0 10px;
     text-align: center;
-    
+
     &:last-child {
       border: none;
     }
   }
-}
-
-/*Alert Box*/
-.alert{
-  a{
-    text-decoration:none;
-  }
-  a:hover{
-    color:#003399;
-  }
-   h1{
-    font-family:$default-font-family;
-    font-weight:bold;
-   }
-  background-color:$gold;
-  font-family:$default-font-family;
-  font-size:.6em;
-  margin:-20px 0 10px;
-  text-align:center;
 }
