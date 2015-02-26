@@ -55,40 +55,55 @@
     var flickrTemplate = "{{#each this}}<img alt='{{title}}' class='county-photo-feed-item' src='http://farm{{farm}}.static.flickr.com/{{server}}/{{id}}_{{secret}}_q.jpg' />{{/each}}",
         flickrUrl = "https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20flickr.photosets.photos%20where%20api_key%3D%22ee58ce6536e4b39a95ebdf000ae4adf3%22%20and%20photoset_id%3D%2272157649564338091%22%20limit%204&format=json&diagnostics=true&callback=";
 
-    var loadFlickrFeed = function(url, $container) {
-            $.getJSON(flickrUrl, function(data) {
-              showFlickrFeed(data.query.results.photo, $container);
-            });
-        },
-        showFlickrFeed = function(data, $container) {
-            var htmlTemplate = Handlebars.compile(flickrTemplate),
-                html = htmlTemplate(data);
-                
-            //Append the generated html to the container
-            $container.html(html);
-        };
+    var loadFlickrFeed = function (url, $container) {
+        $.getJSON(flickrUrl, function (data) {
+            showFlickrFeed(data.query.results.photo, $container);
+        });
+    },
+    showFlickrFeed = function (data, $container) {
+        var htmlTemplate = Handlebars.compile(flickrTemplate),
+            html = htmlTemplate(data);
+
+        //Append the generated html to the container
+        $container.html(html);
+    };
 
     /*Text Resizer Methods*/
-    var resizeText = function(multiplier) {
-         var mainContent = document.getElementById('main-content'),
-            currentFontSize = mainContent.style.fontSize;
+    var disableBtn = function ($btn) {
+        $btn.attr('disabled', 'disabled');
 
-            //Resizer is used for the first time or had been reset
-            if(!currentFontSize) {
-                mainContent.style.fontSize = parseFloat(1 + (multiplier * 0.2)) + "em";
-            }   
+        if ($btn.attr('id').indexOf("increase") > -1) {
+            alert("Cannot increase text size.");
+        }
+        else {
+            alert("Cannot decrease text size.");
+        }
+    },
+    resizeText = function (multiplier, $btn) {
+        var mainContent = document.getElementById('main-content'),
+            currentFontSize = mainContent.style.fontSize,
+            buttonName = $btn.attr('id');
+
+        //Resizer is used for the first time or had been reset
+        if (!currentFontSize) {
+            mainContent.style.fontSize = parseFloat(1 + (multiplier * 0.2)) + "em";
+        } else {
+            var isMinFontSize = parseFloat(currentFontSize) === .7,
+                isMaxFontSize = parseFloat(currentFontSize) >= 1.3;
+
+            if (isMinFontSize && buttonName.indexOf("decrease") > -1 || isMaxFontSize && buttonName.indexOf("increase") > -1) {
+                disableBtn($btn);
+            }
             else {
-                //Font Size has not been set or Current Font Size is not too big
-                if (parseFloat(currentFontSize) >= .6 && parseFloat(currentFontSize) <= 1.6) {
-                    mainContent.style.fontSize = parseFloat(currentFontSize) + (multiplier * 0.2) + "em";
-                }
-            }  
-            
-      }, 
-      resetText = function() {
+                mainContent.style.fontSize = parseFloat(currentFontSize) + (multiplier * 0.2) + "em";
+            }
+        }
+
+    },
+    resetText = function () {
         var mainContent = document.getElementById('main-content');
-            mainContent.style.fontSize = null;
-      };
+        mainContent.style.fontSize = null;
+    };
 
 
     $(document).ready(function () {
@@ -107,24 +122,32 @@
             autoplay: true,
             autoplaySpeed: 5000,
             autoHideArrows: true,
-            dots: true, /*Show dot navigation*/
-            nextArrow: "<img src='assets/img/carousel-arrow-right.png' class='slick-next' />",/*Starts on slide 4*/
+            dots: true,
+            /*Show dot navigation*/
+            nextArrow: "<img src='assets/img/carousel-arrow-right.png' class='slick-next' />",
+            /*Starts on slide 4*/
             prevArrow: "<img src='assets/img/carousel-arrow-left.png'class='slick-prev' />"
         });
     });
 
 
     /*Text Resizer Events*/
-    $(document).on('click', '#increase-text', function() {
-      resizeText(1);
+    $(document).on('click', '#increase-text:enabled', function (e) {
+        e.preventDefault();
+        $('#decrease-text').removeAttr("disabled");
+        resizeText(.5, $(this));
     });
 
-    $(document).on('click', '#decrease-text', function() {
-      resizeText(-1);
+    $(document).on('click', '#decrease-text:enabled', function (e) {
+        e.preventDefault();
+        $('#increase-text').removeAttr("disabled");
+        resizeText(-.5, $(this));
     });
 
-    $(document).on('click', '#reset-text', function() {
-      resetText();
+    $(document).on('click', '#reset-text', function (e) {
+        e.preventDefault();
+        $('#increase-text, #decrease-text').removeAttr('disabled');
+        resetText();
     });
 
 })(jQuery, Handlebars);
