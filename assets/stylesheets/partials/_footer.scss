@@ -75,6 +75,11 @@ footer {
 		.county-links-list-item{
 			border-right: 1px solid $white;
 			padding: 0 5px;
+
+			&:first-child {
+				padding: 0;
+			}
+
 			&:last-child {
 				border-right:none;
 			}

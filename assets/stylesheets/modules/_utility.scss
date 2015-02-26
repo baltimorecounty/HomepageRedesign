@@ -6,6 +6,12 @@
 	li {
 		display: inline;
 
+		padding: 0 10px;
+		
+		&:first-child {
+			padding-left: 0;
+		}
+
 		a {
 			display: block;
 			line-height: 12px;

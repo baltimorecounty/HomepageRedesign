@@ -6,8 +6,8 @@
   display: inline-block;
   margin: 0 0 10px 0;
   vertical-align: middle;
-
-  li a {
+  
+  li, li:first-child {
     padding: 5px;
   }
 }
