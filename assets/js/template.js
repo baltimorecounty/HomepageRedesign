@@ -20,10 +20,9 @@
         },
         dateParts = date.split(" "),
             month = Months[dateParts[2]],
-            day = dateParts[1],
-            year = dateParts[3];
+            day = dateParts[1];
 
-        return month + " " + day + ", " + year;
+        return month + " " + day;
     },
     setDisplayDate = function ($newsItem, date) {
         $('.title', $newsItem).after("<span class='pub-date'>" + date + "</span>");
