@@ -3,25 +3,22 @@
 }
 
 .resizer-list {
-  display: inline-block;
   margin: 0;
-  vertical-align: middle;
   
   li, li:first-child {
-    padding: 5px;
+    padding: 0 5px;
   }
 
   li {
-    button {
-      color: $light-gray;
-      text-decoration: underline;
-    }
+    line-height: 34px;
   }
 }
 
 .resizer-item {
+  color: $light-gray;
   font-weight: bold;
-  line-height: 34px;
+  text-decoration: underline;
+  
 }
 .resizer-item-smaller {
   font-size: 1.6em;
