@@ -1,11 +1,16 @@
 /*Search Box*/
+
+.search-container {
+    background-color: $light-gray;
+    background: rgba(230, 230, 230, 0.89);
+    margin: 40px auto;
+    max-width: 900px;
+    width: 80%;
+    
+}
 .search {
-  background-color: $light-gray;
-  background: rgba(230, 230, 230, 0.89);
-  margin: 40px auto;
-  max-width: 900px;
-  width: 80%;
   padding: 20px;
+  
 
   .search-input, button {
     border: none;

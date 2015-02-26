@@ -1,5 +1,7 @@
 /*Alert Box*/
 .alert{
+  padding: 10px;
+
   a{
     text-decoration:none;
 
@@ -13,6 +15,7 @@
     font-weight:bold;
     border-top:none;
     border-bottom:none;
+    margin: 0;
   }
   
   background-color:$gold;
