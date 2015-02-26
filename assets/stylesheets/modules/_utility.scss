@@ -5,6 +5,11 @@
 
 	li {
 		display: inline;
+
+		a {
+			display: block;
+			line-height: 12px;
+		}
 	}
 }
 
