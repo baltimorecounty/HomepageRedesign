@@ -35,9 +35,10 @@
 
         $newsItems.each(function ($item) {
             var $newsItem = $(this),
-                $newsItemDesc = $newsItem.find('.description').find('seml'),
+                $newsItemDesc = $newsItem.find('.description'),
                 $linkToEntry = $newsItem.find("h3").find("a"),
                 pubDate = getDisplayDate($('.pubDate', $newsItem).text());
+
 
             //Create a read more linked based on the Blog Title's Anchor Href
             createReadMoreLink($newsItem, $linkToEntry);
