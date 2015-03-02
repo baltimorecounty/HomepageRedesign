@@ -153,4 +153,20 @@ header {
   margin: 0 0 5px;
 }
 
+.promotions-container .search-container{
+background:none;
+position:relative;
+left:0;
+transform:none;
+}
+
+.top-visited-list li{
+  border-bottom: 1px solid #666;
+      display: block;
+}
+.top-visited-list{
+width:100%;
+}
+
+
 }
