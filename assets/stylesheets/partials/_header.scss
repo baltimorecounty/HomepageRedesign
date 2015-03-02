@@ -136,5 +136,21 @@ header {
     font-size: 80%;
 }
 
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+.primary-nav{
+  width:100%;
+}
+
+.primary-nav .primary-nav-item a{
+  background: url("../../assets/img/little-arrow.png") no-repeat scroll 12.5px 22px rgba(0, 0, 0, 0);
+  padding: 20px 0 20px 40px;
+}
+.primary-nav .primary-nav-item{
+  min-width:100%;
+  margin: 0 0 5px;
+}
 
 }
