@@ -366,7 +366,13 @@ th {
   padding: 0;
   list-style-type: none; }
   .inline-list li {
-    display: inline; }
+    display: inline;
+    padding: 0 10px; }
+    .inline-list li:first-child {
+      padding-left: 0; }
+    .inline-list li a {
+      display: block;
+      line-height: 12px; }
 
 .clearfix:before, .county-map-container:before,
 .clearfix:after,
@@ -953,53 +959,40 @@ p {
 small {
   font-size: 85%; }
 
-h1, h2 {
-  font-family: Patua One;
-  color: dark-gray;
-  font-weight: normal; }
-
-h3, h4, h5 {
-  font-family: Arial, Helvetica, sans-serif;
+h1, h2, h3, h4, h5, h6 {
   color: #444;
   font-weight: normal; }
 
-h1 {
-  line-height: 40px; }
+h1, h2 {
+  font-family: Patua One; }
 
-h2 {
-  line-height: 30px; }
-
-h3 {
-  line-height: 30px;
-  font-weight: bold; }
-
-h4 {
-  line-height: 20px;
-  font-weight: bold; }
-
-h5 {
-  line-height: 20px;
+h3, h4, h5 {
   font-weight: bold; }
 
 h1 {
   font-size: 2.083em;
-  color: #c51110;
-  padding: 7px 0;
-  border-top: 5px solid #ebebeb;
-  border-bottom: 1px solid #ebebeb;
-  margin: 0 0 13px; }
+  line-height: 40px; }
 
 h2 {
-  font-size: 1.6em; }
+  border-top: 5px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+  color: #c51110;
+  font-size: 1.6em;
+  line-height: 30px;
+  margin: 0 0 13px;
+  padding: 7px 0; }
 
 h3 {
-  font-size: 1.2em; }
+  font-size: 1.2em;
+  line-height: 30px; }
 
 h4 {
-  font-size: 1.1em; }
+  font-size: 1.1em;
+  line-height: 20px; }
 
 h5 {
-  font-size: 1em; }
+  font-size: 1em;
+  line-height: 20px; }
 
 a {
   color: #002280; }
@@ -1026,8 +1019,7 @@ header .secondary-nav {
   header .secondary-nav .secondary-nav-list {
     padding: 8px 0; }
     header .secondary-nav .secondary-nav-list .secondary-nav-list-item {
-      border-right: 1px solid #dbdbdb;
-      padding: 0 10px; }
+      border-right: 1px solid #dbdbdb; }
       header .secondary-nav .secondary-nav-list .secondary-nav-list-item:first-child {
         padding-left: 0; }
       header .secondary-nav .secondary-nav-list .secondary-nav-list-item:last-child {
@@ -1095,10 +1087,39 @@ header .page-tools {
   display: inline-block;
   padding-right: 10px; }
 
+@media only screen and (min-width: 960px) and (max-width: 1199px) {
+  .primary-nav .primary-nav-item a {
+    padding: 35px 5px 33px 35px;
+    width: auto; }
+
+  .primary-nav h2 {
+    font-size: 1.6em;
+    min-width: 200px; }
+
+  .primary-nav .primary-nav-item {
+    min-width: 30%; }
+
+  .primary-nav {
+    font-size: 80%; } }
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .primary-nav {
+    width: 100%; }
+
+  .primary-nav .primary-nav-item a {
+    background: url("../../assets/img/little-arrow.png") no-repeat scroll 12.5px 22px transparent;
+    padding: 20px 0 20px 40px; }
+
+  .primary-nav .primary-nav-item {
+    min-width: 100%;
+    margin: 0 0 5px; } }
 .brand {
   display: inline-block;
   float: left;
   padding: 0; }
+  .brand a {
+    text-decoration: none; }
+    .brand a:hover {
+      text-decoration: none; }
   .brand h1 {
     color: #fff;
     border: none; }
@@ -1117,78 +1138,15 @@ header .page-tools {
   .brand .brand-logo {
     margin-right: 10px; }
 
-/*Search Box*/
-.search {
-  background-color: #dbdbdb;
-  background: rgba(230, 230, 230, 0.89);
-  margin: 40px auto;
-  max-width: 900px;
-  width: 80%;
-  padding: 20px; }
-  .search .search-input, .search button {
-    border: none;
-    height: 55px;
-    margin: 0; }
-  .search .search-text {
-    overflow: hidden; }
-  .search .search-input {
-    font-size: 1.2em;
-    float: left;
-    padding: 10px 20px;
-    width: 100%; }
-  .search button {
-    background: #feb30c;
-    float: right;
-    font-size: 1.1em;
-    font-weight: 700;
-    padding: 0 20px; }
-
-/*Popular Services*/
-.top-visited {
-  padding-top: 20px; }
-
-.top-visited-label {
-  display: block;
-  float: left;
-  font-weight: bold;
-  width: 12.5%; }
-
-.top-visited-list {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  display: table;
-  float: left;
-  width: 87.5%; }
-  .top-visited-list li {
-    border-right: 1px solid #002280;
-    display: table-cell;
-    padding: 0 10px;
-    text-align: center; }
-    .top-visited-list li:last-child {
-      border: none; }
-
-/*Alert Box*/
-.alert {
-  background-color: #feb30c;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: .6em;
-  margin: -20px 0 10px;
-  text-align: center; }
-  .alert a {
-    text-decoration: none; }
-  .alert a:hover {
-    color: #003399; }
-  .alert h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold; }
-
 .promotions-container {
   position: relative; }
-  .promotions-container .search {
+  .promotions-container .search-container {
     position: absolute;
     left: 50%;
     z-index: 999;
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
     transform: translateX(-50%); }
 
 .promotions {
@@ -1214,6 +1172,7 @@ header .page-tools {
   .promotions .promotions-message {
     position: absolute;
     bottom: 0;
+    background-color: #333;
     background: rgba(68, 68, 68, 0.9);
     color: #fff;
     padding: 20px 40px;
@@ -1232,22 +1191,91 @@ header .page-tools {
   height: 20px;
   font-family: "slick";
   line-height: 52px;
-  color: #fff;
   opacity: 0.25;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+/*Search Box*/
+.search-container {
+  background-color: #dbdbdb;
+  background: rgba(230, 230, 230, 0.89);
+  margin: 40px auto;
+  max-width: 900px;
+  width: 80%; }
+
+.search {
+  padding: 20px; }
+  .search .search-input, .search button {
+    border: none;
+    height: 55px;
+    margin: 0; }
+  .search .search-text {
+    overflow: hidden; }
+  .search .search-input {
+    font-size: 1.2em;
+    float: left;
+    padding: 10px 20px;
+    width: 100%; }
+  .search button {
+    float: right; }
+
+/*Popular Services*/
+.top-visited {
+  padding-top: 20px; }
+
+.top-visited-label {
+  display: block;
+  float: left;
+  font-weight: bold;
+  width: 12.5%; }
+
+.top-visited-list {
+  display: table;
+  float: left;
+  width: 87.5%;
+  padding: 5.5px 0; }
+  .top-visited-list li {
+    border-right: 1px solid #002280;
+    display: table-cell;
+    padding: 0 10px;
+    text-align: center; }
+    .top-visited-list li:last-child {
+      border: none; }
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .promotions-container .search-container {
+    background: none;
+    position: relative;
+    left: 0;
+    transform: none; }
+
+  .search-container {
+    margin: 20px auto;
+    width: 90%; }
+
+  .top-visited-label {
+    background-color: #ccc;
+    padding: 10px;
+    width: 100%; }
+
+  .top-visited-list li {
+    border-bottom: 1px solid #444;
+    border-right: none;
+    display: block;
+    text-align: left;
+    padding: 0; }
+
+  .top-visited-list {
+    width: 100%; }
+
+  .search {
+    padding: 0; }
+    .search .inline-list li a {
+      padding: 10px 0; } }
 .county-information {
   background: #fff;
   padding-bottom: 25px;
   padding-top: 25px; }
-  .county-information h2 {
-    font-size: 2.083em;
-    color: #c51110;
-    border-top: 5px solid #ebebeb;
-    border-bottom: 1px solid #ebebeb;
-    padding: 7px 0;
-    margin: 0 0 30px; }
 
 .elected-officials {
   border-left: 3px dotted #dbdbdb;
@@ -1278,7 +1306,7 @@ header .page-tools {
 .social-media-list-item {
   height: 37px;
   width: 37px;
-  margin-right: 20px; }
+  margin-right: 30px; }
   .social-media-list-item a {
     border: none;
     display: block;
@@ -1375,6 +1403,8 @@ footer {
     footer .secondary-footer .county-links-list-item {
       border-right: 1px solid #fff;
       padding: 0 5px; }
+      footer .secondary-footer .county-links-list-item:first-child {
+        padding: 0; }
       footer .secondary-footer .county-links-list-item:last-child {
         border-right: none; }
 
@@ -1397,7 +1427,7 @@ footer {
 .feedItems .item {
   float: left;
   padding: 0 1.5em 0 0;
-  width: 45%; }
+  width: 50%; }
 .feedItems .pub-date {
   font-weight: 900;
   display: table;
@@ -1407,7 +1437,7 @@ footer {
   color: #444;
   font-weight: normal;
   font-size: 1.3em;
-  margin: 25px 0 7px; }
+  margin: 25px 0 0; }
 .feedItems h3 a {
   color: #444;
   text-decoration: none; }
@@ -1437,15 +1467,16 @@ information on the homepage*/
   display: inline-block; }
 
 .resizer-list {
-  display: inline-block;
-  margin: 0 0 10px 0;
-  vertical-align: middle; }
-  .resizer-list li a {
-    padding: 5px; }
+  margin: 0; }
+  .resizer-list li, .resizer-list li:first-child {
+    padding: 0 5px; }
+  .resizer-list li {
+    line-height: 34px; }
 
 .resizer-item {
+  color: #dbdbdb;
   font-weight: bold;
-  line-height: 29px; }
+  text-decoration: underline; }
 
 .resizer-item-smaller {
   font-size: 1.6em; }
@@ -1455,5 +1486,35 @@ information on the homepage*/
 
 .resizer-item-larger {
   font-size: 2.8em; }
+
+/*Alert Box*/
+.alert {
+  padding: 10px;
+  background-color: #feb30c;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: .6em;
+  margin: -20px 0 10px;
+  text-align: center; }
+  .alert a {
+    text-decoration: none; }
+    .alert a:hover {
+      color: #003399; }
+  .alert h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border-top: none;
+    border-bottom: none;
+    margin: 0; }
+
+button {
+  background: #feb30c;
+  font-size: 1.1em;
+  font-weight: 700;
+  padding: 0 20px; }
+
+.btn-link {
+  background: none;
+  border: none;
+  padding: 0; }
 
 /*# sourceMappingURL=main.css.map */
