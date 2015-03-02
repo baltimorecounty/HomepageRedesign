@@ -74,19 +74,11 @@
     transform:none;
   }
 
-<<<<<<< Updated upstream
   .top-visited-list li {
-    border-bottom: 1px solid #666;
+    border-bottom: 1px solid $dark-gray;
     border-right: none;
     display: block;
   }
-=======
-.top-visited-list li{
-  border-bottom: 1px solid $dark-gray;
-  border-right: none !important;
-  display: block !important;
-}
->>>>>>> Stashed changes
 
   .top-visited-list {
     width:100%;
