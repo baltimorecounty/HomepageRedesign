@@ -74,20 +74,18 @@
     transform:none;
   }
 
-<<<<<<< HEAD
-=======
-.search-container{
-  margin:20px auto;
-  width:768px;
-}
 
-.top-visited-label{
-  background-color: #ccc;
-  padding:10px;
-  width:100%;
-}
+  .search-container{
+    margin:20px auto;
+    width:768px;
+  }
 
->>>>>>> 06b6d7bdbace61649829aabcd332732d71803b1e
+  .top-visited-label{
+    background-color: #ccc;
+    padding:10px;
+    width:100%;
+  }
+
   .top-visited-list li {
     border-bottom: 1px solid $dark-gray;
     border-right: none;
