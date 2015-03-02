@@ -6,7 +6,10 @@
     left: 50%;
     z-index: 999;
 
-    transform: translateX(-50%);
+    -moz-transform:    translateX(-50%);
+     -o-transform:      translateX(-50%);
+     -webkit-transform: translateX(-50%);
+     transform:         translateX(-50%);
   }  
 }
 
