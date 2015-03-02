@@ -122,7 +122,6 @@
         $('.promotions').slick({
             autoplay: true,
             autoplaySpeed: 5000,
-            autoHideArrows: true,
             dots: true,
             /*Show dot navigation*/
             nextArrow: "<img src='assets/img/carousel-arrow-right.png' class='slick-next' />",
