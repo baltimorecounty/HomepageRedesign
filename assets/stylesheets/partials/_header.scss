@@ -65,36 +65,35 @@ header {
   margin: 0;
   padding: 0;
   
-
-  h2 {
-  	border: none;
-  	font-size: 1.7em;
-    padding: 0;
-  }
-
   .primary-nav-item {
     background-color: darken($red, 6);
+    border-right: 5px solid $red;
     display: inline-block;
     font-family: 'Patua One', sans-serif;
     height: 100%;
-    min-width: 280px;
+    padding: 0 10px 0 0;
+    
+    &:last-child {
+      border-right: none;
+    }
     
     &:hover {
-      a {
-        background-color: rgba(red, .5);
-      }
+      background-color: rgba(red, .5);
     }
     
     .primary-nav-item__headline {
+      border: none;
+      font-size: 1.5em;
       letter-spacing: .5px;
       margin: 0;
+      padding: 0;
       
     }
     
     .primary-nav-item__tagline {
       display: block;
       font-family: Arial, sans-serif;
-      font-size: .5em;
+      font-size: .55em;
       font-weight: 100;
       letter-spacing: 0;
       margin-top: 10px;

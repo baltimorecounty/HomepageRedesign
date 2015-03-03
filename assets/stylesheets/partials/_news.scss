@@ -1,3 +1,7 @@
+.news-feed {
+  padding: 0 25px 0 0;
+}
+
 /*Contains the styles for Baltimore County Now*/
 .news {
   .news-headline {
@@ -44,6 +48,8 @@
 .county-photo-feed {
 	.county-photo-feed-item {
 		margin: 0 10px;
+    max-width: 140px;
+    width: 100%;
 
 		&:first-child {
 			margin-left: 0;
