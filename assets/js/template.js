@@ -1,4 +1,4 @@
-(function ($, Handlebars) {
+(function ($, Handlebars, TextResizer) {
     /*News Related Methods*/
     var createReadMoreLink = function ($newsItem, $link) {
         $newsItem.append($link.clone().html("Read More"));
@@ -69,43 +69,6 @@
         $container.html(html);
     };
 
-    /*Text Resizer Methods*/
-    var disableBtn = function ($btn) {
-        $btn.attr('disabled', 'disabled');
-
-        if ($btn.attr('id').indexOf("increase") > -1) {
-            alert("Cannot increase text size.");
-        }
-        else {
-            alert("Cannot decrease text size.");
-        }
-    },
-    resizeText = function (multiplier, $btn) {
-        var mainContent = document.getElementById('main-content'),
-            currentFontSize = mainContent.style.fontSize,
-            buttonName = $btn.attr('id');
-
-        //Resizer is used for the first time or had been reset
-        if (!currentFontSize) {
-            mainContent.style.fontSize = parseFloat(1 + (multiplier * 0.2)) + "em";
-        } else {
-            var isMinFontSize = parseFloat(currentFontSize) === .7,
-                isMaxFontSize = parseFloat(currentFontSize) >= 1.3;
-
-            if (isMinFontSize && buttonName.indexOf("decrease") > -1 || isMaxFontSize && buttonName.indexOf("increase") > -1) {
-                disableBtn($btn);
-            }
-            else {
-                mainContent.style.fontSize = parseFloat(currentFontSize) + (multiplier * 0.2) + "em";
-            }
-        }
-
-    },
-    resetText = function () {
-        var mainContent = document.getElementById('main-content');
-        mainContent.style.fontSize = null;
-    };
-
 
     $(document).ready(function () {
         var $flickFeedContainer = $('.county-photo-feed');
@@ -128,26 +91,11 @@
             /*Starts on slide 4*/
             prevArrow: "<img src='assets/img/carousel-arrow-left.png'class='slick-prev' />"
         });
+
+        /*Initialize teh Text Resizer*/
+        var textResizer = new TextResizer({
+            listClass: "resizer-list"
+        });
     });
 
-
-    /*Text Resizer Events*/
-    $(document).on('click', '#increase-text:enabled', function (e) {
-        e.preventDefault();
-        $('#decrease-text').removeAttr("disabled");
-        resizeText(.5, $(this));
-    });
-
-    $(document).on('click', '#decrease-text:enabled', function (e) {
-        e.preventDefault();
-        $('#increase-text').removeAttr("disabled");
-        resizeText(-.5, $(this));
-    });
-
-    $(document).on('click', '#reset-text', function (e) {
-        e.preventDefault();
-        $('#increase-text, #decrease-text').removeAttr('disabled');
-        resetText();
-    });
-
-})(jQuery, Handlebars);
+})(jQuery, Handlebars, TextResizer);
