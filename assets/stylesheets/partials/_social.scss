@@ -22,7 +22,6 @@
 
 	a {
 		border: none;
-		display: block;
 		text-decoration: none;
 
 		height: 38px;
@@ -99,10 +98,14 @@
 }
 
 @media only screen and (max-width: 959px) {
-
-	.social-media-list {
+	
+	.county-executive .social-media-list-item {
+		margin-right: 25px;
+	}
+	.primary-footer .social-media-list {
 		padding: 10px;
 		text-align: left;
 	}
+
 
 }
