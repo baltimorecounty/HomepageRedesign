@@ -13,6 +13,10 @@
 	}
 }
 
+.county-executive, .county-council {
+	padding-right: 0;
+}
+
 .county-executive-about-list {
 	padding: 0px 0 20px;
 	
@@ -25,4 +29,8 @@
 		}
 	}
 
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	
 }
