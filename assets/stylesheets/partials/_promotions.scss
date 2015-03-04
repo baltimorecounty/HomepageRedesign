@@ -79,12 +79,17 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 959px) {
-.promotions {
-  .promotions-message{
-  position:relative;
-}  
+@media only screen and (max-width: 992px) {
+  .slick-dots {
+    display: none !important; /*Overriding an element style attr added by slick carousel*/
+  }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .promotions {
+      .promotions-message{
+      position:relative;
+    }
+  }
 }
 
