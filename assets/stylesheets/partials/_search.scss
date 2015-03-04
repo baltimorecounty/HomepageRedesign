@@ -65,7 +65,7 @@
 }
 
 
-@media only screen and (max-width: 959px) {
+@media only screen and (max-width: 767px) {
 
   .promotions-container .search-container {
     background:none;
@@ -106,3 +106,32 @@
   }
 
 }
+
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .promotions-container .search-container {
+    background:none;
+    position:relative;
+    left:0;
+    transform:none;
+  }
+  .search-container{
+    margin:20px auto;
+    width: 100%;
+  }
+  .top-visited-label {
+    border-top:5px solid darken($light-gray, 20);
+    border-bottom:1px solid darken($light-gray, 20); 
+    padding:10px;
+    width:100%;
+  }
+  
+  .top-visited-list {
+    margin: 10px auto 0;
+    width: 100%;
+    li:first-child {
+      padding-left: 10px;
+    }
+  }
+}
+    

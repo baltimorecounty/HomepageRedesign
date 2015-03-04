@@ -1,38 +1,4 @@
 header {
-	.secondary-nav {
-		background: $darker-gray;
-    font-size:.85em;
-		padding: 10px 0;
-
-
-		.secondary-nav-list {
-			padding: 8px 0;
-      
-			.secondary-nav-list-item {
-				border-right: 1px solid $light-gray;
-
-				&:first-child {
-					padding-left: 0;
-				}
-
-				&:last-child {
-					border: none;
-					padding-right: 0;
-				}
-			}
-		}
-
-		a {
-			color: $light-gray;
-      display: block;
-      line-height: 11px;
-
-			&:hover {
-				color: $white;
-			}
-		}
-	}
-
 	.primary-nav {
 		background: $red;
 		color: $white;
@@ -110,6 +76,40 @@ header {
   }
 }
 
+.secondary-nav {
+    background: $darker-gray;
+    font-size:.85em;
+    padding: 10px 0;
+
+
+    .secondary-nav-list {
+      padding: 8px 0;
+      
+      .secondary-nav-list-item {
+        border-right: 1px solid $light-gray;
+
+        &:first-child {
+          padding-left: 0;
+        }
+
+        &:last-child {
+          border: none;
+          padding-right: 0;
+        }
+      }
+    }
+
+    a {
+      color: $light-gray;
+      display: block;
+      line-height: 11px;
+
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+
 .subscribe {
   border-right: 1px solid $light-gray;
   display: inline-block;
@@ -167,5 +167,8 @@ header {
         padding: 15px 0px 13px 40px;
       }
     }
+  }
+  .secondary-nav {
+    padding: 10px;
   }
 }
