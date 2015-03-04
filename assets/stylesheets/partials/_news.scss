@@ -15,7 +15,6 @@
 }
 .feedItems{
   .item {
-    @extend .col-md-4;
     float: left;
     padding: 0 1.5em 0 0;
     width: 50%;
@@ -84,5 +83,27 @@ information on the homepage*/
   .news-feed {
     padding: 0 20px 20px;  
   }
+}
 
+@media only screen and (max-width: 767px) {
+  .feedItems {
+    .item {
+      float: none;
+      padding: 0 1.5em 0 0;
+      width: 100%;
+
+      .description p {
+        display: none;
+      }
+
+      .title{
+        margin: 10px 0 0;
+      }
+    }
+  }
+
+  .news-feed-read-more {
+    margin: 0 0 20px;
+  }
+  
 }
