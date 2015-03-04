@@ -32,5 +32,13 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 959px) {
-	
+	.elected-officials {
+
+		.county-executive {
+			padding-left: 0;
+		}
+		.county-council {
+			padding-right: 15px;
+		}
+	}
 }
