@@ -64,3 +64,9 @@ a {
 .smaller-text{
     font-size:65%;
 }
+
+@media only screen and (max-width: 768px) {
+    h2 {
+        margin-bottom: 0;
+    }
+}
