@@ -1,7 +1,7 @@
 (function ($, Handlebars, TextResizer) {
     /*News Related Methods*/
     var createReadMoreLink = function ($newsItem, $link) {
-        $newsItem.append($link.clone().html("Read More"));
+        $newsItem.append($link.clone().html("Read More >>"));
     },
     getDisplayDate = function (date) {
         var Months = {
