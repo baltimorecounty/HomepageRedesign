@@ -172,3 +172,13 @@ header {
     padding: 10px;
   }
 }
+
+@media only screen and (max-width: 767px) {
+  .primary-nav, .secondary-nav {
+    display: none;
+
+    &.mobile-menu-visible {
+      display: block;
+    }
+  }
+}

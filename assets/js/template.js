@@ -98,4 +98,10 @@
         });
     });
 
+    $(document).on('click', '.hamburger-btn', function(e) {
+        e.preventDefault();
+
+        $('.primary-nav, .secondary-nav').toggleClass('mobile-menu-visible');
+    });
+
 })(jQuery, Handlebars, TextResizer);

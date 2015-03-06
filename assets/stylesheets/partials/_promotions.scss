@@ -80,6 +80,11 @@
 }
 
 @media only screen and (max-width: 992px) {
+  .promotions {
+    h2 {
+      font-size: 1.75em;
+    }
+  }
   .slick-dots {
     display: none !important; /*Overriding an element style attr added by slick */
   }
