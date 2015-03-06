@@ -28,7 +28,7 @@
         $('.title', $newsItem).after("<span class='pub-date'>" + date + "</span>");
     },
     showNewsSummary = function ($newsItemDesc) {
-        $('p:not(:nth-child(2))', $newsItemDesc).hide();
+        $('p:not(:eq(1))', $newsItemDesc).hide();
     },
     showNewsSummaries = function () {
         var $newsItems = $('.item');
