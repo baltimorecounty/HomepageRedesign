@@ -8,6 +8,10 @@
 	}
 }
 
+.SESyndicationModule {
+	@extend .clearfix;
+}
+
 @media only screen and (max-width: 767px) {
 	.county-information {
 		padding: 10px;

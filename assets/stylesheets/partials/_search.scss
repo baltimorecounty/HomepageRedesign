@@ -33,6 +33,9 @@
     float: right;
   }
 }
+.search-input-container {
+  @extend .clearfix;
+}
 
 /*Popular Services*/
 .top-visited {
