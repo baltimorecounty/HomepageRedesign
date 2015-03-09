@@ -61,6 +61,10 @@
     &:last-child {
       border: none;
     }
+
+    a:hover {
+      color: $light-blue;
+    }
   }
 }
 
