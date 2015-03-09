@@ -78,9 +78,13 @@
 
   .promotions-container .search-container {
     background:none;
-    position:relative;
-    left:0;
-    transform:none;
+    position: relative;
+    -webkit-transform: none;
+       -moz-transform: none;
+        -ms-transform: none;
+         -o-transform: none;
+            transform: none;
+    left: 0;
   }
 
   .search-container{
