@@ -39,6 +39,7 @@
 
 /*Popular Services*/
 .top-visited {
+  @extend .clearfix;
   padding-top: 20px;
 }
 .top-visited-label {
