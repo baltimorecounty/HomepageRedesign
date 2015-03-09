@@ -18,6 +18,10 @@
   color: $light-gray;
   font-weight: bold;
   text-decoration: underline;
+
+  &:hover {
+    color: white;
+  }
 }
 .resizer-item-smaller {
   font-size: 1.6em;
