@@ -70,8 +70,6 @@
             $container: $flickFeedContainer
         });
 
-        //loadFlickrFeed(flickrUrl, $flickFeedContainer);
-
         //Initialize the Slick Carousel for County Promotions
         $('.promotions').slick({
             autoplay: true,
