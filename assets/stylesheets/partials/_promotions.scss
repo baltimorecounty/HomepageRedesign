@@ -85,6 +85,12 @@
       font-size: 1.75em;
       margin: 0;
     }
+    a {
+      color: $navy;
+      &:hover {
+        color: $light-blue;
+      }
+    }
   }
   .slick-dots {
     display: none !important; /*Overriding an element style attr added by slick */
