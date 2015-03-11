@@ -1,4 +1,4 @@
-(function ($, Handlebars, TextResizer, Flickr) {
+(function ($, TextResizer, Flickr) {
     $(document).ready(function () {
         var $flickFeedContainer = $('.county-photo-feed');
 
@@ -35,4 +35,4 @@
         $('.primary-nav, .secondary-nav').toggleClass('mobile-menu-visible');
     });
 
-})(jQuery, Handlebars, TextResizer, Flickr);
+})(jQuery, TextResizer, Flickr);
