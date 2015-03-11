@@ -1,0 +1,345 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Baltimore County Homepage Government</title>
+		<link rel="stylesheet" type="text/css" href="assets/stylesheets/main.css"/>
+		<!--[if lt IE 9]>
+			<link rel="stylesheet" type="text/css" href="assets/stylesheets/ie.css"/>
+		<![endif]-->
+		<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+		<script src="assets/js/lib/jQuery.min.js"></script>
+		<script type="text/javascript" src="assets/js/lib/slick.min.js"></script>
+		<script type="text/javascript" src="assets/js/lib/handlebars.js"></script>
+		<script src="assets/js/lib/reView.js"></script>
+		<script src="assets/js/text-resizer.js"></script>
+		<script src="assets/js/flickr.js"></script>
+		<script src="assets/js/skipNav.js"></script>
+		<script src="assets/js/template.js"></script>
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	    <!--[if lt IE 9]>
+	      <script src="assets/js/lib/html5shiv.min.js"></script>
+	      <script src="assets/js/lib/respond.min.js"></script>
+	    <![endif]-->
+
+	</head>
+	<body class="homepage">
+		<div id="skiptocontent" class="skip-nav">
+		  <a href="#main-content" class="link-btn skip">skip to main content</a>
+		</div>
+		<header class="header">
+			<section class="secondary-nav hidden-xs">
+				<div class="container">
+				<nav class="col-md-4 col-sm-6 ">
+					<ul class="secondary-nav-list inline-list">
+						<li class="secondary-nav-list-item">
+							<a href="">County Executive</a>
+						</li>
+						<li class="secondary-nav-list-item">
+							<a href="">County Council</a>
+						</li>
+						<li class="secondary-nav-list-item">
+							<a href="">Courts</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="search col-md-4">
+				<div class="search-input-container">
+			    <button>Search</button>
+			    <div class="search-text">
+			      <label for="search-input" class="search-label">Search</label><input type="text" placeholder="Search for agencies, services and more..." name="search-input" class="search-input">
+			    </div>
+			</div>
+			  </div>
+				<div class="page-tools col-md-4 col-sm-6 hidden-xs">
+					<a href="http://www.baltimorecountymd.gov/Subscribe/" class="subscribe" title="Subscribe to Baltimore County Newsletters.">Subscribe</a>
+					<div class="resizer">
+					  <ul class="resizer-list inline-list">
+					    <li><button id="normal-text" class="btn-link resizer-item resizer-item-smaller">a</button></li>
+					    <li><button id="large-text" class="btn-link resizer-item resizer-item-default">a</button></li>
+					    <li><button id="largest-text" class="btn-link resizer-item resizer-item-larger">a</button></li>
+					  </ul>
+					</div>
+				</div>
+				</div>
+			</section>
+			<div class="primary-header">
+			  <div class="container-fluid">
+			    <div class="brand col-md-4 col-sm-12">
+			      <a href="http://www.baltimorecountymd.gov" title="View the Baltimore County Government homepage.">
+			      <img class="brand-logo" src="assets/img/header-county-seal.png" height="84" width="84" />
+			      <h1 class="brand-heading">Baltimore County<br><span class="uppercase smaller-text">Government</span></h1>
+			  	</a>
+			    </div>
+			    <nav class="secondary-nav col-xs-12 hidden-lg hidden-md hidden-sm">
+					<ul class="secondary-nav-list inline-list">
+						<li class="secondary-nav-list-item">
+							<a href="">County Executive</a>
+						</li>
+						<li class="secondary-nav-list-item">
+							<a href="">County Council</a>
+						</li>
+						<li class="secondary-nav-list-item">
+							<a href="">Courts</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="primary-nav-container">
+			    <ul class="primary-nav col-md-8 col-sm-12" role="navigation">
+			      <li class="primary-nav-item col-md-4 col-sm-4 col-xs-12">
+			        <h2 class="primary-nav-item__headline">
+			          <a href="http://www.baltimorecountymd.gov/iwant/apply.html">I Want To...<br><span class="primary-nav-item__tagline">Report Issues, Follow Up, Apply</span></a>
+			        </h2>
+			      </li>
+			      <li class="primary-nav-item col-md-4 col-sm-4 col-xs-12">
+			        <h2 class="primary-nav-item__headline">
+			          <a href="http://www.baltimorecountymd.gov/iwant/apply.html">I'm Looking For...<br><span class="primary-nav-item__tagline">Resident, Visitor, or Business Info</span></a>
+			        </h2>
+			      </li>
+			      <li class="primary-nav-item col-md-4 col-sm-4 col-xs-12">
+			        <h2 class="primary-nav-item__headline">
+			          <a href="http://www.baltimorecountymd.gov/iwant/apply.html">I Need to Contact...<br><span class="primary-nav-item__tagline">An Agency, My Rep, An Employee</span></a>
+			        </h2>
+			      </li>
+			    </ul>
+			    <nav class="hamburger-nav">
+			    	<a class="hamburger-btn" href="#" title="Navigate Baltimore County's Website">
+			    		<img src="assets/img/hamburger.png" height="32" width="32" alt="Navigate Baltimore County's Website" /></a>
+			    </nav>
+			    </div>
+			    <div class="clearfix"></div>
+			  </div>
+			</div>
+		</header>
+
+		<div id="main-content" class="county-information">
+		<div class="county-information-container container-fluid">
+		
+		<section class="news-feed col-md-8">
+			<h2 class="county-information-headline">Baltimore County Now</h2>
+			<div class="county-photo-feed col-md-12"></div><!--flickr feed -->
+			<div class="SESyndicationModule">
+  <div class="feedDetails">
+  	
+    <h1>
+      <a href="http://www.baltimorecountymd.gov/News/BaltimoreCountyNow">Baltimore County Now</a>
+    </h1>
+    <div class="description">Stay informed of what's happening in Baltimore County.</div>
+  </div>
+  <ol class="feedItems">
+    <li class="item">
+      <h3 class="title">
+        <a href="http://www.baltimorecountymd.gov/News/BaltimoreCountyNow/New_Cyber_Businesses_Get_Cynced">New Cyber Businesses Get “Cync’ed”</a>
+      </h3>
+      <div class="description">
+      	<seml>
+      		<p>
+      			<seimage objectid="361C4C8106C7685FA26505B4FE3C6DED" width="300" height="164" alt="bwtech" align="LEFT" hspace="0" vspace="0"><em>Todd Dolbin, Business Development Representative,&nbsp;</em><em>Baltimore County Department of Economic and Workforce Development&nbsp;</em></seimage></p>
+      		<p>With hackers in the headlines everyday, a growing force of cybersecurity entrepreneurs is developing technologies to stay ahead of the threats. &nbsp;</p><p>But like all new businesses, these cyber startups need office space, business connections, funding, and access to research.</p>
+      		<p>The Cync Program at UMBC is a unique partnership between Northrop Grumman and the Cyber Incubator@bwtech, with an eye toward commercializing technologies that protect the nation from a growing range of cyber threats. The program builds on bwtech@UMBC’s successful business incubator framework by offering a scholarship program for companies with the most promising cybersecurity ideas.</p>
+      		<p>The competitive Cync Program is currently accepting applications from high-potential, early-stage companies from across the country looking to further develop and commercialize their technologies. If you’re an innovative, technology-driven startup company involved with&nbsp;Cyber, Data Sciences, Big Data, Secure Mobility, or Physical Systems, then this program is right for you.&nbsp; &nbsp;</p>
+      		<p>Selected participants will be able to draw on UMBC’s extensive research resources and have onsite access to senior representatives from Northrop Grumman who will provide technical and business advisory support. In addition, Cync companies will be provided with the same furnished, class-A office space and business support services that other Cyber Incubator companies enjoy – a value of more than $20,000 a year – all at no cost.</p>
+      		<p>Check out the <selink linktype="EXTERNAL" externallink="http://www.bwtechumbc.com/cync/" newwindow="No" showtoolbar="No" objectid="" popupwidth="" popupheight="" title="" rel="" accesskey="" localanchor="" linkanchor="">Cync Program Information Page</selink> and the <selink linktype="EXTERNAL" externallink="http://www.bwtechumbc.com/pdf/cyncfactsheet.pdf" newwindow="No" showtoolbar="No" objectid="" popupwidth="" popupheight="" title="" rel="" accesskey="" localanchor="" linkanchor="">Cync FAQ Sheet</selink> for more information about the program and how to apply. Good Luck!</p>
+      		<p><em>bwtech@UMBC is the only Maryland enterprise to combine business incubators with a research and technology park serving companies by offering a full spectrum of company support: early-stage, emerging, and mature. &nbsp;With over 118 tenants and almost 1,200 employees, bwtech@UMBC generates over $168 million in spending in the Baltimore region. &nbsp;</em></p>
+      		<p><em>For more information on locating in Baltimore County, contact the Baltimore County Department of Economic and Workforce Development at businesshelp@baltimorecountymd.gov or 410-887-8000, or visit our <selink linktype="EXTERNAL" externallink="http://www.baltimorecountymd.gov/Agencies/economicdev/baltimorecountybusiness/index.html" newwindow="No" showtoolbar="No" objectid="" popupwidth="" popupheight="" title="" rel="" accesskey="" localanchor="" linkanchor="">website</selink>.&nbsp;</em></p>
+      	</seml>
+      </div>
+      <div class="extras">
+        <span class="pubDate">Thu, 22 Jan 2015 21:09:00 GMT</span><span class="itemURL">http://www.baltimorecountymd.gov/News/BaltimoreCountyNow/New_Cyber_Businesses_Get_Cynced</span>
+      </div>
+    </li>
+    <li class="item">
+      <h3 class="title">
+        <a href="http://www.baltimorecountymd.gov/News/BaltimoreCountyNow/New_Cyber_Businesses_Get_Cynced">New Cyber Businesses Get “Cync’ed”</a>
+      </h3>
+      <div class="description"><seml><p><seimage objectid="361C4C8106C7685FA26505B4FE3C6DED" width="300" height="164" alt="bwtech" align="LEFT" hspace="0" vspace="0"><em>Todd Dolbin, Business Development Representative,&nbsp;</em><em>Baltimore County Department of Economic and Workforce Development&nbsp;</em></seimage></p><p>With hackers in the headlines everyday, a growing force of cybersecurity entrepreneurs is developing technologies to stay ahead of the threats. &nbsp;</p><p>But like all new businesses, these cyber startups need office space, business connections, funding, and access to research.</p><p>The Cync Program at UMBC is a unique partnership between Northrop Grumman and the Cyber Incubator@bwtech, with an eye toward commercializing technologies that protect the nation from a growing range of cyber threats. The program builds on bwtech@UMBC’s successful business incubator framework by offering a scholarship program for companies with the most promising cybersecurity ideas.</p><p>The competitive Cync Program is currently accepting applications from high-potential, early-stage companies from across the country looking to further develop and commercialize their technologies. If you’re an innovative, technology-driven startup company involved with&nbsp;Cyber, Data Sciences, Big Data, Secure Mobility, or Physical Systems, then this program is right for you.&nbsp; &nbsp;</p><p>Selected participants will be able to draw on UMBC’s extensive research resources and have onsite access to senior representatives from Northrop Grumman who will provide technical and business advisory support. In addition, Cync companies will be provided with the same furnished, class-A office space and business support services that other Cyber Incubator companies enjoy – a value of more than $20,000 a year – all at no cost.</p><p>Check out the <selink linktype="EXTERNAL" externallink="http://www.bwtechumbc.com/cync/" newwindow="No" showtoolbar="No" objectid="" popupwidth="" popupheight="" title="" rel="" accesskey="" localanchor="" linkanchor="">Cync Program Information Page</selink> and the <selink linktype="EXTERNAL" externallink="http://www.bwtechumbc.com/pdf/cyncfactsheet.pdf" newwindow="No" showtoolbar="No" objectid="" popupwidth="" popupheight="" title="" rel="" accesskey="" localanchor="" linkanchor="">Cync FAQ Sheet</selink> for more information about the program and how to apply. Good Luck!</p><p><em>bwtech@UMBC is the only Maryland enterprise to combine business incubators with a research and technology park serving companies by offering a full spectrum of company support: early-stage, emerging, and mature. &nbsp;With over 118 tenants and almost 1,200 employees, bwtech@UMBC generates over $168 million in spending in the Baltimore region. &nbsp;</em></p><p><em>For more information on locating in Baltimore County, contact the Baltimore County Department of Economic and Workforce Development at businesshelp@baltimorecountymd.gov or 410-887-8000, or visit our <selink linktype="EXTERNAL" externallink="http://www.baltimorecountymd.gov/Agencies/economicdev/baltimorecountybusiness/index.html" newwindow="No" showtoolbar="No" objectid="" popupwidth="" popupheight="" title="" rel="" accesskey="" localanchor="" linkanchor="">website</selink>.&nbsp;</em></p></seml></div>
+      <div class="extras">
+        <span class="pubDate">Thu, 22 Jan 2015 21:09:00 GMT</span><span class="itemURL">http://www.baltimorecountymd.gov/News/BaltimoreCountyNow/New_Cyber_Businesses_Get_Cynced</span>
+      </div>
+    </li>
+    <li class="item">
+      <h3 class="title">
+        <a href="http://www.baltimorecountymd.gov/News/BaltimoreCountyNow/New_Cyber_Businesses_Get_Cynced">New Cyber Businesses Get “Cync’ed”</a>
+      </h3>
+      <div class="description"><seml><p><seimage objectid="361C4C8106C7685FA26505B4FE3C6DED" width="300" height="164" alt="bwtech" align="LEFT" hspace="0" vspace="0"><em>Todd Dolbin, Business Development Representative,&nbsp;</em><em>Baltimore County Department of Economic and Workforce Development&nbsp;</em></seimage></p><p>With hackers in the headlines everyday, a growing force of cybersecurity entrepreneurs is developing technologies to stay ahead of the threats. &nbsp;</p><p>But like all new businesses, these cyber startups need office space, business connections, funding, and access to research.</p><p>The Cync Program at UMBC is a unique partnership between Northrop Grumman and the Cyber Incubator@bwtech, with an eye toward commercializing technologies that protect the nation from a growing range of cyber threats. The program builds on bwtech@UMBC’s successful business incubator framework by offering a scholarship program for companies with the most promising cybersecurity ideas.</p><p>The competitive Cync Program is currently accepting applications from high-potential, early-stage companies from across the country looking to further develop and commercialize their technologies. If you’re an innovative, technology-driven startup company involved with&nbsp;Cyber, Data Sciences, Big Data, Secure Mobility, or Physical Systems, then this program is right for you.&nbsp; &nbsp;</p><p>Selected participants will be able to draw on UMBC’s extensive research resources and have onsite access to senior representatives from Northrop Grumman who will provide technical and business advisory support. In addition, Cync companies will be provided with the same furnished, class-A office space and business support services that other Cyber Incubator companies enjoy – a value of more than $20,000 a year – all at no cost.</p><p>Check out the <selink linktype="EXTERNAL" externallink="http://www.bwtechumbc.com/cync/" newwindow="No" showtoolbar="No" objectid="" popupwidth="" popupheight="" title="" rel="" accesskey="" localanchor="" linkanchor="">Cync Program Information Page</selink> and the <selink linktype="EXTERNAL" externallink="http://www.bwtechumbc.com/pdf/cyncfactsheet.pdf" newwindow="No" showtoolbar="No" objectid="" popupwidth="" popupheight="" title="" rel="" accesskey="" localanchor="" linkanchor="">Cync FAQ Sheet</selink> for more information about the program and how to apply. Good Luck!</p><p><em>bwtech@UMBC is the only Maryland enterprise to combine business incubators with a research and technology park serving companies by offering a full spectrum of company support: early-stage, emerging, and mature. &nbsp;With over 118 tenants and almost 1,200 employees, bwtech@UMBC generates over $168 million in spending in the Baltimore region. &nbsp;</em></p><p><em>For more information on locating in Baltimore County, contact the Baltimore County Department of Economic and Workforce Development at businesshelp@baltimorecountymd.gov or 410-887-8000, or visit our <selink linktype="EXTERNAL" externallink="http://www.baltimorecountymd.gov/Agencies/economicdev/baltimorecountybusiness/index.html" newwindow="No" showtoolbar="No" objectid="" popupwidth="" popupheight="" title="" rel="" accesskey="" localanchor="" linkanchor="">website</selink>.&nbsp;</em></p></seml></div>
+      <div class="extras">
+        <span class="pubDate">Thu, 22 Jan 2015 21:09:00 GMT</span><span class="itemURL">http://www.baltimorecountymd.gov/News/BaltimoreCountyNow/New_Cyber_Businesses_Get_Cynced</span>
+      </div>
+    </li>
+    <li class="item">
+      <h3 class="title">
+        <a href="http://www.baltimorecountymd.gov/News/BaltimoreCountyNow/Caring_for_Adults_in_Need_">Caring for Adults in Need </a>
+      </h3>
+      <div class="description"><seml><p><seimage objectid="03FB2E6E0A0BA29F1FF21114675E6F98" width="200" height="300" alt="Adult Foster Care" align="LEFT" hspace="0" vspace="0"><em>Kelly Hale, LCSW-C, Supervisor &amp;&nbsp;</em><em>Erica L. Fowlkes LCSW-C, Housing Coordinator,&nbsp;</em><em>Project Home/Adult Foster Care,&nbsp;</em><em>Baltimore County Department of Social Services</em></seimage></p><p>Wilma Robinson has been a Project Home/Adult Foster Care home-care provider for almost 20 years. Helping others appeals to her, but she admits the job isn’t for everyone.</p><p>“You really have to want to do it, and you really have to like people. You have to put your heart and mind into it,” the Halethorpe resident said.</p><p>Project Home and Adult Foster Care are two programs for Baltimore County adults who need some help with daily living but not the full services of a nursing home or other facility. The programs serve adults 18 and over who are on limited incomes and without family members who can help them. Most program participants are between the ages of 35 and 72.&nbsp;</p><p>Both programs, which have different funding streams, offer these adults a safe, supportive setting in the community. Care providers such as Wilma Robinson may provide care for up to four adults. They, like Robinson, are Certified Adult Residential Environment (CARE) providers. As such, they undergo criminal background checks and receive training in CPR, First Aid and Bloodborne Pathogens. Additionally, their homes must pass health and fire inspections.</p><p>Currently, Robinson has three adult women living in her home. She said she wears “many hats” in her job. As a home-care provider, she’s responsible for providing things such as three nutritious meals a day, snacks, personal care and help with shopping and budgeting. She also helps arrange transportation to clients’ medical appointments. Most importantly, she serves as the liaison between each client’s care team of doctors, psychiatrists and/or social workers.&nbsp;</p><p>She said her decision to offer home care for Project Home and Adult Foster Care clients has been a satisfying one. “I really do like my people,” Robinson said. “Everybody needs somebody, and I’ve loved every minute of it.”&nbsp;</p><p>To learn more about Project Home/Adult Foster Care, please contact&nbsp;Kelly Hale at 410-853-3511, Erica Fowlkes at 410-853-3518, or visit our <selink linktype="EXTERNAL" externallink="http://www.baltimorecountymd.gov/Agencies/socialservices/fosterparenting/projecthome.html" newwindow="No" showtoolbar="No" objectid="" popupwidth="" popupheight="" title="" rel="" accesskey="" localanchor="" linkanchor="">website</selink>.</p></seml></div>
+      <div class="extras">
+        <span class="pubDate">Thu, 22 Jan 2015 20:16:00 GMT</span><span class="itemURL">http://www.baltimorecountymd.gov/News/BaltimoreCountyNow/Caring_for_Adults_in_Need_</span>
+      </div>
+    </li>
+  </ol>
+  </div>
+			<a href="http://www.baltimorecountymd.gov/News/BaltimoreCountyNow" title="Read more from Baltimore County Now." class="news-feed-read-more">Read More From Baltimore County Now</a>
+		</section>
+		<section class="elected-officials col-md-4 hidden-xs">
+			<section class="county-executive col-md-12 col-sm-6 col-xs-12">
+				<h2>County Executive</h2>
+					<a href="http://www.baltimorecountymd.gov/agencies/executive/index.html" title="Learn more about the Baltimore County Executive."><img src="assets/img/county-executive.jpg" alt="A portrait of Baltimore County Executive Kevin Kamenetz." /></a>
+				<ul class="social-media-list social-media-list-gold social-media-list-small inline-list">
+					<li class="social-media-list-item social-media-list-item-facebook">
+						<a href="">
+						</a>
+					</li>
+					<li class="social-media-list-item social-media-list-item-twitter">
+						<a href="">
+						</a>
+					</li>
+					<li class="social-media-list-item social-media-list-item-photos">
+						<a href="">
+						</a>
+					</li>
+					<li class="social-media-list-item social-media-list-item-youtube">
+						<a href="">
+						</a>
+					</li>
+					<li class="social-media-list-item social-media-list-item-bcnow">
+						<a href="">
+						</a>
+					</li>
+				</ul>
+				<ul class="county-executive-about-list inline-list">
+					<li class="county-executive-about-list-item">
+						<a href="http://www.baltimorecountymd.gov/Agencies/executive/bio.html" title="Learn more about Baltimore County Executive Kevin Kamenetz.">Biography</a>
+					</li>
+					<li class="county-executive-about-list-item">
+						<a href="http://www.baltimorecountymd.gov/needtocontact/executive?agencyid=1007" title="Contact the Baltimore County Executive.">Contact</a>
+					</li>
+				</ul>
+			</section>
+			<section class="county-council col-md-12 col-sm-6">
+				<h2>County Council</h2>
+				<a href="http://www.baltimorecountymd.gov/countycouncil/index.html" title="Learn more about the members of Baltimore County’s legislative branch."><img src="assets/img/county-council.jpg" alt="A group photo of the Baltimore County Council." /></a>
+				<a title="Find your representative." href="http://egov2.baltimorecountymd.gov/votingweb/Address.aspx?pageid=3">Who is my Representative?</a>
+			</section>
+		</section>
+		</div>
+		</div>
+		
+		<footer class="footer">
+			<section class="primary-footer container">
+			<section class="county-map-container col-md-6 col-sm-6">
+				<img src="assets/img/footer-county-shape.png" alt="" class="county-map hidden-sm hidden-xs">
+				<div class="county-address">
+					<h2>Baltimore County Government</h2>
+					<p>Historic Courthouse</br>
+					400 Washington Avenue</br>
+					Towson, MD 21204</p>
+					<p><a href="http://mapq.st/rqwGxR" title="Get directions to Baltimore County.">Directions &gt;&gt;</a></p>
+				</div>
+				
+			</section>
+			<section class="county-help col-md-2 col-sm-6">
+				<h2>Help</h2>
+				<ul class="county-help-list">
+					<li class="county-help-list-item">
+						<a href="http://www.baltimorecountymd.gov/Contact_Us/telephone/helpful_numbers.html" title="Find helpful telephone numbers.">Phone Numbers</a>
+					</li>
+					<li class="county-help-list-item">
+						<a href="http://www.baltimorecountymd.gov/imlooking/index.html#all" title="Find a County service.">Find a County Service</a>
+					</li>
+					<li class="county-help-list-item">
+						<a href="http://www.baltimorecountymd.gov/iwant/index.html" title="Report a problem.">Report a Problem</a>
+					</li>
+				</ul>
+			</section>
+			<section class="tranlate-page col-md-2 hidden-sm hidden-xs">
+				<h2>Translate</h2>
+				<ul class="translate-page-list">
+					<li class="american"><a title="English" href="http://baltimorecountymd.gov//">English</a></li>
+					<li class="translate-page-list-item translate-page-list-item-arabic">
+						<a title="Translate this site in Arabic." href="http://translate.google.com/translate?hl=en&amp;sl=en&amp;tl=ar&amp;u=http%3A%2F%2Fbaltimorecountymd.gov/%2F">العربية</a>
+					</li>
+					<li class="translate-page-list-item translate-page-list-item-chinese">
+						<a title="Translate this site in Chinese." href="http://translate.google.com/translate?hl=en&amp;sl=en&amp;tl=zh-CN&amp;u=http%3A%2F%2Fbaltimorecountymd.gov/%2F">中文</a>
+					</li>
+					<li class="translate-page-list-item translate-page-list-item-french">
+						<a title="Translate this site in French." href="http://translate.google.com/translate?hl=en&amp;sl=en&amp;tl=fr&amp;u=http%3A%2F%2Fbaltimorecountymd.gov/%2F">Français</a>
+					</li>
+					<li class="translate-page-list-item translate-page-list-item-russian">
+						<a title="Translate this site in Russian." href="http://translate.google.com/translate?hl=en&amp;sl=en&amp;tl=ru&amp;u=http%3A%2F%2Fbaltimorecountymd.gov/%2F">Русский</a>
+					</li>
+					<li class="translate-page-list-item translate-page-list-item-spanish">
+						<a title="Translate this site in Spanish." href="http://translate.google.com/translate?hl=en&amp;sl=en&amp;tl=es&amp;u=http%3A%2F%2Fbaltimorecountymd.gov/%2F">Español</a>
+					</li>
+				</ul>
+			</section>
+			<section class="county-awards col-md-2 hidden-sm hidden-xs">
+				<h2>Awards</h2>
+				<ul class="county-awards-list">
+					<li class="county-awards-list-item">
+						<a href="http://www.govtech.com/dc/digital-counties/?year=2014" title="Learn more about Baltimore County's Digital Counties Survey Award."><img src="http://baltimorecountymd.gov/sebin/n/b/footer-map-digital-counties.jpg" alt="Image of Digital Counties Survey logo." /></a>
+					</li>
+					<li class="county-awards-list-item">
+						<a href="http://www.govtech.com//internet/2014-Best-of-the-Web-Award-Winners-Announced.html?page=2" title="Learn more about Baltimore County's Best of The Web Award." ><img src="http://baltimorecountymd.gov/sebin/l/i/footer-map-botw.jpg" alt="Image of Best of The Web logo." /></a>
+					</li>
+				</ul>
+			</section>
+			<ul class="social-media-list social-media-list-small inline-list col-sm-12 hidden-md hidden-lg">
+					<li class="social-media-list-item social-media-list-item-facebook">
+						<a href="">
+						</a>
+					</li>
+					<li class="social-media-list-item social-media-list-item-twitter">
+						<a href="">
+						</a>
+					</li>
+					<li class="social-media-list-item social-media-list-item-photos">
+						<a href="">
+						</a>
+					</li>
+					<li class="social-media-list-item social-media-list-item-youtube">
+						<a href="">
+						</a>
+					</li>
+					<li class="social-media-list-item social-media-list-item-bcnow">
+						<a href="">
+						</a>
+					</li>
+				</ul>
+		</section>
+		<section class="secondary-footer">
+			<div class="container">
+			<section class="copyright col-md-4 col-sm-12">
+				<span>&copy; Copyright 2015 Baltimore County Government</span>
+			</section>
+			<nav class="county-links col-md-8 col-sm-12">
+				<ul class="county-links-list inline-list">
+					<li class="county-links-list-item">
+						<a href="http://www.baltimorecountymd.gov/Contact/webmaster?issueid=42" title="Contact Baltimore County.">Contact Baltimore County</a>
+					</li>
+					<li class="county-links-list-item">
+						<a href="http://www.baltimorecountymd.gov/UserGuide/usertermsconditions.html" title="Review the User Terms for the Baltimore County website.">User Terms</a>
+					</li>
+					<li class="county-links-list-item">
+						<a href="http://www.baltimorecountymd.gov/UserGuide/usertermsconditions.html#privacy" title="Review the  Baltimore County privacy policy.">Privacy</a>
+					</li>
+					<li class="county-links-list-item">
+						<a href="http://www.baltimorecountymd.gov/Agencies/humanresources/jobs/index.html" title="View Baltimore County job listings.">Jobs</a>
+					</li>
+					<li class="county-links-list-item">
+						<a href="http://www.baltimorecountymd.gov/UserGuide/sitemap.html" title="View the Baltimore County site map.">Site Map</a>
+					</li>
+					<li class="county-links-list-item">
+						<a href="http://www.baltimorecountymd.gov/Agencies/ada/index.html" title="Learn more about Reasonable Accommodation.">Reasonable Accommodation</a>
+					</li>
+				</ul>
+			</nav>
+			</div>
+		</section>
+		<div class="full-site-container">
+			<button class="btn-link reView view-full-site-btn"  data-coreText='View Full Site' data-defaultText='View Mobile Site'>View Full Site</button>
+		</div>
+	</footer>
+</body>
+</html>
