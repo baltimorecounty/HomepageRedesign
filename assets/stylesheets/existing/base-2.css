@@ -1,400 +1,136 @@
 
-h1 {
-	font-family : Arial, Helvetica, sans-serif;
-	font-size : 1.8em;
-	font-weight : bold;
-	color : #000;
-	margin : 5px 0 20px 0;
+.seButton {
+	margin-top : 20px;
+	width : 100px;
 }
-h2 {
-	font-family : Arial, Helvetica, sans-serif;
-	font-size : 1.3em;
-	font-weight : bold;
-	color : #000;
-	margin : 5px 0 20px 0;
+.seCheckbox {
+	font-size : 10px;
+	padding-bottom : 10px;
 }
-h3 {
-	font-family : Arial, Helvetica, sans-serif;
-	font-size : 1.1em;
-	font-weight : bold;
-	color : #000;
-	margin : 5px 0 10px 0;
-}
-h4 {
-	font-family : Arial, Helvetica, sans-serif;
-	font-size : 1em;
-	color : #002280;
-	margin : 5px 0 20px 0;
-}
-h5 {
-	font-family : Arial, Helvetica, sans-serif;
-	font-size : 0.9em;
-	color : #002280;
-	margin : 5px 0 20px 0;
-}
-h6 {
-	font-family : Arial, Helvetica, sans-serif;
-	font-size : 0.7em;
-	color : #000;
-	margin : 5px 0 20px 0;
-	font-weight : lighter;
-}
-body, td {
-	font-family : Arial, Helvetica, sans-serif;
-	font-size : 0.96em;
-	color : #444;
-}
-#TableAlternativeRows caption {
-	font-family : Arial, Helvetica, sans-serif;
-	font-size : 12px;
-	text-align : left;
-	padding-top : 5px;
-	padding-right : 5px;
-	padding-bottom : 30px;
-	padding-left : 5px;
-}
-#TableAlternativeRows th {
-	font-family : Arial, Helvetica, sans-serif;
-	font-size : 13px;
-	font-weight : 800;
-	background-color : #f9cb65;
-	border-bottom-width : 2px;
-	border-bottom-style : solid;
-	border-bottom-color : #feb30b;
-}
-#TableAlternativeRows td {
-	border-right-width : 1px;
-	border-right-style : solid;
-	border-right-color : #FFF;
-	border-bottom-width : 1px;
-	border-bottom-style : solid;
-	border-bottom-color : #FFF;
-}
-#TableGrayBackground th {
-	font-family : Arial, Helvetica, sans-serif;
-	font-size : 13px;
-	font-weight : bold;
-	background-color : #a9a9a9;
-	color : #000;
-	border-bottom-width : 1px;
-	border-bottom-style : solid;
-	border-bottom-color : #FFF;
-}
-#TableGrayBackground tr {
-	background-color : #e9e9e9;
-}
-#TableGrayBackground td {
-	font-family : Arial, Helvetica, sans-serif;
-	font-size : 12px;
-	border-bottom-width : 1px;
-	border-bottom-style : solid;
-	border-bottom-color : #CCC;
-	padding : 5px;
-	text-align : left;
-}
-#TableGrayBackground {
-	border : 1px solid #a9a9a9;
-	padding-bottom : 20px;
-}
-#TableGrayBackground tr:hover {
-	font-weight : bold;
-	background-color : #f5f5f5;
-}
-#TableGrayBackground caption {
-	font-family : Arial, Helvetica, sans-serif;
-	font-size : 12px;
-	text-align : left;
-	padding-top : 5px;
-	padding-right : 5px;
-	padding-bottom : 30px;
-	padding-left : 5px;
-}
-#TableWhiteBackground caption {
-	font-family : Arial, Helvetica, sans-serif;
-	font-size : 12px;
-	text-align : left;
-	padding-top : 5px;
-	padding-right : 5px;
-	padding-bottom : 30px;
-	padding-left : 5px;
-}
-#TableWhiteBackground th {
-	font-family : Arial, Helvetica, sans-serif;
-	font-size : 13px;
-	font-weight : 200;
-	color : #333;
-	border-bottom-width : 2px;
-	border-bottom-style : solid;
-	border-bottom-color : #a9a9a9;
-	padding : 5px;
-	text-align : left;
-}
-#TableWhiteBackground tr:hover {
-	font-family : Arial, Helvetica, sans-serif;
-	font-size : 12px;
-	font-weight : bold;
-	color : #CCC;
-}
-#TableWhiteBackground td {
-	font-family : Arial, Helvetica, sans-serif;
-	font-size : 12px;
-	border-bottom-width : 1px;
-	border-bottom-style : solid;
-	border-bottom-color : #e9e9e9;
-	text-align : center;
-	padding : 5px;
-	color : #666;
-}
-.alternativeRowLight {
-	background-color : #f5f5f5;
+.seCheckboxLabel {
 	font-family : Arial, Helvetica, sans-serif;
 	font-size : 11px;
-	border-right-width : 1px;
-	border-right-style : none;
-	border-right-color : #e9e9e9;
 }
-.alternativeRowDark {
+.seControlCell,.seControl1 {
+	width : auto;
+	height : auto;
+	text-align : left;
+	padding : 0px 0px 15px;
+}
+.seElementRow {
+	width : 200px;
+	height : auto;
+}
+.seFieldCell {
+}
+.seHeaderTitle {
+	padding-top : 10px;
 	font-family : Arial, Helvetica, sans-serif;
 	font-size : 11px;
-	background-color : #e9e9e9;
-	border-right-width : 1px;
-	border-right-style : none;
-	border-right-color : #f5f5f5;
+	font-weight : bold;
 }
-.callout_box {
-	padding : 10px;
-	border : 2px solid #c51110;
+.seLabelCell {
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 11px;
+	font-weight : bold;
+	color : #000000;
+	width : 80px;
+	text-align : left;
+	padding-left : 8px;
+}
+.seLabelTitle {
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 11px;
+	color : #000000;
+}
+.seLabelTitle,.seLabelPosRight,.seFirstChild {
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 12px;
+	padding-left : 12px;
+}
+.seRadio {
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 12px;
+}
+.seRadioLabel {
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 11px;
+	color : #000000;
+	width : auto;
+}
+.seRequiredMarker {
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 12px;
+	color : #CC0000;
+}
+.seText {
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 11px;
+	color : #000000;
+	padding-bottom : 4px;
+	font-weight : bold;
 	margin : 10px 10px 10px 0;
+}
+fieldset {
 	float : left;
-	width : 480px;
+	width : 100%;
+	height : auto;
+	border-top : 1px solid #fff;
+	border-bottom : 1px solid #fff;
+	border-left-style : none;
+	border-right-style : none;
+	background-position : bottom left;
+	background-repeat : repeat-x;
+	padding : 0;
+	margin : 0;
 }
-.image_float_caption {
-	float : left;
+legend {
 	font-family : Arial, Helvetica, sans-serif;
-	font-size : 11px;
-	margin-top : 10px;
-	color : #000;
-	margin-left : 5px;
-	margin-right : 5px;
-	margin-bottom : 7px;
-}
-.alternativeRowYellow {
-	background-color : #feb30b;
-	font-family : Arial, Helvetica, sans-serif;
-	font-size : 11px;
-	border-right : 1px dotted #e9e9e9;
-}
-#BACO_table {
-	font-family : Arial, Helvetica, sans-serif;
-	font-size : 1em;
-	background : #fff;
-	margin : 10px 10px 10px 0;
-	border-collapse : collapse;
-	text-align : left;
-}
-#BACO_table td {
-	color : #000;
-	font-family : Arial, Helvetica, sans-serif;
-	font-size : 1em;
-	padding : 6px 10px;
-	border-top : 1px dotted #999;
-}
-#BACO_table tbody tr:hover td {
-	color : #000;
-	background-color : #ebebeb;
-}
-.BACOTableHeader {
 	font-size : 14px;
 	font-weight : bold;
-	font-family : Arial, Helvetica, sans-serif;
+	color : #000000;
+	height : auto;
+	padding : 3px;
+	background-color : transparent;
+}
+.seText div {
 	color : #000;
-	padding : 10px 8px;
-	border-bottom : 2px solid #c51110;
+	font-weight : normal;
+	padding : 10px 0 0 0 ;
+	width : 520px;
+	margin-bottom : 20px;
 }
-#BACO_table tbody tr:hover td.BACOTableHeader {
-	background-color : #fff;
-}
-#BACO_relatedtopics {
-	width : 510px;
-	float : left;
-	height : auto;
-	margin-bottom : 10px;
-	margin-top : 10px;
-	background-image : url("http://baltimorecountymd.gov/sebin/i/h/relatedtopics.gif");
-	padding-top : 40px;
-	padding-left : 10px;
-	padding-right : 10px;
-	background-position : top center;
-	background-repeat : no-repeat;
-	border-bottom : 1px solid #c51110;
-	border-left : 1px solid #c51110;
-	border-right : 1px solid #c51110;
-	padding-bottom : 20px;
-	margin-right : 15px;
-}
-.fixedwidthdiv {
-	width : 620px;
-	float : left;
-}
-.float_left {
-	float : left;
-}
-.float_right {
-	float : right;
-}
-#divclear {
-	clear : both;
-}
-.callout_gray {
-	background-color : #EBEBEB;
-	padding : 10px;
-	margin : 10px 10px 10px 0;
-	float : left;
-}
-.callout_grayfixedwidth {
-	background-color : #ebebeb;
-	padding : 10px;
-	margin : 10px 10px 10px 0;
-	float : left;
-	width : 500px;
+.horizontal {
+	width : auto;
 	height : auto;
 }
-#fixedwidthdiv {
-	width : 900px;
-	float : left;
-}
-.image_left {
-	border : 1px solid #ccc;
-	padding : 5px;
-	float : left;
-	margin : 10px 15px 10px 0px;
+select {
 	font-family : Arial, Helvetica, sans-serif;
 	font-size : 11px;
-	color : #000;
+	padding : 3px;
 }
-.image_right {
-	border : 1px solid #ccc;
-	padding : 5px;
+.seInput {
+	width : 390px;
+}
+.seTextarea {
+	width : 330px;
+	height : 40px;
+}
+.seText select {
+	width : 395px;
 	float : right;
-	margin : 10px 15px 10px 15px;
-	font-size : 11px;
-	color : #000;
-	font-family : Arial, Helvetica, sans-serif;
 }
-#feed_container_right {
-	float : left;
-	display : inline;
-	height : auto;
-	margin : 0 15px 7px 0;
-	padding : 0;
-	width : 205px;
-}
-.callout_grayfixedwidth2 {
-	background-color : #ebebeb;
-	padding : 10px;
-	margin : 10px 10px 10px 0;
-	float : left;
-	width : 550px;
-	height : auto;
-}
-.scrollingdiv {
-	width : 480px;
-	overflow : scroll;
-	padding : 10px;
-	height : 150px;
-	background-color : #fff;
-}
-#singlePlayerContainer {
-	background-color : #dedede;
-	background-image : url("http://baltimorecountymd.gov/sebin/x/m/video_small_background.jpg");
-	background-position : center top;
-	background-repeat : no-repeat;
-	border : 1px solid #666;
-	height : auto;
-	padding : 65px 0 15px;
-	text-align : center;
-	width : 310px;
-}
-.full_right {
+.seCaption {
 	float : right;
-	padding : 0;
-	padding-right : 0;
-	direction : ltr;
-	margin-left : 15px;
-	margin-bottom : 5px;
-	margin-top : 5px;
 }
-#BACO_table ul {
-	list-style-image : url("http://baltimorecountymd.gov/sebin/k/e/red_square.gif");
-	list-style-position : outside;
-	margin : 0 0 0 10px;
-	padding : 0 0 0 5px;
-}
-#BACO_table ul li {
-	margin : 0 0 5px 0;
-}
-.callout_news {
-	width : 90%;
-	border : 2px solid #c51110;
-	margin : 10px 10px 10px 0;
+.vertical {
 	float : left;
-	padding : 10px;
 }
-#twocolumn {
-	margin-right : 10 px;
+.btnreset {
 	float : left;
-	display : inline;
-	width : 40%;
+	width : 200px;
 }
-.image_right300 {
-	border : 1px solid #ccc;
-	padding : 10px;
-	float : right;
-	margin : 10px;
-	width : 300px;
-}
-.yellowHeader {
-	background-color : #ffcc66;
-	padding : 5px;
-	width : 100%;
-}
-.BACOTableLargeText {
-	font-size : 1em;
-	font-weight : bold;
-	font-family : Arial, Helvetica, sans-serif;
-}
-.greentitle {
-	color : #fff;
-	font-size : 1.1em;
-	font-weight : bold;
-	margin : 0;
-	padding : 10px 0 0 10px;
-	display : block;
-	background-image : url(http://baltimorecountymd.gov/sebin/d/k/background-h2.jpg);
-	background-repeat : repeat-x;
-	height : 51px;
-}
-#mainContent a.contentButton {
-	text-decoration : none;
-	color : #000;
-	border : 1px solid #666;
-	padding : 5px 10px;
-	background-color : #FEB30B;
-	cursor : pointer;
-	font-family : Arial, Helvetica, sans-serif;
-	font-size : 1em;
-	font-weight : bold;
-	margin : 0 0 25px;
-	text-align : center;
-	text-transform : uppercase;
-	display : table;
-}
-#mainContent a.contentButton:hover {
-	background-color : #e8d664;
-}
-#divclearLeft {
-	clear : left;
-}
-#divclearRight {
-	clear : right;
+.btnsubmit {
+	float : left;
+	width : 200px;
 }
