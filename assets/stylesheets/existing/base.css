@@ -1,4 +1,3 @@
-
 #SECalendarTable .SECalendarDay .pastDayWeekend {
 	background-repeat : inherit;
 }
@@ -96,14 +95,14 @@ h6 {
 }
 #backgroundgradient {
 	width : 100%;
-	background-image : url(http://baltimorecountymd.gov/sebin/f/n/gradient-background.jpg);
+	background-image : url(/sebin/f/n/gradient-background.jpg);
 	background-position : top;
 	background-repeat : repeat-x;
 }
 #backgroundshadow {
 	width : 100%;
 	height : auto;
-	background-image : url(http://baltimorecountymd.gov/sebin/b/h/background-shadow-subpage.png);
+	background-image : url(/sebin/b/h/background-shadow-subpage.png);
 	background-position : top center;
 	background-repeat : repeat-y;
 	padding : 0 0 20px;
@@ -114,7 +113,7 @@ h6 {
 	margin : 0 auto;
 }
 #header {
-	background-image : url(http://baltimorecountymd.gov/sebin/z/b/gradient-header.jpg);
+	background-image : url(/sebin/z/b/gradient-header.jpg);
 	background-position : top;
 	background-repeat : repeat-x;
 	width : 100%;
@@ -125,7 +124,7 @@ h6 {
 	margin : auto;
 }
 .logobox {
-	background-image : url(http://baltimorecountymd.gov/sebin/f/h/seal-new.jpg);
+	background-image : url(/sebin/f/h/seal-new.jpg);
 	background-repeat : no-repeat;
 	background-position : top left;
 	width : 254px;
@@ -134,7 +133,7 @@ h6 {
 	display : inline;
 }
 .logoboxbottom {
-	background-image : url(http://baltimorecountymd.gov/sebin/c/k/logo-sub.gif);
+	background-image : url(/sebin/c/k/logo-sub.gif);
 	background-repeat : no-repeat;
 	background-position : top left;
 	width : 200px;
@@ -236,8 +235,6 @@ h6 {
 #sa .hover {
 	background-color : #000;
 }
-#search_area {
-}
 #q {
 	margin : 0 0 0 3px;
 	width : 320px;
@@ -257,8 +254,6 @@ ul.megamenu {
 	width : 744px;
 	height : 37px;
 }
-ul.megamenu li.mm-item {
-}
 ul.megamenu li {
 	font-family : Arial, Helvetica, sans-serif;
 	font-weight : bold;
@@ -271,7 +266,7 @@ ul.megamenu li {
 }
 ul.megamenu li.main {
 	border-left : 1px solid #333;
-	background-image : url(http://baltimorecountymd.gov/sebin/l/y/background-secondarynav.jpg);
+	background-image : url(/sebin/l/y/background-secondarynav.jpg);
 	background-position : top right;
 	background-repeat : no-repeat;
 }
@@ -311,7 +306,7 @@ ul.megamenu a.mm-item-link-hover:link, ul.megamenu a.mm-item-link-hover:visited 
 	height : 17px;
 	padding : 10px 20px;
 	display : inline-block;
-	background-image : url(http://baltimorecountymd.gov/sebin/r/n/background-secondarynav-hover.jpg);
+	background-image : url(/sebin/r/n/background-secondarynav-hover.jpg);
 	background-position : top right;
 	background-repeat : no-repeat;
 }
@@ -406,7 +401,7 @@ ul.megamenu div.mm-item-content {
 	list-style-type : none;
 	padding : 0;
 	width : 248px;
-	background-image : url(http://baltimorecountymd.gov/sebin/i/v/background-findingaid.gif);
+	background-image : url(/sebin/i/v/background-findingaid.gif);
 	background-position : top;
 	background-repeat : no-repeat;
 	display : block;
@@ -426,7 +421,7 @@ ul.megamenu div.mm-item-content {
 #navigation_primary li a:hover {
 	color : #fff;
 	font-family : Arial, Helvetica, sans-serif;
-	background-image : url(http://baltimorecountymd.gov/sebin/c/i/background-findingaid-hover.gif);
+	background-image : url(/sebin/c/i/background-findingaid-hover.gif);
 	background-position : top;
 	display : inline-block;
 	list-style-type : none;
@@ -458,7 +453,7 @@ ul.megamenu div.mm-item-content {
 	padding : 0 0 0  25px;
 	margin : 0;
 	text-decoration : none;
-	background-image : url(http://baltimorecountymd.gov/sebin/q/r/most-requested-arrow.gif);
+	background-image : url(/sebin/q/r/most-requested-arrow.gif);
 	background-position : left center;
 	background-repeat : no-repeat;
 	display : block;
@@ -474,7 +469,7 @@ ul.megamenu div.mm-item-content {
 	background-position : left center;
 	background-repeat : no-repeat;
 	display : block;
-	background-image : url(http://baltimorecountymd.gov/sebin/m/n/most-requested-arrow-hover.gif);
+	background-image : url(/sebin/m/n/most-requested-arrow-hover.gif);
 }
 #container_localnavigation li.title {
 	margin : 0;
@@ -491,7 +486,7 @@ ul.megamenu div.mm-item-content {
 	width : 497px;
 	height : auto;
 	padding : 10px 0;
-	background-image : url(http://baltimorecountymd.gov/sebin/z/h/background-news.jpg);
+	background-image : url(/sebin/z/h/background-news.jpg);
 	background-position : top center;
 	background-repeat : repeat-y;
 	float : left;
@@ -502,7 +497,7 @@ ul.megamenu div.mm-item-content {
 	margin : 8px 0 0 0;
 	height : 9px;
 	padding : 0;
-	background-image : url(http://baltimorecountymd.gov/sebin/b/j/background-news-top.jpg);
+	background-image : url(/sebin/b/j/background-news-top.jpg);
 	background-position : top center;
 	float : left;
 	display : inline;
@@ -512,7 +507,7 @@ ul.megamenu div.mm-item-content {
 	margin : 0;
 	height : 9px;
 	padding : 0;
-	background-image : url(http://baltimorecountymd.gov/sebin/x/w/background-news-bottom.jpg);
+	background-image : url(/sebin/x/w/background-news-bottom.jpg);
 	background-position : top center;
 	background-repeat : no-repeat;
 	float : left;
@@ -527,8 +522,8 @@ ul.megamenu div.mm-item-content {
 	text-transform : uppercase;
 	background-image : none;
 	width : 460px;
-}
-}  #county_news .itemURL {
+}  
+#county_news .itemURL {
 	display : none;
 }
 #county_news .pubDate {
@@ -540,12 +535,8 @@ ul.megamenu div.mm-item-content {
 #county_news h1 {
 	display : none;
 }
-#county_news h3.title {
-}
 #county_news ol {
 	list-style-type : none;
-}
-#county_news ol li {
 }
 #county_news ol.feedItems {
 	margin : 20px 0px 0px 30px;
@@ -561,7 +552,7 @@ ul.megamenu div.mm-item-content {
 	width : 497px;
 	height : auto;
 	padding : 10px 0;
-	background-image : url(http://baltimorecountymd.gov/sebin/z/h/background-news.jpg);
+	background-image : url(/sebin/z/h/background-news.jpg);
 	background-position : top center;
 	background-repeat : repeat-y;
 	float : left;
@@ -610,7 +601,7 @@ ul.megamenu div.mm-item-content {
 	margin : 8px 0 0 0;
 	height : 9px;
 	padding : 0;
-	background-image : url(http://baltimorecountymd.gov/sebin/b/j/background-news-top.jpg);
+	background-image : url(/sebin/b/j/background-news-top.jpg);
 	background-position : top center;
 	float : left;
 	display : inline;
@@ -620,7 +611,7 @@ ul.megamenu div.mm-item-content {
 	margin : 0;
 	height : 9px;
 	padding : 0;
-	background-image : url(http://baltimorecountymd.gov/sebin/x/w/background-news-bottom.jpg);
+	background-image : url(/sebin/x/w/background-news-bottom.jpg);
 	background-position : top center;
 	background-repeat : no-repeat;
 	float : left;
@@ -709,7 +700,7 @@ ul.megamenu div.mm-item-content {
 	margin : 8px 0 0 0;
 	height : 9px;
 	padding : 0;
-	background-image : url(http://baltimorecountymd.gov/sebin/b/j/background-news-top.jpg);
+	background-image : url(/sebin/b/j/background-news-top.jpg);
 	background-position : top center;
 	float : left;
 	display : inline;
@@ -719,7 +710,7 @@ ul.megamenu div.mm-item-content {
 	margin : 0;
 	height : 9px;
 	padding : 0;
-	background-image : url(http://baltimorecountymd.gov/sebin/x/w/background-news-bottom.jpg);
+	background-image : url(/sebin/x/w/background-news-bottom.jpg);
 	background-position : top center;
 	background-repeat : no-repeat;
 	float : left;
@@ -774,7 +765,7 @@ ul.megamenu div.mm-item-content {
 	list-style-type : none;
 	padding : 0;
 	width : 248px;
-	background-image : url(http://baltimorecountymd.gov/sebin/c/i/background-findingaid-hover.gif);
+	background-image : url(/sebin/c/i/background-findingaid-hover.gif);
 	background-position : top;
 	background-repeat : no-repeat;
 	display : block;
@@ -802,7 +793,7 @@ ul.megamenu div.mm-item-content {
 	width : 180px;
 }
 #relatedtopics table {
-	background-image : url(http://baltimorecountymd.gov/sebin/i/f/background-related-topics.gif);
+	background-image : url(/sebin/i/f/background-related-topics.gif);
 	background-position : center top;
 	background-repeat : no-repeat;
 	border-top : 6px solid #cacaca;
@@ -863,7 +854,7 @@ ul.megamenu div.mm-item-content {
 	font-size : 11px;
 	margin : 0 0 0 5px;
 	padding : 10px 0 0 10px;
-	list-style-image : url("http://baltimorecountymd.gov/sebin/k/e/red_square.gif");
+	list-style-image : url("/sebin/k/e/red_square.gif");
 	list-style-position : outside;
 }
 #baco_subnav {
@@ -875,7 +866,7 @@ ul.megamenu div.mm-item-content {
 }
 #baco_subnav .divnav1 {
 	margin : 2px 0px 0px 0px;
-	background-image : url(http://baltimorecountymd.gov/sebin/c/s/header-in-this-section.gif);
+	background-image : url(/sebin/c/s/header-in-this-section.gif);
 	background-position : left top;
 	background-repeat : no-repeat;
 	padding : 25px 0 0;
@@ -889,7 +880,7 @@ ul.megamenu div.mm-item-content {
 	padding-top : 25px;
 }
 #baco_subnav table {
-	background-image : url(http://baltimorecountymd.gov/sebin/c/s/header-in-this-section.gif);
+	background-image : url(/sebin/c/s/header-in-this-section.gif);
 	background-position : center top;
 	background-repeat : no-repeat;
 	border-top : 6px solid #CACACA;
@@ -900,13 +891,13 @@ ul.megamenu div.mm-item-content {
 	margin : 0;
 	padding : 5px 0 5px 25px;
 	width : 190px;
-	background-image : url(http://baltimorecountymd.gov/sebin/q/r/most-requested-arrow.gif);
+	background-image : url(/sebin/q/r/most-requested-arrow.gif);
 	background-position : left center;
 	background-repeat : no-repeat;
 	font-weight : normal;
 }
 #baco_subnav a.smalltext:hover {
-	background-image : url(http://baltimorecountymd.gov/sebin/m/n/most-requested-arrow-hover.gif);
+	background-image : url(/sebin/m/n/most-requested-arrow-hover.gif);
 	background-position : left center;
 	background-repeat : no-repeat;
 }
@@ -946,7 +937,7 @@ ul.megamenu div.mm-item-content {
 	padding : 5px 0 5px 25px;
 	text-decoration : underline;
 	display : block;
-	background-image : url(http://baltimorecountymd.gov/sebin/m/n/most-requested-arrow-hover.gif);
+	background-image : url(/sebin/m/n/most-requested-arrow-hover.gif);
 	background-position : left center;
 	background-repeat : no-repeat;
 }
@@ -1004,7 +995,7 @@ ul.megamenu div.mm-item-content {
 	border-bottom-width : 1px;
 	border-bottom-style : solid;
 	border-bottom-color : #666;
-	background-image : url(http://baltimorecountymd.gov/sebin/j/p/monthbkgd.jpg);
+	background-image : url(/sebin/j/p/monthbkgd.jpg);
 	vertical-align : top;
 }
 #SECalendarTable .SECalendarCurrentEvents {
@@ -1014,7 +1005,7 @@ ul.megamenu div.mm-item-content {
 	border-bottom-color : #666;
 	background-repeat : repeat-x;
 	background-position : left top;
-	background-image : url(http://baltimorecountymd.gov/sebin/j/p/monthbkgd.jpg);
+	background-image : url(/sebin/j/p/monthbkgd.jpg);
 	vertical-align : top;
 	background-color : #f5f5f5;
 }
@@ -1025,7 +1016,7 @@ ul.megamenu div.mm-item-content {
 	border-bottom-color : #666;
 	background-repeat : repeat-x;
 	background-position : left top;
-	background-image : url(http://baltimorecountymd.gov/sebin/j/p/monthbkgd.jpg);
+	background-image : url(/sebin/j/p/monthbkgd.jpg);
 	vertical-align : top;
 	background-color : #f5f5f5;
 }
@@ -1151,8 +1142,6 @@ ul.megamenu div.mm-item-content {
 	font-family : Arial, Helvetica, sans-serif;
 	font-size : 18px;
 	color : #000;
-}
-#searchButton img {
 }
 .SEEventType {
 	font-family : Arial, Helvetica, sans-serif;
@@ -1315,7 +1304,7 @@ select {
 	border-top-style : solid;
 	border-top-color : #333;
 	margin-top : 10px;
-	background-image : url(http://baltimorecountymd.gov/sebin/v/p/detailbkgd2.jpg);
+	background-image : url(/sebin/v/p/detailbkgd2.jpg);
 }
 #EmailFriendForm {
 	margin-left : 50px;
@@ -1356,7 +1345,7 @@ select {
 	border-top-style : solid;
 	border-top-color : #000;
 	margin-top : 35px;
-	background-image : url(http://baltimorecountymd.gov/sebin/v/p/detailbkgd2.jpg);
+	background-image : url(/sebin/v/p/detailbkgd2.jpg);
 }
 #RemindMeForm {
 	margin-left : 40px;
@@ -1525,7 +1514,7 @@ select {
 	border-top-width : 1px;
 	border-top-style : solid;
 	border-top-color : #000;
-	background-image : url(http://baltimorecountymd.gov/sebin/v/p/detailbkgd2.jpg);
+	background-image : url(/sebin/v/p/detailbkgd2.jpg);
 }
 #OnlineRegistrationForm .SEEventRegisterLabel {
 	text-align : right;
@@ -1627,16 +1616,14 @@ select {
 	height : 50px;
 }
 #CalendarContainer {
-	background-image : url("http://baltimorecountymd.gov/se/images/mod/semod_eventcal/right_arrow.gif");
+	background-image : url("/se/images/mod/semod_eventcal/right_arrow.gif");
 }
 #weather_update_container {
 	width : 200px;
-	background-image : url(http://baltimorecountymd.gov/sebin/k/i/baltco_hdr_weatherfeed.gif);
+	background-image : url(/sebin/k/i/baltco_hdr_weatherfeed.gif);
 	background-repeat : no-repeat;
 	background-position : center top;
 	margin-left : 15px;
-}
-#weather_update_container .description {
 }
 #weather_update_container .extras {
 	font-weight : bold;
@@ -1667,7 +1654,7 @@ select {
 	width : 200px;
 	padding : 3px 0px 0px 0px;
 	margin : 0 0 0 15px;
-	background-image : url(http://baltimorecountymd.gov/sebin/e/l/baltco_hdr_weatherfeed-bottomlink.gif );
+	background-image : url(/sebin/e/l/baltco_hdr_weatherfeed-bottomlink.gif );
 	height : 28px;
 	background-repeat : no-repeat;
 	background-position : top;
@@ -1722,8 +1709,6 @@ select {
 	background-position : top;
 	background-repeat : no-repeat;
 }
-#twitter_update_container ol {
-}
 #twitter_update_container .description {
 	display : none;
 }
@@ -1749,7 +1734,7 @@ select {
 #drinkswrapper .accordionButton {
 	width : 580px;
 	float : left;
-	background-image : url(http://baltimorecountymd.gov/sebin/d/q/drinksmenu_hdr_button.jpg);
+	background-image : url(/sebin/d/q/drinksmenu_hdr_button.jpg);
 	background-position : top center;
 	background-repeat : no-repeat;
 	padding : 5px 10px;
@@ -1767,14 +1752,14 @@ select {
 	margin-bottom : -1px;
 }
 #drinkswrapper .on {
-	background-image : url(http://baltimorecountymd.gov/sebin/d/k/drinksmenu_hdr_active.jpg);
+	background-image : url(/sebin/d/k/drinksmenu_hdr_active.jpg);
 	background-position : top center;
 	background-repeat : no-repeat;
 	color : #fff;
 	font-family : Arial, Helvetica, sans-serif;
 }
 #drinkswrapper .over {
-	background-image : url(http://baltimorecountymd.gov/sebin/v/t/drinksmenu_hdr_over.jpg);
+	background-image : url(/sebin/v/t/drinksmenu_hdr_over.jpg);
 	background-position : top center;
 	background-repeat : no-repeat;
 	color : #000;
@@ -1785,8 +1770,6 @@ select {
 #tulipTVPlayerDiv {
 	padding : 50px 0 0;
 	width : 480px;
-}
-.tulipMain {
 }
 .tulipTVPlayerContainerTitle {
 	color : #feb30c;
@@ -1812,8 +1795,6 @@ select {
 	color : #ccc;
 	clear : both;
 	margin : 0 0 0 15px;
-}
-#tulipTVChannelChoice {
 }
 #tulipTVChannelChoiceName {
 	font-size : 1.3em;
@@ -1856,7 +1837,7 @@ select {
 	padding : 65px 0 15px;
 	height : auto;
 	text-align : center;
-	background-image : url(http://baltimorecountymd.gov/sebin/x/m/video_small_background.jpg);
+	background-image : url(/sebin/x/m/video_small_background.jpg);
 	background-position : top center;
 	background-repeat : no-repeat;
 	border : 1px solid #666;
@@ -1878,7 +1859,7 @@ div#tulipTVThumbs div.tulipShow {
 	background-color : #000;
 	width : 480px;
 	padding : 0 0 15px;
-	background-image : url("http://baltimorecountymd.gov/sebin/q/v/header_media_exec.gif");
+	background-image : url("/sebin/q/v/header_media_exec.gif");
 	background-position : top left;
 	background-repeat : no-repeat;
 }
@@ -1886,7 +1867,7 @@ div#tulipTVThumbs div.tulipShow {
 	font-weight : bold;
 }
 .vidheaderAnsweringTheCall {
-	background-image : url(http://baltimorecountymd.gov/sebin/g/w/header_answeringthecall.gif);
+	background-image : url(/sebin/g/w/header_answeringthecall.gif);
 	background-position : top left;
 	background-repeat : no-repeat;
 }
@@ -1925,7 +1906,7 @@ div#tulipTVThumbs div.tulipShow {
 	margin-top : 10px;
 }
 #navaccordion .accordionButton {
-	background-image : url(http://baltimorecountymd.gov/sebin/i/z/accordionArrow.gif);
+	background-image : url(/sebin/i/z/accordionArrow.gif);
 	background-position : left top;
 	background-repeat : no-repeat;
 	cursor : pointer;
@@ -1941,7 +1922,7 @@ div#tulipTVThumbs div.tulipShow {
 	padding-left : 20px;
 }
 #navaccordion .on {
-	background-image : url(http://baltimorecountymd.gov/sebin/s/g/accordionArrowSelected.gif);
+	background-image : url(/sebin/s/g/accordionArrowSelected.gif);
 	border-bottom : 1px solid #fff;
 	background-position : left top;
 	background-repeat : no-repeat;
@@ -2068,7 +2049,7 @@ input#mce-EMAIL {
 	padding : 0 0 0  25px;
 	margin : 0;
 	text-decoration : none;
-	background-image : url(http://baltimorecountymd.gov/sebin/q/r/most-requested-arrow.gif);
+	background-image : url(/sebin/q/r/most-requested-arrow.gif);
 	background-position : left center;
 	background-repeat : no-repeat;
 	display : block;
@@ -2081,7 +2062,7 @@ input#mce-EMAIL {
 	padding : 0 0 0 25px;
 	margin : 0;
 	text-decoration : underline;
-	background-image : url(http://baltimorecountymd.gov/sebin/m/n/most-requested-arrow-hover.gif);
+	background-image : url(/sebin/m/n/most-requested-arrow-hover.gif);
 	background-position : left center;
 	background-repeat : no-repeat;
 	display : block;
@@ -2128,13 +2109,13 @@ input#mce-EMAIL {
 	font-weight : normal;
 }
 #relatedtopicssearch table {
-	background-image : url(http://baltimorecountymd.gov/sebin/w/m/background-best-bets.gif);
+	background-image : url(/sebin/w/m/background-best-bets.gif);
 	background-position : center top;
 	background-repeat : no-repeat;
 	border-top : 6px solid #cacaca;
 }
 .activePage {
-	background-image : url(http://baltimorecountymd.gov/sebin/m/n/most-requested-arrow-hover.gif);
+	background-image : url(/sebin/m/n/most-requested-arrow-hover.gif);
 	background-repeat : no-repeat;
 	background-position : left center;
 	display : inline-block;
@@ -2167,8 +2148,6 @@ input#mce-EMAIL {
 .smallview {
 	font-size : 13px;
 }
-.normalview {
-}
 .largeview {
 	font-size : 18px;
 }
@@ -2191,7 +2170,7 @@ a.selectedtoggler img {
 	padding-bottom : 2px;
 }
 #backgroundgradient img, #backgroundgradient div {
-	behavior : url(http://baltimorecountymd.gov/sebin/h/k/iepngfix.htc);
+	behavior : url(/sebin/h/k/iepngfix.htc);
 }
 #container_localnavigation ul.sub {
 	padding : 0;
@@ -2211,12 +2190,6 @@ a.selectedtoggler img {
 	margin : 20px 0 0 50px;
 	padding : 10px 4px 5px 0;
 }
-img {
-}
-#SECalendarEventWrapper .SECalendarEventDetails {
-}
-#SECalendarNav, #SECalendarSearch {
-}
 #SECalendarTable td, #SECalendarTable th, .SECalendarSmallCal td, .SECalendarSmallCal td, #SECalendarWrapper, #SECalendarSummaryWrapper, #SECalendarListWrapper, #SECalendarEventWrapper, #SEEventForm {
 	font-family : Arial, Helvetica, sans-serif;
 	font-size : 13px;
@@ -2229,16 +2202,8 @@ img {
 	width : 84px;
 	margin : 15px 0 0;
 }
-.SECalendarKeyword input, .SECalendarLocation input, .SECalendarType input {
-}
 .SECalendarKeyword select, .SECalendarLocation select, .SECalendarType select {
 	width : 160px;
-}
-.SECalendarKeyword, .SECalendarLocation, .SECalendarType {
-}
-.SEApplicationForm {
-}
-.SEApplicationSelector {
 }
 .SEApplicationSubmit {
 	display : inline;
@@ -2246,16 +2211,8 @@ img {
 	margin : 30px 0 50px;
 	clear : both;
 }
-.SEApplicationText {
-}
-.SEApplicationCheckbox {
-}
-.SEApplicationTextArea {
-}
 .SEClear {
 	height : 0px;
-}
-.rssLink {
 }
 #SECalendarSearch {
 	float : left;
@@ -2270,56 +2227,12 @@ img {
 	border-top : 1px solid #999;
 	padding : 15px 0 0;
 }
-#calendarSearchForm .SEApplicationSubmit {
-}
-#eventLocation {
-}
-#eventType {
-}
-.SECalendarKeyword {
-}
-.SECalendarKeyword label {
-}
-.SECalendarKeyword input {
-}
-.SECalendarLocation {
-}
-.SECalendarLocation label {
-}
-.SECalendarLocation input {
-}
-.SECalendarType {
-}
-.SECalendarType label {
-}
-.SECalendarType input {
-}
+
 .SECalendarFilterSelected {
 	background-color : #990000;
 	padding : 0 5px;
 }
-.SECalendarDay {
-}
-.SECalendarDay.pastDay {
-}
-.SECalendarDay.pastDayWeekend {
-}
-.SECalendarDay.pastDayOtherMonth {
-}
-.SECalendarDay.pastDayOtherMonthWeekend {
-}
-.SECalendarDay.currentDay {
-}
-.SECalendarDay.currentDayWeekend {
-}
-.SECalendarDay.futureDay {
-}
-.SECalendarDay.futureDayWeekend {
-}
-.SECalendarDay.futureDayOtherMonth {
-}
-.SECalendarDay.futureDayOtherMonthWeekend {
-}
+
 .SECalendarDay.controls {
 	padding : 0;
 }
@@ -2334,7 +2247,7 @@ img {
 	width : 20px;
 }
 #SECalendarSmallCalPrevious a {
-	background-image : url("http://baltimorecountymd.gov/sebin/w/v/left_arrow.gif");
+	background-image : url("/sebin/w/v/left_arrow.gif");
 	background-position : 5px 4px;
 	background-repeat : no-repeat;
 }
@@ -2347,62 +2260,11 @@ img {
 	margin : 5px 0;
 }
 #SECalendarSmallCalNext a {
-	background-image : url("http://baltimorecountymd.gov/sebin/i/w/right_arrow.gif");
+	background-image : url("/sebin/i/w/right_arrow.gif");
 	background-position : 5px 4px;
 	background-repeat : no-repeat;
 }
-.SECalendarDay a {
-}
-.SECalendarDay a:hover {
-}
-.SECalendarDay.pastDay a {
-}
-.SECalendarDay.pastDayWeekend a {
-}
-.SECalendarDay.pastDayOtherMonth a {
-}
-.SECalendarDay.pastDayOtherMonthWeekend a {
-}
-.SECalendarDay.currentDay a {
-}
-.SECalendarDay.currentDayWeekend a {
-}
-.SECalendarDay.futureDay a {
-}
-.SECalendarDay.futureDayWeekend a {
-}
-.SECalendarDay.futureDayOtherMonth a {
-}
-.SECalendarDay.futureDayOtherMonthWeekend a {
-}
-.SECalendarDay.pastDay a:hover {
-}
-.SECalendarDay.pastDayWeekend a:hover {
-}
-.SECalendarDay.pastDayOtherMonth a:hover {
-}
-.SECalendarDay.pastDayOtherMonthWeekend a:hover {
-}
-.SECalendarDay.currentDay a:hover {
-}
-.SECalendarDay.currentDayWeekend a:hover {
-}
-.SECalendarDay.futureDay a:hover {
-}
-.SECalendarDay.futureDayWeekend a:hover {
-}
-.SECalendarDay.futureDayOtherMonth a:hover {
-}
-.SECalendarDay.futureDayOtherMonthWeekend a:hover {
-}
-#SECalendarCurrentDay a {
-}
-#SECalendarCurrentDay a:hover {
-}
-#SECalendarCurrentDay {
-}
-.SECalendarSmallCal {
-}
+
 .SECalendarFilter {
 	background-color : #c51110;
 	color : #fff;
@@ -2414,175 +2276,11 @@ img {
 	width : 464px;
 	float : left;
 }
-.SECalendarSelectedWeek {
-}
-.SECalendarSelectedDay {
-}
-#SECalendarWrapper {
-}
-#SECalendar {
-}
-#SECalendarTable {
-}
-.SECalendarDOW {
-}
-.SECalendarDOWEnd {
-}
-#SECalendarCurrentEvent {
-}
-tr.SECalendarPastWeekDays {
-}
-tr.SECalendarPastWeekDays td {
-}
-tr.SECalendarPastWeekEvents {
-}
-tr.SECalendarPastWeekEvents td {
-}
-tr.SECalendarCurrentWeekDays {
-}
-tr.SECalendarCurrentWeekDays td {
-}
-tr.SECalendarCurrentWeekEvents {
-}
-tr.SECalendarCurrentWeekEvents td {
-}
-tr.SECalendarFutureWeekDays {
-}
-tr.SECalendarFutureWeekDays td {
-}
-tr.SECalendarFutureWeekEvents {
-}
-tr.SECalendarFutureWeekEvents td {
-}
-td.SECalendarEvent {
-}
-td.SECalendarEvent.currentEvent {
-}
-td.SECalendarEvent.currentEvent div.SECalendarEventDetails {
-}
-td.SECalendarEvent.currentEventWeekend {
-}
-td.SECalendarEvent.futureEvent {
-}
-td.SECalendarEvent.pastEvent {
-}
-td.SECalendarEvent.futureEventWeekend {
-}
-td.SECalendarEvent.pastEventWeekend {
-}
-td.SECalendarEvent.futureEventOtherMonth {
-}
-td.SECalendarEvent.futureEventOtherMonthWeekend {
-}
-td.SECalendarEvent.pastEventOtherMonth {
-}
-td.SECalendarEvent.pastEventOtherMonthWeekend {
-}
-div.SERecurringEvent {
-}
-div.SECalendarSingle div.SECalendarEventDetails {
-}
-div.SECalendarMultiDay  div.SECalendarEventDetails {
-}
-div.SECalendarAllDay div.SECalendarEventDetails {
-}
-#SECalendarWrapper div.SECalendarEventTime {
-}
-#SECalendarWrapper div.SECalendarEventName {
-}
-.SECalendarWeekday {
-}
-.SECalendarWeekend {
-}
-#SECalendarNav {
-}
-#SECalendarNav .rssLink {
-}
-#SECalendarNav .rssLink img {
-}
-.SECalendarMonth {
-}
-.SECalendarNextMonth {
-}
-.SECalendarPrevMonth {
-}
-.SECalendarNextMonth a, .SECalendarPrevMonth a {
-}
-.SECalendarNextMonth a {
-}
-.SECalendarPrevMonth a {
-}
-#SECalendarTable .SECalendarDay {
-}
-#SECalendarTable .SECalendarDay.pastDay {
-}
+
 #SECalendarTable .SECalendarDay.pastDayWeekend {
 	background-repeat : inherit;
 }
-#SECalendarTable .SECalendarDay.pastDayOtherMonth {
-}
-#SECalendarTable .SECalendarDay.pastDayOtherMonthWeekend {
-}
-#SECalendarTable .SECalendarDay.currentDay {
-}
-#SECalendarTable .SECalendarDay.currentDayWeekend {
-}
-#SECalendarTable .SECalendarDay.futureDay {
-}
-#SECalendarTable .SECalendarDay.futureDayWeekend {
-}
-#SECalendarTable .SECalendarDay.futureDayOtherMonth {
-}
-#SECalendarTable .SECalendarDay.futureDayOtherMonthWeekend {
-}
-#SECalendarTable .SECalendarDay a {
-}
-#SECalendarTable .SECalendarDay a:hover {
-}
-#SECalendarTable .SECalendarDay.pastDay a {
-}
-#SECalendarTable .SECalendarDay.pastDayWeekend a {
-}
-#SECalendarTable .SECalendarDay.pastDayOtherMonth a {
-}
-#SECalendarTable .SECalendarDay.pastDayOtherMonthWeekend a {
-}
-#SECalendarTable .SECalendarDay.currentDay a {
-}
-#SECalendarTable .SECalendarDay.currentDayWeekend a {
-}
-#SECalendarTable .SECalendarDay.futureDay a {
-}
-#SECalendarTable .SECalendarDay.futureDayWeekend a {
-}
-#SECalendarTable .SECalendarDay.futureDayOtherMonth a {
-}
-#SECalendarTable .SECalendarDay.futureDayOtherMonthWeekend a {
-}
-#SECalendarTable #SECalendarCurrentDay a {
-}
-#SECalendarTable .SECalendarDay.pastDay a:hover {
-}
-#SECalendarTable .SECalendarDay.pastDayWeekend a:hover {
-}
-#SECalendarTable .SECalendarDay.pastDayOtherMonth a:hover {
-}
-#SECalendarTable .SECalendarDay.pastDayOtherMonthWeekend a:hover {
-}
-#SECalendarTable .SECalendarDay.currentDay a:hover {
-}
-#SECalendarTable .SECalendarDay.currentDayWeekend a:hover {
-}
-#SECalendarTable .SECalendarDay.futureDay a:hover {
-}
-#SECalendarTable .SECalendarDay.futureDayWeekend a:hover {
-}
-#SECalendarTable .SECalendarDay.futureDayOtherMonth a:hover {
-}
-#SECalendarTable .SECalendarDay.futureDayOtherMonthWeekend a:hover {
-}
-#SECalendarTable #SECalendarCurrentDay a:hover {
-}
+
 #SECalendarListWrapper {
 	display : inline-table;
 	width : 100%;
@@ -2590,8 +2288,6 @@ div.SECalendarAllDay div.SECalendarEventDetails {
 	background-position : left top;
 	background-repeat : repeat-y;
 	margin : 0 0 30px;
-}
-.SECalendarDate {
 }
 .SECalendarListEvents {
 	float : left;
@@ -2617,10 +2313,6 @@ div.SECalendarAllDay div.SECalendarEventDetails {
 	font-size : 12px;
 	padding : 15px 4px;
 }
-.SECalendarListEvents table tbody tr.odd {
-}
-.SECalendarListEvents table tbody tr.even {
-}
 td.SECalendarEventDate {
 	border-bottom : 1px solid #ccc;
 	font-size : 16px;
@@ -2628,39 +2320,11 @@ td.SECalendarEventDate {
 	padding : 10px 20px 10px 0;
 	border-top : 6px solid #ccc;
 }
-td.SECalendarEventTime {
-}
-td.SECalendarEventName {
-}
-td.SERecurringEvent {
-}
-td.SECalendarNoEvent {
-}
 #SECalendarListWrapper .SECalendarSmallCal {
 	float : left;
 	margin : 0 0 0 -190px;
 	padding : 0;
 	clear : none;
-}
-#SECalendarSummaryWrapper {
-}
-.SECalendarSummaryDateList {
-}
-.SECalendarSummaryDateList ul {
-}
-.SECalendarSummaryDateList ul li {
-}
-.SECalendarSummaryDate {
-}
-.SECalendarSummaryDate h3 {
-}
-.SECalendarSummaryDateList ul li.SECalendarSummaryDate ul.SECalendarSummaryDateEventList {
-}
-.SECalendarSummaryDateList ul li.SECalendarSummaryDate ul.SECalendarSummaryDateEventList li {
-}
-.SECalendarSummaryDateList ul li.SECalendarSummaryDate ul.SECalendarSummaryDateEventList li span {
-}
-.SECalendarProperty {
 }
 .SECalendarProperty p {
 	width : 95%;
@@ -2670,24 +2334,6 @@ td.SECalendarNoEvent {
 	clear : both;
 	margin : 20px 50px 0 0;
 	width : 70px;
-}
-span.SERecurringEvent {
-}
-span.SECalendarEventName {
-}
-li.SECalendarEvent {
-}
-li.SECalendarNoEvent {
-}
-.SECalendarSummaryDateList ul li.SECalendarSummaryDate ul.SECalendarSummaryDateEventList li.odd {
-}
-.SECalendarSummaryDateList ul li.SECalendarSummaryDate ul.SECalendarSummaryDateEventList li.even {
-}
-#SECalendarSummaryWrapper .SECalendarSmallCal {
-}
-.SECalendarSummaryDateList .rssLink {
-}
-#SECalendarEventWrapper {
 }
 #SECalendarEventWrapper div.SECalendarEventDetails {
 	border : 1px solid #ccc;
@@ -2718,18 +2364,6 @@ li.SECalendarNoEvent {
 #SECalendarEventWrapper .SECalendarEventActions ul li {
 	float : left;
 }
-#SECalendarEventWrapper .SECalendarEventActions ul li a {
-}
-#SECalendarEventWrapper .SECalendarEventActions ul li a:hover {
-}
-#SECalendarEventWrapper .SECalendarEventActions ul li.eventDownload {
-}
-#SECalendarEventWrapper .SECalendarEventActions ul li.eventReminder {
-}
-#SECalendarEventWrapper .SECalendarEventActions ul li.eventRegistration {
-}
-#SECalendarEventWrapper .SECalendarEventActions ul li.eventShare {
-}
 #SECalendarEventWrapper .SECalendarEventActions ul li.eventDownload a {
 	background-image : url("/sebin/l/g/button-gradient.jpg");
 	background-repeat : repeat-x;
@@ -2758,7 +2392,7 @@ li.SECalendarNoEvent {
 	text-align : center;
 	text-decoration : none;
 	padding : 2px 10px 3px;
-	background-image : url("http://baltimorecountymd.gov/sebin/l/g/button-gradient.jpg");
+	background-image : url("/sebin/l/g/button-gradient.jpg");
 	background-position : top;
 	background-repeat : repeat-x;
 }
@@ -2774,7 +2408,7 @@ li.SECalendarNoEvent {
 	text-align : center;
 	text-decoration : none;
 	padding : 2px 10px 3px;
-	background-image : url(http://baltimorecountymd.gov/sebin/l/g/button-gradient.jpg);
+	background-image : url(/sebin/l/g/button-gradient.jpg);
 	background-repeat : repeat-x;
 	background-position : top;
 }
@@ -2789,18 +2423,6 @@ li.SECalendarNoEvent {
 	margin : 0;
 	padding : 15px;
 }
-#SECalendarEventWrapper .SECalendarLocation {
-}
-#SECalendarEventWrapper .SECalendarAddress {
-}
-#SECalendarEventWrapper .SECalendarMapLink {
-}
-#SECalendarEventWrapper .SECalendarContactName {
-}
-#SECalendarEventWrapper .SECalendarContactEmail {
-}
-#SECalendarEventWrapper .SECalendarContactPhone {
-}
 .SECalendarReminderName, .SECalendarReminderEmail, .SECalendarReminderOccurence, .SECalendarReminderNotification {
 	margin : 0 0 10px -50px;
 }
@@ -2813,16 +2435,6 @@ li.SECalendarNoEvent {
 .SECalendarReminderName input, .SECalendarReminderEmail input, .SECalendarReminderOccurence input {
 	margin : 0;
 }
-.SECalendarReminderNotification  input.SEApplicationCheckbox {
-}
-.SECalendarReminderNotification label {
-}
-.SECalendarRegistrationName, .SECalendarRegistrationEmail, .SECalendarRegistrationPhone {
-}
-.SECalendarRegistrationName label, .SECalendarRegistrationEmail label, .SECalendarRegistrationPhone label {
-}
-.SECalendarRegistrationName input, .SECalendarRegistrationEmail input, .SECalendarRegistrationPhone input {
-}
 .SECalendarShareName, .SECalendarShareEmail, .SECalendarShareFriendEmail, .SECalendarShareMessage {
 	margin : 0 0 10px -50px;
 	padding : 10px;
@@ -2831,34 +2443,7 @@ li.SECalendarNoEvent {
 	margin : 0 0 0 40px;
 	display : inline;
 }
-.SECalendarShareName input, .SECalendarShareEmail input, .SECalendarShareFriendEmail input, .SECalendarShareMessage textarea {
-}
-#SEEventFormSubmitterName, #SEEventFormSubmitterEmail, #SEEventFormEventName, #SEEventFormType, #SEEventFormLocation, #SEEventFormStartDate, #SEEventFormEndDate, #SEEventFormRepeat, #SEEventFormDetails, #SEEventFormKeywords, #SEEventFormContactName, #SEEventFormContactEmail, #SEEventFormContactPhone, #SEEventFormSponsor, #SEEventFormRelatedLink, #SEEventFormAllowRegister {
-}
-.SEEventFormLabel {
-}
-.SEApplicationText, .SEApplicationTextArea {
-}
-#SECalendarRecurWrapper {
-}
-.SECalendarSmallCal .SECalendarDay {
-}
-.SECalendarSmallCal .SECalendarDay.pastDay {
-}
-.SECalendarSmallCal .SECalendarDay.pastDayWeekend {
-}
-.SECalendarSmallCal .SECalendarDay.pastDayOtherMonth {
-}
-.SECalendarSmallCal .SECalendarDay.pastDayOtherMonthWeekend {
-}
-.SECalendarSmallCal .SECalendarDay.currentDay {
-}
-.SECalendarSmallCal .SECalendarDay.currentDayWeekend {
-}
-.SECalendarSmallCal .SECalendarDay.futureDay {
-}
-.SECalendarSmallCal .SECalendarDay.futureDayWeekend {
-}
+
 .SECalendarSmallCal .SECalendarDay.futureDayOtherMonth {
 	background-color : #bbb;
 }
@@ -2868,63 +2453,11 @@ li.SECalendarNoEvent {
 .SECalendarSmallCal .SECalendarDay a {
 	color : #333;
 }
-.SECalendarSmallCal .SECalendarDay a:hover {
-}
-.SECalendarSmallCal .SECalendarDay.pastDay a {
-}
-.SECalendarSmallCal .SECalendarDay.pastDayWeekend a {
-}
-.SECalendarSmallCal .SECalendarDay.pastDayOtherMonth a {
-}
-.SECalendarSmallCal .SECalendarDay.pastDayOtherMonthWeekend a {
-}
-.SECalendarSmallCal .SECalendarDay.currentDay a {
-}
-.SECalendarSmallCal .SECalendarDay.currentDayWeekend a {
-}
-.SECalendarSmallCal .SECalendarDay.futureDay a {
-}
-.SECalendarSmallCal .SECalendarDay.futureDayWeekend a {
-}
-.SECalendarSmallCal .SECalendarDay.futureDayOtherMonth a {
-}
-.SECalendarSmallCal .SECalendarDay.futureDayOtherMonthWeekend a {
-}
-.SECalendarSmallCal .SECalendarDay.pastDay a:hover {
-}
-.SECalendarSmallCal .SECalendarDay.pastDayWeekend a:hover {
-}
-.SECalendarSmallCal .SECalendarDay.pastDayOtherMonth a:hover {
-}
-.SECalendarSmallCal .SECalendarDay.pastDayOtherMonthWeekend a:hover {
-}
-.SECalendarSmallCal .SECalendarDay.currentDay a:hover {
-}
-.SECalendarSmallCal .SECalendarDay.currentDayWeekend a:hover {
-}
-.SECalendarSmallCal .SECalendarDay.futureDay a:hover {
-}
-.SECalendarSmallCal .SECalendarDay.futureDayWeekend a:hover {
-}
-.SECalendarSmallCal .SECalendarDay.futureDayOtherMonth a:hover {
-}
-.SECalendarSmallCal .SECalendarDay.futureDayOtherMonthWeekend a:hover {
-}
 .SECalendarSmallCal .SECalendarDay.SECalendarSelectedDay {
 	background-color : #feb30c;
 }
-.SECalendarSmallCal #SECalendarCurrentDay a {
-}
-.SECalendarSmallCal #SECalendarCurrentDay a:hover {
-}
 .SECalendarSmallCal .SECalendarSelectedWeek {
 	background-color : #feb30c;
-}
-.SECalendarSmallCal .SECalendarSelectedWeek .SECalendarDay {
-}
-.SECalendarSmallCal .SECalendarSelectedWeek .SECalendarDay.SECalendarSelectedDay {
-}
-.SECalendarSmallCal .SECalendarSelectedWeek .SECalendarDay.currentDay {
 }
 #SECalendarSmallCalMonth {
 	background-color : #c51110;
@@ -2937,10 +2470,6 @@ li.SECalendarNoEvent {
 }
 #SECalendarEventWrapper hr {
 	display : none;
-}
-#SECalendarShare {
-}
-#SECalendarShareEmail label {
 }
 #SECalendarReminder {
 	border-bottom : 1px solid #ccc;
@@ -3312,7 +2841,7 @@ li.SECalendarNoEvent {
 	text-align : center;
 	text-decoration : none;
 	padding : 2px 10px 3px;
-	background-image : url(http://baltimorecountymd.gov/sebin/l/g/button-gradient.jpg);
+	background-image : url(/sebin/l/g/button-gradient.jpg);
 	background-repeat : repeat-x;
 	background-position : top;
 }
@@ -3327,10 +2856,6 @@ li.SECalendarNoEvent {
 }
 #calloutarea p {
 	margin : 10px 0 15px;
-}
-#container_localnavigation li:hover {
-}
-#container_localnavigation li ul li:hover {
 }
 .petinfolabel {
 	margin : 0 0 8px 10px ;
