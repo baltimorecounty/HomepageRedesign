@@ -95,14 +95,14 @@ h6 {
 }
 #backgroundgradient {
 	width : 100%;
-	background-image : url(/sebin/f/n/gradient-background.jpg);
+	background-image : url(http://baltimorecountymd.gov/sebin/f/n/gradient-background.jpg);
 	background-position : top;
 	background-repeat : repeat-x;
 }
 #backgroundshadow {
 	width : 100%;
 	height : auto;
-	background-image : url(/sebin/b/h/background-shadow-subpage.png);
+	background-image : url(http://baltimorecountymd.gov/sebin/b/h/background-shadow-subpage.png);
 	background-position : top center;
 	background-repeat : repeat-y;
 	padding : 0 0 20px;
@@ -113,7 +113,7 @@ h6 {
 	margin : 0 auto;
 }
 #header {
-	background-image : url(/sebin/z/b/gradient-header.jpg);
+	background-image : url(http://baltimorecountymd.gov/sebin/z/b/gradient-header.jpg);
 	background-position : top;
 	background-repeat : repeat-x;
 	width : 100%;
@@ -124,7 +124,7 @@ h6 {
 	margin : auto;
 }
 .logobox {
-	background-image : url(/sebin/f/h/seal-new.jpg);
+	background-image : url(http://baltimorecountymd.gov/sebin/f/h/seal-new.jpg);
 	background-repeat : no-repeat;
 	background-position : top left;
 	width : 254px;
@@ -133,7 +133,7 @@ h6 {
 	display : inline;
 }
 .logoboxbottom {
-	background-image : url(/sebin/c/k/logo-sub.gif);
+	background-image : url(http://baltimorecountymd.gov/sebin/c/k/logo-sub.gif);
 	background-repeat : no-repeat;
 	background-position : top left;
 	width : 200px;
@@ -266,7 +266,7 @@ ul.megamenu li {
 }
 ul.megamenu li.main {
 	border-left : 1px solid #333;
-	background-image : url(/sebin/l/y/background-secondarynav.jpg);
+	background-image : url(http://baltimorecountymd.gov/sebin/l/y/background-secondarynav.jpg);
 	background-position : top right;
 	background-repeat : no-repeat;
 }
@@ -306,7 +306,7 @@ ul.megamenu a.mm-item-link-hover:link, ul.megamenu a.mm-item-link-hover:visited 
 	height : 17px;
 	padding : 10px 20px;
 	display : inline-block;
-	background-image : url(/sebin/r/n/background-secondarynav-hover.jpg);
+	background-image : url(http://baltimorecountymd.gov/sebin/r/n/background-secondarynav-hover.jpg);
 	background-position : top right;
 	background-repeat : no-repeat;
 }
@@ -401,7 +401,7 @@ ul.megamenu div.mm-item-content {
 	list-style-type : none;
 	padding : 0;
 	width : 248px;
-	background-image : url(/sebin/i/v/background-findingaid.gif);
+	background-image : url(http://baltimorecountymd.gov/sebin/i/v/background-findingaid.gif);
 	background-position : top;
 	background-repeat : no-repeat;
 	display : block;
@@ -421,7 +421,7 @@ ul.megamenu div.mm-item-content {
 #navigation_primary li a:hover {
 	color : #fff;
 	font-family : Arial, Helvetica, sans-serif;
-	background-image : url(/sebin/c/i/background-findingaid-hover.gif);
+	background-image : url(http://baltimorecountymd.gov/sebin/c/i/background-findingaid-hover.gif);
 	background-position : top;
 	display : inline-block;
 	list-style-type : none;
@@ -453,7 +453,7 @@ ul.megamenu div.mm-item-content {
 	padding : 0 0 0  25px;
 	margin : 0;
 	text-decoration : none;
-	background-image : url(/sebin/q/r/most-requested-arrow.gif);
+	background-image : url(http://baltimorecountymd.gov/sebin/q/r/most-requested-arrow.gif);
 	background-position : left center;
 	background-repeat : no-repeat;
 	display : block;
@@ -469,7 +469,7 @@ ul.megamenu div.mm-item-content {
 	background-position : left center;
 	background-repeat : no-repeat;
 	display : block;
-	background-image : url(/sebin/m/n/most-requested-arrow-hover.gif);
+	background-image : url(http://baltimorecountymd.gov/sebin/m/n/most-requested-arrow-hover.gif);
 }
 #container_localnavigation li.title {
 	margin : 0;
@@ -486,7 +486,7 @@ ul.megamenu div.mm-item-content {
 	width : 497px;
 	height : auto;
 	padding : 10px 0;
-	background-image : url(/sebin/z/h/background-news.jpg);
+	background-image : url(http://baltimorecountymd.gov/sebin/z/h/background-news.jpg);
 	background-position : top center;
 	background-repeat : repeat-y;
 	float : left;
@@ -497,7 +497,7 @@ ul.megamenu div.mm-item-content {
 	margin : 8px 0 0 0;
 	height : 9px;
 	padding : 0;
-	background-image : url(/sebin/b/j/background-news-top.jpg);
+	background-image : url(http://baltimorecountymd.gov/sebin/b/j/background-news-top.jpg);
 	background-position : top center;
 	float : left;
 	display : inline;
@@ -507,7 +507,7 @@ ul.megamenu div.mm-item-content {
 	margin : 0;
 	height : 9px;
 	padding : 0;
-	background-image : url(/sebin/x/w/background-news-bottom.jpg);
+	background-image : url(http://baltimorecountymd.gov/sebin/x/w/background-news-bottom.jpg);
 	background-position : top center;
 	background-repeat : no-repeat;
 	float : left;
@@ -552,7 +552,7 @@ ul.megamenu div.mm-item-content {
 	width : 497px;
 	height : auto;
 	padding : 10px 0;
-	background-image : url(/sebin/z/h/background-news.jpg);
+	background-image : url(http://baltimorecountymd.gov/sebin/z/h/background-news.jpg);
 	background-position : top center;
 	background-repeat : repeat-y;
 	float : left;
@@ -601,7 +601,7 @@ ul.megamenu div.mm-item-content {
 	margin : 8px 0 0 0;
 	height : 9px;
 	padding : 0;
-	background-image : url(/sebin/b/j/background-news-top.jpg);
+	background-image : url(http://baltimorecountymd.gov/sebin/b/j/background-news-top.jpg);
 	background-position : top center;
 	float : left;
 	display : inline;
@@ -611,7 +611,7 @@ ul.megamenu div.mm-item-content {
 	margin : 0;
 	height : 9px;
 	padding : 0;
-	background-image : url(/sebin/x/w/background-news-bottom.jpg);
+	background-image : url(http://baltimorecountymd.gov/sebin/x/w/background-news-bottom.jpg);
 	background-position : top center;
 	background-repeat : no-repeat;
 	float : left;
@@ -700,7 +700,7 @@ ul.megamenu div.mm-item-content {
 	margin : 8px 0 0 0;
 	height : 9px;
 	padding : 0;
-	background-image : url(/sebin/b/j/background-news-top.jpg);
+	background-image : url(http://baltimorecountymd.gov/sebin/b/j/background-news-top.jpg);
 	background-position : top center;
 	float : left;
 	display : inline;
@@ -710,7 +710,7 @@ ul.megamenu div.mm-item-content {
 	margin : 0;
 	height : 9px;
 	padding : 0;
-	background-image : url(/sebin/x/w/background-news-bottom.jpg);
+	background-image : url(http://baltimorecountymd.gov/sebin/x/w/background-news-bottom.jpg);
 	background-position : top center;
 	background-repeat : no-repeat;
 	float : left;
@@ -719,39 +719,39 @@ ul.megamenu div.mm-item-content {
 	width : 497px;
 	height : auto;
 	padding : 10px 0;
-	background-image : url(/sebin/z/h/background-news.jpg);
+	background-image : url(http://baltimorecountymd.gov/sebin/z/h/background-news.jpg);
 	background-position : top center;
 	background-repeat : repeat-y;
 	float : left;
 	margin : -3px 0 0 0;
 }
 #footer_list ul li.american {
-	list-style-image : url("/sebin/p/i/translate-american.jpg");
+	list-style-image : url("http://baltimorecountymd.gov/sebin/p/i/translate-american.jpg");
 	padding : 2px;
 	list-style-position : inside;
 }
 #footer_list ul li.spanish {
-	list-style-image : url("/sebin/d/y/translate-spanish.jpg");
+	list-style-image : url("http://baltimorecountymd.gov/sebin/d/y/translate-spanish.jpg");
 	padding : 2px;
 	list-style-position : inside;
 }
 #footer_list ul li.french {
-	list-style-image : url("/sebin/f/j/translate-french.jpg");
+	list-style-image : url("http://baltimorecountymd.gov/sebin/f/j/translate-french.jpg");
 	padding : 2px;
 	list-style-position : inside;
 }
 #footer_list ul li.russian {
-	list-style-image : url("/sebin/l/m/translate-russian.jpg");
+	list-style-image : url("http://baltimorecountymd.gov/sebin/l/m/translate-russian.jpg");
 	padding : 2px;
 	list-style-position : inside;
 }
 #footer_list ul li.arabic {
-	list-style-image : url("/sebin/n/b/translate-arabic.jpg");
+	list-style-image : url("http://baltimorecountymd.gov/sebin/n/b/translate-arabic.jpg");
 	padding : 2px;
 	list-style-position : inside;
 }
 #footer_list ul li.chinese {
-	list-style-image : url("/sebin/x/w/translate-chinese.jpg");
+	list-style-image : url("http://baltimorecountymd.gov/sebin/x/w/translate-chinese.jpg");
 	padding : 2px;
 	list-style-position : inside;
 }
@@ -765,7 +765,7 @@ ul.megamenu div.mm-item-content {
 	list-style-type : none;
 	padding : 0;
 	width : 248px;
-	background-image : url(/sebin/c/i/background-findingaid-hover.gif);
+	background-image : url(http://baltimorecountymd.gov/sebin/c/i/background-findingaid-hover.gif);
 	background-position : top;
 	background-repeat : no-repeat;
 	display : block;
@@ -793,7 +793,7 @@ ul.megamenu div.mm-item-content {
 	width : 180px;
 }
 #relatedtopics table {
-	background-image : url(/sebin/i/f/background-related-topics.gif);
+	background-image : url(http://baltimorecountymd.gov/sebin/i/f/background-related-topics.gif);
 	background-position : center top;
 	background-repeat : no-repeat;
 	border-top : 6px solid #cacaca;
@@ -854,7 +854,7 @@ ul.megamenu div.mm-item-content {
 	font-size : 11px;
 	margin : 0 0 0 5px;
 	padding : 10px 0 0 10px;
-	list-style-image : url("/sebin/k/e/red_square.gif");
+	list-style-image : url("http://baltimorecountymd.gov/sebin/k/e/red_square.gif");
 	list-style-position : outside;
 }
 #baco_subnav {
@@ -866,7 +866,7 @@ ul.megamenu div.mm-item-content {
 }
 #baco_subnav .divnav1 {
 	margin : 2px 0px 0px 0px;
-	background-image : url(/sebin/c/s/header-in-this-section.gif);
+	background-image : url(http://baltimorecountymd.gov/sebin/c/s/header-in-this-section.gif);
 	background-position : left top;
 	background-repeat : no-repeat;
 	padding : 25px 0 0;
@@ -880,7 +880,7 @@ ul.megamenu div.mm-item-content {
 	padding-top : 25px;
 }
 #baco_subnav table {
-	background-image : url(/sebin/c/s/header-in-this-section.gif);
+	background-image : url(http://baltimorecountymd.gov/sebin/c/s/header-in-this-section.gif);
 	background-position : center top;
 	background-repeat : no-repeat;
 	border-top : 6px solid #CACACA;
@@ -891,13 +891,13 @@ ul.megamenu div.mm-item-content {
 	margin : 0;
 	padding : 5px 0 5px 25px;
 	width : 190px;
-	background-image : url(/sebin/q/r/most-requested-arrow.gif);
+	background-image : url(http://baltimorecountymd.gov/sebin/q/r/most-requested-arrow.gif);
 	background-position : left center;
 	background-repeat : no-repeat;
 	font-weight : normal;
 }
 #baco_subnav a.smalltext:hover {
-	background-image : url(/sebin/m/n/most-requested-arrow-hover.gif);
+	background-image : url(http://baltimorecountymd.gov/sebin/m/n/most-requested-arrow-hover.gif);
 	background-position : left center;
 	background-repeat : no-repeat;
 }
@@ -937,7 +937,7 @@ ul.megamenu div.mm-item-content {
 	padding : 5px 0 5px 25px;
 	text-decoration : underline;
 	display : block;
-	background-image : url(/sebin/m/n/most-requested-arrow-hover.gif);
+	background-image : url(http://baltimorecountymd.gov/sebin/m/n/most-requested-arrow-hover.gif);
 	background-position : left center;
 	background-repeat : no-repeat;
 }
@@ -995,7 +995,7 @@ ul.megamenu div.mm-item-content {
 	border-bottom-width : 1px;
 	border-bottom-style : solid;
 	border-bottom-color : #666;
-	background-image : url(/sebin/j/p/monthbkgd.jpg);
+	background-image : url(http://baltimorecountymd.gov/sebin/j/p/monthbkgd.jpg);
 	vertical-align : top;
 }
 #SECalendarTable .SECalendarCurrentEvents {
@@ -1005,7 +1005,7 @@ ul.megamenu div.mm-item-content {
 	border-bottom-color : #666;
 	background-repeat : repeat-x;
 	background-position : left top;
-	background-image : url(/sebin/j/p/monthbkgd.jpg);
+	background-image : url(http://baltimorecountymd.gov/sebin/j/p/monthbkgd.jpg);
 	vertical-align : top;
 	background-color : #f5f5f5;
 }
@@ -1016,7 +1016,7 @@ ul.megamenu div.mm-item-content {
 	border-bottom-color : #666;
 	background-repeat : repeat-x;
 	background-position : left top;
-	background-image : url(/sebin/j/p/monthbkgd.jpg);
+	background-image : url(http://baltimorecountymd.gov/sebin/j/p/monthbkgd.jpg);
 	vertical-align : top;
 	background-color : #f5f5f5;
 }
@@ -1304,7 +1304,7 @@ select {
 	border-top-style : solid;
 	border-top-color : #333;
 	margin-top : 10px;
-	background-image : url(/sebin/v/p/detailbkgd2.jpg);
+	background-image : url(http://baltimorecountymd.gov/sebin/v/p/detailbkgd2.jpg);
 }
 #EmailFriendForm {
 	margin-left : 50px;
@@ -1345,7 +1345,7 @@ select {
 	border-top-style : solid;
 	border-top-color : #000;
 	margin-top : 35px;
-	background-image : url(/sebin/v/p/detailbkgd2.jpg);
+	background-image : url(http://baltimorecountymd.gov/sebin/v/p/detailbkgd2.jpg);
 }
 #RemindMeForm {
 	margin-left : 40px;
@@ -1514,7 +1514,7 @@ select {
 	border-top-width : 1px;
 	border-top-style : solid;
 	border-top-color : #000;
-	background-image : url(/sebin/v/p/detailbkgd2.jpg);
+	background-image : url(http://baltimorecountymd.gov/sebin/v/p/detailbkgd2.jpg);
 }
 #OnlineRegistrationForm .SEEventRegisterLabel {
 	text-align : right;
@@ -1620,7 +1620,7 @@ select {
 }
 #weather_update_container {
 	width : 200px;
-	background-image : url(/sebin/k/i/baltco_hdr_weatherfeed.gif);
+	background-image : url(http://baltimorecountymd.gov/sebin/k/i/baltco_hdr_weatherfeed.gif);
 	background-repeat : no-repeat;
 	background-position : center top;
 	margin-left : 15px;
@@ -1654,7 +1654,7 @@ select {
 	width : 200px;
 	padding : 3px 0px 0px 0px;
 	margin : 0 0 0 15px;
-	background-image : url(/sebin/e/l/baltco_hdr_weatherfeed-bottomlink.gif );
+	background-image : url(http://baltimorecountymd.gov/sebin/e/l/baltco_hdr_weatherfeed-bottomlink.gif );
 	height : 28px;
 	background-repeat : no-repeat;
 	background-position : top;
@@ -1734,7 +1734,7 @@ select {
 #drinkswrapper .accordionButton {
 	width : 580px;
 	float : left;
-	background-image : url(/sebin/d/q/drinksmenu_hdr_button.jpg);
+	background-image : url(http://baltimorecountymd.gov/sebin/d/q/drinksmenu_hdr_button.jpg);
 	background-position : top center;
 	background-repeat : no-repeat;
 	padding : 5px 10px;
@@ -1752,14 +1752,14 @@ select {
 	margin-bottom : -1px;
 }
 #drinkswrapper .on {
-	background-image : url(/sebin/d/k/drinksmenu_hdr_active.jpg);
+	background-image : url(http://baltimorecountymd.gov/sebin/d/k/drinksmenu_hdr_active.jpg);
 	background-position : top center;
 	background-repeat : no-repeat;
 	color : #fff;
 	font-family : Arial, Helvetica, sans-serif;
 }
 #drinkswrapper .over {
-	background-image : url(/sebin/v/t/drinksmenu_hdr_over.jpg);
+	background-image : url(http://baltimorecountymd.gov/sebin/v/t/drinksmenu_hdr_over.jpg);
 	background-position : top center;
 	background-repeat : no-repeat;
 	color : #000;
@@ -1837,7 +1837,7 @@ select {
 	padding : 65px 0 15px;
 	height : auto;
 	text-align : center;
-	background-image : url(/sebin/x/m/video_small_background.jpg);
+	background-image : url(http://baltimorecountymd.gov/sebin/x/m/video_small_background.jpg);
 	background-position : top center;
 	background-repeat : no-repeat;
 	border : 1px solid #666;
@@ -1859,7 +1859,7 @@ div#tulipTVThumbs div.tulipShow {
 	background-color : #000;
 	width : 480px;
 	padding : 0 0 15px;
-	background-image : url("/sebin/q/v/header_media_exec.gif");
+	background-image : url("http://baltimorecountymd.gov/sebin/q/v/header_media_exec.gif");
 	background-position : top left;
 	background-repeat : no-repeat;
 }
@@ -1867,7 +1867,7 @@ div#tulipTVThumbs div.tulipShow {
 	font-weight : bold;
 }
 .vidheaderAnsweringTheCall {
-	background-image : url(/sebin/g/w/header_answeringthecall.gif);
+	background-image : url(http://baltimorecountymd.gov/sebin/g/w/header_answeringthecall.gif);
 	background-position : top left;
 	background-repeat : no-repeat;
 }
@@ -1906,7 +1906,7 @@ div#tulipTVThumbs div.tulipShow {
 	margin-top : 10px;
 }
 #navaccordion .accordionButton {
-	background-image : url(/sebin/i/z/accordionArrow.gif);
+	background-image : url(http://baltimorecountymd.gov/sebin/i/z/accordionArrow.gif);
 	background-position : left top;
 	background-repeat : no-repeat;
 	cursor : pointer;
@@ -1922,7 +1922,7 @@ div#tulipTVThumbs div.tulipShow {
 	padding-left : 20px;
 }
 #navaccordion .on {
-	background-image : url(/sebin/s/g/accordionArrowSelected.gif);
+	background-image : url(http://baltimorecountymd.gov/sebin/s/g/accordionArrowSelected.gif);
 	border-bottom : 1px solid #fff;
 	background-position : left top;
 	background-repeat : no-repeat;
@@ -2049,7 +2049,7 @@ input#mce-EMAIL {
 	padding : 0 0 0  25px;
 	margin : 0;
 	text-decoration : none;
-	background-image : url(/sebin/q/r/most-requested-arrow.gif);
+	background-image : url(http://baltimorecountymd.gov/sebin/q/r/most-requested-arrow.gif);
 	background-position : left center;
 	background-repeat : no-repeat;
 	display : block;
@@ -2062,7 +2062,7 @@ input#mce-EMAIL {
 	padding : 0 0 0 25px;
 	margin : 0;
 	text-decoration : underline;
-	background-image : url(/sebin/m/n/most-requested-arrow-hover.gif);
+	background-image : url(http://baltimorecountymd.gov/sebin/m/n/most-requested-arrow-hover.gif);
 	background-position : left center;
 	background-repeat : no-repeat;
 	display : block;
@@ -2109,13 +2109,13 @@ input#mce-EMAIL {
 	font-weight : normal;
 }
 #relatedtopicssearch table {
-	background-image : url(/sebin/w/m/background-best-bets.gif);
+	background-image : url(http://baltimorecountymd.gov/sebin/w/m/background-best-bets.gif);
 	background-position : center top;
 	background-repeat : no-repeat;
 	border-top : 6px solid #cacaca;
 }
 .activePage {
-	background-image : url(/sebin/m/n/most-requested-arrow-hover.gif);
+	background-image : url(http://baltimorecountymd.gov/sebin/m/n/most-requested-arrow-hover.gif);
 	background-repeat : no-repeat;
 	background-position : left center;
 	display : inline-block;
@@ -2170,7 +2170,7 @@ a.selectedtoggler img {
 	padding-bottom : 2px;
 }
 #backgroundgradient img, #backgroundgradient div {
-	behavior : url(/sebin/h/k/iepngfix.htc);
+	behavior : url(http://baltimorecountymd.gov/sebin/h/k/iepngfix.htc);
 }
 #container_localnavigation ul.sub {
 	padding : 0;
@@ -2247,7 +2247,7 @@ a.selectedtoggler img {
 	width : 20px;
 }
 #SECalendarSmallCalPrevious a {
-	background-image : url("/sebin/w/v/left_arrow.gif");
+	background-image : url("http://baltimorecountymd.gov/sebin/w/v/left_arrow.gif");
 	background-position : 5px 4px;
 	background-repeat : no-repeat;
 }
@@ -2260,7 +2260,7 @@ a.selectedtoggler img {
 	margin : 5px 0;
 }
 #SECalendarSmallCalNext a {
-	background-image : url("/sebin/i/w/right_arrow.gif");
+	background-image : url("http://baltimorecountymd.gov/sebin/i/w/right_arrow.gif");
 	background-position : 5px 4px;
 	background-repeat : no-repeat;
 }
@@ -2284,7 +2284,7 @@ a.selectedtoggler img {
 #SECalendarListWrapper {
 	display : inline-table;
 	width : 100%;
-	background-image : url(/sebin/p/w/gradient-calendar.jpg);
+	background-image : url(http://baltimorecountymd.gov/sebin/p/w/gradient-calendar.jpg);
 	background-position : left top;
 	background-repeat : repeat-y;
 	margin : 0 0 30px;
@@ -2365,7 +2365,7 @@ td.SECalendarEventDate {
 	float : left;
 }
 #SECalendarEventWrapper .SECalendarEventActions ul li.eventDownload a {
-	background-image : url("/sebin/l/g/button-gradient.jpg");
+	background-image : url("http://baltimorecountymd.gov/sebin/l/g/button-gradient.jpg");
 	background-repeat : repeat-x;
 	background-position : top;
 	border : 1px solid #999;
@@ -2392,7 +2392,7 @@ td.SECalendarEventDate {
 	text-align : center;
 	text-decoration : none;
 	padding : 2px 10px 3px;
-	background-image : url("/sebin/l/g/button-gradient.jpg");
+	background-image : url("http://baltimorecountymd.gov/sebin/l/g/button-gradient.jpg");
 	background-position : top;
 	background-repeat : repeat-x;
 }
@@ -2408,7 +2408,7 @@ td.SECalendarEventDate {
 	text-align : center;
 	text-decoration : none;
 	padding : 2px 10px 3px;
-	background-image : url(/sebin/l/g/button-gradient.jpg);
+	background-image : url(http://baltimorecountymd.gov/sebin/l/g/button-gradient.jpg);
 	background-repeat : repeat-x;
 	background-position : top;
 }
@@ -2479,36 +2479,36 @@ td.SECalendarEventDate {
 	margin : 0;
 }
 #footer_list ul li.facebook {
-	list-style-image : url("/sebin/z/j/footer-facebookicon.png");
+	list-style-image : url("http://baltimorecountymd.gov/sebin/z/j/footer-facebookicon.png");
 	list-style-position : inside;
 	margin : 3px 0;
 	padding : 2px;
 }
 #footer_list ul li.twitter {
-	list-style-image : url("/sebin/v/b/footer-twittericon.png");
+	list-style-image : url("http://baltimorecountymd.gov/sebin/v/b/footer-twittericon.png");
 	list-style-position : inside;
 	padding : 2px;
 }
 #footer_list ul li.youtube {
-	list-style-image : url("/sebin/f/f/footer-youtubeicon.png");
+	list-style-image : url("http://baltimorecountymd.gov/sebin/f/f/footer-youtubeicon.png");
 	list-style-position : inside;
 	margin : 3px 0;
 	padding : 2px;
 }
 #footer_list ul li.photos {
-	list-style-image : url("/sebin/x/i/footer-photosicon.png");
+	list-style-image : url("http://baltimorecountymd.gov/sebin/x/i/footer-photosicon.png");
 	list-style-position : inside;
 	margin : 3px 0;
 	padding : 2px;
 }
 #footer_list ul li.videos {
-	list-style-image : url("/sebin/d/o/footer-videoicon.png");
+	list-style-image : url("http://baltimorecountymd.gov/sebin/d/o/footer-videoicon.png");
 	list-style-position : inside;
 	margin : 3px 0;
 	padding : 2px;
 }
 #footer_list ul li.bcnow {
-	list-style-image : url("/sebin/t/a/footer-bcnowicon.png");
+	list-style-image : url("http://baltimorecountymd.gov/sebin/t/a/footer-bcnowicon.png");
 	list-style-position : inside;
 	padding : 2px;
 }
@@ -2517,7 +2517,7 @@ td.SECalendarEventDate {
 }
 #seBlogTabs {
 	background-color : #C51110;
-	background-image : url("/sebin/r/d/seblogtabs-gradient.jpg");
+	background-image : url("http://baltimorecountymd.gov/sebin/r/d/seblogtabs-gradient.jpg");
 	background-position : center top;
 	background-repeat : repeat-x;
 	border-top : 6px solid #C51110;
@@ -2841,7 +2841,7 @@ td.SECalendarEventDate {
 	text-align : center;
 	text-decoration : none;
 	padding : 2px 10px 3px;
-	background-image : url(/sebin/l/g/button-gradient.jpg);
+	background-image : url(http://baltimorecountymd.gov/sebin/l/g/button-gradient.jpg);
 	background-repeat : repeat-x;
 	background-position : top;
 }
