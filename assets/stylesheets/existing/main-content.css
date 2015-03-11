@@ -1,48 +1,5 @@
-
-h1 {
-	font-family : Arial, Helvetica, sans-serif;
-	font-size : 1.8em;
-	font-weight : bold;
-	color : #000;
-	margin : 5px 0 20px 0;
-}
-h2 {
-	font-family : Arial, Helvetica, sans-serif;
-	font-size : 1.3em;
-	font-weight : bold;
-	color : #000;
-	margin : 5px 0 20px 0;
-}
-h3 {
-	font-family : Arial, Helvetica, sans-serif;
-	font-size : 1.1em;
-	font-weight : bold;
-	color : #000;
-	margin : 5px 0 10px 0;
-}
-h4 {
-	font-family : Arial, Helvetica, sans-serif;
-	font-size : 1em;
-	color : #002280;
-	margin : 5px 0 20px 0;
-}
-h5 {
-	font-family : Arial, Helvetica, sans-serif;
-	font-size : 0.9em;
-	color : #002280;
-	margin : 5px 0 20px 0;
-}
-h6 {
-	font-family : Arial, Helvetica, sans-serif;
-	font-size : 0.7em;
-	color : #000;
-	margin : 5px 0 20px 0;
-	font-weight : lighter;
-}
-body, td {
-	font-family : Arial, Helvetica, sans-serif;
+td {
 	font-size : 0.96em;
-	color : #444;
 }
 #TableAlternativeRows caption {
 	font-family : Arial, Helvetica, sans-serif;
