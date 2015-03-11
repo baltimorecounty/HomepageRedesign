@@ -38,3 +38,17 @@
     margin-right: 10px;
   }
 }
+
+@media only screen and (max-width: 480px){
+  
+.brand .brand-logo{
+  height:60px;
+  width:60px;
+}
+
+.brand .brand-heading {
+    font-size: 1.4em;
+    line-height: 25px;
+    margin: 5px 0 0;
+}
+}
