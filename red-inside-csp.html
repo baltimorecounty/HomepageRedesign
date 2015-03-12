@@ -1,0 +1,573 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Baltimore County Homepage Government</title>
+		<link rel="stylesheet" type="text/css" href="assets/stylesheets/existing/base.css"/>
+		<link rel="stylesheet" type="text/css" href="assets/stylesheets/existing/base-2.css"/>
+		<link rel="stylesheet" type="text/css" href="assets/stylesheets/existing/supplimental.css"/>
+		<link rel="stylesheet" type="text/css" href="assets/stylesheets/inside-template.css"/>
+		
+		<!--[if lt IE 9]>
+			<link rel="stylesheet" type="text/css" href="assets/stylesheets/ie.css"/>
+		<![endif]-->
+		<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+		<script src="assets/js/lib/jQuery.min.js"></script>
+		<script type="text/javascript" src="assets/js/lib/slick.min.js"></script>
+		<script type="text/javascript" src="assets/js/lib/handlebars.js"></script>
+		<script src="assets/js/lib/reView.js"></script>
+		<script src="assets/js/text-resizer.js"></script>
+		<script src="assets/js/skipNav.js"></script>
+		<script src="assets/js/flickr.js"></script>
+		<script src="assets/js/template.js"></script>
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	    <!--[if lt IE 9]>
+	      <script src="assets/js/lib/html5shiv.min.js"></script>
+	      <script src="assets/js/lib/respond.min.js"></script>
+	    <![endif]-->
+
+	</head>
+	<body class="homepage">
+		<div id="skiptocontent" class="skip-nav">
+		  <a href="#main-content" class="link-btn skip">skip to main content</a>
+		</div>
+		<header class="header">
+			<section class="secondary-nav hidden-xs">
+				<div class="container">
+				<nav class="col-md-4 col-sm-6 ">
+					<ul class="secondary-nav-list inline-list">
+						<li class="secondary-nav-list-item">
+							<a href="">County Executive</a>
+						</li>
+						<li class="secondary-nav-list-item">
+							<a href="">County Council</a>
+						</li>
+						<li class="secondary-nav-list-item">
+							<a href="">Courts</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="search col-md-4">
+				<div class="search-input-container">
+			    <button>Search</button>
+			    <div class="search-text">
+			      <label for="search-input" class="search-label">Search</label><input type="text" placeholder="Search for agencies, services and more..." name="search-input" class="search-input">
+			    </div>
+			</div>
+			  </div>
+				<div class="page-tools col-md-4 col-sm-6 hidden-xs">
+					<a href="http://www.baltimorecountymd.gov/Subscribe/" class="subscribe" title="Subscribe to Baltimore County Newsletters.">Subscribe</a>
+					<div class="resizer">
+					  <ul class="resizer-list inline-list">
+					    <li><button id="normal-text" class="btn-link resizer-item resizer-item-smaller">a</button></li>
+					    <li><button id="large-text" class="btn-link resizer-item resizer-item-default">a</button></li>
+					    <li><button id="largest-text" class="btn-link resizer-item resizer-item-larger">a</button></li>
+					  </ul>
+					</div>
+				</div>
+				</div>
+			</section>
+			<div class="primary-header">
+			  <div class="container-fluid">
+			    <div class="brand col-md-4 col-sm-12">
+			      <a href="http://www.baltimorecountymd.gov" title="View the Baltimore County Government homepage.">
+			      <img class="brand-logo" src="assets/img/header-county-seal.png" height="84" width="84" />
+			      <h1 class="brand-heading">Baltimore County<br><span class="uppercase smaller-text">Government</span></h1>
+			  	</a>
+			    </div>
+			    <nav class="secondary-nav col-xs-12 hidden-lg hidden-md hidden-sm">
+					<ul class="secondary-nav-list inline-list">
+						<li class="secondary-nav-list-item">
+							<a href="">County Executive</a>
+						</li>
+						<li class="secondary-nav-list-item">
+							<a href="">County Council</a>
+						</li>
+						<li class="secondary-nav-list-item">
+							<a href="">Courts</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="primary-nav-container">
+			    <ul class="primary-nav col-md-8 col-sm-12" role="navigation">
+			      <li class="primary-nav-item col-md-4 col-sm-4 col-xs-12">
+			        <h2 class="primary-nav-item__headline">
+			          <a href="http://www.baltimorecountymd.gov/iwant/apply.html">I Want To...<br><span class="primary-nav-item__tagline">Report Issues, Follow Up, Apply</span></a>
+			        </h2>
+			      </li>
+			      <li class="primary-nav-item col-md-4 col-sm-4 col-xs-12">
+			        <h2 class="primary-nav-item__headline">
+			          <a href="http://www.baltimorecountymd.gov/iwant/apply.html">I'm Looking For...<br><span class="primary-nav-item__tagline">Resident, Visitor, or Business Info</span></a>
+			        </h2>
+			      </li>
+			      <li class="primary-nav-item col-md-4 col-sm-4 col-xs-12">
+			        <h2 class="primary-nav-item__headline">
+			          <a href="http://www.baltimorecountymd.gov/iwant/apply.html">I Need to Contact...<br><span class="primary-nav-item__tagline">An Agency, My Rep, An Employee</span></a>
+			        </h2>
+			      </li>
+			    </ul>
+			    <nav class="hamburger-nav">
+			    	<a class="hamburger-btn" href="#" title="Navigate Baltimore County's Website">
+			    		<img src="assets/img/hamburger.png" height="32" width="32" alt="Navigate Baltimore County's Website" /></a>
+			    </nav>
+			    </div>
+			    <div class="clearfix"></div>
+			  </div>
+			</div>
+		</header>
+
+		<div id="main-content" class="county-information">
+		<div class="county-information-container container-fluid">
+		<div id="backgroundgradient">
+			<div id="backgroundshadow">
+				<!--SITE EXECUTIVE HTML START-->
+				<div id="maincontainer"><a name="SkipNav"></a><div id="column1"><div class="logoboxbottom">&nbsp;</div><div id="container_localnavigation"><div id="baco_subnav"></div><div id="services"><table width="100%" cellspacing="0" cellpadding="0" border="0"><tbody><tr><td><!-- skip navigation removed from included pages --><div id="customlocalnavigations"><ul id="localnav"><li class="title">I Need to Contact...</li><li><a href="http://www.baltimorecountymd.gov/needtocontact/index.html" title="An Agency">An Agency<br></a></li><li><a href="http://www.baltimorecountymd.gov/needtocontact/myrepresentative.html" title="My Representative">My Representative<br></a></li><li><a href="http://www.baltimorecountymd.gov/needtocontact/anemployee.html" title="An Employee">An Employee<br></a></li><li><a href="http://www.baltimorecountymd.gov/needtocontact/idontknow.html?agencyid=1007" title="I Don't Know">I Don't Know</a></li></ul></div></td></tr></tbody></table></div><div id="services"><table width="100%" cellspacing="0" cellpadding="0" border="0"><tbody><tr><td><!-- skip navigation removed from included pages --><div id="servicescontainer"><ul class="noindent"><li class="title">Most Requested Services</li><li><a href="http://www.baltimorecountymd.gov/Agencies/humanresources/jobs/index.html" title="View Baltimore County job listings.">View Job Listings</a></li><li><a href="http://www.baltimorecountymd.gov/Agencies/budfin/taxsearch/index.html" title="Pay or search property taxes online.">Pay/Search Property Taxes Online</a></li><li><a href="http://myneighborhood.baltimorecountymd.gov/" title="Use this interactive map to find your zoning.">Find&nbsp;Your&nbsp;Zoning</a></li><li><a href="http://www.baltimorecountymd.gov/Agencies/law/countycode.html" title="Browse County Codes.">Browse County Codes</a></li><li><a href="http://www.baltimorecountymd.gov/Agencies/circuit/jurycomm.html" title="Complete the jury duty questionnaire.">Complete Jury Questionnaire</a></li><li><a href="http://www.baltimorecountymd.gov/Agencies/circuit/dailydocket/index.html" title="View the Circuit Court daily docket.">View Daily Docket</a></li><li><a href="http://www.baltimorecountymd.gov/Agencies/budfin/citations/index.html" title="Pay your parking and red light tickets here.">Pay Parking and Red Light Tickets</a></li><li><a href="http://egov2.baltimorecountymd.gov/votingweb/default.aspx?pageid=2" title="Use the polling place locator to find your council district. ">Find Your Council&nbsp;District</a></li><li><a href="http://www.baltimorecountymd.gov/Agencies/publicworks/solid_waste/collectionconnection.html" title="Download and print you trash/recycling collection schedule.">Download Trash Schedule</a></li><li><a href="http://www.baltimorecountymd.gov/Agencies/myneighborhood/facilities.html" title="Find a county facility in your area.">Locate&nbsp;County Facilities</a></li><li><a href="http://www.baltimorecountymd.gov/Agencies/police/crime/index.html" title="Search crime statistics in your neighborhood.">Search Crime Stats</a></li><li><a href="http://www.baltimorecountymd.gov/Agencies/recreation/programdivision/index.html" title="Find recreation programs and activites offered in your neighborhood.">Find&nbsp;Recreation Activities</a></li><li><a href="http://www.baltimorecountymd.gov/Agencies/volunteers/index.html" title="Find a volunteer opportunity that matches your skills and interests.">Volunteer Today</a></li></ul><div id="moreservices"><a href="http://www.baltimorecountymd.gov/Services/index.html" title="Browse a directory of other online services.">More &gt;&gt;&gt;</a></div></div></td></tr></tbody></table></div></div></div><div id="column2"><div id="agencyheader"><div id="agencyname"><!-- skip navigation removed from included pages --><div>I Need To Contact...</div></div><div id="shareutilities"><div id="sharebutton"><!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style ">
+<a class="addthis_counter addthis_pill_style addthis_nonzero" style="display: inline-block;" href="#"><a class="atc_s addthis_button_compact"><span></span></a><a class="addthis_button_expanded" target="_blank" title="View more services" href="#">1</a></a>
+<div class="atclear"></div></div>
+<script type="text/javascript">
+    var addthis_config = {"data_track_clickback":true};
+</script>
+<script defer="true" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4e80a2a60c8146f0" type="text/javascript"></script>
+<!-- AddThis Button END --></div><div id="printpagebutton"><div>
+			
+				<a onclick="openFriendlyVersion(); return false;" href="" style="cursor: pointer;"><img width="59" border="0" height="20" title="Print this page." alt="Print this page." src="/sebin/w/w/print-button.gif"></a>
+				
+		</div></div></div></div><div id="graybartop">&nbsp;</div><div id="baco_breadcrumb"><span class=""><a href="http://www.baltimorecountymd.gov/" class="">Home</a>&nbsp;&gt;&nbsp;<a href="http://www.baltimorecountymd.gov/needtocontact/" class="">I Need to Contact</a>&nbsp;&gt;&nbsp;<a href="http://www.baltimorecountymd.gov/needtocontact/highways" class="">Highways</a></span></div><div></div><div id="mainContent"><noscript> &lt;h1&gt;Javascript Is Disabled On Your Browser&lt;/h1&gt;
+&lt;p&gt;It appears that your browser does not support JavaScript, or you have it disabled. This site is best viewed with JavaScript enabled.  If JavaScript is disabled in your browser, please turn it back on then reload this page.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;If your browser does not support JavaScript, select the link below: &lt;br&gt;
+  &lt;br&gt;
+&lt;a href="http://www.baltimorecountymd.gov/enablejavascript.html"&gt;http://www.baltimorecountymd.gov/enablejavascript.html&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;</noscript><div id="relatedtopics"><table width="160" cellspacing="2" cellpadding="2" border="0">
+			<tbody><tr>
+				<td bgcolor="#C0C0C0" class="whatsheredisplaynone">What's Here</td>
+			</tr>
+			<tr>
+				
+					<td width="160" bgcolor="#ffffff" class="smalltext">
+						
+							<a href="http://www.baltimorecountymd.gov/Agencies/publicworks/traffic/index.html" class="smalltext">Bureau of Traffic Engineering</a><br>
+							
+
+
+							<a href="http://www.baltimorecountymd.gov/Agencies/publicworks/highways/index.html" class="smalltext">Bureau of Highways</a><br>
+							
+
+
+							<a href="http://www.baltimorecountymd.gov/Agencies/publicworks/index.html" class="smalltext">Public Works Department</a><br>
+							
+
+
+					</td>
+				
+			</tr>
+			</tbody></table><div id="calloutarea"><!-- skip navigation removed from included pages --></div></div><div><a name="Skip"></a></div><h1>Highways Request for Service<strong><br></strong></h1><p class="callout_box"><strong>If this is a life-threatening emergency, please call 911</strong>. If this is an urgent request, call Highways at 410-887-3560.</p><div id="divclear">&nbsp;</div><p>For mosquito spraying, contact&nbsp;the Department of&nbsp;Agriculture, 1-301-927-8357.</p><p align="left">111 West Chesapeake Avenue, Mailstop 1003<br>Towson, Maryland 21204<br><br>Email: <a href="mailto:highways@baltimorecountymd.gov?subject=Internet%20Inquiry" title="Contact Bureau of Highways Request for Service.">highways@baltimorecountymd.gov</a><br>Phone: 410-887-3560<br>Fax: 410-887-5656</p><script type="text/javascript">
+	function _SE_checkCodeComplaints(_CF_this){
+		
+	}
+</script>
+<script src="/se/js/mod/advancedforms/cfform.js" type="text/javascript"> </script><script type="text/javascript">
+	function _CF_checkCodeComplaints(_CF_this)
+	{
+	        //reset on submit
+	        _CF_error_messages = new Array();
+	        _CF_error_fields = new Object();
+	        _CF_FirstErrorField = null;
+
+					            if (!_CF_checkEmail(_CF_this['Email'].value, false))
+					            {
+					                _CF_onError(_CF_this, "Email",  _CF_this['Email'].value,"Please enter an email address.");
+					            }
+						
+				if( _CF_hasValue(_CF_this['ProblemAddress'], "TEXT", true ) )
+			       {	
+			
+				}else {
+		            		_CF_onError(_CF_this, "ProblemAddress", _CF_this['ProblemAddress'].value, "Please enter the problem address.");
+		        	}
+			
+				if( _CF_hasValue(_CF_this['ProblemCity'], "TEXT", true ) )
+			       {	
+			
+				}else {
+		            		_CF_onError(_CF_this, "ProblemCity", _CF_this['ProblemCity'].value, "Please enter the city of the problem location.");
+		        	}
+			
+				if( _CF_hasValue(_CF_this['ProblemZip'], "TEXT", true ) )
+			       {	
+			
+				}else {
+		            		_CF_onError(_CF_this, "ProblemZip", _CF_this['ProblemZip'].value, "Please enter a zip code for the Problem Location");
+		        	}
+			
+				if( _CF_hasValue(_CF_this['Comments'], "TEXTAREA", true ) )
+			       {	
+			
+				}else {
+		            		_CF_onError(_CF_this, "Comments", _CF_this['Comments'].value, "Please enter your complaint in the comments field");
+		        	}
+			_SE_checkCodeComplaints(_CF_this);	
+        //display error messages and return success
+        if( _CF_error_messages.length &gt; 0 )
+        {
+            // show alert() message
+            _CF_onErrorAlert(_CF_error_messages);
+            // set focus to first form error, if the field supports js focus().
+            if( _CF_this[_CF_FirstErrorField].type == "text" )
+            { _CF_this[_CF_FirstErrorField].focus(); }
+
+            return false;
+        }else {
+            return true;
+        }
+}
+</script><div id="CodeComplaints_div" class="seform">
+<form name="CodeComplaints" enctype="multipart/form-data" onsubmit="return _CF_checkCodeComplaints(this);" method="post" action="/needtocontact/highways" id="CodeComplaints">
+<table width="100%" cellspacing="0" cellpadding="2" border="0" class="vertical">
+<tbody><tr>
+<td>
+<table width="100%" cellspacing="0" cellpadding="2" border="0" class="vertical">
+<tbody><tr>
+<td>
+<div style="width:100%" class="seText"><span>Fields marked with </span><span class="seRequiredMarker">*</span><span> are required.</span></div>
+</td>
+</tr>
+<tr>
+<td>
+<fieldset>
+<legend>Your Contact Information</legend>
+<table cellspacing="0" cellpadding="0" border="0" class="horizontal">
+<tbody><tr class="seElementRow">
+<td class="seLabelCell">
+<div class="seText"><label for="FirstName">First Name</label></div>
+</td>
+<td class="seFieldCell">
+<input type="text" value="" class="seInput " name="FirstName" id="FirstName">
+</td>
+</tr>
+</tbody></table>
+<table cellspacing="0" cellpadding="0" border="0" class="horizontal">
+<tbody><tr class="seElementRow">
+<td class="seLabelCell">
+<div class="seText"><label for="LastName">Last Name</label></div>
+</td>
+<td class="seFieldCell">
+<input type="text" value="" class="seInput " name="LastName" id="LastName">
+</td>
+</tr>
+</tbody></table>
+<table cellspacing="0" cellpadding="0" border="0" class="horizontal">
+<tbody><tr class="seElementRow">
+<td class="seLabelCell">
+<div class="seText"><label for="Email">Email</label></div>
+</td>
+<td class="seFieldCell">
+<input type="text" value="" class="seInput " name="Email" id="Email">
+</td>
+</tr>
+</tbody></table>
+<table cellspacing="0" cellpadding="0" border="0" class="horizontal">
+<tbody><tr class="seElementRow">
+<td class="seLabelCell">
+<div class="seText"><label for="Address">Address</label></div>
+</td>
+<td class="seFieldCell">
+<input type="text" value="" class="seInput " name="Address" id="Address">
+</td>
+</tr>
+</tbody></table>
+<table cellspacing="0" cellpadding="0" border="0" class="horizontal">
+<tbody><tr class="seElementRow">
+<td class="seLabelCell">
+<div class="seText"><label for="City">City</label></div>
+</td>
+<td class="seFieldCell">
+<input type="text" value="" class="seInput " name="City" id="City">
+</td>
+</tr>
+</tbody></table>
+<table cellspacing="0" cellpadding="0" border="0" class="horizontal">
+<tbody><tr class="seElementRow">
+<td class="seLabelCell">
+<div class="seText"><label for="State">State</label></div>
+</td>
+<td class="seFieldCell">
+<div class="seText"><select size="1" name="State" id="State"><option value="MD">Maryland</option><option value="AL">Alabama</option><option value="AK">Alaska</option><option value="AZ">Arizona</option><option value="AR">Arkansas</option><option value="CA">California</option><option value="CO">Colorado</option><option value="CT">Connecticut</option><option value="DE">Delaware</option><option value="DC">District of Columbia</option><option value="FL">Florida</option><option value="GA">Georgia</option><option value="HI">Hawaii</option><option value="ID">Idaho</option><option value="IL">Illinois</option><option value="IN">Indiana</option><option value="IA">Iowa</option><option value="KS">Kansas</option><option value="KY">Kentucky</option><option value="LA">Louisiana</option><option value="ME">Maine</option><option value="MA">Massachusetts</option><option value="MI">Michigan</option><option value="MN">Minnesota</option><option value="MS">Mississippi</option><option value="MO">Missouri</option><option value="MT">Montana</option><option value="NE">Nebraska</option><option value="NV">Nevada</option><option value="NH">New Hampshire</option><option value="NJ">New Jersey</option><option value="NM">New Mexico</option><option value="NY">New York</option><option value="NC">North Carolina</option><option value="ND">North Dakota</option><option value="OH">Ohio</option><option value="OK">Oklahoma</option><option value="OR">Oregon</option><option value="PA">Pennsylvania</option><option value="RI">Rhode Island</option><option value="SC">South Carolina</option><option value="SD">South Dakota</option><option value="TN">Tennessee</option><option value="TX">Texas</option><option value="UT">Utah</option><option value="VA">Virginia</option><option value="WA">Washington</option><option value="WV">West Virginia</option><option value="WI">Wisconsin</option><option value="WY">Wyoming</option><option value="PR">Puerto Rico</option></select></div>
+</td>
+</tr>
+</tbody></table>
+<table cellspacing="0" cellpadding="0" border="0" class="horizontal">
+<tbody><tr class="seElementRow">
+<td class="seLabelCell">
+<div class="seText"><label for="ZipCode">Zip Code</label></div>
+</td>
+<td class="seFieldCell">
+<input type="text" value="" class="seInput " name="ZipCode" id="ZipCode">
+</td>
+</tr>
+</tbody></table>
+<table cellspacing="0" cellpadding="0" border="0" class="horizontal">
+<tbody><tr class="seElementRow">
+<td class="seLabelCell">
+<div class="seText"><label for="HomePhone">Home Phone Number</label></div>
+</td>
+<td class="seFieldCell">
+<input type="text" value="" class="seInput " name="HomePhone" id="HomePhone">
+</td>
+</tr>
+</tbody></table>
+<table cellspacing="0" cellpadding="0" border="0" class="horizontal">
+<tbody><tr class="seElementRow">
+<td class="seLabelCell">
+<div class="seText"><label for="CellPhone">Cell Phone Number</label></div>
+</td>
+<td class="seFieldCell">
+<input type="text" value="" class="seInput " name="CellPhone" id="CellPhone">
+</td>
+</tr>
+</tbody></table>
+<table cellspacing="0" cellpadding="0" border="0" class="horizontal">
+<tbody><tr class="seElementRow">
+<td class="seLabelCell">
+<div class="seText"><label for="PreferredContact">Preferred Method of Contact</label></div>
+</td>
+<td class="seFieldCell">
+<div class="seText"><select size="1" name="PreferredContact" id="PreferredContact"><option value="2">Home Phone</option><option value="4">Cell Phone</option><option value="6">Mail</option><option value="1">Email</option></select></div>
+</td>
+</tr>
+</tbody></table>
+<table cellspacing="0" cellpadding="0" border="0" class="horizontal">
+<tbody><tr class="seElementRow">
+<td class="seLabelCell">
+<div class="seText"><label for="AOName">Associated Organization Name</label></div>
+</td>
+<td class="seFieldCell">
+<input type="text" value="" class="seInput " name="AOName" id="AOName">
+</td>
+</tr>
+</tbody></table>
+<table cellspacing="0" cellpadding="0" border="0" class="horizontal">
+<tbody><tr class="seElementRow">
+<td class="seLabelCell">
+<div class="seText"><label for="AOTitle">Your Title in Organization</label></div>
+</td>
+<td class="seFieldCell">
+<input type="text" value="" class="seInput " name="AOTitle" id="AOTitle">
+</td>
+</tr>
+</tbody></table>
+<table cellspacing="0" cellpadding="0" border="0" class="horizontal">
+<tbody><tr class="seElementRow">
+<td class="seLabelCell">
+<div class="seText"><label for="AOType">Associated Organization Type</label></div>
+</td>
+<td class="seFieldCell">
+<div class="seText"><select size="1" name="AOType" id="AOType"><option value="">--- Select from the following ---</option><option value="B">Business</option><option value="A">Community Association</option><option value="S">School</option></select></div>
+</td>
+</tr>
+</tbody></table>
+</fieldset>
+</td>
+</tr>
+<tr>
+<td>
+<fieldset>
+<legend>Problem Location</legend>
+<table cellspacing="0" cellpadding="0" border="0" class="horizontal">
+<tbody><tr class="seElementRow">
+<td class="seLabelCell">
+<div class="seText"><label for="ProblemAddress">Address<span class="seRequiredMarker">*</span></label></div>
+</td>
+<td class="seFieldCell">
+<input type="text" value="" class="seInput seRequiredElement" name="ProblemAddress" id="ProblemAddress">
+</td>
+</tr>
+</tbody></table>
+<table cellspacing="0" cellpadding="0" border="0" class="horizontal">
+<tbody><tr class="seElementRow">
+<td class="seLabelCell">
+<div class="seText"><label for="ProblemCity">City<span class="seRequiredMarker">*</span></label></div>
+</td>
+<td class="seFieldCell">
+<input type="text" value="" class="seInput seRequiredElement" name="ProblemCity" id="ProblemCity">
+</td>
+</tr>
+</tbody></table>
+<table cellspacing="0" cellpadding="0" border="0" class="horizontal">
+<tbody><tr class="seElementRow">
+<td class="seLabelCell">
+<div class="seText"><label for="ProblemZip">Zip Code<span class="seRequiredMarker">*</span></label></div>
+</td>
+<td class="seFieldCell">
+<input type="text" value="" class="seInput seRequiredElement" name="ProblemZip" id="ProblemZip">
+</td>
+</tr>
+</tbody></table>
+</fieldset>
+</td>
+</tr>
+<tr>
+<td>
+<fieldset>
+<legend>Complaint / Request</legend>
+<table cellspacing="0" cellpadding="0" border="0" class="horizontal">
+<tbody><tr class="seElementRow">
+<td class="seLabelCell">
+<div class="seText"><label for="ComplaintType">Complaint Type</label></div>
+</td>
+<td class="seFieldCell">
+<div class="seText"><select size="1" name="ComplaintType" id="ComplaintType"><option value="22">Adopt-A-Road</option><option value="26">General Highways</option><option value="27">Ice</option><option value="28">Mowing</option><option value="29">Paving</option><option value="2">Potholes</option><option value="30">Roadside Litter</option><option value="25">Roadway Flooding</option><option value="31">Sidewalk, Curb &amp; Gutter</option><option value="34">Stream Cleaning</option><option value="35">Street Sweeping</option><option value="36">Trees &amp; Brush</option><option value="37">Utility Cuts</option></select></div>
+</td>
+</tr>
+</tbody></table>
+<table cellspacing="0" cellpadding="0" border="0" class="horizontal">
+<tbody><tr class="seElementRow">
+<td class="seLabelCell">
+<div class="seText"><label for="Comments">Comments<span class="seRequiredMarker">*</span></label></div>
+</td>
+<td class="seFieldCell">
+<textarea style="height:200px;" class="seTextarea seRequiredElement" rows="3" cols="20" name="Comments" id="Comments"> </textarea>
+</td>
+</tr>
+</tbody></table>
+<input type="button" value="Submit" class="seButton " name="Submit" id="Submit"><input type="hidden" value="d010681a24134d1e" name="token" id="token">
+</fieldset>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td>
+</td></tr>
+</tbody></table>
+<input type="hidden" value="1" id="_CodeComplaints_seStepID" name="_CodeComplaints_seStepID">
+<input type="hidden" value="6FDF974216D6CA6239436CA6A9AD8E4D" id="_submissionID" name="_submissionID">
+<input type="hidden" value="" id="_seResultMail" name="_seResultMail">
+<input type="hidden" value="" id="_seNotifyMail" name="_seNotifyMail">
+</form>
+</div><div id="errorDiv">&nbsp;</div><p>*Baltimore County streets are swept on a pre-assigned rotation schedule.</p><p><em>Revised May 28, 2013<br></em></p></div></div></div>
+
+				<!--SITE EXECUTIVE HTML END-->
+		</div>
+		</div>
+		
+		<footer class="footer">
+			<section class="primary-footer container">
+			<section class="county-map-container col-md-6 col-sm-6">
+				<img src="assets/img/footer-county-shape.png" alt="" class="county-map hidden-sm hidden-xs">
+				<div class="county-address">
+					<h2>Baltimore County Government</h2>
+					<p>Historic Courthouse</br>
+					400 Washington Avenue</br>
+					Towson, MD 21204</p>
+					<p><a href="http://mapq.st/rqwGxR" title="Get directions to Baltimore County.">Directions &gt;&gt;</a></p>
+				</div>
+				
+			</section>
+			<section class="county-help col-md-2 col-sm-6">
+				<h2>Help</h2>
+				<ul class="county-help-list">
+					<li class="county-help-list-item">
+						<a href="http://www.baltimorecountymd.gov/Contact_Us/telephone/helpful_numbers.html" title="Find helpful telephone numbers.">Phone Numbers</a>
+					</li>
+					<li class="county-help-list-item">
+						<a href="http://www.baltimorecountymd.gov/imlooking/index.html#all" title="Find a County service.">Find a County Service</a>
+					</li>
+					<li class="county-help-list-item">
+						<a href="http://www.baltimorecountymd.gov/iwant/index.html" title="Report a problem.">Report a Problem</a>
+					</li>
+				</ul>
+			</section>
+			<section class="tranlate-page col-md-2 hidden-sm hidden-xs">
+				<h2>Translate</h2>
+				<ul class="translate-page-list">
+					<li class="american"><a title="English" href="http://baltimorecountymd.gov//">English</a></li>
+					<li class="translate-page-list-item translate-page-list-item-arabic">
+						<a title="Translate this site in Arabic." href="http://translate.google.com/translate?hl=en&amp;sl=en&amp;tl=ar&amp;u=http%3A%2F%2Fbaltimorecountymd.gov/%2F">العربية</a>
+					</li>
+					<li class="translate-page-list-item translate-page-list-item-chinese">
+						<a title="Translate this site in Chinese." href="http://translate.google.com/translate?hl=en&amp;sl=en&amp;tl=zh-CN&amp;u=http%3A%2F%2Fbaltimorecountymd.gov/%2F">中文</a>
+					</li>
+					<li class="translate-page-list-item translate-page-list-item-french">
+						<a title="Translate this site in French." href="http://translate.google.com/translate?hl=en&amp;sl=en&amp;tl=fr&amp;u=http%3A%2F%2Fbaltimorecountymd.gov/%2F">Français</a>
+					</li>
+					<li class="translate-page-list-item translate-page-list-item-russian">
+						<a title="Translate this site in Russian." href="http://translate.google.com/translate?hl=en&amp;sl=en&amp;tl=ru&amp;u=http%3A%2F%2Fbaltimorecountymd.gov/%2F">Русский</a>
+					</li>
+					<li class="translate-page-list-item translate-page-list-item-spanish">
+						<a title="Translate this site in Spanish." href="http://translate.google.com/translate?hl=en&amp;sl=en&amp;tl=es&amp;u=http%3A%2F%2Fbaltimorecountymd.gov/%2F">Español</a>
+					</li>
+				</ul>
+			</section>
+			<section class="county-awards col-md-2 hidden-sm hidden-xs">
+				<h2>Awards</h2>
+				<ul class="county-awards-list">
+					<li class="county-awards-list-item">
+						<a href="http://www.govtech.com/dc/digital-counties/?year=2014" title="Learn more about Baltimore County's Digital Counties Survey Award."><img src="http://baltimorecountymd.gov/sebin/n/b/footer-map-digital-counties.jpg" alt="Image of Digital Counties Survey logo." /></a>
+					</li>
+					<li class="county-awards-list-item">
+						<a href="http://www.govtech.com//internet/2014-Best-of-the-Web-Award-Winners-Announced.html?page=2" title="Learn more about Baltimore County's Best of The Web Award." ><img src="http://baltimorecountymd.gov/sebin/l/i/footer-map-botw.jpg" alt="Image of Best of The Web logo." /></a>
+					</li>
+				</ul>
+			</section>
+			<ul class="social-media-list social-media-list-small inline-list col-sm-12 hidden-md hidden-lg">
+					<li class="social-media-list-item social-media-list-item-facebook">
+						<a href="">
+						</a>
+					</li>
+					<li class="social-media-list-item social-media-list-item-twitter">
+						<a href="">
+						</a>
+					</li>
+					<li class="social-media-list-item social-media-list-item-photos">
+						<a href="">
+						</a>
+					</li>
+					<li class="social-media-list-item social-media-list-item-youtube">
+						<a href="">
+						</a>
+					</li>
+					<li class="social-media-list-item social-media-list-item-bcnow">
+						<a href="">
+						</a>
+					</li>
+				</ul>
+		</section>
+		<section class="secondary-footer">
+			<div class="container">
+			<section class="copyright col-md-4 col-sm-12">
+				<span>&copy; Copyright 2015 Baltimore County Government</span>
+			</section>
+			<nav class="county-links col-md-8 col-sm-12">
+				<ul class="county-links-list inline-list">
+					<li class="county-links-list-item">
+						<a href="http://www.baltimorecountymd.gov/Contact/webmaster?issueid=42" title="Contact Baltimore County.">Contact Baltimore County</a>
+					</li>
+					<li class="county-links-list-item">
+						<a href="http://www.baltimorecountymd.gov/UserGuide/usertermsconditions.html" title="Review the User Terms for the Baltimore County website.">User Terms</a>
+					</li>
+					<li class="county-links-list-item">
+						<a href="http://www.baltimorecountymd.gov/UserGuide/usertermsconditions.html#privacy" title="Review the  Baltimore County privacy policy.">Privacy</a>
+					</li>
+					<li class="county-links-list-item">
+						<a href="http://www.baltimorecountymd.gov/Agencies/humanresources/jobs/index.html" title="View Baltimore County job listings.">Jobs</a>
+					</li>
+					<li class="county-links-list-item">
+						<a href="http://www.baltimorecountymd.gov/UserGuide/sitemap.html" title="View the Baltimore County site map.">Site Map</a>
+					</li>
+					<li class="county-links-list-item">
+						<a href="http://www.baltimorecountymd.gov/Agencies/ada/index.html" title="Learn more about Reasonable Accommodation.">Reasonable Accommodation</a>
+					</li>
+				</ul>
+			</nav>
+			</div>
+		</section>
+		<div class="full-site-container">
+			<button class="btn-link reView view-full-site-btn"  data-coreText='View Full Site' data-defaultText='View Mobile Site'>View Full Site</button>
+		</div>
+	</footer>
+</body>
+</html>
