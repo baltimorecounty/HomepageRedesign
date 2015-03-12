@@ -1,0 +1,36 @@
+#FriendEmail{
+float:right;
+}
+.SECalendarShareName label, .SECalendarShareEmail label, .SECalendarShareFriendEmail label, .SECalendarShareMessage label{
+display:inline;
+}
+#SenderName{
+display: block;
+float: none;
+margin: -20px 0 0 190px;
+}
+#SenderEmail{
+display: block;
+float: none;
+margin: -20px 0 0 190px;
+}
+#Message{
+display: block;
+float: none;
+margin: -20px 0 0 190px;
+}
+
+#EmailFriendForm {
+margin-left: 10px;
+border-bottom:1px solid #ccc;
+padding:0 0 110px;
+}
+#RemindMeForm{
+margin:10px 20px 0 0;
+}
+
+#FriendEmail {
+display: block;
+float: none;
+margin: -20px 0 0 190px;
+}
