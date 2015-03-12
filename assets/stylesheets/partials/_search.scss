@@ -10,8 +10,6 @@
 }
 .search {
   padding: 20px;
-  
-
   .search-input, button {
     border: none;
     height: 55px;
@@ -36,7 +34,9 @@
 .search-input-container {
   @extend .clearfix;
 }
-
+.search-internal {
+  padding: 0;
+}
 /*Popular Services*/
 .top-visited {
   @extend .clearfix;
