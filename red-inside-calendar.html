@@ -1,0 +1,936 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Baltimore County Homepage Government</title>
+		<link rel="stylesheet" type="text/css" href="assets/stylesheets/existing/base.css"/>
+		<link rel="stylesheet" type="text/css" href="assets/stylesheets/existing/base-2.css"/>
+		<link rel="stylesheet" type="text/css" href="assets/stylesheets/existing/supplimental.css"/>
+		<link rel="stylesheet" type="text/css" href="assets/stylesheets/inside-template.css"/>
+		
+		<!--[if lt IE 9]>
+			<link rel="stylesheet" type="text/css" href="assets/stylesheets/ie.css"/>
+		<![endif]-->
+		<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+		<script src="assets/js/lib/jQuery.min.js"></script>
+		<script type="text/javascript" src="assets/js/lib/slick.min.js"></script>
+		<script type="text/javascript" src="assets/js/lib/handlebars.js"></script>
+		<script src="assets/js/lib/reView.js"></script>
+		<script src="assets/js/text-resizer.js"></script>
+		<script src="assets/js/skipNav.js"></script>
+		<script src="assets/js/flickr.js"></script>
+		<script src="assets/js/template.js"></script>
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	    <!--[if lt IE 9]>
+	      <script src="assets/js/lib/html5shiv.min.js"></script>
+	      <script src="assets/js/lib/respond.min.js"></script>
+	    <![endif]-->
+
+	</head>
+	<body class="homepage">
+		<div id="skiptocontent" class="skip-nav">
+		  <a href="#main-content" class="link-btn skip">skip to main content</a>
+		</div>
+		<header class="header">
+			<section class="secondary-nav hidden-xs">
+				<div class="container">
+				<nav class="col-md-4 col-sm-6 ">
+					<ul class="secondary-nav-list inline-list">
+						<li class="secondary-nav-list-item">
+							<a href="">County Executive</a>
+						</li>
+						<li class="secondary-nav-list-item">
+							<a href="">County Council</a>
+						</li>
+						<li class="secondary-nav-list-item">
+							<a href="">Courts</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="search col-md-4">
+				<div class="search-input-container">
+			    <button>Search</button>
+			    <div class="search-text">
+			      <label for="search-input" class="search-label">Search</label><input type="text" placeholder="Search for agencies, services and more..." name="search-input" class="search-input">
+			    </div>
+			</div>
+			  </div>
+				<div class="page-tools col-md-4 col-sm-6 hidden-xs">
+					<a href="http://www.baltimorecountymd.gov/Subscribe/" class="subscribe" title="Subscribe to Baltimore County Newsletters.">Subscribe</a>
+					<div class="resizer">
+					  <ul class="resizer-list inline-list">
+					    <li><button id="normal-text" class="btn-link resizer-item resizer-item-smaller">a</button></li>
+					    <li><button id="large-text" class="btn-link resizer-item resizer-item-default">a</button></li>
+					    <li><button id="largest-text" class="btn-link resizer-item resizer-item-larger">a</button></li>
+					  </ul>
+					</div>
+				</div>
+				</div>
+			</section>
+			<div class="primary-header">
+			  <div class="container-fluid">
+			    <div class="brand col-md-4 col-sm-12">
+			      <a href="http://www.baltimorecountymd.gov" title="View the Baltimore County Government homepage.">
+			      <img class="brand-logo" src="assets/img/header-county-seal.png" height="84" width="84" />
+			      <h1 class="brand-heading">Baltimore County<br><span class="uppercase smaller-text">Government</span></h1>
+			  	</a>
+			    </div>
+			    <nav class="secondary-nav col-xs-12 hidden-lg hidden-md hidden-sm">
+					<ul class="secondary-nav-list inline-list">
+						<li class="secondary-nav-list-item">
+							<a href="">County Executive</a>
+						</li>
+						<li class="secondary-nav-list-item">
+							<a href="">County Council</a>
+						</li>
+						<li class="secondary-nav-list-item">
+							<a href="">Courts</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="primary-nav-container">
+			    <ul class="primary-nav col-md-8 col-sm-12" role="navigation">
+			      <li class="primary-nav-item col-md-4 col-sm-4 col-xs-12">
+			        <h2 class="primary-nav-item__headline">
+			          <a href="http://www.baltimorecountymd.gov/iwant/apply.html">I Want To...<br><span class="primary-nav-item__tagline">Report Issues, Follow Up, Apply</span></a>
+			        </h2>
+			      </li>
+			      <li class="primary-nav-item col-md-4 col-sm-4 col-xs-12">
+			        <h2 class="primary-nav-item__headline">
+			          <a href="http://www.baltimorecountymd.gov/iwant/apply.html">I'm Looking For...<br><span class="primary-nav-item__tagline">Resident, Visitor, or Business Info</span></a>
+			        </h2>
+			      </li>
+			      <li class="primary-nav-item col-md-4 col-sm-4 col-xs-12">
+			        <h2 class="primary-nav-item__headline">
+			          <a href="http://www.baltimorecountymd.gov/iwant/apply.html">I Need to Contact...<br><span class="primary-nav-item__tagline">An Agency, My Rep, An Employee</span></a>
+			        </h2>
+			      </li>
+			    </ul>
+			    <nav class="hamburger-nav">
+			    	<a class="hamburger-btn" href="#" title="Navigate Baltimore County's Website">
+			    		<img src="assets/img/hamburger.png" height="32" width="32" alt="Navigate Baltimore County's Website" /></a>
+			    </nav>
+			    </div>
+			    <div class="clearfix"></div>
+			  </div>
+			</div>
+		</header>
+
+		<div id="main-content" class="county-information">
+		<div class="county-information-container container-fluid">
+		<div id="backgroundgradient">
+			<div id="backgroundshadow">
+				<!--SITE EXECUTIVE HTML START-->
+				<div id="maincontainer"><a name="SkipNav"></a><div id="column1"><div class="logoboxbottom">&nbsp;</div><div id="container_localnavigation"><div id="baco_subnav"></div><div id="services"><!-- skip navigation removed from included pages --><div id="customlocalnavigations"><ul><li class="title">In This Section</li><li><a href="http://www.baltimorecountymd.gov/MeetingsandEvents/Aging" title="View the Department of Aging Calendar">Aging</a></li><li><a href="http://www.baltimorecountymd.gov/MeetingsandEvents/Appeals" title="Browse the Board of Appeals calendar.">Board of Appeals</a></li><li><a href="http://www.baltimorecountymd.gov/MeetingsandEvents/pdmevents" title="Browse development and zoning hearings.">Development&nbsp;and&nbsp;Zoning&nbsp;Hearings</a> <ul class="sub"><li><a href="http://www.baltimorecountymd.gov/MeetingsandEvents/PDM_d1" title="Browse development and zoning hearings for district 1.">District 1</a></li><li><a href="http://www.baltimorecountymd.gov/MeetingsandEvents/PDM_d2" title="Browse development and zoning hearings for district 2.">District 2</a></li><li><a href="http://www.baltimorecountymd.gov/MeetingsandEvents/PDM_d3" title="Browse development and zoning hearings for district 3.">District 3</a></li><li><a href="http://www.baltimorecountymd.gov/MeetingsandEvents/PDM_d4" title="Browse development and zoning hearings for district 4.">District 4</a></li><li><a href="http://www.baltimorecountymd.gov/MeetingsandEvents/PDM_d5" title="Browse development and zoning hearings for district 5.">District 5</a></li><li><a href="http://www.baltimorecountymd.gov/MeetingsandEvents/PDM_d6" title="Browse development and zoning hearings for district 6.">District 6</a></li><li><a href="http://www.baltimorecountymd.gov/MeetingsandEvents/PDM_d7" title="Browse development and zoning hearings for district 7.">District 7</a></li></ul></li><li><a href="http://www.baltimorecountymd.gov/MeetingsandEvents/Environmental Protection and Resource" title="View the Environmental Protection calendar.">Environmental Protection</a></li><li><a href="http://www.baltimorecountymd.gov/MeetingsandEvents/Ethics Commission">Ethics Commission</a></li><li><a href="http://www.baltimorecountymd.gov/MeetingsandEvents/Fire Events" title="View Fire Department events.">Fire Department</a></li><li><a href="http://www.baltimorecountymd.gov/MeetingsandEvents/Health">Health Department</a></li><li><a href="http://www.baltimorecountymd.gov/News/holidays/holidayschedule.html" title="View the County's holiday closing schedule.">Holiday Closings</a></li><li><a href="http://www.baltimorecountymd.gov/MeetingsandEvents/Human Relations Commission" title="View the Human Relations Commission Calendar.">Human Relations Commission</a></li><li><a href="http://www.baltimorecountymd.gov/MeetingsandEvents/liquorboardevents">Liquor Board</a></li><li><a href="http://www.baltimorecountymd.gov/MeetingsandEvents/localmanagementboard" title="View the Local Management Board calendar.">Local Management Board</a></li><li><a href="http://www.baltimorecountymd.gov/MeetingsandEvents/Planning" title="View the Department of Planning calendar.">Planning</a></li><li><a href="http://www.baltimorecountymd.gov/MeetingsandEvents/Personnel and Salary Advisory Board">Personnel &amp; Salary Advisory Board</a></li><li><a href="http://www.baltimorecountymd.gov/MeetingsandEvents/Police" title="View the Police Department calendar.">Police</a></li><li><a href="http://www.baltimorecountymd.gov/MeetingsandEvents/Procurement" title="View the Procurement calendar.">Procurement</a></li><li><a href="http://www.baltimorecountymd.gov/MeetingsandEvents/DPW PSSC" title="View the Professional Services Selection Committee calendar.">Professional Service Selection Committee</a></li><li><a href="http://www.baltimorecountymd.gov/MeetingsandEvents/Recreation and Parks" title="View Recreation and Parks events.">Recreation - Special Events</a> <ul class="sub"><li><a href="http://www.baltimorecountymd.gov/MeetingsandEvents/RecreationRegion1" title="recreation region 1">Region 1</a></li><li><a href="http://www.baltimorecountymd.gov/MeetingsandEvents/RecreationRegion2" title="recreation region 2">Region 2</a></li><li><a href="http://www.baltimorecountymd.gov/MeetingsandEvents/RecreationRegion3" title="recreation region 3">Region 3</a></li><li><a href="http://www.baltimorecountymd.gov/MeetingsandEvents/RecreationRegion4" title="recreation region 4">Region 4</a></li><li><a href="http://www.baltimorecountymd.gov/MeetingsandEvents/RecreationParksNaturearea">Nature</a></li><li><a href="http://www.baltimorecountymd.gov/MeetingsandEvents/recreationtherapeuticarea">Therapeutic</a></li></ul></li><li><a href="http://www.baltimorecountymd.gov/MeetingsandEvents/Tower Review Commitee">Tower Review Committee</a></li></ul></div></div><div id="services"><table width="100%" cellspacing="0" cellpadding="0" border="0"><tbody><tr><td><!-- skip navigation removed from included pages --><div id="servicescontainer"><ul class="noindent"><li class="title">Most Requested Services</li><li><a href="http://www.baltimorecountymd.gov/Agencies/humanresources/jobs/index.html" title="View Baltimore County job listings.">View Job Listings</a></li><li><a href="http://www.baltimorecountymd.gov/Agencies/budfin/taxsearch/index.html" title="Pay or search property taxes online.">Pay/Search Property Taxes Online</a></li><li><a href="http://myneighborhood.baltimorecountymd.gov/" title="Use this interactive map to find your zoning.">Find&nbsp;Your&nbsp;Zoning</a></li><li><a href="http://www.baltimorecountymd.gov/Agencies/law/countycode.html" title="Browse County Codes.">Browse County Codes</a></li><li><a href="http://www.baltimorecountymd.gov/Agencies/circuit/jurycomm.html" title="Complete the jury duty questionnaire.">Complete Jury Questionnaire</a></li><li><a href="http://www.baltimorecountymd.gov/Agencies/circuit/dailydocket/index.html" title="View the Circuit Court daily docket.">View Daily Docket</a></li><li><a href="http://www.baltimorecountymd.gov/Agencies/budfin/citations/index.html" title="Pay your parking and red light tickets here.">Pay Parking and Red Light Tickets</a></li><li><a href="http://egov2.baltimorecountymd.gov/votingweb/default.aspx?pageid=2" title="Use the polling place locator to find your council district. ">Find Your Council&nbsp;District</a></li><li><a href="http://www.baltimorecountymd.gov/Agencies/publicworks/solid_waste/collectionconnection.html" title="Download and print you trash/recycling collection schedule.">Download Trash Schedule</a></li><li><a href="http://www.baltimorecountymd.gov/Agencies/myneighborhood/facilities.html" title="Find a county facility in your area.">Locate&nbsp;County Facilities</a></li><li><a href="http://www.baltimorecountymd.gov/Agencies/police/crime/index.html" title="Search crime statistics in your neighborhood.">Search Crime Stats</a></li><li><a href="http://www.baltimorecountymd.gov/Agencies/recreation/programdivision/index.html" title="Find recreation programs and activites offered in your neighborhood.">Find&nbsp;Recreation Activities</a></li><li><a href="http://www.baltimorecountymd.gov/Agencies/volunteers/index.html" title="Find a volunteer opportunity that matches your skills and interests.">Volunteer Today</a></li></ul><div id="moreservices"><a href="http://www.baltimorecountymd.gov/Services/index.html" title="Browse a directory of other online services.">More &gt;&gt;&gt;</a></div></div></td></tr></tbody></table></div></div></div><div id="column2"><div id="agencyheader"><div id="agencyname"><!-- skip navigation removed from included pages --><div>Meetings and Events</div></div><div id="shareutilities"><div id="sharebutton"><!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style ">
+<a class="addthis_counter addthis_pill_style addthis_nonzero" style="display: inline-block;" href="#"><a class="atc_s addthis_button_compact"><span></span></a><a class="addthis_button_expanded" target="_blank" title="View more services" href="#">2</a></a>
+<div class="atclear"></div></div>
+<script type="text/javascript">
+    var addthis_config = {"data_track_clickback":true};
+</script>
+<script defer="true" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4e80a2a60c8146f0" type="text/javascript"></script>
+<!-- AddThis Button END --></div><div id="printpagebutton"><div>
+			
+				<a onclick="openFriendlyVersion(); return false;" href="" style="cursor: pointer;"><img width="59" border="0" height="20" title="Print this page." alt="Print this page." src="/sebin/w/w/print-button.gif"></a>
+				
+		</div></div></div></div><div id="graybartop">&nbsp;</div><div id="baco_breadcrumb"><span class=""><a href="http://www.baltimorecountymd.gov/" class="" title="Home">Home</a>&nbsp;&gt;&nbsp;Calendars of Events&nbsp;&gt;&nbsp;<a href="/MeetingsandEvents/countywide" class="" title="Countywide">Countywide</a></span></div><div></div><div id="mainContent"><noscript> &lt;h1&gt;Javascript Is Disabled On Your Browser&lt;/h1&gt;
+&lt;p&gt;It appears that your browser does not support JavaScript, or you have it disabled. This site is best viewed with JavaScript enabled.  If JavaScript is disabled in your browser, please turn it back on then reload this page.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;If your browser does not support JavaScript, select the link below: &lt;br&gt;
+  &lt;br&gt;
+&lt;a href="http://www.baltimorecountymd.gov/enablejavascript.html"&gt;http://www.baltimorecountymd.gov/enablejavascript.html&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;</noscript><div id="relatedtopics"><div id="calloutarea"><!-- skip navigation removed from included pages --></div></div><div><a name="Skip"></a></div><h1>Countywide Events</h1> <div id="SECalendarListWrapper"><div id="SECalendarSearch">
+<form method="post" class="SEApplicationForm" id="calendarSearchForm" name="calendarSearchForm" action="http://www.baltimorecountymd.gov/MeetingsandEvents/Countywide">
+	<div class="SECalendarLocation">
+		<label>Location:</label>
+		<select class="SEApplicationSelector" size="3" multiple="multiple" id="el" name="el">
+			<option value="">-- All Event Locations --</option>
+			
+					<option value="E31374D0533F584787EBCEF464DA0330"> Dundalk High School</option>
+				
+					<option value="6148DC04B1F47D5D8F923BD3B1139E4D"> Jefferson Building</option>
+				
+					<option value="8AAD5E6ED48EDB0A7A364483E1F89312">10410 York Road</option>
+				
+					<option value="D7461A2FA7DECF2F9E4C95CB74386641">1046 Taylor Avenue</option>
+				
+					<option value="B7929ACDC97AC549CFB05FF44313689D">105 W. Chesapeake Avenue, Towson, Maryland 21204</option>
+				
+					<option value="872760FA0845234EFC5C2CFE1B3AF9FC">1200 N Dupont Hwy, Dover, DE 19901</option>
+				
+					<option value="DBC0086C45D2260249D7F869AC7ABA64">1811 Woodlawn Drive</option>
+				
+					<option value="290128">1st Council District</option>
+				
+					<option value="450A0DAA02FB00E131B19E8E38F2ABD7">201 Back River Neck Road</option>
+				
+					<option value="294249">2nd Council District</option>
+				
+					<option value="294250">3rd Council District</option>
+				
+					<option value="68BD07B78FCDB9859938AAACB50C96CE">400 Washington Ave,  Room 118, Towson, MD 21204</option>
+				
+					<option value="39F4C9828C8F5ABCFD86E309E11909DE">400 Washington Ave, Room 118, Towson, MD 21204</option>
+				
+					<option value="0995E2EE140191C50A98F656C6036D25">400 Washington Avenue, Room 118, Towson, MD 21204</option>
+				
+					<option value="294251">4th Council District</option>
+				
+					<option value="622A52AA7A97B61709217689596A96D5">500 Third Avenue, Lansdowne, MD 21227</option>
+				
+					<option value="294252">5th Council District</option>
+				
+					<option value="294253">6th Council District</option>
+				
+					<option value="E367B12312B5EE859051CEF7B208F81E">7201 Corporate Center Dr., Hanover, MD 21076</option>
+				
+					<option value="46CC86A5DA8E1B3DDDD21B36D16191D3">7201 Corporate Center Drive, Hanover, MD 21076</option>
+				
+					<option value="734739E9C893267A4C4731A54C8B8A85">7201 Corporate Center Drive, Hanover, MD 21076 </option>
+				
+					<option value="294254">7th Council District</option>
+				
+					<option value="8ED25D951FAA9F2F333571CE09B09F29">8100 Wise Avenue 21222</option>
+				
+					<option value="6DA746B5DAB1BA54D333F2009DC6B7AB">Arbutus Library 855 Sulphur Spring Road, Halethorpe MD 21227</option>
+				
+					<option value="BF487119720D74AC3467DB6FF26E7E01">Arbutus Senior Center</option>
+				
+					<option value="C43DE5550900168C525FDCEB002367FF">Arbutus Volunteer Fire Department</option>
+				
+					<option value="228EC9292B71CD17EF616AC50EB377AC">Ateaze Senior Center</option>
+				
+					<option value="CF0DB2C9578A1F1F5943C60C82B4D46C">Baltimiore County Animal Services</option>
+				
+					<option value="F1E48DEC8A2AAC850C1DE2799CF3B06D">Baltimore County</option>
+				
+					<option value="BEE5175C38712A298952E57B83DD76DB">Baltimore County Animal Services</option>
+				
+					<option value="1323F175D802BC9AA0916CACDE9064C6">Baltimore County Public Library, Owings Mills Branch</option>
+				
+					<option value="769559BCCE313FBB54C60673D2DFA225">Bowie State University</option>
+				
+					<option value="B571606CFDF878515EBB74E3EBA5866F">Bowleys Quarters Volunteer Fire Department</option>
+				
+					<option value="7907672E6D1AEBB813EE15E0C391CD13">Brick Bodies Padonia</option>
+				
+					<option value="36BA176B193D978F2E5FD2357BE5E736">Brick Bodies Perry Hall</option>
+				
+					<option value="BD3382FBD3DB8582454717E368BA14E3">Brick Bodies Reisterstown</option>
+				
+					<option value="6CE8AA2793047E0A37F41AB892173A92">Builiding</option>
+				
+					<option value="9C8203E83AEF167ABBA72442012F5686">Bykota Senior Center</option>
+				
+					<option value="455FF188377764E47A19AC18BD43344A">CCBC Catonsville</option>
+				
+					<option value="E72C1E5AE832B0ACAF2AFADB19275A76">CCBC- Catonsville</option>
+				
+					<option value="B7C3306B3489992AC012798698541858">CCBC-Catonsville</option>
+				
+					<option value="39C4867120D87409AE7ED26F6E19B1E1">Catonsville Elementary School; 615 Frederick Road; Baltimore, MD 21228</option>
+				
+					<option value="96671EAC93DF288553D6507484169A49">Catonsville Senior Center</option>
+				
+					<option value="DA372538726537137F5B0328F8BEB3F5">Chesterwood Park</option>
+				
+					<option value="2AAF5C61E27AA2F04B64652DC9AAA106">Church Lane Elementary School</option>
+				
+					<option value="3285338D8A6A320E772ED5559745F61F">Cockeysville Library, 9833 Greenside Drive, Cockeysville, Maryland 21030</option>
+				
+					<option value="E6003DD0015DA2951DD5BF0D8CDA2141">Cockeysville Senior Center</option>
+				
+					<option value="65D15721D194DA2C58DC9BC8F30F32BC">College Park Marriott and Conference Center</option>
+				
+					<option value="F0E82C4AEDAA9F4C6CF7F8240C7978D9">Community College of Baltimore County - Essex Campus</option>
+				
+					<option value="28DB816727BF17CE1F816F053CE756C2">Coppermine Athletic Facility 1400 Coppermine Terrace, Baltimore, MD 21209</option>
+				
+					<option value="42DDE6AD1AACCAFE19472738AE3796A4">County Office Building</option>
+				
+					<option value="A13EF14C01367960732038B4CA5DFDF7">County Office Building, 111 W. Chesapeake Ave., Room 111, Towson, Maryland,</option>
+				
+					<option value="7928EC4F636D259FC8E9E9709D258A09">County Office Building, 111 W. Chesapeake Ave., Room 111, Towson, Maryland, </option>
+				
+					<option value="5697C0BFDDD04272D73EF5F25E665E25">County Office Building, 111 W. Chesapeake Ave., Towson, Maryland, 2nd Floor Meeting Room</option>
+				
+					<option value="E85A585BB8ECC501BCD4D0799CC1A8E0">County Office Building, 111 W. Chesapeake Ave., Towson, Maryland, Room 111</option>
+				
+					<option value="EFD49C7F364CA9134603C77B9AA7F774">County Office Building, 111 W. Chesapeake Ave., Towson, Maryland, Room 301</option>
+				
+					<option value="FE380470EA4D6E3E86DAA1BA636E9801">County Office Building, 111 W. Chesapeake Avenue, Room 111, Towson 21204</option>
+				
+					<option value="1CF38F8218634746698EB4A2BDC86CF5">County Office Building, 111 W. Chesapeake Avenue, Room 123, Towson 21204</option>
+				
+					<option value="57AEFB5D7D511B144A2E599C73355D2D">Deep Creek Middle School's Gymnasium</option>
+				
+					<option value="1AFDA135EBDE497D1ADFD561C6FB63F5">Drumcastle Building</option>
+				
+					<option value="E3260241FAF85EBD69D4853AD1B810DE">Drumcastle Government Center</option>
+				
+					<option value="B4AD45449DEE9DD0C804371BD08003B9">Dumbarton Middle School</option>
+				
+					<option value="E64B6BA3FA4EFC85022EF9C1E0B428C5">Dumbarton Middle School - Main Auditorium; 300 Dumbarton Road; Baltimore, MD 21212</option>
+				
+					<option value="43CA9B9F555C103454707DB54EA7C867">Dundalk Youth Services Center</option>
+				
+					<option value="26B490CC90A51B79F03F7AB675D29F26">East Towson Carver Community Center 300 Lennox Avenue Towson, MD 21204</option>
+				
+					<option value="7583F271A57E9617648EF86F03D5393D">Eastern Family Resource Center</option>
+				
+					<option value="51C3C7C04FDEB37C71251883BF2BDB87">Edgemere Senior Center</option>
+				
+					<option value="80C4BBAD51EE36E5D9FA31945F0DA4BC">English Consul Volunteer Fire Department</option>
+				
+					<option value="78E28054493442E8A37D99E458328473">Essex Health Center</option>
+				
+					<option value="1542A77CF6F79E4A94D47771DDB03B3E">Essex Library</option>
+				
+					<option value="294C4AF08ADBEE5B756C8744CC64B3C7">Essex Senior Center</option>
+				
+					<option value="572022B14993B68A3B0CC241C198729B">Family Health Center</option>
+				
+					<option value="B55D606F5214D32B1B668C305CC6F236">Fields at Renaissance Park</option>
+				
+					<option value="B9F6A7E89DCBBAE8A71D95627BE3F6A2">Fleming Senior Center</option>
+				
+					<option value="F132B4119C1FCFD7FA3F9A2224AD59A1">Frostburg State University</option>
+				
+					<option value="CC09428E616C4D882DA18B152AF5181D">General John Sticker Middle School</option>
+				
+					<option value="94FE845DA410F306E535DB0D751A601A">Greater Baltimore Medical Center</option>
+				
+					<option value="0B6D22A867EFD5D1039CFC5410425A27">Halstead Academy</option>
+				
+					<option value="6031EBD17CE7162E3174F672139D7A53">Hannah More Park</option>
+				
+					<option value="06C90F8F2FEAB4303ABC15BA98E1E9F3">Hereford High School Cafeteria</option>
+				
+					<option value="9BA3D5D6502EA1AFFD1ABFF69FAE447D">Hereford Middle School</option>
+				
+					<option value="316B34A43F99F3D72C0041CC2DCAC4CA">Historic Courthouse</option>
+				
+					<option value="1DB02B8417467CB1732D119C91E0A6E8">Historic Courthouse, First Floor, Suite 100, 400 Washington Avenue, Towson, Maryland 21204</option>
+				
+					<option value="7AAF1AF5CCBDD7E98FCA348ACF1CF68C">Holabird Middle School</option>
+				
+					<option value="F6BFD7CDC92ED55E0C0B9C44967FBEE4">Honeygo Run Regional Park</option>
+				
+					<option value="C40D8BB17A232F55037C2BD066513972">Hunt Valley Inn</option>
+				
+					<option value="0CED48901598526890E22EEDC992CCC0">Jacksonville Senior Center</option>
+				
+					<option value="2A731E72AA6D60CE2D78AE57723AA06B">JacksonvilleSenior Center</option>
+				
+					<option value="4C5646B8A37177C2AB30456744841BDC">Jefferson Building</option>
+				
+					<option value="F0624936AE171E40A872E69CB8FBFDFB">Lansdowne Baltimore Highlands Senior Center</option>
+				
+					<option value="F090D57CFCFBF65DEB12CBEBEB6B8058">Lansdowne Library - 500 3rd Avenue, Halethorpe, MD 21227</option>
+				
+					<option value="E2BFE69F9E440695A546FAB1529DB092">Lansdowne Library - 500 3rd Avenue, Halethorpe, MD 21227 </option>
+				
+					<option value="413CBC47A97643017FA6959CD13DC123">Lansdowne Middle School</option>
+				
+					<option value="C55F04246605665D3D6E31325099D319">Liberty Family Resource Center</option>
+				
+					<option value="0BEA2FE30FDF7DAA1C5F7D38A519225F">Liberty Resource Center</option>
+				
+					<option value="371849D2C86CC72AFA2F572A1DBDF4DD">Liberty Senior Center</option>
+				
+					<option value="2208CC6728F8289D1B2531602B3D3C5A">Life Source Church; 700 Rossville Boulevard; Rosedale, MD 21237</option>
+				
+					<option value="1C820A165691C4CD71222D9C2425681B">Location Coming Soon</option>
+				
+					<option value="A51957C7974DF9CA738E85D97A71122C">Loch Raven Library</option>
+				
+					<option value="465ADD8993A1155DC31B82C11FFE1624">Long Green Valley VFD; 4506 Long Green Road; Long Green, MD 21092</option>
+				
+					<option value="68B93C4FD6BB799DF05E2FA542BF14C3">Marriott BWI Airport</option>
+				
+					<option value="AEECF5B65E466BC3C227BC6F35F4A4F5">Martin's West, 6817 Dogwood Road, Baltimore, Maryland 21244</option>
+				
+					<option value="C90B13BEF1A5377DB59A7739FAE1D1DF">Maryland Center for Agriculture</option>
+				
+					<option value="5FCD5D70D91EB8E53CA0940B75735F22">Maryland Department of Transportation Headquarters, 7201 Corporate Center Drive, Hanover, Maryland 21076</option>
+				
+					<option value="FD23F9CFC1A2B4304042932C06E0A3F2">Maryland State Fair Grounds Exhibition Hall </option>
+				
+					<option value="AC99336718B37942F87308630139A329">Maryland State Fair Grounds Exhibition Hall 2200 York Road Timonium, MD</option>
+				
+					<option value="51C408630ECC4747DC68170D267DA3E1">Maryland State Fairgrounds, Timonium - Exhibition Hall</option>
+				
+					<option value="A73E73686477D17BEA804FC1EF0A7ED9">Mays Chapel United Methodist Church 11911 Jenifer Road Timonium, MD 21093</option>
+				
+					<option value="37827694ACD0E4352060AE4DEDEC1811">MedStar Franklin Health Medical Center</option>
+				
+					<option value="87E4BD025C3AF7F9E16EEEA82A0B52CD">MedStar Health Franklin Square Medical Center</option>
+				
+					<option value="4D8A969FB787FC3F5F95AF2112C45E88">Meeting Location: Room 205, Jefferson Building, 105 West Chesapeake Avenue Towson, Maryland 21204</option>
+				
+					<option value="46957CC6FC34772FEA65B922111C3475">Meeting: Room 205, Jefferson Building, 105 West Chesapeake Avenue, Towson, Maryland 21204</option>
+				
+					<option value="A273E773C68795FC18B4C7B7ECB89CE3">Middle River Middle School</option>
+				
+					<option value="143987DD173A5F88BF581D5178359910">Mission BBQ</option>
+				
+					<option value="4DF43565A439AF58865D3E013C2C1D9B">Mt. Carmel Senior Center</option>
+				
+					<option value="BF40C92229E4DC5CE6130D5F59886FAB">New Town High School; 4931 New Town Boulevard; Owings Mills, MD 21117</option>
+				
+					<option value="D9C37316C9E8DE20178138883364E82A">North Baltimore Plaza Hotel</option>
+				
+					<option value="8DCCFD6C68705E009EDB726C2EF89DFC">North Point Library</option>
+				
+					<option value="BFC12E74EF39120ECDC938E05853982F">Office of Human Resources</option>
+				
+					<option value="1BD60BEFC465B0D103A02BFC4B0845FD">Old Court Middle School</option>
+				
+					<option value="7A98E1D3623031B05F9D6783EBEC2E72">Oregon Ridge Conference Center</option>
+				
+					<option value="0AF242BC44D3E0A9A5AD44DBA10D64F9">Oregon Ridge Lodge</option>
+				
+					<option value="3BCD5F6F194DB4A9729FEAE89E3D9840">Oregon Ridge Park - Sequoia Room</option>
+				
+					<option value="57769BD6684169B59F3CEA87FAE2D7E5">Oregon Ridge Park, Baltimore County</option>
+				
+					<option value="59F3FBFA70CD87372A87D56239477F61">Overlea Fullerton Senior Center</option>
+				
+					<option value="A5C27F1E2CB6AC167F31F2A36F53C114">Owings Mills Public Library 10302 Grand Central Avenue Owings Mills MD 21117</option>
+				
+					<option value="C9BABD5094B0C1855AC74CC886494AC2">Parkville Senior Center</option>
+				
+					<option value="641B1C5484672F808064964B268CF08F">Patapsco High School Auditorium</option>
+				
+					<option value="017063BB037AD9B1E87E8DD5725EAB7B">Perry Hall High School Library, 4601 Ebenezer Road, Baltimore, Maryland 21236 </option>
+				
+					<option value="BF9A8EA1841AAD9D7772679A997314D2">Perry Hall Library- Meeting Room</option>
+				
+					<option value="58735EE3E05E884B396BACDCBEC9AE36">Perry Hall Library; 9685 Honeygo Boulevard; Perry Hall, MD 21128</option>
+				
+					<option value="38372AFF33251406B692D88921235946">Pikesville Library, 1301 Reisterstown Rd, Pikesville, MD 21208</option>
+				
+					<option value="5E3C4C7A699BA60A4A04A6233FAF5321">Pikesville Middle School</option>
+				
+					<option value="1C92EE4AD54135DB91CEDA0C4D3DC2C0">Pikesville Senior Center</option>
+				
+					<option value="BF439A8088A5BC84BB835AFEF37CEE76">Police Training Section</option>
+				
+					<option value="07E635E6D2E251D74B26609D21783244">Police Training Section, Room G-100</option>
+				
+					<option value="DC2798805B7D32E802DBEEA7E9B6CE4C">Presbyterian Church 100 East Ridgely Road, Timonium, MD 21093</option>
+				
+					<option value="1E8CA97C1E8C45015CC1E7A8143E89F2">Putty Hill Park- 8600 Hoerner Road, Baltimore, 21234</option>
+				
+					<option value="FFC498008F2AAE3735DA4D593B4554AF">Randallstown Community Center </option>
+				
+					<option value="0EA5EC6CF2722A8BF80232B053FD1DFF">Randallstown Community Center 3505 Resource Drive, Randallstown, MD 21133</option>
+				
+					<option value="0BC60F7AE9242EE70BE49ADC78476061">Randallstown High School</option>
+				
+					<option value="354CB39409542C3019560F2FEC5B7778">Randallstown Library</option>
+				
+					<option value="FEFFA306D1E393261223371DC642A6C5">Randallstown Public Library; 8604 Liberty Road; Randallstown, MD 21133</option>
+				
+					<option value="BAB1C6165FFB9FE7EF787588BB465036">Reisterstown Library</option>
+				
+					<option value="635800D5D0AB4F83C495F46AD1B4BA6A">Reisterstown Library, 21 Cockeys Mill Rd., Reisterstown, MD 21136</option>
+				
+					<option value="D5F647FE3DE97A078765C0AAE094AD20">Reisterstown Senior Center</option>
+				
+					<option value="7256F552A6E75659E36DF415F4E60EC3">Rockdale Park</option>
+				
+					<option value="DFB0F69823F5C4727D787EF208BFEDE3">Room 103, Jefferson Building, 105 West Chesapeake Avenue Towson, Maryland 21204</option>
+				
+					<option value="50067B9D7FBDC40498DE52BE306D8416">Room 104, Jefferson Building, 105 West Chesapeake Avenue, Towson, Maryland 21204</option>
+				
+					<option value="7B3D5B5FBC8FB2AADFB2094EA96C1C2E">Room 111, County Office Building, 111 West Chesapeake Avenue Towson, Maryland 21204</option>
+				
+					<option value="BFC9ED1127CFC54886FC42D129E46AF0">Room 123, County Office Building, 111 West Chesapeake Avenue Towson, Maryland 21204</option>
+				
+					<option value="78EECA385605E361CF661B1E86FC6CC8">Room 123, County Office Building, 111 West Chesapeake Avenue Towson, Mayland 21204</option>
+				
+					<option value="36B5EDFD516835A7CA956D34BDA86467">Room 205, Jefferson Building, 105 West Chesapeake Avenue Towson,  Maryland 21204      </option>
+				
+					<option value="0D9C60D2EE0D759F17DEF16C5C552B08">Room 205, Jefferson Building, 105 West Chesapeake Avenue Towson, Maryland 21204</option>
+				
+					<option value="4A676B8B9B9C3A9F656B658B1B76C289">Room 205, Jefferson Building, 105 West Chesapeake Avenue, Towson, Maryland 21204</option>
+				
+					<option value="CFB2F80FEC7609E308A81A0F185BF0C3">Room 215, County Office Building, 111 W. Chesapeake Avenue, Towson, 21204</option>
+				
+					<option value="C4FDBA5DB6C4B1786F7D5F212DEF6AB2">Rosedale Park</option>
+				
+					<option value="878E9FD65037FBE28595DD05EA7DBF2C">Rosedale Senior Center</option>
+				
+					<option value="D9B35181EAA244093B54D00E581BF696">Security Square Mall </option>
+				
+					<option value="19B157EEB72AB7FEC518052FCA296E11">Seven Oaks Senior Center</option>
+				
+					<option value="0A29A9CFE85E240FB94096DAE1B78D24">Soldiers Delight Natural Environment Area (Visitor Center)</option>
+				
+					<option value="06BCA1AF605CA659FE185D050CF528D8">Southwest Academy</option>
+				
+					<option value="AD54AE93B0D38249352BBD1028DBD5FD">St. Stephens A.M.E. Church, 1601 Old Eastern Avenue, Essex, MD 21221</option>
+				
+					<option value="99B8E8FFA46176B1E6AD6D8590371933">St. Stephens AME Church</option>
+				
+					<option value="AF4ECDF7CADE3A6D3D24B7CFE0985798">Sweet Air Park</option>
+				
+					<option value="315C708072AD4960880ED1BCAA4BD3A8">The Community College of Baltimore County-Essex Campus</option>
+				
+					<option value="BCF13151B29C230573F682F76677F4A4">To Be Determined</option>
+				
+					<option value="25E2F7A795E7DD0974400B2CB5C0BF8A">Towson Health Center</option>
+				
+					<option value="B625BCDB80A4561BD85C83F6FAB2BCAE">Towson Library, 320 York Road Towson, Maryland 21204</option>
+				
+					<option value="E0DDAA1C69143A32982C3787B42E1609">Towson Patriots Court Plaza</option>
+				
+					<option value="1964D32C71FAFF0BDBAC8CE23B1EDF03">Victory Villa Senior Center</option>
+				
+					<option value="8322CC03AB7AA2FF3E477893208EADAF">Vincent Farm Elementary School 6019 Ebenezer Road White Marsh, MD 21162</option>
+				
+					<option value="7B79D209B0032680CD94379F656180BC">Walgreens in Lutherville</option>
+				
+					<option value="B10E060DD2FC748BCADC7EDF53DCF3B6">Walter E. Washington Convention Center, 801 Mount Vernon Place, NW Washington, DC</option>
+				
+					<option value="9BD16683627F09D59A16FA36A36F96AC">White Marsh Public Library; 8133 Sandpiper Circle; Nottingham, MD 21236</option>
+				
+					<option value="C84D49572DE53F011FE41C249F4C47A0">Wise Avenue Volunteer Fire Co. Hall</option>
+				
+					<option value="468B23FAFD5A1278450BBFD8480BE19F">Woodlawn Health Center</option>
+				
+					<option value="902D1B86D524C7093FB3A48F250264ED">Woodlawn Library</option>
+				
+					<option value="90E3F4DE2679071966A15703F37B5142">Woodlawn Public Library: 1811 Woodlawn Drive; Woodlawn, MD 21207</option>
+				
+					<option value="FAF2C64D4E1E6605E37A0C9FCB5E1E5C">Woodlawn Senior Center</option>
+				
+					<option value="00A177FE5F40B0F25EA5723DD71FB095">multiple locations</option>
+				
+		</select>
+	</div>
+	<div class="SECalendarType">
+		<label>Type:</label>
+		<select class="SEApplicationSelector" size="3" multiple="multiple" id="et" name="et">
+			<option value="">-- All Event Types --</option>
+			
+					<option value="290127">Class or Club</option>
+				
+					<option value="608D06AEE43C2495F57CCB3A3433A575">Event</option>
+				
+					<option value="290126">Event or Activity</option>
+				
+					<option value="290125">Meeting or Hearing</option>
+				
+		</select>
+	</div>
+	<div class="SECalendarKeyword">
+		<label>Keyword(s):</label>
+		<input type="text" value="" class="SEApplicationText" id="keywords" name="keywords">
+	</div>
+	<input type="hidden" value="3/1/2015" id="mth" name="mth">
+	<input type="submit" value="Go" class="SEApplicationSubmit">
+</form>
+<script type="text/javascript">
+
+	document.getElementById('el').selectedIndex = 0;
+
+	document.getElementById('et').selectedIndex = 0;
+
+</script>
+</div> <div class="SECalendarSmallCal">
+<table>
+	<thead>
+		<tr>
+			<th>&nbsp;</th>
+			<th id="SECalendarSmallCalPrevious" class="SECalendarDay controls"><a title="Previous Month" onclick="return nav(event);" href="http://www.baltimorecountymd.gov/MeetingsandEvents/Countywide/list/2/2015">Previous</a></th>
+			<th id="SECalendarSmallCalMonth" class="SECalendarDay controls" colspan="5"><a title="By Month" onclick="return nav(event);" href="http://www.baltimorecountymd.gov/MeetingsandEvents/Countywide/list/bymonth/3/2015">Mar 2015</a></th>
+			<th id="SECalendarSmallCalNext" class="SECalendarDay controls"><a title="Next Month" onclick="return nav(event);" href="http://www.baltimorecountymd.gov/MeetingsandEvents/Countywide/list/4/2015">Next</a></th>
+		</tr>
+	</thead>
+	<tbody>
+		
+					<tr class="SECalendarPastWeekDays">
+					<td class="SECalendarDay controls"><a title="By Week" onclick="return nav(event);" href="http://www.baltimorecountymd.gov/MeetingsandEvents/Countywide/list/byweek/03/01/2015">Select</a></td>
+				
+				<td valign="top" class="SECalendarDay pastDayWeekend"><a onclick="return nav(event);" href="http://www.baltimorecountymd.gov/MeetingsandEvents/Countywide/list/byday/03/01/2015">1</a></td>
+				
+				<td valign="top" class="SECalendarDay pastDay"><a onclick="return nav(event);" href="http://www.baltimorecountymd.gov/MeetingsandEvents/Countywide/list/byday/03/02/2015">2</a></td>
+				
+				<td valign="top" class="SECalendarDay pastDay"><a onclick="return nav(event);" href="http://www.baltimorecountymd.gov/MeetingsandEvents/Countywide/list/byday/03/03/2015">3</a></td>
+				
+				<td valign="top" class="SECalendarDay pastDay"><a onclick="return nav(event);" href="http://www.baltimorecountymd.gov/MeetingsandEvents/Countywide/list/byday/03/04/2015">4</a></td>
+				
+				<td valign="top" class="SECalendarDay pastDay"><a onclick="return nav(event);" href="http://www.baltimorecountymd.gov/MeetingsandEvents/Countywide/list/byday/03/05/2015">5</a></td>
+				
+				<td valign="top" class="SECalendarDay pastDay"><a onclick="return nav(event);" href="http://www.baltimorecountymd.gov/MeetingsandEvents/Countywide/list/byday/03/06/2015">6</a></td>
+				
+				<td valign="top" class="SECalendarDay pastDayWeekend"><a onclick="return nav(event);" href="http://www.baltimorecountymd.gov/MeetingsandEvents/Countywide/list/byday/03/07/2015">7</a></td>
+				</tr> 
+					<tr id="SECalendarCurrentWeek" class="SECalendarCurrentWeekDays">
+					<td class="SECalendarDay controls"><a title="By Week" onclick="return nav(event);" href="http://www.baltimorecountymd.gov/MeetingsandEvents/Countywide/list/byweek/03/08/2015">Select</a></td>
+				
+				<td valign="top" class="SECalendarDay pastDayWeekend"><a onclick="return nav(event);" href="http://www.baltimorecountymd.gov/MeetingsandEvents/Countywide/list/byday/03/08/2015">8</a></td>
+				
+				<td valign="top" class="SECalendarDay pastDay"><a onclick="return nav(event);" href="http://www.baltimorecountymd.gov/MeetingsandEvents/Countywide/list/byday/03/09/2015">9</a></td>
+				
+				<td valign="top" class="SECalendarDay pastDay"><a onclick="return nav(event);" href="http://www.baltimorecountymd.gov/MeetingsandEvents/Countywide/list/byday/03/10/2015">10</a></td>
+				
+				<td valign="top" class="SECalendarDay pastDay"><a onclick="return nav(event);" href="http://www.baltimorecountymd.gov/MeetingsandEvents/Countywide/list/byday/03/11/2015">11</a></td>
+				
+				<td valign="top" id="SECalendarCurrentDay" class="SECalendarDay currentDay SECalendarSelectedDay"><a onclick="return nav(event);" href="http://www.baltimorecountymd.gov/MeetingsandEvents/Countywide/list/byday/03/12/2015">12</a></td>
+				
+				<td valign="top" class="SECalendarDay futureDay"><a onclick="return nav(event);" href="http://www.baltimorecountymd.gov/MeetingsandEvents/Countywide/list/byday/03/13/2015">13</a></td>
+				
+				<td valign="top" class="SECalendarDay futureDayWeekend"><a onclick="return nav(event);" href="http://www.baltimorecountymd.gov/MeetingsandEvents/Countywide/list/byday/03/14/2015">14</a></td>
+				</tr> 
+					<tr class="SECalendarFutureWeekDays">
+					<td class="SECalendarDay controls"><a title="By Week" onclick="return nav(event);" href="http://www.baltimorecountymd.gov/MeetingsandEvents/Countywide/list/byweek/03/15/2015">Select</a></td>
+				
+				<td valign="top" class="SECalendarDay futureDayWeekend"><a onclick="return nav(event);" href="http://www.baltimorecountymd.gov/MeetingsandEvents/Countywide/list/byday/03/15/2015">15</a></td>
+				
+				<td valign="top" class="SECalendarDay futureDay"><a onclick="return nav(event);" href="http://www.baltimorecountymd.gov/MeetingsandEvents/Countywide/list/byday/03/16/2015">16</a></td>
+				
+				<td valign="top" class="SECalendarDay futureDay"><a onclick="return nav(event);" href="http://www.baltimorecountymd.gov/MeetingsandEvents/Countywide/list/byday/03/17/2015">17</a></td>
+				
+				<td valign="top" class="SECalendarDay futureDay"><a onclick="return nav(event);" href="http://www.baltimorecountymd.gov/MeetingsandEvents/Countywide/list/byday/03/18/2015">18</a></td>
+				
+				<td valign="top" class="SECalendarDay futureDay"><a onclick="return nav(event);" href="http://www.baltimorecountymd.gov/MeetingsandEvents/Countywide/list/byday/03/19/2015">19</a></td>
+				
+				<td valign="top" class="SECalendarDay futureDay"><a onclick="return nav(event);" href="http://www.baltimorecountymd.gov/MeetingsandEvents/Countywide/list/byday/03/20/2015">20</a></td>
+				
+				<td valign="top" class="SECalendarDay futureDayWeekend"><a onclick="return nav(event);" href="http://www.baltimorecountymd.gov/MeetingsandEvents/Countywide/list/byday/03/21/2015">21</a></td>
+				</tr> 
+					<tr class="SECalendarFutureWeekDays">
+					<td class="SECalendarDay controls"><a title="By Week" onclick="return nav(event);" href="http://www.baltimorecountymd.gov/MeetingsandEvents/Countywide/list/byweek/03/22/2015">Select</a></td>
+				
+				<td valign="top" class="SECalendarDay futureDayWeekend"><a onclick="return nav(event);" href="http://www.baltimorecountymd.gov/MeetingsandEvents/Countywide/list/byday/03/22/2015">22</a></td>
+				
+				<td valign="top" class="SECalendarDay futureDay"><a onclick="return nav(event);" href="http://www.baltimorecountymd.gov/MeetingsandEvents/Countywide/list/byday/03/23/2015">23</a></td>
+				
+				<td valign="top" class="SECalendarDay futureDay"><a onclick="return nav(event);" href="http://www.baltimorecountymd.gov/MeetingsandEvents/Countywide/list/byday/03/24/2015">24</a></td>
+				
+				<td valign="top" class="SECalendarDay futureDay"><a onclick="return nav(event);" href="http://www.baltimorecountymd.gov/MeetingsandEvents/Countywide/list/byday/03/25/2015">25</a></td>
+				
+				<td valign="top" class="SECalendarDay futureDay"><a onclick="return nav(event);" href="http://www.baltimorecountymd.gov/MeetingsandEvents/Countywide/list/byday/03/26/2015">26</a></td>
+				
+				<td valign="top" class="SECalendarDay futureDay"><a onclick="return nav(event);" href="http://www.baltimorecountymd.gov/MeetingsandEvents/Countywide/list/byday/03/27/2015">27</a></td>
+				
+				<td valign="top" class="SECalendarDay futureDayWeekend"><a onclick="return nav(event);" href="http://www.baltimorecountymd.gov/MeetingsandEvents/Countywide/list/byday/03/28/2015">28</a></td>
+				</tr> 
+					<tr class="SECalendarFutureWeekDays">
+					<td class="SECalendarDay controls"><a title="By Week" onclick="return nav(event);" href="http://www.baltimorecountymd.gov/MeetingsandEvents/Countywide/list/byweek/03/29/2015">Select</a></td>
+				
+				<td valign="top" class="SECalendarDay futureDayWeekend"><a onclick="return nav(event);" href="http://www.baltimorecountymd.gov/MeetingsandEvents/Countywide/list/byday/03/29/2015">29</a></td>
+				
+				<td valign="top" class="SECalendarDay futureDay"><a onclick="return nav(event);" href="http://www.baltimorecountymd.gov/MeetingsandEvents/Countywide/list/byday/03/30/2015">30</a></td>
+				
+				<td valign="top" class="SECalendarDay futureDay"><a onclick="return nav(event);" href="http://www.baltimorecountymd.gov/MeetingsandEvents/Countywide/list/byday/03/31/2015">31</a></td>
+				
+				<td valign="top" class="SECalendarDay futureDayOtherMonth"><a onclick="return nav(event);" href="http://www.baltimorecountymd.gov/MeetingsandEvents/Countywide/list/byday/04/01/2015">1</a></td>
+				
+				<td valign="top" class="SECalendarDay futureDayOtherMonth"><a onclick="return nav(event);" href="http://www.baltimorecountymd.gov/MeetingsandEvents/Countywide/list/byday/04/02/2015">2</a></td>
+				
+				<td valign="top" class="SECalendarDay futureDayOtherMonth"><a onclick="return nav(event);" href="http://www.baltimorecountymd.gov/MeetingsandEvents/Countywide/list/byday/04/03/2015">3</a></td>
+				
+				<td valign="top" class="SECalendarDay futureDayOtherMonthWeekend"><a onclick="return nav(event);" href="http://www.baltimorecountymd.gov/MeetingsandEvents/Countywide/list/byday/04/04/2015">4</a></td>
+				</tr> 
+	</tbody>
+</table>
+</div> <div class="SECalendarFilter">Show Events By:  
+	<a class="SECalendarFilterSelected" onclick="return nav(event);" href="http://www.baltimorecountymd.gov/MeetingsandEvents/Countywide/list/byday">Day</a> 
+	<a onclick="return nav('http://www.baltimorecountymd.gov/MeetingsandEvents/Countywide/list/byweek');" href="http://www.baltimorecountymd.gov/MeetingsandEvents/Countywide/list/byweek">Week</a> 
+	<a onclick="return nav('http://www.baltimorecountymd.gov/MeetingsandEvents/Countywide/list/bymonth');" href="http://www.baltimorecountymd.gov/MeetingsandEvents/Countywide/list/bymonth">Month</a></div> <div class="SECalendarListEvents"><a title="Subscribe to RSS" class="rssLink" onclick="return nav(event);" href="http://www.baltimorecountymd.gov/MeetingsandEvents/Countywide/rss">RSS</a>
+<table cellspacing="0" cellpadding="0" border="0">
+<tbody>
+	
+			<tr>
+				<td colspan="3" class="SECalendarEventDate">Thursday, March 12 2015</td>
+			</tr>
+			
+				<tr class="odd">
+					<td class="SECalendarEventTime">All Day</td>
+					<td class="SECalendarEventName"><a href="http://www.baltimorecountymd.gov/MeetingsandEvents/Countywide/event/administrative-variances---611-berrymans-lane/F8C908A66DCF77A616270FAA44FD212D">Administrative Variances - 611 Berrymans Lane</a></td>
+					<td class="SECalendarEventLocation">4th Council District</td>
+				</tr>
+			
+				<tr class="even">
+					<td class="SECalendarEventTime">All Day</td>
+					<td class="SECalendarEventName"><a href="http://www.baltimorecountymd.gov/MeetingsandEvents/Countywide/event/administrative-variances---12847-harford-road/46963EFDBEF0FF9EF79A12BD88BB2A94">Administrative Variances - 12847 Harford Road</a></td>
+					<td class="SECalendarEventLocation">5th Council District</td>
+				</tr>
+			
+				<tr class="odd">
+					<td class="SECalendarEventTime">All Day</td>
+					<td class="SECalendarEventName"><a href="http://www.baltimorecountymd.gov/MeetingsandEvents/Countywide/event/administrative-variances---3524-meadowside-road/451A9F71327C673A585203E458EE389A">Administrative Variances - 3524 Meadowside Road</a></td>
+					<td class="SECalendarEventLocation">4th Council District</td>
+				</tr>
+			
+				<tr class="even">
+					<td class="SECalendarEventTime">All Day</td>
+					<td class="SECalendarEventName"><a href="http://www.baltimorecountymd.gov/MeetingsandEvents/Countywide/event/administrative-variances---3027-black-rock-road/2DC1E2555BE6861328ACBFDBBCD0AD6E">Administrative Variances - 3027 Black Rock Road</a></td>
+					<td class="SECalendarEventLocation">3rd Council District</td>
+				</tr>
+			
+				<tr class="odd">
+					<td class="SECalendarEventTime">All Day</td>
+					<td class="SECalendarEventName"><a href="http://www.baltimorecountymd.gov/MeetingsandEvents/Countywide/event/administrative-variances---401-dixie-drive/2667F798E2893516F516C24673C58B73">Administrative Variances - 401 Dixie Drive</a></td>
+					<td class="SECalendarEventLocation">5th Council District</td>
+				</tr>
+			
+				<tr class="even">
+					<td class="SECalendarEventTime">All Day</td>
+					<td class="SECalendarEventName"><a href="http://www.baltimorecountymd.gov/MeetingsandEvents/Countywide/event/administrative-variances---2634-holly-beach-road/B1B2AE8C49273CF54E80D724BDC99E6D">Administrative Variances - 2634 Holly Beach Road </a></td>
+					<td class="SECalendarEventLocation">4th Council District</td>
+				</tr>
+			
+				<tr class="odd">
+					<td class="SECalendarEventTime">All Day</td>
+					<td class="SECalendarEventName"><a href="http://www.baltimorecountymd.gov/MeetingsandEvents/Countywide/event/administrative-variances---10522-burnside-farm-road/67388B9D19907F15BEF2705150783674">Administrative Variances - 10522 Burnside Farm Road</a></td>
+					<td class="SECalendarEventLocation">2nd Council District</td>
+				</tr>
+			
+				<tr class="even">
+					<td class="SECalendarEventTime">10:00a - 11:00a</td>
+					<td class="SECalendarEventName"><a href="http://www.baltimorecountymd.gov/MeetingsandEvents/Countywide/event/development-plan-hearing---arbutus-station/2E4C68BBDA24BF8EE4B6EAB54D27B27F">Development Plan Hearing - Arbutus Station</a></td>
+					<td class="SECalendarEventLocation">1st Council District</td>
+				</tr>
+			
+				<tr class="odd">
+					<td class="SECalendarEventTime SERecurringEvent">6:00p - 9:00p</td>
+					<td class="SECalendarEventName"><a href="http://www.baltimorecountymd.gov/MeetingsandEvents/Countywide/event/landmarks-preservation-commission/BC7063881A36C04B450DF0228BEDF3E003122015">Landmarks Preservation Commission</a></td>
+					<td class="SECalendarEventLocation">Jefferson Building</td>
+				</tr>
+			
+				<tr class="even">
+					<td class="SECalendarEventTime">6:00p - 7:00p</td>
+					<td class="SECalendarEventName"><a href="http://www.baltimorecountymd.gov/MeetingsandEvents/Countywide/event/stop-smoking-today/69A0D21012E4D9C0837397237F14AEC0">Stop Smoking Today!</a></td>
+					<td class="SECalendarEventLocation">MedStar Health Franklin Square Medical Center</td>
+				</tr>
+			
+</tbody>
+</table>
+</div></div><script type="text/javascript">
+	function _SE_checkRateThisPageForm(_CF_this){
+		_SE_validateRadiobox(_CF_this, '_PageRating_radiobox1_', 'Please select a page rating.');
+	}
+</script>
+<script src="/se/js/mod/advancedforms/cfform.js" type="text/javascript"> </script><script type="text/javascript">
+	function _CF_checkRateThisPageForm(_CF_this)
+	{
+	        //reset on submit
+	        _CF_error_messages = new Array();
+	        _CF_error_fields = new Object();
+	        _CF_FirstErrorField = null;
+
+					            if (!_CF_checkURL(_CF_this['url'].value, false))
+					            {
+					                _CF_onError(_CF_this, "url",  _CF_this['url'].value,"Error in label field");
+					            }
+						_SE_checkRateThisPageForm(_CF_this);	
+        //display error messages and return success
+        if( _CF_error_messages.length &gt; 0 )
+        {
+            // show alert() message
+            _CF_onErrorAlert(_CF_error_messages);
+            // set focus to first form error, if the field supports js focus().
+            if( _CF_this[_CF_FirstErrorField].type == "text" )
+            { _CF_this[_CF_FirstErrorField].focus(); }
+
+            return false;
+        }else {
+            return true;
+        }
+}
+</script><div id="RateThisPageForm_div" class="seform">
+<form name="RateThisPageForm" enctype="multipart/form-data" onsubmit="return _CF_checkRateThisPageForm(this);" method="post" action="/MeetingsandEvents/countywide" id="RateThisPageForm">
+<table width="100%" cellspacing="0" cellpadding="2" border="0" class="vertical">
+<tbody><tr>
+<td>
+<table width="100%" cellspacing="0" cellpadding="2" border="0" class="vertical">
+<tbody><tr>
+<td class="seHeaderTitle" colspan="2">Was This Page Helpful?</td>
+</tr>
+<tr>
+<td>
+<fieldset>
+<div style="width:100%" class="seText"><span>Fields marked with </span><span class="seRequiredMarker">*</span><span> are required.</span></div><table cellspacing="0" cellpadding="0" border="0"><tbody><tr><td width="1%" class="seLabelCell">Page Rating<span class="seRequiredMarker">*</span></td><td class="seFieldCell"><div style="width:100%;" class="seText"><table cellspacing="0" cellpadding="0" border="0" class="horizontal"><tbody><tr class="seElementRow"><td class="seFieldCell"> <input type="radio" value=" 5" class="seRadio" id="_PageRating_radiobox1_1" name="_PageRating_radiobox1_"><label class="seRadioLabel" for="_PageRating_radiobox1_1">Excellent </label> <input type="radio" value=" 4" class="seRadio" id="_PageRating_radiobox1_2" name="_PageRating_radiobox1_"><label class="seRadioLabel" for="_PageRating_radiobox1_2">Good </label> <input type="radio" value=" 3" class="seRadio" id="_PageRating_radiobox1_3" name="_PageRating_radiobox1_"><label class="seRadioLabel" for="_PageRating_radiobox1_3">Average </label> <input type="radio" value=" 2" class="seRadio" id="_PageRating_radiobox1_4" name="_PageRating_radiobox1_"><label class="seRadioLabel" for="_PageRating_radiobox1_4">Poor </label> <input type="radio" value=" 1" class="seRadio" id="_PageRating_radiobox1_5" name="_PageRating_radiobox1_"><label class="seRadioLabel" for="_PageRating_radiobox1_5">Very Poor </label> </td></tr></tbody></table></div></td></tr></tbody></table>
+<table cellspacing="0" cellpadding="0" border="0" class="horizontal">
+<tbody><tr class="seElementRow">
+<td class="seLabelCell">
+<div class="seText"><label for="Comments">Explain Your Rating</label></div>
+</td>
+<td class="seFieldCell">
+<textarea style="width:430px;height:60px;" class="seTextarea " rows="3" cols="20" name="Comments" id="Comments"> </textarea>
+</td>
+</tr>
+</tbody></table>
+<table cellspacing="0" cellpadding="0" border="0" class="horizontal">
+<tbody><tr class="seElementRow">
+<td class="seLabelCell">
+<div class="seText"><label for="website" class="website">website</label></div>
+</td>
+<td class="seFieldCell">
+<input type="text" value="" class="seInput " name="website" id="website">
+</td>
+</tr>
+</tbody></table>
+<input type="submit" style="margin-top:10px;width:90px;" value="Submit" class="seButton " name="fieldName2" id="fieldName2">
+<table cellspacing="0" cellpadding="0" border="0" class="horizontal">
+<tbody><tr class="seElementRow">
+<td class="seLabelCell">
+<div class="seText"><label style="display:none;" for="url">URL</label></div>
+</td>
+<td class="seFieldCell">
+<input type="text" style="display:none;" value="" class="seInput " name="url" id="url">
+</td>
+</tr>
+</tbody></table>
+</fieldset>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td>
+</td></tr>
+</tbody></table>
+<input type="hidden" value="1" id="_RateThisPageForm_seStepID" name="_RateThisPageForm_seStepID">
+<input type="hidden" value="7D23E6D47FC6D6BF6B0B9356A9D77322" id="_submissionID" name="_submissionID">
+<input type="hidden" value="" id="_seResultMail" name="_seResultMail">
+<input type="hidden" value="" id="_seNotifyMail" name="_seNotifyMail">
+</form>
+</div>
+
+<script type="text/javascript">
+	$('form').submit(function(){    
+        if ($('input#website').val().length != 0) {
+            return false;
+        } 
+});
+</script>&nbsp;</div></div></div>
+
+				<!--SITE EXECUTIVE HTML END-->
+		</div>
+		</div>
+		
+		<footer class="footer">
+			<section class="primary-footer container">
+			<section class="county-map-container col-md-6 col-sm-6">
+				<img src="assets/img/footer-county-shape.png" alt="" class="county-map hidden-sm hidden-xs">
+				<div class="county-address">
+					<h2>Baltimore County Government</h2>
+					<p>Historic Courthouse</br>
+					400 Washington Avenue</br>
+					Towson, MD 21204</p>
+					<p><a href="http://mapq.st/rqwGxR" title="Get directions to Baltimore County.">Directions &gt;&gt;</a></p>
+				</div>
+				
+			</section>
+			<section class="county-help col-md-2 col-sm-6">
+				<h2>Help</h2>
+				<ul class="county-help-list">
+					<li class="county-help-list-item">
+						<a href="http://www.baltimorecountymd.gov/Contact_Us/telephone/helpful_numbers.html" title="Find helpful telephone numbers.">Phone Numbers</a>
+					</li>
+					<li class="county-help-list-item">
+						<a href="http://www.baltimorecountymd.gov/imlooking/index.html#all" title="Find a County service.">Find a County Service</a>
+					</li>
+					<li class="county-help-list-item">
+						<a href="http://www.baltimorecountymd.gov/iwant/index.html" title="Report a problem.">Report a Problem</a>
+					</li>
+				</ul>
+			</section>
+			<section class="tranlate-page col-md-2 hidden-sm hidden-xs">
+				<h2>Translate</h2>
+				<ul class="translate-page-list">
+					<li class="american"><a title="English" href="http://baltimorecountymd.gov//">English</a></li>
+					<li class="translate-page-list-item translate-page-list-item-arabic">
+						<a title="Translate this site in Arabic." href="http://translate.google.com/translate?hl=en&amp;sl=en&amp;tl=ar&amp;u=http%3A%2F%2Fbaltimorecountymd.gov/%2F">العربية</a>
+					</li>
+					<li class="translate-page-list-item translate-page-list-item-chinese">
+						<a title="Translate this site in Chinese." href="http://translate.google.com/translate?hl=en&amp;sl=en&amp;tl=zh-CN&amp;u=http%3A%2F%2Fbaltimorecountymd.gov/%2F">中文</a>
+					</li>
+					<li class="translate-page-list-item translate-page-list-item-french">
+						<a title="Translate this site in French." href="http://translate.google.com/translate?hl=en&amp;sl=en&amp;tl=fr&amp;u=http%3A%2F%2Fbaltimorecountymd.gov/%2F">Français</a>
+					</li>
+					<li class="translate-page-list-item translate-page-list-item-russian">
+						<a title="Translate this site in Russian." href="http://translate.google.com/translate?hl=en&amp;sl=en&amp;tl=ru&amp;u=http%3A%2F%2Fbaltimorecountymd.gov/%2F">Русский</a>
+					</li>
+					<li class="translate-page-list-item translate-page-list-item-spanish">
+						<a title="Translate this site in Spanish." href="http://translate.google.com/translate?hl=en&amp;sl=en&amp;tl=es&amp;u=http%3A%2F%2Fbaltimorecountymd.gov/%2F">Español</a>
+					</li>
+				</ul>
+			</section>
+			<section class="county-awards col-md-2 hidden-sm hidden-xs">
+				<h2>Awards</h2>
+				<ul class="county-awards-list">
+					<li class="county-awards-list-item">
+						<a href="http://www.govtech.com/dc/digital-counties/?year=2014" title="Learn more about Baltimore County's Digital Counties Survey Award."><img src="http://baltimorecountymd.gov/sebin/n/b/footer-map-digital-counties.jpg" alt="Image of Digital Counties Survey logo." /></a>
+					</li>
+					<li class="county-awards-list-item">
+						<a href="http://www.govtech.com//internet/2014-Best-of-the-Web-Award-Winners-Announced.html?page=2" title="Learn more about Baltimore County's Best of The Web Award." ><img src="http://baltimorecountymd.gov/sebin/l/i/footer-map-botw.jpg" alt="Image of Best of The Web logo." /></a>
+					</li>
+				</ul>
+			</section>
+			<ul class="social-media-list social-media-list-small inline-list col-sm-12 hidden-md hidden-lg">
+					<li class="social-media-list-item social-media-list-item-facebook">
+						<a href="">
+						</a>
+					</li>
+					<li class="social-media-list-item social-media-list-item-twitter">
+						<a href="">
+						</a>
+					</li>
+					<li class="social-media-list-item social-media-list-item-photos">
+						<a href="">
+						</a>
+					</li>
+					<li class="social-media-list-item social-media-list-item-youtube">
+						<a href="">
+						</a>
+					</li>
+					<li class="social-media-list-item social-media-list-item-bcnow">
+						<a href="">
+						</a>
+					</li>
+				</ul>
+		</section>
+		<section class="secondary-footer">
+			<div class="container">
+			<section class="copyright col-md-4 col-sm-12">
+				<span>&copy; Copyright 2015 Baltimore County Government</span>
+			</section>
+			<nav class="county-links col-md-8 col-sm-12">
+				<ul class="county-links-list inline-list">
+					<li class="county-links-list-item">
+						<a href="http://www.baltimorecountymd.gov/Contact/webmaster?issueid=42" title="Contact Baltimore County.">Contact Baltimore County</a>
+					</li>
+					<li class="county-links-list-item">
+						<a href="http://www.baltimorecountymd.gov/UserGuide/usertermsconditions.html" title="Review the User Terms for the Baltimore County website.">User Terms</a>
+					</li>
+					<li class="county-links-list-item">
+						<a href="http://www.baltimorecountymd.gov/UserGuide/usertermsconditions.html#privacy" title="Review the  Baltimore County privacy policy.">Privacy</a>
+					</li>
+					<li class="county-links-list-item">
+						<a href="http://www.baltimorecountymd.gov/Agencies/humanresources/jobs/index.html" title="View Baltimore County job listings.">Jobs</a>
+					</li>
+					<li class="county-links-list-item">
+						<a href="http://www.baltimorecountymd.gov/UserGuide/sitemap.html" title="View the Baltimore County site map.">Site Map</a>
+					</li>
+					<li class="county-links-list-item">
+						<a href="http://www.baltimorecountymd.gov/Agencies/ada/index.html" title="Learn more about Reasonable Accommodation.">Reasonable Accommodation</a>
+					</li>
+				</ul>
+			</nav>
+			</div>
+		</section>
+		<div class="full-site-container">
+			<button class="btn-link reView view-full-site-btn"  data-coreText='View Full Site' data-defaultText='View Mobile Site'>View Full Site</button>
+		</div>
+	</footer>
+</body>
+</html>
