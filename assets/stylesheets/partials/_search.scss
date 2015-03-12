@@ -36,6 +36,16 @@
 }
 .search-internal {
   padding: 0;
+
+  .search-input {
+    height: auto;
+    padding: 10px;
+  }
+
+  button {
+    height: auto;
+    padding: 11px 10px;
+  }
 }
 /*Popular Services*/
 .top-visited {
