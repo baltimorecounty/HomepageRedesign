@@ -1,0 +1,3155 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Baltimore County Homepage Government</title>
+		<link rel="stylesheet" type="text/css" href="assets/stylesheets/existing/base.css"/>
+		<link rel="stylesheet" type="text/css" href="assets/stylesheets/existing/base-2.css"/>
+		<link rel="stylesheet" type="text/css" href="assets/stylesheets/existing/supplimental.css"/>
+		<link rel="stylesheet" type="text/css" href="assets/stylesheets/inside-template.css"/>
+		
+		<!--[if lt IE 9]>
+			<link rel="stylesheet" type="text/css" href="assets/stylesheets/ie.css"/>
+		<![endif]-->
+		<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+		<script src="assets/js/lib/jQuery.min.js"></script>
+		<script type="text/javascript" src="assets/js/lib/slick.min.js"></script>
+		<script type="text/javascript" src="assets/js/lib/handlebars.js"></script>
+		<script src="assets/js/lib/reView.js"></script>
+		<script src="assets/js/text-resizer.js"></script>
+		<script src="assets/js/skipNav.js"></script>
+		<script src="assets/js/flickr.js"></script>
+		<script src="assets/js/template.js"></script>
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	    <!--[if lt IE 9]>
+	      <script src="assets/js/lib/html5shiv.min.js"></script>
+	      <script src="assets/js/lib/respond.min.js"></script>
+	    <![endif]-->
+
+	</head>
+	<body class="homepage">
+		<div id="skiptocontent" class="skip-nav">
+		  <a href="#main-content" class="link-btn skip">skip to main content</a>
+		</div>
+		<header class="header">
+			<section class="secondary-nav hidden-xs">
+				<div class="container">
+				<nav class="col-md-4 col-sm-6 ">
+					<ul class="secondary-nav-list inline-list">
+						<li class="secondary-nav-list-item">
+							<a href="">County Executive</a>
+						</li>
+						<li class="secondary-nav-list-item">
+							<a href="">County Council</a>
+						</li>
+						<li class="secondary-nav-list-item">
+							<a href="">Courts</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="search col-md-4">
+				<div class="search-input-container">
+			    <button>Search</button>
+			    <div class="search-text">
+			      <label for="search-input" class="search-label">Search</label><input type="text" placeholder="Search for agencies, services and more..." name="search-input" class="search-input">
+			    </div>
+			</div>
+			  </div>
+				<div class="page-tools col-md-4 col-sm-6 hidden-xs">
+					<a href="http://www.baltimorecountymd.gov/Subscribe/" class="subscribe" title="Subscribe to Baltimore County Newsletters.">Subscribe</a>
+					<div class="resizer">
+					  <ul class="resizer-list inline-list">
+					    <li><button id="normal-text" class="btn-link resizer-item resizer-item-smaller">a</button></li>
+					    <li><button id="large-text" class="btn-link resizer-item resizer-item-default">a</button></li>
+					    <li><button id="largest-text" class="btn-link resizer-item resizer-item-larger">a</button></li>
+					  </ul>
+					</div>
+				</div>
+				</div>
+			</section>
+			<div class="primary-header">
+			  <div class="container-fluid">
+			    <div class="brand col-md-4 col-sm-12">
+			      <a href="http://www.baltimorecountymd.gov" title="View the Baltimore County Government homepage.">
+			      <img class="brand-logo" src="assets/img/header-county-seal.png" height="84" width="84" />
+			      <h1 class="brand-heading">Baltimore County<br><span class="uppercase smaller-text">Government</span></h1>
+			  	</a>
+			    </div>
+			    <nav class="secondary-nav col-xs-12 hidden-lg hidden-md hidden-sm">
+					<ul class="secondary-nav-list inline-list">
+						<li class="secondary-nav-list-item">
+							<a href="">County Executive</a>
+						</li>
+						<li class="secondary-nav-list-item">
+							<a href="">County Council</a>
+						</li>
+						<li class="secondary-nav-list-item">
+							<a href="">Courts</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="primary-nav-container">
+			    <ul class="primary-nav col-md-8 col-sm-12" role="navigation">
+			      <li class="primary-nav-item col-md-4 col-sm-4 col-xs-12">
+			        <h2 class="primary-nav-item__headline">
+			          <a href="http://www.baltimorecountymd.gov/iwant/apply.html">I Want To...<br><span class="primary-nav-item__tagline">Report Issues, Follow Up, Apply</span></a>
+			        </h2>
+			      </li>
+			      <li class="primary-nav-item col-md-4 col-sm-4 col-xs-12">
+			        <h2 class="primary-nav-item__headline">
+			          <a href="http://www.baltimorecountymd.gov/iwant/apply.html">I'm Looking For...<br><span class="primary-nav-item__tagline">Resident, Visitor, or Business Info</span></a>
+			        </h2>
+			      </li>
+			      <li class="primary-nav-item col-md-4 col-sm-4 col-xs-12">
+			        <h2 class="primary-nav-item__headline">
+			          <a href="http://www.baltimorecountymd.gov/iwant/apply.html">I Need to Contact...<br><span class="primary-nav-item__tagline">An Agency, My Rep, An Employee</span></a>
+			        </h2>
+			      </li>
+			    </ul>
+			    <nav class="hamburger-nav">
+			    	<a class="hamburger-btn" href="#" title="Navigate Baltimore County's Website">
+			    		<img src="assets/img/hamburger.png" height="32" width="32" alt="Navigate Baltimore County's Website" /></a>
+			    </nav>
+			    </div>
+			    <div class="clearfix"></div>
+			  </div>
+			</div>
+		</header>
+
+		<div id="main-content" class="county-information">
+		<div class="county-information-container container-fluid">
+		<div id="backgroundgradient">
+			<div id="backgroundshadow">
+				<!--SITE EXECUTIVE HTML START-->
+				<div id="maincontainer"><a name="SkipNav"></a><div id="column1"><div class="logoboxbottom">&nbsp;</div><div id="container_localnavigation"><div id="baco_subnav"></div><div id="services"><!-- skip navigation removed from included pages --><div id="customlocalnavigations"><ul id="localnav"><li class="title">In This Section</li><li><a href="http://www.baltimorecountymd.gov/News/BaltimoreCountyNow" title="View the Baltimore County Now Blog.">Blog</a></li><li><a href="http://www.baltimorecountymd.gov/News/newsrelease.html" title="View Baltimore County news.">News</a></li><li><a href="http://www.baltimorecountymd.gov/videogallery" title="View Baltimore County videos.">Video</a> <ul class="sub"><li><a href="http://www.baltimorecountymd.gov/News/bctvschedule.html" title="View the BCTV Programming Schedule.">BCTV (Cable 25)</a></li><li><a href="http://www.baltimorecountymd.gov/videogallery/bc%20upfront" title="View BC UpFront videos.">BC Upfront (Video)</a></li><li><a href="http://www.baltimorecountymd.gov/videogallery/answering%20the%20call" title="View Answering the Call videos.">Answering the Call (Video)</a></li><li><a href="http://www.baltimorecountymd.gov/videogallery/hello%20baltimore%20county" title="View Hello Baltimore County videos.">Hello Baltimore County (Video)</a></li><li><a href="http://www.baltimorecountymd.gov/videogallery/police%20report" title="View Police Report videos.">Police Report (Video)</a></li><li><a href="http://www.baltimorecountymd.gov/videogallery/time%20of%20your%20life" title="View Time of Your Life videos.">Time of Your Life (Video)</a></li><li><a href="http://www.baltimorecountymd.gov/videogallery/smARTS,%20The%20Baltimore%20County%20Arts%20Show" title="View smARTs videos.">smARTS (Video)</a></li></ul></li></ul></div></div><div id="services"><table width="100%" cellspacing="0" cellpadding="0" border="0"><tbody><tr><td><!-- skip navigation removed from included pages --><div id="servicescontainer"><ul class="noindent"><li class="title">Most Requested Services</li><li><a href="http://www.baltimorecountymd.gov/Agencies/humanresources/jobs/index.html" title="View Baltimore County job listings.">View Job Listings</a></li><li><a href="http://www.baltimorecountymd.gov/Agencies/budfin/taxsearch/index.html" title="Pay or search property taxes online.">Pay/Search Property Taxes Online</a></li><li><a href="http://myneighborhood.baltimorecountymd.gov/" title="Use this interactive map to find your zoning.">Find&nbsp;Your&nbsp;Zoning</a></li><li><a href="http://www.baltimorecountymd.gov/Agencies/law/countycode.html" title="Browse County Codes.">Browse County Codes</a></li><li><a href="http://www.baltimorecountymd.gov/Agencies/circuit/jurycomm.html" title="Complete the jury duty questionnaire.">Complete Jury Questionnaire</a></li><li><a href="http://www.baltimorecountymd.gov/Agencies/circuit/dailydocket/index.html" title="View the Circuit Court daily docket.">View Daily Docket</a></li><li><a href="http://www.baltimorecountymd.gov/Agencies/budfin/citations/index.html" title="Pay your parking and red light tickets here.">Pay Parking and Red Light Tickets</a></li><li><a href="http://egov2.baltimorecountymd.gov/votingweb/default.aspx?pageid=2" title="Use the polling place locator to find your council district. ">Find Your Council&nbsp;District</a></li><li><a href="http://www.baltimorecountymd.gov/Agencies/publicworks/solid_waste/collectionconnection.html" title="Download and print you trash/recycling collection schedule.">Download Trash Schedule</a></li><li><a href="http://www.baltimorecountymd.gov/Agencies/myneighborhood/facilities.html" title="Find a county facility in your area.">Locate&nbsp;County Facilities</a></li><li><a href="http://www.baltimorecountymd.gov/Agencies/police/crime/index.html" title="Search crime statistics in your neighborhood.">Search Crime Stats</a></li><li><a href="http://www.baltimorecountymd.gov/Agencies/recreation/programdivision/index.html" title="Find recreation programs and activites offered in your neighborhood.">Find&nbsp;Recreation Activities</a></li><li><a href="http://www.baltimorecountymd.gov/Agencies/volunteers/index.html" title="Find a volunteer opportunity that matches your skills and interests.">Volunteer Today</a></li></ul><div id="moreservices"><a href="http://www.baltimorecountymd.gov/Services/index.html" title="Browse a directory of other online services.">More &gt;&gt;&gt;</a></div></div></td></tr></tbody></table></div></div></div><div id="column2"><div id="agencyheader"><div id="agencyname"><!-- skip navigation removed from included pages --><div>Baltimore County Now</div></div><div id="shareutilities"><div id="sharebutton"><!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style ">
+<a class="addthis_counter addthis_pill_style addthis_nonzero" style="display: inline-block;" href="#"><a class="atc_s addthis_button_compact"><span></span></a><a class="addthis_button_expanded" target="_blank" title="View more services" href="#">5</a></a>
+<div class="atclear"></div></div>
+<script type="text/javascript">
+    var addthis_config = {"data_track_clickback":true};
+</script>
+<script defer="true" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4e80a2a60c8146f0" type="text/javascript"></script>
+<!-- AddThis Button END --></div><div id="printpagebutton"><div>
+			
+				<a onclick="openFriendlyVersion(); return false;" href="" style="cursor: pointer;"><img width="59" border="0" height="20" title="Print this page." alt="Print this page." src="/sebin/w/w/print-button.gif"></a>
+				
+		</div></div></div></div><div id="graybartop">&nbsp;</div><div id="blogimagecontainer"><img width="710" vspace="0" border="0" hspace="0" height="120" alt="Baltimore County Now - News You Can Use" src="/sebin/t/e/BlogMastheadFINAL.jpg"></div><div id="seBlogTabsContainer"><table width="100%" cellspacing="0" cellpadding="0" border="0"><tbody><tr><td><!-- skip navigation removed from included pages --><div id="seBlogTabs"><ul><li><a href="http://www.baltimorecountymd.gov/News/BaltimoreCountyNow" title="View the Baltimore County Now Blog.">Blog</a></li><li><a href="http://www.baltimorecountymd.gov/News/newsrelease.html" title="View more Baltimore County news.">News</a></li><li><a href="http://www.baltimorecountymd.gov/videogallery" title="View Baltimore County videos." class="active">Video</a></li></ul></div></td></tr></tbody></table></div><div id="baco_breadcrumb"><span class=""><a href="http://www.baltimorecountymd.gov/" class="" title="Home">Home</a>&nbsp;&gt;&nbsp;<a href="http://www.baltimorecountymd.gov/videogallery" class="" title="Video Gallery">Video Gallery</a></span></div><div></div><div id="mainContent"><noscript> &lt;h1&gt;Javascript Is Disabled On Your Browser&lt;/h1&gt;
+&lt;p&gt;It appears that your browser does not support JavaScript, or you have it disabled. This site is best viewed with JavaScript enabled.  If JavaScript is disabled in your browser, please turn it back on then reload this page.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;If your browser does not support JavaScript, select the link below: &lt;br&gt;
+  &lt;br&gt;
+&lt;a href="http://www.baltimorecountymd.gov/enablejavascript.html"&gt;http://www.baltimorecountymd.gov/enablejavascript.html&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;</noscript><div id="relatedtopics"><div id="calloutarea"><!-- skip navigation removed from included pages --></div></div><div><a name="Skip"></a></div><div class="tulipMain"><h1>Video Gallery</h1><div id="tulipTVPlayerContainer">
+	<div id="tulipTVPlayerDiv"><object width="100%" height="100%" type="application/x-shockwave-flash" data="http://tulip.siteexecutive.com/serve/flowplayer.swf" name="tulipTVPlayerDiv_api" id="tulipTVPlayerDiv_api"><param value="true" name="allowfullscreen"><param value="always" name="allowscriptaccess"><param value="high" name="quality"><param value="#000000" name="bgcolor"><param value="opaque" name="wmode"><param value="config={&quot;canvas&quot;:{&quot;backgroundColor&quot;:&quot;#000000&quot;,&quot;backgroundGradient&quot;:[0]},&quot;clip&quot;:{&quot;fadeInSpeed&quot;:0,&quot;fadeOutSpeed&quot;:0},&quot;playlist&quot;:[{&quot;scaling&quot;:&quot;fit&quot;,&quot;url&quot;:&quot;http://tulip.siteexecutive.com/serve/Vblack.jpg&quot;,&quot;fadeInSpeed&quot;:0,&quot;fadeOutSpeed&quot;:0}],&quot;plugins&quot;:{&quot;lighttpd&quot;:{&quot;url&quot;:&quot;http://tulip.siteexecutive.com/serve/flowplayer.pseudostreaming.swf&quot;,&quot;queryString&quot;:&quot;%26start%3D%24%7Bstart%7D&quot;},&quot;content&quot;:{&quot;url&quot;:&quot;http://tulip.siteexecutive.com/serve/flowplayer.content.swf&quot;,&quot;width&quot;:&quot;100pct&quot;,&quot;height&quot;:&quot;100pct&quot;,&quot;top&quot;:0,&quot;left&quot;:0,&quot;border&quot;:0,&quot;borderRadius&quot;:0,&quot;zIndex&quot;:0,&quot;backgroundColor&quot;:&quot;#000000&quot;,&quot;opacity&quot;:1,&quot;html&quot;:&quot;&quot;}},&quot;playerId&quot;:&quot;tulipTVPlayerDiv&quot;}" name="flashvars"></object></div>
+	
+		<script src="http://tulip.siteexecutive.com/serve/flowplayer.min.js" type="text/javascript"></script>
+	
+	<script type="text/javascript">/*&lt;![CDATA[*/
+		function onMobile() {
+			return 0;
+		}
+		function setDivContent(className, content) {
+			var elems = document.getElementsByTagName('div');
+			for (var i = 0; i &lt; elems.length; i++) {
+				if (elems[i].className == className) {
+					elems[i].innerHTML = content;
+				}
+			}
+		}
+		function goVideoMobile( server, img, vid ) {
+			h5_chooseVid_http( server, img, vid, "v", 480, 384, "tulipTVPlayerDiv" );
+		}
+		function goVideo( server, img, swf, vid ) {
+			if( onMobile() ) {
+				goVideoMobile( server, img, vid );
+				return;
+			}
+			$f('tulipTVPlayerDiv',
+				{
+					src: 'http://tulip.siteexecutive.com/serve/flowplayer.swf',
+					version: [9, 124],
+					wmode: 'opaque',
+					onFail: function () {
+						document.getElementById('tulipTVPlayerDiv').innerHTML = 'This element is optimized for use with the Adobe Flash Player'
+							+ '&lt;a href="http://www.adobe.com/go/getflashplayer"&gt;&lt;img src="http://tulip.siteexecutive.com/serve/flash.gif" alt="Get Adobe Flash Player" style="border: none" /&gt;&lt;/a&gt;';
+					}
+				},
+				{
+					canvas: { backgroundColor: '#000000', backgroundGradient: [0.0] },
+					clip: { fadeInSpeed: 0, fadeOutSpeed: 0 },
+					playlist: [
+						{
+							scaling: 'fit',
+							url: img
+						}
+					],
+					plugins: {
+						lighttpd: {
+							url: vid ? vid : swf,
+							queryString: escape('&amp;start=${start}')
+						},
+						content: {
+							url: 'http://tulip.siteexecutive.com/serve/flowplayer.content.swf',
+							width: "100%",
+							height: "100%",
+							top: 0,
+							left: 0,
+							border: 0,
+							borderRadius: 0,
+							zIndex: 0,
+							backgroundColor: "#000000",
+							opacity: 1,
+							html: ''
+						}
+					}
+				}
+			);
+		}
+		var tulipserver = 'http://tulip.siteexecutive.com/serve';
+		var img = 'http://tulip.siteexecutive.com/serve/Vblack.jpg';
+		var swf = 'http://tulip.siteexecutive.com/serve/flowplayer.pseudostreaming.swf';
+		goVideo( tulipserver, img, swf, 0 );
+
+		var videos = [];
+
+		videos[0] = {};
+		videos[0].id = '5c656d1ed7e74c9ba241bd0db0bd9934';
+		videos[0].title = 'The Food for Thought Initiative';
+		videos[0].description = 'A discussion with Joanne E. Williams, Director, Department of Aging.';
+		videos[0].date = 'Mar 4, 2015';
+		videos[0].duration = '8:16';
+		videos[0].channels = {};
+	
+			videos[0].channels['80208372e7cb4d48bbf23ce69e6f64e5'] = true;
+		
+		videos[1] = {};
+		videos[1].id = '04f4053a0f784536a58b2da5a4b14c31';
+		videos[1].title = 'Becoming a Resilient Caregiver: Nourishing the Body and Mind';
+		videos[1].description = 'Find ways to become a healthy caregiver.';
+		videos[1].date = 'Mar 4, 2015';
+		videos[1].duration = '4:33';
+		videos[1].channels = {};
+	
+			videos[1].channels['80208372e7cb4d48bbf23ce69e6f64e5'] = true;
+		
+		videos[2] = {};
+		videos[2].id = 'a8ac996c414e4d1dbc633863db0921b7';
+		videos[2].title = 'Community Resources 2016';
+		videos[2].description = 'Find out what resources are available in the 2016 directory.';
+		videos[2].date = 'Mar 4, 2015';
+		videos[2].duration = '3:55';
+		videos[2].channels = {};
+	
+			videos[2].channels['80208372e7cb4d48bbf23ce69e6f64e5'] = true;
+		
+		videos[3] = {};
+		videos[3].id = '37ff347a0fcd4e3c9255eb8018d0cc46';
+		videos[3].title = 'Senior Travel, Box Office and Senior Center Events';
+		videos[3].description = 'A review of what\'s coming up with Debbie Orlove and Ethel Rasmussen.';
+		videos[3].date = 'Mar 4, 2015';
+		videos[3].duration = '9:45';
+		videos[3].channels = {};
+	
+			videos[3].channels['80208372e7cb4d48bbf23ce69e6f64e5'] = true;
+		
+		videos[4] = {};
+		videos[4].id = '26e1a5025a3b42bbbae3c241596fca33';
+		videos[4].title = 'Preventing Home Electrical Fires';
+		videos[4].description = 'Find out from Baltimore County’s Chief Electrical Inspector and Fire Marshal how to protect your home and family.';
+		videos[4].date = 'Mar 3, 2015';
+		videos[4].duration = '8:59';
+		videos[4].channels = {};
+	
+			videos[4].channels['62e8bad77300463996c4f3bbb96f60ae'] = true;
+		
+		videos[5] = {};
+		videos[5].id = '3c06081ba9db4834aae6c162ce7309c9';
+		videos[5].title = 'Underage Drinking';
+		videos[5].description = 'Hopkins Bloomberg School of Public Health expert, Dr. David Jernigan, tells how the County is targeting underage drinking on college campuses and more.';
+		videos[5].date = 'Mar 3, 2015';
+		videos[5].duration = '7:51';
+		videos[5].channels = {};
+	
+			videos[5].channels['62e8bad77300463996c4f3bbb96f60ae'] = true;
+		
+		videos[6] = {};
+		videos[6].id = '22491168e3ba463db92e4aa2f7412156';
+		videos[6].title = 'What’s New at the Library';
+		videos[6].description = 'Baltimore County’s new Library Director, Paula Miller shares the latest in technology and services available and coming soon to your local library.';
+		videos[6].date = 'Mar 3, 2015';
+		videos[6].duration = '11:08';
+		videos[6].channels = {};
+	
+			videos[6].channels['62e8bad77300463996c4f3bbb96f60ae'] = true;
+		
+		videos[7] = {};
+		videos[7].id = '7e5fee11e52f4f6eac57d4dd814e88a4';
+		videos[7].title = 'Ice Safety';
+		videos[7].description = 'Advice on how to approach ice safely.';
+		videos[7].date = 'Feb 11, 2015';
+		videos[7].duration = '2:44';
+		videos[7].channels = {};
+	
+			videos[7].channels['1dea7a73f59b4b0384cc1cd550eb9b1d'] = true;
+		
+		videos[8] = {};
+		videos[8].id = '9f1f3f51adab4e5eafc3acb6a788553c';
+		videos[8].title = 'CO Poisoning';
+		videos[8].description = 'The dangers of CO poisoning and how to avoid problems.';
+		videos[8].date = 'Feb 11, 2015';
+		videos[8].duration = '5:14';
+		videos[8].channels = {};
+	
+			videos[8].channels['1dea7a73f59b4b0384cc1cd550eb9b1d'] = true;
+		
+		videos[9] = {};
+		videos[9].id = '0b0abc8391b64908859b0881231b5925';
+		videos[9].title = 'Snow Safety';
+		videos[9].description = 'The ways to stay safe when snow falls in the area.';
+		videos[9].date = 'Feb 11, 2015';
+		videos[9].duration = '1:40';
+		videos[9].channels = {};
+	
+			videos[9].channels['1dea7a73f59b4b0384cc1cd550eb9b1d'] = true;
+		
+		videos[10] = {};
+		videos[10].id = '6173cb9fcdfb4e44b3d1d9fdcb5863a1';
+		videos[10].title = 'Events';
+		videos[10].description = 'A look at fire service events during the last two months.';
+		videos[10].date = 'Feb 11, 2015';
+		videos[10].duration = '1:18';
+		videos[10].channels = {};
+	
+			videos[10].channels['1dea7a73f59b4b0384cc1cd550eb9b1d'] = true;
+		
+		videos[11] = {};
+		videos[11].id = '03df80ccbec14d0ba1a7e33c8aa28a99';
+		videos[11].title = 'Incidents';
+		videos[11].description = 'We share incidents that happened since our last show.';
+		videos[11].date = 'Feb 11, 2015';
+		videos[11].duration = '2:26';
+		videos[11].channels = {};
+	
+			videos[11].channels['1dea7a73f59b4b0384cc1cd550eb9b1d'] = true;
+		
+		videos[12] = {};
+		videos[12].id = 'd1f980f1c25240eab391a0c01a4df03f';
+		videos[12].title = 'Retirees and Calendar of Events';
+		videos[12].description = 'A thank you to our people who retired in the last few months and upcoming events at volunteer fire stations.';
+		videos[12].date = 'Feb 11, 2015';
+		videos[12].duration = '2:31';
+		videos[12].channels = {};
+	
+			videos[12].channels['1dea7a73f59b4b0384cc1cd550eb9b1d'] = true;
+		
+		videos[13] = {};
+		videos[13].id = '36430a492aa34dc0bf8f28292377f758';
+		videos[13].title = 'Everyday Heroes, February and March';
+		videos[13].description = 'We share some of the thoughts of people in the community regarding men and women in the Fire Service.';
+		videos[13].date = 'Feb 11, 2015';
+		videos[13].duration = '4:11';
+		videos[13].channels = {};
+	
+			videos[13].channels['1dea7a73f59b4b0384cc1cd550eb9b1d'] = true;
+		
+		videos[14] = {};
+		videos[14].id = '1b8f56f76ced47578873b5c6279a882d';
+		videos[14].title = 'Interview with Captain Bruce Schultz';
+		videos[14].description = 'A discussion about the Fire Marshal\'s Office and winter and fire safety.';
+		videos[14].date = 'Feb 11, 2015';
+		videos[14].duration = '7:25';
+		videos[14].channels = {};
+	
+			videos[14].channels['1dea7a73f59b4b0384cc1cd550eb9b1d'] = true;
+		
+		videos[15] = {};
+		videos[15].id = '422d26922696499fb174a545cb34e184';
+		videos[15].title = '911 Center';
+		videos[15].description = 'Learn about the 911 Center.';
+		videos[15].date = 'Feb 8, 2015';
+		videos[15].duration = '17:11';
+		videos[15].channels = {};
+	
+			videos[15].channels['34c47f357fde4f4d99514393322e49e2'] = true;
+		
+		videos[16] = {};
+		videos[16].id = '1d945cd07e364e8bbd5a3276b4da6e15';
+		videos[16].title = 'Precinct 6 in Towson';
+		videos[16].description = 'Learn about Precinct 6 in Towson.';
+		videos[16].date = 'Feb 8, 2015';
+		videos[16].duration = '11:49';
+		videos[16].channels = {};
+	
+			videos[16].channels['34c47f357fde4f4d99514393322e49e2'] = true;
+		
+		videos[17] = {};
+		videos[17].id = '6d71cd6dbac74338aaad17078810fb7e';
+		videos[17].title = 'Annapolis Priorities';
+		videos[17].description = 'Baltimore County Executive Kevin Kamenetz outlines his priorities for this year’s General Assembly session.';
+		videos[17].date = 'Feb 3, 2015';
+		videos[17].duration = '12:21';
+		videos[17].channels = {};
+	
+			videos[17].channels['62e8bad77300463996c4f3bbb96f60ae'] = true;
+		
+		videos[18] = {};
+		videos[18].id = '92733d0cbeea4b99949cd7856f0f0a68';
+		videos[18].title = 'Dental Care for All';
+		videos[18].description = 'Find out about the Health Department’s reduced cost dental care for kids and adults without dental coverage.';
+		videos[18].date = 'Feb 3, 2015';
+		videos[18].duration = '6:54';
+		videos[18].channels = {};
+	
+			videos[18].channels['62e8bad77300463996c4f3bbb96f60ae'] = true;
+		
+		videos[19] = {};
+		videos[19].id = 'c8a67fa289c144288edc3ca82100b982';
+		videos[19].title = 'Take a Leap!';
+		videos[19].description = 'Baltimore County’s Dance Celebration offers great performances and free classes around the County throughout February.';
+		videos[19].date = 'Feb 3, 2015';
+		videos[19].duration = '8:25';
+		videos[19].channels = {};
+	
+			videos[19].channels['62e8bad77300463996c4f3bbb96f60ae'] = true;
+		
+		videos[20] = {};
+		videos[20].id = '68c168891d6240fa8e9bef13b82babf3';
+		videos[20].title = 'Senior Box Office';
+		videos[20].description = 'A look at upcoming events at Senior Box Office.';
+		videos[20].date = 'Jan 15, 2015';
+		videos[20].duration = '7:58';
+		videos[20].channels = {};
+	
+			videos[20].channels['80208372e7cb4d48bbf23ce69e6f64e5'] = true;
+		
+		videos[21] = {};
+		videos[21].id = '6fcaaa8086cd417abfc01fc95cfd63ef';
+		videos[21].title = 'Senior Travel, Box Office And Events';
+		videos[21].description = 'A look at Senior Center travel, Senior Box Office and Senior Center events.';
+		videos[21].date = 'Jan 15, 2015';
+		videos[21].duration = '9:00';
+		videos[21].channels = {};
+	
+			videos[21].channels['80208372e7cb4d48bbf23ce69e6f64e5'] = true;
+		
+		videos[22] = {};
+		videos[22].id = '291996c257fe4b8aa801a886cd93e0fa';
+		videos[22].title = 'Opportunities For Lifelong Learning AT CCBC';
+		videos[22].description = 'A look at opportunities for learning.';
+		videos[22].date = 'Jan 15, 2015';
+		videos[22].duration = '9:58';
+		videos[22].channels = {};
+	
+			videos[22].channels['80208372e7cb4d48bbf23ce69e6f64e5'] = true;
+		
+		videos[23] = {};
+		videos[23].id = '374acd95b77d43d3b78ec4b4647cdf51';
+		videos[23].title = 'Barefoot Dance';
+		videos[23].description = 'Barefoot Dance looks at how dancing improves the mind and body.';
+		videos[23].date = 'Jan 13, 2015';
+		videos[23].duration = '7:24';
+		videos[23].channels = {};
+	
+			videos[23].channels['a4e2e49e5449439c91c0d58801fcbc1d'] = true;
+		
+		videos[24] = {};
+		videos[24].id = '1c9429debd0e419881fb990231f6dbdb';
+		videos[24].title = 'Special smARTS Performance';
+		videos[24].description = 'Enjoy a special smARTS performance by Towson University Community Dance.';
+		videos[24].date = 'Jan 13, 2015';
+		videos[24].duration = '4:13';
+		videos[24].channels = {};
+	
+			videos[24].channels['a4e2e49e5449439c91c0d58801fcbc1d'] = true;
+		
+		videos[25] = {};
+		videos[25].id = 'deb3d9bb83c842e0b84d23b35cd689de';
+		videos[25].title = 'Get Hipp!';
+		videos[25].description = 'Get Hipp! The Hippodrome Foundation in action.';
+		videos[25].date = 'Jan 13, 2015';
+		videos[25].duration = '7:25';
+		videos[25].channels = {};
+	
+			videos[25].channels['a4e2e49e5449439c91c0d58801fcbc1d'] = true;
+		
+		videos[26] = {};
+		videos[26].id = '4a45f961d6714913a2363ea0ad3d31dd';
+		videos[26].title = 'Arts and Agricultural Resource Council';
+		videos[26].description = 'Explore the relationship of arts and agriculture.';
+		videos[26].date = 'Jan 13, 2015';
+		videos[26].duration = '6:11';
+		videos[26].channels = {};
+	
+			videos[26].channels['a4e2e49e5449439c91c0d58801fcbc1d'] = true;
+		
+		videos[27] = {};
+		videos[27].id = 'a393061441914e418a55f55563121230';
+		videos[27].title = 'Dance Celebration: February 2015';
+		videos[27].description = 'Take a Leap Baltimore County Dance Celebration, February 2015.';
+		videos[27].date = 'Jan 13, 2015';
+		videos[27].duration = '0:29';
+		videos[27].channels = {};
+	
+			videos[27].channels['a4e2e49e5449439c91c0d58801fcbc1d'] = true;
+		
+		videos[28] = {};
+		videos[28].id = '0a8359e7d3b34e0e95753104996b84d5';
+		videos[28].title = 'Get smARTer: Doll\'s Tea Party';
+		videos[28].description = 'Get smARTer at a doll\'s tea party at Hampton mansion.';
+		videos[28].date = 'Jan 13, 2015';
+		videos[28].duration = '3:32';
+		videos[28].channels = {};
+	
+			videos[28].channels['a4e2e49e5449439c91c0d58801fcbc1d'] = true;
+		
+		videos[29] = {};
+		videos[29].id = 'bc68f0b71c5a49459f276051583e344b';
+		videos[29].title = 'Resources to Help Seniors Stay in their Homes';
+		videos[29].description = 'Baltimore County\'s Department of Aging is a wealth of resources for seniors, offering everything from fitness centers to assistance with health resources and more.';
+		videos[29].date = 'Jan 9, 2015';
+		videos[29].duration = '9:22';
+		videos[29].channels = {};
+	
+			videos[29].channels['62e8bad77300463996c4f3bbb96f60ae'] = true;
+		
+		videos[30] = {};
+		videos[30].id = '59b4fb2f0974451f9cf4c5a21dc5ec22';
+		videos[30].title = 'Free Help to Quit Smoking!';
+		videos[30].description = 'Baltimore County\'s Health Department offers free tobacco cessation aids, classes and more for this most important New Year\'s resolution.';
+		videos[30].date = 'Jan 9, 2015';
+		videos[30].duration = '9:49';
+		videos[30].channels = {};
+	
+			videos[30].channels['62e8bad77300463996c4f3bbb96f60ae'] = true;
+		
+		videos[31] = {};
+		videos[31].id = '9ca82a5aab7d49ae887f6ee5afbff048';
+		videos[31].title = 'Technology is Boosting Service, Saving Dollars';
+		videos[31].description = 'Find out about the technology updates that mean faster, better service at less cost for county operations.';
+		videos[31].date = 'Jan 8, 2015';
+		videos[31].duration = '8:13';
+		videos[31].channels = {};
+	
+			videos[31].channels['62e8bad77300463996c4f3bbb96f60ae'] = true;
+		
+		videos[32] = {};
+		videos[32].id = 'c069720489424606adf4ea6d9fbeeb9b';
+		videos[32].title = 'Community and School Resources Section';
+		videos[32].description = 'Watch a video about the resources available to our communities and schools.';
+		videos[32].date = 'Dec 11, 2014';
+		videos[32].duration = '11:06';
+		videos[32].channels = {};
+	
+			videos[32].channels['34c47f357fde4f4d99514393322e49e2'] = true;
+		
+		videos[33] = {};
+		videos[33].id = 'e9c15f0cc2df4f9696f0b4bbffa846f7';
+		videos[33].title = 'Winter and Holiday Season Crime Prevention';
+		videos[33].description = 'A discussion about crime prevention during the winter and holiday season.';
+		videos[33].date = 'Dec 11, 2014';
+		videos[33].duration = '16:51';
+		videos[33].channels = {};
+	
+			videos[33].channels['34c47f357fde4f4d99514393322e49e2'] = true;
+		
+		videos[34] = {};
+		videos[34].id = '2d54af6a5e0c423685201fc299f08d80';
+		videos[34].title = 'Medic Units and Survivors Events';
+		videos[34].description = 'New Medic Units and new equipment a look at survivors.';
+		videos[34].date = 'Dec 10, 2014';
+		videos[34].duration = '4:15';
+		videos[34].channels = {};
+	
+			videos[34].channels['1dea7a73f59b4b0384cc1cd550eb9b1d'] = true;
+		
+		videos[35] = {};
+		videos[35].id = 'f3b194582fc64d938e24ee342941bd56';
+		videos[35].title = 'Events';
+		videos[35].description = 'A look at some events from the last few months.';
+		videos[35].date = 'Dec 10, 2014';
+		videos[35].duration = '4:01';
+		videos[35].channels = {};
+	
+			videos[35].channels['1dea7a73f59b4b0384cc1cd550eb9b1d'] = true;
+		
+		videos[36] = {};
+		videos[36].id = '6fb01c7c6e9d43d19ab2203ad502d858';
+		videos[36].title = 'Retirees and Everyday Heroes';
+		videos[36].description = 'Happy retirement and a look at those who have helped others in the County.';
+		videos[36].date = 'Dec 10, 2014';
+		videos[36].duration = '2:43';
+		videos[36].channels = {};
+	
+			videos[36].channels['1dea7a73f59b4b0384cc1cd550eb9b1d'] = true;
+		
+		videos[37] = {};
+		videos[37].id = '80d71559a5f64e188069373d2e9e7775';
+		videos[37].title = 'Guardian Knights and Train Gardens';
+		videos[37].description = 'Interview with David Blenman on Guardian Knights and a look at Christmas Train gardens.';
+		videos[37].date = 'Dec 10, 2014';
+		videos[37].duration = '10:51';
+		videos[37].channels = {};
+	
+			videos[37].channels['1dea7a73f59b4b0384cc1cd550eb9b1d'] = true;
+		
+		videos[38] = {};
+		videos[38].id = 'b0e9137ea3a042fd8c7283c3fb599594';
+		videos[38].title = 'Incidents and Calendar of Events';
+		videos[38].description = 'Take a look at emergency operations and upcoming events at fire stations.';
+		videos[38].date = 'Dec 10, 2014';
+		videos[38].duration = '4:21';
+		videos[38].channels = {};
+	
+			videos[38].channels['1dea7a73f59b4b0384cc1cd550eb9b1d'] = true;
+		
+		videos[39] = {};
+		videos[39].id = '53e1bfbd91d9402ab435bb7c6a7c8935';
+		videos[39].title = 'Project Home: Adult Foster Care';
+		videos[39].description = 'Foster care isn’t just for children. Consider opening your home to an adult who is elderly or has a disability.';
+		videos[39].date = 'Dec 1, 2014';
+		videos[39].duration = '8:58';
+		videos[39].channels = {};
+	
+			videos[39].channels['62e8bad77300463996c4f3bbb96f60ae'] = true;
+		
+		videos[40] = {};
+		videos[40].id = '9ec64d3143a24f35aff20727b1a10875';
+		videos[40].title = 'The View from Behind the Snowplow';
+		videos[40].description = 'Get the inside scoop on winter storm operations from two veteran Baltimore County snowplow drivers.';
+		videos[40].date = 'Dec 1, 2014';
+		videos[40].duration = '9:43';
+		videos[40].channels = {};
+	
+			videos[40].channels['62e8bad77300463996c4f3bbb96f60ae'] = true;
+		
+		videos[41] = {};
+		videos[41].id = 'f1001d7e47e54990bc5e79c6df8c35e5';
+		videos[41].title = 'Police Report  K-9 Unit';
+		videos[41].description = 'The K-9 Unit - The training that officers and their K-9 partners receive.';
+		videos[41].date = 'Nov 1, 2014';
+		videos[41].duration = '29:29';
+		videos[41].channels = {};
+	
+			videos[41].channels['34c47f357fde4f4d99514393322e49e2'] = true;
+		
+		videos[42] = {};
+		videos[42].id = '716038f2e8594db18e66664d0d8b8be2';
+		videos[42].title = 'Navigating Medicare Part D';
+		videos[42].description = 'What You Need to Know with Sherry Kolbe, SHIP/SMP Program Manager, BCDA';
+		videos[42].date = 'Oct 29, 2014';
+		videos[42].duration = '16:07';
+		videos[42].channels = {};
+	
+			videos[42].channels['80208372e7cb4d48bbf23ce69e6f64e5'] = true;
+		
+		videos[43] = {};
+		videos[43].id = '0e2f8b7d13e24f2fa4f96ec2b3d90610';
+		videos[43].title = 'Senior Centers: The Gem In Your Community';
+		videos[43].description = 'A discussion about Senior Centers by Julie Lynn, Director, BYKOTA Senior Center, BCDA';
+		videos[43].date = 'Oct 29, 2014';
+		videos[43].duration = '4:31';
+		videos[43].channels = {};
+	
+			videos[43].channels['80208372e7cb4d48bbf23ce69e6f64e5'] = true;
+		
+		videos[44] = {};
+		videos[44].id = 'd7d27feb2a7a42828d8692d533353592';
+		videos[44].title = 'Senior Center Travel, Box Office and Events';
+		videos[44].description = 'Find out what is going on for travel and events with Debbie Orlove, MA, Community Business Liaison, BCDA.';
+		videos[44].date = 'Oct 29, 2014';
+		videos[44].duration = '6:39';
+		videos[44].channels = {};
+	
+			videos[44].channels['80208372e7cb4d48bbf23ce69e6f64e5'] = true;
+		
+		videos[45] = {};
+		videos[45].id = 'a41d47334ee74bab85d5fb4843886151';
+		videos[45].title = 'Police Recruitment';
+		videos[45].description = 'How to become a member of the Baltimore County Police Department.';
+		videos[45].date = 'Oct 11, 2014';
+		videos[45].duration = '14:43';
+		videos[45].channels = {};
+	
+			videos[45].channels['34c47f357fde4f4d99514393322e49e2'] = true;
+		
+		videos[46] = {};
+		videos[46].id = 'bc566a5a1321495eaa6147d8fa34f3fb';
+		videos[46].title = 'Water Rescues';
+		videos[46].description = 'Highlights of the training involved with water rescues.';
+		videos[46].date = 'Oct 3, 2014';
+		videos[46].duration = '2:38';
+		videos[46].channels = {};
+	
+			videos[46].channels['1dea7a73f59b4b0384cc1cd550eb9b1d'] = true;
+		
+		videos[47] = {};
+		videos[47].id = '7594291bd35e4aafb1156c8bd6d7bb4f';
+		videos[47].title = 'Recruit Class';
+		videos[47].description = 'A glimpse of the latest recruit class, the 104th.';
+		videos[47].date = 'Oct 3, 2014';
+		videos[47].duration = '1:22';
+		videos[47].channels = {};
+	
+			videos[47].channels['1dea7a73f59b4b0384cc1cd550eb9b1d'] = true;
+		
+		videos[48] = {};
+		videos[48].id = '199e686a11b141dc8c8b434497cdcd84';
+		videos[48].title = 'Incidents and Events';
+		videos[48].description = 'Extrication of a driver after a crash with truck and summer events.';
+		videos[48].date = 'Oct 3, 2014';
+		videos[48].duration = '2:16';
+		videos[48].channels = {};
+	
+			videos[48].channels['1dea7a73f59b4b0384cc1cd550eb9b1d'] = true;
+		
+		videos[49] = {};
+		videos[49].id = 'a853345d49d04882b4b0b5d2dea6f90a';
+		videos[49].title = 'Everyday Heroes and Retirees';
+		videos[49].description = 'Taking a look at our everyday heroes and those who retired this summer.';
+		videos[49].date = 'Oct 3, 2014';
+		videos[49].duration = '2:12';
+		videos[49].channels = {};
+	
+			videos[49].channels['1dea7a73f59b4b0384cc1cd550eb9b1d'] = true;
+		
+		videos[50] = {};
+		videos[50].id = '40bda6109fad4a41a2e236f88ea9a804';
+		videos[50].title = 'Women in Fire Service';
+		videos[50].description = 'Battalion Chief Utz interviews Lieutenant Hughes about women in Fire Service.';
+		videos[50].date = 'Oct 3, 2014';
+		videos[50].duration = '14:53';
+		videos[50].channels = {};
+	
+			videos[50].channels['1dea7a73f59b4b0384cc1cd550eb9b1d'] = true;
+		
+		videos[51] = {};
+		videos[51].id = 'cdd575a6341f4f3a9cb15f090a975daa';
+		videos[51].title = 'Calendar of Events';
+		videos[51].description = 'Take a look at the calendar of events taking place at our Volunteer Fire Stations, October through November.';
+		videos[51].date = 'Oct 3, 2014';
+		videos[51].duration = '2:00';
+		videos[51].channels = {};
+	
+			videos[51].channels['1dea7a73f59b4b0384cc1cd550eb9b1d'] = true;
+		
+		videos[52] = {};
+		videos[52].id = '29ae72a2838b4834866a749e27ccd311';
+		videos[52].title = 'Baltimore County Commission on Disabilities';
+		videos[52].description = 'Learn about the Commission on Disabilities.';
+		videos[52].date = 'Oct 3, 2014';
+		videos[52].duration = '4:49';
+		videos[52].channels = {};
+	
+			videos[52].channels['80208372e7cb4d48bbf23ce69e6f64e5'] = true;
+		
+		videos[53] = {};
+		videos[53].id = '2cfb4ebcef574f3fb0e3329cc64aefe0';
+		videos[53].title = 'Art in Nature at Irvine Nature Center';
+		videos[53].description = 'See art in nature.';
+		videos[53].date = 'Sep 22, 2014';
+		videos[53].duration = '7:08';
+		videos[53].channels = {};
+	
+			videos[53].channels['a4e2e49e5449439c91c0d58801fcbc1d'] = true;
+		
+		videos[54] = {};
+		videos[54].id = 'ee494aff1c5a47de84ab52e66b6f6edf';
+		videos[54].title = 'Live Classical Guitar';
+		videos[54].description = 'Listen to a live concert by Troy King.';
+		videos[54].date = 'Sep 22, 2014';
+		videos[54].duration = '4:50';
+		videos[54].channels = {};
+	
+			videos[54].channels['a4e2e49e5449439c91c0d58801fcbc1d'] = true;
+		
+		videos[55] = {};
+		videos[55].id = '048f1a407de947468f7d38a3783f2cc8';
+		videos[55].title = 'Tracing Your Ancestry';
+		videos[55].description = 'Join Louis Diggs, historian.';
+		videos[55].date = 'Sep 22, 2014';
+		videos[55].duration = '6:41';
+		videos[55].channels = {};
+	
+			videos[55].channels['a4e2e49e5449439c91c0d58801fcbc1d'] = true;
+		
+		videos[56] = {};
+		videos[56].id = '4c287566d3284927a211ff4f8e964c62';
+		videos[56].title = 'The War of 1812 and Baltimore County';
+		videos[56].description = '';
+		videos[56].date = 'Sep 22, 2014';
+		videos[56].duration = '6:21';
+		videos[56].channels = {};
+	
+			videos[56].channels['a4e2e49e5449439c91c0d58801fcbc1d'] = true;
+		
+		videos[57] = {};
+		videos[57].id = '0bf112bb8872422cadedce0acb922181';
+		videos[57].title = 'Uniform Action: Military Uniforms From 1812 and Today';
+		videos[57].description = 'Learn how uniforms have changed.';
+		videos[57].date = 'Sep 22, 2014';
+		videos[57].duration = '4:17';
+		videos[57].channels = {};
+	
+			videos[57].channels['a4e2e49e5449439c91c0d58801fcbc1d'] = true;
+		
+		videos[58] = {};
+		videos[58].id = 'ab0f7816f0164f8493cb479643d288a6';
+		videos[58].title = 'Expo\'s Valued Sponsors';
+		videos[58].description = 'Find out who the sponsors are of 2014 Expo. Debbie Orlove';
+		videos[58].date = 'Sep 3, 2014';
+		videos[58].duration = '3:10';
+		videos[58].channels = {};
+	
+			videos[58].channels['80208372e7cb4d48bbf23ce69e6f64e5'] = true;
+		
+		videos[59] = {};
+		videos[59].id = 'cd1d545604a44b46a4ad627bdc8354eb';
+		videos[59].title = 'BGE and GBMC - Expo\'s Gift Sponsors';
+		videos[59].description = 'Ingrid D. Woods, Senior Community Relations Specialist, BGE\nKim Davenport, Community Relations and Events Manager, GBMC ';
+		videos[59].date = 'Sep 3, 2014';
+		videos[59].duration = '5:21';
+		videos[59].channels = {};
+	
+			videos[59].channels['80208372e7cb4d48bbf23ce69e6f64e5'] = true;
+		
+		videos[60] = {};
+		videos[60].id = 'b20ecced54dd4d6c91be7ad5581ac7db';
+		videos[60].title = 'Senior Center Travel, SBO, Senior Center Events';
+		videos[60].description = 'Debbie Orlove highlights upcoming travel and events.';
+		videos[60].date = 'Sep 3, 2014';
+		videos[60].duration = '9:32';
+		videos[60].channels = {};
+	
+			videos[60].channels['80208372e7cb4d48bbf23ce69e6f64e5'] = true;
+		
+		videos[61] = {};
+		videos[61].id = '266051a9a1ae4b26b8beecdd1f0980da';
+		videos[61].title = 'Heads Up! Walk Safe - Pedestrian Safety';
+		videos[61].description = 'View the campaign geared for pedestrian safety.';
+		videos[61].date = 'Sep 2, 2014';
+		videos[61].duration = '16:32';
+		videos[61].channels = {};
+	
+			videos[61].channels['34c47f357fde4f4d99514393322e49e2'] = true;
+		
+		videos[62] = {};
+		videos[62].id = '87ccdcc223be4967bce7fe50d75d9b09';
+		videos[62].title = 'Retirees and Events';
+		videos[62].description = 'A thank you for those who have left the fire service, \nevents that took place in the county.';
+		videos[62].date = 'Aug 1, 2014';
+		videos[62].duration = '2:42';
+		videos[62].channels = {};
+	
+			videos[62].channels['1dea7a73f59b4b0384cc1cd550eb9b1d'] = true;
+		
+		videos[63] = {};
+		videos[63].id = 'aeb9766f52764fafa17bf31201b19dda';
+		videos[63].title = 'Everyday Heroes';
+		videos[63].description = 'A salute to fire service personnel for their help.';
+		videos[63].date = 'Aug 1, 2014';
+		videos[63].duration = '3:18';
+		videos[63].channels = {};
+	
+			videos[63].channels['1dea7a73f59b4b0384cc1cd550eb9b1d'] = true;
+		
+		videos[64] = {};
+		videos[64].id = 'e83cb7fbc47c40d9a85ee2326349c79a';
+		videos[64].title = 'Crisis Intervention and Stress Management';
+		videos[64].description = 'Interview with Captain William Allenbaugh Jr. and FADO Steven Yealdhall on Crisis Intervention and Stress Management Team, CISM';
+		videos[64].date = 'Aug 1, 2014';
+		videos[64].duration = '14:49';
+		videos[64].channels = {};
+	
+			videos[64].channels['1dea7a73f59b4b0384cc1cd550eb9b1d'] = true;
+		
+		videos[65] = {};
+		videos[65].id = 'cbe01410016745a7b97357951c9d2420';
+		videos[65].title = 'Get Ready! Get Set! Get Fit!';
+		videos[65].description = 'Dave Sayler, CPT, discusses Get Ready, Set, Fit!';
+		videos[65].date = 'Jul 8, 2014';
+		videos[65].duration = '8:57';
+		videos[65].channels = {};
+	
+			videos[65].channels['80208372e7cb4d48bbf23ce69e6f64e5'] = true;
+		
+		videos[66] = {};
+		videos[66].id = '20c6fecba56c4a9ba87d2e011c02f844';
+		videos[66].title = 'CIGNA &ndash; The Walk and Run\'s Sponsor';
+		videos[66].description = 'Join Julia Huggins, President, Cigna MidAtlantic.';
+		videos[66].date = 'Jul 8, 2014';
+		videos[66].duration = '2:50';
+		videos[66].channels = {};
+	
+			videos[66].channels['80208372e7cb4d48bbf23ce69e6f64e5'] = true;
+		
+		videos[67] = {};
+		videos[67].id = 'e3f7011727c642a99eca672dd673d1d3';
+		videos[67].title = 'A Personal Perspective: Walking or Running Towards Health';
+		videos[67].description = 'Listen as Mary Pascoe and Darrell Edwards, BYKOTA Senior Center Member discuss their personal perspective.';
+		videos[67].date = 'Jul 8, 2014';
+		videos[67].duration = '10:07';
+		videos[67].channels = {};
+	
+			videos[67].channels['80208372e7cb4d48bbf23ce69e6f64e5'] = true;
+		
+		videos[68] = {};
+		videos[68].id = 'ef72239bc1b946478dc664ec9769d154';
+		videos[68].title = 'Tour Hampton National Historic Site (Summer 2014)';
+		videos[68].description = 'Take a private curator\'s tour of art at the Hampton National Historic Site in Towson.';
+		videos[68].date = 'Jun 30, 2014';
+		videos[68].duration = '9:50';
+		videos[68].channels = {};
+	
+			videos[68].channels['a4e2e49e5449439c91c0d58801fcbc1d'] = true;
+		
+		videos[69] = {};
+		videos[69].id = '8c15c94f07d946a19bd08c92504106ba';
+		videos[69].title = 'Theatre for the Disabled (Summer 2014)';
+		videos[69].description = 'Discover a magical theater company that reaches people with severe disabilities. ';
+		videos[69].date = 'Jun 30, 2014';
+		videos[69].duration = '6:01';
+		videos[69].channels = {};
+	
+			videos[69].channels['a4e2e49e5449439c91c0d58801fcbc1d'] = true;
+		
+		videos[70] = {};
+		videos[70].id = 'bab64fd1ab534495806bcfd448311f37';
+		videos[70].title = 'WTMD Radio (Summer 2014)';
+		videos[70].description = 'Find out how WTMD Radio brings music, art and community together.';
+		videos[70].date = 'Jun 30, 2014';
+		videos[70].duration = '5:25';
+		videos[70].channels = {};
+	
+			videos[70].channels['a4e2e49e5449439c91c0d58801fcbc1d'] = true;
+		
+		videos[71] = {};
+		videos[71].id = 'c9cf2e6bab8e41238a6d8e49d000fe4a';
+		videos[71].title = 'smARTER With Julia Sutliff';
+		videos[71].description = 'Plein air painter Julia Sutliff talks about her wild inspiration.';
+		videos[71].date = 'Jun 30, 2014';
+		videos[71].duration = '3:56';
+		videos[71].channels = {};
+	
+			videos[71].channels['a4e2e49e5449439c91c0d58801fcbc1d'] = true;
+		
+		videos[72] = {};
+		videos[72].id = '33b6d4aaabde4648a688a69915eea0ca';
+		videos[72].title = 'Firework Safety';
+		videos[72].description = 'It is time to get ready for firework safety.';
+		videos[72].date = 'Jun 5, 2014';
+		videos[72].duration = '2:51';
+		videos[72].channels = {};
+	
+			videos[72].channels['1dea7a73f59b4b0384cc1cd550eb9b1d'] = true;
+		
+		videos[73] = {};
+		videos[73].id = '02555fa1066b4f54ae509c1d277b07bf';
+		videos[73].title = 'Safe Boating and Safe Boating Classes';
+		videos[73].description = 'Learn to have a happy and safe boating season.';
+		videos[73].date = 'Jun 5, 2014';
+		videos[73].duration = '2:51';
+		videos[73].channels = {};
+	
+			videos[73].channels['1dea7a73f59b4b0384cc1cd550eb9b1d'] = true;
+		
+		videos[74] = {};
+		videos[74].id = '0413adcbbebf46f2a2d36d9a42264007';
+		videos[74].title = 'Concussions';
+		videos[74].description = 'Learn about concussions.';
+		videos[74].date = 'Jun 5, 2014';
+		videos[74].duration = '10:33';
+		videos[74].channels = {};
+	
+			videos[74].channels['1dea7a73f59b4b0384cc1cd550eb9b1d'] = true;
+		
+		videos[75] = {};
+		videos[75].id = 'b91a4a4b59574b128391c74b2918dd4a';
+		videos[75].title = 'Safe Driving Strategies';
+		videos[75].description = 'Leslie C. Dorsey, Ed\nVolunteer Driving Safety Instructor';
+		videos[75].date = 'May 1, 2014';
+		videos[75].duration = '9:13';
+		videos[75].channels = {};
+	
+			videos[75].channels['80208372e7cb4d48bbf23ce69e6f64e5'] = true;
+		
+		videos[76] = {};
+		videos[76].id = '3e2861191411473fa79898e5d15a1d4e';
+		videos[76].title = 'Car Maintenance 101';
+		videos[76].description = 'Penny Potts, Communications Technician\nBaltimore County Department of Aging';
+		videos[76].date = 'May 1, 2014';
+		videos[76].duration = '3:39';
+		videos[76].channels = {};
+	
+			videos[76].channels['80208372e7cb4d48bbf23ce69e6f64e5'] = true;
+		
+		videos[77] = {};
+		videos[77].id = '3f2debbcc0c44bd299f09663ce991959';
+		videos[77].title = 'Travel Training';
+		videos[77].description = 'Amanda Taylor, Program Director\nThe IMAGE Center for People with Disabilities';
+		videos[77].date = 'May 1, 2014';
+		videos[77].duration = '3:45';
+		videos[77].channels = {};
+	
+			videos[77].channels['80208372e7cb4d48bbf23ce69e6f64e5'] = true;
+		
+		videos[78] = {};
+		videos[78].id = 'b7caed0146ee448a8db2399774fbd8b3';
+		videos[78].title = 'Foreign Lotteries - Guaranteed To Lose';
+		videos[78].description = 'Frank J. Schissler, US Postal Inspector; US Post Office';
+		videos[78].date = 'May 1, 2014';
+		videos[78].duration = '7:59';
+		videos[78].channels = {};
+	
+			videos[78].channels['80208372e7cb4d48bbf23ce69e6f64e5'] = true;
+		
+		videos[79] = {};
+		videos[79].id = '1c84e52db83b4bb6921dc1dace950d17';
+		videos[79].title = 'Contemporary Art at the Goucher Galleries Spring 2014';
+		videos[79].description = 'Curator Laura Amussen talks about two intriguing contemporary art galleries on the Goucher College campus. ';
+		videos[79].date = 'Apr 23, 2014';
+		videos[79].duration = '5:47';
+		videos[79].channels = {};
+	
+			videos[79].channels['a4e2e49e5449439c91c0d58801fcbc1d'] = true;
+		
+		videos[80] = {};
+		videos[80].id = '84005a7c0bb147909fc6310ef86d3801';
+		videos[80].title = 'Free Concerts in Catonsville Spring 2014';
+		videos[80].description = 'Jennifer Tillett previews more than 50 public concerts at Charlestown in Catonsville, from classical to pop.';
+		videos[80].date = 'Apr 23, 2014';
+		videos[80].duration = '5:01';
+		videos[80].channels = {};
+	
+			videos[80].channels['a4e2e49e5449439c91c0d58801fcbc1d'] = true;
+		
+		videos[81] = {};
+		videos[81].id = 'ee4ee2a8a0e04d1e8f4d3ccffe885c65';
+		videos[81].title = 'Bringing the Arts to Young Audiences Spring 2014';
+		videos[81].description = 'The positive impact of the arts on students is the topic of discussion with Stacie Evans Sanders of Young Audiences.';
+		videos[81].date = 'Apr 23, 2014';
+		videos[81].duration = '5:29';
+		videos[81].channels = {};
+	
+			videos[81].channels['a4e2e49e5449439c91c0d58801fcbc1d'] = true;
+		
+		videos[82] = {};
+		videos[82].id = 'dd930c0e7daf41abbc1e3d270e0e4c18';
+		videos[82].title = 'Audition Tips for Singers Spring 2014';
+		videos[82].description = 'Bill Myers of Maryland Sings shares tips for a successful vocal audition.';
+		videos[82].date = 'Apr 23, 2014';
+		videos[82].duration = '3:27';
+		videos[82].channels = {};
+	
+			videos[82].channels['a4e2e49e5449439c91c0d58801fcbc1d'] = true;
+		
+		videos[83] = {};
+		videos[83].id = 'a91c0db1708041ceb5c333d3f3d97ca0';
+		videos[83].title = 'Baltimore County\'s Lit Scene Spring 2014';
+		videos[83].description = 'Host Carolyn Black-Sotir interviews D.L. Belz about the Baltimore County literary scene, with the author reading from his book \"White Asparagus.\" \n';
+		videos[83].date = 'Apr 23, 2014';
+		videos[83].duration = '10:11';
+		videos[83].channels = {};
+	
+			videos[83].channels['a4e2e49e5449439c91c0d58801fcbc1d'] = true;
+		
+		videos[84] = {};
+		videos[84].id = 'e7f8ea95eb594e23b694b149f7fb6361';
+		videos[84].title = 'Community Resources 2014, A Regional Directory';
+		videos[84].description = 'Debbie Orlove, Community Business Liaison, Baltimore County Department of Aging';
+		videos[84].date = 'Feb 27, 2014';
+		videos[84].duration = '6:29';
+		videos[84].channels = {};
+	
+			videos[84].channels['80208372e7cb4d48bbf23ce69e6f64e5'] = true;
+		
+		videos[85] = {};
+		videos[85].id = '21c51f69ab6849e483faea6a9a0eb854';
+		videos[85].title = 'Maryland Access Point (MAP)';
+		videos[85].description = '';
+		videos[85].date = 'Feb 27, 2014';
+		videos[85].duration = '4:53';
+		videos[85].channels = {};
+	
+			videos[85].channels['80208372e7cb4d48bbf23ce69e6f64e5'] = true;
+		
+		videos[86] = {};
+		videos[86].id = 'ca904c57e6034deaa86ae72308410f94';
+		videos[86].title = 'Baltimore County Government: Keeping You in the Know With Social Media';
+		videos[86].description = 'An interview with Ellen Kobler, Baltimore County Office of Communications: Keeping You in the Know With Social Media';
+		videos[86].date = 'Feb 27, 2014';
+		videos[86].duration = '6:34';
+		videos[86].channels = {};
+	
+			videos[86].channels['80208372e7cb4d48bbf23ce69e6f64e5'] = true;
+		
+		videos[87] = {};
+		videos[87].id = '9f68cbd90b1749cf9ebf738ead2df1a8';
+		videos[87].title = 'BCDA\'s 2014 Initiative &ndash; Be Mobile, Drive Safe';
+		videos[87].description = 'Reminders and tips for getting around safely.';
+		videos[87].date = 'Jan 9, 2014';
+		videos[87].duration = '6:08';
+		videos[87].channels = {};
+	
+			videos[87].channels['80208372e7cb4d48bbf23ce69e6f64e5'] = true;
+		
+		videos[88] = {};
+		videos[88].id = '82103dd236f2461fb2e61eb32f52fb0b';
+		videos[88].title = 'Walking Towards Pedestrian Safety';
+		videos[88].description = 'A discussion about walking safely; Jennifer L. Utz, Battalion Chief Baltimore County Fire Department and Lieutenant Stephen Troutman, Baltimore County Police Department.';
+		videos[88].date = 'Jan 9, 2014';
+		videos[88].duration = '7:18';
+		videos[88].channels = {};
+	
+			videos[88].channels['80208372e7cb4d48bbf23ce69e6f64e5'] = true;
+		
+		videos[89] = {};
+		videos[89].id = '6d011392ce4241b0920388d6680d5d0f';
+		videos[89].title = 'Safety on the Road With AARP';
+		videos[89].description = 'Ted Peterkin, AARP Driver Safety State Coordinator, Department of Aging';
+		videos[89].date = 'Jan 9, 2014';
+		videos[89].duration = '8:25';
+		videos[89].channels = {};
+	
+			videos[89].channels['80208372e7cb4d48bbf23ce69e6f64e5'] = true;
+		
+		videos[90] = {};
+		videos[90].id = '7ff9251c8bcd4faeb65dc826277faf1a';
+		videos[90].title = '\"Take a Leap\" January 2014';
+		videos[90].description = '\"Take a Leap\" and discover the new Baltimore County Dance Celebration.';
+		videos[90].date = 'Jan 2, 2014';
+		videos[90].duration = '7:32';
+		videos[90].channels = {};
+	
+			videos[90].channels['a4e2e49e5449439c91c0d58801fcbc1d'] = true;
+		
+		videos[91] = {};
+		videos[91].id = '4f67f528679b4e4db47fb79c9e9fbfe4';
+		videos[91].title = 'Dance: \"The Jungle Book\"';
+		videos[91].description = 'Head to another place with a modern dance performance of \"The Jungle Book.\"';
+		videos[91].date = 'Jan 2, 2014';
+		videos[91].duration = '3:39';
+		videos[91].channels = {};
+	
+			videos[91].channels['a4e2e49e5449439c91c0d58801fcbc1d'] = true;
+		
+		videos[92] = {};
+		videos[92].id = '9c61596072a6455b9ae451d4c88a2aad';
+		videos[92].title = 'Dance Helps Students Learn, Move, Have Fun';
+		videos[92].description = 'Learn how dance helps students learn better, move better, and have more fun.';
+		videos[92].date = 'Jan 2, 2014';
+		videos[92].duration = '4:06';
+		videos[92].channels = {};
+	
+			videos[92].channels['a4e2e49e5449439c91c0d58801fcbc1d'] = true;
+		
+		videos[93] = {};
+		videos[93].id = '1b52315e440645b3908f68c601ce4052';
+		videos[93].title = 'Ragtime Dances';
+		videos[93].description = 'Get up and dance to the rhythms of ragtime with AKIMBO: Uncoiled.';
+		videos[93].date = 'Jan 2, 2014';
+		videos[93].duration = '5:20';
+		videos[93].channels = {};
+	
+			videos[93].channels['a4e2e49e5449439c91c0d58801fcbc1d'] = true;
+		
+		videos[94] = {};
+		videos[94].id = 'b9fd2868fa124918a28c3e06fcfbe768';
+		videos[94].title = 'Elementary School Dancers';
+		videos[94].description = 'Ballroom dancing starts young with fifth graders from Pleasant Plaines Elementary School.';
+		videos[94].date = 'Jan 2, 2014';
+		videos[94].duration = '4:48';
+		videos[94].channels = {};
+	
+			videos[94].channels['a4e2e49e5449439c91c0d58801fcbc1d'] = true;
+		
+		videos[95] = {};
+		videos[95].id = '90041c9e19c74c888ff80bfc0600b032';
+		videos[95].title = 'Get Smarter: Ballet Dancer Stand on Her Toes';
+		videos[95].description = 'Learn how a ballet dancer stands on her toes.';
+		videos[95].date = 'Jan 2, 2014';
+		videos[95].duration = '3:06';
+		videos[95].channels = {};
+	
+			videos[95].channels['a4e2e49e5449439c91c0d58801fcbc1d'] = true;
+		
+		videos[96] = {};
+		videos[96].id = '08847b89e50541b39fa5dc99b54adb4c';
+		videos[96].title = 'Amazing Classes and Programs';
+		videos[96].description = 'Find out what programs Baltimore County Senior Centers are offering. Lisa J. Kennedy and Betty Flaherty';
+		videos[96].date = 'Oct 31, 2013';
+		videos[96].duration = '7:47';
+		videos[96].channels = {};
+	
+			videos[96].channels['80208372e7cb4d48bbf23ce69e6f64e5'] = true;
+		
+		videos[97] = {};
+		videos[97].id = '16b2013c1efd46869d5aa88884d9c64d';
+		videos[97].title = 'Vocal Gymnastics';
+		videos[97].description = 'Tom Hall, music director of the Baltimore Choral Arts Society, talks about voice as a musical instrument.';
+		videos[97].date = 'Sep 4, 2013';
+		videos[97].duration = '8:31';
+		videos[97].channels = {};
+	
+			videos[97].channels['a4e2e49e5449439c91c0d58801fcbc1d'] = true;
+		
+		videos[98] = {};
+		videos[98].id = 'dce64267c9c54142a4539032078eb617';
+		videos[98].title = 'Jazz Master';
+		videos[98].description = 'Saxophonist, composer and teacher Carl Grubbs recalls visits with John Coltrane, plus a special smARTS jazz performance.';
+		videos[98].date = 'Sep 4, 2013';
+		videos[98].duration = '10:02';
+		videos[98].channels = {};
+	
+			videos[98].channels['a4e2e49e5449439c91c0d58801fcbc1d'] = true;
+		
+		videos[99] = {};
+		videos[99].id = '0b7b27c2e1464a59a8aefcdd6ddaaf8f';
+		videos[99].title = 'At the Ballet';
+		videos[99].description = 'Students from the Baltimore County Youth Ballet share how dance helps them in school and in life.';
+		videos[99].date = 'Sep 4, 2013';
+		videos[99].duration = '2:53';
+		videos[99].channels = {};
+	
+			videos[99].channels['a4e2e49e5449439c91c0d58801fcbc1d'] = true;
+		
+		videos[100] = {};
+		videos[100].id = '8e43b6300e164ee4a7b4bfc126c6e9d8';
+		videos[100].title = 'Buying Original Artwork';
+		videos[100].description = 'Love to own or give an original a piece of art, but don’t know where to begin? Brian Truax from Towson Arts Collective shares tips.';
+		videos[100].date = 'Sep 4, 2013';
+		videos[100].duration = '4:27';
+		videos[100].channels = {};
+	
+			videos[100].channels['a4e2e49e5449439c91c0d58801fcbc1d'] = true;
+		
+		videos[101] = {};
+		videos[101].id = '114c31b6f0844ceca7707e35f6b350eb';
+		videos[101].title = 'Sweet Harmony';
+		videos[101].description = 'The 3 Wise Men quartet demonstrates barbershop harmony.';
+		videos[101].date = 'Sep 4, 2013';
+		videos[101].duration = '4:05';
+		videos[101].channels = {};
+	
+			videos[101].channels['a4e2e49e5449439c91c0d58801fcbc1d'] = true;
+		
+		videos[102] = {};
+		videos[102].id = '1e023a093fe4434ca1c195734b872156';
+		videos[102].title = 'Baltimore County Falls Prevention Coalition';
+		videos[102].description = 'Dr. Virginia Billian, Baltimore County Commission on Aging';
+		videos[102].date = 'Jul 2, 2013';
+		videos[102].duration = '6:29';
+		videos[102].channels = {};
+	
+			videos[102].channels['80208372e7cb4d48bbf23ce69e6f64e5'] = true;
+		
+		videos[103] = {};
+		videos[103].id = '0265dbf5e7024c4a929826d485bef55e';
+		videos[103].title = 'Smoking Safety';
+		videos[103].description = 'Cigarettes are one of the leading causes of fatal fires in the U.S.';
+		videos[103].date = 'May 23, 2013';
+		videos[103].duration = '1:33';
+		videos[103].channels = {};
+	
+			videos[103].channels['1dea7a73f59b4b0384cc1cd550eb9b1d'] = true;
+		
+		videos[104] = {};
+		videos[104].id = '0c1257cbc0554e5ba92b74dcf38cd868';
+		videos[104].title = 'Home Team: Supporting Your Community';
+		videos[104].description = 'Danielle Singley, Manager, Home Team Program, BCDA';
+		videos[104].date = 'May 1, 2013';
+		videos[104].duration = '5:19';
+		videos[104].channels = {};
+	
+			videos[104].channels['80208372e7cb4d48bbf23ce69e6f64e5'] = true;
+		
+		videos[105] = {};
+		videos[105].id = '12b6b734f371456ca0d015ba81038a84';
+		videos[105].title = 'Fiscal Year 2014 Budget';
+		videos[105].description = 'Baltimore County Executive Kevin Kamenetz delivers the Fiscal Year 2014 Budget Message.';
+		videos[105].date = 'Apr 25, 2013';
+		videos[105].duration = '38:59';
+		videos[105].channels = {};
+	
+			videos[105].channels['aa54ec3530d34c1597f118d3c143f370'] = true;
+		
+		videos[106] = {};
+		videos[106].id = '15b60feb216d4facbc8e65102c2a7b1c';
+		videos[106].title = 'Taking Care of the Family Caregiver';
+		videos[106].description = 'Frances Bond, PhD, Adjunct Professor, Stevenson University discusses how to care for the caregiver.\n';
+		videos[106].date = 'Feb 27, 2013';
+		videos[106].duration = '6:26';
+		videos[106].channels = {};
+	
+			videos[106].channels['80208372e7cb4d48bbf23ce69e6f64e5'] = true;
+		
+		videos[107] = {};
+		videos[107].id = 'a0500ea706434887834bfd067f26e6ce';
+		videos[107].title = 'Pikesville Senior Center Interviews';
+		videos[107].description = 'Watch candid interviews from Pikesville Senior Center members.';
+		videos[107].date = 'Feb 19, 2013';
+		videos[107].duration = '2:31';
+		videos[107].channels = {};
+	
+			videos[107].channels['80208372e7cb4d48bbf23ce69e6f64e5'] = true;
+		
+
+		function chooseVideo(v, autoPlay /*, cid*/ ) {
+			if( onMobile() ) {
+				chooseVideoMobile( v, autoPlay );
+				return;
+			}
+			$f('tulipTVPlayerDiv').stop();
+			if ( v.length &gt; 0) {
+				var streamer = 'org=2497116843bf45e39112427555ef6d01';
+				if ((arguments.length &gt; 2) &amp;&amp; (arguments[2].length &gt; 0)) {
+					streamer += '&amp;cid=' + arguments[2];
+				}
+
+				$f('tulipTVPlayerDiv').play([
+					{
+						scaling: 'fit',
+						url: 'http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/V' + v + '.jpg'
+					},
+					{
+						scaling: 'fit',
+						
+						url: 'http://tulip.siteexecutive.com/serve/stream/?' + streamer + '&amp;file=V' + v + '.mp4&amp;mp4=1&amp;id=pid1151294',
+						
+						provider: 'lighttpd',
+						autoPlay: autoPlay
+					}
+				]);
+
+				for (var i = 0; i &lt; videos.length; i++) {
+					if (videos[i].id == v) {
+						setDivContent('tulipTVPlayerContainerTitle', videos[i].title);
+						setDivContent('tulipTVPlayerContainerDate', videos[i].date);
+						setDivContent('tulipTVPlayerContainerDuration', videos[i].duration);
+						setDivContent('tulipTVPlayerContainerDesc', videos[i].description);
+
+						break;
+					}
+				}
+			}
+			else {
+				$f('tulipTVPlayerDiv').play({ url: 'http://tulip.siteexecutive.com/serve/Vblack.jpg' });
+
+				setDivContent('tulipTVPlayerContainerTitle', '');
+				setDivContent('tulipTVPlayerContainerDate', '');
+				setDivContent('tulipTVPlayerContainerDuration', '');
+				setDivContent('tulipTVPlayerContainerDesc', '');
+			}
+		}
+		function chooseVideoMobile( v, autoPlay ) {
+			//$f('tulipTVPlayerDiv').stop();
+			if (v.length &gt; 0) {
+				var streamer = 'org=2497116843bf45e39112427555ef6d01';
+				if ((arguments.length &gt; 2) &amp;&amp; (arguments[2].length &gt; 0)) {
+					streamer += '&amp;cid=' + arguments[2];
+				}
+
+				var img = 'http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/V' + v + '.jpg';
+				var vid = 'http://tulip.siteexecutive.com/serve/stream/?' + streamer + '&amp;file=V' + v + '.mp4&amp;mp4=1&amp;id=pid1151294';
+				//document.getElementById('tulipTVPlayerDiv').innerHTML = genHtml5Vid( img, vid );
+				h5_chooseVid_http( tulipserver, img, vid, "v", 480, 384, "tulipTVPlayerDiv" );
+
+				for (var i = 0; i &lt; videos.length; i++) {
+					if (videos[i].id == v) {
+						setDivContent('tulipTVPlayerContainerTitle', videos[i].title);
+						setDivContent('tulipTVPlayerContainerDate', videos[i].date);
+						setDivContent('tulipTVPlayerContainerDuration', videos[i].duration);
+						setDivContent('tulipTVPlayerContainerDesc', videos[i].description);
+
+						break;
+					}
+				}
+			}
+			else {
+				//$f('tulipTVPlayerDiv').play({ url: 'http://tulip.siteexecutive.com/serve/Vblack.jpg' });
+
+				setDivContent('tulipTVPlayerContainerTitle', '');
+				setDivContent('tulipTVPlayerContainerDate', '');
+				setDivContent('tulipTVPlayerContainerDuration', '');
+				setDivContent('tulipTVPlayerContainerDesc', '');
+			}
+
+		}
+		if (window.player_start_vid) {
+			chooseVideo(player_start_vid, false, player_start_cid);
+		}
+	/*]]&gt;*/</script>
+<div class="tulipTVPlayerContainerTitle">The Food for Thought Initiative</div><div class="tulipTVPlayerContainerDuration">8:16</div><div class="tulipTVPlayerContainerDate">Mar 4, 2015</div><div class="tulipTVPlayerContainerDesc">A discussion with Joanne E. Williams, Director, Department of Aging.</div></div><hr>
+		<script type="text/javascript">/*&lt;![CDATA[*/
+			var channels = [];
+		
+			channels[0] = {};
+			channels[0].name = 'Most Recent Videos';
+			channels[0].desc = '';
+		
+			channels.push({
+				"name": 'Answering the Call',
+				"desc": '\"Answering the Call\" is a program about the Baltimore County fire service. It features stories about timely fire and life safety issues, emergency preparedness, fire and EMS personnel and Fire Department activities and initiatives.\"\n\nAnswering the Call airs in its entirety on cable Channel 25, only in Baltimore County, at the following times:\n\n    Mondays, 12:30 p.m. and 11 p.m.\n    Tuesdays, 11:30 a.m. and 7:30 p.m.\n    Wednesdays, 10 a.m.\n    Thursdays, noon\n'
+			});
+		
+			channels.push({
+				"name": 'BC UpFront',
+				"desc": 'In BC Upfront, the County Executive will respond in videos to timely issues in the news.\n\n'
+			});
+		
+			channels.push({
+				"name": 'Hello Baltimore County',
+				"desc": '\"Hello, Baltimore County\" features county officials and others discussing timely topics of interest to county citizens.'
+			});
+		
+			channels.push({
+				"name": 'Police Report',
+				"desc": 'The program features department members presenting valuable information for county residents.'
+			});
+		
+			channels.push({
+				"name": 'smARTS, The Baltimore County Arts Show',
+				"desc": 'smARTS is a lively look at the Baltimore County arts scene.'
+			});
+		
+			channels.push({
+				"name": 'Time of Your Life',
+				"desc": 'Learn first-hand about programs, services and resources for older adults, baby boomers, caregivers, persons with disabilities and professionals.'
+			});
+		
+
+			function changeChannel(s) {
+				var ind = s.selectedIndex;
+				if (ind &lt; 0)
+					return;
+
+				document.getElementById('tulipTVChannelChoiceName').innerHTML = channels[ind].name;
+				document.getElementById('tulipTVChannelChoiceDesc').innerHTML = channels[ind].desc;
+
+				var f = window.videoListSetChannel;
+				if (f) {
+					f(s.options[ind].value, channels[ind].name, channels[ind].desc);
+				}
+			}
+		/*]]&gt;*/</script>
+		<div id="tulipTVChannelChoice">
+			<form onsubmit="return false;" action="#">
+				<select id="channelSelect" onchange="changeChannel(this)">
+		
+					<option value="-1">Most Recent Videos</option>
+		
+					<option value="1dea7a73f59b4b0384cc1cd550eb9b1d">Answering the Call</option>
+			
+					<option value="aa54ec3530d34c1597f118d3c143f370">BC UpFront</option>
+			
+					<option value="62e8bad77300463996c4f3bbb96f60ae">Hello Baltimore County</option>
+			
+					<option value="34c47f357fde4f4d99514393322e49e2">Police Report</option>
+			
+					<option value="a4e2e49e5449439c91c0d58801fcbc1d">smARTS, The Baltimore County Arts Show</option>
+			
+					<option value="80208372e7cb4d48bbf23ce69e6f64e5">Time of Your Life</option>
+			
+				</select>
+			</form>
+			<script type="text/javascript">
+				(function () {
+					var s = document.getElementById('channelSelect');
+					if (s) {
+						s.selectedIndex = 0;
+					}
+				})();
+			</script>
+			<div id="tulipTVChannelChoiceName">Most Recent Videos</div>
+			<div id="tulipTVChannelChoiceDesc"></div>
+		</div>
+	
+	<script type="text/javascript">
+		if (window.videoListSetChannel) {
+			videoListSetChannel('-1');
+		}
+		else {
+			window.shouldSetChannel = '-1';
+		}
+	</script>
+
+	<div class="tulipTVThumbsContainer" id="tulipTVThumbs">
+<div id="vdiv_5c656d1ed7e74c9ba241bd0db0bd9934" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('5c656d1ed7e74c9ba241bd0db0bd9934')">
+				<img width="100px" alt="The Food for Thought Initiative" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/V5c656d1ed7e74c9ba241bd0db0bd9934.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">The Food for Thought Initiative</div>
+					<div class="tulipTVThumbDuration">8:16</div>
+					<div class="tulipTVThumbDate">Mar 4, 2015</div>
+					<div class="tulipTVThumbDesc">A discussion with Joanne E. Williams, Director, Department of Aging.</div>
+				</div>
+			</div><div id="vdiv_04f4053a0f784536a58b2da5a4b14c31" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('04f4053a0f784536a58b2da5a4b14c31')">
+				<img width="100px" alt="Becoming a Resilient Caregiver: Nourishing the Body and Mind" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/V04f4053a0f784536a58b2da5a4b14c31.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Becoming a Resilient Caregiver: Nourishing the Body and Mind</div>
+					<div class="tulipTVThumbDuration">4:33</div>
+					<div class="tulipTVThumbDate">Mar 4, 2015</div>
+					<div class="tulipTVThumbDesc">Find ways to become a healthy caregiver.</div>
+				</div>
+			</div><div id="vdiv_a8ac996c414e4d1dbc633863db0921b7" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('a8ac996c414e4d1dbc633863db0921b7')">
+				<img width="100px" alt="Community Resources 2016" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/Va8ac996c414e4d1dbc633863db0921b7.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Community Resources 2016</div>
+					<div class="tulipTVThumbDuration">3:55</div>
+					<div class="tulipTVThumbDate">Mar 4, 2015</div>
+					<div class="tulipTVThumbDesc">Find out what resources are available in the 2016 directory.</div>
+				</div>
+			</div><div id="vdiv_37ff347a0fcd4e3c9255eb8018d0cc46" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('37ff347a0fcd4e3c9255eb8018d0cc46')">
+				<img width="100px" alt="Senior Travel, Box Office and Senior Center Events" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/V37ff347a0fcd4e3c9255eb8018d0cc46.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Senior Travel, Box Office and Senior Center Events</div>
+					<div class="tulipTVThumbDuration">9:45</div>
+					<div class="tulipTVThumbDate">Mar 4, 2015</div>
+					<div class="tulipTVThumbDesc">A review of what's coming up with Debbie Orlove and Ethel Rasmussen.</div>
+				</div>
+			</div><div id="vdiv_26e1a5025a3b42bbbae3c241596fca33" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('26e1a5025a3b42bbbae3c241596fca33')">
+				<img width="100px" alt="Preventing Home Electrical Fires" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/V26e1a5025a3b42bbbae3c241596fca33.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Preventing Home Electrical Fires</div>
+					<div class="tulipTVThumbDuration">8:59</div>
+					<div class="tulipTVThumbDate">Mar 3, 2015</div>
+					<div class="tulipTVThumbDesc">Find out from Baltimore County’s Chief Electrical Inspector and Fire Marshal how to protect your home and family.</div>
+				</div>
+			</div><div id="vdiv_3c06081ba9db4834aae6c162ce7309c9" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('3c06081ba9db4834aae6c162ce7309c9')">
+				<img width="100px" alt="Underage Drinking" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/V3c06081ba9db4834aae6c162ce7309c9.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Underage Drinking</div>
+					<div class="tulipTVThumbDuration">7:51</div>
+					<div class="tulipTVThumbDate">Mar 3, 2015</div>
+					<div class="tulipTVThumbDesc">Hopkins Bloomberg School of Public Health expert, Dr. David Jernigan, tells how the County is targeting underage drinking on college campuses and more.</div>
+				</div>
+			</div><div id="vdiv_22491168e3ba463db92e4aa2f7412156" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('22491168e3ba463db92e4aa2f7412156')">
+				<img width="100px" alt="What’s New at the Library" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/V22491168e3ba463db92e4aa2f7412156.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">What’s New at the Library</div>
+					<div class="tulipTVThumbDuration">11:08</div>
+					<div class="tulipTVThumbDate">Mar 3, 2015</div>
+					<div class="tulipTVThumbDesc">Baltimore County’s new Library Director, Paula Miller shares the latest in technology and services available and coming soon to your local library.</div>
+				</div>
+			</div><div id="vdiv_7e5fee11e52f4f6eac57d4dd814e88a4" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('7e5fee11e52f4f6eac57d4dd814e88a4')">
+				<img width="100px" alt="Ice Safety" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/V7e5fee11e52f4f6eac57d4dd814e88a4.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Ice Safety</div>
+					<div class="tulipTVThumbDuration">2:44</div>
+					<div class="tulipTVThumbDate">Feb 11, 2015</div>
+					<div class="tulipTVThumbDesc">Advice on how to approach ice safely.</div>
+				</div>
+			</div><div id="vdiv_9f1f3f51adab4e5eafc3acb6a788553c" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('9f1f3f51adab4e5eafc3acb6a788553c')">
+				<img width="100px" alt="CO Poisoning" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/V9f1f3f51adab4e5eafc3acb6a788553c.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">CO Poisoning</div>
+					<div class="tulipTVThumbDuration">5:14</div>
+					<div class="tulipTVThumbDate">Feb 11, 2015</div>
+					<div class="tulipTVThumbDesc">The dangers of CO poisoning and how to avoid problems.</div>
+				</div>
+			</div><div id="vdiv_0b0abc8391b64908859b0881231b5925" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('0b0abc8391b64908859b0881231b5925')">
+				<img width="100px" alt="Snow Safety" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/V0b0abc8391b64908859b0881231b5925.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Snow Safety</div>
+					<div class="tulipTVThumbDuration">1:40</div>
+					<div class="tulipTVThumbDate">Feb 11, 2015</div>
+					<div class="tulipTVThumbDesc">The ways to stay safe when snow falls in the area.</div>
+				</div>
+			</div><div id="vdiv_6173cb9fcdfb4e44b3d1d9fdcb5863a1" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('6173cb9fcdfb4e44b3d1d9fdcb5863a1')">
+				<img width="100px" alt="Events" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/V6173cb9fcdfb4e44b3d1d9fdcb5863a1.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Events</div>
+					<div class="tulipTVThumbDuration">1:18</div>
+					<div class="tulipTVThumbDate">Feb 11, 2015</div>
+					<div class="tulipTVThumbDesc">A look at fire service events during the last two months.</div>
+				</div>
+			</div><div id="vdiv_03df80ccbec14d0ba1a7e33c8aa28a99" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('03df80ccbec14d0ba1a7e33c8aa28a99')">
+				<img width="100px" alt="Incidents" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/V03df80ccbec14d0ba1a7e33c8aa28a99.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Incidents</div>
+					<div class="tulipTVThumbDuration">2:26</div>
+					<div class="tulipTVThumbDate">Feb 11, 2015</div>
+					<div class="tulipTVThumbDesc">We share incidents that happened since our last show.</div>
+				</div>
+			</div><div id="vdiv_d1f980f1c25240eab391a0c01a4df03f" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('d1f980f1c25240eab391a0c01a4df03f')">
+				<img width="100px" alt="Retirees and Calendar of Events" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/Vd1f980f1c25240eab391a0c01a4df03f.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Retirees and Calendar of Events</div>
+					<div class="tulipTVThumbDuration">2:31</div>
+					<div class="tulipTVThumbDate">Feb 11, 2015</div>
+					<div class="tulipTVThumbDesc">A thank you to our people who retired in the last few months and upcoming events at volunteer fire stations.</div>
+				</div>
+			</div><div id="vdiv_36430a492aa34dc0bf8f28292377f758" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('36430a492aa34dc0bf8f28292377f758')">
+				<img width="100px" alt="Everyday Heroes, February and March" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/V36430a492aa34dc0bf8f28292377f758.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Everyday Heroes, February and March</div>
+					<div class="tulipTVThumbDuration">4:11</div>
+					<div class="tulipTVThumbDate">Feb 11, 2015</div>
+					<div class="tulipTVThumbDesc">We share some of the thoughts of people in the community regarding men and women in the Fire Service.</div>
+				</div>
+			</div><div id="vdiv_1b8f56f76ced47578873b5c6279a882d" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('1b8f56f76ced47578873b5c6279a882d')">
+				<img width="100px" alt="Interview with Captain Bruce Schultz" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/V1b8f56f76ced47578873b5c6279a882d.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Interview with Captain Bruce Schultz</div>
+					<div class="tulipTVThumbDuration">7:25</div>
+					<div class="tulipTVThumbDate">Feb 11, 2015</div>
+					<div class="tulipTVThumbDesc">A discussion about the Fire Marshal's Office and winter and fire safety.</div>
+				</div>
+			</div><div id="vdiv_422d26922696499fb174a545cb34e184" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('422d26922696499fb174a545cb34e184')">
+				<img width="100px" alt="911 Center" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/V422d26922696499fb174a545cb34e184.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">911 Center</div>
+					<div class="tulipTVThumbDuration">17:11</div>
+					<div class="tulipTVThumbDate">Feb 8, 2015</div>
+					<div class="tulipTVThumbDesc">Learn about the 911 Center.</div>
+				</div>
+			</div><div id="vdiv_1d945cd07e364e8bbd5a3276b4da6e15" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('1d945cd07e364e8bbd5a3276b4da6e15')">
+				<img width="100px" alt="Precinct 6 in Towson" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/V1d945cd07e364e8bbd5a3276b4da6e15.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Precinct 6 in Towson</div>
+					<div class="tulipTVThumbDuration">11:49</div>
+					<div class="tulipTVThumbDate">Feb 8, 2015</div>
+					<div class="tulipTVThumbDesc">Learn about Precinct 6 in Towson.</div>
+				</div>
+			</div><div id="vdiv_6d71cd6dbac74338aaad17078810fb7e" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('6d71cd6dbac74338aaad17078810fb7e')">
+				<img width="100px" alt="Annapolis Priorities" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/V6d71cd6dbac74338aaad17078810fb7e.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Annapolis Priorities</div>
+					<div class="tulipTVThumbDuration">12:21</div>
+					<div class="tulipTVThumbDate">Feb 3, 2015</div>
+					<div class="tulipTVThumbDesc">Baltimore County Executive Kevin Kamenetz outlines his priorities for this year’s General Assembly session.</div>
+				</div>
+			</div><div id="vdiv_92733d0cbeea4b99949cd7856f0f0a68" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('92733d0cbeea4b99949cd7856f0f0a68')">
+				<img width="100px" alt="Dental Care for All" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/V92733d0cbeea4b99949cd7856f0f0a68.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Dental Care for All</div>
+					<div class="tulipTVThumbDuration">6:54</div>
+					<div class="tulipTVThumbDate">Feb 3, 2015</div>
+					<div class="tulipTVThumbDesc">Find out about the Health Department’s reduced cost dental care for kids and adults without dental coverage.</div>
+				</div>
+			</div><div id="vdiv_c8a67fa289c144288edc3ca82100b982" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('c8a67fa289c144288edc3ca82100b982')">
+				<img width="100px" alt="Take a Leap!" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/Vc8a67fa289c144288edc3ca82100b982.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Take a Leap!</div>
+					<div class="tulipTVThumbDuration">8:25</div>
+					<div class="tulipTVThumbDate">Feb 3, 2015</div>
+					<div class="tulipTVThumbDesc">Baltimore County’s Dance Celebration offers great performances and free classes around the County throughout February.</div>
+				</div>
+			</div><div id="vdiv_68c168891d6240fa8e9bef13b82babf3" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('68c168891d6240fa8e9bef13b82babf3')">
+				<img width="100px" alt="Senior Box Office" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/V68c168891d6240fa8e9bef13b82babf3.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Senior Box Office</div>
+					<div class="tulipTVThumbDuration">7:58</div>
+					<div class="tulipTVThumbDate">Jan 15, 2015</div>
+					<div class="tulipTVThumbDesc">A look at upcoming events at Senior Box Office.</div>
+				</div>
+			</div><div id="vdiv_6fcaaa8086cd417abfc01fc95cfd63ef" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('6fcaaa8086cd417abfc01fc95cfd63ef')">
+				<img width="100px" alt="Senior Travel, Box Office And Events" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/V6fcaaa8086cd417abfc01fc95cfd63ef.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Senior Travel, Box Office And Events</div>
+					<div class="tulipTVThumbDuration">9:00</div>
+					<div class="tulipTVThumbDate">Jan 15, 2015</div>
+					<div class="tulipTVThumbDesc">A look at Senior Center travel, Senior Box Office and Senior Center events.</div>
+				</div>
+			</div><div id="vdiv_291996c257fe4b8aa801a886cd93e0fa" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('291996c257fe4b8aa801a886cd93e0fa')">
+				<img width="100px" alt="Opportunities For Lifelong Learning AT CCBC" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/V291996c257fe4b8aa801a886cd93e0fa.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Opportunities For Lifelong Learning AT CCBC</div>
+					<div class="tulipTVThumbDuration">9:58</div>
+					<div class="tulipTVThumbDate">Jan 15, 2015</div>
+					<div class="tulipTVThumbDesc">A look at opportunities for learning.</div>
+				</div>
+			</div><div id="vdiv_374acd95b77d43d3b78ec4b4647cdf51" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('374acd95b77d43d3b78ec4b4647cdf51')">
+				<img width="100px" alt="Barefoot Dance" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/V374acd95b77d43d3b78ec4b4647cdf51.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Barefoot Dance</div>
+					<div class="tulipTVThumbDuration">7:24</div>
+					<div class="tulipTVThumbDate">Jan 13, 2015</div>
+					<div class="tulipTVThumbDesc">Barefoot Dance looks at how dancing improves the mind and body.</div>
+				</div>
+			</div><div id="vdiv_1c9429debd0e419881fb990231f6dbdb" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('1c9429debd0e419881fb990231f6dbdb')">
+				<img width="100px" alt="Special smARTS Performance" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/V1c9429debd0e419881fb990231f6dbdb.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Special smARTS Performance</div>
+					<div class="tulipTVThumbDuration">4:13</div>
+					<div class="tulipTVThumbDate">Jan 13, 2015</div>
+					<div class="tulipTVThumbDesc">Enjoy a special smARTS performance by Towson University Community Dance.</div>
+				</div>
+			</div><div id="vdiv_deb3d9bb83c842e0b84d23b35cd689de" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('deb3d9bb83c842e0b84d23b35cd689de')">
+				<img width="100px" alt="Get Hipp!" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/Vdeb3d9bb83c842e0b84d23b35cd689de.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Get Hipp!</div>
+					<div class="tulipTVThumbDuration">7:25</div>
+					<div class="tulipTVThumbDate">Jan 13, 2015</div>
+					<div class="tulipTVThumbDesc">Get Hipp! The Hippodrome Foundation in action.</div>
+				</div>
+			</div><div id="vdiv_4a45f961d6714913a2363ea0ad3d31dd" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('4a45f961d6714913a2363ea0ad3d31dd')">
+				<img width="100px" alt="Arts and Agricultural Resource Council" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/V4a45f961d6714913a2363ea0ad3d31dd.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Arts and Agricultural Resource Council</div>
+					<div class="tulipTVThumbDuration">6:11</div>
+					<div class="tulipTVThumbDate">Jan 13, 2015</div>
+					<div class="tulipTVThumbDesc">Explore the relationship of arts and agriculture.</div>
+				</div>
+			</div><div id="vdiv_a393061441914e418a55f55563121230" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('a393061441914e418a55f55563121230')">
+				<img width="100px" alt="Dance Celebration: February 2015" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/Va393061441914e418a55f55563121230.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Dance Celebration: February 2015</div>
+					<div class="tulipTVThumbDuration">0:29</div>
+					<div class="tulipTVThumbDate">Jan 13, 2015</div>
+					<div class="tulipTVThumbDesc">Take a Leap Baltimore County Dance Celebration, February 2015.</div>
+				</div>
+			</div><div id="vdiv_0a8359e7d3b34e0e95753104996b84d5" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('0a8359e7d3b34e0e95753104996b84d5')">
+				<img width="100px" alt="Get smARTer: Doll's Tea Party" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/V0a8359e7d3b34e0e95753104996b84d5.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Get smARTer: Doll's Tea Party</div>
+					<div class="tulipTVThumbDuration">3:32</div>
+					<div class="tulipTVThumbDate">Jan 13, 2015</div>
+					<div class="tulipTVThumbDesc">Get smARTer at a doll's tea party at Hampton mansion.</div>
+				</div>
+			</div><div id="vdiv_bc68f0b71c5a49459f276051583e344b" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('bc68f0b71c5a49459f276051583e344b')">
+				<img width="100px" alt="Resources to Help Seniors Stay in their Homes" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/Vbc68f0b71c5a49459f276051583e344b.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Resources to Help Seniors Stay in their Homes</div>
+					<div class="tulipTVThumbDuration">9:22</div>
+					<div class="tulipTVThumbDate">Jan 9, 2015</div>
+					<div class="tulipTVThumbDesc">Baltimore County's Department of Aging is a wealth of resources for seniors, offering everything from fitness centers to assistance with health resources and more.</div>
+				</div>
+			</div><div id="vdiv_59b4fb2f0974451f9cf4c5a21dc5ec22" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('59b4fb2f0974451f9cf4c5a21dc5ec22')">
+				<img width="100px" alt="Free Help to Quit Smoking!" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/V59b4fb2f0974451f9cf4c5a21dc5ec22.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Free Help to Quit Smoking!</div>
+					<div class="tulipTVThumbDuration">9:49</div>
+					<div class="tulipTVThumbDate">Jan 9, 2015</div>
+					<div class="tulipTVThumbDesc">Baltimore County's Health Department offers free tobacco cessation aids, classes and more for this most important New Year's resolution.</div>
+				</div>
+			</div><div id="vdiv_9ca82a5aab7d49ae887f6ee5afbff048" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('9ca82a5aab7d49ae887f6ee5afbff048')">
+				<img width="100px" alt="Technology is Boosting Service, Saving Dollars" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/V9ca82a5aab7d49ae887f6ee5afbff048.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Technology is Boosting Service, Saving Dollars</div>
+					<div class="tulipTVThumbDuration">8:13</div>
+					<div class="tulipTVThumbDate">Jan 8, 2015</div>
+					<div class="tulipTVThumbDesc">Find out about the technology updates that mean faster, better service at less cost for county operations.</div>
+				</div>
+			</div><div id="vdiv_c069720489424606adf4ea6d9fbeeb9b" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('c069720489424606adf4ea6d9fbeeb9b')">
+				<img width="100px" alt="Community and School Resources Section" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/Vc069720489424606adf4ea6d9fbeeb9b.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Community and School Resources Section</div>
+					<div class="tulipTVThumbDuration">11:06</div>
+					<div class="tulipTVThumbDate">Dec 11, 2014</div>
+					<div class="tulipTVThumbDesc">Watch a video about the resources available to our communities and schools.</div>
+				</div>
+			</div><div id="vdiv_e9c15f0cc2df4f9696f0b4bbffa846f7" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('e9c15f0cc2df4f9696f0b4bbffa846f7')">
+				<img width="100px" alt="Winter and Holiday Season Crime Prevention" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/Ve9c15f0cc2df4f9696f0b4bbffa846f7.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Winter and Holiday Season Crime Prevention</div>
+					<div class="tulipTVThumbDuration">16:51</div>
+					<div class="tulipTVThumbDate">Dec 11, 2014</div>
+					<div class="tulipTVThumbDesc">A discussion about crime prevention during the winter and holiday season.</div>
+				</div>
+			</div><div id="vdiv_2d54af6a5e0c423685201fc299f08d80" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('2d54af6a5e0c423685201fc299f08d80')">
+				<img width="100px" alt="Medic Units and Survivors Events" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/V2d54af6a5e0c423685201fc299f08d80.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Medic Units and Survivors Events</div>
+					<div class="tulipTVThumbDuration">4:15</div>
+					<div class="tulipTVThumbDate">Dec 10, 2014</div>
+					<div class="tulipTVThumbDesc">New Medic Units and new equipment a look at survivors.</div>
+				</div>
+			</div><div id="vdiv_f3b194582fc64d938e24ee342941bd56" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('f3b194582fc64d938e24ee342941bd56')">
+				<img width="100px" alt="Events" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/Vf3b194582fc64d938e24ee342941bd56.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Events</div>
+					<div class="tulipTVThumbDuration">4:01</div>
+					<div class="tulipTVThumbDate">Dec 10, 2014</div>
+					<div class="tulipTVThumbDesc">A look at some events from the last few months.</div>
+				</div>
+			</div><div id="vdiv_6fb01c7c6e9d43d19ab2203ad502d858" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('6fb01c7c6e9d43d19ab2203ad502d858')">
+				<img width="100px" alt="Retirees and Everyday Heroes" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/V6fb01c7c6e9d43d19ab2203ad502d858.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Retirees and Everyday Heroes</div>
+					<div class="tulipTVThumbDuration">2:43</div>
+					<div class="tulipTVThumbDate">Dec 10, 2014</div>
+					<div class="tulipTVThumbDesc">Happy retirement and a look at those who have helped others in the County.</div>
+				</div>
+			</div><div id="vdiv_80d71559a5f64e188069373d2e9e7775" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('80d71559a5f64e188069373d2e9e7775')">
+				<img width="100px" alt="Guardian Knights and Train Gardens" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/V80d71559a5f64e188069373d2e9e7775.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Guardian Knights and Train Gardens</div>
+					<div class="tulipTVThumbDuration">10:51</div>
+					<div class="tulipTVThumbDate">Dec 10, 2014</div>
+					<div class="tulipTVThumbDesc">Interview with David Blenman on Guardian Knights and a look at Christmas Train gardens.</div>
+				</div>
+			</div><div id="vdiv_b0e9137ea3a042fd8c7283c3fb599594" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('b0e9137ea3a042fd8c7283c3fb599594')">
+				<img width="100px" alt="Incidents and Calendar of Events" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/Vb0e9137ea3a042fd8c7283c3fb599594.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Incidents and Calendar of Events</div>
+					<div class="tulipTVThumbDuration">4:21</div>
+					<div class="tulipTVThumbDate">Dec 10, 2014</div>
+					<div class="tulipTVThumbDesc">Take a look at emergency operations and upcoming events at fire stations.</div>
+				</div>
+			</div><div id="vdiv_53e1bfbd91d9402ab435bb7c6a7c8935" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('53e1bfbd91d9402ab435bb7c6a7c8935')">
+				<img width="100px" alt="Project Home: Adult Foster Care" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/V53e1bfbd91d9402ab435bb7c6a7c8935.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Project Home: Adult Foster Care</div>
+					<div class="tulipTVThumbDuration">8:58</div>
+					<div class="tulipTVThumbDate">Dec 1, 2014</div>
+					<div class="tulipTVThumbDesc">Foster care isn’t just for children. Consider opening your home to an adult who is elderly or has a disability.</div>
+				</div>
+			</div><div id="vdiv_9ec64d3143a24f35aff20727b1a10875" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('9ec64d3143a24f35aff20727b1a10875')">
+				<img width="100px" alt="The View from Behind the Snowplow" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/V9ec64d3143a24f35aff20727b1a10875.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">The View from Behind the Snowplow</div>
+					<div class="tulipTVThumbDuration">9:43</div>
+					<div class="tulipTVThumbDate">Dec 1, 2014</div>
+					<div class="tulipTVThumbDesc">Get the inside scoop on winter storm operations from two veteran Baltimore County snowplow drivers.</div>
+				</div>
+			</div><div id="vdiv_f1001d7e47e54990bc5e79c6df8c35e5" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('f1001d7e47e54990bc5e79c6df8c35e5')">
+				<img width="100px" alt="Police Report  K-9 Unit" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/Vf1001d7e47e54990bc5e79c6df8c35e5.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Police Report  K-9 Unit</div>
+					<div class="tulipTVThumbDuration">29:29</div>
+					<div class="tulipTVThumbDate">Nov 1, 2014</div>
+					<div class="tulipTVThumbDesc">The K-9 Unit - The training that officers and their K-9 partners receive.</div>
+				</div>
+			</div><div id="vdiv_716038f2e8594db18e66664d0d8b8be2" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('716038f2e8594db18e66664d0d8b8be2')">
+				<img width="100px" alt="Navigating Medicare Part D" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/V716038f2e8594db18e66664d0d8b8be2.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Navigating Medicare Part D</div>
+					<div class="tulipTVThumbDuration">16:07</div>
+					<div class="tulipTVThumbDate">Oct 29, 2014</div>
+					<div class="tulipTVThumbDesc">What You Need to Know with Sherry Kolbe, SHIP/SMP Program Manager, BCDA</div>
+				</div>
+			</div><div id="vdiv_0e2f8b7d13e24f2fa4f96ec2b3d90610" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('0e2f8b7d13e24f2fa4f96ec2b3d90610')">
+				<img width="100px" alt="Senior Centers: The Gem In Your Community" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/V0e2f8b7d13e24f2fa4f96ec2b3d90610.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Senior Centers: The Gem In Your Community</div>
+					<div class="tulipTVThumbDuration">4:31</div>
+					<div class="tulipTVThumbDate">Oct 29, 2014</div>
+					<div class="tulipTVThumbDesc">A discussion about Senior Centers by Julie Lynn, Director, BYKOTA Senior Center, BCDA</div>
+				</div>
+			</div><div id="vdiv_d7d27feb2a7a42828d8692d533353592" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('d7d27feb2a7a42828d8692d533353592')">
+				<img width="100px" alt="Senior Center Travel, Box Office and Events" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/Vd7d27feb2a7a42828d8692d533353592.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Senior Center Travel, Box Office and Events</div>
+					<div class="tulipTVThumbDuration">6:39</div>
+					<div class="tulipTVThumbDate">Oct 29, 2014</div>
+					<div class="tulipTVThumbDesc">Find out what is going on for travel and events with Debbie Orlove, MA, Community Business Liaison, BCDA.</div>
+				</div>
+			</div><div id="vdiv_a41d47334ee74bab85d5fb4843886151" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('a41d47334ee74bab85d5fb4843886151')">
+				<img width="100px" alt="Police Recruitment" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/Va41d47334ee74bab85d5fb4843886151.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Police Recruitment</div>
+					<div class="tulipTVThumbDuration">14:43</div>
+					<div class="tulipTVThumbDate">Oct 11, 2014</div>
+					<div class="tulipTVThumbDesc">How to become a member of the Baltimore County Police Department.</div>
+				</div>
+			</div><div id="vdiv_bc566a5a1321495eaa6147d8fa34f3fb" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('bc566a5a1321495eaa6147d8fa34f3fb')">
+				<img width="100px" alt="Water Rescues" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/Vbc566a5a1321495eaa6147d8fa34f3fb.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Water Rescues</div>
+					<div class="tulipTVThumbDuration">2:38</div>
+					<div class="tulipTVThumbDate">Oct 3, 2014</div>
+					<div class="tulipTVThumbDesc">Highlights of the training involved with water rescues.</div>
+				</div>
+			</div><div id="vdiv_7594291bd35e4aafb1156c8bd6d7bb4f" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('7594291bd35e4aafb1156c8bd6d7bb4f')">
+				<img width="100px" alt="Recruit Class" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/V7594291bd35e4aafb1156c8bd6d7bb4f.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Recruit Class</div>
+					<div class="tulipTVThumbDuration">1:22</div>
+					<div class="tulipTVThumbDate">Oct 3, 2014</div>
+					<div class="tulipTVThumbDesc">A glimpse of the latest recruit class, the 104th.</div>
+				</div>
+			</div><div id="vdiv_199e686a11b141dc8c8b434497cdcd84" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('199e686a11b141dc8c8b434497cdcd84')">
+				<img width="100px" alt="Incidents and Events" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/V199e686a11b141dc8c8b434497cdcd84.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Incidents and Events</div>
+					<div class="tulipTVThumbDuration">2:16</div>
+					<div class="tulipTVThumbDate">Oct 3, 2014</div>
+					<div class="tulipTVThumbDesc">Extrication of a driver after a crash with truck and summer events.</div>
+				</div>
+			</div><div id="vdiv_a853345d49d04882b4b0b5d2dea6f90a" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('a853345d49d04882b4b0b5d2dea6f90a')">
+				<img width="100px" alt="Everyday Heroes and Retirees" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/Va853345d49d04882b4b0b5d2dea6f90a.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Everyday Heroes and Retirees</div>
+					<div class="tulipTVThumbDuration">2:12</div>
+					<div class="tulipTVThumbDate">Oct 3, 2014</div>
+					<div class="tulipTVThumbDesc">Taking a look at our everyday heroes and those who retired this summer.</div>
+				</div>
+			</div><div id="vdiv_40bda6109fad4a41a2e236f88ea9a804" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('40bda6109fad4a41a2e236f88ea9a804')">
+				<img width="100px" alt="Women in Fire Service" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/V40bda6109fad4a41a2e236f88ea9a804.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Women in Fire Service</div>
+					<div class="tulipTVThumbDuration">14:53</div>
+					<div class="tulipTVThumbDate">Oct 3, 2014</div>
+					<div class="tulipTVThumbDesc">Battalion Chief Utz interviews Lieutenant Hughes about women in Fire Service.</div>
+				</div>
+			</div><div id="vdiv_cdd575a6341f4f3a9cb15f090a975daa" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('cdd575a6341f4f3a9cb15f090a975daa')">
+				<img width="100px" alt="Calendar of Events" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/Vcdd575a6341f4f3a9cb15f090a975daa.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Calendar of Events</div>
+					<div class="tulipTVThumbDuration">2:00</div>
+					<div class="tulipTVThumbDate">Oct 3, 2014</div>
+					<div class="tulipTVThumbDesc">Take a look at the calendar of events taking place at our Volunteer Fire Stations, October through November.</div>
+				</div>
+			</div><div id="vdiv_29ae72a2838b4834866a749e27ccd311" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('29ae72a2838b4834866a749e27ccd311')">
+				<img width="100px" alt="Baltimore County Commission on Disabilities" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/V29ae72a2838b4834866a749e27ccd311.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Baltimore County Commission on Disabilities</div>
+					<div class="tulipTVThumbDuration">4:49</div>
+					<div class="tulipTVThumbDate">Oct 3, 2014</div>
+					<div class="tulipTVThumbDesc">Learn about the Commission on Disabilities.</div>
+				</div>
+			</div><div id="vdiv_2cfb4ebcef574f3fb0e3329cc64aefe0" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('2cfb4ebcef574f3fb0e3329cc64aefe0')">
+				<img width="100px" alt="Art in Nature at Irvine Nature Center" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/V2cfb4ebcef574f3fb0e3329cc64aefe0.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Art in Nature at Irvine Nature Center</div>
+					<div class="tulipTVThumbDuration">7:08</div>
+					<div class="tulipTVThumbDate">Sep 22, 2014</div>
+					<div class="tulipTVThumbDesc">See art in nature.</div>
+				</div>
+			</div><div id="vdiv_ee494aff1c5a47de84ab52e66b6f6edf" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('ee494aff1c5a47de84ab52e66b6f6edf')">
+				<img width="100px" alt="Live Classical Guitar" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/Vee494aff1c5a47de84ab52e66b6f6edf.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Live Classical Guitar</div>
+					<div class="tulipTVThumbDuration">4:50</div>
+					<div class="tulipTVThumbDate">Sep 22, 2014</div>
+					<div class="tulipTVThumbDesc">Listen to a live concert by Troy King.</div>
+				</div>
+			</div><div id="vdiv_048f1a407de947468f7d38a3783f2cc8" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('048f1a407de947468f7d38a3783f2cc8')">
+				<img width="100px" alt="Tracing Your Ancestry" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/V048f1a407de947468f7d38a3783f2cc8.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Tracing Your Ancestry</div>
+					<div class="tulipTVThumbDuration">6:41</div>
+					<div class="tulipTVThumbDate">Sep 22, 2014</div>
+					<div class="tulipTVThumbDesc">Join Louis Diggs, historian.</div>
+				</div>
+			</div><div id="vdiv_4c287566d3284927a211ff4f8e964c62" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('4c287566d3284927a211ff4f8e964c62')">
+				<img width="100px" alt="The War of 1812 and Baltimore County" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/V4c287566d3284927a211ff4f8e964c62.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">The War of 1812 and Baltimore County</div>
+					<div class="tulipTVThumbDuration">6:21</div>
+					<div class="tulipTVThumbDate">Sep 22, 2014</div>
+					<div class="tulipTVThumbDesc"></div>
+				</div>
+			</div><div id="vdiv_0bf112bb8872422cadedce0acb922181" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('0bf112bb8872422cadedce0acb922181')">
+				<img width="100px" alt="Uniform Action: Military Uniforms From 1812 and Today" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/V0bf112bb8872422cadedce0acb922181.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Uniform Action: Military Uniforms From 1812 and Today</div>
+					<div class="tulipTVThumbDuration">4:17</div>
+					<div class="tulipTVThumbDate">Sep 22, 2014</div>
+					<div class="tulipTVThumbDesc">Learn how uniforms have changed.</div>
+				</div>
+			</div><div id="vdiv_ab0f7816f0164f8493cb479643d288a6" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('ab0f7816f0164f8493cb479643d288a6')">
+				<img width="100px" alt="Expo's Valued Sponsors" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/Vab0f7816f0164f8493cb479643d288a6.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Expo's Valued Sponsors</div>
+					<div class="tulipTVThumbDuration">3:10</div>
+					<div class="tulipTVThumbDate">Sep 3, 2014</div>
+					<div class="tulipTVThumbDesc">Find out who the sponsors are of 2014 Expo. Debbie Orlove</div>
+				</div>
+			</div><div id="vdiv_cd1d545604a44b46a4ad627bdc8354eb" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('cd1d545604a44b46a4ad627bdc8354eb')">
+				<img width="100px" alt="BGE and GBMC - Expo's Gift Sponsors" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/Vcd1d545604a44b46a4ad627bdc8354eb.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">BGE and GBMC - Expo's Gift Sponsors</div>
+					<div class="tulipTVThumbDuration">5:21</div>
+					<div class="tulipTVThumbDate">Sep 3, 2014</div>
+					<div class="tulipTVThumbDesc">Ingrid D. Woods, Senior Community Relations Specialist, BGE
+Kim Davenport, Community Relations and Events Manager, GBMC </div>
+				</div>
+			</div><div id="vdiv_b20ecced54dd4d6c91be7ad5581ac7db" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('b20ecced54dd4d6c91be7ad5581ac7db')">
+				<img width="100px" alt="Senior Center Travel, SBO, Senior Center Events" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/Vb20ecced54dd4d6c91be7ad5581ac7db.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Senior Center Travel, SBO, Senior Center Events</div>
+					<div class="tulipTVThumbDuration">9:32</div>
+					<div class="tulipTVThumbDate">Sep 3, 2014</div>
+					<div class="tulipTVThumbDesc">Debbie Orlove highlights upcoming travel and events.</div>
+				</div>
+			</div><div id="vdiv_266051a9a1ae4b26b8beecdd1f0980da" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('266051a9a1ae4b26b8beecdd1f0980da')">
+				<img width="100px" alt="Heads Up! Walk Safe - Pedestrian Safety" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/V266051a9a1ae4b26b8beecdd1f0980da.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Heads Up! Walk Safe - Pedestrian Safety</div>
+					<div class="tulipTVThumbDuration">16:32</div>
+					<div class="tulipTVThumbDate">Sep 2, 2014</div>
+					<div class="tulipTVThumbDesc">View the campaign geared for pedestrian safety.</div>
+				</div>
+			</div><div id="vdiv_87ccdcc223be4967bce7fe50d75d9b09" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('87ccdcc223be4967bce7fe50d75d9b09')">
+				<img width="100px" alt="Retirees and Events" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/V87ccdcc223be4967bce7fe50d75d9b09.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Retirees and Events</div>
+					<div class="tulipTVThumbDuration">2:42</div>
+					<div class="tulipTVThumbDate">Aug 1, 2014</div>
+					<div class="tulipTVThumbDesc">A thank you for those who have left the fire service, 
+events that took place in the county.</div>
+				</div>
+			</div><div id="vdiv_aeb9766f52764fafa17bf31201b19dda" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('aeb9766f52764fafa17bf31201b19dda')">
+				<img width="100px" alt="Everyday Heroes" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/Vaeb9766f52764fafa17bf31201b19dda.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Everyday Heroes</div>
+					<div class="tulipTVThumbDuration">3:18</div>
+					<div class="tulipTVThumbDate">Aug 1, 2014</div>
+					<div class="tulipTVThumbDesc">A salute to fire service personnel for their help.</div>
+				</div>
+			</div><div id="vdiv_e83cb7fbc47c40d9a85ee2326349c79a" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('e83cb7fbc47c40d9a85ee2326349c79a')">
+				<img width="100px" alt="Crisis Intervention and Stress Management" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/Ve83cb7fbc47c40d9a85ee2326349c79a.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Crisis Intervention and Stress Management</div>
+					<div class="tulipTVThumbDuration">14:49</div>
+					<div class="tulipTVThumbDate">Aug 1, 2014</div>
+					<div class="tulipTVThumbDesc">Interview with Captain William Allenbaugh Jr. and FADO Steven Yealdhall on Crisis Intervention and Stress Management Team, CISM</div>
+				</div>
+			</div><div id="vdiv_cbe01410016745a7b97357951c9d2420" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('cbe01410016745a7b97357951c9d2420')">
+				<img width="100px" alt="Get Ready! Get Set! Get Fit!" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/Vcbe01410016745a7b97357951c9d2420.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Get Ready! Get Set! Get Fit!</div>
+					<div class="tulipTVThumbDuration">8:57</div>
+					<div class="tulipTVThumbDate">Jul 8, 2014</div>
+					<div class="tulipTVThumbDesc">Dave Sayler, CPT, discusses Get Ready, Set, Fit!</div>
+				</div>
+			</div><div id="vdiv_20c6fecba56c4a9ba87d2e011c02f844" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('20c6fecba56c4a9ba87d2e011c02f844')">
+				<img width="100px" alt="CIGNA &ndash; The Walk and Run's Sponsor" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/V20c6fecba56c4a9ba87d2e011c02f844.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">CIGNA &ndash; The Walk and Run's Sponsor</div>
+					<div class="tulipTVThumbDuration">2:50</div>
+					<div class="tulipTVThumbDate">Jul 8, 2014</div>
+					<div class="tulipTVThumbDesc">Join Julia Huggins, President, Cigna MidAtlantic.</div>
+				</div>
+			</div><div id="vdiv_e3f7011727c642a99eca672dd673d1d3" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('e3f7011727c642a99eca672dd673d1d3')">
+				<img width="100px" alt="A Personal Perspective: Walking or Running Towards Health" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/Ve3f7011727c642a99eca672dd673d1d3.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">A Personal Perspective: Walking or Running Towards Health</div>
+					<div class="tulipTVThumbDuration">10:07</div>
+					<div class="tulipTVThumbDate">Jul 8, 2014</div>
+					<div class="tulipTVThumbDesc">Listen as Mary Pascoe and Darrell Edwards, BYKOTA Senior Center Member discuss their personal perspective.</div>
+				</div>
+			</div><div id="vdiv_ef72239bc1b946478dc664ec9769d154" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('ef72239bc1b946478dc664ec9769d154')">
+				<img width="100px" alt="Tour Hampton National Historic Site (Summer 2014)" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/Vef72239bc1b946478dc664ec9769d154.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Tour Hampton National Historic Site (Summer 2014)</div>
+					<div class="tulipTVThumbDuration">9:50</div>
+					<div class="tulipTVThumbDate">Jun 30, 2014</div>
+					<div class="tulipTVThumbDesc">Take a private curator's tour of art at the Hampton National Historic Site in Towson.</div>
+				</div>
+			</div><div id="vdiv_8c15c94f07d946a19bd08c92504106ba" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('8c15c94f07d946a19bd08c92504106ba')">
+				<img width="100px" alt="Theatre for the Disabled (Summer 2014)" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/V8c15c94f07d946a19bd08c92504106ba.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Theatre for the Disabled (Summer 2014)</div>
+					<div class="tulipTVThumbDuration">6:01</div>
+					<div class="tulipTVThumbDate">Jun 30, 2014</div>
+					<div class="tulipTVThumbDesc">Discover a magical theater company that reaches people with severe disabilities. </div>
+				</div>
+			</div><div id="vdiv_bab64fd1ab534495806bcfd448311f37" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('bab64fd1ab534495806bcfd448311f37')">
+				<img width="100px" alt="WTMD Radio (Summer 2014)" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/Vbab64fd1ab534495806bcfd448311f37.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">WTMD Radio (Summer 2014)</div>
+					<div class="tulipTVThumbDuration">5:25</div>
+					<div class="tulipTVThumbDate">Jun 30, 2014</div>
+					<div class="tulipTVThumbDesc">Find out how WTMD Radio brings music, art and community together.</div>
+				</div>
+			</div><div id="vdiv_c9cf2e6bab8e41238a6d8e49d000fe4a" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('c9cf2e6bab8e41238a6d8e49d000fe4a')">
+				<img width="100px" alt="smARTER With Julia Sutliff" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/Vc9cf2e6bab8e41238a6d8e49d000fe4a.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">smARTER With Julia Sutliff</div>
+					<div class="tulipTVThumbDuration">3:56</div>
+					<div class="tulipTVThumbDate">Jun 30, 2014</div>
+					<div class="tulipTVThumbDesc">Plein air painter Julia Sutliff talks about her wild inspiration.</div>
+				</div>
+			</div><div id="vdiv_33b6d4aaabde4648a688a69915eea0ca" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('33b6d4aaabde4648a688a69915eea0ca')">
+				<img width="100px" alt="Firework Safety" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/V33b6d4aaabde4648a688a69915eea0ca.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Firework Safety</div>
+					<div class="tulipTVThumbDuration">2:51</div>
+					<div class="tulipTVThumbDate">Jun 5, 2014</div>
+					<div class="tulipTVThumbDesc">It is time to get ready for firework safety.</div>
+				</div>
+			</div><div id="vdiv_02555fa1066b4f54ae509c1d277b07bf" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('02555fa1066b4f54ae509c1d277b07bf')">
+				<img width="100px" alt="Safe Boating and Safe Boating Classes" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/V02555fa1066b4f54ae509c1d277b07bf.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Safe Boating and Safe Boating Classes</div>
+					<div class="tulipTVThumbDuration">2:51</div>
+					<div class="tulipTVThumbDate">Jun 5, 2014</div>
+					<div class="tulipTVThumbDesc">Learn to have a happy and safe boating season.</div>
+				</div>
+			</div><div id="vdiv_0413adcbbebf46f2a2d36d9a42264007" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('0413adcbbebf46f2a2d36d9a42264007')">
+				<img width="100px" alt="Concussions" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/V0413adcbbebf46f2a2d36d9a42264007.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Concussions</div>
+					<div class="tulipTVThumbDuration">10:33</div>
+					<div class="tulipTVThumbDate">Jun 5, 2014</div>
+					<div class="tulipTVThumbDesc">Learn about concussions.</div>
+				</div>
+			</div><div id="vdiv_b91a4a4b59574b128391c74b2918dd4a" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('b91a4a4b59574b128391c74b2918dd4a')">
+				<img width="100px" alt="Safe Driving Strategies" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/Vb91a4a4b59574b128391c74b2918dd4a.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Safe Driving Strategies</div>
+					<div class="tulipTVThumbDuration">9:13</div>
+					<div class="tulipTVThumbDate">May 1, 2014</div>
+					<div class="tulipTVThumbDesc">Leslie C. Dorsey, Ed
+Volunteer Driving Safety Instructor</div>
+				</div>
+			</div><div id="vdiv_3e2861191411473fa79898e5d15a1d4e" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('3e2861191411473fa79898e5d15a1d4e')">
+				<img width="100px" alt="Car Maintenance 101" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/V3e2861191411473fa79898e5d15a1d4e.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Car Maintenance 101</div>
+					<div class="tulipTVThumbDuration">3:39</div>
+					<div class="tulipTVThumbDate">May 1, 2014</div>
+					<div class="tulipTVThumbDesc">Penny Potts, Communications Technician
+Baltimore County Department of Aging</div>
+				</div>
+			</div><div id="vdiv_3f2debbcc0c44bd299f09663ce991959" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('3f2debbcc0c44bd299f09663ce991959')">
+				<img width="100px" alt="Travel Training" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/V3f2debbcc0c44bd299f09663ce991959.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Travel Training</div>
+					<div class="tulipTVThumbDuration">3:45</div>
+					<div class="tulipTVThumbDate">May 1, 2014</div>
+					<div class="tulipTVThumbDesc">Amanda Taylor, Program Director
+The IMAGE Center for People with Disabilities</div>
+				</div>
+			</div><div id="vdiv_b7caed0146ee448a8db2399774fbd8b3" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('b7caed0146ee448a8db2399774fbd8b3')">
+				<img width="100px" alt="Foreign Lotteries - Guaranteed To Lose" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/Vb7caed0146ee448a8db2399774fbd8b3.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Foreign Lotteries - Guaranteed To Lose</div>
+					<div class="tulipTVThumbDuration">7:59</div>
+					<div class="tulipTVThumbDate">May 1, 2014</div>
+					<div class="tulipTVThumbDesc">Frank J. Schissler, US Postal Inspector; US Post Office</div>
+				</div>
+			</div><div id="vdiv_1c84e52db83b4bb6921dc1dace950d17" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('1c84e52db83b4bb6921dc1dace950d17')">
+				<img width="100px" alt="Contemporary Art at the Goucher Galleries Spring 2014" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/V1c84e52db83b4bb6921dc1dace950d17.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Contemporary Art at the Goucher Galleries Spring 2014</div>
+					<div class="tulipTVThumbDuration">5:47</div>
+					<div class="tulipTVThumbDate">Apr 23, 2014</div>
+					<div class="tulipTVThumbDesc">Curator Laura Amussen talks about two intriguing contemporary art galleries on the Goucher College campus. </div>
+				</div>
+			</div><div id="vdiv_84005a7c0bb147909fc6310ef86d3801" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('84005a7c0bb147909fc6310ef86d3801')">
+				<img width="100px" alt="Free Concerts in Catonsville Spring 2014" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/V84005a7c0bb147909fc6310ef86d3801.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Free Concerts in Catonsville Spring 2014</div>
+					<div class="tulipTVThumbDuration">5:01</div>
+					<div class="tulipTVThumbDate">Apr 23, 2014</div>
+					<div class="tulipTVThumbDesc">Jennifer Tillett previews more than 50 public concerts at Charlestown in Catonsville, from classical to pop.</div>
+				</div>
+			</div><div id="vdiv_ee4ee2a8a0e04d1e8f4d3ccffe885c65" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('ee4ee2a8a0e04d1e8f4d3ccffe885c65')">
+				<img width="100px" alt="Bringing the Arts to Young Audiences Spring 2014" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/Vee4ee2a8a0e04d1e8f4d3ccffe885c65.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Bringing the Arts to Young Audiences Spring 2014</div>
+					<div class="tulipTVThumbDuration">5:29</div>
+					<div class="tulipTVThumbDate">Apr 23, 2014</div>
+					<div class="tulipTVThumbDesc">The positive impact of the arts on students is the topic of discussion with Stacie Evans Sanders of Young Audiences.</div>
+				</div>
+			</div><div id="vdiv_dd930c0e7daf41abbc1e3d270e0e4c18" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('dd930c0e7daf41abbc1e3d270e0e4c18')">
+				<img width="100px" alt="Audition Tips for Singers Spring 2014" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/Vdd930c0e7daf41abbc1e3d270e0e4c18.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Audition Tips for Singers Spring 2014</div>
+					<div class="tulipTVThumbDuration">3:27</div>
+					<div class="tulipTVThumbDate">Apr 23, 2014</div>
+					<div class="tulipTVThumbDesc">Bill Myers of Maryland Sings shares tips for a successful vocal audition.</div>
+				</div>
+			</div><div id="vdiv_a91c0db1708041ceb5c333d3f3d97ca0" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('a91c0db1708041ceb5c333d3f3d97ca0')">
+				<img width="100px" alt="Baltimore County's Lit Scene Spring 2014" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/Va91c0db1708041ceb5c333d3f3d97ca0.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Baltimore County's Lit Scene Spring 2014</div>
+					<div class="tulipTVThumbDuration">10:11</div>
+					<div class="tulipTVThumbDate">Apr 23, 2014</div>
+					<div class="tulipTVThumbDesc">Host Carolyn Black-Sotir interviews D.L. Belz about the Baltimore County literary scene, with the author reading from his book "White Asparagus." 
+</div>
+				</div>
+			</div><div id="vdiv_e7f8ea95eb594e23b694b149f7fb6361" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('e7f8ea95eb594e23b694b149f7fb6361')">
+				<img width="100px" alt="Community Resources 2014, A Regional Directory" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/Ve7f8ea95eb594e23b694b149f7fb6361.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Community Resources 2014, A Regional Directory</div>
+					<div class="tulipTVThumbDuration">6:29</div>
+					<div class="tulipTVThumbDate">Feb 27, 2014</div>
+					<div class="tulipTVThumbDesc">Debbie Orlove, Community Business Liaison, Baltimore County Department of Aging</div>
+				</div>
+			</div><div id="vdiv_21c51f69ab6849e483faea6a9a0eb854" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('21c51f69ab6849e483faea6a9a0eb854')">
+				<img width="100px" alt="Maryland Access Point (MAP)" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/V21c51f69ab6849e483faea6a9a0eb854.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Maryland Access Point (MAP)</div>
+					<div class="tulipTVThumbDuration">4:53</div>
+					<div class="tulipTVThumbDate">Feb 27, 2014</div>
+					<div class="tulipTVThumbDesc"></div>
+				</div>
+			</div><div id="vdiv_ca904c57e6034deaa86ae72308410f94" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('ca904c57e6034deaa86ae72308410f94')">
+				<img width="100px" alt="Baltimore County Government: Keeping You in the Know With Social Media" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/Vca904c57e6034deaa86ae72308410f94.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Baltimore County Government: Keeping You in the Know With Social Media</div>
+					<div class="tulipTVThumbDuration">6:34</div>
+					<div class="tulipTVThumbDate">Feb 27, 2014</div>
+					<div class="tulipTVThumbDesc">An interview with Ellen Kobler, Baltimore County Office of Communications: Keeping You in the Know With Social Media</div>
+				</div>
+			</div><div id="vdiv_9f68cbd90b1749cf9ebf738ead2df1a8" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('9f68cbd90b1749cf9ebf738ead2df1a8')">
+				<img width="100px" alt="BCDA's 2014 Initiative &ndash; Be Mobile, Drive Safe" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/V9f68cbd90b1749cf9ebf738ead2df1a8.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">BCDA's 2014 Initiative &ndash; Be Mobile, Drive Safe</div>
+					<div class="tulipTVThumbDuration">6:08</div>
+					<div class="tulipTVThumbDate">Jan 9, 2014</div>
+					<div class="tulipTVThumbDesc">Reminders and tips for getting around safely.</div>
+				</div>
+			</div><div id="vdiv_82103dd236f2461fb2e61eb32f52fb0b" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('82103dd236f2461fb2e61eb32f52fb0b')">
+				<img width="100px" alt="Walking Towards Pedestrian Safety" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/V82103dd236f2461fb2e61eb32f52fb0b.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Walking Towards Pedestrian Safety</div>
+					<div class="tulipTVThumbDuration">7:18</div>
+					<div class="tulipTVThumbDate">Jan 9, 2014</div>
+					<div class="tulipTVThumbDesc">A discussion about walking safely; Jennifer L. Utz, Battalion Chief Baltimore County Fire Department and Lieutenant Stephen Troutman, Baltimore County Police Department.</div>
+				</div>
+			</div><div id="vdiv_6d011392ce4241b0920388d6680d5d0f" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('6d011392ce4241b0920388d6680d5d0f')">
+				<img width="100px" alt="Safety on the Road With AARP" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/V6d011392ce4241b0920388d6680d5d0f.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Safety on the Road With AARP</div>
+					<div class="tulipTVThumbDuration">8:25</div>
+					<div class="tulipTVThumbDate">Jan 9, 2014</div>
+					<div class="tulipTVThumbDesc">Ted Peterkin, AARP Driver Safety State Coordinator, Department of Aging</div>
+				</div>
+			</div><div id="vdiv_7ff9251c8bcd4faeb65dc826277faf1a" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('7ff9251c8bcd4faeb65dc826277faf1a')">
+				<img width="100px" alt="&quot;Take a Leap&quot; January 2014" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/V7ff9251c8bcd4faeb65dc826277faf1a.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">"Take a Leap" January 2014</div>
+					<div class="tulipTVThumbDuration">7:32</div>
+					<div class="tulipTVThumbDate">Jan 2, 2014</div>
+					<div class="tulipTVThumbDesc">"Take a Leap" and discover the new Baltimore County Dance Celebration.</div>
+				</div>
+			</div><div id="vdiv_4f67f528679b4e4db47fb79c9e9fbfe4" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('4f67f528679b4e4db47fb79c9e9fbfe4')">
+				<img width="100px" alt="Dance: &quot;The Jungle Book&quot;" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/V4f67f528679b4e4db47fb79c9e9fbfe4.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Dance: "The Jungle Book"</div>
+					<div class="tulipTVThumbDuration">3:39</div>
+					<div class="tulipTVThumbDate">Jan 2, 2014</div>
+					<div class="tulipTVThumbDesc">Head to another place with a modern dance performance of "The Jungle Book."</div>
+				</div>
+			</div><div id="vdiv_9c61596072a6455b9ae451d4c88a2aad" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('9c61596072a6455b9ae451d4c88a2aad')">
+				<img width="100px" alt="Dance Helps Students Learn, Move, Have Fun" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/V9c61596072a6455b9ae451d4c88a2aad.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Dance Helps Students Learn, Move, Have Fun</div>
+					<div class="tulipTVThumbDuration">4:06</div>
+					<div class="tulipTVThumbDate">Jan 2, 2014</div>
+					<div class="tulipTVThumbDesc">Learn how dance helps students learn better, move better, and have more fun.</div>
+				</div>
+			</div><div id="vdiv_1b52315e440645b3908f68c601ce4052" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('1b52315e440645b3908f68c601ce4052')">
+				<img width="100px" alt="Ragtime Dances" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/V1b52315e440645b3908f68c601ce4052.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Ragtime Dances</div>
+					<div class="tulipTVThumbDuration">5:20</div>
+					<div class="tulipTVThumbDate">Jan 2, 2014</div>
+					<div class="tulipTVThumbDesc">Get up and dance to the rhythms of ragtime with AKIMBO: Uncoiled.</div>
+				</div>
+			</div><div id="vdiv_b9fd2868fa124918a28c3e06fcfbe768" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('b9fd2868fa124918a28c3e06fcfbe768')">
+				<img width="100px" alt="Elementary School Dancers" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/Vb9fd2868fa124918a28c3e06fcfbe768.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Elementary School Dancers</div>
+					<div class="tulipTVThumbDuration">4:48</div>
+					<div class="tulipTVThumbDate">Jan 2, 2014</div>
+					<div class="tulipTVThumbDesc">Ballroom dancing starts young with fifth graders from Pleasant Plaines Elementary School.</div>
+				</div>
+			</div><div id="vdiv_90041c9e19c74c888ff80bfc0600b032" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('90041c9e19c74c888ff80bfc0600b032')">
+				<img width="100px" alt="Get Smarter: Ballet Dancer Stand on Her Toes" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/V90041c9e19c74c888ff80bfc0600b032.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Get Smarter: Ballet Dancer Stand on Her Toes</div>
+					<div class="tulipTVThumbDuration">3:06</div>
+					<div class="tulipTVThumbDate">Jan 2, 2014</div>
+					<div class="tulipTVThumbDesc">Learn how a ballet dancer stands on her toes.</div>
+				</div>
+			</div><div id="vdiv_08847b89e50541b39fa5dc99b54adb4c" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('08847b89e50541b39fa5dc99b54adb4c')">
+				<img width="100px" alt="Amazing Classes and Programs" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/V08847b89e50541b39fa5dc99b54adb4c.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Amazing Classes and Programs</div>
+					<div class="tulipTVThumbDuration">7:47</div>
+					<div class="tulipTVThumbDate">Oct 31, 2013</div>
+					<div class="tulipTVThumbDesc">Find out what programs Baltimore County Senior Centers are offering. Lisa J. Kennedy and Betty Flaherty</div>
+				</div>
+			</div><div id="vdiv_16b2013c1efd46869d5aa88884d9c64d" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('16b2013c1efd46869d5aa88884d9c64d')">
+				<img width="100px" alt="Vocal Gymnastics" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/V16b2013c1efd46869d5aa88884d9c64d.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Vocal Gymnastics</div>
+					<div class="tulipTVThumbDuration">8:31</div>
+					<div class="tulipTVThumbDate">Sep 4, 2013</div>
+					<div class="tulipTVThumbDesc">Tom Hall, music director of the Baltimore Choral Arts Society, talks about voice as a musical instrument.</div>
+				</div>
+			</div><div id="vdiv_dce64267c9c54142a4539032078eb617" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('dce64267c9c54142a4539032078eb617')">
+				<img width="100px" alt="Jazz Master" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/Vdce64267c9c54142a4539032078eb617.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Jazz Master</div>
+					<div class="tulipTVThumbDuration">10:02</div>
+					<div class="tulipTVThumbDate">Sep 4, 2013</div>
+					<div class="tulipTVThumbDesc">Saxophonist, composer and teacher Carl Grubbs recalls visits with John Coltrane, plus a special smARTS jazz performance.</div>
+				</div>
+			</div><div id="vdiv_0b7b27c2e1464a59a8aefcdd6ddaaf8f" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('0b7b27c2e1464a59a8aefcdd6ddaaf8f')">
+				<img width="100px" alt="At the Ballet" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/V0b7b27c2e1464a59a8aefcdd6ddaaf8f.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">At the Ballet</div>
+					<div class="tulipTVThumbDuration">2:53</div>
+					<div class="tulipTVThumbDate">Sep 4, 2013</div>
+					<div class="tulipTVThumbDesc">Students from the Baltimore County Youth Ballet share how dance helps them in school and in life.</div>
+				</div>
+			</div><div id="vdiv_8e43b6300e164ee4a7b4bfc126c6e9d8" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('8e43b6300e164ee4a7b4bfc126c6e9d8')">
+				<img width="100px" alt="Buying Original Artwork" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/V8e43b6300e164ee4a7b4bfc126c6e9d8.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Buying Original Artwork</div>
+					<div class="tulipTVThumbDuration">4:27</div>
+					<div class="tulipTVThumbDate">Sep 4, 2013</div>
+					<div class="tulipTVThumbDesc">Love to own or give an original a piece of art, but don’t know where to begin? Brian Truax from Towson Arts Collective shares tips.</div>
+				</div>
+			</div><div id="vdiv_114c31b6f0844ceca7707e35f6b350eb" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('114c31b6f0844ceca7707e35f6b350eb')">
+				<img width="100px" alt="Sweet Harmony" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/V114c31b6f0844ceca7707e35f6b350eb.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Sweet Harmony</div>
+					<div class="tulipTVThumbDuration">4:05</div>
+					<div class="tulipTVThumbDate">Sep 4, 2013</div>
+					<div class="tulipTVThumbDesc">The 3 Wise Men quartet demonstrates barbershop harmony.</div>
+				</div>
+			</div><div id="vdiv_1e023a093fe4434ca1c195734b872156" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('1e023a093fe4434ca1c195734b872156')">
+				<img width="100px" alt="Baltimore County Falls Prevention Coalition" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/V1e023a093fe4434ca1c195734b872156.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Baltimore County Falls Prevention Coalition</div>
+					<div class="tulipTVThumbDuration">6:29</div>
+					<div class="tulipTVThumbDate">Jul 2, 2013</div>
+					<div class="tulipTVThumbDesc">Dr. Virginia Billian, Baltimore County Commission on Aging</div>
+				</div>
+			</div><div id="vdiv_0265dbf5e7024c4a929826d485bef55e" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('0265dbf5e7024c4a929826d485bef55e')">
+				<img width="100px" alt="Smoking Safety" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/V0265dbf5e7024c4a929826d485bef55e.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Smoking Safety</div>
+					<div class="tulipTVThumbDuration">1:33</div>
+					<div class="tulipTVThumbDate">May 23, 2013</div>
+					<div class="tulipTVThumbDesc">Cigarettes are one of the leading causes of fatal fires in the U.S.</div>
+				</div>
+			</div><div id="vdiv_0c1257cbc0554e5ba92b74dcf38cd868" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('0c1257cbc0554e5ba92b74dcf38cd868')">
+				<img width="100px" alt="Home Team: Supporting Your Community" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/V0c1257cbc0554e5ba92b74dcf38cd868.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Home Team: Supporting Your Community</div>
+					<div class="tulipTVThumbDuration">5:19</div>
+					<div class="tulipTVThumbDate">May 1, 2013</div>
+					<div class="tulipTVThumbDesc">Danielle Singley, Manager, Home Team Program, BCDA</div>
+				</div>
+			</div><div id="vdiv_12b6b734f371456ca0d015ba81038a84" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('12b6b734f371456ca0d015ba81038a84')">
+				<img width="100px" alt="Fiscal Year 2014 Budget" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/V12b6b734f371456ca0d015ba81038a84.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Fiscal Year 2014 Budget</div>
+					<div class="tulipTVThumbDuration">38:59</div>
+					<div class="tulipTVThumbDate">Apr 25, 2013</div>
+					<div class="tulipTVThumbDesc">Baltimore County Executive Kevin Kamenetz delivers the Fiscal Year 2014 Budget Message.</div>
+				</div>
+			</div><div id="vdiv_15b60feb216d4facbc8e65102c2a7b1c" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('15b60feb216d4facbc8e65102c2a7b1c')">
+				<img width="100px" alt="Taking Care of the Family Caregiver" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/V15b60feb216d4facbc8e65102c2a7b1c.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Taking Care of the Family Caregiver</div>
+					<div class="tulipTVThumbDuration">6:26</div>
+					<div class="tulipTVThumbDate">Feb 27, 2013</div>
+					<div class="tulipTVThumbDesc">Frances Bond, PhD, Adjunct Professor, Stevenson University discusses how to care for the caregiver.
+</div>
+				</div>
+			</div><div id="vdiv_a0500ea706434887834bfd067f26e6ce" class="tulipShow">				<div class="tulipTVThumbLink">
+					
+			<a href="javascript:chooseVideo_v('a0500ea706434887834bfd067f26e6ce')">
+				<img width="100px" alt="Pikesville Senior Center Interviews" src="http://tulip.siteexecutive.com/serve/org_2497116843bf45e39112427555ef6d01/Va0500ea706434887834bfd067f26e6ce.jpg">
+			</a>
+		
+				</div>
+				<div class="tulipTVThumbMeta">
+					<div class="tulipTVThumbTitle">Pikesville Senior Center Interviews</div>
+					<div class="tulipTVThumbDuration">2:31</div>
+					<div class="tulipTVThumbDate">Feb 19, 2013</div>
+					<div class="tulipTVThumbDesc">Watch candid interviews from Pikesville Senior Center members.</div>
+				</div>
+			</div>
+	</div>
+	<script type="text/javascript">/*&lt;![CDATA[*/
+		
+			var setToVideoPlayer = true;
+		
+		var curChannel = "";
+		function chooseVideo_v(v) {
+			chooseVideo(v, true, curChannel);
+		}
+		function videoListSetChannel(c) {
+			if (-1 == c) {
+				c = '';
+			}
+			curChannel = c;
+
+			var setPanel = setToVideoPlayer;
+			setToVideoPlayer = true;
+
+			// hide and show divs of thumbnails
+			var numShown = 0;
+			for (var i = 0; i &lt; videos.length; i++) {
+				var className = 'tulipHide';
+
+				if ((0 == 0) || (numShown &lt;0)) {
+					if ((0 == c.length) || (videos[i].channels[c])) {
+						numShown++;
+						className = 'tulipShow';
+						if (setPanel) {
+							setPanel = false;
+							chooseVideo(videos[i].id, false, c);
+						}
+					}
+				}
+
+				var e = document.getElementById('vdiv_' + videos[i].id);
+				if (e) {
+					e.className = className;
+				}
+			}
+		}
+		if (window.shouldSetChannel) {
+			videoListSetChannel(window.shouldSetChannel);
+			window.shouldSetChannel = null;
+		}
+	/*]]&gt;*/</script>
+</div>   <script type="text/javascript">
+	function _SE_checkRateThisPageForm(_CF_this){
+		_SE_validateRadiobox(_CF_this, '_PageRating_radiobox1_', 'Please select a page rating.');
+	}
+</script>
+<script src="/se/js/mod/advancedforms/cfform.js" type="text/javascript"> </script><script type="text/javascript">
+	function _CF_checkRateThisPageForm(_CF_this)
+	{
+	        //reset on submit
+	        _CF_error_messages = new Array();
+	        _CF_error_fields = new Object();
+	        _CF_FirstErrorField = null;
+
+					            if (!_CF_checkURL(_CF_this['url'].value, false))
+					            {
+					                _CF_onError(_CF_this, "url",  _CF_this['url'].value,"Error in label field");
+					            }
+						_SE_checkRateThisPageForm(_CF_this);	
+        //display error messages and return success
+        if( _CF_error_messages.length &gt; 0 )
+        {
+            // show alert() message
+            _CF_onErrorAlert(_CF_error_messages);
+            // set focus to first form error, if the field supports js focus().
+            if( _CF_this[_CF_FirstErrorField].type == "text" )
+            { _CF_this[_CF_FirstErrorField].focus(); }
+
+            return false;
+        }else {
+            return true;
+        }
+}
+</script><div id="RateThisPageForm_div" class="seform">
+<form name="RateThisPageForm" enctype="multipart/form-data" onsubmit="return _CF_checkRateThisPageForm(this);" method="post" action="/videogallery" id="RateThisPageForm">
+<table width="100%" cellspacing="0" cellpadding="2" border="0" class="vertical">
+<tbody><tr>
+<td>
+<table width="100%" cellspacing="0" cellpadding="2" border="0" class="vertical">
+<tbody><tr>
+<td class="seHeaderTitle" colspan="2">Was This Page Helpful?</td>
+</tr>
+<tr>
+<td>
+<fieldset>
+<div style="width:100%" class="seText"><span>Fields marked with </span><span class="seRequiredMarker">*</span><span> are required.</span></div><table cellspacing="0" cellpadding="0" border="0"><tbody><tr><td width="1%" class="seLabelCell">Page Rating<span class="seRequiredMarker">*</span></td><td class="seFieldCell"><div style="width:100%;" class="seText"><table cellspacing="0" cellpadding="0" border="0" class="horizontal"><tbody><tr class="seElementRow"><td class="seFieldCell"> <input type="radio" value=" 5" class="seRadio" id="_PageRating_radiobox1_1" name="_PageRating_radiobox1_"><label class="seRadioLabel" for="_PageRating_radiobox1_1">Excellent </label> <input type="radio" value=" 4" class="seRadio" id="_PageRating_radiobox1_2" name="_PageRating_radiobox1_"><label class="seRadioLabel" for="_PageRating_radiobox1_2">Good </label> <input type="radio" value=" 3" class="seRadio" id="_PageRating_radiobox1_3" name="_PageRating_radiobox1_"><label class="seRadioLabel" for="_PageRating_radiobox1_3">Average </label> <input type="radio" value=" 2" class="seRadio" id="_PageRating_radiobox1_4" name="_PageRating_radiobox1_"><label class="seRadioLabel" for="_PageRating_radiobox1_4">Poor </label> <input type="radio" value=" 1" class="seRadio" id="_PageRating_radiobox1_5" name="_PageRating_radiobox1_"><label class="seRadioLabel" for="_PageRating_radiobox1_5">Very Poor </label> </td></tr></tbody></table></div></td></tr></tbody></table>
+<table cellspacing="0" cellpadding="0" border="0" class="horizontal">
+<tbody><tr class="seElementRow">
+<td class="seLabelCell">
+<div class="seText"><label for="Comments">Explain Your Rating</label></div>
+</td>
+<td class="seFieldCell">
+<textarea style="width:430px;height:60px;" class="seTextarea " rows="3" cols="20" name="Comments" id="Comments"> </textarea>
+</td>
+</tr>
+</tbody></table>
+<table cellspacing="0" cellpadding="0" border="0" class="horizontal">
+<tbody><tr class="seElementRow">
+<td class="seLabelCell">
+<div class="seText"><label for="website" class="website">website</label></div>
+</td>
+<td class="seFieldCell">
+<input type="text" value="" class="seInput " name="website" id="website">
+</td>
+</tr>
+</tbody></table>
+<input type="submit" style="margin-top:10px;width:90px;" value="Submit" class="seButton " name="fieldName2" id="fieldName2">
+<table cellspacing="0" cellpadding="0" border="0" class="horizontal">
+<tbody><tr class="seElementRow">
+<td class="seLabelCell">
+<div class="seText"><label style="display:none;" for="url">URL</label></div>
+</td>
+<td class="seFieldCell">
+<input type="text" style="display:none;" value="" class="seInput " name="url" id="url">
+</td>
+</tr>
+</tbody></table>
+</fieldset>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td>
+</td></tr>
+</tbody></table>
+<input type="hidden" value="1" id="_RateThisPageForm_seStepID" name="_RateThisPageForm_seStepID">
+<input type="hidden" value="FC8FC956172E0137651471C8AE845D1B" id="_submissionID" name="_submissionID">
+<input type="hidden" value="" id="_seResultMail" name="_seResultMail">
+<input type="hidden" value="" id="_seNotifyMail" name="_seNotifyMail">
+</form>
+</div>
+
+<script type="text/javascript">
+	$('form').submit(function(){    
+        if ($('input#website').val().length != 0) {
+            return false;
+        } 
+});
+</script>&nbsp;</div></div></div>
+
+				<!--SITE EXECUTIVE HTML END-->
+		</div>
+		</div>
+		
+		<footer class="footer">
+			<section class="primary-footer container">
+			<section class="county-map-container col-md-6 col-sm-6">
+				<img src="assets/img/footer-county-shape.png" alt="" class="county-map hidden-sm hidden-xs">
+				<div class="county-address">
+					<h2>Baltimore County Government</h2>
+					<p>Historic Courthouse</br>
+					400 Washington Avenue</br>
+					Towson, MD 21204</p>
+					<p><a href="http://mapq.st/rqwGxR" title="Get directions to Baltimore County.">Directions &gt;&gt;</a></p>
+				</div>
+				
+			</section>
+			<section class="county-help col-md-2 col-sm-6">
+				<h2>Help</h2>
+				<ul class="county-help-list">
+					<li class="county-help-list-item">
+						<a href="http://www.baltimorecountymd.gov/Contact_Us/telephone/helpful_numbers.html" title="Find helpful telephone numbers.">Phone Numbers</a>
+					</li>
+					<li class="county-help-list-item">
+						<a href="http://www.baltimorecountymd.gov/imlooking/index.html#all" title="Find a County service.">Find a County Service</a>
+					</li>
+					<li class="county-help-list-item">
+						<a href="http://www.baltimorecountymd.gov/iwant/index.html" title="Report a problem.">Report a Problem</a>
+					</li>
+				</ul>
+			</section>
+			<section class="tranlate-page col-md-2 hidden-sm hidden-xs">
+				<h2>Translate</h2>
+				<ul class="translate-page-list">
+					<li class="american"><a title="English" href="http://baltimorecountymd.gov//">English</a></li>
+					<li class="translate-page-list-item translate-page-list-item-arabic">
+						<a title="Translate this site in Arabic." href="http://translate.google.com/translate?hl=en&amp;sl=en&amp;tl=ar&amp;u=http%3A%2F%2Fbaltimorecountymd.gov/%2F">العربية</a>
+					</li>
+					<li class="translate-page-list-item translate-page-list-item-chinese">
+						<a title="Translate this site in Chinese." href="http://translate.google.com/translate?hl=en&amp;sl=en&amp;tl=zh-CN&amp;u=http%3A%2F%2Fbaltimorecountymd.gov/%2F">中文</a>
+					</li>
+					<li class="translate-page-list-item translate-page-list-item-french">
+						<a title="Translate this site in French." href="http://translate.google.com/translate?hl=en&amp;sl=en&amp;tl=fr&amp;u=http%3A%2F%2Fbaltimorecountymd.gov/%2F">Français</a>
+					</li>
+					<li class="translate-page-list-item translate-page-list-item-russian">
+						<a title="Translate this site in Russian." href="http://translate.google.com/translate?hl=en&amp;sl=en&amp;tl=ru&amp;u=http%3A%2F%2Fbaltimorecountymd.gov/%2F">Русский</a>
+					</li>
+					<li class="translate-page-list-item translate-page-list-item-spanish">
+						<a title="Translate this site in Spanish." href="http://translate.google.com/translate?hl=en&amp;sl=en&amp;tl=es&amp;u=http%3A%2F%2Fbaltimorecountymd.gov/%2F">Español</a>
+					</li>
+				</ul>
+			</section>
+			<section class="county-awards col-md-2 hidden-sm hidden-xs">
+				<h2>Awards</h2>
+				<ul class="county-awards-list">
+					<li class="county-awards-list-item">
+						<a href="http://www.govtech.com/dc/digital-counties/?year=2014" title="Learn more about Baltimore County's Digital Counties Survey Award."><img src="http://baltimorecountymd.gov/sebin/n/b/footer-map-digital-counties.jpg" alt="Image of Digital Counties Survey logo." /></a>
+					</li>
+					<li class="county-awards-list-item">
+						<a href="http://www.govtech.com//internet/2014-Best-of-the-Web-Award-Winners-Announced.html?page=2" title="Learn more about Baltimore County's Best of The Web Award." ><img src="http://baltimorecountymd.gov/sebin/l/i/footer-map-botw.jpg" alt="Image of Best of The Web logo." /></a>
+					</li>
+				</ul>
+			</section>
+			<ul class="social-media-list social-media-list-small inline-list col-sm-12 hidden-md hidden-lg">
+					<li class="social-media-list-item social-media-list-item-facebook">
+						<a href="">
+						</a>
+					</li>
+					<li class="social-media-list-item social-media-list-item-twitter">
+						<a href="">
+						</a>
+					</li>
+					<li class="social-media-list-item social-media-list-item-photos">
+						<a href="">
+						</a>
+					</li>
+					<li class="social-media-list-item social-media-list-item-youtube">
+						<a href="">
+						</a>
+					</li>
+					<li class="social-media-list-item social-media-list-item-bcnow">
+						<a href="">
+						</a>
+					</li>
+				</ul>
+		</section>
+		<section class="secondary-footer">
+			<div class="container">
+			<section class="copyright col-md-4 col-sm-12">
+				<span>&copy; Copyright 2015 Baltimore County Government</span>
+			</section>
+			<nav class="county-links col-md-8 col-sm-12">
+				<ul class="county-links-list inline-list">
+					<li class="county-links-list-item">
+						<a href="http://www.baltimorecountymd.gov/Contact/webmaster?issueid=42" title="Contact Baltimore County.">Contact Baltimore County</a>
+					</li>
+					<li class="county-links-list-item">
+						<a href="http://www.baltimorecountymd.gov/UserGuide/usertermsconditions.html" title="Review the User Terms for the Baltimore County website.">User Terms</a>
+					</li>
+					<li class="county-links-list-item">
+						<a href="http://www.baltimorecountymd.gov/UserGuide/usertermsconditions.html#privacy" title="Review the  Baltimore County privacy policy.">Privacy</a>
+					</li>
+					<li class="county-links-list-item">
+						<a href="http://www.baltimorecountymd.gov/Agencies/humanresources/jobs/index.html" title="View Baltimore County job listings.">Jobs</a>
+					</li>
+					<li class="county-links-list-item">
+						<a href="http://www.baltimorecountymd.gov/UserGuide/sitemap.html" title="View the Baltimore County site map.">Site Map</a>
+					</li>
+					<li class="county-links-list-item">
+						<a href="http://www.baltimorecountymd.gov/Agencies/ada/index.html" title="Learn more about Reasonable Accommodation.">Reasonable Accommodation</a>
+					</li>
+				</ul>
+			</nav>
+			</div>
+		</section>
+		<div class="full-site-container">
+			<button class="btn-link reView view-full-site-btn"  data-coreText='View Full Site' data-defaultText='View Mobile Site'>View Full Site</button>
+		</div>
+	</footer>
+</body>
+</html>
