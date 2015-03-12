@@ -1,4 +1,4 @@
-(function($) {
+var ShowNews = (function($) {
 	 /*News Related Methods*/
     var createReadMoreLink = function ($newsItem, $link) {
         $newsItem.append($link.clone().html("Read More >>"));
@@ -48,11 +48,12 @@
 
             //Remove the body of the blog entry, only show the Summary
             showNewsSummary($newsItemDesc);
-
         });
     };
-
     //Hide the neccessary items to show the news summary
     //Used because Site Executive does not offer this feature
-    showNewsSummaries();
+    $(document).ready(function() {
+       showNewsSummaries(); 
+   });
+    
 })(jQuery);
