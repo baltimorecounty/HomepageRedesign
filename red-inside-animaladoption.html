@@ -1,0 +1,1147 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Baltimore County Homepage Government</title>
+		<link rel="stylesheet" type="text/css" href="assets/stylesheets/existing/base.css"/>
+		<link rel="stylesheet" type="text/css" href="assets/stylesheets/existing/base-2.css"/>
+		<link rel="stylesheet" type="text/css" href="assets/stylesheets/existing/supplimental.css"/>
+		<link rel="stylesheet" type="text/css" href="assets/stylesheets/inside-template.css"/>
+		
+		<!--[if lt IE 9]>
+			<link rel="stylesheet" type="text/css" href="assets/stylesheets/ie.css"/>
+		<![endif]-->
+		<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+		<script src="assets/js/lib/jQuery.min.js"></script>
+		<script type="text/javascript" src="assets/js/lib/slick.min.js"></script>
+		<script type="text/javascript" src="assets/js/lib/handlebars.js"></script>
+		<script src="assets/js/lib/reView.js"></script>
+		<script src="assets/js/text-resizer.js"></script>
+		<script src="assets/js/skipNav.js"></script>
+		<script src="assets/js/flickr.js"></script>
+		<script src="assets/js/template.js"></script>
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	    <!--[if lt IE 9]>
+	      <script src="assets/js/lib/html5shiv.min.js"></script>
+	      <script src="assets/js/lib/respond.min.js"></script>
+	    <![endif]-->
+
+	</head>
+	<body class="homepage">
+		<div id="skiptocontent" class="skip-nav">
+		  <a href="#main-content" class="link-btn skip">skip to main content</a>
+		</div>
+		<header class="header">
+			<section class="secondary-nav hidden-xs">
+				<div class="container">
+				<nav class="col-md-4 col-sm-6 ">
+					<ul class="secondary-nav-list inline-list">
+						<li class="secondary-nav-list-item">
+							<a href="">County Executive</a>
+						</li>
+						<li class="secondary-nav-list-item">
+							<a href="">County Council</a>
+						</li>
+						<li class="secondary-nav-list-item">
+							<a href="">Courts</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="search col-md-4">
+				<div class="search-input-container">
+			    <button>Search</button>
+			    <div class="search-text">
+			      <label for="search-input" class="search-label">Search</label><input type="text" placeholder="Search for agencies, services and more..." name="search-input" class="search-input">
+			    </div>
+			</div>
+			  </div>
+				<div class="page-tools col-md-4 col-sm-6 hidden-xs">
+					<a href="http://www.baltimorecountymd.gov/Subscribe/" class="subscribe" title="Subscribe to Baltimore County Newsletters.">Subscribe</a>
+					<div class="resizer">
+					  <ul class="resizer-list inline-list">
+					    <li><button id="normal-text" class="btn-link resizer-item resizer-item-smaller">a</button></li>
+					    <li><button id="large-text" class="btn-link resizer-item resizer-item-default">a</button></li>
+					    <li><button id="largest-text" class="btn-link resizer-item resizer-item-larger">a</button></li>
+					  </ul>
+					</div>
+				</div>
+				</div>
+			</section>
+			<div class="primary-header">
+			  <div class="container-fluid">
+			    <div class="brand col-md-4 col-sm-12">
+			      <a href="http://www.baltimorecountymd.gov" title="View the Baltimore County Government homepage.">
+			      <img class="brand-logo" src="assets/img/header-county-seal.png" height="84" width="84" />
+			      <h1 class="brand-heading">Baltimore County<br><span class="uppercase smaller-text">Government</span></h1>
+			  	</a>
+			    </div>
+			    <nav class="secondary-nav col-xs-12 hidden-lg hidden-md hidden-sm">
+					<ul class="secondary-nav-list inline-list">
+						<li class="secondary-nav-list-item">
+							<a href="">County Executive</a>
+						</li>
+						<li class="secondary-nav-list-item">
+							<a href="">County Council</a>
+						</li>
+						<li class="secondary-nav-list-item">
+							<a href="">Courts</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="primary-nav-container">
+			    <ul class="primary-nav col-md-8 col-sm-12" role="navigation">
+			      <li class="primary-nav-item col-md-4 col-sm-4 col-xs-12">
+			        <h2 class="primary-nav-item__headline">
+			          <a href="http://www.baltimorecountymd.gov/iwant/apply.html">I Want To...<br><span class="primary-nav-item__tagline">Report Issues, Follow Up, Apply</span></a>
+			        </h2>
+			      </li>
+			      <li class="primary-nav-item col-md-4 col-sm-4 col-xs-12">
+			        <h2 class="primary-nav-item__headline">
+			          <a href="http://www.baltimorecountymd.gov/iwant/apply.html">I'm Looking For...<br><span class="primary-nav-item__tagline">Resident, Visitor, or Business Info</span></a>
+			        </h2>
+			      </li>
+			      <li class="primary-nav-item col-md-4 col-sm-4 col-xs-12">
+			        <h2 class="primary-nav-item__headline">
+			          <a href="http://www.baltimorecountymd.gov/iwant/apply.html">I Need to Contact...<br><span class="primary-nav-item__tagline">An Agency, My Rep, An Employee</span></a>
+			        </h2>
+			      </li>
+			    </ul>
+			    <nav class="hamburger-nav">
+			    	<a class="hamburger-btn" href="#" title="Navigate Baltimore County's Website">
+			    		<img src="assets/img/hamburger.png" height="32" width="32" alt="Navigate Baltimore County's Website" /></a>
+			    </nav>
+			    </div>
+			    <div class="clearfix"></div>
+			  </div>
+			</div>
+		</header>
+
+		<div id="main-content" class="county-information">
+		<div class="county-information-container container-fluid">
+		<div id="backgroundgradient">
+			<div id="backgroundshadow">
+				<!--SITE EXECUTIVE HTML START-->
+				<div id="maincontainer"><a name="SkipNav"></a> <div id="column1"><div class="logoboxbottom">&nbsp;</div><div id="container_localnavigation"><div id="baco_subnav"><table width="218" cellspacing="2" cellpadding="2" border="0">
+			<tbody><tr>
+				<td bgcolor="#C0C0C0" class="whatsheredisplaynone">What's New</td>
+			</tr>
+			<tr>
+				
+					<td width="218" bgcolor="#C0C0C0" class="smalltext">
+						
+							<a href="http://www.baltimorecountymd.gov/Agencies/health/" class="smalltext">Department of Health Overview</a><br>
+							
+
+
+							<a href="http://www.baltimorecountymd.gov/Agencies/health/animalservices/index.html#adopt" class="smalltext">Animal Services Overview</a><br>
+							
+
+
+							<a href="http://www.baltimorecountymd.gov/Agencies/health/animalservices/lostpetsdogs.html" class="smalltext">Lost Dogs</a><br>
+							
+
+
+							<a href="http://www.baltimorecountymd.gov/Agencies/health/animalservices/lostpetscats.html" class="smalltext">Lost Cats</a><br>
+							
+
+
+					</td>
+				
+			</tr>
+			</tbody></table></div><div id="services"><!-- skip navigation removed from included pages --></div><div id="services"><table width="100%" cellspacing="0" cellpadding="0" border="0"><tbody><tr><td><!-- skip navigation removed from included pages --><div id="servicescontainer"><ul class="noindent"><li class="title">Most Requested Services</li><li><a href="http://www.baltimorecountymd.gov/Agencies/humanresources/jobs/index.html" title="View Baltimore County job listings.">View Job Listings</a></li><li><a href="http://www.baltimorecountymd.gov/Agencies/budfin/taxsearch/index.html" title="Pay or search property taxes online.">Pay/Search Property Taxes Online</a></li><li><a href="http://myneighborhood.baltimorecountymd.gov/" title="Use this interactive map to find your zoning.">Find&nbsp;Your&nbsp;Zoning</a></li><li><a href="http://www.baltimorecountymd.gov/Agencies/law/countycode.html" title="Browse County Codes.">Browse County Codes</a></li><li><a href="http://www.baltimorecountymd.gov/Agencies/circuit/jurycomm.html" title="Complete the jury duty questionnaire.">Complete Jury Questionnaire</a></li><li><a href="http://www.baltimorecountymd.gov/Agencies/circuit/dailydocket/index.html" title="View the Circuit Court daily docket.">View Daily Docket</a></li><li><a href="http://www.baltimorecountymd.gov/Agencies/budfin/citations/index.html" title="Pay your parking and red light tickets here.">Pay Parking and Red Light Tickets</a></li><li><a href="http://egov2.baltimorecountymd.gov/votingweb/default.aspx?pageid=2" title="Use the polling place locator to find your council district. ">Find Your Council&nbsp;District</a></li><li><a href="http://www.baltimorecountymd.gov/Agencies/publicworks/solid_waste/collectionconnection.html" title="Download and print you trash/recycling collection schedule.">Download Trash Schedule</a></li><li><a href="http://www.baltimorecountymd.gov/Agencies/myneighborhood/facilities.html" title="Find a county facility in your area.">Locate&nbsp;County Facilities</a></li><li><a href="http://www.baltimorecountymd.gov/Agencies/police/crime/index.html" title="Search crime statistics in your neighborhood.">Search Crime Stats</a></li><li><a href="http://www.baltimorecountymd.gov/Agencies/recreation/programdivision/index.html" title="Find recreation programs and activites offered in your neighborhood.">Find&nbsp;Recreation Activities</a></li><li><a href="http://www.baltimorecountymd.gov/Agencies/volunteers/index.html" title="Find a volunteer opportunity that matches your skills and interests.">Volunteer Today</a></li></ul><div id="moreservices"><a href="http://www.baltimorecountymd.gov/Services/index.html" title="Browse a directory of other online services.">More &gt;&gt;&gt;</a></div></div></td></tr></tbody></table></div></div></div><div id="column2"><div id="agencyheader"><div id="agencyname"><!-- skip navigation removed from included pages --><div>Department of Health</div></div><div id="shareutilities"><div id="sharebutton"><!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style ">
+<a class="addthis_counter addthis_pill_style addthis_nonzero" style="display: inline-block;" href="#"><a class="atc_s addthis_button_compact"><span></span></a><a class="addthis_button_expanded" target="_blank" title="View more services" href="#">5</a></a>
+<div class="atclear"></div></div>
+<script type="text/javascript">
+    var addthis_config = {"data_track_clickback":true};
+</script>
+<script defer="true" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4e80a2a60c8146f0" type="text/javascript"></script>
+<!-- AddThis Button END --></div><div id="printpagebutton"><div>
+			
+				<a onclick="openFriendlyVersion(); return false;" href="" style="cursor: pointer;"><img width="59" border="0" height="20" title="Print this page." alt="Print this page." src="/sebin/w/w/print-button.gif"></a>
+				
+		</div></div></div></div><div id="graybartop">&nbsp;</div><div id="baco_breadcrumb"><span class=""><a href="http://www.baltimorecountymd.gov/" class="" title="Home">Home</a>&nbsp;&gt;&nbsp;<a href="http://www.baltimorecountymd.gov/Agencies/" class="" title="Agency Directory">Agency Directory</a>&nbsp;&gt;&nbsp;<a href="http://www.baltimorecountymd.gov/Agencies/health/" class="" title="Health Department">Health Department</a>&nbsp;&gt;&nbsp;<a href="http://www.baltimorecountymd.gov/Agencies/health/petadoption/" class="" title="Animal Care">Animal Care</a>&nbsp;&gt;&nbsp;<a href="http://www.baltimorecountymd.gov/Agencies/health/petadoption/index.html" class="" title="Pet Adoption">Pet Adoption</a></span></div><div></div><div id="mainContent"><noscript> &lt;h1&gt;Javascript Is Disabled On Your Browser&lt;/h1&gt;
+&lt;p&gt;It appears that your browser does not support JavaScript, or you have it disabled. This site is best viewed with JavaScript enabled.  If JavaScript is disabled in your browser, please turn it back on then reload this page.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;If your browser does not support JavaScript, select the link below: &lt;br&gt;
+  &lt;br&gt;
+&lt;a href="http://www.baltimorecountymd.gov/enablejavascript.html"&gt;http://www.baltimorecountymd.gov/enablejavascript.html&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;</noscript><div id="relatedtopics"><div id="calloutarea"><!-- skip navigation removed from included pages --><p><a href="https://www.petfinder.com/pet-search?shelterid=MD73" title="View adoptable pets on Petfinder."><img width="160" vspace="0" border="0" hspace="0" height="54" alt="Image of Petfinder logo" src="/sebin/m/t/PetfinderLogo.gif"></a></p><p>The Baltimore County Animal Shelter is proud to showcase its adoptable animals on <a href="https://www.petfinder.com/pet-search?shelterid=MD73" title="View adoptable animals on Petfinder.">Petfinder</a>.</p></div></div><div><a name="Skip"></a></div><h1>Adopt a Pet</h1><p>Baltimore County Animal Shelter&nbsp;<br>13800 Manor Road<br>Baldwin, Maryland 21013</p><p><strong>Phone:</strong> 410-887-PAWS (7297)<br><strong>Email:</strong> <a href="mailto:animalservices@baltimorecountymd.gov" title="Send email regarding pet adoptions.">animalservices@baltimorecountymd.gov</a></p><h3>Adoption Hours:</h3><ul><li>Wednesday, Thursday and Friday: Noon to 6 p.m.</li><li>Saturday and Sunday: 10 a.m. to 4 p.m.</li></ul><h2>How to Adopt</h2><p>To adopt a pet, you must present a photo identification card and be at least 18 years old. A background check for animal-related offenses will be conducted on prospective adopters to ensure pets are going to responsible homes.</p><p>The adoption fee is $65 for dogs and $50 for cats. The fee includes:<strong><br></strong></p><ul><li>A spayed or neutered pet (dog, puppy, cat or kitten)</li><li>First series of vaccinations, including rabies shot</li><li>Animal license, as required by Baltimore County law</li><li>Microchip with lifetime registry</li><li>Welcome home kit</li></ul><p>Learn more about <a href="http://resources.baltimorecountymd.gov/Documents/Health/petadoptions140729.pdf" title="Learn about pet adoption. (opens new window)" onclick="window.open('http://resources.baltimorecountymd.gov/Documents/Health/petadoptions140729.pdf', '_blank', 'toolbar=yes,menubar=yes,location=yes,scrollbars=yes,resizable=yes,status=yes,width=800,height=600'); return false;" target="_blank">adopting a pet</a> (PDF) from a County animal shelter.</p><h2>Discounts for Veterans</h2><h3>Waived Fees During Veteran and Memorial Day Holidays</h3><p>Animal adoption and spay and neuter fees will be waived to qualified military veterans (see <a href="#Proof_of_Service" title="Learn what documents for military service are accepted.">accepted proof of service</a> below) during the Veteran and Memorial holidays.</p><h3>Year-round</h3><p>Except for designated holidays when fees may be waived completely, veterans receive a half-off adoption <strong>and</strong> spay or neuter fees year-round. Proof of military service will be requested upon adoption or scheduling the spay or neuter appointment.</p><h3>Pets for Patriots</h3><p>Baltimore County Animal Shelter is a proud adoption partner of <a href="http://petsforpatriots.org/?utm_medium=email&amp;utm_campaign=5th%20anniversary%20announcement%20%20January%207%202015&amp;utm_content=5th%20anniversary%20announcement%20%20January%207%202015+CID_564c630950985ffc4906b9af73e4ba2c&amp;utm_source=AscendWorks%20Bullseye" title="View Pets for Patriots website.">Pets for Patriots</a>, a nationally operating 501(c)(3) charity creating opportunities for&nbsp;veterans and service members to save hard-to-adopt shelter pets.&nbsp;</p><p><a name="Proof_of_Service"></a>Accepted proof of service are a DD214, discharge or a valid driver's license or state I.D. with a veteran designation.</p><h2><a name="adoption_partner"></a>Adoption Partners</h2><p>If you are an <a href="http://resources.baltimorecountymd.gov/Documents/Health/animalservices/adoptionpartners150219.pdf" title="View list of Adoption Partners. (opens new window)" onclick="window.open('http://resources.baltimorecountymd.gov/Documents/Health/animalservices/adoptionpartners150219.pdf', '_blank', 'toolbar=yes,menubar=yes,location=yes,scrollbars=yes,resizable=yes,status=yes,width=800,height=600'); return false;" target="_blank">Adoption Partner</a> (PDF), please note that the "About Me" descriptions for available pets will say "rescue adoption partner only."</p><p>If you would like to become an Adoption Partner,&nbsp; please complete and submit the <a href="http://resources.baltimorecountymd.gov/Documents/Health/animalservices/adoptionpartnermasteragreement141112.pdf" title="View or download the Adoption Partner agreement. (opens new window)" onclick="window.open('http://resources.baltimorecountymd.gov/Documents/Health/animalservices/adoptionpartnermasteragreement141112.pdf', '_blank', 'toolbar=yes,menubar=yes,location=yes,scrollbars=yes,resizable=yes,status=yes,width=800,height=600'); return false;" target="_blank">agreement</a> (PDF) and proof of 501(C)(3) status. The completed agreement can be scanned and sent by email to <a href="mailto:animalservices@baltimorecountymd.gov?subject=Adoption%20Partner%20Agreement" title="Email Animal Services.">animalservices@baltimorecountymd.gov</a> or mailed to the Shelter:</p><p>Baltimore County Animal Shelter&nbsp;<br>Attention: Adoption Partner Coordinator<br>13800 Manor Road<br>Baldwin, Maryland 21013</p><h2>Available Pets</h2><p>Animals currently available for adoption are listed below. While this page is updated daily, not every animal currently in the custody of Animal Services is eligible for adoption.</p><p>When inquiring about an animal, please have its Animal ID handy.</p><p><strong>If you have recently lost your pet</strong>, please also view our <a href="http://www.baltimorecountymd.gov/Agencies/health/animalservices/lostpetscats.html" title="View our lost cat information. ">lost cat</a> or <a href="http://www.baltimorecountymd.gov/Agencies/health/animalservices/lostpetsdogs.html" title="View our lost dog information. ">lost dog</a> information and call the animal shelter daily at 410-887-7297.<em><br></em></p><div class="list-container"><div class="adoptable-pet-list">
+    <div class="row pet" id="ACIMP-2014-06071">
+        <div class="col-md-7 col-sm-8">
+          <h2>Tasha</h2>
+          <h3>Pet Tracking Information</h3>
+          <p class="pet-info"><strong class="pet-info-label">Animal ID</strong> ACIMP-2014-06071</p>
+          <p class="pet-info"><strong class="pet-info-label">Species</strong> Dog</p>
+          <p class="pet-info"><strong class="pet-info-label">Breed</strong> Pit Bull Terrier</p>
+          <p class="pet-info"><strong class="pet-info-label">Color</strong> Brown</p>
+          <p class="pet-info"><strong class="pet-info-label">Sex</strong> Female</p>
+          <p class="pet-info"><strong class="pet-info-label">Spayed/Neutered</strong> Yes</p>
+          <p class="pet-info"><strong class="pet-info-label">Shelter Arrival</strong> 12/26/2014 10:08:31 AM</p>
+          <p class="pet-bio"><strong class="pet-bio-label">About Me</strong> Hi, my name is Tasha. I am two years old. I love to play outside and go for walks. I'm a very sweet and friendly girl. I've done well with other dogs at the shelter and have a lot of energy.  I'm already spayed so if you adopt me I can go home with you today! I have a $100 sponsorship to an approved rescue adoption partner who takes me.</p>
+        </div>
+        <div class="col-md-5 col-sm-4">
+          <img alt="This is Tasha, this female is adoptable" src="http://egov.baltimorecountymd.gov/LostAdoptPetService/GetPetImageAsJpeg/20150304/A010000001953915YAUUWJRUNWUG1Q/6071%20TASHA.JPG">
+        </div>
+  </div>
+
+    <div class="row pet" id="ACIMP-2015-00019">
+        <div class="col-md-7 col-sm-8">
+          <h2>Diva</h2>
+          <h3>Pet Tracking Information</h3>
+          <p class="pet-info"><strong class="pet-info-label">Animal ID</strong> ACIMP-2015-00019</p>
+          <p class="pet-info"><strong class="pet-info-label">Species</strong> Dog</p>
+          <p class="pet-info"><strong class="pet-info-label">Breed</strong> Pit Bull Terrier</p>
+          <p class="pet-info"><strong class="pet-info-label">Color</strong> Blue</p>
+          <p class="pet-info"><strong class="pet-info-label">Sex</strong> Female</p>
+          <p class="pet-info"><strong class="pet-info-label">Spayed/Neutered</strong> Yes</p>
+          <p class="pet-info"><strong class="pet-info-label">Shelter Arrival</strong> 1/3/2015 12:15:58 PM</p>
+          <p class="pet-bio"><strong class="pet-bio-label">About Me</strong> Hi, my name is Diva. I am three years old. I am very playful and love to play outside. You wouldn't guess it by looking at me, but I am a huge lap dog. Please come in to visit with me, and I promise you will fall in love. I'm spayed and ready to go home with you. There has been $200 in sponsorship that will be donated to the rescue adoption partner that takes me.</p>
+        </div>
+        <div class="col-md-5 col-sm-4">
+          <img alt="This is Diva, this female is adoptable" src="http://egov.baltimorecountymd.gov/LostAdoptPetService/GetPetImageAsJpeg/20150129/A01000000182297X6QEK8U3BZ1HJPL/diva.jpg">
+        </div>
+  </div>
+
+    <div class="row pet" id="ACIMP-2015-00053">
+        <div class="col-md-7 col-sm-8">
+          <h2>Puma</h2>
+          <h3>Pet Tracking Information</h3>
+          <p class="pet-info"><strong class="pet-info-label">Animal ID</strong> ACIMP-2015-00053</p>
+          <p class="pet-info"><strong class="pet-info-label">Species</strong> Dog</p>
+          <p class="pet-info"><strong class="pet-info-label">Breed</strong> Pit Bull Terrier</p>
+          <p class="pet-info"><strong class="pet-info-label">Color</strong> Red</p>
+          <p class="pet-info"><strong class="pet-info-label">Sex</strong> Male</p>
+          <p class="pet-info"><strong class="pet-info-label">Spayed/Neutered</strong> Yes</p>
+          <p class="pet-info"><strong class="pet-info-label">Shelter Arrival</strong> 1/5/2015 1:41:54 PM</p>
+          <p class="pet-bio"><strong class="pet-bio-label">About Me</strong> Hi, my name is Puma. I am young, friendly, and playful. I like to go on long walks and am well mannered. My previous medical concerns have made significant improvement, so I have been made available for adoption! There has been a $400 sponsorship that will go to a rescue adoption partner who takes me.</p>
+        </div>
+        <div class="col-md-5 col-sm-4">
+          <img alt="This is Puma, this male is adoptable" src="http://egov.baltimorecountymd.gov/LostAdoptPetService/GetPetImageAsJpeg/20150127/A010000001811793J8GM224AEWIO1P/Puma.JPG">
+        </div>
+  </div>
+
+    <div class="row pet" id="ACIMP-2015-00275">
+        <div class="col-md-7 col-sm-8">
+          <h2>Flora</h2>
+          <h3>Pet Tracking Information</h3>
+          <p class="pet-info"><strong class="pet-info-label">Animal ID</strong> ACIMP-2015-00275</p>
+          <p class="pet-info"><strong class="pet-info-label">Species</strong> Dog</p>
+          <p class="pet-info"><strong class="pet-info-label">Breed</strong> Pit Bull Terrier</p>
+          <p class="pet-info"><strong class="pet-info-label">Color</strong> Brindle</p>
+          <p class="pet-info"><strong class="pet-info-label">Sex</strong> Female</p>
+          <p class="pet-info"><strong class="pet-info-label">Spayed/Neutered</strong> Yes</p>
+          <p class="pet-info"><strong class="pet-info-label">Shelter Arrival</strong> 1/19/2015 9:49:01 AM</p>
+          <p class="pet-bio"><strong class="pet-bio-label">About Me</strong> Hi, my name is Flora. I am a very sweet two year old girl. I love to give hugs and climb up on your lap. I like to go for walks and play outside. Please come in and visit me. I have a $100 sponsorship to an approved rescue adoption partner who takes me.</p>
+        </div>
+        <div class="col-md-5 col-sm-4">
+          <img alt="This is Flora, this female is adoptable" src="http://egov.baltimorecountymd.gov/LostAdoptPetService/GetPetImageAsJpeg/20150128/A01000000181365XJKZV153U7YIP9H/275.JPG">
+        </div>
+  </div>
+
+    <div class="row pet" id="ACIMP-2015-00419">
+        <div class="col-md-7 col-sm-8">
+          <h2>General</h2>
+          <h3>Pet Tracking Information</h3>
+          <p class="pet-info"><strong class="pet-info-label">Animal ID</strong> ACIMP-2015-00419</p>
+          <p class="pet-info"><strong class="pet-info-label">Species</strong> Dog</p>
+          <p class="pet-info"><strong class="pet-info-label">Breed</strong> Pit Bull Terrier</p>
+          <p class="pet-info"><strong class="pet-info-label">Color</strong> White</p>
+          <p class="pet-info"><strong class="pet-info-label">Sex</strong> Male</p>
+          <p class="pet-info"><strong class="pet-info-label">Spayed/Neutered</strong> Yes</p>
+          <p class="pet-info"><strong class="pet-info-label">Shelter Arrival</strong> 1/31/2015 11:04:27 AM</p>
+          <p class="pet-bio"><strong class="pet-bio-label">About Me</strong> Hi, my name is General. I am only one year old. I am very sweet and like to play with you and whatever toys you have. I'll run around and play all day if you let me. I am friendly with most of the dogs at the shelter.   Please come in and adopt me today.</p>
+        </div>
+        <div class="col-md-5 col-sm-4">
+          <img alt="This is General, this male is adoptable" src="http://egov.baltimorecountymd.gov/LostAdoptPetService/GetPetImageAsJpeg/20150217/A0100000019005312KZ7ZD2II2TBSG/general1.JPG">
+        </div>
+  </div>
+
+    <div class="row pet" id="ACIMP-2015-00484">
+        <div class="col-md-7 col-sm-8">
+          <h2>Pinkey</h2>
+          <h3>Pet Tracking Information</h3>
+          <p class="pet-info"><strong class="pet-info-label">Animal ID</strong> ACIMP-2015-00484</p>
+          <p class="pet-info"><strong class="pet-info-label">Species</strong> Dog</p>
+          <p class="pet-info"><strong class="pet-info-label">Breed</strong> Pit Bull Terrier</p>
+          <p class="pet-info"><strong class="pet-info-label">Color</strong> Brindle</p>
+          <p class="pet-info"><strong class="pet-info-label">Sex</strong> Female</p>
+          <p class="pet-info"><strong class="pet-info-label">Spayed/Neutered</strong> Yes</p>
+          <p class="pet-info"><strong class="pet-info-label">Shelter Arrival</strong> 2/4/2015 6:39:56 AM</p>
+          <p class="pet-bio"><strong class="pet-bio-label">About Me</strong> Hi, my name is Pinkey. I'm a very sweet and young girl. I love to play and jump around. If you have another dog I would love to meet them before you take me home. Please come in to the shelter and see me.</p>
+        </div>
+        <div class="col-md-5 col-sm-4">
+          <img alt="This is Pinkey, this female is adoptable" src="http://egov.baltimorecountymd.gov/LostAdoptPetService/GetPetImageAsJpeg/20150204/A010000001850211WL2T1S6FIU1HOX/484.JPG">
+        </div>
+  </div>
+
+    <div class="row pet" id="ACIMP-2015-00531">
+        <div class="col-md-7 col-sm-8">
+          <h2>Vela</h2>
+          <h3>Pet Tracking Information</h3>
+          <p class="pet-info"><strong class="pet-info-label">Animal ID</strong> ACIMP-2015-00531</p>
+          <p class="pet-info"><strong class="pet-info-label">Species</strong> Cat</p>
+          <p class="pet-info"><strong class="pet-info-label">Breed</strong> Domestic Short Hair</p>
+          <p class="pet-info"><strong class="pet-info-label">Color</strong> Grey Tabby</p>
+          <p class="pet-info"><strong class="pet-info-label">Sex</strong> Male</p>
+          <p class="pet-info"><strong class="pet-info-label">Spayed/Neutered</strong> Yes</p>
+          <p class="pet-info"><strong class="pet-info-label">Shelter Arrival</strong> 2/7/2015 2:27:49 PM</p>
+          <p class="pet-bio"><strong class="pet-bio-label">About Me</strong> Hi, my name is Vela. I am a very handsome one year old boy. I have a very sweet disposition and like to be held and scratched behind my ears. I also enjoy being petted under my chin. Please come in and adopt me.</p>
+        </div>
+        <div class="col-md-5 col-sm-4">
+          <img alt="This is Vela, this male is adoptable" src="http://egov.baltimorecountymd.gov/LostAdoptPetService/GetPetImageAsJpeg/20150223/A01000000191959RWO50629F0CET84/0531%20Vela.JPG">
+        </div>
+  </div>
+
+    <div class="row pet" id="ACIMP-2015-00581">
+        <div class="col-md-7 col-sm-8">
+          <h2>Buddy Boy</h2>
+          <h3>Pet Tracking Information</h3>
+          <p class="pet-info"><strong class="pet-info-label">Animal ID</strong> ACIMP-2015-00581</p>
+          <p class="pet-info"><strong class="pet-info-label">Species</strong> Dog</p>
+          <p class="pet-info"><strong class="pet-info-label">Breed</strong> Siberian Husky</p>
+          <p class="pet-info"><strong class="pet-info-label">Color</strong> Black</p>
+          <p class="pet-info"><strong class="pet-info-label">Sex</strong> Male</p>
+          <p class="pet-info"><strong class="pet-info-label">Spayed/Neutered</strong> Yes</p>
+          <p class="pet-info"><strong class="pet-info-label">Shelter Arrival</strong> 2/9/2015 12:53:37 PM</p>
+          <p class="pet-bio"><strong class="pet-bio-label">About Me</strong> Hi, my name is Buddy Boy. I'm a sweet boy looking for my forever home. My owners had to give me up because they couldn't take care of me anymore.  I listen well and am great with people. However, I am currently waiting on blood work results before I can be adopted.</p>
+        </div>
+        <div class="col-md-5 col-sm-4">
+          <img alt="This is Buddy Boy, this male is adoptable" src="http://egov.baltimorecountymd.gov/LostAdoptPetService/GetPetImageAsJpeg/20150209/A01000000186872TCFAP1VGY009T4Q/0581%20Buddy%20Boy.JPG">
+        </div>
+  </div>
+
+    <div class="row pet" id="ACIMP-2015-00615">
+        <div class="col-md-7 col-sm-8">
+          <h2>Carver</h2>
+          <h3>Pet Tracking Information</h3>
+          <p class="pet-info"><strong class="pet-info-label">Animal ID</strong> ACIMP-2015-00615</p>
+          <p class="pet-info"><strong class="pet-info-label">Species</strong> Cat</p>
+          <p class="pet-info"><strong class="pet-info-label">Breed</strong> Domestic Short Hair</p>
+          <p class="pet-info"><strong class="pet-info-label">Color</strong> Brown Tabby</p>
+          <p class="pet-info"><strong class="pet-info-label">Sex</strong> Female</p>
+          <p class="pet-info"><strong class="pet-info-label">Spayed/Neutered</strong> Yes</p>
+          <p class="pet-info"><strong class="pet-info-label">Shelter Arrival</strong> 2/11/2015 11:46:10 AM</p>
+          <p class="pet-bio"><strong class="pet-bio-label">About Me</strong> Hi, my name is Carver. I am about seven months old female. I am a pretty calm and I came in to the shelter with some other cats. I'm shy but if you take the time to get to know me I'll be your best friend. Please come in and adopt me.</p>
+        </div>
+        <div class="col-md-5 col-sm-4">
+          <img alt="This is Carver, this female is adoptable" src="http://egov.baltimorecountymd.gov/LostAdoptPetService/GetPetImageAsJpeg/20150211/A01000000188394A1UE9RS3J77ABL5/615.jpg">
+        </div>
+  </div>
+
+    <div class="row pet" id="ACIMP-2015-00632">
+        <div class="col-md-7 col-sm-8">
+          <h2>Char</h2>
+          <h3>Pet Tracking Information</h3>
+          <p class="pet-info"><strong class="pet-info-label">Animal ID</strong> ACIMP-2015-00632</p>
+          <p class="pet-info"><strong class="pet-info-label">Species</strong> Cat</p>
+          <p class="pet-info"><strong class="pet-info-label">Breed</strong> Domestic Short Hair</p>
+          <p class="pet-info"><strong class="pet-info-label">Color</strong> Brown Tabby</p>
+          <p class="pet-info"><strong class="pet-info-label">Sex</strong> Female</p>
+          <p class="pet-info"><strong class="pet-info-label">Spayed/Neutered</strong> Yes</p>
+          <p class="pet-info"><strong class="pet-info-label">Shelter Arrival</strong> 2/12/2015 10:30:18 AM</p>
+          <p class="pet-bio"><strong class="pet-bio-label">About Me</strong> Hi, my name is Char. I am about two years old and have the most beautiful fur. I'm very sweet and like to be held. I enjoy chin rubs the most. Please come in and adopt me.</p>
+        </div>
+        <div class="col-md-5 col-sm-4">
+          <img alt="This is Char, this female is adoptable" src="http://egov.baltimorecountymd.gov/LostAdoptPetService/GetPetImageAsJpeg/20150301/A01000000194013QRN3CFF2H8HDWLF/0632%20Char.JPG">
+        </div>
+  </div>
+
+    <div class="row pet" id="ACIMP-2015-00664">
+        <div class="col-md-7 col-sm-8">
+          <h2>Stark</h2>
+          <h3>Pet Tracking Information</h3>
+          <p class="pet-info"><strong class="pet-info-label">Animal ID</strong> ACIMP-2015-00664</p>
+          <p class="pet-info"><strong class="pet-info-label">Species</strong> Dog</p>
+          <p class="pet-info"><strong class="pet-info-label">Breed</strong> Pit Bull Terrier</p>
+          <p class="pet-info"><strong class="pet-info-label">Color</strong> Red</p>
+          <p class="pet-info"><strong class="pet-info-label">Sex</strong> Male</p>
+          <p class="pet-info"><strong class="pet-info-label">Spayed/Neutered</strong> Yes</p>
+          <p class="pet-info"><strong class="pet-info-label">Shelter Arrival</strong> 2/13/2015 4:28:24 PM</p>
+          <p class="pet-bio"><strong class="pet-bio-label">About Me</strong> Hi, my name is Stark. I'm about one year old.  I like to play with my doggie toys and run around. Please come in and adopt me.</p>
+        </div>
+        <div class="col-md-5 col-sm-4">
+          <img alt="This is Stark, this male is adoptable" src="http://egov.baltimorecountymd.gov/LostAdoptPetService/GetPetImageAsJpeg/20150214/A01000000189933HI1KHB99P5K9HB5/664.JPG">
+        </div>
+  </div>
+
+    <div class="row pet" id="ACIMP-2015-00684">
+        <div class="col-md-7 col-sm-8">
+          <h2>Blazer</h2>
+          <h3>Pet Tracking Information</h3>
+          <p class="pet-info"><strong class="pet-info-label">Animal ID</strong> ACIMP-2015-00684</p>
+          <p class="pet-info"><strong class="pet-info-label">Species</strong> Dog</p>
+          <p class="pet-info"><strong class="pet-info-label">Breed</strong> Pit Bull Terrier</p>
+          <p class="pet-info"><strong class="pet-info-label">Color</strong> Brindle</p>
+          <p class="pet-info"><strong class="pet-info-label">Sex</strong> Male</p>
+          <p class="pet-info"><strong class="pet-info-label">Spayed/Neutered</strong> Yes</p>
+          <p class="pet-info"><strong class="pet-info-label">Shelter Arrival</strong> 2/16/2015 10:57:15 AM</p>
+          <p class="pet-bio"><strong class="pet-bio-label">About Me</strong> Hi, my name is Blazer. I am only about one year old. I like to go for walks outside. I am a little shy but give me time and I will warm up to you. I've done well with cats so if you have any then I might be the dog for you. Please come in and adopt me.</p>
+        </div>
+        <div class="col-md-5 col-sm-4">
+          <img alt="This is Blazer, this male is adoptable" src="http://egov.baltimorecountymd.gov/LostAdoptPetService/GetPetImageAsJpeg/20150216/A010000001899960XNBH48HQ37KGAJ/0684%20Blazer.JPG">
+        </div>
+  </div>
+
+    <div class="row pet" id="ACIMP-2015-00688">
+        <div class="col-md-7 col-sm-8">
+          <h2>Arrow</h2>
+          <h3>Pet Tracking Information</h3>
+          <p class="pet-info"><strong class="pet-info-label">Animal ID</strong> ACIMP-2015-00688</p>
+          <p class="pet-info"><strong class="pet-info-label">Species</strong> Cat</p>
+          <p class="pet-info"><strong class="pet-info-label">Breed</strong> Domestic Short Hair</p>
+          <p class="pet-info"><strong class="pet-info-label">Color</strong> Orange Tabby</p>
+          <p class="pet-info"><strong class="pet-info-label">Sex</strong> Male</p>
+          <p class="pet-info"><strong class="pet-info-label">Spayed/Neutered</strong> Yes</p>
+          <p class="pet-info"><strong class="pet-info-label">Shelter Arrival</strong> 2/16/2015 11:52:15 AM</p>
+          <p class="pet-bio"><strong class="pet-bio-label">About Me</strong> Hi my name is Arrow. I am three years old, very sweet and gentle.  I would love to meet you. Please come in and adopt me.</p>
+        </div>
+        <div class="col-md-5 col-sm-4">
+          <img alt="This is Arrow, this male is adoptable" src="http://egov.baltimorecountymd.gov/LostAdoptPetService/GetPetImageAsJpeg/20150225/A01000000193360N9F5ROC7D1ZJVTB/688.jpg">
+        </div>
+  </div>
+
+    <div class="row pet" id="ACIMP-2015-00702">
+        <div class="col-md-7 col-sm-8">
+          <h2>Taylor</h2>
+          <h3>Pet Tracking Information</h3>
+          <p class="pet-info"><strong class="pet-info-label">Animal ID</strong> ACIMP-2015-00702</p>
+          <p class="pet-info"><strong class="pet-info-label">Species</strong> Cat</p>
+          <p class="pet-info"><strong class="pet-info-label">Breed</strong> Domestic Short Hair</p>
+          <p class="pet-info"><strong class="pet-info-label">Color</strong> Buff</p>
+          <p class="pet-info"><strong class="pet-info-label">Sex</strong> Female</p>
+          <p class="pet-info"><strong class="pet-info-label">Spayed/Neutered</strong> Yes</p>
+          <p class="pet-info"><strong class="pet-info-label">Shelter Arrival</strong> 2/18/2015 9:38:36 AM</p>
+          <p class="pet-bio"><strong class="pet-bio-label">About Me</strong> Hi, my name is Taylor. I'm a sweet one year old girl. I love to be petted and will purr up a storm. I would love to join your family. Please come and see me at the shelter.</p>
+        </div>
+        <div class="col-md-5 col-sm-4">
+          <img alt="This is Taylor, this female is adoptable" src="http://egov.baltimorecountymd.gov/LostAdoptPetService/GetPetImageAsJpeg/20150218/A01000000190706ZO4U1O24CG1XLY4/702.jpg">
+        </div>
+  </div>
+
+    <div class="row pet" id="ACIMP-2015-00713">
+        <div class="col-md-7 col-sm-8">
+          <h2>Bella</h2>
+          <h3>Pet Tracking Information</h3>
+          <p class="pet-info"><strong class="pet-info-label">Animal ID</strong> ACIMP-2015-00713</p>
+          <p class="pet-info"><strong class="pet-info-label">Species</strong> Dog</p>
+          <p class="pet-info"><strong class="pet-info-label">Breed</strong> Boxer</p>
+          <p class="pet-info"><strong class="pet-info-label">Color</strong> Red</p>
+          <p class="pet-info"><strong class="pet-info-label">Sex</strong> Female</p>
+          <p class="pet-info"><strong class="pet-info-label">Spayed/Neutered</strong> Yes</p>
+          <p class="pet-info"><strong class="pet-info-label">Shelter Arrival</strong> 2/18/2015 5:33:17 PM</p>
+          <p class="pet-bio"><strong class="pet-bio-label">About Me</strong> Hi, my name is Bella. I'm a cute one year old girl. I was given up by my owner who said that I do well children. I would prefer to be the only pet in the home. I'm very nice and like to get attention. If you pet me I will love you forever. Please come to the shelter and see me.</p>
+        </div>
+        <div class="col-md-5 col-sm-4">
+          <img alt="This is Bella, this female is adoptable" src="http://egov.baltimorecountymd.gov/LostAdoptPetService/GetPetImageAsJpeg/20150218/A010000001907307ERP7YIC9VH8AYC/713.jpg">
+        </div>
+  </div>
+
+    <div class="row pet" id="ACIMP-2015-00723">
+        <div class="col-md-7 col-sm-8">
+          <h2>Goldie</h2>
+          <h3>Pet Tracking Information</h3>
+          <p class="pet-info"><strong class="pet-info-label">Animal ID</strong> ACIMP-2015-00723</p>
+          <p class="pet-info"><strong class="pet-info-label">Species</strong> Cat</p>
+          <p class="pet-info"><strong class="pet-info-label">Breed</strong> Domestic Short Hair</p>
+          <p class="pet-info"><strong class="pet-info-label">Color</strong> Tortoise</p>
+          <p class="pet-info"><strong class="pet-info-label">Sex</strong> Female</p>
+          <p class="pet-info"><strong class="pet-info-label">Spayed/Neutered</strong> Yes</p>
+          <p class="pet-info"><strong class="pet-info-label">Shelter Arrival</strong> 2/19/2015 12:38:36 PM</p>
+          <p class="pet-bio"><strong class="pet-bio-label">About Me</strong> Hi, my name is Goldie and. I am two years old. I am very sweet. I like to play with my cat toys. Please come in and adopt me.</p>
+        </div>
+        <div class="col-md-5 col-sm-4">
+          <img alt="This is Goldie, this female is adoptable" src="http://egov.baltimorecountymd.gov/LostAdoptPetService/GetPetImageAsJpeg/20150301/A0100000019401419XSY4L3B7YFJOL/0723%20Goldie.JPG">
+        </div>
+  </div>
+
+    <div class="row pet" id="ACIMP-2015-00727">
+        <div class="col-md-7 col-sm-8">
+          <h2>Lily</h2>
+          <h3>Pet Tracking Information</h3>
+          <p class="pet-info"><strong class="pet-info-label">Animal ID</strong> ACIMP-2015-00727</p>
+          <p class="pet-info"><strong class="pet-info-label">Species</strong> Cat</p>
+          <p class="pet-info"><strong class="pet-info-label">Breed</strong> Domestic Short Hair</p>
+          <p class="pet-info"><strong class="pet-info-label">Color</strong> Brown Tabby</p>
+          <p class="pet-info"><strong class="pet-info-label">Sex</strong> Female</p>
+          <p class="pet-info"><strong class="pet-info-label">Spayed/Neutered</strong> Yes</p>
+          <p class="pet-info"><strong class="pet-info-label">Shelter Arrival</strong> 2/20/2015 11:34:25 AM</p>
+          <p class="pet-bio"><strong class="pet-bio-label">About Me</strong> Hi, my name is Lily. I am eight years old. My owner had to give me up but they said that I do well with dogs and other cats. I would prefer not to live in a home with children though.  I am very loving and enjoy being petted. Please come to the shelter and adopt me.</p>
+        </div>
+        <div class="col-md-5 col-sm-4">
+          <img alt="This is Lily, this female is adoptable" src="http://egov.baltimorecountymd.gov/LostAdoptPetService/GetPetImageAsJpeg/20150304/A01000000195136OPAYYXW7L11N8FV/0727%20Lily.JPG">
+        </div>
+  </div>
+
+    <div class="row pet" id="ACIMP-2015-00737">
+        <div class="col-md-7 col-sm-8">
+          <h2>Keiko</h2>
+          <h3>Pet Tracking Information</h3>
+          <p class="pet-info"><strong class="pet-info-label">Animal ID</strong> ACIMP-2015-00737</p>
+          <p class="pet-info"><strong class="pet-info-label">Species</strong> Cat</p>
+          <p class="pet-info"><strong class="pet-info-label">Breed</strong> Domestic Short Hair</p>
+          <p class="pet-info"><strong class="pet-info-label">Color</strong> Grey</p>
+          <p class="pet-info"><strong class="pet-info-label">Sex</strong> Male</p>
+          <p class="pet-info"><strong class="pet-info-label">Spayed/Neutered</strong> Yes</p>
+          <p class="pet-info"><strong class="pet-info-label">Shelter Arrival</strong> 2/21/2015 12:11:37 PM</p>
+          <p class="pet-bio"><strong class="pet-bio-label">About Me</strong> Hi my name is Keiko. I am a male three year old tabby cat. I am very sweet. I get along well with other cats. Please come in and adopt me.</p>
+        </div>
+        <div class="col-md-5 col-sm-4">
+          <img alt="This is Keiko, this male is adoptable" src="http://egov.baltimorecountymd.gov/LostAdoptPetService/GetPetImageAsJpeg/20150223/A010000001920062H96PQGROG6J4AW/0737%20Keiko.JPG">
+        </div>
+  </div>
+
+    <div class="row pet" id="ACIMP-2015-00742">
+        <div class="col-md-7 col-sm-8">
+          <h2>Chloe</h2>
+          <h3>Pet Tracking Information</h3>
+          <p class="pet-info"><strong class="pet-info-label">Animal ID</strong> ACIMP-2015-00742</p>
+          <p class="pet-info"><strong class="pet-info-label">Species</strong> Cat</p>
+          <p class="pet-info"><strong class="pet-info-label">Breed</strong> Domestic Short Hair</p>
+          <p class="pet-info"><strong class="pet-info-label">Color</strong> Calico</p>
+          <p class="pet-info"><strong class="pet-info-label">Sex</strong> Female</p>
+          <p class="pet-info"><strong class="pet-info-label">Spayed/Neutered</strong> No</p>
+          <p class="pet-info"><strong class="pet-info-label">Shelter Arrival</strong> 2/22/2015 2:42:19 PM</p>
+          <p class="pet-bio"><strong class="pet-bio-label">About Me</strong> Hi, my name is Chloe. I came in with my sister Cleo. Our owner had to give us up and we are looking for our forever home. Please come in to the shelter and adopt us!</p>
+        </div>
+        <div class="col-md-5 col-sm-4">
+          <img alt="This is Chloe, this female is adoptable" src="http://egov.baltimorecountymd.gov/LostAdoptPetService/GetPetImageAsJpeg/20150223/A01000000191994A0MHOM7B560783T/0742%20Chloe.JPG">
+        </div>
+  </div>
+
+    <div class="row pet" id="ACIMP-2015-00743">
+        <div class="col-md-7 col-sm-8">
+          <h2>Cleo</h2>
+          <h3>Pet Tracking Information</h3>
+          <p class="pet-info"><strong class="pet-info-label">Animal ID</strong> ACIMP-2015-00743</p>
+          <p class="pet-info"><strong class="pet-info-label">Species</strong> Cat</p>
+          <p class="pet-info"><strong class="pet-info-label">Breed</strong> Domestic Short Hair</p>
+          <p class="pet-info"><strong class="pet-info-label">Color</strong> Calico</p>
+          <p class="pet-info"><strong class="pet-info-label">Sex</strong> Female</p>
+          <p class="pet-info"><strong class="pet-info-label">Spayed/Neutered</strong> No</p>
+          <p class="pet-info"><strong class="pet-info-label">Shelter Arrival</strong> 2/22/2015 2:47:19 PM</p>
+          <p class="pet-bio"><strong class="pet-bio-label">About Me</strong> Hi, my name is Cleo. I came in with my sister Chloe. Our owner had to give us up and we are looking for our forever home. Please come in to the shelter and adopt us!</p>
+        </div>
+        <div class="col-md-5 col-sm-4">
+          <img alt="This is Cleo, this female is adoptable" src="http://egov.baltimorecountymd.gov/LostAdoptPetService/GetPetImageAsJpeg/20150223/A01000000191996MV3B4P1O66OURKM/0743%20Cleo.JPG">
+        </div>
+  </div>
+
+    <div class="row pet" id="ACIMP-2015-00751">
+        <div class="col-md-7 col-sm-8">
+          <h2>Midnight</h2>
+          <h3>Pet Tracking Information</h3>
+          <p class="pet-info"><strong class="pet-info-label">Animal ID</strong> ACIMP-2015-00751</p>
+          <p class="pet-info"><strong class="pet-info-label">Species</strong> Cat</p>
+          <p class="pet-info"><strong class="pet-info-label">Breed</strong> Domestic Short Hair</p>
+          <p class="pet-info"><strong class="pet-info-label">Color</strong> Black</p>
+          <p class="pet-info"><strong class="pet-info-label">Sex</strong> Male</p>
+          <p class="pet-info"><strong class="pet-info-label">Spayed/Neutered</strong> Yes</p>
+          <p class="pet-info"><strong class="pet-info-label">Shelter Arrival</strong> 2/23/2015 1:51:24 PM</p>
+          <p class="pet-bio"><strong class="pet-bio-label">About Me</strong> Hi, my name is Midnight. I am three years old. I am very sweet and have a great personality. I love, love, love to be petted. Please come in and adopt me.</p>
+        </div>
+        <div class="col-md-5 col-sm-4">
+          <img alt="This is Midnight, this male is adoptable" src="http://egov.baltimorecountymd.gov/LostAdoptPetService/GetPetImageAsJpeg/20150224/A01000000192421MLEQ2LXYLR3V21S/751.JPG">
+        </div>
+  </div>
+
+    <div class="row pet" id="ACIMP-2015-00762">
+        <div class="col-md-7 col-sm-8">
+          <h2>Reel</h2>
+          <h3>Pet Tracking Information</h3>
+          <p class="pet-info"><strong class="pet-info-label">Animal ID</strong> ACIMP-2015-00762</p>
+          <p class="pet-info"><strong class="pet-info-label">Species</strong> Cat</p>
+          <p class="pet-info"><strong class="pet-info-label">Breed</strong> Domestic Short Hair</p>
+          <p class="pet-info"><strong class="pet-info-label">Color</strong> Blue</p>
+          <p class="pet-info"><strong class="pet-info-label">Sex</strong> Male</p>
+          <p class="pet-info"><strong class="pet-info-label">Spayed/Neutered</strong> Yes</p>
+          <p class="pet-info"><strong class="pet-info-label">Shelter Arrival</strong> 2/24/2015 11:13:46 AM</p>
+          <p class="pet-bio"><strong class="pet-bio-label">About Me</strong> Hi, my name is Reel. I am about two years old. I came to the shelter as a stray and am now looking for a home. I'm a little shy but once you get to know me I'm very sweet. I would do best in a quiet home.  Please come in to the shelter and adopt me.</p>
+        </div>
+        <div class="col-md-5 col-sm-4">
+          <img alt="This is Reel, this male is adoptable" src="http://egov.baltimorecountymd.gov/LostAdoptPetService/GetPetImageAsJpeg/20150224/A01000000192493H12LJ4GBUV7M569/762.JPG">
+        </div>
+  </div>
+
+    <div class="row pet" id="ACIMP-2015-00800">
+        <div class="col-md-7 col-sm-8">
+          <h2>Butternut</h2>
+          <h3>Pet Tracking Information</h3>
+          <p class="pet-info"><strong class="pet-info-label">Animal ID</strong> ACIMP-2015-00800</p>
+          <p class="pet-info"><strong class="pet-info-label">Species</strong> Dog</p>
+          <p class="pet-info"><strong class="pet-info-label">Breed</strong> Pit Bull Terrier</p>
+          <p class="pet-info"><strong class="pet-info-label">Color</strong> Tan</p>
+          <p class="pet-info"><strong class="pet-info-label">Sex</strong> Male</p>
+          <p class="pet-info"><strong class="pet-info-label">Spayed/Neutered</strong> Yes</p>
+          <p class="pet-info"><strong class="pet-info-label">Shelter Arrival</strong> 2/26/2015 1:25:38 PM</p>
+          <p class="pet-bio"><strong class="pet-bio-label">About Me</strong> Hi, my name is Butternut. I am four years old. I am very sweet and gentle. I like to play outside and go for long walks. Please come in and adopt me. There is a $200 sponsorship for the rescue adoption partner that takes me.</p>
+        </div>
+        <div class="col-md-5 col-sm-4">
+          <img alt="This is Butternut, this male is adoptable" src="http://egov.baltimorecountymd.gov/LostAdoptPetService/GetPetImageAsJpeg/20150226/A01000000193680FRLEQDEU0H8JY7D/Butternut%200800.JPG">
+        </div>
+  </div>
+
+    <div class="row pet" id="ACIMP-2015-00805">
+        <div class="col-md-7 col-sm-8">
+          <h2>Denver</h2>
+          <h3>Pet Tracking Information</h3>
+          <p class="pet-info"><strong class="pet-info-label">Animal ID</strong> ACIMP-2015-00805</p>
+          <p class="pet-info"><strong class="pet-info-label">Species</strong> Dog</p>
+          <p class="pet-info"><strong class="pet-info-label">Breed</strong> Pit Bull Terrier</p>
+          <p class="pet-info"><strong class="pet-info-label">Color</strong> White</p>
+          <p class="pet-info"><strong class="pet-info-label">Sex</strong> Male</p>
+          <p class="pet-info"><strong class="pet-info-label">Spayed/Neutered</strong> Yes</p>
+          <p class="pet-info"><strong class="pet-info-label">Shelter Arrival</strong> 2/26/2015 9:50:43 PM</p>
+          <p class="pet-bio"><strong class="pet-bio-label">About Me</strong> Hi my name is Denver. I am a male ten month old Pitbull Terrier mix. I am very friendly. I like to go for walks. Please come in and adopt me.</p>
+        </div>
+        <div class="col-md-5 col-sm-4">
+          <img alt="This is Denver, this male is adoptable" src="http://egov.baltimorecountymd.gov/LostAdoptPetService/GetPetImageAsJpeg/20150227/A0100000019390659ENPQS7V6UPLNZ/805.JPG">
+        </div>
+  </div>
+
+    <div class="row pet" id="ACIMP-2015-00809">
+        <div class="col-md-7 col-sm-8">
+          <h2>Glisten</h2>
+          <h3>Pet Tracking Information</h3>
+          <p class="pet-info"><strong class="pet-info-label">Animal ID</strong> ACIMP-2015-00809</p>
+          <p class="pet-info"><strong class="pet-info-label">Species</strong> Cat</p>
+          <p class="pet-info"><strong class="pet-info-label">Breed</strong> Domestic Short Hair</p>
+          <p class="pet-info"><strong class="pet-info-label">Color</strong> Brown Tabby</p>
+          <p class="pet-info"><strong class="pet-info-label">Sex</strong> Male</p>
+          <p class="pet-info"><strong class="pet-info-label">Spayed/Neutered</strong> Yes</p>
+          <p class="pet-info"><strong class="pet-info-label">Shelter Arrival</strong> 2/27/2015 1:45:16 PM</p>
+          <p class="pet-bio"><strong class="pet-bio-label">About Me</strong> Hi, my name is Glisten. I'm a sweet guy who will roll over for pets. I came in with Fisher and we would really like to be adopted together. Please come to the shelter and visit us.</p>
+        </div>
+        <div class="col-md-5 col-sm-4">
+          <img alt="This is Glisten, this male is adoptable" src="http://egov.baltimorecountymd.gov/LostAdoptPetService/GetPetImageAsJpeg/20150227/A01000000193915BAGZZAAL05I6X4G/809.JPG">
+        </div>
+  </div>
+
+    <div class="row pet" id="ACIMP-2015-00810">
+        <div class="col-md-7 col-sm-8">
+          <h2>Fisher</h2>
+          <h3>Pet Tracking Information</h3>
+          <p class="pet-info"><strong class="pet-info-label">Animal ID</strong> ACIMP-2015-00810</p>
+          <p class="pet-info"><strong class="pet-info-label">Species</strong> Cat</p>
+          <p class="pet-info"><strong class="pet-info-label">Breed</strong> Domestic Short Hair</p>
+          <p class="pet-info"><strong class="pet-info-label">Color</strong> Brown Tabby</p>
+          <p class="pet-info"><strong class="pet-info-label">Sex</strong> Male</p>
+          <p class="pet-info"><strong class="pet-info-label">Spayed/Neutered</strong> Yes</p>
+          <p class="pet-info"><strong class="pet-info-label">Shelter Arrival</strong> 2/27/2015 1:46:44 PM</p>
+          <p class="pet-bio"><strong class="pet-bio-label">About Me</strong> Hi my name is Fisher. I am a male one year old brown tabby cat. I am very sweet and gentle. I like to be held and scratched behind my ears. Please come in and adopt me.</p>
+        </div>
+        <div class="col-md-5 col-sm-4">
+          <img alt="This is Fisher, this male is adoptable" src="http://egov.baltimorecountymd.gov/LostAdoptPetService/GetPetImageAsJpeg/20150227/A01000000193917RBBCTVKQ930OS2M/810.JPG">
+        </div>
+  </div>
+
+    <div class="row pet" id="ACIMP-2015-00813">
+        <div class="col-md-7 col-sm-8">
+          <h2>Shadow</h2>
+          <h3>Pet Tracking Information</h3>
+          <p class="pet-info"><strong class="pet-info-label">Animal ID</strong> ACIMP-2015-00813</p>
+          <p class="pet-info"><strong class="pet-info-label">Species</strong> Cat</p>
+          <p class="pet-info"><strong class="pet-info-label">Breed</strong> Domestic Short Hair</p>
+          <p class="pet-info"><strong class="pet-info-label">Color</strong> Black</p>
+          <p class="pet-info"><strong class="pet-info-label">Sex</strong> Female</p>
+          <p class="pet-info"><strong class="pet-info-label">Spayed/Neutered</strong> No</p>
+          <p class="pet-info"><strong class="pet-info-label">Shelter Arrival</strong> 2/27/2015 2:46:33 PM</p>
+          <p class="pet-bio"><strong class="pet-bio-label">About Me</strong> Hi my name is Shadow. I am a female three year old black cat. I am very sweet and loving. I like to play with my cat toys. Please come in and adopt me.</p>
+        </div>
+        <div class="col-md-5 col-sm-4">
+          <img alt="This is Shadow, this female is adoptable" src="http://egov.baltimorecountymd.gov/LostAdoptPetService/GetPetImageAsJpeg/20150227/A010000001939183EMY52JZ6J8APRN/813.JPG">
+        </div>
+  </div>
+
+    <div class="row pet" id="ACIMP-2015-00818">
+        <div class="col-md-7 col-sm-8">
+          <h2>Julius</h2>
+          <h3>Pet Tracking Information</h3>
+          <p class="pet-info"><strong class="pet-info-label">Animal ID</strong> ACIMP-2015-00818</p>
+          <p class="pet-info"><strong class="pet-info-label">Species</strong> Cat</p>
+          <p class="pet-info"><strong class="pet-info-label">Breed</strong> Domestic Short Hair</p>
+          <p class="pet-info"><strong class="pet-info-label">Color</strong> Orange Tabby</p>
+          <p class="pet-info"><strong class="pet-info-label">Sex</strong> Male</p>
+          <p class="pet-info"><strong class="pet-info-label">Spayed/Neutered</strong> Yes</p>
+          <p class="pet-info"><strong class="pet-info-label">Shelter Arrival</strong> 2/28/2015 10:58:49 AM</p>
+          <p class="pet-bio"><strong class="pet-bio-label">About Me</strong> Hi, my name is Julius. I was given up by owner and I am now looking for a forever home. I'm sweet and like to be held. I'm very laid back and a great listener. I would love to come home with you so come into the shelter and check me out.</p>
+        </div>
+        <div class="col-md-5 col-sm-4">
+          <img alt="This is Julius, this male is adoptable" src="http://egov.baltimorecountymd.gov/LostAdoptPetService/GetPetImageAsJpeg/20150301/A0100000019402051HJ6EVBW31MBMM/0818%20Julies.JPG">
+        </div>
+  </div>
+
+    <div class="row pet" id="ACIMP-2015-00820">
+        <div class="col-md-7 col-sm-8">
+          <h2>Blacky</h2>
+          <h3>Pet Tracking Information</h3>
+          <p class="pet-info"><strong class="pet-info-label">Animal ID</strong> ACIMP-2015-00820</p>
+          <p class="pet-info"><strong class="pet-info-label">Species</strong> Cat</p>
+          <p class="pet-info"><strong class="pet-info-label">Breed</strong> Domestic Short Hair</p>
+          <p class="pet-info"><strong class="pet-info-label">Color</strong> Black</p>
+          <p class="pet-info"><strong class="pet-info-label">Sex</strong> Female</p>
+          <p class="pet-info"><strong class="pet-info-label">Spayed/Neutered</strong> Yes</p>
+          <p class="pet-info"><strong class="pet-info-label">Shelter Arrival</strong> 2/28/2015 11:56:52 AM</p>
+          <p class="pet-bio"><strong class="pet-bio-label">About Me</strong> Hi my name is Blacky. I am female ten year old cat. I am a little shy but give me time and I will warm right up to you. Please come in and adopt me.</p>
+        </div>
+        <div class="col-md-5 col-sm-4">
+          <img alt="This is Blacky, this female is adoptable" src="http://egov.baltimorecountymd.gov/LostAdoptPetService/GetPetImageAsJpeg/20150228/A0100000019397520SMGW8250UCLGF/820.JPG">
+        </div>
+  </div>
+
+    <div class="row pet" id="ACIMP-2015-00843">
+        <div class="col-md-7 col-sm-8">
+          <h2>Roxie</h2>
+          <h3>Pet Tracking Information</h3>
+          <p class="pet-info"><strong class="pet-info-label">Animal ID</strong> ACIMP-2015-00843</p>
+          <p class="pet-info"><strong class="pet-info-label">Species</strong> Dog</p>
+          <p class="pet-info"><strong class="pet-info-label">Breed</strong> Jack Russell</p>
+          <p class="pet-info"><strong class="pet-info-label">Color</strong> White</p>
+          <p class="pet-info"><strong class="pet-info-label">Sex</strong> Female</p>
+          <p class="pet-info"><strong class="pet-info-label">Spayed/Neutered</strong> Yes</p>
+          <p class="pet-info"><strong class="pet-info-label">Shelter Arrival</strong> 3/2/2015 10:45:46 AM</p>
+          <p class="pet-bio"><strong class="pet-bio-label">About Me</strong> Hi, my name is Roxie. I was given up by my owner who couldn't afford to take care of my anymore. I'm a cute and spunky dog. I get along well with children but would prefer to be the only pet in the house. Please come to the shelter and see me.</p>
+        </div>
+        <div class="col-md-5 col-sm-4">
+          <img alt="This is Roxie, this female is adoptable" src="http://egov.baltimorecountymd.gov/LostAdoptPetService/GetPetImageAsJpeg/20150302/A01000000194099XFU6M7R2FJ831VM/0845%20Roxie.JPG">
+        </div>
+  </div>
+
+    <div class="row pet" id="ACIMP-2015-00849">
+        <div class="col-md-7 col-sm-8">
+          <h2>Chi Chi</h2>
+          <h3>Pet Tracking Information</h3>
+          <p class="pet-info"><strong class="pet-info-label">Animal ID</strong> ACIMP-2015-00849</p>
+          <p class="pet-info"><strong class="pet-info-label">Species</strong> Cat</p>
+          <p class="pet-info"><strong class="pet-info-label">Breed</strong> Domestic Short Hair</p>
+          <p class="pet-info"><strong class="pet-info-label">Color</strong> Orange Tabby</p>
+          <p class="pet-info"><strong class="pet-info-label">Sex</strong> Male</p>
+          <p class="pet-info"><strong class="pet-info-label">Spayed/Neutered</strong> Yes</p>
+          <p class="pet-info"><strong class="pet-info-label">Shelter Arrival</strong> 3/3/2015 9:59:19 AM</p>
+          <p class="pet-bio"><strong class="pet-bio-label">About Me</strong> Hi my name is Chi Chi. I am a male orange and white cat. I was given up by my owner. I like to be held and scratched under my chin. Please come in and adopt me.</p>
+        </div>
+        <div class="col-md-5 col-sm-4">
+          <img alt="This is Chi Chi, this male is adoptable" src="http://egov.baltimorecountymd.gov/LostAdoptPetService/GetPetImageAsJpeg/20150303/A01000000194774XJMZ3PTWTHXAN4M/849.JPG">
+        </div>
+  </div>
+
+    <div class="row pet" id="ACIMP-2015-00852">
+        <div class="col-md-7 col-sm-8">
+          <h2>Pruty </h2>
+          <h3>Pet Tracking Information</h3>
+          <p class="pet-info"><strong class="pet-info-label">Animal ID</strong> ACIMP-2015-00852</p>
+          <p class="pet-info"><strong class="pet-info-label">Species</strong> Dog</p>
+          <p class="pet-info"><strong class="pet-info-label">Breed</strong> Rottweiler</p>
+          <p class="pet-info"><strong class="pet-info-label">Color</strong> Tan</p>
+          <p class="pet-info"><strong class="pet-info-label">Sex</strong> Male</p>
+          <p class="pet-info"><strong class="pet-info-label">Spayed/Neutered</strong> No</p>
+          <p class="pet-info"><strong class="pet-info-label">Shelter Arrival</strong> 3/3/2015 1:32:51 PM</p>
+          <p class="pet-bio"><strong class="pet-bio-label">About Me</strong> Hi, my name is Pruty. I am a two year old Rottweiler and Labrador Retriever mix. I was given up by my owner. I am a little shy at first but give me time and I will warm right up to you. Please come in and adopt me. There will be $300 donated in sponsorship to the rescue adoption partner who takes me.</p>
+        </div>
+        <div class="col-md-5 col-sm-4">
+          <img alt="This is Pruty , this male is adoptable" src="http://egov.baltimorecountymd.gov/LostAdoptPetService/GetPetImageAsJpeg/20150307/A01000000195613DXIEIGI56RN55GE/852.JPG">
+        </div>
+  </div>
+
+    <div class="row pet" id="ACIMP-2015-00853">
+        <div class="col-md-7 col-sm-8">
+          <h2>Ozzy</h2>
+          <h3>Pet Tracking Information</h3>
+          <p class="pet-info"><strong class="pet-info-label">Animal ID</strong> ACIMP-2015-00853</p>
+          <p class="pet-info"><strong class="pet-info-label">Species</strong> Dog</p>
+          <p class="pet-info"><strong class="pet-info-label">Breed</strong> Chihuahua</p>
+          <p class="pet-info"><strong class="pet-info-label">Color</strong> Brown</p>
+          <p class="pet-info"><strong class="pet-info-label">Sex</strong> Male</p>
+          <p class="pet-info"><strong class="pet-info-label">Spayed/Neutered</strong> Yes</p>
+          <p class="pet-info"><strong class="pet-info-label">Shelter Arrival</strong> 3/3/2015 2:20:59 PM</p>
+          <p class="pet-bio"><strong class="pet-bio-label">About Me</strong> Hi, my name is Ozzy. I'm ten years old. I came into the shelter with my sister Gromit. Our owner couldn't take care of us anymore and now we are looking for new homes. We would love to be adopted together. Please come to the shelter and adopt us.</p>
+        </div>
+        <div class="col-md-5 col-sm-4">
+          <img alt="This is Ozzy, this male is adoptable" src="http://egov.baltimorecountymd.gov/LostAdoptPetService/GetPetImageAsJpeg/20150303/A01000000194754NAEZ5OUETD5FD2Y/853.JPG">
+        </div>
+  </div>
+
+    <div class="row pet" id="ACIMP-2015-00854">
+        <div class="col-md-7 col-sm-8">
+          <h2>Gromit</h2>
+          <h3>Pet Tracking Information</h3>
+          <p class="pet-info"><strong class="pet-info-label">Animal ID</strong> ACIMP-2015-00854</p>
+          <p class="pet-info"><strong class="pet-info-label">Species</strong> Dog</p>
+          <p class="pet-info"><strong class="pet-info-label">Breed</strong> Basset Hound</p>
+          <p class="pet-info"><strong class="pet-info-label">Color</strong> Black</p>
+          <p class="pet-info"><strong class="pet-info-label">Sex</strong> Female</p>
+          <p class="pet-info"><strong class="pet-info-label">Spayed/Neutered</strong> No</p>
+          <p class="pet-info"><strong class="pet-info-label">Shelter Arrival</strong> 3/3/2015 2:24:13 PM</p>
+          <p class="pet-bio"><strong class="pet-bio-label">About Me</strong> Hi, my name is Gromit. I'm a cute eight year old girl. I came into the shelter with my brother Ozzy. Our owner couldn't take care of us anymore. I'm a little shy but I'm very nice. Please come to the shelter and adopt me.</p>
+        </div>
+        <div class="col-md-5 col-sm-4">
+          <img alt="This is Gromit, this female is adoptable" src="http://egov.baltimorecountymd.gov/LostAdoptPetService/GetPetImageAsJpeg/20150303/A010000001947572PD8OR861FOW2BU/854.JPG">
+        </div>
+  </div>
+
+    <div class="row pet" id="ACIMP-2015-00871">
+        <div class="col-md-7 col-sm-8">
+          <h2>Len</h2>
+          <h3>Pet Tracking Information</h3>
+          <p class="pet-info"><strong class="pet-info-label">Animal ID</strong> ACIMP-2015-00871</p>
+          <p class="pet-info"><strong class="pet-info-label">Species</strong> Dog</p>
+          <p class="pet-info"><strong class="pet-info-label">Breed</strong> Pit Bull Terrier</p>
+          <p class="pet-info"><strong class="pet-info-label">Color</strong> Brown</p>
+          <p class="pet-info"><strong class="pet-info-label">Sex</strong> Female</p>
+          <p class="pet-info"><strong class="pet-info-label">Spayed/Neutered</strong> No</p>
+          <p class="pet-info"><strong class="pet-info-label">Shelter Arrival</strong> 3/4/2015 2:30:52 PM</p>
+          <p class="pet-bio"><strong class="pet-bio-label">About Me</strong> Hi my name is Len. I am a one year old female Pitbull Terrier mix. I like to go for walks and play outside. Please come in and adopt me.</p>
+        </div>
+        <div class="col-md-5 col-sm-4">
+          <img alt="This is Len, this female is adoptable" src="http://egov.baltimorecountymd.gov/LostAdoptPetService/GetPetImageAsJpeg/20150304/A01000000195393LYD498K50Q9CVGP/871.jpg">
+        </div>
+  </div>
+
+    <div class="row pet" id="ACIMP-2015-00878">
+        <div class="col-md-7 col-sm-8">
+          <h2>Royal</h2>
+          <h3>Pet Tracking Information</h3>
+          <p class="pet-info"><strong class="pet-info-label">Animal ID</strong> ACIMP-2015-00878</p>
+          <p class="pet-info"><strong class="pet-info-label">Species</strong> Cat</p>
+          <p class="pet-info"><strong class="pet-info-label">Breed</strong> Domestic Short Hair</p>
+          <p class="pet-info"><strong class="pet-info-label">Color</strong> Black</p>
+          <p class="pet-info"><strong class="pet-info-label">Sex</strong> Female</p>
+          <p class="pet-info"><strong class="pet-info-label">Spayed/Neutered</strong> No</p>
+          <p class="pet-info"><strong class="pet-info-label">Shelter Arrival</strong> 3/6/2015 12:52:51 PM</p>
+          <p class="pet-bio"><strong class="pet-bio-label">About Me</strong> Hi my name is Royal. I am a female seven month old cat. I am very affectionate and a real sweetheart! I love to be held and snuggled. Please come in and adopt me.</p>
+        </div>
+        <div class="col-md-5 col-sm-4">
+          <img alt="This is Royal, this female is adoptable" src="http://egov.baltimorecountymd.gov/LostAdoptPetService/GetPetImageAsJpeg/20150306/A01000000195430SPAMM03TZBNGQ4Z/878.JPG">
+        </div>
+  </div>
+
+    <div class="row pet" id="ACIMP-2015-00886">
+        <div class="col-md-7 col-sm-8">
+          <h2>Hazel</h2>
+          <h3>Pet Tracking Information</h3>
+          <p class="pet-info"><strong class="pet-info-label">Animal ID</strong> ACIMP-2015-00886</p>
+          <p class="pet-info"><strong class="pet-info-label">Species</strong> Dog</p>
+          <p class="pet-info"><strong class="pet-info-label">Breed</strong> Rottweiler</p>
+          <p class="pet-info"><strong class="pet-info-label">Color</strong> Black</p>
+          <p class="pet-info"><strong class="pet-info-label">Sex</strong> Female</p>
+          <p class="pet-info"><strong class="pet-info-label">Spayed/Neutered</strong> No</p>
+          <p class="pet-info"><strong class="pet-info-label">Shelter Arrival</strong> 3/6/2015 10:14:46 PM</p>
+          <p class="pet-bio"><strong class="pet-bio-label">About Me</strong> Hi my name is Hazel. I am a female five year old Rottweiler. I am a little shy at first but give me time and I will warm up to you. Please come in and visit me.</p>
+        </div>
+        <div class="col-md-5 col-sm-4">
+          <img alt="This is Hazel, this female is adoptable" src="http://egov.baltimorecountymd.gov/LostAdoptPetService/GetPetImageAsJpeg/20150307/A010000001955687R6WITHCNNNDFDG/886%20Hazel.jpg">
+        </div>
+  </div>
+
+    <div class="row pet" id="ACIMP-2015-00908">
+        <div class="col-md-7 col-sm-8">
+          <h2>Milo</h2>
+          <h3>Pet Tracking Information</h3>
+          <p class="pet-info"><strong class="pet-info-label">Animal ID</strong> ACIMP-2015-00908</p>
+          <p class="pet-info"><strong class="pet-info-label">Species</strong> Cat</p>
+          <p class="pet-info"><strong class="pet-info-label">Breed</strong> Domestic Short Hair</p>
+          <p class="pet-info"><strong class="pet-info-label">Color</strong> Gray</p>
+          <p class="pet-info"><strong class="pet-info-label">Sex</strong> Male</p>
+          <p class="pet-info"><strong class="pet-info-label">Spayed/Neutered</strong> No</p>
+          <p class="pet-info"><strong class="pet-info-label">Shelter Arrival</strong> 3/9/2015 1:47:57 PM</p>
+          <p class="pet-bio"><strong class="pet-bio-label">About Me</strong> Hi, my name is Milo. My owner gave me to the shelter and now I'm looking for a new home. I'm sweet but a little shy. I would do best in a quiet home. Please come to the shelter and see me.</p>
+        </div>
+        <div class="col-md-5 col-sm-4">
+          <img alt="This is Milo, this male is adoptable" src="http://egov.baltimorecountymd.gov/LostAdoptPetService/GetPetImageAsJpeg/20150309/A01000000196127AI9VP0PEVYM3I1U/0908%20Milo.JPG">
+        </div>
+  </div>
+
+    <div class="row pet" id="ACIMP-2015-00943">
+        <div class="col-md-7 col-sm-8">
+          <h2>Honey</h2>
+          <h3>Pet Tracking Information</h3>
+          <p class="pet-info"><strong class="pet-info-label">Animal ID</strong> ACIMP-2015-00943</p>
+          <p class="pet-info"><strong class="pet-info-label">Species</strong> Dog</p>
+          <p class="pet-info"><strong class="pet-info-label">Breed</strong> Boxer</p>
+          <p class="pet-info"><strong class="pet-info-label">Color</strong> Brown</p>
+          <p class="pet-info"><strong class="pet-info-label">Sex</strong> Female</p>
+          <p class="pet-info"><strong class="pet-info-label">Spayed/Neutered</strong> No</p>
+          <p class="pet-info"><strong class="pet-info-label">Shelter Arrival</strong> 3/11/2015 12:39:35 PM</p>
+          <p class="pet-bio"><strong class="pet-bio-label">About Me</strong> Hi, my name is Honey. I'm about one and half years old. I'm a sweet girl and I know a few commands. My owner had to give me up but they said that I'm great with children and other dogs. Please come to the shelter and adopt me.</p>
+        </div>
+        <div class="col-md-5 col-sm-4">
+          <img alt="This is Honey, this female is adoptable" src="http://egov.baltimorecountymd.gov/LostAdoptPetService/GetPetImageAsJpeg/20150311/A01000000197568GUBFY76MQHO8N0A/0973%20Honey.JPG">
+        </div>
+  </div>
+
+    <div class="row pet" id="ACIMP-2015-00954">
+        <div class="col-md-7 col-sm-8">
+          <h2>Casper</h2>
+          <h3>Pet Tracking Information</h3>
+          <p class="pet-info"><strong class="pet-info-label">Animal ID</strong> ACIMP-2015-00954</p>
+          <p class="pet-info"><strong class="pet-info-label">Species</strong> Cat</p>
+          <p class="pet-info"><strong class="pet-info-label">Breed</strong> Domestic Short Hair</p>
+          <p class="pet-info"><strong class="pet-info-label">Color</strong> Orange Tabby</p>
+          <p class="pet-info"><strong class="pet-info-label">Sex</strong> Male</p>
+          <p class="pet-info"><strong class="pet-info-label">Spayed/Neutered</strong> Yes</p>
+          <p class="pet-info"><strong class="pet-info-label">Shelter Arrival</strong> 3/11/2015 3:00:13 PM</p>
+          <p class="pet-bio"><strong class="pet-bio-label">About Me</strong> Hello, my name is Casper. I am a very loving cat looking for a new home. Please come and see me at the Baltimore County Animal Shelter.</p>
+        </div>
+        <div class="col-md-5 col-sm-4">
+          <img alt="This is Casper, this male is adoptable" src="http://egov.baltimorecountymd.gov/LostAdoptPetService/GetPetImageAsJpeg/20150311/A01000000197754ODM204TO2PAI407/822[1].jpg">
+        </div>
+  </div>
+
+    <div class="row pet" id="ACIMP-2015-00979">
+        <div class="col-md-7 col-sm-8">
+          <h2>Princess</h2>
+          <h3>Pet Tracking Information</h3>
+          <p class="pet-info"><strong class="pet-info-label">Animal ID</strong> ACIMP-2015-00979</p>
+          <p class="pet-info"><strong class="pet-info-label">Species</strong> Cat</p>
+          <p class="pet-info"><strong class="pet-info-label">Breed</strong> Domestic Long Hair</p>
+          <p class="pet-info"><strong class="pet-info-label">Color</strong> White</p>
+          <p class="pet-info"><strong class="pet-info-label">Sex</strong> Female</p>
+          <p class="pet-info"><strong class="pet-info-label">Spayed/Neutered</strong> Yes</p>
+          <p class="pet-info"><strong class="pet-info-label">Shelter Arrival</strong> 3/13/2015 9:28:10 AM</p>
+          <p class="pet-bio"><strong class="pet-bio-label">About Me</strong> Hi my name is Princess. I was given up by my owner. I am a female eight year white and tri color cat. I get along well with other cats and kids. Please come in and adopt me.</p>
+        </div>
+        <div class="col-md-5 col-sm-4">
+          <img alt="This is Princess, this female is adoptable" src="http://egov.baltimorecountymd.gov/LostAdoptPetService/GetPetImageAsJpeg/20150313/A01000000198784XICQX4P6UY51PPG/979.JPG">
+        </div>
+  </div>
+
+    <div class="row pet" id="ACIMP-2015-00988">
+        <div class="col-md-7 col-sm-8">
+          <h2>Sampson</h2>
+          <h3>Pet Tracking Information</h3>
+          <p class="pet-info"><strong class="pet-info-label">Animal ID</strong> ACIMP-2015-00988</p>
+          <p class="pet-info"><strong class="pet-info-label">Species</strong> Cat</p>
+          <p class="pet-info"><strong class="pet-info-label">Breed</strong> Domestic Short Hair</p>
+          <p class="pet-info"><strong class="pet-info-label">Color</strong> Black</p>
+          <p class="pet-info"><strong class="pet-info-label">Sex</strong> Male</p>
+          <p class="pet-info"><strong class="pet-info-label">Spayed/Neutered</strong> Yes</p>
+          <p class="pet-info"><strong class="pet-info-label">Shelter Arrival</strong> 3/13/2015 1:51:55 PM</p>
+          <p class="pet-bio"><strong class="pet-bio-label">About Me</strong> Hi my name is Sampson. I was given up by my owner. I am a male twelve year old cat. I am a little shy and would do best in a quiet home. Please come in and visit with me.</p>
+        </div>
+        <div class="col-md-5 col-sm-4">
+          <img alt="This is Sampson, this male is adoptable" src="http://egov.baltimorecountymd.gov/LostAdoptPetService/GetPetImageAsJpeg/20150313/A010000001989458DUI9I1KT7IJUUH/988.JPG">
+        </div>
+  </div>
+</div></div><p><strong><br></strong></p><script type="text/javascript">
+	function _SE_checkRateThisPageForm(_CF_this){
+		_SE_validateRadiobox(_CF_this, '_PageRating_radiobox1_', 'Please select a page rating.');
+	}
+</script>
+<script src="/se/js/mod/advancedforms/cfform.js" type="text/javascript"> </script><script type="text/javascript">
+	function _CF_checkRateThisPageForm(_CF_this)
+	{
+	        //reset on submit
+	        _CF_error_messages = new Array();
+	        _CF_error_fields = new Object();
+	        _CF_FirstErrorField = null;
+
+					            if (!_CF_checkURL(_CF_this['url'].value, false))
+					            {
+					                _CF_onError(_CF_this, "url",  _CF_this['url'].value,"Error in label field");
+					            }
+						_SE_checkRateThisPageForm(_CF_this);	
+        //display error messages and return success
+        if( _CF_error_messages.length &gt; 0 )
+        {
+            // show alert() message
+            _CF_onErrorAlert(_CF_error_messages);
+            // set focus to first form error, if the field supports js focus().
+            if( _CF_this[_CF_FirstErrorField].type == "text" )
+            { _CF_this[_CF_FirstErrorField].focus(); }
+
+            return false;
+        }else {
+            return true;
+        }
+}
+</script><div id="RateThisPageForm_div" class="seform">
+<form name="RateThisPageForm" enctype="multipart/form-data" onsubmit="return _CF_checkRateThisPageForm(this);" method="post" action="/Agencies/health/petadoption/" id="RateThisPageForm">
+<table width="100%" cellspacing="0" cellpadding="2" border="0" class="vertical">
+<tbody><tr>
+<td>
+<table width="100%" cellspacing="0" cellpadding="2" border="0" class="vertical">
+<tbody><tr>
+<td class="seHeaderTitle" colspan="2">Was This Page Helpful?</td>
+</tr>
+<tr>
+<td>
+<fieldset>
+<div style="width:100%" class="seText"><span>Fields marked with </span><span class="seRequiredMarker">*</span><span> are required.</span></div><table cellspacing="0" cellpadding="0" border="0"><tbody><tr><td width="1%" class="seLabelCell">Page Rating<span class="seRequiredMarker">*</span></td><td class="seFieldCell"><div style="width:100%;" class="seText"><table cellspacing="0" cellpadding="0" border="0" class="horizontal"><tbody><tr class="seElementRow"><td class="seFieldCell"> <input type="radio" value=" 5" class="seRadio" id="_PageRating_radiobox1_1" name="_PageRating_radiobox1_"><label class="seRadioLabel" for="_PageRating_radiobox1_1">Excellent </label> <input type="radio" value=" 4" class="seRadio" id="_PageRating_radiobox1_2" name="_PageRating_radiobox1_"><label class="seRadioLabel" for="_PageRating_radiobox1_2">Good </label> <input type="radio" value=" 3" class="seRadio" id="_PageRating_radiobox1_3" name="_PageRating_radiobox1_"><label class="seRadioLabel" for="_PageRating_radiobox1_3">Average </label> <input type="radio" value=" 2" class="seRadio" id="_PageRating_radiobox1_4" name="_PageRating_radiobox1_"><label class="seRadioLabel" for="_PageRating_radiobox1_4">Poor </label> <input type="radio" value=" 1" class="seRadio" id="_PageRating_radiobox1_5" name="_PageRating_radiobox1_"><label class="seRadioLabel" for="_PageRating_radiobox1_5">Very Poor </label> </td></tr></tbody></table></div></td></tr></tbody></table>
+<table cellspacing="0" cellpadding="0" border="0" class="horizontal">
+<tbody><tr class="seElementRow">
+<td class="seLabelCell">
+<div class="seText"><label for="Comments">Explain Your Rating</label></div>
+</td>
+<td class="seFieldCell">
+<textarea style="width:430px;height:60px;" class="seTextarea " rows="3" cols="20" name="Comments" id="Comments"> </textarea>
+</td>
+</tr>
+</tbody></table>
+<table cellspacing="0" cellpadding="0" border="0" class="horizontal">
+<tbody><tr class="seElementRow">
+<td class="seLabelCell">
+<div class="seText"><label for="website" class="website">website</label></div>
+</td>
+<td class="seFieldCell">
+<input type="text" value="" class="seInput " name="website" id="website">
+</td>
+</tr>
+</tbody></table>
+<input type="submit" style="margin-top:10px;width:90px;" value="Submit" class="seButton " name="fieldName2" id="fieldName2">
+<table cellspacing="0" cellpadding="0" border="0" class="horizontal">
+<tbody><tr class="seElementRow">
+<td class="seLabelCell">
+<div class="seText"><label style="display:none;" for="url">URL</label></div>
+</td>
+<td class="seFieldCell">
+<input type="text" style="display:none;" value="" class="seInput " name="url" id="url">
+</td>
+</tr>
+</tbody></table>
+</fieldset>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td>
+</td></tr>
+</tbody></table>
+<input type="hidden" value="1" id="_RateThisPageForm_seStepID" name="_RateThisPageForm_seStepID">
+<input type="hidden" value="FE103F9BF7C90581294EBC0B7D93CD1B" id="_submissionID" name="_submissionID">
+<input type="hidden" value="" id="_seResultMail" name="_seResultMail">
+<input type="hidden" value="" id="_seNotifyMail" name="_seNotifyMail">
+</form>
+</div>
+
+<script type="text/javascript">
+	$('form').submit(function(){    
+        if ($('input#website').val().length != 0) {
+            return false;
+        } 
+});
+</script>&nbsp;</div></div></div>
+
+				<!--SITE EXECUTIVE HTML END-->
+		</div>
+		</div>
+		
+		<footer class="footer">
+			<section class="primary-footer container">
+			<section class="county-map-container col-md-6 col-sm-6">
+				<img src="assets/img/footer-county-shape.png" alt="" class="county-map hidden-sm hidden-xs">
+				<div class="county-address">
+					<h2>Baltimore County Government</h2>
+					<p>Historic Courthouse</br>
+					400 Washington Avenue</br>
+					Towson, MD 21204</p>
+					<p><a href="http://mapq.st/rqwGxR" title="Get directions to Baltimore County.">Directions &gt;&gt;</a></p>
+				</div>
+				
+			</section>
+			<section class="county-help col-md-2 col-sm-6">
+				<h2>Help</h2>
+				<ul class="county-help-list">
+					<li class="county-help-list-item">
+						<a href="http://www.baltimorecountymd.gov/Contact_Us/telephone/helpful_numbers.html" title="Find helpful telephone numbers.">Phone Numbers</a>
+					</li>
+					<li class="county-help-list-item">
+						<a href="http://www.baltimorecountymd.gov/imlooking/index.html#all" title="Find a County service.">Find a County Service</a>
+					</li>
+					<li class="county-help-list-item">
+						<a href="http://www.baltimorecountymd.gov/iwant/index.html" title="Report a problem.">Report a Problem</a>
+					</li>
+				</ul>
+			</section>
+			<section class="tranlate-page col-md-2 hidden-sm hidden-xs">
+				<h2>Translate</h2>
+				<ul class="translate-page-list">
+					<li class="american"><a title="English" href="http://baltimorecountymd.gov//">English</a></li>
+					<li class="translate-page-list-item translate-page-list-item-arabic">
+						<a title="Translate this site in Arabic." href="http://translate.google.com/translate?hl=en&amp;sl=en&amp;tl=ar&amp;u=http%3A%2F%2Fbaltimorecountymd.gov/%2F">العربية</a>
+					</li>
+					<li class="translate-page-list-item translate-page-list-item-chinese">
+						<a title="Translate this site in Chinese." href="http://translate.google.com/translate?hl=en&amp;sl=en&amp;tl=zh-CN&amp;u=http%3A%2F%2Fbaltimorecountymd.gov/%2F">中文</a>
+					</li>
+					<li class="translate-page-list-item translate-page-list-item-french">
+						<a title="Translate this site in French." href="http://translate.google.com/translate?hl=en&amp;sl=en&amp;tl=fr&amp;u=http%3A%2F%2Fbaltimorecountymd.gov/%2F">Français</a>
+					</li>
+					<li class="translate-page-list-item translate-page-list-item-russian">
+						<a title="Translate this site in Russian." href="http://translate.google.com/translate?hl=en&amp;sl=en&amp;tl=ru&amp;u=http%3A%2F%2Fbaltimorecountymd.gov/%2F">Русский</a>
+					</li>
+					<li class="translate-page-list-item translate-page-list-item-spanish">
+						<a title="Translate this site in Spanish." href="http://translate.google.com/translate?hl=en&amp;sl=en&amp;tl=es&amp;u=http%3A%2F%2Fbaltimorecountymd.gov/%2F">Español</a>
+					</li>
+				</ul>
+			</section>
+			<section class="county-awards col-md-2 hidden-sm hidden-xs">
+				<h2>Awards</h2>
+				<ul class="county-awards-list">
+					<li class="county-awards-list-item">
+						<a href="http://www.govtech.com/dc/digital-counties/?year=2014" title="Learn more about Baltimore County's Digital Counties Survey Award."><img src="http://baltimorecountymd.gov/sebin/n/b/footer-map-digital-counties.jpg" alt="Image of Digital Counties Survey logo." /></a>
+					</li>
+					<li class="county-awards-list-item">
+						<a href="http://www.govtech.com//internet/2014-Best-of-the-Web-Award-Winners-Announced.html?page=2" title="Learn more about Baltimore County's Best of The Web Award." ><img src="http://baltimorecountymd.gov/sebin/l/i/footer-map-botw.jpg" alt="Image of Best of The Web logo." /></a>
+					</li>
+				</ul>
+			</section>
+			<ul class="social-media-list social-media-list-small inline-list col-sm-12 hidden-md hidden-lg">
+					<li class="social-media-list-item social-media-list-item-facebook">
+						<a href="">
+						</a>
+					</li>
+					<li class="social-media-list-item social-media-list-item-twitter">
+						<a href="">
+						</a>
+					</li>
+					<li class="social-media-list-item social-media-list-item-photos">
+						<a href="">
+						</a>
+					</li>
+					<li class="social-media-list-item social-media-list-item-youtube">
+						<a href="">
+						</a>
+					</li>
+					<li class="social-media-list-item social-media-list-item-bcnow">
+						<a href="">
+						</a>
+					</li>
+				</ul>
+		</section>
+		<section class="secondary-footer">
+			<div class="container">
+			<section class="copyright col-md-4 col-sm-12">
+				<span>&copy; Copyright 2015 Baltimore County Government</span>
+			</section>
+			<nav class="county-links col-md-8 col-sm-12">
+				<ul class="county-links-list inline-list">
+					<li class="county-links-list-item">
+						<a href="http://www.baltimorecountymd.gov/Contact/webmaster?issueid=42" title="Contact Baltimore County.">Contact Baltimore County</a>
+					</li>
+					<li class="county-links-list-item">
+						<a href="http://www.baltimorecountymd.gov/UserGuide/usertermsconditions.html" title="Review the User Terms for the Baltimore County website.">User Terms</a>
+					</li>
+					<li class="county-links-list-item">
+						<a href="http://www.baltimorecountymd.gov/UserGuide/usertermsconditions.html#privacy" title="Review the  Baltimore County privacy policy.">Privacy</a>
+					</li>
+					<li class="county-links-list-item">
+						<a href="http://www.baltimorecountymd.gov/Agencies/humanresources/jobs/index.html" title="View Baltimore County job listings.">Jobs</a>
+					</li>
+					<li class="county-links-list-item">
+						<a href="http://www.baltimorecountymd.gov/UserGuide/sitemap.html" title="View the Baltimore County site map.">Site Map</a>
+					</li>
+					<li class="county-links-list-item">
+						<a href="http://www.baltimorecountymd.gov/Agencies/ada/index.html" title="Learn more about Reasonable Accommodation.">Reasonable Accommodation</a>
+					</li>
+				</ul>
+			</nav>
+			</div>
+		</section>
+		<div class="full-site-container">
+			<button class="btn-link reView view-full-site-btn"  data-coreText='View Full Site' data-defaultText='View Mobile Site'>View Full Site</button>
+		</div>
+	</footer>
+</body>
+</html>
