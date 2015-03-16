@@ -428,5 +428,7 @@ td {
 	margin: 0;
 }
 
+
+/*Should this stay in the basic or go in the module*/
 #website { display: none; }
 label.website{display:none;}
