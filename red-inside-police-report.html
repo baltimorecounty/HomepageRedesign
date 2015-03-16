@@ -1,0 +1,284 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Baltimore County Homepage Government</title>
+		<link rel="stylesheet" type="text/css" href="assets/stylesheets/existing/base.css"/>
+		<link rel="stylesheet" type="text/css" href="assets/stylesheets/existing/base-2.css"/>
+		<link rel="stylesheet" type="text/css" href="assets/stylesheets/existing/supplimental.css"/>
+		<link rel="stylesheet" type="text/css" href="assets/stylesheets/inside-template.css"/>
+		
+		<!--[if lt IE 9]>
+			<link rel="stylesheet" type="text/css" href="assets/stylesheets/ie.css"/>
+		<![endif]-->
+		<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+		<script src="assets/js/lib/jQuery.min.js"></script>
+		<script type="text/javascript" src="assets/js/lib/slick.min.js"></script>
+		<script type="text/javascript" src="assets/js/lib/handlebars.js"></script>
+		<script src="assets/js/lib/reView.js"></script>
+		<script src="assets/js/text-resizer.js"></script>
+		<script src="assets/js/skipNav.js"></script>
+		<script src="assets/js/flickr.js"></script>
+		<script src="assets/js/template.js"></script>
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	    <!--[if lt IE 9]>
+	      <script src="assets/js/lib/html5shiv.min.js"></script>
+	      <script src="assets/js/lib/respond.min.js"></script>
+	    <![endif]-->
+
+	</head>
+	<body class="homepage">
+		<div id="skiptocontent" class="skip-nav">
+		  <a href="#main-content" class="link-btn skip">skip to main content</a>
+		</div>
+		<header class="header">
+			<section class="secondary-nav hidden-xs">
+				<div class="container">
+				<nav class="col-md-4 col-sm-6 ">
+					<ul class="secondary-nav-list inline-list">
+						<li class="secondary-nav-list-item">
+							<a href="">County Executive</a>
+						</li>
+						<li class="secondary-nav-list-item">
+							<a href="">County Council</a>
+						</li>
+						<li class="secondary-nav-list-item">
+							<a href="">Courts</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="search col-md-4">
+				<div class="search-input-container">
+			    <button>Search</button>
+			    <div class="search-text">
+			      <label for="search-input" class="search-label">Search</label><input type="text" placeholder="Search for agencies, services and more..." name="search-input" class="search-input">
+			    </div>
+			</div>
+			  </div>
+				<div class="page-tools col-md-4 col-sm-6 hidden-xs">
+					<a href="http://www.baltimorecountymd.gov/Subscribe/" class="subscribe" title="Subscribe to Baltimore County Newsletters.">Subscribe</a>
+					<div class="resizer">
+					  <ul class="resizer-list inline-list">
+					    <li><button id="normal-text" class="btn-link resizer-item resizer-item-smaller">a</button></li>
+					    <li><button id="large-text" class="btn-link resizer-item resizer-item-default">a</button></li>
+					    <li><button id="largest-text" class="btn-link resizer-item resizer-item-larger">a</button></li>
+					  </ul>
+					</div>
+				</div>
+				</div>
+			</section>
+			<div class="primary-header">
+			  <div class="container-fluid">
+			    <div class="brand col-md-4 col-sm-12">
+			      <a href="http://www.baltimorecountymd.gov" title="View the Baltimore County Government homepage.">
+			      <img class="brand-logo" src="assets/img/header-county-seal.png" height="84" width="84" />
+			      <h1 class="brand-heading">Baltimore County<br><span class="uppercase smaller-text">Government</span></h1>
+			  	</a>
+			    </div>
+			    <nav class="secondary-nav col-xs-12 hidden-lg hidden-md hidden-sm">
+					<ul class="secondary-nav-list inline-list">
+						<li class="secondary-nav-list-item">
+							<a href="">County Executive</a>
+						</li>
+						<li class="secondary-nav-list-item">
+							<a href="">County Council</a>
+						</li>
+						<li class="secondary-nav-list-item">
+							<a href="">Courts</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="primary-nav-container">
+			    <ul class="primary-nav col-md-8 col-sm-12" role="navigation">
+			      <li class="primary-nav-item col-md-4 col-sm-4 col-xs-12">
+			        <h2 class="primary-nav-item__headline">
+			          <a href="http://www.baltimorecountymd.gov/iwant/apply.html">I Want To...<br><span class="primary-nav-item__tagline">Report Issues, Follow Up, Apply</span></a>
+			        </h2>
+			      </li>
+			      <li class="primary-nav-item col-md-4 col-sm-4 col-xs-12">
+			        <h2 class="primary-nav-item__headline">
+			          <a href="http://www.baltimorecountymd.gov/iwant/apply.html">I'm Looking For...<br><span class="primary-nav-item__tagline">Resident, Visitor, or Business Info</span></a>
+			        </h2>
+			      </li>
+			      <li class="primary-nav-item col-md-4 col-sm-4 col-xs-12">
+			        <h2 class="primary-nav-item__headline">
+			          <a href="http://www.baltimorecountymd.gov/iwant/apply.html">I Need to Contact...<br><span class="primary-nav-item__tagline">An Agency, My Rep, An Employee</span></a>
+			        </h2>
+			      </li>
+			    </ul>
+			    <nav class="hamburger-nav">
+			    	<a class="hamburger-btn" href="#" title="Navigate Baltimore County's Website">
+			    		<img src="assets/img/hamburger.png" height="32" width="32" alt="Navigate Baltimore County's Website" /></a>
+			    </nav>
+			    </div>
+			    <div class="clearfix"></div>
+			  </div>
+			</div>
+		</header>
+
+		<div id="main-content" class="county-information">
+		<div class="county-information-container container-fluid">
+		<div id="backgroundgradient">
+			<div id="backgroundshadow">
+				<!--SITE EXECUTIVE HTML START-->
+				<div id="maincontainer"><a name="SkipNav"></a><div id="column1"><div class="logoboxbottom">&nbsp;</div><div id="container_localnavigation"><div id="baco_subnav"><table width="218" cellspacing="2" cellpadding="2" border="0">
+			<tbody><tr>
+				<td bgcolor="#C0C0C0" class="whatsheredisplaynone">What's New</td>
+			</tr>
+			<tr>
+				
+					<td width="218" bgcolor="#C0C0C0" class="smalltext">
+						
+							<a href="http://www.baltimorecountymd.gov/Agencies/police/onlinereport/index.html" class="smalltext">File a Report Online Overview</a><br>
+							
+
+
+							<a href="http://www.baltimorecountymd.gov/Agencies/police/index.html" class="smalltext">Police Overview</a><br>
+							
+
+
+					</td>
+				
+			</tr>
+			</tbody></table></div><div id="services"><!-- skip navigation removed from included pages --></div><div id="services"><table width="100%" cellspacing="0" cellpadding="0" border="0"><tbody><tr><td><!-- skip navigation removed from included pages --><div id="servicescontainer"><ul class="noindent"><li class="title">Most Requested Services</li><li><a href="http://www.baltimorecountymd.gov/Agencies/humanresources/jobs/index.html" title="View Baltimore County job listings.">View Job Listings</a></li><li><a href="http://www.baltimorecountymd.gov/Agencies/budfin/taxsearch/index.html" title="Pay or search property taxes online.">Pay/Search Property Taxes Online</a></li><li><a href="http://myneighborhood.baltimorecountymd.gov/" title="Use this interactive map to find your zoning.">Find&nbsp;Your&nbsp;Zoning</a></li><li><a href="http://www.baltimorecountymd.gov/Agencies/law/countycode.html" title="Browse County Codes.">Browse County Codes</a></li><li><a href="http://www.baltimorecountymd.gov/Agencies/circuit/jurycomm.html" title="Complete the jury duty questionnaire.">Complete Jury Questionnaire</a></li><li><a href="http://www.baltimorecountymd.gov/Agencies/circuit/dailydocket/index.html" title="View the Circuit Court daily docket.">View Daily Docket</a></li><li><a href="http://www.baltimorecountymd.gov/Agencies/budfin/citations/index.html" title="Pay your parking and red light tickets here.">Pay Parking and Red Light Tickets</a></li><li><a href="http://egov2.baltimorecountymd.gov/votingweb/default.aspx?pageid=2" title="Use the polling place locator to find your council district. ">Find Your Council&nbsp;District</a></li><li><a href="http://www.baltimorecountymd.gov/Agencies/publicworks/solid_waste/collectionconnection.html" title="Download and print you trash/recycling collection schedule.">Download Trash Schedule</a></li><li><a href="http://www.baltimorecountymd.gov/Agencies/myneighborhood/facilities.html" title="Find a county facility in your area.">Locate&nbsp;County Facilities</a></li><li><a href="http://www.baltimorecountymd.gov/Agencies/police/crime/index.html" title="Search crime statistics in your neighborhood.">Search Crime Stats</a></li><li><a href="http://www.baltimorecountymd.gov/Agencies/recreation/programdivision/index.html" title="Find recreation programs and activites offered in your neighborhood.">Find&nbsp;Recreation Activities</a></li><li><a href="http://www.baltimorecountymd.gov/Agencies/volunteers/index.html" title="Find a volunteer opportunity that matches your skills and interests.">Volunteer Today</a></li></ul><div id="moreservices"><a href="http://www.baltimorecountymd.gov/Services/index.html" title="Browse a directory of other online services.">More &gt;&gt;&gt;</a></div></div></td></tr></tbody></table></div></div></div><div id="column2"><div id="agencyheader"><div id="agencyname"><!-- skip navigation removed from included pages --><div>Police Department</div></div><div id="shareutilities"><div id="sharebutton"><!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style ">
+<a class="addthis_counter addthis_pill_style addthis_nonzero" style="display: inline-block;" href="#"><a class="atc_s addthis_button_compact"><span></span></a><a class="addthis_button_expanded" target="_blank" title="View more services" href="#">3</a></a>
+<div class="atclear"></div></div>
+<script type="text/javascript">
+    var addthis_config = {"data_track_clickback":true};
+</script>
+<script defer="true" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4e80a2a60c8146f0" type="text/javascript"></script>
+<!-- AddThis Button END --></div><div id="printpagebutton"><div>
+			
+				<a onclick="openFriendlyVersion(); return false;" href="" style="cursor: pointer;"><img width="59" border="0" height="20" title="Print this page." alt="Print this page." src="/sebin/w/w/print-button.gif"></a>
+				
+		</div></div></div></div><div id="graybartop">&nbsp;</div><div id="baco_breadcrumb"><span class=""><a href="http://www.baltimorecountymd.gov/" class="" title="Home">Home</a>&nbsp;&gt;&nbsp;<a href="http://www.baltimorecountymd.gov/Agencies/" class="" title="Agency Directory">Agency Directory</a>&nbsp;&gt;&nbsp;<a href="http://www.baltimorecountymd.gov/Agencies/police/" class="" title="Police Department">Police Department</a>&nbsp;&gt;&nbsp;<a href="http://www.baltimorecountymd.gov/Agencies/police/onlinereport/" class="" title="File a Police Report Online">File a Police Report Online</a>&nbsp;&gt;&nbsp;<a href="http://www.baltimorecountymd.gov/Agencies/police/onlinereport/theft.html" class="" title="Theft">Theft</a></span></div><div></div><div id="mainContent"><noscript> &lt;h1&gt;Javascript Is Disabled On Your Browser&lt;/h1&gt;
+&lt;p&gt;It appears that your browser does not support JavaScript, or you have it disabled. This site is best viewed with JavaScript enabled.  If JavaScript is disabled in your browser, please turn it back on then reload this page.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;If your browser does not support JavaScript, select the link below: &lt;br&gt;
+  &lt;br&gt;
+&lt;a href="http://www.baltimorecountymd.gov/enablejavascript.html"&gt;http://www.baltimorecountymd.gov/enablejavascript.html&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;</noscript><div id="relatedtopics"><div id="calloutarea"><!-- skip navigation removed from included pages --></div></div><div><a name="Skip"></a></div><h1>Report a Theft</h1><div class="callout_news"><p><strong>If this is an emergency, crime in progress or immediate need for medical assistance, call 911.</strong><br><br> <strong>Warning</strong>: It is a crime to make false statements and/or misuse electronic communication. Violators will be prosecuted to the full extent of the law.</p></div><div id="divclear">&nbsp;</div><p>Reporting a theft online is designed to make filing a police report easier and more convenient for you; however, not every theft can be reported online.</p><h2>What is Theft?</h2><div>Property intentionally taken without the owner’s permission.</div><p><strong>Example</strong>: Your coat was stolen from your chair while you were in the restroom; property has been taken from inside&nbsp;a vehicle without the owner’s permission.</p><h2>Does My Report Qualify?</h2><p>Answer the qualifying questions below to determine if your report can be filed online. If your report qualifies, you will be provided with a link to file your report.</p><div class="nojs" style="display: none;"><div class="disclaimer"><h2>Citizen Online Reporting System Disclaimer</h2><br> <strong>You are about to launch the Citizen Online Reporting Application. Please read the disclaimer below before proceeding.</strong> <p>This web site provides a means of Submitting a Police Report that can be used by the public to report crime.<br><br> 1. To report an emergency or crime in progress call 911 immediately.<br> 2. On this web site you may report abandoned vehicle(s), destruction of property, destruction of vehicle(s), hit and run, lost property, theft and theft from a vehicle. For an immediate response please use your telephone and dial 911.<br> 3. We encourage good faith reporting of information regarding a crime through this web site. The Baltimore County Police Department reserves the right to contact you to verify or clarify the information you provide.<br> 4. Pursuant to Maryland law it is a crime to make false statements and/or misuse electronic communication. Violators will be prosecuted to the full extent of the law.<br> Acceptance of the above terms is required in order to continue to the Online Police Report.</p><p>The application which you are filing is being filed under oath.<br> § 9-501. False statement - To law enforcement officer.<br><br> (a) Prohibited.- A person may not make, or cause to be made, a statement, report, or complaint that the person knows to be false as a whole or in material part, to a law enforcement officer of the State, of a county, municipal corporation, or other political subdivision of the State, or of the Maryland-National Capital Park and Planning Police with intent to deceive and to cause an investigation or other action to be taken as a result of the statement, report, or complaint.<br><br> (b) Penalty.- A person who violates this section is guilty of a misdemeanor and on conviction is subject to imprisonment not exceeding 6 months or a fine not exceeding $500 or both.<br> [An. Code 1957, art. 27, § 150(a), (c); 2002, ch. 26, § 2.]<br> If your incident qualifies for an online report and you wish to continue,</p></div><a href="http://stag.coplogic.com/agency/MdBaltimoreCountyPd/start-report.html" id="fileareport">File a Report Online</a></div><div id="questions" class="questions theft js" style="display: block;"><div class="questions"><ul><li class="theft"><p>Are there any known suspects?</p><input type="radio" value="Yes" name="q1"> Yes &nbsp;<input type="radio" value="No" name="q1" class="correct"> No </li><li class="theft" style="color: gray;"><p>Are there any known witnesses?</p><input type="radio" value="Yes" name="q2" disabled=""> Yes &nbsp;<input type="radio" value="No" name="q2" class="correct" disabled=""> No </li><li class="theft" style="color: gray;"><p>Does the stolen property include a license plate, firearm or motor vehicle?</p><input type="radio" value="Yes" name="q3" disabled=""> Yes &nbsp;<input type="radio" value="No" name="q3" class="correct" disabled=""> No </li><li class="theft" style="color: gray;"><p>Does the stolen property have a <a class="tip serial" href="#serial" style="color: gray;">serial</a> number that you have available to provide?</p><input type="radio" value="Yes" name="q4" disabled=""> Yes &nbsp;<input type="radio" value="No" name="q4" class="correct" disabled=""> No </li><li class="theft" style="color: gray;"><p>Does the stolen property have a total value of $15,000 or greater?</p><input type="radio" value="Yes" name="q5" disabled=""> Yes &nbsp;<input type="radio" value="No" name="q5" class="correct" disabled=""> No </li><li class="theft" style="color: gray;"><p>Was the property taken from inside a residential home, apartment, garage or shed?</p><input type="radio" value="Yes" name="q6" disabled=""> Yes &nbsp;<input type="radio" value="No" name="q6" class="correct" disabled=""> No </li><li class="theft" style="color: gray;"><p>Was the property taken from inside a business or instituion while closed?</p><input type="radio" value="Yes" name="q7" disabled=""> Yes &nbsp;<input type="radio" value="No" name="q7" class="correct" disabled=""> No </li><li class="theft" style="color: gray;"><p>Was the stolen property taken from within your vehicle?</p><input type="radio" value="Yes" name="q8" class="noanswer motor" disabled=""> Yes &nbsp;<input type="radio" value="No" name="q8" class="noanswer nomotor" disabled=""> No </li></ul></div><div class="noreport">&nbsp;</div><div class="success">&nbsp;</div></div></div><img width="0" vspace="0" hspace="0" height="0" alt="" src="/sebin/l/c/blank.jpg"></div></div>
+
+				<!--SITE EXECUTIVE HTML END-->
+		</div>
+		</div>
+		
+		<footer class="footer">
+			<section class="primary-footer container">
+			<section class="county-map-container col-md-6 col-sm-6">
+				<img src="assets/img/footer-county-shape.png" alt="" class="county-map hidden-sm hidden-xs">
+				<div class="county-address">
+					<h2>Baltimore County Government</h2>
+					<p>Historic Courthouse</br>
+					400 Washington Avenue</br>
+					Towson, MD 21204</p>
+					<p><a href="http://mapq.st/rqwGxR" title="Get directions to Baltimore County.">Directions &gt;&gt;</a></p>
+				</div>
+				
+			</section>
+			<section class="county-help col-md-2 col-sm-6">
+				<h2>Help</h2>
+				<ul class="county-help-list">
+					<li class="county-help-list-item">
+						<a href="http://www.baltimorecountymd.gov/Contact_Us/telephone/helpful_numbers.html" title="Find helpful telephone numbers.">Phone Numbers</a>
+					</li>
+					<li class="county-help-list-item">
+						<a href="http://www.baltimorecountymd.gov/imlooking/index.html#all" title="Find a County service.">Find a County Service</a>
+					</li>
+					<li class="county-help-list-item">
+						<a href="http://www.baltimorecountymd.gov/iwant/index.html" title="Report a problem.">Report a Problem</a>
+					</li>
+				</ul>
+			</section>
+			<section class="tranlate-page col-md-2 hidden-sm hidden-xs">
+				<h2>Translate</h2>
+				<ul class="translate-page-list">
+					<li class="american"><a title="English" href="http://baltimorecountymd.gov//">English</a></li>
+					<li class="translate-page-list-item translate-page-list-item-arabic">
+						<a title="Translate this site in Arabic." href="http://translate.google.com/translate?hl=en&amp;sl=en&amp;tl=ar&amp;u=http%3A%2F%2Fbaltimorecountymd.gov/%2F">العربية</a>
+					</li>
+					<li class="translate-page-list-item translate-page-list-item-chinese">
+						<a title="Translate this site in Chinese." href="http://translate.google.com/translate?hl=en&amp;sl=en&amp;tl=zh-CN&amp;u=http%3A%2F%2Fbaltimorecountymd.gov/%2F">中文</a>
+					</li>
+					<li class="translate-page-list-item translate-page-list-item-french">
+						<a title="Translate this site in French." href="http://translate.google.com/translate?hl=en&amp;sl=en&amp;tl=fr&amp;u=http%3A%2F%2Fbaltimorecountymd.gov/%2F">Français</a>
+					</li>
+					<li class="translate-page-list-item translate-page-list-item-russian">
+						<a title="Translate this site in Russian." href="http://translate.google.com/translate?hl=en&amp;sl=en&amp;tl=ru&amp;u=http%3A%2F%2Fbaltimorecountymd.gov/%2F">Русский</a>
+					</li>
+					<li class="translate-page-list-item translate-page-list-item-spanish">
+						<a title="Translate this site in Spanish." href="http://translate.google.com/translate?hl=en&amp;sl=en&amp;tl=es&amp;u=http%3A%2F%2Fbaltimorecountymd.gov/%2F">Español</a>
+					</li>
+				</ul>
+			</section>
+			<section class="county-awards col-md-2 hidden-sm hidden-xs">
+				<h2>Awards</h2>
+				<ul class="county-awards-list">
+					<li class="county-awards-list-item">
+						<a href="http://www.govtech.com/dc/digital-counties/?year=2014" title="Learn more about Baltimore County's Digital Counties Survey Award."><img src="http://baltimorecountymd.gov/sebin/n/b/footer-map-digital-counties.jpg" alt="Image of Digital Counties Survey logo." /></a>
+					</li>
+					<li class="county-awards-list-item">
+						<a href="http://www.govtech.com//internet/2014-Best-of-the-Web-Award-Winners-Announced.html?page=2" title="Learn more about Baltimore County's Best of The Web Award." ><img src="http://baltimorecountymd.gov/sebin/l/i/footer-map-botw.jpg" alt="Image of Best of The Web logo." /></a>
+					</li>
+				</ul>
+			</section>
+			<ul class="social-media-list social-media-list-small inline-list col-sm-12 hidden-md hidden-lg">
+					<li class="social-media-list-item social-media-list-item-facebook">
+						<a href="">
+						</a>
+					</li>
+					<li class="social-media-list-item social-media-list-item-twitter">
+						<a href="">
+						</a>
+					</li>
+					<li class="social-media-list-item social-media-list-item-photos">
+						<a href="">
+						</a>
+					</li>
+					<li class="social-media-list-item social-media-list-item-youtube">
+						<a href="">
+						</a>
+					</li>
+					<li class="social-media-list-item social-media-list-item-bcnow">
+						<a href="">
+						</a>
+					</li>
+				</ul>
+		</section>
+		<section class="secondary-footer">
+			<div class="container">
+			<section class="copyright col-md-4 col-sm-12">
+				<span>&copy; Copyright 2015 Baltimore County Government</span>
+			</section>
+			<nav class="county-links col-md-8 col-sm-12">
+				<ul class="county-links-list inline-list">
+					<li class="county-links-list-item">
+						<a href="http://www.baltimorecountymd.gov/Contact/webmaster?issueid=42" title="Contact Baltimore County.">Contact Baltimore County</a>
+					</li>
+					<li class="county-links-list-item">
+						<a href="http://www.baltimorecountymd.gov/UserGuide/usertermsconditions.html" title="Review the User Terms for the Baltimore County website.">User Terms</a>
+					</li>
+					<li class="county-links-list-item">
+						<a href="http://www.baltimorecountymd.gov/UserGuide/usertermsconditions.html#privacy" title="Review the  Baltimore County privacy policy.">Privacy</a>
+					</li>
+					<li class="county-links-list-item">
+						<a href="http://www.baltimorecountymd.gov/Agencies/humanresources/jobs/index.html" title="View Baltimore County job listings.">Jobs</a>
+					</li>
+					<li class="county-links-list-item">
+						<a href="http://www.baltimorecountymd.gov/UserGuide/sitemap.html" title="View the Baltimore County site map.">Site Map</a>
+					</li>
+					<li class="county-links-list-item">
+						<a href="http://www.baltimorecountymd.gov/Agencies/ada/index.html" title="Learn more about Reasonable Accommodation.">Reasonable Accommodation</a>
+					</li>
+				</ul>
+			</nav>
+			</div>
+		</section>
+		<div class="full-site-container">
+			<button class="btn-link reView view-full-site-btn"  data-coreText='View Full Site' data-defaultText='View Mobile Site'>View Full Site</button>
+		</div>
+	</footer>
+</body>
+</html>
