@@ -273,13 +273,17 @@ body, td {
 	float : left;
 }
 .image_left {
-	border : 1px solid #ccc;
-	padding : 5px;
 	float : left;
-	margin : 10px 15px 10px 0px;
 	font-family : Arial, Helvetica, sans-serif;
 	font-size : 11px;
 	color : #000;
+	margin: 10px 0 0;
+	
+}
+
+.image_left img {
+	margin: 0;
+	width: 100%;
 }
 .image_right {
 	border : 1px solid #ccc;

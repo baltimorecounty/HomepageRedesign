@@ -1,41 +1,9 @@
-#SECalendarTable .SECalendarDay .pastDayWeekend {
-	background-repeat : inherit;
-}
-.SECalendarSmallCal .SECalendarDay .futureDayOtherMonth {
-	background-color : #bbb;
-}
-.SECalendarSmallCal .SECalendarDay .futureDayOtherMonthWeekend {
-	background-color : #bbb;
-}
-.SECalendarDay .controls a {
-	background-position : 5px 4px;
-	background-repeat : no-repeat;
-	display : block;
-	height : 20px;
-	overflow : hidden;
-	text-indent : -1000px;
-	width : 20px;
-}
-.SECalendarDay .controls {
-	padding : 0;
-}
 body {
 	background-color : #ebebeb;
 	margin : 0;
 	color : #444;
 	font-family : Arial, Helvetica, sans-serif;
 	font-size : 75%;
-}
-#maincontainer a, #maincontainer a:link, #maincontainer a:active {
-	color : #002280;
-	text-decoration : none;
-}
-#maincontainer a:hover {
-	text-decoration : underline;
-}
-#maincontainer p {
-	/* margin : 0 0 15px 0; */
-	line-height : 1.5em;
 }
 .clear {
 	clear : both;
@@ -54,7 +22,6 @@ body {
 	padding : 0;
 	display : inline-block;
 }
-
 #backgroundshadow {
 	width : 100%;
 	height : auto;
@@ -103,74 +70,6 @@ body {
 	float : right;
 	display : inline;
 }
-#tertiary_navigation {
-	background-color : #333;
-	width : 100%;
-	margin : 0px;
-	padding : 0px;
-}
-#tertiary_nav {
-	margin : 0 auto;
-	display : inline;
-	height : auto;
-}
-#tertiary_nav p {
-	margin : 0;
-	height : auto;
-}
-#tertiary_nav ul {
-	list-style-type : none;
-	padding : 13px 0 0 0;
-	margin : 0;
-}
-#tertiary_nav li {
-	float : left;
-	font-family : Arial, Helvetica, sans-serif;
-	font-size : 11px;
-	font-weight : normal;
-	height : 20px;
-	list-style-type : none;
-	width : auto;
-	color : #ccc;
-	margin : 2px 0 0 0;
-}
-#tertiary_nav li a {
-	border-right : 1px solid #ccc;
-	color : #ccc;
-	padding : 0 0px;
-	text-decoration : none;
-}
-#tertiary_nav li.first a:hover {
-	color : #ccc;
-	padding : 0 20px 0 0;
-	text-decoration : underline;
-}
-#tertiary_nav li.last a {
-	border : none;
-	color : #ccc;
-	padding : 0 0 0 20px;
-	text-decoration : none;
-}
-#tertiary_nav li.first a {
-	border-right : 1px solid #ccc;
-	color : #ccc;
-	padding : 0 20px 0 0;
-	text-decoration : none;
-}
-#tertiary_nav li.resizebutton a {
-	border : none;
-	color : #ccc;
-	padding : 0 0 0 5px;
-	text-decoration : none;
-}
-#tertiary_nav li.textresizer {
-	margin : 0 0 0 10px;
-	padding : 0;
-}
-#tertiary_search {
-	margin : -6px 0 0 10px;
-	padding : 0;
-}
 #sa {
 	background-color : #feb30b;
 	color : #000;
@@ -216,11 +115,50 @@ body {
 	z-index : 10;
 	background-color : #666;
 }
+#megamenusub ul {
+	width : 140px;
+	float : left;
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 12px;
+	background-color : #FFF;
+	padding : 0px;
+	margin : 10px;
+	list-style-type : none;
+}
+#megamenusub li {
+	font-size : 12px;
+	font-weight : normal;
+	color : #333;
+	margin : 0;
+	padding : 0;
+	width : 140px;
+}
+#megamenusub ul li.title {
+	font-family : Arial, Helvetica, sans-serif;
+	color : #666;
+	font-weight : bold;
+	border-bottom : 3px solid #cacaca;
+	border-top : 1px solid #cacaca;
+	margin : 0 10px 5px 0;
+	padding : 5px 0;
+}
+#megamenusub ul li a {
+	color : #002280;
+	text-decoration : none;
+	border : none;
+	font-weight : normal;
+	font-size : 12px;
+	line-height : 22px;
+	margin : 0;
+}
+#megamenusub ul li a:hover {
+	text-decoration : underline;
+}
 #navigation_primary {
 	width : 744px;
 	height : 99px;
-	border-left : 1px solid #c51110;
-	border-right : 1px solid #990033;
+	border-left : 1px solid #663399;
+	border-right : 1px solid #663399;
 	float : right;
 }
 #navigation_primary p {
@@ -314,10 +252,10 @@ body {
 	padding : 0 0 0 25px;
 	margin : 0;
 	text-decoration : underline;
+	background-image : url(http://baltimorecountymd.gov/sebin/m/n/most-requested-arrow-hover.gif);
 	background-position : left center;
 	background-repeat : no-repeat;
 	display : block;
-	background-image : url(http://baltimorecountymd.gov/sebin/m/n/most-requested-arrow-hover.gif);
 }
 #container_localnavigation li.title {
 	margin : 0;
@@ -533,15 +471,17 @@ body {
 }
 #Alert {
 	height : auto;
-	width : 670px;
+	width : 620px;
 	float : left;
 	margin : 0 0 20px;
-	padding : 10px;
-	line-height : 2em;
+	padding : 10px 10px 10px 60px;
 	background-color : #feb;
+	border : 1px solid #ccc;
+	font-size : .8em;
+	line-height : 2em;
+	background-image : url(http://baltimorecountymd.gov/sebin/h/k/alert-warning-symbol.jpg);
 	background-position : top left;
 	background-repeat : no-repeat;
-	border : 1px solid #ccc;
 }
 #county_news p {
 	margin : 10px;
@@ -643,6 +583,7 @@ body {
 	height : auto;
 	margin : 0px 0 5px 10px;
 	width : 180px;
+	clear : both;
 }
 #relatedtopics table {
 	background-image : url(http://baltimorecountymd.gov/sebin/i/f/background-related-topics.gif);
@@ -653,12 +594,12 @@ body {
 #relatedtopics a.smalltext {
 	padding : 5px 0;
 	border-bottom : 1px solid #cacaca;
-	display : inline-block;
-	line-height: 16px;
+	display : inline;
 	margin : 0;
 	width : 100%;
 	font-weight : normal;
 	text-decoration : none;
+	float : left;
 }
 #relatedtopics .smalltext {
 	padding : 20px 0 15px;
@@ -673,7 +614,7 @@ body {
 	color : #002280;
 }
 #baco_breadcrumb {
-	margin : 10px 0 15px;
+	margin : 10px 0 10px;
 	display : inline-block;
 }
 #agencyheader {
@@ -741,7 +682,6 @@ body {
 #baco_subnav a.smalltext {
 	border-bottom : 1px solid #adadad;
 	display : inline-block;
-	line-height: 16px;
 	margin : 0;
 	padding : 5px 0 5px 25px;
 	width : 190px;
@@ -758,7 +698,7 @@ body {
 #services {
 	float : left;
 	height : auto;
-	margin : 0;
+	margin : 0 ;
 	width : 230px;
 	background-position : right top;
 	background-repeat : no-repeat;
@@ -778,7 +718,6 @@ body {
 	color : #002280;
 	font-family : Arial,Helvetica,sans-serif;
 	font-size : 12px;
-	line-height: 16px;
 	margin : 0;
 	padding : 5px 0 5px 25px;
 	text-decoration : none;
@@ -822,14 +761,35 @@ body {
 	display : inline-block;
 }
 #calloutarea {
-	width : 180px;
-	margin : 10px 0;
+	width : 170px;
+	margin : 10px ;
 	height : auto;
 	float : right;
 }
 #SESearchLink {
 	padding : 3px;
 	margin-top : 10px;
+}
+#SECalendarTable {
+	border-right-width : 1px;
+	border-left-width : 1px;
+	border-right-style : solid;
+	border-left-style : solid;
+	border-right-color : #666;
+	border-left-color : #666;
+	width : 1000px;
+}
+#SECalendarTable .SECalendarDay {
+	font-weight : bold;
+	background-color : #666;
+	padding-top : 5px;
+	padding-bottom : 5px;
+	padding-left : 10px;
+	border-bottom-width : 1px;
+	border-bottom-style : solid;
+	border-bottom-color : #666;
+	color : #FFF;
+	width : 100px;
 }
 #SECalendarSunday {
 	padding : 10px;
@@ -1473,7 +1433,6 @@ select {
 	height : 50px;
 }
 #CalendarContainer {
-	background-image : url("/se/images/mod/semod_eventcal/right_arrow.gif");
 }
 #weather_update_container {
 	width : 200px;
@@ -1481,6 +1440,7 @@ select {
 	background-repeat : no-repeat;
 	background-position : center top;
 	margin-left : 15px;
+	background-color : #ffcc4b;
 }
 #weather_update_container .description {
 }
@@ -1504,7 +1464,6 @@ select {
 	border-right : 1px solid #cf1110;
 }
 #weather_update_container h3.title {
-	margin : 0 0 20px;
 }
 #weather_update_container h3 {
 	font-size : 11px;
@@ -1523,9 +1482,7 @@ select {
 	font-family : Arial, Helvetica, sans-serif;
 	font-weight : normal;
 	color : #fff;
-	margin : 3px 10px 0 0;
-	float : left;
-	display : inline;
+	margin : 3px 0 0 0;
 }
 #weather_update_title p.large {
 	color : #fff;
@@ -1544,8 +1501,6 @@ select {
 }
 #weather_update_title .right {
 	float : left;
-	display : inline;
-	margin : -13px 0 0;
 }
 #feed_container_left {
 	left : right;
@@ -2038,9 +1993,6 @@ a.selectedtoggler img {
 }
 #backgroundgradient img, #backgroundgradient div {
 	behavior : url(http://baltimorecountymd.gov/sebin/h/k/iepngfix.htc);
-	/* clear: both; */
-}
-#SECalendarSearch table {
 }
 #container_localnavigation ul.sub {
 	padding : 0;
@@ -2049,9 +2001,252 @@ a.selectedtoggler img {
 #mainContent ol {
 	line-height : 1.5em;
 }
-#blogimagecontainer {
-	margin : 10px 0 0 0;
+#blogimagecontainer img {
+	border: none;
+	margin: 10px 0 0;
+	padding: 0;
+}
+.seBlogViewHeader h1 {
+	border-bottom : 2px solid #c51110;
+	padding : 5px;
+}
+.seBlogViewPostArea {
 	float : left;
+	width : 442px;
+}
+.seBlogViewPostContent {
+	padding-right : 8px;
+	width : 480px;
+	float : left;
+}
+.seBlogViewPostKeywords {
+	float : none;
+	font-family : Arial,Helvetica,sans-serif;
+	font-size : 11px;
+	font-style : italic;
+	height : auto;
+	margin-bottom : 10px;
+	padding : 3px;
+	width : 350px;
+}
+.seBlogViewCommentSummary {
+	display : none;
+}
+.seBlogViewPostTitle {
+	font-size : 16px;
+	font-weight : bold;
+	padding : 8px 8px 8px 0;
+	width : 500px;
+	border-top : 6px solid #CACACA;
+}
+.seBlogViewKeywords {
+}
+.seBlogViewKeywords ul {
+	-moz-padding-start : 0;
+	display : block;
+	list-style-type : none;
+	margin : 0;
+	padding : 0;
+}
+.seBlogViewKeywords ul li {
+	background-color : #FFFFFF;
+	border-bottom : 1px solid #cacaca;
+	padding : 5px 5px 5px 0;
+}
+.seBlogViewAuxArea {
+	float : right;
+	width : 180px;
+}
+.seBlogViewWrapper {
+	float : left;
+	height : auto;
+	width : 710px;
+}
+.seBlogViewLinks {
+	padding-bottom : 10px;
+	padding-top : 10px;
+}
+.seBlogViewPostContent img {
+	float : left;
+	border : 1px solid #ccc;
+	padding : 5px;
+	margin : 10px 15px 10px 0;
+}
+.seBlogViewKeywordsDesc {
+	border-top : 6px solid #CACACA;
+	border-bottom : 1px solid #CACACA;
+	font-family : Arial, Helvetica, sans-serif;
+	font-weight : bold;
+	padding : 3px 0;
+	text-transform : uppercase;
+}
+.seBlogViewSmallCalDesc {
+	border-bottom : 1px solid #CACACA;
+	border-top : 6px solid #CACACA;
+	font-family : Arial, Helvetica, sans-serif;
+	padding : 3px 0;
+	font-weight : bold;
+	text-transform : uppercase;
+	margin : 20px 0 0 ;
+}
+.seBlogViewLinksDesc {
+	border-bottom : 1px solid #CACACA;
+	border-top : 6px solid #CACACA;
+	font-family : Arial, Helvetica, sans-serif;
+	font-weight : bold;
+	text-transform : uppercase;
+	padding : 3px 0;
+	margin : 0 0 10px;
+}
+.seBlogViewCommentForm {
+	display : none;
+}
+#mainContent .seBlogViewPostTitle a {
+	text-decoration : none;
+}
+.seBlogViewPagingArea {
+	float : left;
+	display : inline;
+	margin : 0 0 25px;
+	width : 500px;
+	border-bottom : 1px solid #cacaca;
+	padding : 0 0 15px;
+}
+.seBlogViewPostDate {
+	margin : 0 0 15px;
+}
+.seBlogViewPagingPrev {
+	background-color : #FEB30c;
+	border : 1px solid #666;
+	color : #000;
+	cursor : pointer;
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 1em;
+	font-weight : bold;
+	height : 22px;
+	text-align : center;
+	text-transform : uppercase;
+	width : 90px;
+	float : left;
+	padding : 3px 0 0 ;
+	margin : 20px 0 0;
+}
+#mainContent .seBlogViewPagingPrev a {
+	color : #000;
+	text-decoration : none;
+	display : block;
+	padding : 3px 0 0;
+}
+.seBlogViewPagingNext {
+	background-color : #feb30c;
+	border : 1px solid #666;
+	color : #000;
+	cursor : pointer;
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 1em;
+	font-weight : bold;
+	height : 22px;
+	text-align : center;
+	text-transform : uppercase;
+	width : 90px;
+	float : right;
+	padding : 3px 0 0 ;
+	margin : 20px 0 0;
+}
+#mainContent .seBlogViewPagingNext a {
+	color : #000;
+	text-decoration : none;
+	display : block;
+	padding : 3px 0 0;
+}
+#mainContent .seBlogViewSmallCal table {
+	width : 180px;
+}
+#mainContent .seBlogViewSmallCal td.seSelect {
+}
+#seBlogTabs {
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 1.5em;
+	background-color : #203e6f;
+	display : block;
+	margin : 13px 0 5px;
+	width : 710px;
+	border-top : 6px solid #203e6f;
+	background-image : url(http://baltimorecountymd.gov/sebin/t/w/iwatchblogtabs.jpg);
+	background-repeat : repeat-x;
+	background-position : top;
+}
+#seBlogTabs ul li a.active {
+	display : inline-block;
+	list-style-type : none;
+	padding : 5px 20px 6px;
+	border-bottom : 2px solid #fff;
+	border-right : 1px solid #cacaca;
+	border-left : 1px solid #cacaca;
+	background-color : #fff;
+	text-decoration : none;
+	color : #203e6f;
+	font-weight : bold;
+}
+#seBlogTabs ul li a {
+	display : inline-block;
+	list-style-type : none;
+	padding : 5px 20px 6px;
+	border-bottom : 1px solid #203e6f;
+	font-weight : normal;
+	text-decoration : none;
+	color : #fff;
+}
+#seBlogTabs ul {
+	margin : 0 0 0 20px;
+	padding : 0;
+	display : inline-block;
+}
+#seBlogTabs ul li {
+	display : inline;
+	list-style-type : none;
+}
+#seBlogTabsContainer {
+	float : left;
+}
+.seBlogViewKeywords ul li a {
+	margin : 0;
+	padding : 0;
+	display : block;
+	width : 100%;
+}
+.seBlogViewletTitle {
+	border-top : 6px solid #CACACA;
+	font-size : 16px;
+	font-weight : bold;
+	padding : 8px 8px 8px 0;
+	width : 500px;
+	display : block;
+}
+.seBlogViewletDate {
+	margin : 0 0 15px;
+}
+.seBlogViewletPost {
+	padding-right : 8px;
+	width : 480px;
+	margin : 0 0 40px;
+}
+.seBlogViewletPost img {
+	border : 1px solid #CCCCCC;
+	float : left;
+	margin : 10px 15px 10px 0;
+	padding : 5px;
+}
+#seBlogTabs ul li a:hover {
+	background-color : #3c74c0;
+	border-bottom : 1px solid #3c74c0;
+}
+#seBlogTabs ul li a.active:hover {
+	background-color : #fff;
+	border-bottom : 2px solid #fff;
+}
+.seBlogViewPostAuthor {
+	display : none;
 }
 #navigation_primary h2 {
 	color : #fff;
@@ -2060,332 +2255,8 @@ a.selectedtoggler img {
 	margin : 20px 0 0 50px;
 	padding : 10px 4px 5px 0;
 }
-#SECalendarTable td, #SECalendarTable th, .SECalendarSmallCal td, .SECalendarSmallCal td, #SECalendarWrapper, #SECalendarSummaryWrapper, #SECalendarListWrapper, #SECalendarEventWrapper, #SEEventForm {
-	font-family : Arial, Helvetica, sans-serif;
-	font-size : 13px;
-}
-.SECalendarKeyword label, .SECalendarLocation label, .SECalendarType label {
-	display : inline-block;
-	font-weight : bold;
-	padding : 4px;
-	vertical-align : top;
-	width : 84px;
-	margin : 15px 0 0;
-}
-.SECalendarKeyword select, .SECalendarLocation select, .SECalendarType select, .SECalendarKeyword input, .SECalendarLocation input, .SECalendarType input {
-	width: 100%;
-}
-.SECalendarKeyword, .SECalendarLocation, .SECalendarType {
-}
-.SEApplicationForm {
-}
-.SEApplicationSelector {
-}
-.SEApplicationSubmit {
-	display : inline;
-	float : left;
-	margin : 30px 0 50px;
-	clear : both;
-}
-.SEApplicationText {
-}
-.SEApplicationCheckbox {
-}
-.SEApplicationTextArea {
-}
-.SEClear {
-	height : 0px;
-}
-.rssLink {
-}
-#SECalendarSearch {
-	float : left;
-	height : 100%;
-	margin-bottom : 20px;
-	width : 176px;
-	padding : 10px;
-	border-top : 30px solid #c51110;
-	clear: both;
-	background-image: url(http://baltimorecountymd.gov/sebin/p/w/gradient-calendar.jpg);
-}
-#maincontainer #SECalendarSearch table {
-	border-collapse-separate;
-}
-#calendarSearchForm {
-	margin : 120px 10px 10px;
-	border-top : 1px solid #999;
-	padding : 15px 0 0;
-}
-.SECalendarFilterSelected {
-	background-color : #990000;
-	padding : 0 5px;
-}
-.SECalendarDay.controls {
-	padding : 0;
-}
-.SECalendarDay.controls a {
-	background-image : SECalendarDay controls;
-	background-position : 5px 4px;
-	background-repeat : no-repeat;
-	display : block;
-	height : 20px;
-	overflow : hidden;
-	text-indent : -1000px;
-	width : 20px;
-}
-#SECalendarSmallCalPrevious a {
-	background-image : url("http://baltimorecountymd.gov/sebin/w/v/left_arrow.gif");
-	background-position : 5px 4px;
-	background-repeat : no-repeat;
-}
-#SECalendarSmallCalMonth a {
-	background : none repeat scroll 0 0 transparent;
-	height : auto;
-	text-indent : 0;
-	width : auto;
-}
-#SECalendarSmallCalNext a {
-	background-image : url("http://baltimorecountymd.gov/sebin/i/w/right_arrow.gif");
-	background-position : 5px 4px;
-	background-repeat : no-repeat;
-}
-.SECalendarFilter {
-	background-color : #c51110;
-	color : #fff;
-	display : inline;
-	font-size : 1.1em;
-	font-weight : bold;
-	margin : 0 10px 10px;
-	padding : 8px;
-	width: 480px;
-	float : left;
-}
-#SECalendarListWrapper {
-	display : inline-table;
-	width : 100%;
-	/* background-image : url(http://baltimorecountymd.gov/sebin/p/w/gradient-calendar.jpg); */
-	background-position : left top;
-	background-repeat : repeat-y;
-	margin : 0 0 30px;
-}
-#maincontainer #SECalendarListWrapper .SECalendarFilter a, #maincontainer #SECalendarListWrapper #SECalendarSmallCalMonth a {
-	color: white;
-	text-decoration: underline;
-}
-.SECalendarListEvents {
-	float : left;
-}
-.SECalendarListEvents table {
-	width : 480px;
-	margin : 0 0 0 10px;
-}
-.SECalendarListEvents .rssLink {
-	background-image : url("http://baltimorecountymd.gov/se/images/mod/semod_eventcal/rss.gif");
-	background-repeat : no-repeat;
-	display : block;
-	height: 15px;
-	overflow : hidden;
-	text-decoration : none;
-	width: 35px;
-	font-size : 0px;
-	border : 2px solid #feb30c;
-	margin : -33px 0 40px 440px;
-}
-.SECalendarListEvents td {
-	line-height: 16px;
-	border-bottom : 1px dotted #333;
-	font-size : 12px;
-	padding : 15px 4px;
-}
-td.SECalendarEventDate {
-	border-bottom : 1px solid #ccc;
-	font-size : 16px;
-	font-weight : bold;
-	padding : 10px 20px 10px 0;
-	border-top : 6px solid #ccc;
-}
-#SECalendarListWrapper .SECalendarSmallCal {
-	float : left;
-	margin : 0 0 0 -190px;
-	padding : 0;
-	clear : none;
-	border-collapse: separate;
-}
-.SECalendarProperty p {
-	width : 95%;
-}
-.SECalendarPropertyLabel {
-	font-weight : bold;
-	clear : both;
-	margin : 20px 50px 0 0;
-	width : 70px;
-}
-#SECalendarEventWrapper div.SECalendarEventDetails {
-	border : 1px solid #ccc;
-	display : inline-block;
-	width : 99.8%;
-	margin : 0 0 20px;
-}
-#SECalendarEventWrapper div.SECalendarEventName h3 {
-	font-size : 1.6em;
-}
-#SECalendarEventWrapper .SECalendarBackLink {
-	margin : 0 0 20px;
-	display : block;
-}
-#SECalendarEventWrapper .SECalendarEventActions {
-	background-color : #ebebeb;
-	border-top : 3px solid #ccc;
-	padding : 15px 10px;
-	border-left : 1px solid #ccc;
-	border-right : 1px solid #ccc;
-}
-#SECalendarEventWrapper .SECalendarEventActions ul {
-	list-style-type : none;
-	display : inline;
-}
-#SECalendarEventWrapper .SECalendarEventActions ul li {
-	float : left;
-}
-#SECalendarEventWrapper .SECalendarEventActions ul li a {
-}
-#SECalendarEventWrapper .SECalendarEventActions ul li a:hover {
-}
-#SECalendarEventWrapper .SECalendarEventActions ul li.eventDownload {
-}
-#SECalendarEventWrapper .SECalendarEventActions ul li.eventReminder {
-}
-#SECalendarEventWrapper .SECalendarEventActions ul li.eventRegistration {
-}
-#SECalendarEventWrapper .SECalendarEventActions ul li.eventShare {
-}
-#SECalendarEventWrapper .SECalendarEventActions ul li.eventDownload a {
-	background-image : url("http://baltimorecountymd.gov/sebin/l/g/button-gradient.jpg");
-	background-repeat : repeat-x;
-	background-position : top;
-	border : 1px solid #999;
-	color : #000;
-	cursor : pointer;
-	font-family : Arial, Helvetica, sans-serif;
-	font-size : .9em;
-	font-weight : normal;
-	height : 22px;
-	margin : 0 25px 0 0;
-	text-align : center;
-	text-decoration : none;
-	padding : 2px 10px 3px;
-}
-#SECalendarEventWrapper .SECalendarEventActions ul li.eventReminder a {
-	border : 1px solid #999;
-	color : #000;
-	cursor : pointer;
-	font-family : Arial,Helvetica,sans-serif;
-	font-size : .9em;
-	font-weight : normal;
-	height : 22px;
-	margin : 0 25px 0 0;
-	text-align : center;
-	text-decoration : none;
-	padding : 2px 10px 3px;
-	background-image : url("http://baltimorecountymd.gov/sebin/l/g/button-gradient.jpg");
-	background-position : top;
-	background-repeat : repeat-x;
-}
-#SECalendarEventWrapper .SECalendarEventActions ul li.eventShare a {
-	border : 1px solid #999;
-	color : #000;
-	cursor : pointer;
-	font-family : Arial, Helvetica, sans-serif;
-	font-size : .9em;
-	font-weight : normal;
-	height : 22px;
-	margin : 0 25px 0 0;
-	text-align : center;
-	text-decoration : none;
-	padding : 2px 10px 3px;
-	background-image : url(http://baltimorecountymd.gov/sebin/l/g/button-gradient.jpg);
-	background-repeat : repeat-x;
-	background-position : top;
-}
-#SECalendarEventWrapper .SECalendarPropertyLabel {
-	margin : 20px 0 0 15px;
-	font-size : 1.1em;
-	width : 95%;
-}
-#SECalendarEventWrapper .SECalendarProperty {
-	float : left;
-	width : 99%;
-	margin : 0;
-	padding : 15px;
-}
-#SECalendarEventWrapper .SECalendarLocation {
-}
-#SECalendarEventWrapper .SECalendarAddress {
-}
-#SECalendarEventWrapper .SECalendarMapLink {
-}
-#SECalendarEventWrapper .SECalendarContactName {
-}
-#SECalendarEventWrapper .SECalendarContactEmail {
-}
-#SECalendarEventWrapper .SECalendarContactPhone {
-}
-.SECalendarReminderName, .SECalendarReminderEmail, .SECalendarReminderOccurence, .SECalendarReminderNotification {
-	margin : 0 0 10px -50px;
-}
-.SECalendarReminderName label, .SECalendarReminderEmail label, .SECalendarReminderOccurence label {
-	font-weight : bold;
-	font-size : 1em;
-	margin : 0 0 0 50px;
-	display : inline;
-}
-.SECalendarReminderName input, .SECalendarReminderEmail input, .SECalendarReminderOccurence input {
-	margin : 0;
-}
-.SECalendarShareName, .SECalendarShareEmail, .SECalendarShareFriendEmail, .SECalendarShareMessage {
-	margin : 0 0 10px -50px;
-	padding : 10px;
-}
-.SECalendarShareName label, .SECalendarShareEmail label, .SECalendarShareFriendEmail label, .SECalendarShareMessage label {
-	margin : 0 0 0 40px;
-	display : inline;
-}
-.SECalendarSmallCal .SECalendarDay.futureDayOtherMonth {
-	background-color : #bbb;
-}
-.SECalendarSmallCal .SECalendarDay.futureDayOtherMonthWeekend {
-	background-color : #bbb;
-}
-.SECalendarSmallCal .SECalendarDay a {
-	color : #333;
-}
-.SECalendarSmallCal .SECalendarDay.SECalendarSelectedDay {
-	background-color : #feb30c;
-}
-#maincontainer .SECalendarCurrentDay a {
-	color: gray;
-}
-.SECalendarSmallCal .SECalendarSelectedWeek {
-	background-color : #feb30c;
-}
-#SECalendarSmallCalMonth {
-	background-color : #c51110;
-}
-.SECalendarFilter a {
-	color : #fff;
-	font-weight : normal;
-	display : inline-block;
-	margin : 0 7px;
-}
-#SECalendarEventWrapper hr {
+#SEBlogViewCommentForm {
 	display : none;
-}
-#SECalendarReminder {
-	border-bottom : 1px solid #ccc;
-	padding : 0 0 80px;
-}
-.SECalendarReminderNotification {
-	margin : 0;
 }
 #footer_list ul li.facebook {
 	list-style-image : url("http://baltimorecountymd.gov/sebin/z/j/footer-facebookicon.png");
@@ -2424,368 +2295,318 @@ td.SECalendarEventDate {
 #footer_county_icon img {
 	margin : 0 0 25px;
 }
-#seBlogTabs {
-	background-color : #C51110;
-	background-image : url("http://baltimorecountymd.gov/sebin/r/d/seblogtabs-gradient.jpg");
-	background-position : center top;
-	background-repeat : repeat-x;
-	border-top : 6px solid #C51110;
-	display : inline-block;
-	font-family : Arial,Helvetica,sans-serif;
-	font-size : 1.2em;
-	margin : 0 0 5px;
-	width : 710px;
-}
-#seBlogTabs ul li a.active {
-	background-color : #FFFFFF;
-	border-bottom : 2px solid #FFFFFF;
-	border-left : 1px solid #CACACA;
-	border-right : 1px solid #CACACA;
-	color : #C51110;
-	display : inline-block;
-	font-weight : bold;
-	list-style-type : none;
-	padding : 5px 20px 6px;
-	text-decoration : none;
-}
-#seBlogTabs ul li a {
-	border-bottom : 1px solid #940D0C;
-	color : #FFFFFF;
-	display : inline-block;
-	font-weight : normal;
-	list-style-type : none;
-	padding : 5px 20px 6px;
-	text-decoration : none;
-}
-#seBlogTabs ul {
-	display : inline-block;
-	margin : 0 0 0 20px;
+.facebookfeedbox {
+	border : 1px solid #3B5998;
+	clear : both;
+	float : right;
+	margin : 0 13px 20px 10px;
 	padding : 0;
+	width : 170px;
 }
-#seBlogTabs ul li {
-	display : inline;
-	list-style-type : none;
+.facebookfeedbox h1 {
+	background-color : #3b5998;
+	display : block;
+	margin : 0;
 }
-#seBlogTabsContainer {
-	float : left;
-}
-#seBlogTabs ul li a:hover {
-	background-color : #F11D1B;
-	border-bottom : 1px solid #F11D1B;
-}
-#seBlogTabs ul li a.active:hover {
-	background-color : #FFFFFF;
-	border-bottom : 2px solid #FFFFFF;
-}
-#Apply a.apply:hover {
-	background-color : #FFFFFF;
-	border-bottom : 2px solid #FFFFFF;
-}
-#Apply a.apply {
-	background-color : #FFFFFF;
-	border-bottom : 2px solid #FFFFFF;
-	border-left : 1px solid #CACACA;
-	border-right : 1px solid #CACACA;
-	color : #C51110;
-	display : inline-block;
-	font-weight : bold;
-	list-style-type : none;
-	padding : 5px 20px 6px;
+#mainContent .facebookfeedbox h1 a {
+	color : #FFFFFF;
+	display : none;
+	font-size : 0.6em;
+	padding : 0 10px 5px 40px;
 	text-decoration : none;
 }
-#FollowUp a.followup:hover {
-	background-color : #FFFFFF;
-	border-bottom : 2px solid #FFFFFF;
-}
-#FollowUp a.followup {
-	background-color : #FFFFFF;
-	border-bottom : 2px solid #FFFFFF;
-	border-left : 1px solid #CACACA;
-	border-right : 1px solid #CACACA;
-	color : #C51110;
-	display : inline-block;
-	font-weight : bold;
-	list-style-type : none;
-	padding : 5px 20px 6px;
-	text-decoration : none;
-}
-#Pay a.pay:hover {
-	background-color : #FFFFFF;
-	border-bottom : 2px solid #FFFFFF;
-}
-#Pay a.pay {
-	background-color : #FFFFFF;
-	border-bottom : 2px solid #FFFFFF;
-	border-left : 1px solid #CACACA;
-	border-right : 1px solid #CACACA;
-	color : #C51110;
-	display : inline-block;
-	font-weight : bold;
-	list-style-type : none;
-	padding : 5px 20px 6px;
-	text-decoration : none;
-}
-#Report a.report:hover {
-	background-color : #FFFFFF;
-	border-bottom : 2px solid #FFFFFF;
-}
-#Report a.report {
-	background-color : #FFFFFF;
-	border-bottom : 2px solid #FFFFFF;
-	border-left : 1px solid #CACACA;
-	border-right : 1px solid #CACACA;
-	color : #C51110;
-	display : inline-block;
-	font-weight : bold;
-	list-style-type : none;
-	padding : 5px 20px 6px;
-	text-decoration : none;
-}
-#Request a.request:hover {
-	background-color : #FFFFFF;
-	border-bottom : 2px solid #FFFFFF;
-}
-#Request a.request {
-	background-color : #FFFFFF;
-	border-bottom : 2px solid #FFFFFF;
-	border-left : 1px solid #CACACA;
-	border-right : 1px solid #CACACA;
-	color : #C51110;
-	display : inline-block;
-	font-weight : bold;
-	list-style-type : none;
-	padding : 5px 20px 6px;
-	text-decoration : none;
-}
-#AllInformation a.allinformation:hover {
-	background-color : #FFFFFF;
-	border-bottom : 2px solid #FFFFFF;
-}
-#AllInformation a.allinformation {
-	background-color : #FFFFFF;
-	border-bottom : 2px solid #FFFFFF;
-	border-left : 1px solid #CACACA;
-	border-right : 1px solid #CACACA;
-	color : #C51110;
-	display : inline-block;
-	font-weight : bold;
-	list-style-type : none;
-	padding : 5px 20px 6px;
-	text-decoration : none;
-}
-#ResidentInformation a.residentinformation:hover {
-	background-color : #FFFFFF;
-	border-bottom : 2px solid #FFFFFF;
-}
-#ResidentInformation a.residentinformation {
-	background-color : #FFFFFF;
-	border-bottom : 2px solid #FFFFFF;
-	border-left : 1px solid #CACACA;
-	border-right : 1px solid #CACACA;
-	color : #C51110;
-	display : inline-block;
-	font-weight : bold;
-	list-style-type : none;
-	padding : 5px 20px 6px;
-	text-decoration : none;
-}
-#BusinessInformation a.businessinformation:hover {
-	background-color : #FFFFFF;
-	border-bottom : 2px solid #FFFFFF;
-}
-#BusinessInformation a.businessinformation {
-	background-color : #FFFFFF;
-	border-bottom : 2px solid #FFFFFF;
-	border-left : 1px solid #CACACA;
-	border-right : 1px solid #CACACA;
-	color : #C51110;
-	display : inline-block;
-	font-weight : bold;
-	list-style-type : none;
-	padding : 5px 20px 6px;
-	text-decoration : none;
-}
-#GovernmentInformation a.governmentinformation:hover {
-	background-color : #FFFFFF;
-	border-bottom : 2px solid #FFFFFF;
-}
-#GovernmentInformation a.governmentinformation {
-	background-color : #FFFFFF;
-	border-bottom : 2px solid #FFFFFF;
-	border-left : 1px solid #CACACA;
-	border-right : 1px solid #CACACA;
-	color : #C51110;
-	display : inline-block;
-	font-weight : bold;
-	list-style-type : none;
-	padding : 5px 20px 6px;
-	text-decoration : none;
-}
-#VisitorInformation a.visitorinformation:hover {
-	background-color : #FFFFFF;
-	border-bottom : 2px solid #FFFFFF;
-}
-#VisitorInformation a.visitorinformation {
-	background-color : #FFFFFF;
-	border-bottom : 2px solid #FFFFFF;
-	border-left : 1px solid #CACACA;
-	border-right : 1px solid #CACACA;
-	color : #C51110;
-	display : inline-block;
-	font-weight : bold;
-	list-style-type : none;
-	padding : 5px 20px 6px;
-	text-decoration : none;
-}
-#AnAgency a.anagency:hover {
-	background-color : #FFFFFF;
-	border-bottom : 2px solid #FFFFFF;
-}
-#AnAgency a.anagency {
-	background-color : #FFFFFF;
-	border-bottom : 2px solid #FFFFFF;
-	border-left : 1px solid #CACACA;
-	border-right : 1px solid #CACACA;
-	color : #C51110;
-	display : inline-block;
-	font-weight : bold;
-	list-style-type : none;
-	padding : 5px 20px 6px;
-	text-decoration : none;
-}
-#MyRepresentative a.myrepresentative:hover {
-	background-color : #FFFFFF;
-	border-bottom : 2px solid #FFFFFF;
-}
-#MyRepresentative a.myrepresentative {
-	background-color : #FFFFFF;
-	border-bottom : 2px solid #FFFFFF;
-	border-left : 1px solid #CACACA;
-	border-right : 1px solid #CACACA;
-	color : #C51110;
-	display : inline-block;
-	font-weight : bold;
-	list-style-type : none;
-	padding : 5px 20px 6px;
-	text-decoration : none;
-}
-#AnEmployee a.anemployee:hover {
-	background-color : #FFFFFF;
-	border-bottom : 2px solid #FFFFFF;
-}
-#AnEmployee a.anemployee {
-	background-color : #FFFFFF;
-	border-bottom : 2px solid #FFFFFF;
-	border-left : 1px solid #CACACA;
-	border-right : 1px solid #CACACA;
-	color : #C51110;
-	display : inline-block;
-	font-weight : bold;
-	list-style-type : none;
-	padding : 5px 20px 6px;
-	text-decoration : none;
-}
-#IDontKnow a.idontknow:hover {
-	background-color : #FFFFFF;
-	border-bottom : 2px solid #FFFFFF;
-}
-#IDontKnow a.idontknow {
-	background-color : #FFFFFF;
-	border-bottom : 2px solid #FFFFFF;
-	border-left : 1px solid #CACACA;
-	border-right : 1px solid #CACACA;
-	color : #C51110;
-	display : inline-block;
-	font-weight : bold;
-	list-style-type : none;
-	padding : 5px 20px 6px;
-	text-decoration : none;
-}
-.taxStepNext {
-	background-color : #FEB30B;
-	border : medium none;
-	color : #000000;
-	cursor : pointer;
-	font-family : Arial,Helvetica,sans-serif;
-	font-size : 1em;
-	font-weight : bold;
-	height : 22px;
-	margin : 0 25px 0 0;
-	padding : 5px 15px;
-	text-align : center;
-	text-transform : uppercase;
-	width : auto;
-	text-decoration : none;
-}
-.taxStepPrev {
-	background-color : #FEB30B;
-	border : medium none;
-	color : #000000;
-	cursor : pointer;
-	font-family : Arial,Helvetica,sans-serif;
-	font-size : 1em;
-	font-weight : bold;
-	height : 22px;
-	margin : 0 25px 0 0;
-	padding : 5px 15px;
-	text-align : center;
-	text-transform : uppercase;
-	width : auto;
-	text-decoration : none;
-}
-.SECalendarFilterSelected a {
-	color : #000;
-	font-weight : bold;
-	text-decoration : none;
-}
-#SECalendarEventWrapper .SECalendarEventActions ul li.eventRegistration a {
-	border : 1px solid #999;
-	color : #000;
-	cursor : pointer;
-	font-family : Arial, Helvetica, sans-serif;
-	font-size : .9em;
+#mainContent .facebookfeedbox h3 a {
 	font-weight : normal;
-	height : 22px;
-	margin : 0 25px 0 0;
-	text-align : center;
 	text-decoration : none;
-	padding : 2px 10px 3px;
-	background-image : url(http://baltimorecountymd.gov/sebin/l/g/button-gradient.jpg);
-	background-repeat : repeat-x;
-	background-position : top;
 }
-.calloutTitle {
+#mainContent .facebookfeedbox h3 a:hover {
+	text-decoration : underline;
+}
+.facebookfeedbox .titlebox {
+	color : #fff;
+	display : block;
+	margin : 0px;
+	padding : 40px 10px 0;
+	color : #fff;
+	background-image : url(http://baltimorecountymd.gov/sebin/q/j/facebook-header.gif );
+	background-position : center 10px;
+	background-repeat : no-repeat;
+	background-color : #3b5998;
+}
+.facebookfeedbox h3 {
+	display : block;
+	margin : 0 0 10px;
+	padding : 10px 0 0;
+}
+.facebookfeedbox h2 {
+	color : #fff;
+}
+.facebookfeedbox ol {
+	list-style-type : none;
+	padding : 0;
+	margin : 0;
+}
+.facebookfeedbox p {
+	margin : 0;
+	color : #fff;
+}
+.facebookfeedbox .item {
+	border-bottom : 1px dotted #666;
+	margin : 0;
+	padding : 0 10px;
+}
+.facebookfeedbox .itemURL {
+	display : none;
+}
+.facebookfeedbox .extras {
+	font-size : .8em;
+	font-weight : bold;
+	color : #000;
+	margin : 7px 0;
+}
+.facebookfeedbox .description {
+	display : none;
+}
+.facebookfeedbox .facebookfeedlink {
+	background-color : #3b5998;
+	display : block;
+	margin : 0;
+	color : #fff;
+	padding : 10px;
+}
+#SEBlogViewHeader {
+	height : auto;
+	margin-bottom : 10px;
+	padding : 0 5px 5px 0;
+	display : none;
+}
+.postTitle {
+	border-top : 6px solid #CACACA;
+	font-size : 16px;
+	font-weight : bold;
+	padding : 8px 8px 8px 0;
+	width : 500px;
+}
+.postDate {
+	margin : 0 0 15px;
+}
+.postKeywordsDesc {
 	border-bottom : 1px solid #CACACA;
 	border-top : 6px solid #CACACA;
 	font-family : Arial,Helvetica,sans-serif;
 	font-weight : bold;
-	margin : 20px 0 0 ;
 	padding : 3px 0;
 	text-transform : uppercase;
+}
+#seBlogViewKeywordsDesc {
+	border-bottom : 1px solid #CACACA;
+	border-top : 6px solid #CACACA;
+	font-family : Arial,Helvetica,sans-serif;
+	font-weight : bold;
+	padding : 3px 0;
+	text-transform : uppercase;
+}
+#seBlogViewKeywords ul {
+	-moz-padding-start : 0;
+	display : block;
+	list-style-type : none;
+	margin : 0;
+	padding : 0;
+}
+#seBlogViewKeywords ul li {
+	background-color : #FFFFFF;
+	border-bottom : 1px solid #CACACA;
+	padding : 5px 5px 5px 0;
+}
+#seBlogViewKeywords ul li a {
+	display : block;
+	margin : 0;
+	padding : 0;
+	width : 100%;
+}
+.calDesc {
+	border-bottom : 1px solid #CACACA;
+	border-top : 6px solid #CACACA;
+	font-family : Arial,Helvetica,sans-serif;
+	font-weight : bold;
+	margin : 20px 0 0;
+	padding : 3px 0;
+	text-transform : uppercase;
+	text-align : left;
+}
+.linksDesc {
+	border-bottom : 1px solid #CACACA;
+	border-top : 6px solid #CACACA;
+	font-family : Arial,Helvetica,sans-serif;
+	font-weight : bold;
+	margin : 0 0 10px;
+	padding : 3px 0;
+	text-transform : uppercase;
+}
+#SEBlogViewSmallCal {
+	clear : both;
+	float : right;
+	padding : 0;
+	width : 170px;
+	margin : 0 13px 20px 10px;
+}
+#relatedtopics ul {
+	background-image : url("http://baltimorecountymd.gov/sebin/i/f/background-related-topics.gif");
+	background-position : left top;
+	background-repeat : no-repeat;
+	border-top : 6px solid #CACACA;
+	display : inline;
+	float : left;
+	padding : 20px 0 0;
+	width : 160px;
+	margin : 0;
+}
+#relatedtopics ul li {
+	list-style-type : none;
+	padding : 0;
+	margin : 0;
+}
+#mainContent #SEBlogViewSmallCal table {
+	width : 170px;
+}
+#SEBlogViewLinks {
+	clear : both;
+	float : right;
+	margin : 0 13px 20px 10px;
+	padding : 0;
+	width : 170px;
+}
+.postKeywords {
+	display : none;
+}
+#SEBlogViewKeywords {
+	display : none;
+}
+#mainContent .postTitle a {
+	text-decoration : none;
+	font-size : 1.2em;
+}
+.postAuthor {
+	display : none;
+}
+.postCommentSummary {
+	display : none;
 }
 #calloutarea p {
 	margin : 10px 0 15px;
 }
-#container_localnavigation li:hover {
+.titlebox a {
+	color : #fff;
 }
-#container_localnavigation li ul li:hover {
+.postContent img {
+	border : 1px solid #CCCCCC;
+	margin : 10px 15px 10px 0;
+	padding : 5px;
+	display : block;
+	float : left;
+	clear : both;
 }
-.petinfolabel {
-	margin : 0 0 8px 10px ;
-	display : inline-flex;
-	width : 95%;
-	border-bottom : 1px dotted #999;
+.postContent {
+	display : table;
 }
-.petinfo {
+.postContent p {
+}
+.postWrapper {
+}
+#SEBlogViewPost {
+}
+#SEBlogViewWrapper {
+}
+#SEBlogViewAuxWrapper {
+	float : right;
+}
+.SEBlogViewPagingPrev {
+	background-color : #feb30c;
+	border : 1px solid #666;
+	color : #000;
+	cursor : pointer;
+	font-family : Arial, Helvetica, sans-serif;
+	font-weight : bold;
+	height : 22px;
+	margin : 20px 25px 0 0 ;
+	text-align : center;
+	text-transform : uppercase;
+	width : 80px;
+	float : left;
+	padding : 3px 0 0 ;
+}
+.SEBlogViewPagingNext {
+	background-color : #feb30c;
+	border : 1px solid #666;
+	color : #000;
+	cursor : pointer;
+	font-family : Arial, Helvetica, sans-serif;
+	font-weight : bold;
+	height : 22px;
+	margin : 20px 0 0 25px;
+	text-align : center;
+	text-transform : uppercase;
+	width : 80px;
+	float : right;
+	padding : 3px 0 0 ;
+}
+.SEBlogViewPagingArea {
+	border-top : 6px solid #CACACA;
+}
+#mainContent .SEBlogViewPagingPrev a {
+	color : #000;
+	text-decoration : none;
+	cursor : pointer;
+	font-weight : bold;
+}
+#mainContent .SEBlogViewPagingNext a {
+	color : #000;
+	text-decoration : none;
+	cursor : pointer;
+	font-weight : bold;
+}
+#relatedtopicsnews ul {
+	background-image : url("http://baltimorecountymd.gov/sebin/i/f/background-related-topics.gif");
+	background-position : left top;
+	background-repeat : no-repeat;
+	border-top : 6px solid #CACACA;
 	display : inline;
+	float : left;
+	margin : 0;
+	padding : 20px 0 0;
+	width : 160px;
+}
+#relatedtopicsnews ul li {
+	list-style-type : none;
+	margin : 0;
+	padding : 0;
+}
+#relatedtopicsnews {
+	background-position : center top;
+	background-repeat : no-repeat;
+	clear : both;
+	float : right;
+	height : auto;
+	margin : 0 0 5px 10px;
 	width : 180px;
 }
-.petbio {
-	display : block;
+#relatedtopicsnews table {
+	background-image : url("http://baltimorecountymd.gov/sebin/i/f/background-related-topics.gif");
+	background-position : center top;
+	background-repeat : no-repeat;
+	border-top : 6px solid #CACACA;
+}
+#relatedtopicsnews a.smalltext {
+	border-bottom : 1px solid #CACACA;
+	display : inline;
+	float : left;
+	font-weight : normal;
+	margin : 0;
+	padding : 5px 0;
+	text-decoration : none;
 	width : 100%;
 }
-.petbiolabel {
-	display : block;
-	margin : 10px 0 20px;
-	width : 100%;
+#relatedtopicsnews .smalltext {
+	background-color : rgba(0, 0, 0, 0);
+	padding : 20px 0 15px;
 }
