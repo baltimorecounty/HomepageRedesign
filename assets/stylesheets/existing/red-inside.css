@@ -34,7 +34,7 @@ body {
 	text-decoration : underline;
 }
 #maincontainer p {
-	/* margin : 0 0 15px 0; */
+	 margin : 0 0 15px 0; 
 	line-height : 1.5em;
 }
 .clear {
@@ -2356,11 +2356,15 @@ td.SECalendarEventDate {
 .SECalendarSmallCal .SECalendarDay.futureDayOtherMonthWeekend {
 	background-color : #bbb;
 }
-.SECalendarSmallCal .SECalendarDay a {
+#maincontainer .SECalendarSmallCal .SECalendarDay a {
 	color : #333;
+	text-decoration: underline;
 }
 .SECalendarSmallCal .SECalendarDay.SECalendarSelectedDay {
 	background-color : #feb30c;
+}
+#SECalendarListWrapper  .SECalendarSmallCal {
+	margin: 0 0 0 -178px;
 }
 #maincontainer .SECalendarCurrentDay a {
 	color: gray;
