@@ -281,13 +281,16 @@ td {
 	font-family : Arial, Helvetica, sans-serif;
 	font-size : 11px;
 	color : #000;
-	margin: 10px 0 0;
+	margin: 10px 10px 0 0;
 	
+}
+
+.image_left, .image_right {
+	line-height: 1;
 }
 
 .image_left img {
 	margin: 0;
-	width: 100%;
 }
 .image_right {
 	border : 1px solid #ccc;
@@ -432,3 +435,7 @@ td {
 /*Should this stay in the basic or go in the module*/
 #website { display: none; }
 label.website{display:none;}
+
+#baco_subnav, #servicescontainer {
+	line-height: 1.7;
+}

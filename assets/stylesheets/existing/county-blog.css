@@ -835,11 +835,15 @@ ul.megamenu div.mm-item-content {
 	background-position : left center;
 	background-repeat : no-repeat;
 	font-weight : normal;
+	text-decoration: none;
+	width: 100%;
 }
 #baco_subnav a.smalltext:hover {
 	background-image : url(http://baltimorecountymd.gov/sebin/m/n/most-requested-arrow-hover.gif);
 	background-position : left center;
 	background-repeat : no-repeat;
+	color: #002280;
+	text-decoration: underline;
 }
 #services {
 	float : left;
