@@ -1,9 +1,53 @@
+
 body {
 	background-color : #ebebeb;
 	margin : 0;
 	color : #444;
 	font-family : Arial, Helvetica, sans-serif;
 	font-size : 75%;
+}
+p {
+	margin : 0 0 15px 0;
+	line-height : 1.5em;
+}
+h1 {
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 1.6em;
+	font-weight : bold;
+	padding : 10px 0 5px 0;
+	color : #444;
+}
+h2 {
+	color : #444;
+	font-family : Arial,Helvetica,sans-serif;
+	font-size : 1.3em;
+	font-weight : bold;
+	margin : 5px 0 20px ;
+}
+h3 {
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 1em;
+	font-weight : bold;
+	color : #444;
+	margin : 5px 0 10px 0;
+}
+h4 {
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 1em;
+	margin : 5px 0 20px 0;
+	color : #002280;
+}
+h5 {
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : .9em;
+	color : #002280;
+	margin : 5px 0 20px 0;
+}
+h6 {
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : .9em;
+	color : #000;
+	margin : 5px 0 20px 0;
 }
 .clear {
 	clear : both;
@@ -22,6 +66,7 @@ body {
 	padding : 0;
 	display : inline-block;
 }
+
 #backgroundshadow {
 	width : 100%;
 	height : auto;
@@ -70,6 +115,74 @@ body {
 	float : right;
 	display : inline;
 }
+#tertiary_navigation {
+	background-color : #333;
+	width : 100%;
+	margin : 0px;
+	padding : 0px;
+}
+#tertiary_nav {
+	margin : 0 auto;
+	display : inline;
+	height : auto;
+}
+#tertiary_nav p {
+	margin : 0;
+	height : auto;
+}
+#tertiary_nav ul {
+	list-style-type : none;
+	padding : 13px 0 0 0;
+	margin : 0;
+}
+#tertiary_nav li {
+	float : left;
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 11px;
+	font-weight : normal;
+	height : 20px;
+	list-style-type : none;
+	width : auto;
+	color : #ccc;
+	margin : 2px 0 0 0;
+}
+#tertiary_nav li a {
+	border-right : 1px solid #ccc;
+	color : #ccc;
+	padding : 0 0px;
+	text-decoration : none;
+}
+#tertiary_nav li.first a:hover {
+	color : #ccc;
+	padding : 0 20px 0 0;
+	text-decoration : underline;
+}
+#tertiary_nav li.last a {
+	border : none;
+	color : #ccc;
+	padding : 0 0 0 20px;
+	text-decoration : none;
+}
+#tertiary_nav li.first a {
+	border-right : 1px solid #ccc;
+	color : #ccc;
+	padding : 0 20px 0 0;
+	text-decoration : none;
+}
+#tertiary_nav li.resizebutton a {
+	border : none;
+	color : #ccc;
+	padding : 0 0 0 5px;
+	text-decoration : none;
+}
+#tertiary_nav li.textresizer {
+	margin : 0 0 0 10px;
+	padding : 0;
+}
+#tertiary_search {
+	margin : -6px 0 0 10px;
+	padding : 0;
+}
 #sa {
 	background-color : #feb30b;
 	color : #000;
@@ -101,6 +214,79 @@ body {
 	height : 37px;
 	float : right;
 	margin : 0 1px 0 0;
+}
+ul.megamenu {
+	background-color : #686868;
+	margin : -1px auto;
+	padding : 0;
+	list-style : none;
+	display : none;
+	width : 744px;
+	height : 37px;
+}
+ul.megamenu li.mm-item {
+}
+ul.megamenu li {
+	font-family : Arial, Helvetica, sans-serif;
+	font-weight : bold;
+	font-size : 14px;
+	color : #ccc;
+	margin : 0px;
+	padding : 0px 0px;
+	width : 246px;
+	display : inline-block;
+}
+ul.megamenu li.main {
+	border-left : 1px solid #333;
+	background-image : url(http://baltimorecountymd.gov/sebin/l/y/background-secondarynav.jpg);
+	background-position : top right;
+	background-repeat : no-repeat;
+}
+ul.megamenu li.clear-fix {
+	float : none;
+	clear : both;
+	margin : 0px;
+	padding : 0px;
+	height : 0px;
+	font-size : 0px;
+	line-height : 0px;
+}
+ul.megamenu a.mm-item-link:link, ul.megamenu a.mm-item-link:visited {
+	position : relative;
+	display : inline-block;
+	color : #ccc;
+	padding : 10px 20px;
+	margin : 0;
+	text-decoration : none;
+	z-index : 10;
+	font-size : 14px;
+	border-left : 1px solid transparent;
+	border-right : 1px solid transparent;
+	width : 206px;
+	height : 17px;
+}
+*html ul.megamenu a.mm-item-link:link, *html ul.megamenu a.mm-item-link:visited {
+	border : none;
+}
+ul.megamenu a.mm-item-link-hover:link, ul.megamenu a.mm-item-link-hover:visited {
+	color : #c51110;
+	background : #FFF;
+	border-top : 1px solid #686868;
+	border-left : 1px solid #686868;
+	border-right : 1px solid #686868;
+	width : 206px;
+	height : 17px;
+	padding : 10px 20px;
+	display : inline-block;
+	background-image : url(http://baltimorecountymd.gov/sebin/r/n/background-secondarynav-hover.jpg);
+	background-position : top right;
+	background-repeat : no-repeat;
+}
+ul.megamenu div.mm-item-content {
+	background : #FFF;
+	padding : 0px;
+	position : absolute;
+	z-index : 9;
 }
 .mm-content-base {
 	background : #FFF;
@@ -1998,10 +2184,12 @@ a.selectedtoggler img {
 	padding : 0;
 	margin : 5px 0 -7px 18px;
 }
-#blogimagecontainer img {
-	border: none;
-	margin: 10px 0 0;
-	padding: 0;
+#mainContent ol {
+	line-height : 1.5em;
+}
+#blogimagecontainer {
+	margin : 10px 0 0 0 ;
+	float : left;
 }
 .seBlogViewHeader h1 {
 	border-bottom : 2px solid #c51110;
@@ -2517,6 +2705,15 @@ a.selectedtoggler img {
 #SEBlogViewAuxWrapper {
 	float : right;
 }
+#SEBlogViewMainWrapper {
+	width : 500px;
+	margin : 10px 0 0;
+	float : left;
+}
+#SEBlogViewAuxArea {
+}
+#SEBlog {
+}
 .SEBlogViewPagingPrev {
 	background-color : #feb30c;
 	border : 1px solid #666;
@@ -2606,26 +2803,4 @@ a.selectedtoggler img {
 #relatedtopicsnews .smalltext {
 	background-color : rgba(0, 0, 0, 0);
 	padding : 20px 0 15px;
-}
-
-#maincontainer .facebookfeedbox .feedDetails {
-	display: none;
-}
-#maincontainer .facebookfeedbox .SESyndicationModule .feedItems .item {
-	margin: 10px 0;
-}
-#maincontainer .facebookfeedbox .SESyndicationModule .feedItems .item .title {
-	line-height: 1.4;
-	margin: 0;
-	padding: 0;
-}
-#maincontainer .facebookfeedbox .SESyndicationModule .feedItems .item .title a:hover {
-	color: #002280;
-}
-#maincontainer .facebookfeedbox .titlebox {
-	line-height: 1.4;
-	padding-bottom: 10px;
-}
-#maincontainer .facebookfeedbox .titlebox a:hover {
-	color: white;
 }
