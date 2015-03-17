@@ -1738,6 +1738,12 @@ select {
 	width : 480px;
 }
 .tulipMain {
+	line-height: 1;
+}
+.tulipMain img {
+	border: none;
+	padding: 0;
+	margin: 0;
 }
 .tulipTVPlayerContainerTitle {
 	color : #feb30c;
@@ -1814,7 +1820,7 @@ select {
 }
 div#tulipTVThumbs div.tulipShow {
 	margin : 5px;
-	width : 130px;
+	width : 150px;
 	padding-top : 10px;
 	border : 1px solid #999;
 	height : 250px;
