@@ -1,3 +1,5 @@
+$brand-font-family: Lato, Arial, sans-serif;
+
 .brand {
   display: inline-block;
   float: left;
@@ -29,7 +31,7 @@
     font-size: 1.7em;
     line-height: 28px;
     padding: 20px 0;
-    font-family:Raleway;
+    font-family: $brand-font-family;
     letter-spacing:.4px;
     margin: 13px 0 0;
   }
