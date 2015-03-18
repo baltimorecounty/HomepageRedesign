@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	   <!--  <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 		<title>Baltimore County Homepage Government</title>
 		<link rel="stylesheet" type="text/css" href="assets/stylesheets/existing/temp-content.css"/>
 		<link rel="stylesheet" type="text/css" href="assets/stylesheets/existing/snow-fighter.css"/>
@@ -17,106 +17,94 @@
 		<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
 		<script src="assets/js/lib/jQuery.min.js"></script>
 		<script type="text/javascript" src="assets/js/lib/slick.min.js"></script>
-		<script type="text/javascript" src="assets/js/lib/handlebars.js"></script>
 		<script src="assets/js/lib/reView.js"></script>
 		<script src="assets/js/text-resizer.js"></script>
 		<script src="assets/js/skipNav.js"></script>
-		<script src="assets/js/flickr.js"></script>
-		<script src="assets/js/template.js"></script>
+		<script src="assets/js/inside-template.js"></script>
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	    <!--[if lt IE 9]>
 	      <script src="assets/js/lib/html5shiv.min.js"></script>
 	      <script src="assets/js/lib/respond.min.js"></script>
 	    <![endif]-->
-
 	</head>
 	<body>
 		<div id="skiptocontent" class="skip-nav">
 		  <a href="#main-content" class="link-btn skip">skip to main content</a>
 		</div>
 		<header class="header">
-			<section class="secondary-nav hidden-xs">
+			<section class="secondary-nav">
 				<div class="container">
-				<nav class="col-md-4 col-sm-6 ">
-					<ul class="secondary-nav-list inline-list">
-						<li class="secondary-nav-list-item">
-							<a href="">County Executive</a>
-						</li>
-						<li class="secondary-nav-list-item">
-							<a href="">County Council</a>
-						</li>
-						<li class="secondary-nav-list-item">
-							<a href="">Courts</a>
-						</li>
-					</ul>
-				</nav>
-				<div class="search search-internal col-md-4">
-				<div class="search-input-container">
-			    <button>Search</button>
-			    <div class="search-text">
-			      <label for="search-input" class="search-label">Search</label><input type="text" placeholder="Search for agencies, services and more..." name="search-input" class="search-input">
-			    </div>
-			</div>
-			  </div>
-				<div class="page-tools col-md-4 col-sm-6 hidden-xs">
-					<a href="http://www.baltimorecountymd.gov/Subscribe/" class="subscribe" title="Subscribe to Baltimore County Newsletters.">Subscribe</a>
-					<div class="resizer">
-					  <ul class="resizer-list inline-list">
-					    <li><button id="normal-text" class="btn-link resizer-item resizer-item-smaller">a</button></li>
-					    <li><button id="large-text" class="btn-link resizer-item resizer-item-default">a</button></li>
-					    <li><button id="largest-text" class="btn-link resizer-item resizer-item-larger">a</button></li>
-					  </ul>
+					<nav class="col-md-4 col-sm-4 col-xs-4">
+						<ul class="secondary-nav-list inline-list">
+							<li class="secondary-nav-list-item">
+								<a href="">County Executive</a>
+							</li>
+							<li class="secondary-nav-list-item">
+								<a href="">County Council</a>
+							</li>
+							<li class="secondary-nav-list-item">
+								<a href="">Courts</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="search search-internal col-md-4 col-sm-4 col-xs-4">
+						<div class="search-input-container">
+			    			<button>Search</button>
+						    <div class="search-text">
+						      <label for="search-input" class="search-label">Search</label><input type="text" placeholder="Search for agencies, services and more..." name="search-input" class="search-input">
+						    </div>
+						</div>
+			  		</div>
+					<div class="page-tools col-md-4 col-sm-4 col-xs-4">
+						<a href="http://www.baltimorecountymd.gov/Subscribe/" class="subscribe" title="Subscribe to Baltimore County Newsletters.">Subscribe</a>
+						<div class="resizer">
+						  <ul class="resizer-list inline-list">
+						    <li><button id="normal-text" class="btn-link resizer-item resizer-item-smaller">a</button></li>
+						    <li><button id="large-text" class="btn-link resizer-item resizer-item-default">a</button></li>
+						    <li><button id="largest-text" class="btn-link resizer-item resizer-item-larger">a</button></li>
+						  </ul>
+						</div>
 					</div>
-				</div>
 				</div>
 			</section>
 			<div class="primary-header">
-			  <div class="container-fluid">
-			    <div class="brand col-md-4 col-sm-12">
-			      <a href="http://www.baltimorecountymd.gov" title="View the Baltimore County Government homepage.">
-			      <img class="brand-logo" src="assets/img/header-county-seal.png" height="84" width="84" />
-			      <h1 class="brand-heading">Baltimore County<br><span class="uppercase smaller-text">Government</span></h1>
-			  	</a>
-			    </div>
-			    <nav class="secondary-nav col-xs-12 hidden-lg hidden-md hidden-sm">
-					<ul class="secondary-nav-list inline-list">
-						<li class="secondary-nav-list-item">
-							<a href="">County Executive</a>
-						</li>
-						<li class="secondary-nav-list-item">
-							<a href="">County Council</a>
-						</li>
-						<li class="secondary-nav-list-item">
-							<a href="">Courts</a>
-						</li>
-					</ul>
-				</nav>
-				<div class="primary-nav-container">
-			    <ul class="primary-nav col-md-8 col-sm-12" role="navigation">
-			      <li class="primary-nav-item col-md-4 col-sm-4 col-xs-12">
-			        <h2 class="primary-nav-item__headline">
-			          <a href="http://www.baltimorecountymd.gov/iwant/apply.html">I Want To...<br><span class="primary-nav-item__tagline">Report Issues, Follow Up, Apply</span></a>
-			        </h2>
-			      </li>
-			      <li class="primary-nav-item col-md-4 col-sm-4 col-xs-12">
-			        <h2 class="primary-nav-item__headline">
-			          <a href="http://www.baltimorecountymd.gov/iwant/apply.html">I'm Looking For...<br><span class="primary-nav-item__tagline">Resident, Visitor, or Business Info</span></a>
-			        </h2>
-			      </li>
-			      <li class="primary-nav-item col-md-4 col-sm-4 col-xs-12">
-			        <h2 class="primary-nav-item__headline">
-			          <a href="http://www.baltimorecountymd.gov/iwant/apply.html">I Need to Contact...<br><span class="primary-nav-item__tagline">An Agency, My Rep, An Employee</span></a>
-			        </h2>
-			      </li>
-			    </ul>
-			    <nav class="hamburger-nav">
-			    	<a class="hamburger-btn" href="#" title="Navigate Baltimore County's Website">
-			    		<img src="assets/img/hamburger.png" height="32" width="32" alt="Navigate Baltimore County's Website" /></a>
-			    </nav>
-			    </div>
-			    <div class="clearfix"></div>
-			  </div>
+				<!-- Branding -->
+				<div class="container">
+				    <div class="brand col-md-4 col-sm-4 col-xs-4">
+				      	<a href="http://www.baltimorecountymd.gov" title="View the Baltimore County Government homepage.">
+				      		<img class="brand-logo" src="assets/img/header-county-seal.png" height="84" width="84" />
+				      		<h1 class="brand-heading">Baltimore County<br>
+				      		<span class="uppercase smaller-text">Government</span>
+				      		</h1>
+				  		</a>
+				    </div>
+					<!-- I want to Navigation -->
+					<div class="primary-nav-container">
+					    <ul class="primary-nav col-md-8 col-sm-8 col-xs-8" role="navigation">
+					      <li class="primary-nav-item col-md-4 col-sm-4 col-xs-4">
+					        <h2 class="primary-nav-item__headline">
+					          <a href="http://www.baltimorecountymd.gov/iwant/apply.html">I Want To...<br><span class="primary-nav-item__tagline">Report Issues, Follow Up, Apply</span></a>
+					        </h2>
+					      </li>
+					      <li class="primary-nav-item col-md-4 col-sm-4 col-xs-4">
+					        <h2 class="primary-nav-item__headline">
+					          <a href="http://www.baltimorecountymd.gov/iwant/apply.html">I'm Looking For...<br><span class="primary-nav-item__tagline">Resident, Visitor, or Business Info</span></a>
+					        </h2>
+					      </li>
+					      <li class="primary-nav-item col-md-4 col-sm-4 col-xs-4">
+					        <h2 class="primary-nav-item__headline">
+					          <a href="http://www.baltimorecountymd.gov/iwant/apply.html">I Need to Contact...<br><span class="primary-nav-item__tagline">An Agency, My Rep, An Employee</span></a>
+					        </h2>
+					      </li>
+					    </ul>
+				    	<nav class="hamburger-nav">
+				    		<a class="hamburger-btn" href="#" title="Navigate Baltimore County's Website">
+				    			<img src="assets/img/hamburger.png" height="32" width="32" alt="Navigate Baltimore County's Website" /></a>
+				    	</nav>
+				    </div>
+			    	<div class="clearfix"></div>
+			  	</div>
 			</div>
 		</header>
 
@@ -162,7 +150,7 @@
 		_SE_validateRadiobox(_CF_this, '_PageRating_radiobox1_', 'Please select a page rating.');
 	}
 </script>
-<script src="/se/js/mod/advancedforms/cfform.js" type="text/javascript"> </script><script type="text/javascript">
+<script src="http://baltimorecountymd.gov/se/js/mod/advancedforms/cfform.js" type="text/javascript"> </script><script type="text/javascript">
 	function _CF_checkRateThisPageForm(_CF_this)
 	{
 	        //reset on submit
@@ -176,7 +164,7 @@
 					            }
 						_SE_checkRateThisPageForm(_CF_this);	
         //display error messages and return success
-        if( _CF_error_messages.length &gt; 0 )
+        if( _CF_error_messages.length > 0 )
         {
             // show alert() message
             _CF_onErrorAlert(_CF_error_messages);
@@ -266,8 +254,8 @@
 		
 		<footer class="footer">
 			<section class="primary-footer container">
-			<section class="county-map-container col-md-6 col-sm-6">
-				<img src="assets/img/footer-county-shape.png" alt="" class="county-map hidden-sm hidden-xs">
+			<section class="county-map-container col-md-6 col-sm-6 col-xs-6">
+				<img src="assets/img/footer-county-shape.png" alt="" class="county-map">
 				<div class="county-address">
 					<h2>Baltimore County Government</h2>
 					<p>Historic Courthouse</br>
@@ -277,7 +265,7 @@
 				</div>
 				
 			</section>
-			<section class="county-help col-md-2 col-sm-6">
+			<section class="county-help col-md-2 col-sm-2 col-xs-2">
 				<h2>Help</h2>
 				<ul class="county-help-list">
 					<li class="county-help-list-item">
@@ -291,7 +279,7 @@
 					</li>
 				</ul>
 			</section>
-			<section class="tranlate-page col-md-2 hidden-sm hidden-xs">
+			<section class="tranlate-page col-md-2 col-sm-2 col-xs-2">
 				<h2>Translate</h2>
 				<ul class="translate-page-list">
 					<li class="american"><a title="English" href="http://baltimorecountymd.gov//">English</a></li>
@@ -312,7 +300,7 @@
 					</li>
 				</ul>
 			</section>
-			<section class="county-awards col-md-2 hidden-sm hidden-xs">
+			<section class="county-awards col-md-2 col-sm-2 col-xs-2">
 				<h2>Awards</h2>
 				<ul class="county-awards-list">
 					<li class="county-awards-list-item">
@@ -323,35 +311,13 @@
 					</li>
 				</ul>
 			</section>
-			<ul class="social-media-list social-media-list-small inline-list col-sm-12 hidden-md hidden-lg">
-					<li class="social-media-list-item social-media-list-item-facebook">
-						<a href="">
-						</a>
-					</li>
-					<li class="social-media-list-item social-media-list-item-twitter">
-						<a href="">
-						</a>
-					</li>
-					<li class="social-media-list-item social-media-list-item-photos">
-						<a href="">
-						</a>
-					</li>
-					<li class="social-media-list-item social-media-list-item-youtube">
-						<a href="">
-						</a>
-					</li>
-					<li class="social-media-list-item social-media-list-item-bcnow">
-						<a href="">
-						</a>
-					</li>
-				</ul>
 		</section>
 		<section class="secondary-footer">
 			<div class="container">
-			<section class="copyright col-md-4 col-sm-12">
+			<section class="copyright col-md-4 col-sm-4 col-xs-4">
 				<span>&copy; Copyright 2015 Baltimore County Government</span>
 			</section>
-			<nav class="county-links col-md-8 col-sm-12">
+			<nav class="county-links col-md-8 col-sm-8 col-xs-8">
 				<ul class="county-links-list inline-list">
 					<li class="county-links-list-item">
 						<a href="http://www.baltimorecountymd.gov/Contact/webmaster?issueid=42" title="Contact Baltimore County.">Contact Baltimore County</a>
