@@ -95,7 +95,34 @@
   }
 }
 
-@media only screen and (max-width: 767px) {
+
+
+
+@media only screen and (max-width: 992px) {
+  .slick-prev, .slick-next {
+    top: 30%;
+  }
+  .slick-prev {
+    left: 25px;
+  }
+  .slick-next {
+    right: 25px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .slick-prev, .slick-next {
+    top: 25%;
+  }
+  .slick-prev {
+    left: 10px;
+  }
+  .slick-next {
+    right: 10px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
   .promotions {
       a {
         color: $navy;
@@ -117,7 +144,15 @@
   }
 
   .slick-prev, .slick-next {
+    height: 58.5px; /*3/4 of the original height of 78px*/
+    width: 33.75px; /*3/4 of the original height of 78px*/
     top: 15%;
+  }
+  .slick-prev {
+    left: 0;
+  }
+  .slick-next {
+    right: 0;
   }
 }
 

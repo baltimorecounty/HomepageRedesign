@@ -88,6 +88,23 @@
   }
 
 
+@media only screen and (max-width: 400px) {
+  .search {
+    button {
+      padding: 1px 5px 1px;
+      height: auto;
+    }
+
+    .search-input {
+      height: auto;
+      padding: 5px;
+    }
+  }
+  .search-input-container {
+    font-size: .65em;
+  }
+}
+
 
 @media only screen and (max-width: 767px) {
 
