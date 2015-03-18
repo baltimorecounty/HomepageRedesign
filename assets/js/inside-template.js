@@ -1,4 +1,4 @@
-(function ($, TextResizer, Flickr) {
+(function ($, TextResizer) {
     $(document).ready(function () {
         /*Initialize the Text Resizer*/
         var textResizer = new TextResizer({
@@ -12,4 +12,4 @@
         $('.primary-nav, .secondary-nav').toggleClass('mobile-menu-visible');
     });
 
-})(jQuery, TextResizer, Flickr);
+})(jQuery, TextResizer);
