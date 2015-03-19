@@ -13,6 +13,7 @@
 		<script src="assets/js/lib/jQuery.min.js"></script>
 		<script type="text/javascript" src="assets/js/lib/slick.min.js"></script>
 		<script type="text/javascript" src="assets/js/lib/handlebars.js"></script>
+		<script src="assets/js/lib/picturefill.min.js"></script>
 		<script src="assets/js/lib/reView.js"></script>
 		<script src="assets/js/text-resizer.js"></script>
 		<script src="assets/js/flickr.js"></script>
@@ -154,7 +155,13 @@
 				<div class="carousel">
 					<div class="promotions">
 					  <div class="promotions-item">
-					    <img class="promotion-image" src="assets/img/carousel-petadoption-small.jpg" srcset="assets/img/carousel-petadoption.jpg 767w" />
+					    <img 
+							srcset="assets/img/carousel-petadoption-small.jpg 200w,
+									assets/img/carousel-petadoption-medium.jpg 500w,
+									assets/img/carousel-petadoption.jpg 1200w"
+							sizes="100%" 
+						    class="promotion-image" 
+						    src="assets/img/carousel-petadoption-small.jpg"  />
 					    <div class="promotions-message">
 					      <h2>Adopt a lost or adoptable pet</h2>
 					      <p>Adopt a pet now and you will get another one <a href="#" title="Get a free pet">free</a>.</p>
