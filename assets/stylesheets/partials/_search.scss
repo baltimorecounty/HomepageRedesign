@@ -91,17 +91,30 @@
 @media only screen and (max-width: 400px) {
   .search {
     button {
-      padding: 1px 5px 1px;
+      padding: 10.5px 5px;
       height: auto;
     }
 
     .search-input {
       height: auto;
-      padding: 5px;
+      padding: 11px 10px;
     }
   }
   .search-input-container {
-    font-size: .65em;
+    font-size: .95em;
+  }
+
+  ::-webkit-input-placeholder { /* WebKit browsers */
+      color: transparent;
+  }
+  :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+      color: transparent;
+  }
+  ::-moz-placeholder { /* Mozilla Firefox 19+ */
+      color: transparent;
+  }
+  :-ms-input-placeholder { /* Internet Explorer 10+ */
+      color: transparent;
   }
 }
 
