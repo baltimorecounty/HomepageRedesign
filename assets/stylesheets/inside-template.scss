@@ -1,28 +1,20 @@
 @import url(http://fonts.googleapis.com/css?family=Patua+One);
 @import url(http://fonts.googleapis.com/css?family=Raleway:700);
 
-/*Resets*/
-// @import "partials/normalize";
+/* Partials */
+@import "partials/base/base";	
+@import "partials/base/typography";
+@import "partials/base/header";
+@import "partials/base/nav";
+@import "partials/base/brand";
+@import "partials/base/footer";
 
-/* Modules and Variables */
-@import "partials/base";
+@import "partials/inside/insideGrid";
 
-/* Partials */	
-@import "partials/insideGrid";
-@import "partials/typography";
-@import "partials/lists";
-@import "partials/header";
-@import "partials/nav";
-@import "partials/secondaryNav";
-@import "partials/brand";
-
-@import "partials/search";
-
-@import "partials/social";
-@import "partials/footer";
-
-@import "partials/textResizer";
-
-@import "partials/buttons";
-@import "partials/fullSite";
-@import "partials/skipNav";
+@import "partials/components/search";
+@import "partials/components/social";
+@import "partials/components/secondaryNav";
+@import "partials/components/textResizer";
+@import "partials/components/buttons";
+@import "partials/components/fullSite";
+@import "partials/components/skipNav";
