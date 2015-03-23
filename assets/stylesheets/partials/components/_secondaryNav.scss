@@ -1,9 +1,4 @@
 .secondary-nav {
-    background: $darker-gray;
-    font-size:.85em;
-    padding: 10px 0;
-
-
     .secondary-nav-list {
       padding: 8px 0;
       
@@ -18,16 +13,6 @@
           border: none;
           padding-right: 0;
         }
-      }
-    }
-
-    a {
-      color: $light-gray;
-      display: block;
-      line-height: 11px;
-
-      &:hover {
-        color: $white;
       }
     }
   }

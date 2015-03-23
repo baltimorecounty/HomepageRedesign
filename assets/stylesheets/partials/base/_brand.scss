@@ -3,26 +3,16 @@
   float: left;
   padding: 0;
   
-  a{
+  a, a:hover {
     text-decoration:none;
-    &:hover{
-      text-decoration:none;
-    }
-
   }
 
   h1 {
-		color: $white;
-    border:none;
-	}
-	img {
-		border: none;
-	}
+    color: $white;
+  }
 
-  .brand-logo, .brand-heading {
-    display: inline-block;
-    
-    vertical-align: middle;
+  h1, img {
+    border: none;
   }
   
   .brand-heading {
@@ -34,24 +24,28 @@
     letter-spacing:.4px;
     margin: 13px 0 0;
   }
-  
+
   .brand-logo {
     margin-right: 10px;
+  }
+
+  .brand-logo, .brand-heading {
+    display: inline-block;
+    vertical-align: middle;
   }
 }
 
 @media only screen and (max-width: 480px){
   .homepage {
-    .brand .brand-logo{
-      height:65px;
-      width:65px;
-      margin-right:5px;
-    }
-
     .brand .brand-heading {
         font-size: 1.2em;
         line-height: 25px;
         margin: 10px 0 0;
+    }
+    .brand .brand-logo{
+      height:65px;
+      width:65px;
+      margin-right:5px;
     }
   }
 }

@@ -1,0 +1,24 @@
+.search {
+  padding: 20px;
+  
+  .search-input, button {
+    border: none;
+    height: 55px;
+    margin: 0;
+  }
+
+  .search-text {
+    overflow: hidden;
+  }
+
+  .search-input {
+    font-size: 1.2em;
+    float: left;
+    padding: 0px 20px;
+    width: 100%;
+  }
+
+  button {
+    float: right;
+  }
+}

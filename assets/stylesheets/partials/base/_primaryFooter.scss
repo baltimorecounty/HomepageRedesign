@@ -1,0 +1,13 @@
+.primary-footer {
+	padding: 20px 0;
+
+	h2 {
+		margin: 0;
+	}
+}
+@media only screen and (max-width: 992px) {
+	.primary-footer .social-media-list {
+		padding: 10px 10px 0;
+		text-align: left;
+	}
+}

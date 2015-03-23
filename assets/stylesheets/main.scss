@@ -2,33 +2,42 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:700);
 
 /*Resets*/
-@import "partials/normalize";
+@import "partials/base/normalize";
 
 /* Modules and Variables */
-@import "partials/base";
+@import "partials/base/base";
 
 /* Third Party */
 @import "vendor/slick-carousel";
 
-/* Partials */	
-@import "partials/grid";
-@import "partials/typography";
-@import "partials/lists";
-@import "partials/header";
-@import "partials/secondaryNav";
-@import "partials/nav";
-@import "partials/brand";
-@import "partials/promotions";
-@import "partials/search";
-@import "partials/countyInformation";
-@import "partials/electedOfficials";
-@import "partials/social";
-@import "partials/footer";
-@import "partials/news";
-@import "partials/textResizer";
-@import "partials/alert";
-@import "partials/buttons";
-@import "partials/fullSite";
-@import "partials/skipNav";
+/* Base*/	
+@import "partials/base/grid";
+@import "partials/base/typography";
+@import "partials/base/header";
+@import "partials/base/nav";
+@import "partials/base/brand";
+@import "partials/base/footer";
+
+/*Components*/
+@import "partials/components/secondaryNav";
+@import "partials/components/textResizer";
+@import "partials/components/alert";
+@import "partials/components/buttons";
+@import "partials/components/fullSite";
+@import "partials/components/skipNav";
+@import "partials/components/social";
+
+/*Hompage Specific*/
+@import "partials/homepage/carousel";
+@import "partials/homepage/search";
+@import "partials/homepage/topVisited";
+@import "partials/homepage/newsFeed";
+@import "partials/homepage/countyInformation";
+@import "partials/homepage/electedOfficials";
+
+
+
+
+
 
 

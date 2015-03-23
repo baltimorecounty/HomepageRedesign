@@ -1,104 +1,100 @@
-.promotions-container {
+.carousel-container {
   position: relative;
 
   .search-container {
     position: absolute;
     left: 50%;
     z-index: 999;
-    
+
     -moz-transform:    translateX(-50%);
-     -o-transform:      translateX(-50%);
-     -webkit-transform: translateX(-50%);
-     transform:         translateX(-50%);
+    -o-transform:      translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform:         translateX(-50%);
   }  
 }
 
-.promotions {
+.carousel {
   margin: 0;
 
   a {
-  	color: $gold;
+    color: $gold;
   }
-  
+
   p {
     margin-bottom: 0;
   }
 
   img {
     border: none;
-  	padding: 0;
-  	margin: 0;
+    padding: 0;
+    margin: 0;
   }
 
   h2 {
-  	border: none;
-  	color: $white;
-    
+    border: none;
+    color: $white;
+
     font-size: 2.3em;
-    
-  	margin: 10px 0;
+
+    margin: 10px 0;
     text-transform: uppercase;
   }
 
-  .promotions-item {
+  .carousel-item {
     position: relative;
   }
-  .promotion-image {
+  .carousel-image {
     width: 100%;
   }
-  .promotions-message {
+  .carousel-message {
     position: absolute;
     bottom: 0;
-    
+
     background-color: #333;
     background: rgba(#444,.9);
     color: $white;
     padding: 20px 40px;
     width: 100%;
-    
+
   }
 }
 
 .carousel-container {
   background: white;
 }
-
+/*Plugin Specific Overrides*/
 .slick-dots {
-	bottom: 25px;
-	right: 50px;
-	text-align: right;
+  bottom: 25px;
+  right: 50px;
+  text-align: right;
 }
 
 .slick-dots li button:before {
-	position: absolute;
-	top: 0;
-	right: 50px;
-	width: 20px;
-	height: 20px;
-	font-family: "slick";
-	line-height: 52px;
-	
-	opacity: 0.25;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+  position: absolute;
+  top: 0;
+  right: 50px;
+  width: 20px;
+  height: 20px;
+  font-family: "slick";
+  line-height: 52px;
+
+  opacity: 0.25;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
+
 @media only screen and (max-width: 992px) {
-  .promotions {
+  .carousel {
     h2 {
       font-size: 1.75em;
       margin: 0;
     }
   }
+  /*Plugin Specific Overrides*/
   .slick-dots {
     display: none !important; /*Overriding an element style attr added by slick */
   }
-}
-
-
-
-
-@media only screen and (max-width: 992px) {
   .slick-prev, .slick-next {
     top: 30%;
   }
@@ -111,6 +107,7 @@
 }
 
 @media only screen and (max-width: 600px) {
+  /*Plugin Specific Overrides*/
   .slick-prev, .slick-next {
     top: 25%;
   }
@@ -123,26 +120,27 @@
 }
 
 @media only screen and (max-width: 400px) {
-  .promotions {
-      a {
-        color: $navy;
-        &:hover {
-          color: $light-blue;
-        }
+  .carousel {
+    a {
+      color: $navy;
+      &:hover {
+        color: $light-blue;
       }
-      .promotions-message{
-        background: white;
+    }
+    .carousel-message{
+      background: white;
+      color: $dark-gray;
+      position:relative;
+      padding: 10px;
+
+      h2 {
         color: $dark-gray;
-        position:relative;
-        padding: 10px;
-  
-        h2 {
-          color: $dark-gray;
-          font-size: 1.5em;
-        }
+        font-size: 1.5em;
       }
+    }
   }
 
+  /*Plugin Specific Overrides*/
   .slick-prev, .slick-next {
     height: 58.5px; /*3/4 of the original height of 78px*/
     width: 33.75px; /*3/4 of the original height of 78px*/
