@@ -18,9 +18,9 @@
             autoplaySpeed: 5000,
             dots: true,
             /*Show dot navigation*/
-            nextArrow: "<img src='assets/img/carousel-arrow-right.png' class='slick-next' />",
+            nextArrow: "<img src='/sebin/v/i/carousel-arrow-right.png' class='slick-next' />",
             /*Starts on slide 4*/
-            prevArrow: "<img src='assets/img/carousel-arrow-left.png'class='slick-prev' />"
+            prevArrow: "<img src='/sebin/f/m/carousel-arrow-left.png 'class='slick-prev' />"
         });
 
         /*Initialize teh Text Resizer*/
