@@ -1,3 +1,5 @@
+@import "electedOfficials";
+
 .county-information {
 	background: $white;
 	padding-bottom: 25px;
@@ -8,17 +10,14 @@
 	}
 }
 
-.SESyndicationModule {
-	@extend .clearfix;
-}
-
-@media only screen and (max-width: 767px) {
-	.county-information {
-		padding: 10px;
-	}
-}
 @media only screen and (min-width: 992px) and (max-width: 1200px){
 	.county-information-container {
 		padding: 0 10px;
 	}
 }
+@media only screen and (max-width: 767px) {
+	.county-information {
+		padding: 10px;
+	}
+}
+

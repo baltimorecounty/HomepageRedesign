@@ -1,9 +1,11 @@
-$default-font-family: Arial, Helvetica, sans-serif;
+@import "../../modules/all";
 
-@import "../modules/all";
+html {
+  box-sizing: border-box;
+}
 
-* {
-	box-sizing: border-box;
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 html, body {
@@ -15,7 +17,7 @@ html, body {
 }
 
 img {
-	border: 1px solid lightgray;
+	border: 1px solid $img-border-gray;
 	margin: 5px;
 	padding: 5px;
 }

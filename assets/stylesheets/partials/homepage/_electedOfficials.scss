@@ -1,3 +1,5 @@
+@import "countyExecutive";
+
 .elected-officials {
 	padding: 0 0 0 10px;
 
@@ -6,7 +8,6 @@
 		width: 100%;
 	}
 	border-left:3px dotted $light-gray;
-
 
 	.social-media-list {
 		margin-bottom: 20px;
@@ -17,23 +18,8 @@
 	padding-right: 0;
 }
 
-.county-executive-about-list {
-	padding: 0px 0 20px;
-	
-	.county-executive-about-list-item {
-		padding: 0 10px;
-
-		&:first-child {
-			border-right: 1px solid $navy;
-			padding-left: 0;
-		}
-	}
-
-}
-
 @media only screen and (min-width: 768px) and (max-width: 992px) {
 	.elected-officials {
-
 		.county-executive {
 			padding-left: 0;
 		}

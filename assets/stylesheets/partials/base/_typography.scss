@@ -19,7 +19,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1, h2{
-    font-family:Patua One;   
+    font-family: $headline-font;   
 }
 h3, h4, h5 {
     font-weight: bold;
@@ -30,9 +30,9 @@ h1{
     line-height:40px;
 }
 h2{
-    border-top:5px solid #ebebeb;
-    border-bottom:1px solid #ebebeb;
-    color:#c51110;
+    border-top:5px solid #ebebeb; //TODO: Make a Variable
+    border-bottom:1px solid #ebebeb; //TODO: Make a Variable
+    color: $red;
     font-size:1.6em;
     line-height:30px;
     margin:0 0 13px;
@@ -53,16 +53,10 @@ h5{
 
 a {
     color: $navy;
+
     &:hover {
         color: $gold;
     }
-}
-
-.uppercase{
-    text-transform:uppercase;
-}
-.smaller-text{
-    font-size:65%;
 }
 
 @media only screen and (max-width: 767px) {

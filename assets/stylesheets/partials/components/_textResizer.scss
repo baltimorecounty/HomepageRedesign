@@ -1,7 +1,9 @@
+/*Resizer Container Class*/
 .resizer {
   display: inline-block;
 }
 
+/*Resizer Links included in the Secondary Header*/
 .resizer-list {
   margin: 0;
   
@@ -13,7 +15,6 @@
     line-height: 34px;
   }
 }
-
 .resizer-item {
   color: $light-gray;
   font-weight: bold;
@@ -33,7 +34,7 @@
   font-size: 2.8em;
 }
 
-/*Text Resizer Classes*/
+/*Text Resizer Classes to be applied to the main content*/
 .large-text {
   font-size: 1.25em;
   line-height: 27px;

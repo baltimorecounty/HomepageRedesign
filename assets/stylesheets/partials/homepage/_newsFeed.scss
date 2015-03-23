@@ -63,6 +63,11 @@
 	}
 }
 
+/*Clear News Feed*/
+.SESyndicationModule {
+  @extend .clearfix;
+}
+
 /*This is based on Site Executive Structure, we do not want to show the extra
 information on the homepage*/
 .news-feed .item {
