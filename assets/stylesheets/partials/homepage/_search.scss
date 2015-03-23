@@ -19,7 +19,7 @@
 }
 
 @media only screen and (max-width: 992px) {
-  .carousel-container .search-container {
+  .carousel-wrapper .search-container {
     background:none;
     position: relative;
     left: 0;
@@ -56,9 +56,7 @@
     h1 {
       line-height: 1.5;
     }
-
   }
-
 }
 
 @media only screen and (max-width: 400px) {

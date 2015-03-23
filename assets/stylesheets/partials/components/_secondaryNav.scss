@@ -1,4 +1,6 @@
 .secondary-nav {
+    background: $darker-gray;
+
     .secondary-nav-list {
       padding: 8px 0;
       
@@ -13,6 +15,10 @@
           border: none;
           padding-right: 0;
         }
+
+        a {
+          color: $white;
+        }
       }
     }
   }
@@ -20,6 +26,7 @@
 @media only screen and (max-width: 767px) {
   .homepage {
     .secondary-nav {
+      font-size:.85em;
       padding: 10px;
     }
   }

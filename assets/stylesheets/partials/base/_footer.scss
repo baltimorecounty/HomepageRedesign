@@ -41,10 +41,20 @@
 }
 
 @media only screen and (max-width: 992px) {
-	.copyright {
-		margin-bottom: 10px;
-	}
-	.county-links-list {
-		text-align: left;
+	.footer {
+		.copyright {
+			padding-left: 10px;
+			margin-bottom: 10px;
+		}
+		.county-links {
+			padding: 0 5px;
+		}
+		.county-links-list {
+			text-align: left;
+
+			li:first-child {
+				padding-left: 5px;
+			}
+		}
 	}
 }

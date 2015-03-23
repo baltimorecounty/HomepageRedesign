@@ -1,32 +1,6 @@
-<<<<<<< HEAD:assets/stylesheets/partials/_header.scss
-.header {
-	.primary-nav {
-		background: $red;
-		color: $white;
-
-		a {
-			color: $white;
-		}
-	}
-
-	.page-tools {
-    text-align:right;
-		a, ul {
-			display: inline-block;
-		}
-	}
-
-
+.primary-nav-container {
+  padding: 0;
 }
-
-.primary-header {
-  background: $red;
-  color: white;
-  height: 100%;
-}
-
-=======
->>>>>>> f90e37d6597b1967ff2b328472d473a5c5b46251:assets/stylesheets/partials/components/_primaryNav.scss
 .primary-nav {
   background: $red;
   color: $white;
@@ -35,6 +9,7 @@
   height: 100%;
   margin: 0;
   padding: 0;
+  width: 100%;
 
   a {
     color: $white;
