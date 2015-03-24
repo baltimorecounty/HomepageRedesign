@@ -9,17 +9,22 @@ var TextResizer = (function (window, undefined, $) {
 
         var largeTextClass = 'large-text',
             largestTextClass = 'largest-text',
+            $textButtonList = $('.' + this.listClass),
             $mainContainer = $("#" + this.mainContainerId),
-            existsLocalStorage = typeof (Storage) !== "undefined";
+            existsLocalStorage = typeof (Storage) !== "undefined",
+            activeClass = 'active';
 
         var getPreference = function () {
             return existsLocalStorage && localStorage.getItem("size");
         },
         initialize = function () {
             var preference = getPreference();
-            if (preference) {
-                $mainContainer.addClass(preference);
+            if (!preference) {
+                preference = "normal-text";
             }
+
+            $textButtonList.find("#" + preference).addClass(activeClass);
+            $mainContainer.addClass(preference);
         },
         removePreference = function () {
             localStorage.removeItem("size");
@@ -29,6 +34,11 @@ var TextResizer = (function (window, undefined, $) {
                 localStorage.setItem("size", size);
             }
         };
+
+        $(document).on('click', $textButtonList.selector + " button", function() {
+            $textButtonList.find("button").removeClass(activeClass);
+            $(this).addClass(activeClass);
+        });
 
         /*Text Resizer Events*/
         $(document).on('click', '#' + this.normalBtnId, function (e) {

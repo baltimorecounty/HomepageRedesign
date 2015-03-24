@@ -14,6 +14,10 @@
   li {
     line-height: 34px;
   }
+
+  button.active {
+    color: white;
+  }
 }
 .resizer-item {
   color: $light-gray;
