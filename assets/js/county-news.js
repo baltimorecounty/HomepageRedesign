@@ -27,9 +27,6 @@ var ShowNews = (function($) {
     getExcerpt = function($newsItemDesc) {
         return $('p:eq(1)', $newsItemDesc);
     },
-    formatExcerptText = function(words) {
-        return words.splice(0, 50).join(" ") + "...";
-    },
     setDisplayDate = function ($newsItem, date) {
         $('.title', $newsItem).after("<span class='pub-date'>" + date + "</span>");
     },
@@ -45,7 +42,6 @@ var ShowNews = (function($) {
                 $linkToEntry = $newsItem.find("h3").find("a"),
                 pubDate = getDisplayDate($('.pubDate', $newsItem).text());
 
-
             //Create a read more linked based on the Blog Title's Anchor Href
             createReadMoreLink($newsItem, $linkToEntry);
 
@@ -55,17 +51,17 @@ var ShowNews = (function($) {
             //Ensure that the exceprt text is not too long
             //For now we are limiting it to 50 words
             var $excerpt = getExcerpt($newsItemDesc);
-            trimExceprtText($excerpt);
+            trimExceprtText($excerpt, 50);
 
             //Remove the body of the blog entry, only show the Summary
             showNewsSummary($newsItemDesc);
             
         });
     },
-    trimExceprtText = function($excerpt) {
+    trimExceprtText = function($excerpt, limit) {
         var text = $excerpt.text(),
             words = text.split(' '),
-            newText = words.length < 50 ? text : formatExcerptText(words);
+            newText = words.length < limit ? text : words.splice(0, limit).join(" ") + "...";
 
         $excerpt.text(newText);
     };
