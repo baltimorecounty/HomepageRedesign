@@ -9,7 +9,7 @@
   height: 100%;
   margin: 0;
   padding: 0;
-  width: 100%;
+  width: 100%; /*Only needed in Site Executive*/
 
   a {
     color: $white;
@@ -83,9 +83,17 @@
 }
 
 @media only screen and (max-width: 1199px) {
-  .primary-nav {
-    font-size: 80%;
+  .homepage {
+    .primary-nav .primary-nav-item {
+      .primary-nav-item__headline {
+        font-size: 1.6em;
+      }
+      .primary-nav-item__tagline {
+        font-size: .55em;
+      }
+    }
   }
+  
 }
 
 @media only screen and (min-width: 767px) and (max-width: 992px) {
@@ -114,7 +122,6 @@
         &:last-child {
           border-bottom: 0;
         }
-
         a {
           background: url($little-arrow) no-repeat 12.5px 18px;
           padding: 15px 0px 13px 40px;

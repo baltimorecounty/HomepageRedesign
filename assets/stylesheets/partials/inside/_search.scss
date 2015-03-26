@@ -1,15 +1,19 @@
 @import "../components/search";
 
 .search-internal {
+
   padding: 0;
 
   .search-input {
+  	font-size: 1.2em;
     height: auto;
-    padding: 10px;
+    padding: 8px 10px;
   }
 
   button {
+  	font-size: 1.2em;
+  	border: 0;
     height: auto;
-    padding: 11px 10px;
+    padding: 8px 10px;
   }
 }

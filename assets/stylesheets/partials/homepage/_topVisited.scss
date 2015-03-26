@@ -22,7 +22,7 @@
     display: table-cell;
     padding: 0 10px;
     text-align: center;
-
+    
     &:last-child {
       border: none;
     }
@@ -44,6 +44,9 @@
   .top-visited-list {
     margin: 10px auto 0;
     width: 100%;
+    li a {
+      line-height: 18px;
+    }
     li:first-child {
       padding-left: 10px;
     }

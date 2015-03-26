@@ -105,21 +105,7 @@
     right: 25px;
   }
 }
-
-@media only screen and (max-width: 600px) {
-  /*Plugin Specific Overrides*/
-  .slick-prev, .slick-next {
-    top: 25%;
-  }
-  .slick-prev {
-    left: 10px;
-  }
-  .slick-next {
-    right: 10px;
-  }
-}
-
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 767px) {
   .carousel {
     a {
       color: $navy;
@@ -139,18 +125,26 @@
       }
     }
   }
+}
+@media only screen and (max-width: 600px) {
+  /*Plugin Specific Overrides*/
+  .slick-prev, .slick-next {
+    top: 25%;
+  }
+  .slick-prev {
+    left: 10px;
+  }
+  .slick-next {
+    right: 10px;
+  }
+}
 
+@media only screen and (max-width: 400px) {
   /*Plugin Specific Overrides*/
   .slick-prev, .slick-next {
     height: 58.5px; /*3/4 of the original height of 78px*/
     width: 33.75px; /*3/4 of the original height of 78px*/
     top: 15%;
-  }
-  .slick-prev {
-    left: 0;
-  }
-  .slick-next {
-    right: 0;
   }
 }
 

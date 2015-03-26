@@ -1,6 +1,8 @@
 @import url(http://fonts.googleapis.com/css?family=Patua+One);
 @import url(http://fonts.googleapis.com/css?family=Raleway:700);
 
+/*Modules*/
+@import "modules/formReset";
 /* Partials */
 @import "partials/base/base";	
 @import "partials/base/typography";
@@ -10,11 +12,16 @@
 @import "partials/base/footer";
 
 @import "partials/inside/insideGrid";
+@import "partials/inside/search";
 
-@import "partials/components/search";
 @import "partials/components/social";
 @import "partials/components/secondaryNav";
 @import "partials/components/textResizer";
 @import "partials/components/buttons";
 @import "partials/components/fullSite";
 @import "partials/components/skipNav";
+
+/*This will ensure that the background colors will fill the screen*/
+body {
+	min-width: 1200px;
+}
