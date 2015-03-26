@@ -24,6 +24,12 @@ var ShowNews = (function($) {
 
         return month + " " + day;
     },
+    getExcerpt = function($newsItemDesc) {
+        return $('p:eq(1)', $newsItemDesc);
+    },
+    formatExcerptText = function(words) {
+        return words.splice(0, 50).join(" ") + "...";
+    },
     setDisplayDate = function ($newsItem, date) {
         $('.title', $newsItem).after("<span class='pub-date'>" + date + "</span>");
     },
@@ -46,9 +52,22 @@ var ShowNews = (function($) {
             //Include the published date after the news title
             setDisplayDate($newsItem, pubDate);
 
+            //Ensure that the exceprt text is not too long
+            //For now we are limiting it to 50 words
+            var $excerpt = getExcerpt($newsItemDesc);
+            trimExceprtText($excerpt);
+
             //Remove the body of the blog entry, only show the Summary
             showNewsSummary($newsItemDesc);
+            
         });
+    },
+    trimExceprtText = function($excerpt) {
+        var text = $excerpt.text(),
+            words = text.split(' '),
+            newText = words.length < 50 ? text : formatExcerptText(words);
+
+        $excerpt.text(newText);
     };
     //Hide the neccessary items to show the news summary
     //Used because Site Executive does not offer this feature
