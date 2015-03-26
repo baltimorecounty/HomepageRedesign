@@ -32,10 +32,6 @@ body {
 	padding : 0 0 20px;
 	display : table;
 }
-#maincontainer {
-	width : 1000px;
-	margin : 0 auto;
-}
 #header {
 	background-image : url(http://baltimorecountymd.gov/sebin/z/b/gradient-header.jpg);
 	background-position : top;
