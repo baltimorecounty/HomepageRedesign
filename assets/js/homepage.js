@@ -7,7 +7,7 @@
 	    var photoFeed = new Flickr({
 	        apiKey: "ee58ce6536e4b39a95ebdf000ae4adf3",
 	        nsid: "56007743@N08",
-	        searchTags: "bonefish", //comma seperated list
+	        searchTags: "featured", //comma seperated list
 	        template: "{{#each this}}<div class='county-photo-container col-md-3 col-sm-3 hidden-xs'><a href='https://www.flickr.com/photos/baltimorecounty/{{id}}/' title='View this photo on Baltimore County&apos;s Flickr Album'><img alt='{{title}}' class='county-photo-feed-item' src='http://farm{{farm}}.static.flickr.com/{{server}}/{{id}}_{{secret}}_q.jpg' alt='{{title}}' /></a></div>{{/each}}",
 	        $container: $flickFeedContainer
 	    });
@@ -18,9 +18,9 @@
             autoplaySpeed: 5000,
             dots: true,
             /*Show dot navigation*/
-            nextArrow: "<img src='/sebin/v/i/carousel-arrow-right.png' class='slick-next' />",
+            nextArrow: "<img src='http://baltimorecountymd.gov/sebin/v/i/carousel-arrow-right.png' class='slick-next' />",
             /*Starts on slide 4*/
-            prevArrow: "<img src='/sebin/f/m/carousel-arrow-left.png 'class='slick-prev' />"
+            prevArrow: "<img src='http://baltimorecountymd.gov/sebin/f/m/carousel-arrow-left.png 'class='slick-prev' />"
         });
 
         /*Initialize teh Text Resizer*/
