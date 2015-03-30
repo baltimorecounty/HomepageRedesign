@@ -33,6 +33,13 @@
   }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1022px) {
+  .top-visited-list li a {
+      line-height: 18px;
+  }
+}
+
+
 @media only screen and (min-width: 768px) and (max-width: 992px) {
   .top-visited-label {
     border-top:5px solid darken($light-gray, 20);
@@ -44,9 +51,7 @@
   .top-visited-list {
     margin: 10px auto 0;
     width: 100%;
-    li a {
-      line-height: 18px;
-    }
+
     li:first-child {
       padding-left: 10px;
     }

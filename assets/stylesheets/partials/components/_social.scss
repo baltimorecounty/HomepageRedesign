@@ -7,6 +7,10 @@ $icon-sprite: "http://staging.baltimorecountymd.gov/homepageredesign/assets/img/
 	h1, a {
 		color: $white;
 	}
+
+	li {
+		padding-left: 0;
+	}
 }
 .social-media-list-item {
 	background-image: url($icon-sprite);
@@ -94,6 +98,11 @@ $icon-sprite: "http://staging.baltimorecountymd.gov/homepageredesign/assets/img/
 @media only screen and (max-width: 1200px) {
 	.social-media-list-item {
 		margin-right: 20px;
+	}
+}
+@media only screen and (max-width: 1022px) {
+	.social-media-list-item {
+		margin-right: 15px;
 	}
 }
 @media only screen and (max-width: 400px) {

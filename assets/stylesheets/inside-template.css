@@ -505,7 +505,10 @@ a {
     min-width: 30%; }
   .homepage .primary-nav {
     font-size: 80%; } }
-@media only screen and (max-width: 1199px) {
+@media only screen and (min-width: 992px) and (max-width: 1022px) {
+  .primary-nav h2 {
+    font-size: 1.5em; } }
+@media only screen and (max-width: 992px) {
   .homepage .primary-nav .primary-nav-item .primary-nav-item__headline {
     font-size: 1.6em; }
   .homepage .primary-nav .primary-nav-item .primary-nav-item__tagline {
@@ -576,7 +579,7 @@ a {
     letter-spacing: .4px;
     margin: 13px 0 0; }
   .brand .brand-logo {
-    margin-right: 10px; }
+    margin: 0 10px 0 20px; }
   .brand .brand-logo, .brand .brand-heading {
     display: inline-block;
     vertical-align: middle; }
@@ -599,7 +602,7 @@ a {
 
 @media only screen and (max-width: 992px) {
   .primary-footer .social-media-list {
-    padding: 10px 10px 0;
+    padding: 20px 0 0;
     text-align: left; } }
 .secondary-footer {
   background: #c51110;
@@ -949,6 +952,8 @@ a {
   text-align: center; }
   .social-media-list h1, .social-media-list a {
     color: #fff; }
+  .social-media-list li {
+    padding-left: 0; }
 
 .social-media-list-item {
   background-image: url("http://staging.baltimorecountymd.gov/homepageredesign/assets/img/social-icons-sprite.png");
@@ -1010,6 +1015,9 @@ a {
 @media only screen and (max-width: 1200px) {
   .social-media-list-item {
     margin-right: 20px; } }
+@media only screen and (max-width: 1022px) {
+  .social-media-list-item {
+    margin-right: 15px; } }
 @media only screen and (max-width: 400px) {
   .social-media-list-item {
     margin-right: 10px; } }
