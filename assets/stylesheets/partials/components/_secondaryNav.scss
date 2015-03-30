@@ -24,7 +24,15 @@
   .homepage {
     .secondary-nav {
       font-size:.85em;
-      padding: 10px;
+      padding: 10px 30px;
+
+      a {
+        color: $light-gray;
+
+        &:hover {
+          color: white;
+        }
+      }
     }
   }
   
