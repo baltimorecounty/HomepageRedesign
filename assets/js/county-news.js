@@ -68,6 +68,9 @@ var ShowNews = (function($) {
     //Hide the neccessary items to show the news summary
     //Used because Site Executive does not offer this feature
     $(document).ready(function() {
+
+        $('.news-feed').find('.item').eq(2).css("clear", "both"); //Hack, adds cleafix to syndication module
+
        showNewsSummaries(); 
    });
     
