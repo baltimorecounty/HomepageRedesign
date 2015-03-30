@@ -84,12 +84,6 @@
   }
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1022px) {
-  .primary-nav h2 {
-      font-size: 1.5em;
-  }
-}
-
 @media only screen and (max-width: 992px) {
   .homepage {
     .primary-nav .primary-nav-item {
@@ -116,6 +110,20 @@
     }
     .primary-nav .primary-nav-item{
       margin: 0 0 5px;
+    }
+  }
+}
+
+
+@media only screen and (min-width: 767px) and (max-width: 800px) {
+  .homepage {
+    .primary-nav .primary-nav-item {
+      .primary-nav-item__headline {
+        font-size: 1.5em;
+      }
+      .primary-nav-item__tagline {
+        font-size: .55em;
+      }
     }
   }
 }
