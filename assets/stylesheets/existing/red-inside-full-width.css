@@ -1,0 +1,20 @@
+#container_localnavigation {
+    display:none;
+}
+#column2 {
+    max-width:915px;
+    width: 100%;
+	  float: left;
+	  margin: 20px 0 0 42px;
+	  padding: 0;
+	  display: inline-block;
+}
+#backgroundshadow {
+    background-image:url("/sebin/p/c/background-shadow-fullwidth.png");
+}
+.logobox {
+    background-image:url("/sebin/x/c/seal-new-fullwidth.jpg");
+}
+#agencyheader {
+    width:910px;
+}

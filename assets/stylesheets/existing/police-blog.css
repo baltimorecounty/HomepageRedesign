@@ -35,17 +35,6 @@ body {
 	width : 1000px;
 	margin : 0 auto;
 }
-#header {
-	background-image : url(http://baltimorecountymd.gov/sebin/z/b/gradient-header.jpg);
-	background-position : top;
-	background-repeat : repeat-x;
-	width : 100%;
-	height : 188px;
-}
-#headercontainer {
-	width : 1001px;
-	margin : auto;
-}
 .logobox {
 	background-image : url(http://baltimorecountymd.gov/sebin/f/h/seal-new.jpg);
 	background-repeat : no-repeat;
@@ -90,8 +79,7 @@ body {
 #sa .hover {
 	background-color : #000;
 }
-#search_area {
-}
+
 #q {
 	margin : 0 0 0 3px;
 	width : 320px;
@@ -214,10 +202,6 @@ body {
 	margin : 0;
 	padding : 0;
 }
-#container_footer {
-	background-color : #333;
-	width : 100%;
-}
 #container_localnavigation {
 	width : 230px;
 	margin : 15px 0 0 0;
@@ -321,13 +305,11 @@ body {
 #county_news h1 {
 	display : none;
 }
-#county_news h3.title {
-}
+
 #county_news ol {
 	list-style-type : none;
 }
-#county_news ol li {
-}
+
 #county_news ol.feedItems {
 	margin : 20px 0px 0px 30px;
 	padding : 0px;
@@ -405,69 +387,6 @@ body {
 	background-position : top center;
 	background-repeat : no-repeat;
 	float : left;
-}
-#footer {
-	width : 1000px;
-	background-color : #333;
-	padding : 20px 0;
-	margin : auto;
-	line-height : 18px;
-	color : #ccc;
-	font-size : 11px;
-	display : block;
-}
-#footer ul {
-	list-style-type : none;
-	padding : 0px;
-	margin : 20px 0 0 0;
-}
-#footer ul li.title {
-	border-bottom : 1px dotted #ccc;
-	font-weight : bold;
-	font-size : 1.1em;
-	margin : 0 0 10px;
-	padding : 0 0 6px;
-	color : #fff;
-}
-#footer ul a {
-	color : #ccc;
-	text-decoration : none;
-	font-weight : normal;
-}
-#footer ul a:hover {
-	text-decoration : underline;
-}
-#footer ul a:visited {
-	color : #999;
-}
-#footer_list {
-	float : left;
-	font-family : Arial, Helvetica, sans-serif;
-	height : auto;
-	padding : 0 0 0 5px;
-	margin : 0 10px;
-	display : inline;
-}
-#footer_address {
-	float : left;
-	margin : 0 0px 0 0;
-}
-#footer_address_list {
-	width : auto;
-	float : left;
-}
-#footer_county_icon {
-	padding : 20px 0 0 0;
-	float : left;
-	height : auto;
-	margin : 7px 20px 0;
-	width : 80px;
-}
-#footer_credits {
-	width : 1000px;
-	border-top : 1px solid #666;
-	padding : 5px 0 20px 0;
-	margin:0px  	float:left;
 }
 #Alert {
 	height : auto;
@@ -958,8 +877,7 @@ body {
 	font-size : 18px;
 	color : #000;
 }
-#searchButton img {
-}
+
 .SEEventType {
 	font-family : Arial, Helvetica, sans-serif;
 	font-size : 14px;
@@ -1015,8 +933,7 @@ body {
 .SEEventLocation {
 	padding : 5px;
 }
-.SEEventRemindMeButton img {
-}
+
 .SEEventDesc {
 	padding : 5px;
 }
@@ -1206,8 +1123,7 @@ select {
 	margin-right : 15px;
 	margin-left : 0px;
 }
-#RemindMeForm .SEEventRemindmeCheckbox #Day {
-}
+
 #RemindMeForm .SEEventRemindmeButton {
 	margin-top : 50px;
 }
@@ -1432,8 +1348,7 @@ select {
 	margin-bottom : 20px;
 	height : 50px;
 }
-#CalendarContainer {
-}
+
 #weather_update_container {
 	width : 200px;
 	background-image : url(http://baltimorecountymd.gov/sebin/k/i/baltco_hdr_weatherfeed.gif);
@@ -1442,8 +1357,7 @@ select {
 	margin-left : 15px;
 	background-color : #ffcc4b;
 }
-#weather_update_container .description {
-}
+
 #weather_update_container .extras {
 	font-weight : bold;
 	margin : -15px 0px 0px 0px;
@@ -1452,8 +1366,7 @@ select {
 #weather_update_container .itemURL {
 	display : none;
 }
-#weather_update_container .pubDate {
-}
+
 #weather_update_container h1 {
 	display : none;
 }
@@ -1463,8 +1376,7 @@ select {
 	border-left : 1px solid #cf1110;
 	border-right : 1px solid #cf1110;
 }
-#weather_update_container h3.title {
-}
+
 #weather_update_container h3 {
 	font-size : 11px;
 }
@@ -1523,8 +1435,7 @@ select {
 	background-position : top;
 	background-repeat : no-repeat;
 }
-#twitter_update_container ol {
-}
+
 #twitter_update_container .description {
 	display : none;
 }
@@ -1587,8 +1498,7 @@ select {
 	padding : 50px 0 0;
 	width : 480px;
 }
-.tulipMain {
-}
+
 .tulipTVPlayerContainerTitle {
 	color : #feb30c;
 	font-family : Arial, Helvetica, sans-serif;
@@ -1614,17 +1524,14 @@ select {
 	clear : both;
 	margin : 0 0 0 15px;
 }
-#tulipTVChannelChoice {
-}
+
 #tulipTVChannelChoiceName {
 	font-size : 1.3em;
 	font-weight : bold;
 	margin : 15px 0;
 }
-#tulipTVChannelChoiceDesc {
-}
-.tulipTVThumbsContainer #tulipTVThumbs {
-}
+
+
 .tulipTVThumbLink {
 	margin : 0 10px 20px 0;
 	display : inline;
@@ -1968,8 +1875,7 @@ input#mce-EMAIL {
 .smallview {
 	font-size : 13px;
 }
-.normalview {
-}
+
 .largeview {
 	font-size : 18px;
 }
@@ -2036,8 +1942,7 @@ a.selectedtoggler img {
 	width : 500px;
 	border-top : 6px solid #CACACA;
 }
-.seBlogViewKeywords {
-}
+
 .seBlogViewKeywords ul {
 	-moz-padding-start : 0;
 	display : block;
@@ -2159,8 +2064,7 @@ a.selectedtoggler img {
 #mainContent .seBlogViewSmallCal table {
 	width : 180px;
 }
-#mainContent .seBlogViewSmallCal td.seSelect {
-}
+
 #seBlogTabs {
 	font-family : Arial, Helvetica, sans-serif;
 	font-size : 1.5em;
@@ -2254,43 +2158,6 @@ a.selectedtoggler img {
 }
 #SEBlogViewCommentForm {
 	display : none;
-}
-#footer_list ul li.facebook {
-	list-style-image : url("http://baltimorecountymd.gov/sebin/z/j/footer-facebookicon.png");
-	list-style-position : inside;
-	margin : 3px 0;
-	padding : 2px;
-}
-#footer_list ul li.twitter {
-	list-style-image : url("http://baltimorecountymd.gov/sebin/v/b/footer-twittericon.png");
-	list-style-position : inside;
-	padding : 2px;
-}
-#footer_list ul li.youtube {
-	list-style-image : url("http://baltimorecountymd.gov/sebin/f/f/footer-youtubeicon.png");
-	list-style-position : inside;
-	margin : 3px 0;
-	padding : 2px;
-}
-#footer_list ul li.photos {
-	list-style-image : url("http://baltimorecountymd.gov/sebin/x/i/footer-photosicon.png");
-	list-style-position : inside;
-	margin : 3px 0;
-	padding : 2px;
-}
-#footer_list ul li.videos {
-	list-style-image : url("http://baltimorecountymd.gov/sebin/d/o/footer-videoicon.png");
-	list-style-position : inside;
-	margin : 3px 0;
-	padding : 2px;
-}
-#footer_list ul li.bcnow {
-	list-style-image : url("http://baltimorecountymd.gov/sebin/t/a/footer-bcnowicon.png");
-	list-style-position : inside;
-	padding : 2px;
-}
-#footer_county_icon img {
-	margin : 0 0 25px;
 }
 .facebookfeedbox {
 	border : 1px solid #3B5998;
@@ -2506,14 +2373,10 @@ a.selectedtoggler img {
 .postContent {
 	display : table;
 }
-.postContent p {
-}
-.postWrapper {
-}
-#SEBlogViewPost {
-}
-#SEBlogViewWrapper {
-}
+
+
+
+
 #SEBlogViewAuxWrapper {
 	float : right;
 }

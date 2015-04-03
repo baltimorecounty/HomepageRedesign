@@ -209,7 +209,7 @@ body {
 	color : #000000;
 	height : auto;
 	width : auto;
-	margin-top : 0.31em;
+	margin-top : 0.31em;.
 	margin-bottom : 0.63em;
 	margin-left : 17em;
 	display : none;
@@ -237,8 +237,7 @@ body {
 	margin : 0 20px 0 15px;
 	height : auto;
 }
-#mainContent p {
-}
+
 .fltrt {
 	float : right;
 	margin-left : 8px;

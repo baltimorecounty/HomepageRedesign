@@ -1,5 +1,5 @@
-@import url(http://fonts.googleapis.com/css?family=Patua+One);
-@import url(http://fonts.googleapis.com/css?family=Raleway:700);
+@import url(//fonts.googleapis.com/css?family=Patua+One);
+@import url(//fonts.googleapis.com/css?family=Raleway:700);
 /*Modules*/
 .header {
   /**
@@ -505,9 +505,6 @@ a {
     min-width: 30%; }
   .homepage .primary-nav {
     font-size: 80%; } }
-@media only screen and (min-width: 992px) and (max-width: 1022px) {
-  .primary-nav h2 {
-    font-size: 1.5em; } }
 @media only screen and (max-width: 992px) {
   .homepage .primary-nav .primary-nav-item .primary-nav-item__headline {
     font-size: 1.6em; }
@@ -521,6 +518,11 @@ a {
     padding: 20px 0 20px 40px; }
   .homepage .primary-nav .primary-nav-item {
     margin: 0 0 5px; } }
+@media only screen and (min-width: 767px) and (max-width: 800px) {
+  .homepage .primary-nav .primary-nav-item .primary-nav-item__headline {
+    font-size: 1.5em; }
+  .homepage .primary-nav .primary-nav-item .primary-nav-item__tagline {
+    font-size: .55em; } }
 @media only screen and (max-width: 767px) {
   .homepage .primary-nav .primary-nav-item {
     border-right: 0;
@@ -596,7 +598,7 @@ a {
     width: 65px;
     margin-right: 5px; } }
 .primary-footer {
-  padding: 20px; }
+  padding: 20px 15px; }
   .primary-footer h2 {
     margin: 0; }
 

@@ -214,8 +214,7 @@ h6 {
 #sa .hover {
 	background-color : #000;
 }
-#search_area {
-}
+
 #q {
 	margin : 0 0 0 3px;
 	width : 320px;
@@ -235,8 +234,7 @@ ul.megamenu {
 	width : 744px;
 	height : 37px;
 }
-ul.megamenu li.mm-item {
-}
+
 ul.megamenu li {
 	font-family : Arial, Helvetica, sans-serif;
 	font-weight : bold;
@@ -518,13 +516,11 @@ ul.megamenu div.mm-item-content {
 #county_news h1 {
 	display : none;
 }
-#county_news h3.title {
-}
+
 #county_news ol {
 	list-style-type : none;
 }
-#county_news ol li {
-}
+
 #county_news ol.feedItems {
 	margin : 20px 0px 0px 30px;
 	padding : 0px;
@@ -1155,8 +1151,7 @@ ul.megamenu div.mm-item-content {
 	font-size : 18px;
 	color : #000;
 }
-#searchButton img {
-}
+
 .SEEventType {
 	font-family : Arial, Helvetica, sans-serif;
 	font-size : 14px;
@@ -1212,8 +1207,7 @@ ul.megamenu div.mm-item-content {
 .SEEventLocation {
 	padding : 5px;
 }
-.SEEventRemindMeButton img {
-}
+
 .SEEventDesc {
 	padding : 5px;
 }
@@ -1403,8 +1397,7 @@ select {
 	margin-right : 15px;
 	margin-left : 0px;
 }
-#RemindMeForm .SEEventRemindmeCheckbox #Day {
-}
+
 #RemindMeForm .SEEventRemindmeButton {
 	margin-top : 50px;
 }
@@ -1629,8 +1622,7 @@ select {
 	margin-bottom : 20px;
 	height : 50px;
 }
-#CalendarContainer {
-}
+
 #weather_update_container {
 	width : 200px;
 	background-image : url(http://baltimorecountymd.gov/sebin/k/i/baltco_hdr_weatherfeed.gif);
@@ -1639,8 +1631,7 @@ select {
 	margin-left : 15px;
 	background-color : #ffcc4b;
 }
-#weather_update_container .description {
-}
+
 #weather_update_container .extras {
 	font-weight : bold;
 	margin : -15px 0px 0px 0px;
@@ -1649,8 +1640,7 @@ select {
 #weather_update_container .itemURL {
 	display : none;
 }
-#weather_update_container .pubDate {
-}
+
 #weather_update_container h1 {
 	display : none;
 }
@@ -1660,8 +1650,7 @@ select {
 	border-left : 1px solid #cf1110;
 	border-right : 1px solid #cf1110;
 }
-#weather_update_container h3.title {
-}
+
 #weather_update_container h3 {
 	font-size : 11px;
 }
@@ -1720,8 +1709,7 @@ select {
 	background-position : top;
 	background-repeat : no-repeat;
 }
-#twitter_update_container ol {
-}
+
 #twitter_update_container .description {
 	display : none;
 }
@@ -1784,8 +1772,7 @@ select {
 	padding : 50px 0 0;
 	width : 480px;
 }
-.tulipMain {
-}
+
 .tulipTVPlayerContainerTitle {
 	color : #feb30c;
 	font-family : Arial, Helvetica, sans-serif;
@@ -1811,17 +1798,14 @@ select {
 	clear : both;
 	margin : 0 0 0 15px;
 }
-#tulipTVChannelChoice {
-}
+
 #tulipTVChannelChoiceName {
 	font-size : 1.3em;
 	font-weight : bold;
 	margin : 15px 0;
 }
-#tulipTVChannelChoiceDesc {
-}
-.tulipTVThumbsContainer #tulipTVThumbs {
-}
+
+
 .tulipTVThumbLink {
 	margin : 0 10px 20px 0;
 	display : inline;
@@ -2165,8 +2149,7 @@ input#mce-EMAIL {
 .smallview {
 	font-size : 13px;
 }
-.normalview {
-}
+
 .largeview {
 	font-size : 18px;
 }
@@ -2235,8 +2218,7 @@ a.selectedtoggler img {
 	width : 500px;
 	border-top : 6px solid #CACACA;
 }
-.seBlogViewKeywords {
-}
+
 .seBlogViewKeywords ul {
 	-moz-padding-start : 0;
 	display : block;
@@ -2358,8 +2340,7 @@ a.selectedtoggler img {
 #mainContent .seBlogViewSmallCal table {
 	width : 180px;
 }
-#mainContent .seBlogViewSmallCal td.seSelect {
-}
+
 #seBlogTabs {
 	font-family : Arial, Helvetica, sans-serif;
 	font-size : 1.5em;
@@ -2708,14 +2689,10 @@ a.selectedtoggler img {
 .postContent {
 	display : table;
 }
-.postContent p {
-}
-.postWrapper {
-}
-#SEBlogViewPost {
-}
-#SEBlogViewWrapper {
-}
+
+
+
+
 #SEBlogViewAuxWrapper {
 	float : right;
 	clear : right;
@@ -2725,10 +2702,8 @@ a.selectedtoggler img {
 	margin : 10px 0 0;
 	float : left;
 }
-#SEBlogViewAuxArea {
-}
-#SEBlog {
-}
+
+
 .SEBlogViewPagingPrev {
 	background-color : #feb30c;
 	border : 1px solid #666;

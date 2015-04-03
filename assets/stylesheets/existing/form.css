@@ -78,10 +78,8 @@ legend {
 	color : #000000;
 	font-weight : normal !important;
 }
-.seCheckbox {
-}
-.horizontal {
-}
+
+
 .seRadio {
 	display : inline;
 	padding-bottom : 50px;
