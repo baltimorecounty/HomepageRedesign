@@ -38,15 +38,18 @@
 @media only screen and (max-width: 480px){
     .brand {
       padding: 5px;
-    }
-    .brand .brand-heading {
-        font-size: 1.2em;
-        line-height: 25px;
-        margin: 10px 0 0;
-    }
-    .brand .brand-logo{
-      height:65px;
-      width:65px;
-      margin-right:5px;
+
+      .brand-heading {
+          font-size: 1.4em;
+          line-height: 25px;
+          margin: 10px 0 0;
+      }
+
+      .brand-logo{
+        height:65px;
+        width:65px;
+        margin-right:5px;
+      }
+
     }
 }

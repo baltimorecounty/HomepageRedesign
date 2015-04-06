@@ -1,5 +1,5 @@
 @import url(//fonts.googleapis.com/css?family=Patua+One);
-@import url(//fonts.googleapis.com/css?family=Raleway:700);
+@import url(//fonts.googleapis.com/css?family=Lato:700);
 
 /*Modules*/
 @import "modules/formReset";
@@ -15,7 +15,6 @@
 @import "partials/inside/search";
 
 @import "partials/components/social";
-@import "partials/components/secondaryNav";
 @import "partials/components/textResizer";
 @import "partials/components/buttons";
 @import "partials/components/fullSite";
@@ -24,4 +23,14 @@
 /*This will ensure that the background colors will fill the screen*/
 body {
 	min-width: 1200px;
+}
+
+.brand .brand-logo {
+	margin: 0 10px 0 0;
+}
+
+.agency-page img {
+	border: none;
+	padding: 0;
+	margin: 0;
 }
