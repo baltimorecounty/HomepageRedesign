@@ -148,7 +148,6 @@ p {
 	padding : 0 10px 0 0;
 }
 #container_localnavigation {
-	background-color : #ebebeb;
 	margin : 0px 20px 0 0;
 	width : 100%;
 	float : left;
@@ -207,10 +206,11 @@ p {
 	padding : 10px 0 0 10px;
 }
 #baco_subnav {
-	margin : 0 20px 0 0;
+	margin : 0 20px 20px 0;
 	width : 96%;
 	float : left;
 	padding : 10px;
+	background-color : #ebebeb;
 }
 #baco_subnav ul li {
 	padding : 0 0 5px 3px;
@@ -251,9 +251,10 @@ p {
 #services {
 	background-position : right top;
 	background-repeat : no-repeat;
+	background-color : #ebebeb;
 	float : left;
 	height : auto;
-	margin : 0 20px 0 0;
+	margin : 0 20px 20px 0;
 	width : 96%;
 }
 #contentArea {

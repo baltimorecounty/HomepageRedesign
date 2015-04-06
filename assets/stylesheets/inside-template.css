@@ -1,5 +1,5 @@
 @import url(//fonts.googleapis.com/css?family=Patua+One);
-@import url(//fonts.googleapis.com/css?family=Raleway:700);
+@import url(//fonts.googleapis.com/css?family=Lato:700);
 /*Modules*/
 .header {
   /**
@@ -347,43 +347,37 @@ html {
 
 html, body {
   background: #dbdbdb;
-  color: #dbdbdb;
+  color: #444444;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   margin: 0;
   padding: 0; }
 
 img {
-  border: 1px solid #ccc;
+  border: 1px solid #cccccc;
   margin: 5px;
   padding: 5px; }
 
-body {
+.homepage body, .header body, .footer body {
   font-size: .95em;
   line-height: 1.5em;
-  color: #444; }
-
-p {
-  margin: 0 0 20px; }
-
-small {
+  color: #444444; }
+.homepage p, .header p, .footer p {
+  margin: 0 0 20px;
+  line-height: 24px; }
+.homepage small, .header small, .footer small {
   font-size: 85%; }
-
-h1, h2, h3, h4, h5, h6 {
-  color: #444;
+.homepage h1, .homepage h2, .homepage h3, .homepage h4, .homepage h5, .homepage h6, .header h1, .header h2, .header h3, .header h4, .header h5, .header h6, .footer h1, .footer h2, .footer h3, .footer h4, .footer h5, .footer h6 {
+  color: #444444;
   font-weight: normal; }
-
-h1, h2 {
+.homepage h1, .homepage h2, .header h1, .header h2, .footer h1, .footer h2 {
   font-family: "Patua One", sans-serif; }
-
-h3, h4, h5 {
+.homepage h3, .homepage h4, .homepage h5, .header h3, .header h4, .header h5, .footer h3, .footer h4, .footer h5 {
   font-weight: bold; }
-
-h1 {
+.homepage h1, .header h1, .footer h1 {
   font-size: 2.083em;
   line-height: 40px; }
-
-h2 {
+.homepage h2, .header h2, .footer h2 {
   border-top: 5px solid #ebebeb;
   border-bottom: 1px solid #ebebeb;
   color: #c51110;
@@ -391,26 +385,22 @@ h2 {
   line-height: 30px;
   margin: 0 0 13px;
   padding: 7px 0; }
-
-h3 {
+.homepage h3, .header h3, .footer h3 {
   font-size: 1.2em;
   line-height: 30px; }
-
-h4 {
+.homepage h4, .header h4, .footer h4 {
   font-size: 1.1em;
   line-height: 20px; }
-
-h5 {
+.homepage h5, .header h5, .footer h5 {
   font-size: 1em;
   line-height: 20px; }
-
-a {
+.homepage a, .header a, .footer a {
   color: #002280; }
-  a:hover {
+  .homepage a:hover, .header a:hover, .footer a:hover {
     color: #feb30c; }
 
 @media only screen and (max-width: 767px) {
-  h2 {
+  .homepage h2 {
     margin-bottom: 0; } }
 .primary-header {
   background: #c51110;
@@ -418,15 +408,16 @@ a {
   height: 100%; }
 
 .secondary-header {
-  background: #333;
+  background: #333333;
   font-size: .85em;
   padding: 10px 0; }
   .secondary-header a {
     color: #dbdbdb;
     display: block;
-    line-height: 11px; }
+    line-height: 11px;
+    text-decoration: underline; }
     .secondary-header a:hover {
-      color: #fff; }
+      color: white; }
   .secondary-header .page-tools {
     text-align: right; }
     .secondary-header .page-tools a, .secondary-header .page-tools ul {
@@ -452,16 +443,13 @@ a {
 
 .primary-nav {
   background: #c51110;
-  color: #fff;
-  float: right;
+  color: white;
   list-style-type: none;
   height: 100%;
   margin: 0;
-  padding: 0;
-  width: 100%;
-  /*Only needed in Site Executive*/ }
+  padding: 0; }
   .primary-nav a {
-    color: #fff; }
+    color: white; }
   .primary-nav .primary-nav-item {
     background-color: #a90f0e;
     border-right: 5px solid #c51110;
@@ -514,7 +502,7 @@ a {
   .homepage .primary-nav {
     width: 100%; }
   .homepage .primary-nav .primary-nav-item a {
-    background: url("//baltimorecountymd.gov/sebin/l/t/little-arrow.png") no-repeat scroll 12.5px 22px transparent;
+    background: url("//baltimorecountymd.gov/sebin/l/t/little-arrow.png") no-repeat scroll 12.5px 22px rgba(0, 0, 0, 0);
     padding: 20px 0 20px 40px; }
   .homepage .primary-nav .primary-nav-item {
     margin: 0 0 5px; } }
@@ -538,7 +526,7 @@ a {
     .homepage .primary-nav.mobile-menu-visible, .homepage .secondary-nav.mobile-menu-visible {
       display: block; } }
 .secondary-nav {
-  background: #333; }
+  background: #333333; }
   .secondary-nav .secondary-nav-list {
     padding: 8px 0; }
     .secondary-nav .secondary-nav-list .secondary-nav-list-item {
@@ -569,7 +557,7 @@ a {
   .brand a, .brand a:hover {
     text-decoration: none; }
   .brand h1 {
-    color: #fff; }
+    color: white; }
   .brand h1, .brand img {
     border: none; }
   .brand .brand-heading {
@@ -589,14 +577,14 @@ a {
 @media only screen and (max-width: 480px) {
   .homepage .brand {
     padding: 5px; }
-  .homepage .brand .brand-heading {
-    font-size: 1.2em;
-    line-height: 25px;
-    margin: 10px 0 0; }
-  .homepage .brand .brand-logo {
-    height: 65px;
-    width: 65px;
-    margin-right: 5px; } }
+    .homepage .brand .brand-heading {
+      font-size: 1.4em;
+      line-height: 25px;
+      margin: 10px 0 0; }
+    .homepage .brand .brand-logo {
+      height: 65px;
+      width: 65px;
+      margin-right: 5px; } }
 .primary-footer {
   padding: 20px 15px; }
   .primary-footer h2 {
@@ -608,12 +596,12 @@ a {
     text-align: left; } }
 .secondary-footer {
   background: #c51110;
-  color: #fff;
+  color: white;
   padding: 20px; }
   .secondary-footer a {
     color: white; }
   .secondary-footer .county-links-list-item {
-    border-right: 1px solid #fff;
+    border-right: 1px solid white;
     padding: 0 5px; }
     .secondary-footer .county-links-list-item:last-child {
       border-right: none; }
@@ -653,15 +641,16 @@ a {
   margin: 15px 15px 0 0; }
 
 .footer {
-  background: #333;
+  background: #333333;
   color: #dbdbdb;
   font-size: .85em; }
   .footer a {
-    color: #dbdbdb; }
+    color: #dbdbdb;
+    text-decoration: underline; }
     .footer a:hover {
-      color: #fff; }
+      color: white; }
   .footer h2 {
-    color: #fff; }
+    color: white; }
   .footer h2, .footer img {
     border: none; }
   .footer ul, .footer ol {
@@ -953,7 +942,7 @@ a {
   list-style-type: none;
   text-align: center; }
   .social-media-list h1, .social-media-list a {
-    color: #fff; }
+    color: white; }
   .social-media-list li {
     padding-left: 0; }
 
@@ -1023,31 +1012,6 @@ a {
 @media only screen and (max-width: 400px) {
   .social-media-list-item {
     margin-right: 10px; } }
-.secondary-nav {
-  background: #333; }
-  .secondary-nav .secondary-nav-list {
-    padding: 8px 0; }
-    .secondary-nav .secondary-nav-list .secondary-nav-list-item {
-      border-right: 1px solid #dbdbdb; }
-      .secondary-nav .secondary-nav-list .secondary-nav-list-item:first-child {
-        padding-left: 0; }
-      .secondary-nav .secondary-nav-list .secondary-nav-list-item:last-child {
-        border: none;
-        padding-right: 0; }
-
-@media only screen and (max-width: 767px) {
-  .homepage .secondary-nav {
-    font-size: .85em;
-    padding: 10px 30px; }
-    .homepage .secondary-nav a {
-      color: #dbdbdb; }
-      .homepage .secondary-nav a:hover {
-        color: white; } }
-@media only screen and (max-width: 767px) {
-  .homepage .secondary-nav {
-    display: none; }
-    .homepage .secondary-nav.mobile-menu-visible {
-      display: block; } }
 /*Resizer Container Class*/
 .resizer {
   display: inline-block; }
@@ -1104,16 +1068,16 @@ button {
 
 .link-btn {
   background: #feb30c;
-  border: 1px solid #444;
+  border: 1px solid #444444;
   padding: 10px;
-  color: #444;
+  color: #444444;
   text-decoration: none;
   font-weight: 700;
   font-family: Arial;
   font-size: 1.1em; }
   .link-btn:hover {
     background: #fed372;
-    color: #444; }
+    color: #444444; }
 
 .view-full-site-btn {
   padding: 20px 10px; }
@@ -1143,4 +1107,10 @@ a.skip:hover {
 body {
   min-width: 1200px; }
 
-/*# sourceMappingURL=inside-template.css.map */
+.brand .brand-logo {
+  margin: 0 10px 0 0; }
+
+.agency-page img {
+  border: none;
+  padding: 0;
+  margin: 0; }
