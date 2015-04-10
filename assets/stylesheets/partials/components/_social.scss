@@ -1,4 +1,4 @@
-$icon-sprite: "http://staging.baltimorecountymd.gov/homepageredesign/assets/img/social-icons-sprite.png";
+$icon-sprite: "//staging.baltimorecountymd.gov/homepageredesign/assets/img/social-icons-sprite.png";
 
 .social-media-list {
 	list-style-type: none;
@@ -100,7 +100,7 @@ $icon-sprite: "http://staging.baltimorecountymd.gov/homepageredesign/assets/img/
 		margin-right: 20px;
 	}
 }
-@media only screen and (max-width: 1022px) {
+@media only screen and (max-width: 1100px) {
 	.social-media-list-item {
 		margin-right: 15px;
 	}

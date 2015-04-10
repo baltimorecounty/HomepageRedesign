@@ -2,6 +2,7 @@
   background: $darker-gray;
   font-size:.85em;
   padding: 10px 0;
+  width: 100%;
 
   a {
     color: $light-gray;
@@ -19,6 +20,7 @@
 
     a, ul {
       display: inline-block;
+      margin-top: -6px;
     }
   }
   

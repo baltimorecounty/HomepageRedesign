@@ -1,10 +1,9 @@
-.search {
+.search, .cse input.gsc-input, input.gsc-input {
   padding: 20px;
-  
-  .search-input, button {
-    border: none;
-    height: 55px;
-    margin: 0;
+
+  .search-input, button, .gsc-search-button {
+    border: none !important;
+    margin: 0 !important;
   }
 
   .search-text {
@@ -21,10 +20,50 @@
     padding: 0px 20px;
     width: 100%;
   }
-
-  button {
-    float: right;
+  div.gsc-clear-button {
+    display: none;
   }
 
+  button {
+
+  }
+}
+
+input.gsc-search-button {
+    border-radius: 0 !important;
+    color: $dark-gray !important;
+    float: right;
+    background: #feb30c !important;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 17.6px !important;
+    font-weight: 700 !important;
+    padding: 20px 20px 40px !important;
+}
+.cse input.gsc-input, input.gsc-input {
+  background: white !important;
+  padding: 20px !important; 
+}
+td.gsc-input {
+  padding-right: 0 !important;
+}
+td.gsc-clear-button {
+  width: 0 !important;
+}
+.cse form.gsc-search-box, form.gsc-search-box {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+
+@media only screen and (max-width: 400px) {
+  .cse input.gsc-input, input.gsc-input {
+    padding: 4px !important;  
+  }
+  .cse input.gsc-search-button, input.gsc-search-button {
+      background: #feb30c !important;
+      font-size: 1.1em !important;
+      padding: 0 !important;
+  }
 
 }

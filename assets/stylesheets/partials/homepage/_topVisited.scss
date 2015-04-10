@@ -15,7 +15,7 @@
 
   width: 87.5%;
 
-  padding: 5.5px 0;
+  padding: 1.5px 0;
 
   li {
     border-right: 1px solid $navy;
@@ -33,7 +33,7 @@
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1022px) {
+@media only screen and (min-width: 768px) and (max-width: 1100px) {
   .top-visited-list li a {
       line-height: 18px;
   }
@@ -58,7 +58,7 @@
 }
 
 @media only screen and (max-width: 767px) {
-  .top-visited-label{
+  .top-visited-label {
     background-color: #ccc;
     padding:10px;
     width:100%;
@@ -70,6 +70,10 @@
     display: block;
     text-align:left;
     padding:0;
+
+    a {
+      line-height: 18px;
+    }
   }
 
   .top-visited-list {

@@ -57,9 +57,12 @@
 }
 
 @media only screen and (max-width: 400px) {
+  .homepage .search button {
+    padding: 9.5px 5px;
+  }
   .search {
     button {
-      padding: 8px 5px;
+      padding: 10px 5px;
       height: auto;
     }
 

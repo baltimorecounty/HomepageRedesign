@@ -32,6 +32,31 @@ html, body {
 	overflow-x: hidden;
 	font-size: .95em;
 }
+.agency-page img {
+	border: none;
+	padding: 0;
+	margin: 0;
+}
+
+#maincontainer p {
+	font-size: 12px;
+	line-height: 1.5em;
+	margin: 0 0 15px 0; 	
+}
+#maincontainer #calloutarea p {
+  margin: 10px 0 15px;
+}
+
+textarea,
+input,
+input[type="search"],
+input[type="text"],
+input[type="button"],
+input[type="submit"] {
+     -webkit-appearance: none;
+     -webkit-border-radius: 0;
+     border-radius: 0;
+}
 
 
 

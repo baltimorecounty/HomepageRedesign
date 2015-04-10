@@ -1598,10 +1598,6 @@ div#tulipTVThumbs div.tulipShow {
 	background-position : top left;
 	background-repeat : no-repeat;
 }
-#tulipTVPlayerDiv object {
-	height : 200px;
-	width : 300px;
-}
 .tulipShow {
 	width : 130px;
 	border : 1px solid #999;
@@ -2475,7 +2471,7 @@ a.selectedtoggler img {
 	display: none;
 }
 #maincontainer .facebookfeedbox .SESyndicationModule .feedItems .item {
-	margin: 10px 0;
+	margin: 10px 0 0;
 }
 #maincontainer .facebookfeedbox .SESyndicationModule .feedItems .item .title {
 	line-height: 1.4;
