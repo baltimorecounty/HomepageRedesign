@@ -95,11 +95,23 @@
   } 
 }
 
+@media only screen and (min-width: 992px) and (max-width: 1002px) {
+  .homepage {
+    .primary-nav .primary-nav-item {
+      .primary-nav-item__headline {
+        font-size: 1.3em;
+      }
+      .primary-nav-item__tagline {
+        font-size: .55em;
+      }
+    }
+  }
+}
+
 @media only screen and (min-width: 767px) and (max-width: 992px) {
   .homepage {
     .primary-nav{
       width:100%;
-      background: blue;
     }
 
     .primary-nav .primary-nav-item a{
@@ -111,10 +123,6 @@
     }
   }
 }
-
-
-
-
 
 @media only screen and (min-width: 767px) and (max-width: 800px) {
   .homepage {
@@ -160,4 +168,9 @@
     }
   }
 
+}
+.homepage {
+  #primary-nav-container {
+    padding: 0;
+  }
 }

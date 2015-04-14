@@ -1,9 +1,12 @@
 /*IE8*/
-.carousel-wrapper .search-container {
+.carousel-wrapper .search-container,  {
 	margin: auto;
   	position: absolute;
   	top: 50px; left: 0; right: 0;
   	height: 150px;
+}
+.gssb_c {
+	display: none !important;
 }
 		
 .slick-dots li button:before {

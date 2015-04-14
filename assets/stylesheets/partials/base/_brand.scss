@@ -31,9 +31,6 @@
     vertical-align: middle;
   }
   
-  .brand-logo {
-    margin-left: 15px;
-  }
   .smaller-text {
     display: block;
     padding-top: 5px;
@@ -41,11 +38,14 @@
 
 }
 @media only screen and (min-width: 992px) and (max-width: 1120px) {
-  .brand .brand-heading {
-    font-size: 1.4em;
+  .homepage {
+    .brand .brand-heading {
+      font-size: 1.4em;
+    }
   }
 }
 @media only screen and (max-width: 480px){
+  .homepage {
     .brand {
       padding: 5px;
 
@@ -62,4 +62,6 @@
       }
 
     }
+  }
+    
 }

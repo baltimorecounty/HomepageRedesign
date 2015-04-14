@@ -1,6 +1,3 @@
-@import url(//fonts.googleapis.com/css?family=Patua+One);
-@import url(//fonts.googleapis.com/css?family=Lato:700);
-
 /*Resets*/
 @import "partials/base/normalize";
 
@@ -9,6 +6,7 @@
 
 /* Third Party */
 @import "vendor/slick-carousel";
+@import "vendor/reView";
 
 /* Base*/	
 @import "partials/base/grid";
@@ -39,3 +37,23 @@
 // html, body {
 // 	overflow-x: hidden;
 // }
+
+/*
+Fix for the google custome search autocomplete positioning.
+We only want this fix on the hompage
+*/
+.gssb_c {
+	z-index: 5000;
+	left: 50% !important;
+	transform: translateX(-50%) !important;
+	margin-left: -54px !important;
+}
+
+@media only screen and (max-width: 400px) {
+	.gssb_c {
+		z-index: 5000;
+		left: 20px !important;
+		transform: none !important;
+		margin-left: 0 !important;
+	}
+}

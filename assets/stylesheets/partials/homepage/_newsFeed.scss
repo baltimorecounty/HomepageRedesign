@@ -79,23 +79,10 @@ information on the homepage*/
 
 .news-feed-read-more{
   display:block;
-  margin:30px 0 0;
+  margin:30px 0 15px;
     
 }
-
-
-@media only screen and (min-width: 768px) and (max-width: 992px) {
-
-  .news-feed {
-    padding: 0 20px 20px;  
-  }
-}
-
 @media only screen and (max-width: 767px) {
-  .news-feed {
-    padding: 0;
-  }
-  
   .feedItems {
     .item {
       float: none;

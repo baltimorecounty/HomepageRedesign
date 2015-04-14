@@ -1,6 +1,7 @@
 .secondary-nav {
     background: $darker-gray;
-
+    z-index: 999;
+    
     .secondary-nav-list {
       padding: 12px 0 13px;
       

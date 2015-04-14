@@ -12,8 +12,11 @@ var Flickr = (function(window, undefined, $, Handlebars) {
 				return "https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20flickr.photos.search%20where%20api_key%3D%22" + _this.apiKey + "%22%20and%20user_id%20%3D%22" + _this.nsid + "%22%20and%20tags%3D%22" + _this.searchTags + "%22%20limit%204&format=json&diagnostics=true&callback=";
 			},
 			getData = function() {
-				$.getJSON(buildUrl(), function (data) {
+				$.getJSON(buildUrl(), function (data, status) {
 		            showFlickrFeed(data.query.results.photo);
+		        }).done(function(){}).fail(function(jqXHR, textStatus, errorThrown) {
+		        	//If there is an failure getting the images, hide the container.
+		        	_this.$container.hide();
 		        });
 			},
 			init = function() {

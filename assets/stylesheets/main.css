@@ -1,6 +1,3 @@
-@charset "UTF-8";
-@import url(//fonts.googleapis.com/css?family=Patua+One);
-@import url(//fonts.googleapis.com/css?family=Lato:700);
 /*Resets*/
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
@@ -565,14 +562,15 @@ html {
 
 html, body {
   background: #dbdbdb;
-  color: #444;
+  color: #444444;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  width: 100%; }
 
 img {
-  border: 1px solid #ccc;
+  border: 1px solid #cccccc;
   margin: 5px;
   padding: 5px; }
 
@@ -614,7 +612,7 @@ input[type="submit"] {
   .slick-list:focus {
     outline: none; }
   .slick-loading .slick-list {
-    background: #fff url("./ajax-loader.gif") center center no-repeat; }
+    background: white image-url("ajax-loader.gif", false, false) center center no-repeat; }
   .slick-list.dragging {
     cursor: pointer;
     cursor: hand; }
@@ -664,10 +662,11 @@ input[type="submit"] {
 /* Icons */
 @font-face {
   font-family: "slick";
-  src: url("./fonts/slick.eot");
-  src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/slick.woff") format("woff"), url("./fonts/slick.ttf") format("truetype"), url("./fonts/slick.svg#slick") format("svg");
+  src: font-url("slick.eot");
+  src: font-url("slick.eot?#iefix") format("embedded-opentype"), font-url("slick.woff") format("woff"), font-url("slick.ttf") format("truetype"), font-url("slick.svg#slick") format("svg");
   font-weight: normal;
   font-style: normal; }
+
 /* Arrows */
 .slick-prev,
 .slick-next {
@@ -714,9 +713,9 @@ input[type="submit"] {
     left: auto;
     right: -25px; }
   .slick-prev:before {
-    content: "←"; }
+    content: "\2190"; }
     [dir="rtl"] .slick-prev:before {
-      content: "→"; }
+      content: "\2192"; }
 
 .slick-next {
   right: 50px; }
@@ -724,9 +723,9 @@ input[type="submit"] {
     left: -25px;
     right: auto; }
   .slick-next:before {
-    content: "→"; }
+    content: "\2192"; }
     [dir="rtl"] .slick-next:before {
-      content: "←"; }
+      content: "\2190"; }
 
 /* Dots */
 .slick-slider {
@@ -768,7 +767,7 @@ input[type="submit"] {
         position: absolute;
         top: 0;
         left: 0;
-        content: "•";
+        content: "\2022";
         width: 20px;
         height: 20px;
         font-family: "slick";
@@ -783,6 +782,9 @@ input[type="submit"] {
       color: white;
       opacity: 0.75; }
 
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  .full-site-container {
+    display: none !important; } }
 /* Base*/
 /*!
  * Bootstrap v3.3.2 (http://getbootstrap.com)
@@ -795,7 +797,9 @@ input[type="submit"] {
  */
 .container {
   margin-right: auto;
-  margin-left: auto; }
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px; }
 
 @media (min-width: 768px) {
   .container {
@@ -809,6 +813,8 @@ input[type="submit"] {
 .container-fluid {
   margin-right: auto;
   margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
   max-width: 1200px; }
 
 .row {
@@ -1507,29 +1513,32 @@ input[type="submit"] {
   src: url("/sebin/u/y/PatuaOne-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("/sebin/i/z/PatuaOne-Regular-webfont.woff2") format("woff2"), url("/sebin/c/m/PatuaOne-Regular-webfont.woff") format("woff"), url("/sebin/c/o/PatuaOne-Regular-webfont.ttf") format("truetype"), url("/sebin/b/d/PatuaOne-Regular-webfont.svg#patua_oneregular") format("svg");
   font-weight: normal;
   font-style: normal; }
+
 @font-face {
   font-family: 'LatoSemiBold';
   src: url("/sebin/s/v/Lato-Semibold-webfont.eot");
   src: url("/sebin/s/v/Lato-Semibold-webfont.eot?#iefix") format("embedded-opentype"), url("/sebin/q/h/Lato-Semibold-webfont.woff2") format("woff2"), url("/sebin/y/z/Lato-Semibold-webfont.woff") format("woff"), url("/sebin/y/p/Lato-Semibold-webfont.ttf") format("truetype"), url("/sebin/v/j/Lato-Semibold-webfont.svg") format("svg");
   font-weight: normal;
   font-style: normal; }
+
 @font-face {
   font-family: 'Lato';
   src: url("/sebin/g/x/Lato-Bold-webfont.eot");
   src: url("/sebin/g/x/Lato-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("/sebin/w/q/Lato-Bold-webfont.woff2") format("woff2"), url("/sebin/k/i/Lato-Bold-webfont.woff") format("woff"), url("/sebin/i/t/Lato-Bold-webfont.ttf") format("truetype"), url("/sebin/h/i/Lato-Bold-webfont.svg") format("svg");
   font-weight: normal;
   font-style: normal; }
+
 .homepage body, .header body, .footer body {
   font-size: .95em;
   line-height: 1.5em;
-  color: #444; }
+  color: #444444; }
 .homepage p, .header p, .footer p {
   margin: 0 0 20px;
   line-height: 24px; }
 .homepage small, .header small, .footer small {
   font-size: 85%; }
 .homepage h1, .homepage h2, .homepage h3, .homepage h4, .homepage h5, .homepage h6, .header h1, .header h2, .header h3, .header h4, .header h5, .header h6, .footer h1, .footer h2, .footer h3, .footer h4, .footer h5, .footer h6 {
-  color: #444;
+  color: #444444;
   font-weight: normal; }
 .homepage h1, .homepage h2, .header h1, .header h2, .footer h1, .footer h2 {
   font-family: "Patua One", sans-serif; }
@@ -1569,16 +1578,17 @@ input[type="submit"] {
   height: 100%; }
 
 .secondary-header {
-  background: #333;
+  background: #333333;
   font-size: .85em;
-  padding: 10px 0; }
+  padding: 10px 0;
+  width: 100%; }
   .secondary-header a {
     color: #dbdbdb;
     display: block;
     line-height: 11px;
     text-decoration: underline; }
     .secondary-header a:hover {
-      color: #fff; }
+      color: white; }
   .secondary-header .page-tools {
     text-align: right; }
     .secondary-header .page-tools a, .secondary-header .page-tools ul {
@@ -1605,13 +1615,13 @@ input[type="submit"] {
 
 .primary-nav {
   background: #c51110;
-  color: #fff;
+  color: white;
   list-style-type: none;
   height: 100%;
   margin: 0;
   padding: 0; }
   .primary-nav a {
-    color: #fff; }
+    color: white; }
   .primary-nav .primary-nav-item {
     background-color: #a90f0e;
     border-right: 5px solid #c51110;
@@ -1660,12 +1670,16 @@ input[type="submit"] {
     font-size: 1.6em; }
   .homepage .primary-nav .primary-nav-item .primary-nav-item__tagline {
     font-size: .55em; } }
+@media only screen and (min-width: 992px) and (max-width: 1002px) {
+  .homepage .primary-nav .primary-nav-item .primary-nav-item__headline {
+    font-size: 1.3em; }
+  .homepage .primary-nav .primary-nav-item .primary-nav-item__tagline {
+    font-size: .55em; } }
 @media only screen and (min-width: 767px) and (max-width: 992px) {
   .homepage .primary-nav {
-    width: 100%;
-    background: blue; }
+    width: 100%; }
   .homepage .primary-nav .primary-nav-item a {
-    background: url("//baltimorecountymd.gov/sebin/l/t/little-arrow.png") no-repeat scroll 12.5px 22px transparent;
+    background: url("//baltimorecountymd.gov/sebin/l/t/little-arrow.png") no-repeat scroll 12.5px 22px rgba(0, 0, 0, 0);
     padding: 20px 0 20px 40px; }
   .homepage .primary-nav .primary-nav-item {
     margin: 0 0 5px; } }
@@ -1688,8 +1702,12 @@ input[type="submit"] {
     display: none; }
     .homepage .primary-nav.mobile-menu-visible, .homepage .secondary-nav.mobile-menu-visible {
       display: block; } }
+.homepage #primary-nav-container {
+  padding: 0; }
+
 .secondary-nav {
-  background: #333; }
+  background: #333333;
+  z-index: 999; }
   .secondary-nav .secondary-nav-list {
     padding: 12px 0 13px; }
     .secondary-nav .secondary-nav-list .secondary-nav-list-item {
@@ -1716,7 +1734,7 @@ input[type="submit"] {
 .brand a, .brand a:hover {
   text-decoration: none; }
 .brand h1 {
-  color: #fff; }
+  color: white; }
 .brand h1, .brand img {
   border: none; }
 .brand img {
@@ -1733,23 +1751,21 @@ input[type="submit"] {
 .brand .brand-logo, .brand .brand-heading {
   display: inline-block;
   vertical-align: middle; }
-.brand .brand-logo {
-  margin-left: 15px; }
 .brand .smaller-text {
   display: block;
   padding-top: 5px; }
 
 @media only screen and (min-width: 992px) and (max-width: 1120px) {
-  .brand .brand-heading {
+  .homepage .brand .brand-heading {
     font-size: 1.4em; } }
 @media only screen and (max-width: 480px) {
-  .brand {
+  .homepage .brand {
     padding: 5px; }
-    .brand .brand-heading {
+    .homepage .brand .brand-heading {
       font-size: 1.4em;
       line-height: 25px;
       margin: 10px 0 0; }
-    .brand .brand-logo {
+    .homepage .brand .brand-logo {
       height: 65px;
       width: 65px;
       margin-right: 5px; } }
@@ -1766,12 +1782,12 @@ input[type="submit"] {
     text-align: left; } }
 .secondary-footer {
   background: #c51110;
-  color: #fff;
-  padding: 20px; }
+  color: white;
+  padding: 20px 0; }
   .secondary-footer a {
     color: white; }
   .secondary-footer .county-links-list-item {
-    border-right: 1px solid #fff;
+    border-right: 1px solid white;
     padding: 0 5px; }
     .secondary-footer .county-links-list-item:last-child {
       border-right: none; }
@@ -1811,16 +1827,16 @@ input[type="submit"] {
   margin: 15px 15px 0 0; }
 
 .footer {
-  background: #333;
+  background: #333333;
   color: #dbdbdb;
   font-size: .85em; }
   .footer a {
     color: #dbdbdb;
     text-decoration: underline; }
     .footer a:hover {
-      color: #fff; }
+      color: white; }
   .footer h2 {
-    color: #fff; }
+    color: white; }
   .footer h2, .footer img {
     border: none; }
   .footer ul, .footer ol {
@@ -1845,7 +1861,8 @@ input[type="submit"] {
       padding-left: 5px; } }
 /*Components*/
 .secondary-nav {
-  background: #333; }
+  background: #333333;
+  z-index: 999; }
   .secondary-nav .secondary-nav-list {
     padding: 12px 0 13px; }
     .secondary-nav .secondary-nav-list .secondary-nav-list-item {
@@ -1950,16 +1967,16 @@ button {
 
 .link-btn {
   background: #feb30c;
-  border: 1px solid #444;
+  border: 1px solid #444444;
   padding: 10px;
-  color: #444;
+  color: #444444;
   text-decoration: none;
   font-weight: 700;
   font-family: Arial;
   font-size: 1.1em; }
   .link-btn:hover {
     background: #fed372;
-    color: #444; }
+    color: #444444; }
 
 .view-full-site-btn {
   padding: 20px 10px; }
@@ -1989,7 +2006,7 @@ a.skip:hover {
   list-style-type: none;
   text-align: center; }
   .social-media-list h1, .social-media-list a {
-    color: #fff; }
+    color: white; }
   .social-media-list li {
     padding-left: 0; }
 
@@ -1997,7 +2014,7 @@ a.skip:hover {
   background-image: url("//staging.baltimorecountymd.gov/homepageredesign/assets/img/social-icons-sprite.png");
   height: 37px;
   width: 37px;
-  margin-right: 30px; }
+  margin-right: 25px; }
   .social-media-list-item a {
     border: none;
     text-decoration: none;
@@ -2083,7 +2100,7 @@ a.skip:hover {
     margin: 0; }
   .carousel h2 {
     border: none;
-    color: #fff;
+    color: white;
     font-size: 2.3em;
     margin: 10px 0;
     text-transform: uppercase; }
@@ -2096,7 +2113,7 @@ a.skip:hover {
     bottom: 0;
     background-color: #333;
     background: rgba(68, 68, 68, 0.9);
-    color: #fff;
+    color: white;
     padding: 20px 40px;
     width: 100%; }
 
@@ -2146,11 +2163,11 @@ a.skip:hover {
       color: #0033cc; }
   .carousel .carousel-message {
     background: white;
-    color: #444;
+    color: #444444;
     position: relative;
     padding: 20px 20px 0; }
     .carousel .carousel-message h2 {
-      color: #444;
+      color: #444444;
       font-size: 1.5em; } }
 @media only screen and (max-width: 600px) {
   /*Plugin Specific Overrides*/
@@ -2173,7 +2190,6 @@ a.skip:hover {
 .search, .cse input.gsc-input, input.gsc-input {
   padding: 20px; }
   .search .search-input, .search button, .search .gsc-search-button, .cse input.gsc-input .search-input, .cse input.gsc-input button, .cse input.gsc-input .gsc-search-button, input.gsc-input .search-input, input.gsc-input button, input.gsc-input .gsc-search-button {
-    border: none !important;
     margin: 0 !important; }
   .search .search-text, .cse input.gsc-input .search-text, input.gsc-input .search-text {
     overflow: hidden; }
@@ -2189,14 +2205,14 @@ a.skip:hover {
 
 input.gsc-search-button {
   border-radius: 0 !important;
-  color: #444 !important;
+  color: #444444 !important;
   float: right;
   background: #feb30c !important;
   cursor: pointer;
   font-family: Arial, Helvetica, sans-serif !important;
   font-size: 17.6px !important;
   font-weight: 700 !important;
-  padding: 20px 20px 40px !important; }
+  padding: 19px 20px 39px !important; }
 
 .cse input.gsc-input, input.gsc-input {
   background: white !important;
@@ -2211,6 +2227,9 @@ td.gsc-clear-button {
 .cse form.gsc-search-box, form.gsc-search-box {
   margin: 0 !important;
   padding: 0 !important; }
+
+input.gsc-input, input.gsc-search-button {
+  border: 1px solid #999 !important; }
 
 @media only screen and (max-width: 400px) {
   .cse input.gsc-input, input.gsc-input {
@@ -2268,23 +2287,7 @@ td.gsc-clear-button {
     padding: 11px 10px; }
 
   .search-input-container {
-    font-size: .95em; }
-
-  ::-webkit-input-placeholder {
-    /* WebKit browsers */
-    color: transparent; }
-
-  :-moz-placeholder {
-    /* Mozilla Firefox 4 to 18 */
-    color: transparent; }
-
-  ::-moz-placeholder {
-    /* Mozilla Firefox 19+ */
-    color: transparent; }
-
-  :-ms-input-placeholder {
-    /* Internet Explorer 10+ */
-    color: transparent; } }
+    font-size: .95em; } }
 /*Popular Services*/
 .top-visited {
   padding-top: 20px; }
@@ -2332,7 +2335,7 @@ td.gsc-clear-button {
     width: 100%; }
 
   .top-visited-list li {
-    border-bottom: 1px solid #444;
+    border-bottom: 1px solid #444444;
     border-right: none;
     display: block;
     text-align: left;
@@ -2361,12 +2364,12 @@ td.gsc-clear-button {
   margin: 0 0 5px; }
 .feedItems .title {
   font-family: Patua One;
-  color: #444;
+  color: #444444;
   font-weight: normal;
   font-size: 1.3em;
   margin: 25px 0 0; }
 .feedItems h3 a {
-  color: #444;
+  color: #444444;
   text-decoration: none; }
 .feedItems h3 a:hover {
   text-decoration: none; }
@@ -2396,15 +2399,9 @@ information on the homepage*/
 
 .news-feed-read-more {
   display: block;
-  margin: 30px 0 0; }
+  margin: 30px 0 15px; }
 
-@media only screen and (min-width: 768px) and (max-width: 992px) {
-  .news-feed {
-    padding: 0 20px 20px; } }
 @media only screen and (max-width: 767px) {
-  .news-feed {
-    padding: 0; }
-
   .feedItems .item {
     float: none;
     padding: 0 1.5em 0 0;
@@ -2447,18 +2444,12 @@ information on the homepage*/
   .elected-officials .county-council {
     padding-right: 15px; } }
 .county-information {
-  background: #fff;
+  background: white;
   padding-bottom: 25px;
   padding-top: 25px; }
   .county-information .county-information-headline {
     margin-right: 10px; }
 
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
-  .county-information-container {
-    padding: 0 10px; } }
-@media only screen and (max-width: 767px) {
-  .county-information {
-    padding: 10px 30px; } }
 .county-executive .social-media-list {
   text-align: left; }
 
@@ -2489,5 +2480,19 @@ information on the homepage*/
     padding-left: 0; }
   .elected-officials .county-council {
     padding-right: 15px; } }
+/*
+Fix for the google custome search autocomplete positioning.
+We only want this fix on the hompage
+*/
+.gssb_c {
+  z-index: 5000;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  margin-left: -54px !important; }
 
-/*# sourceMappingURL=main.css.map */
+@media only screen and (max-width: 400px) {
+  .gssb_c {
+    z-index: 5000;
+    left: 20px !important;
+    transform: none !important;
+    margin-left: 0 !important; } }

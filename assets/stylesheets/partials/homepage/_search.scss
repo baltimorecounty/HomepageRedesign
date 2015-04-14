@@ -13,8 +13,6 @@
   @extend .clearfix;
 }
 
-
-
 @media only screen and (max-width: 992px) {
   .carousel-wrapper .search-container {
     background:none;
@@ -73,19 +71,6 @@
   }
   .search-input-container {
     font-size: .95em;
-  }
-
-  ::-webkit-input-placeholder { /* WebKit browsers */
-      color: transparent;
-  }
-  :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-      color: transparent;
-  }
-  ::-moz-placeholder { /* Mozilla Firefox 19+ */
-      color: transparent;
-  }
-  :-ms-input-placeholder { /* Internet Explorer 10+ */
-      color: transparent;
   }
 }
 

@@ -11,6 +11,8 @@
 .container {
   margin-right: auto;
   margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 @media (min-width: 768px) {
   .container {
@@ -30,6 +32,8 @@
 .container-fluid {
   margin-right: auto;
   margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
   max-width: 1200px;
 }
 .row {
