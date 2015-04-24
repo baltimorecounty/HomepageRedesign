@@ -25,6 +25,7 @@ p.applicationName {
 	display : block;
 }
 p {
+	font-size: 12px;
 	line-height : 1.5em;
 	margin : 0 0 15px;
 }
@@ -117,10 +118,6 @@ p {
 	text-align : center;
 	text-transform : uppercase;
 	width : auto;
-}
-#q {
-	margin : 0 0 3px 3px;
-	width : 70%;
 }
 #search_area {
 	width : 100%;
@@ -267,6 +264,7 @@ p {
 	-webkit-box-shadow : 0 0 10px 5px rgba(0, 0, 0, 0.3);
 	-moz-box-shadow : 0 0 10px 5px rgba(0, 0, 0, 0.3);
 	box-shadow : 0 0px 10px rgba(0, 0, 0, 0.3);
+	table-layout: fixed;
 }
 #mainContent {
 	height : auto;
@@ -438,6 +436,7 @@ input#mce-EMAIL {
 	display : inline;
 }
 .tulipTVThumbMeta {
+	font-size: .94em;
 	padding : 0 0 10px;
 }
 .tulipTVThumbTitle {
@@ -472,7 +471,7 @@ input#mce-EMAIL {
 }
 div#tulipTVThumbs div.tulipShow {
 	margin : 5px;
-	width : 130px;
+	width : 100%;
 	padding-top : 10px;
 	border : 1px solid #999;
 	height : 250px;
@@ -593,6 +592,7 @@ div#tulipTVThumbs div.tulipShow {
 	width : 100%;
 	float : left;
 }
+
 #mainContent input.clear {
 	width : 80px;
 }
@@ -603,6 +603,7 @@ div#tulipTVThumbs div.tulipShow {
 	width : 100%;
 }
 h1 {
+	font-size: 21px;
 	line-height : 1.2em;
 }
 #filter-form p {
@@ -711,3 +712,21 @@ h3.calloutTitle {
 #googlesearch {
 	margin : 20px 12px 0 5px;
 }
+#BACO_table {
+	table-layout: fixed;
+}
+
+@media all and (max-width: 600px){
+	body{}
+	#findingAids{background-color:#fff;background-image:none;margin:15px auto;padding:5px;width:80%;}
+	#findingAids li{background-image:url(images/finding-aids-bkg.jpg);background-position:top; background-repeat:repeat-x;border-right:none;display:block;width:100%;float:left;}
+	#findingAids li.selected{width:100%;background-image:none;}
+	#findingAids ul li a{background-image:url("/bin/h/i/finding-aids-bkg.jpg");display:block;padding:5px 0 10px;float:left;margin:0 0 0px;width:99.7%;border-color:#c51110 #b10101 #b10101;border-style: solid;border-width: 1px;}
+	#findingAids p{display:none;}
+	#baco_subnav a.smalltext {width:94%;}
+	#baco_subnav table {width:98%}
+	#baco_subnav {width:98%;}
+	#services{width:100%;}
+	#container_localnavigation ul {width:96%;}
+	#filter{width:60%;}
+	#centerContent{width:100%;}

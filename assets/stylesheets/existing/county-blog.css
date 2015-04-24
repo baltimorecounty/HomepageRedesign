@@ -258,14 +258,12 @@ ul.megamenu div.mm-item-content {
 	width : 140px;
 	float : left;
 	font-family : Arial, Helvetica, sans-serif;
-	font-size : 12px;
 	background-color : #FFF;
 	padding : 0px;
 	margin : 10px;
 	list-style-type : none;
 }
 #megamenusub li {
-	font-size : 12px;
 	font-weight : normal;
 	color : #333;
 	margin : 0;
@@ -286,7 +284,6 @@ ul.megamenu div.mm-item-content {
 	text-decoration : none;
 	border : none;
 	font-weight : normal;
-	font-size : 12px;
 	line-height : 22px;
 	margin : 0;
 }
@@ -302,7 +299,6 @@ ul.megamenu div.mm-item-content {
 }
 #navigation_primary p {
 	margin : 0 0 0 50px;
-	font-size : 12px;
 }
 #navigation_primary h1 {
 	font-family : Arial, Helvetica, sans-serif;
@@ -369,7 +365,6 @@ ul.megamenu div.mm-item-content {
 }
 #container_localnavigation li a {
 	font-family : Arial, Helvetica, sans-serif;
-	font-size : 12px;
 	color : #002280;
 	padding : 0 0 0  25px;
 	margin : 0;
@@ -382,7 +377,6 @@ ul.megamenu div.mm-item-content {
 }
 #container_localnavigation li a:hover {
 	font-family : Arial, Helvetica, sans-serif;
-	font-size : 12px;
 	color : #002280;
 	padding : 0 0 0 25px;
 	margin : 0;
@@ -398,7 +392,6 @@ ul.megamenu div.mm-item-content {
 	border-top : 6px solid #cacaca;
 	font-family : Arial, Helvetica, sans-serif;
 	font-weight : bold;
-	font-size : 12px;
 	text-transform : uppercase;
 	border-bottom : 1px solid #adadad;
 	background-image : none;
@@ -439,7 +432,6 @@ ul.megamenu div.mm-item-content {
 	border-bottom : 6px solid #cacaca;
 	font-family : Arial, Helvetica, sans-serif;
 	font-weight : bold;
-	font-size : 14px;
 	text-transform : uppercase;
 	background-image : none;
 	width : 460px;
@@ -464,9 +456,6 @@ ul.megamenu div.mm-item-content {
 #county_news ol.feedItems {
 	margin : 20px 0px 0px 30px;
 	padding : 0px;
-}
-#county_news ol a {
-	font-size : 12px;
 }
 #county_news .description {
 	display : none;
@@ -759,7 +748,6 @@ ul.megamenu div.mm-item-content {
 #servicescontainer li a {
 	color : #002280;
 	font-family : Arial,Helvetica,sans-serif;
-	font-size : 12px;
 	margin : 0;
 	padding : 5px 0 5px 25px;
 	text-decoration : none;
@@ -768,7 +756,6 @@ ul.megamenu div.mm-item-content {
 #servicescontainer li a:hover {
 	color : #002280;
 	font-family : Arial,Helvetica,sans-serif;
-	font-size : 12px;
 	margin : 0;
 	padding : 5px 0 5px 25px;
 	text-decoration : underline;
@@ -2532,7 +2519,6 @@ ul.megamenu div.mm-item-content {
 }
 #container_localnavigation li a {
 	font-family : Arial, Helvetica, sans-serif;
-	font-size : 12px;
 	color : #002280;
 	padding : 0 0 0  25px;
 	margin : 0;
@@ -2926,7 +2912,6 @@ ul.megamenu div.mm-item-content {
 #servicescontainer li a {
 	color : #002280;
 	font-family : Arial,Helvetica,sans-serif;
-	font-size : 12px;
 	margin : 0;
 	padding : 5px 0 5px 25px;
 	text-decoration : none;
@@ -2935,7 +2920,6 @@ ul.megamenu div.mm-item-content {
 #servicescontainer li a:hover {
 	color : #002280;
 	font-family : Arial,Helvetica,sans-serif;
-	font-size : 12px;
 	margin : 0;
 	padding : 5px 0 5px 25px;
 	text-decoration : underline;
@@ -3827,6 +3811,7 @@ select {
 	display : inline;
 }
 .tulipTVThumbMeta {
+	font-size: .94em;
 	padding : 0 0 10px;
 }
 .tulipTVThumbTitle {
@@ -4819,4 +4804,7 @@ a.selectedtoggler img {
 	background-color : #ffffff;
 	border-bottom : 1px solid #cacaca;
 	padding : 5px 5px 5px 0;
+}
+#maincontainer {
+	line-height: 1.5em;
 }

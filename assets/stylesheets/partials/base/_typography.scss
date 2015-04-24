@@ -76,6 +76,8 @@ $LatoBoldSVG: "/sebin/h/i/Lato-Bold-webfont.svg";
     h1, h2, h3, h4, h5, h6 {
         color: $dark-gray;
         font-weight:normal;
+        -webkit-font-smoothing: antialiased;
+        font-smoothing: antialiased;
     }
 
     h1, h2{

@@ -4,8 +4,7 @@
   position: absolute;
   top: 50px;
   left: 0;
-  right: 0;
-  height: 150px; }
+  right: 0; }
 
 .gssb_c {
   display: none !important; }
@@ -20,10 +19,14 @@
 @media only screen and (max-width: 992px) {
   .carousel-wrapper .search-container {
     margin: auto;
-    position: relative;
-    height: 275px; } }
+    position: relative; }
+
+  .top-visited {
+    height: 175px; } }
 @media only screen and (max-width: 767px) {
   .carousel-wrapper .search-container {
     margin: auto;
-    position: relative;
+    position: relative; }
+
+  .top-visited {
     height: 350px; } }

@@ -1,4 +1,5 @@
 var Flickr = (function(window, undefined, $, Handlebars) {
+	$.support.cors = true;
 	var Flickr = function(options) {
 		this.apiKey = options.apiKey || console.error("You need to specify an api key.");
 		this.nsid = options.nsid || console.error("You need to specify an user NSID."); //56007743@N08, http://idgettr.com/
@@ -16,7 +17,7 @@ var Flickr = (function(window, undefined, $, Handlebars) {
 		            showFlickrFeed(data.query.results.photo);
 		        }).done(function(){}).fail(function(jqXHR, textStatus, errorThrown) {
 		        	//If there is an failure getting the images, hide the container.
-		        	_this.$container.hide();
+		        	//_this.$container.hide(); //Need to hide heading as well
 		        });
 			},
 			init = function() {

@@ -7,7 +7,7 @@
   width: 1px;
   text-align: left;
   overflow: hidden;
-  z-index: 999;
+  z-index: 9999;
 }
 
 a.skip:active,
@@ -19,4 +19,5 @@ a.skip:hover {
   height: auto;
   overflow: visible;
   transition: top .25s linear;
+  z-index: 9999;
 }

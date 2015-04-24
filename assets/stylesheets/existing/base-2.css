@@ -114,10 +114,6 @@ select {
 	width : 330px;
 	height : 40px;
 }
-.seText select {
-	width : 395px;
-	float : right;
-}
 .seCaption {
 	float : right;
 }

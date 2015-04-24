@@ -10,9 +10,13 @@
   li, li:first-child {
     padding: 0 5px;
   }
-  
-  button.active {
-    color: white;
+  button {
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    
+    &.active {
+      color: white;
+    }
   }
 }
 .resizer-item {

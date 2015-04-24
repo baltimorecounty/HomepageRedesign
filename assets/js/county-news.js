@@ -1,5 +1,5 @@
 var ShowNews = (function($) {
-	 /*News Related Methods*/
+     /*News Related Methods*/
     var createReadMoreLink = function ($newsItem, $link) {
         $newsItem.append($link.clone().html("Read More >>"));
     },
@@ -25,13 +25,14 @@ var ShowNews = (function($) {
         return month + " " + day;
     },
     getExcerpt = function($newsItemDesc) {
-        return $('p:eq(1)', $newsItemDesc);
+        var supportsCustomElements = !!$('seml', $newsItemDesc).html().length,
+            excerptHtml = supportsCustomElements ? $newsItemDesc.children().html() : $newsItemDesc.html(),
+            htmlArray = $.parseHTML(excerptHtml);                        
+
+        return supportsCustomElements ? htmlArray[1].textContent : htmlArray[2].innerText;
     },
     setDisplayDate = function ($newsItem, date) {
         $('.title', $newsItem).after("<span class='pub-date'>" + date + "</span>");
-    },
-    showNewsSummary = function ($newsItemDesc) {
-        $('p:not(:eq(1))', $newsItemDesc).hide();
     },
     showNewsSummaries = function () {
         var $newsItems = $('.item');
@@ -50,28 +51,23 @@ var ShowNews = (function($) {
 
             //Ensure that the exceprt text is not too long
             //For now we are limiting it to 50 words
-            var $excerpt = getExcerpt($newsItemDesc);
-            trimExceprtText($excerpt, 50);
+            var excerpt = getExcerpt($newsItemDesc),
+                excerptText = trimExceprtText(excerpt, 50);
 
-            //Remove the body of the blog entry, only show the Summary
-            showNewsSummary($newsItemDesc);
-            
+            $newsItemDesc.html("<p>" + excerptText + "</p>");            
         });
     },
-    trimExceprtText = function($excerpt, limit) {
-        var text = $excerpt.text(),
-            words = text.split(' '),
-            newText = words.length < limit ? text : words.splice(0, limit).join(" ") + "...";
-
-        $excerpt.text(newText);
+    trimExceprtText = function(excerpt, limit) {
+            var words = excerpt.split(' ');
+      
+            return words.length < limit ? excerpt : words.splice(0, limit).join(" ") + "...";
     };
     //Hide the neccessary items to show the news summary
     //Used because Site Executive does not offer this feature
     $(document).ready(function() {
-
-        $('.news-feed').find('.item').eq(2).css("clear", "both"); //Hack, adds cleafix to syndication module
-
-       showNewsSummaries(); 
+                var $newsFeed = $('.news-feed');
+        $newsFeed.find('.item').eq(2).css("clear", "both"); //Hack, adds cleafix to syndication module
+        showNewsSummaries(); 
    });
     
 })(jQuery);

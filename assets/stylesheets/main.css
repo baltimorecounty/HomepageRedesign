@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*Resets*/
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
@@ -202,7 +203,7 @@ samp {
  * 2. Correct font properties not being inherited.
  * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
  */
-button,
+button, .search-form .search-button,
 input,
 optgroup,
 select,
@@ -217,7 +218,7 @@ textarea {
 /**
  * Address `overflow` set to `hidden` in IE 8/9/10/11.
  */
-button {
+button, .search-form .search-button {
   overflow: visible; }
 
 /**
@@ -226,7 +227,7 @@ button {
  * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
  * Correct `select` style inheritance in Firefox.
  */
-button,
+button, .search-form .search-button,
 select {
   text-transform: none; }
 
@@ -237,7 +238,7 @@ select {
  * 3. Improve usability and consistency of cursor style between image-type
  *    `input` and others.
  */
-button,
+button, .search-form .search-button,
 html input[type="button"],
 input[type="reset"],
 input[type="submit"] {
@@ -249,14 +250,14 @@ input[type="submit"] {
 /**
  * Re-set default cursor for disabled elements.
  */
-button[disabled],
+button[disabled], .search-form [disabled].search-button,
 html input[disabled] {
   cursor: default; }
 
 /**
  * Remove inner padding and border in Firefox 4+.
  */
-button::-moz-focus-inner,
+button::-moz-focus-inner, .search-form .search-button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
   padding: 0; }
@@ -301,10 +302,6 @@ input[type="number"]::-webkit-outer-spin-button {
  * Safari (but not Chrome) clips the cancel button when the search input has
  * padding (and `textfield` appearance).
  */
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none; }
-
 /**
  * Define consistent border, margin, and padding.
  */
@@ -562,7 +559,7 @@ html {
 
 html, body {
   background: #dbdbdb;
-  color: #444444;
+  color: #444;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   margin: 0;
@@ -570,7 +567,7 @@ html, body {
   width: 100%; }
 
 img {
-  border: 1px solid #cccccc;
+  border: 1px solid #ccc;
   margin: 5px;
   padding: 5px; }
 
@@ -581,12 +578,10 @@ input[type="search"],
 input[type="text"],
 input[type="button"],
 input[type="submit"] {
-  -webkit-appearance: none;
   -webkit-border-radius: 0;
   border-radius: 0; }
 
 /* Third Party */
-/*60px is for the Dots when in SE, 20px for local or dev*/
 /* Slider */
 .slick-slider {
   position: relative;
@@ -612,7 +607,7 @@ input[type="submit"] {
   .slick-list:focus {
     outline: none; }
   .slick-loading .slick-list {
-    background: white image-url("ajax-loader.gif", false, false) center center no-repeat; }
+    background: #fff url("./../../../../sebin/i/a/ajax-loader.gif") center center no-repeat; }
   .slick-list.dragging {
     cursor: pointer;
     cursor: hand; }
@@ -662,11 +657,10 @@ input[type="submit"] {
 /* Icons */
 @font-face {
   font-family: "slick";
-  src: font-url("slick.eot");
-  src: font-url("slick.eot?#iefix") format("embedded-opentype"), font-url("slick.woff") format("woff"), font-url("slick.ttf") format("truetype"), font-url("slick.svg#slick") format("svg");
+  src: url("./fonts/../../../../sebin/g/e/slick.eot");
+  src: url("./fonts/../../../../sebin/g/e/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/../../../../sebin/g/n/slick.woff") format("woff"), url("./fonts/../../../../sebin/h/p/slick.svg") format("truetype"), url("./fonts/../../../../sebin/h/p/slick.svg#slick") format("svg");
   font-weight: normal;
   font-style: normal; }
-
 /* Arrows */
 .slick-prev,
 .slick-next {
@@ -713,9 +707,9 @@ input[type="submit"] {
     left: auto;
     right: -25px; }
   .slick-prev:before {
-    content: "\2190"; }
+    content: "←"; }
     [dir="rtl"] .slick-prev:before {
-      content: "\2192"; }
+      content: "→"; }
 
 .slick-next {
   right: 50px; }
@@ -723,9 +717,9 @@ input[type="submit"] {
     left: -25px;
     right: auto; }
   .slick-next:before {
-    content: "\2192"; }
+    content: "→"; }
     [dir="rtl"] .slick-next:before {
-      content: "\2190"; }
+      content: "←"; }
 
 /* Dots */
 .slick-slider {
@@ -747,7 +741,7 @@ input[type="submit"] {
     margin: 0 5px;
     padding: 0;
     cursor: pointer; }
-    .slick-dots li button {
+    .slick-dots li button, .slick-dots li .search-form .search-button, .search-form .slick-dots li .search-button {
       border: 0;
       background: transparent;
       display: block;
@@ -759,28 +753,32 @@ input[type="submit"] {
       color: transparent;
       padding: 5px;
       cursor: pointer; }
-      .slick-dots li button:hover, .slick-dots li button:focus {
+      .slick-dots li button:hover, .slick-dots li .search-form .search-button:hover, .search-form .slick-dots li .search-button:hover, .slick-dots li button:focus, .slick-dots li .search-form .search-button:focus, .search-form .slick-dots li .search-button:focus {
         outline: none; }
-        .slick-dots li button:hover:before, .slick-dots li button:focus:before {
+        .slick-dots li button:hover:before, .slick-dots li .search-form .search-button:hover:before, .search-form .slick-dots li .search-button:hover:before, .slick-dots li button:focus:before, .slick-dots li .search-form .search-button:focus:before, .search-form .slick-dots li .search-button:focus:before {
           opacity: 1; }
-      .slick-dots li button:before {
+      .slick-dots li button:before, .slick-dots li .search-form .search-button:before, .search-form .slick-dots li .search-button:before {
         position: absolute;
         top: 0;
         left: 0;
-        content: "\2022";
+        content: "•";
         width: 20px;
         height: 20px;
         font-family: "slick";
-        font-size: 60px;
+        font-size: 20px;
+        font-weight: normal;
         line-height: 20px;
         text-align: center;
         color: white;
         opacity: 0.25;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale; }
-    .slick-dots li.slick-active button:before {
+    .slick-dots li.slick-active button:before, .slick-dots li.slick-active .search-form .search-button:before, .search-form .slick-dots li.slick-active .search-button:before {
       color: white;
       opacity: 0.75; }
+
+.reView {
+  display: none; }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   .full-site-container {
@@ -1513,33 +1511,32 @@ input[type="submit"] {
   src: url("/sebin/u/y/PatuaOne-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("/sebin/i/z/PatuaOne-Regular-webfont.woff2") format("woff2"), url("/sebin/c/m/PatuaOne-Regular-webfont.woff") format("woff"), url("/sebin/c/o/PatuaOne-Regular-webfont.ttf") format("truetype"), url("/sebin/b/d/PatuaOne-Regular-webfont.svg#patua_oneregular") format("svg");
   font-weight: normal;
   font-style: normal; }
-
 @font-face {
   font-family: 'LatoSemiBold';
   src: url("/sebin/s/v/Lato-Semibold-webfont.eot");
   src: url("/sebin/s/v/Lato-Semibold-webfont.eot?#iefix") format("embedded-opentype"), url("/sebin/q/h/Lato-Semibold-webfont.woff2") format("woff2"), url("/sebin/y/z/Lato-Semibold-webfont.woff") format("woff"), url("/sebin/y/p/Lato-Semibold-webfont.ttf") format("truetype"), url("/sebin/v/j/Lato-Semibold-webfont.svg") format("svg");
   font-weight: normal;
   font-style: normal; }
-
 @font-face {
   font-family: 'Lato';
   src: url("/sebin/g/x/Lato-Bold-webfont.eot");
   src: url("/sebin/g/x/Lato-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("/sebin/w/q/Lato-Bold-webfont.woff2") format("woff2"), url("/sebin/k/i/Lato-Bold-webfont.woff") format("woff"), url("/sebin/i/t/Lato-Bold-webfont.ttf") format("truetype"), url("/sebin/h/i/Lato-Bold-webfont.svg") format("svg");
   font-weight: normal;
   font-style: normal; }
-
 .homepage body, .header body, .footer body {
   font-size: .95em;
   line-height: 1.5em;
-  color: #444444; }
+  color: #444; }
 .homepage p, .header p, .footer p {
   margin: 0 0 20px;
   line-height: 24px; }
 .homepage small, .header small, .footer small {
   font-size: 85%; }
 .homepage h1, .homepage h2, .homepage h3, .homepage h4, .homepage h5, .homepage h6, .header h1, .header h2, .header h3, .header h4, .header h5, .header h6, .footer h1, .footer h2, .footer h3, .footer h4, .footer h5, .footer h6 {
-  color: #444444;
-  font-weight: normal; }
+  color: #444;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased; }
 .homepage h1, .homepage h2, .header h1, .header h2, .footer h1, .footer h2 {
   font-family: "Patua One", sans-serif; }
 .homepage h3, .homepage h4, .homepage h5, .header h3, .header h4, .header h5, .footer h3, .footer h4, .footer h5 {
@@ -1578,7 +1575,7 @@ input[type="submit"] {
   height: 100%; }
 
 .secondary-header {
-  background: #333333;
+  background: #333;
   font-size: .85em;
   padding: 10px 0;
   width: 100%; }
@@ -1588,7 +1585,7 @@ input[type="submit"] {
     line-height: 11px;
     text-decoration: underline; }
     .secondary-header a:hover {
-      color: white; }
+      color: #fff; }
   .secondary-header .page-tools {
     text-align: right; }
     .secondary-header .page-tools a, .secondary-header .page-tools ul {
@@ -1607,7 +1604,7 @@ input[type="submit"] {
     display: block;
     position: absolute;
     z-index: 999;
-    top: 25px;
+    top: 17.5px;
     right: 0;
     padding: 10px; } }
 .primary-nav-container {
@@ -1615,13 +1612,13 @@ input[type="submit"] {
 
 .primary-nav {
   background: #c51110;
-  color: white;
+  color: #fff;
   list-style-type: none;
   height: 100%;
   margin: 0;
   padding: 0; }
   .primary-nav a {
-    color: white; }
+    color: #fff; }
   .primary-nav .primary-nav-item {
     background-color: #a90f0e;
     border-right: 5px solid #c51110;
@@ -1678,8 +1675,10 @@ input[type="submit"] {
 @media only screen and (min-width: 767px) and (max-width: 992px) {
   .homepage .primary-nav {
     width: 100%; }
+  .homepage .primary-nav .primary-nav-item .primary-nav-item__headline {
+    font-size: 1.5em; }
   .homepage .primary-nav .primary-nav-item a {
-    background: url("//baltimorecountymd.gov/sebin/l/t/little-arrow.png") no-repeat scroll 12.5px 22px rgba(0, 0, 0, 0);
+    background: url("//baltimorecountymd.gov/sebin/l/t/little-arrow.png") no-repeat scroll 12.5px 22px transparent;
     padding: 20px 0 20px 40px; }
   .homepage .primary-nav .primary-nav-item {
     margin: 0 0 5px; } }
@@ -1706,7 +1705,7 @@ input[type="submit"] {
   padding: 0; }
 
 .secondary-nav {
-  background: #333333;
+  background: #333;
   z-index: 999; }
   .secondary-nav .secondary-nav-list {
     padding: 12px 0 13px; }
@@ -1734,7 +1733,7 @@ input[type="submit"] {
 .brand a, .brand a:hover {
   text-decoration: none; }
 .brand h1 {
-  color: white; }
+  color: #fff; }
 .brand h1, .brand img {
   border: none; }
 .brand img {
@@ -1745,7 +1744,8 @@ input[type="submit"] {
   line-height: 28px;
   padding: 31.5px 0 29.5px;
   font-family: Lato, Arial, sans-serif;
-  font-weight: 700;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
   letter-spacing: .4px;
   margin: 0; }
 .brand .brand-logo, .brand .brand-heading {
@@ -1760,11 +1760,12 @@ input[type="submit"] {
     font-size: 1.4em; } }
 @media only screen and (max-width: 480px) {
   .homepage .brand {
-    padding: 5px; }
+    padding: 0 0 0 5px; }
     .homepage .brand .brand-heading {
       font-size: 1.4em;
       line-height: 25px;
-      margin: 10px 0 0; }
+      margin: 0;
+      padding-top: 27px; }
     .homepage .brand .brand-logo {
       height: 65px;
       width: 65px;
@@ -1782,12 +1783,12 @@ input[type="submit"] {
     text-align: left; } }
 .secondary-footer {
   background: #c51110;
-  color: white;
+  color: #fff;
   padding: 20px 0; }
   .secondary-footer a {
     color: white; }
   .secondary-footer .county-links-list-item {
-    border-right: 1px solid white;
+    border-right: 1px solid #fff;
     padding: 0 5px; }
     .secondary-footer .county-links-list-item:last-child {
       border-right: none; }
@@ -1827,16 +1828,16 @@ input[type="submit"] {
   margin: 15px 15px 0 0; }
 
 .footer {
-  background: #333333;
+  background: #333;
   color: #dbdbdb;
   font-size: .85em; }
   .footer a {
     color: #dbdbdb;
     text-decoration: underline; }
     .footer a:hover {
-      color: white; }
+      color: #fff; }
   .footer h2 {
-    color: white; }
+    color: #fff; }
   .footer h2, .footer img {
     border: none; }
   .footer ul, .footer ol {
@@ -1861,7 +1862,7 @@ input[type="submit"] {
       padding-left: 5px; } }
 /*Components*/
 .secondary-nav {
-  background: #333333;
+  background: #333;
   z-index: 999; }
   .secondary-nav .secondary-nav-list {
     padding: 12px 0 13px; }
@@ -1895,8 +1896,11 @@ input[type="submit"] {
   margin: 0; }
   .resizer-list li, .resizer-list li:first-child {
     padding: 0 5px; }
-  .resizer-list button.active {
-    color: white; }
+  .resizer-list button, .resizer-list .search-form .search-button, .search-form .resizer-list .search-button {
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased; }
+    .resizer-list button.active, .resizer-list .search-form .active.search-button, .search-form .resizer-list .active.search-button {
+      color: white; }
 
 .resizer-item {
   color: #dbdbdb;
@@ -1925,10 +1929,9 @@ input[type="submit"] {
 
 /*Alert Box*/
 .alert {
-  padding: 10px;
   background-color: #feb30c;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: .6em;
+  line-height: 0;
   text-align: center; }
   .alert a {
     text-decoration: none; }
@@ -1936,21 +1939,23 @@ input[type="submit"] {
       color: #003399; }
   .alert h1 {
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.15em;
     font-weight: bold;
-    border-top: none;
-    border-bottom: none;
-    margin: 0; }
+    border: none;
+    margin: 0;
+    padding: 20px;
+    line-height: 1; }
 
 @media only screen and (max-width: 1100px) {
   .alert h1 {
     line-height: 30px; } }
 @media only screen and (max-width: 767px) {
   .alert {
-    font-size: .5em;
+    font-size: .8em;
     margin: -20px 0 20px; }
     .alert h1 {
       line-height: 1.5; } }
-button {
+button, .search-form .search-button {
   background: #feb30c;
   cursor: pointer;
   font-family: Arial, Helvetica, sans-serif;
@@ -1967,18 +1972,19 @@ button {
 
 .link-btn {
   background: #feb30c;
-  border: 1px solid #444444;
+  border: 1px solid #444;
   padding: 10px;
-  color: #444444;
+  color: #444;
   text-decoration: none;
   font-weight: 700;
   font-family: Arial;
   font-size: 1.1em; }
   .link-btn:hover {
     background: #fed372;
-    color: #444444; }
+    color: #444; }
 
 .view-full-site-btn {
+  color: white;
   padding: 20px 10px; }
 
 .skip {
@@ -1990,7 +1996,7 @@ button {
   width: 1px;
   text-align: left;
   overflow: hidden;
-  z-index: 999; }
+  z-index: 9999; }
 
 a.skip:active,
 a.skip:focus,
@@ -2000,13 +2006,14 @@ a.skip:hover {
   width: auto;
   height: auto;
   overflow: visible;
-  transition: top .25s linear; }
+  transition: top .25s linear;
+  z-index: 9999; }
 
 .social-media-list {
   list-style-type: none;
   text-align: center; }
   .social-media-list h1, .social-media-list a {
-    color: white; }
+    color: #fff; }
   .social-media-list li {
     padding-left: 0; }
 
@@ -2100,7 +2107,7 @@ a.skip:hover {
     margin: 0; }
   .carousel h2 {
     border: none;
-    color: white;
+    color: #fff;
     font-size: 2.3em;
     margin: 10px 0;
     text-transform: uppercase; }
@@ -2113,7 +2120,7 @@ a.skip:hover {
     bottom: 0;
     background-color: #333;
     background: rgba(68, 68, 68, 0.9);
-    color: white;
+    color: #fff;
     padding: 20px 40px;
     width: 100%; }
 
@@ -2126,7 +2133,7 @@ a.skip:hover {
   right: 50px;
   text-align: right; }
 
-.slick-dots li button:before {
+.slick-dots li button:before, .slick-dots li .search-form .search-button:before, .search-form .slick-dots li .search-button:before {
   position: absolute;
   top: 0;
   right: 50px;
@@ -2163,11 +2170,11 @@ a.skip:hover {
       color: #0033cc; }
   .carousel .carousel-message {
     background: white;
-    color: #444444;
+    color: #444;
     position: relative;
     padding: 20px 20px 0; }
     .carousel .carousel-message h2 {
-      color: #444444;
+      color: #444;
       font-size: 1.5em; } }
 @media only screen and (max-width: 600px) {
   /*Plugin Specific Overrides*/
@@ -2187,58 +2194,41 @@ a.skip:hover {
     width: 33.75px;
     /*3/4 of the original height of 78px*/
     top: 15%; } }
-.search, .cse input.gsc-input, input.gsc-input {
+.search {
   padding: 20px; }
-  .search .search-input, .search button, .search .gsc-search-button, .cse input.gsc-input .search-input, .cse input.gsc-input button, .cse input.gsc-input .gsc-search-button, input.gsc-input .search-input, input.gsc-input button, input.gsc-input .gsc-search-button {
-    margin: 0 !important; }
-  .search .search-text, .cse input.gsc-input .search-text, input.gsc-input .search-text {
-    overflow: hidden; }
-  .search .search-label, .cse input.gsc-input .search-label, input.gsc-input .search-label {
+
+.search-form {
+  display: table;
+  width: 100%; }
+  .search-form .search-label {
     position: absolute;
     left: -999em; }
-  .search .search-input, .cse input.gsc-input .search-input, input.gsc-input .search-input {
-    float: left;
-    padding: 0px 20px;
+  .search-form .table-cell {
+    display: table-cell;
     width: 100%; }
-  .search div.gsc-clear-button, .cse input.gsc-input div.gsc-clear-button, input.gsc-input div.gsc-clear-button {
-    display: none; }
+  .search-form .search-input, .search-form .search-button {
+    border: 1px solid #999; }
+  .search-form .search-input {
+    padding: 20px;
+    width: 99%; }
+  .search-form .search-button {
+    margin: 0;
+    padding: 18.5px 20px; }
 
-input.gsc-search-button {
-  border-radius: 0 !important;
-  color: #444444 !important;
-  float: right;
-  background: #feb30c !important;
-  cursor: pointer;
-  font-family: Arial, Helvetica, sans-serif !important;
-  font-size: 17.6px !important;
-  font-weight: 700 !important;
-  padding: 19px 20px 39px !important; }
-
-.cse input.gsc-input, input.gsc-input {
-  background: white !important;
-  padding: 20px !important; }
-
-td.gsc-input {
-  padding-right: 0 !important; }
-
-td.gsc-clear-button {
-  width: 0 !important; }
-
-.cse form.gsc-search-box, form.gsc-search-box {
-  margin: 0 !important;
-  padding: 0 !important; }
-
-input.gsc-input, input.gsc-search-button {
-  border: 1px solid #999 !important; }
+/*Google Autocomplete links*/
+.gsc-completion-title {
+  color: #002280 !important; }
 
 @media only screen and (max-width: 400px) {
-  .cse input.gsc-input, input.gsc-input {
-    padding: 4px !important; }
-
-  .cse input.gsc-search-button, input.gsc-search-button {
-    background: #feb30c !important;
-    font-size: 1.1em !important;
-    padding: 0 !important; } }
+  .homepage input::-webkit-input-placeholder {
+    color: transparent; }
+  .homepage input::-moz-placeholder {
+    color: transparent; }
+  .homepage input:-moz-placeholder {
+    /* Older versions of Firefox */
+    color: transparent; }
+  .homepage input:-ms-input-placeholder {
+    color: transparent; } }
 /*Search Box*/
 .search-container {
   background-color: #dbdbdb;
@@ -2271,15 +2261,15 @@ input.gsc-input, input.gsc-search-button {
       padding: 10px 0; }
 
   .alert {
-    font-size: .5em;
+    font-size: .9em;
     margin: -20px 0 20px; }
     .alert h1 {
       line-height: 1.5; } }
 @media only screen and (max-width: 400px) {
-  .homepage .search button {
+  .homepage .search .search-button {
     padding: 9.5px 5px; }
 
-  .search button {
+  .search .search-button {
     padding: 10px 5px;
     height: auto; }
   .search .search-input {
@@ -2296,6 +2286,7 @@ input.gsc-input, input.gsc-search-button {
   display: block;
   float: left;
   font-weight: bold;
+  margin: -2px 0 0;
   width: 12.5%; }
 
 .top-visited-list {
@@ -2335,7 +2326,7 @@ input.gsc-input, input.gsc-search-button {
     width: 100%; }
 
   .top-visited-list li {
-    border-bottom: 1px solid #444444;
+    border-bottom: 1px solid #444;
     border-right: none;
     display: block;
     text-align: left;
@@ -2346,6 +2337,9 @@ input.gsc-input, input.gsc-search-button {
   .top-visited-list {
     width: 100%; } }
 /*Contains the styles for Baltimore County Now*/
+.news-feed {
+  border-right: 3px dotted #dbdbdb; }
+
 .news .news-headline {
   font-weight: 900; }
 
@@ -2354,6 +2348,7 @@ input.gsc-input, input.gsc-search-button {
 
 .feedItems .item {
   float: left;
+  margin: 0 0 20px;
   padding: 0 1.5em 0 0;
   width: 50%; }
   .feedItems .item:nth-child(3) {
@@ -2364,12 +2359,12 @@ input.gsc-input, input.gsc-search-button {
   margin: 0 0 5px; }
 .feedItems .title {
   font-family: Patua One;
-  color: #444444;
+  color: #444;
   font-weight: normal;
   font-size: 1.3em;
-  margin: 25px 0 0; }
+  margin: 10px 0 5px; }
 .feedItems h3 a {
-  color: #444444;
+  color: #444;
   text-decoration: none; }
 .feedItems h3 a:hover {
   text-decoration: none; }
@@ -2401,7 +2396,13 @@ information on the homepage*/
   display: block;
   margin: 30px 0 15px; }
 
+@media only screen and (max-width: 992px) {
+  .news-feed {
+    border: none; } }
 @media only screen and (max-width: 767px) {
+  .county-photo-feed-headline {
+    display: none; }
+
   .feedItems .item {
     float: none;
     padding: 0 1.5em 0 0;
@@ -2427,13 +2428,11 @@ information on the homepage*/
 @media only screen and (max-width: 992px) {
   .county-executive .social-media-list-item {
     margin-right: 25px; } }
-.elected-officials {
-  border-left: 3px dotted #dbdbdb; }
-  .elected-officials img {
-    margin: 0 0 20px;
-    width: 100%; }
-  .elected-officials .social-media-list {
-    margin-bottom: 20px; }
+.elected-officials img {
+  margin: 0 0 20px;
+  width: 100%; }
+.elected-officials .social-media-list {
+  margin-bottom: 20px; }
 
 .county-executive, .county-council {
   padding-right: 0; }
@@ -2444,7 +2443,7 @@ information on the homepage*/
   .elected-officials .county-council {
     padding-right: 15px; } }
 .county-information {
-  background: white;
+  background: #fff;
   padding-bottom: 25px;
   padding-top: 25px; }
   .county-information .county-information-headline {
@@ -2464,13 +2463,11 @@ information on the homepage*/
 @media only screen and (max-width: 992px) {
   .county-executive .social-media-list-item {
     margin-right: 25px; } }
-.elected-officials {
-  border-left: 3px dotted #dbdbdb; }
-  .elected-officials img {
-    margin: 0 0 20px;
-    width: 100%; }
-  .elected-officials .social-media-list {
-    margin-bottom: 20px; }
+.elected-officials img {
+  margin: 0 0 20px;
+  width: 100%; }
+.elected-officials .social-media-list {
+  margin-bottom: 20px; }
 
 .county-executive, .county-council {
   padding-right: 0; }
@@ -2487,12 +2484,26 @@ We only want this fix on the hompage
 .gssb_c {
   z-index: 5000;
   left: 50% !important;
+  -webkit-transform: translateX(-50%) !important;
+  -moz-transform: translateX(-50%) !important;
+  -ms-transform: translateX(-50%) !important;
+  -o-transform: translateX(-50%) !important;
   transform: translateX(-50%) !important;
-  margin-left: -54px !important; }
+  margin-left: -56px !important; }
+
+.gsc-completion-container table {
+  font-size: 16px !important; }
+
+.gssb_a table, .gssb_a table tr, .gssb_a table tr td {
+  padding: 5px 10px !important; }
 
 @media only screen and (max-width: 400px) {
   .gssb_c {
     z-index: 5000;
     left: 20px !important;
+    -webkit-transform: none !important;
+    -moz-transform: none !important;
+    -ms-transform: none !important;
+    -o-transform: none !important;
     transform: none !important;
     margin-left: 0 !important; } }

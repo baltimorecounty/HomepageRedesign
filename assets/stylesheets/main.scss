@@ -43,16 +43,31 @@ Fix for the google custome search autocomplete positioning.
 We only want this fix on the hompage
 */
 .gssb_c {
+	
 	z-index: 5000;
 	left: 50% !important;
+	-webkit-transform: translateX(-50%) !important;
+       -moz-transform: translateX(-50%) !important;
+        -ms-transform: translateX(-50%) !important;
+         -o-transform: translateX(-50%) !important;
 	transform: translateX(-50%) !important;
-	margin-left: -54px !important;
+	margin-left: -56px !important;
+}
+.gsc-completion-container table {
+	font-size: 16px !important;
+}
+.gssb_a table, .gssb_a table tr, .gssb_a table tr td {
+	padding: 5px 10px !important;
 }
 
 @media only screen and (max-width: 400px) {
 	.gssb_c {
 		z-index: 5000;
 		left: 20px !important;
+		-webkit-transform: none !important;
+       -moz-transform: none !important;
+        -ms-transform: none !important;
+         -o-transform: none !important;
 		transform: none !important;
 		margin-left: 0 !important;
 	}

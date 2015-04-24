@@ -3,7 +3,6 @@
 	margin: auto;
   	position: absolute;
   	top: 50px; left: 0; right: 0;
-  	height: 150px;
 }
 .gssb_c {
 	display: none !important;
@@ -23,13 +22,21 @@
 	.carousel-wrapper .search-container {
 		margin: auto;
 	  	position: relative;
-	  	height: 275px;
 	}
+
+	.top-visited {
+		height: 175px;
+	}
+
 }
 @media only screen and (max-width: 767px) {
 	.carousel-wrapper .search-container {
 		margin: auto;
 	  	position: relative;
-	  	height: 350px;
 	}
+
+	.top-visited {
+		height: 350px;
+	}
+
 }

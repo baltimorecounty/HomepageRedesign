@@ -34,8 +34,8 @@ body {
 #maincontainer a:hover {
 	text-decoration : underline;
 }
-#maincontainer p, #maincontainer ul {
-	font-size: 12px;
+#maincontainer p, {
+	font-size: .75em;
 }
 #maincontainer p {
 	margin : 0 0 15px 0;
@@ -43,7 +43,7 @@ body {
 }
 #maincontainer h1 {
 	font-family : Arial, Helvetica, sans-serif;
-	font-size : 19px;
+	font-size : 1.5em;
 	font-weight : bold;
 	padding : 10px 0 5px 0;
 	color : #444;
@@ -53,13 +53,13 @@ body {
 	border: none;
 	color : #444;
 	font-family : Arial,Helvetica,sans-serif;
-	font-size : 15px;
+	font-size : 1.2em;
 	font-weight : bold;
 	margin : 5px 0 20px;
 }
 #maincontainer h3 {
 	font-family : Arial, Helvetica, sans-serif;
-	font-size : 12px;
+	font-size : .95em;
 	font-weight : bold;
 	color : #444;
 	margin : 5px 0 10px 0;
@@ -81,10 +81,6 @@ body {
 	font-size : .9em;
 	color : #000;
 	margin : 5px 0 20px 0;
-}
-
-#mainContent table {
-	font-size: 12px;
 }
 
 .clear {
@@ -230,12 +226,6 @@ body {
 #sa .hover {
 	background-color : #000;
 }
-#search_area {
-}
-#q {
-	margin : 0 0 0 3px;
-	width : 320px;
-}
 #navigation_secondary {
 	width : 744px;
 	height : 37px;
@@ -332,14 +322,12 @@ ul.megamenu div.mm-item-content {
 	width : 140px;
 	float : left;
 	font-family : Arial, Helvetica, sans-serif;
-	font-size : 12px;
 	background-color : #FFF;
 	padding : 0px;
 	margin : 10px;
 	list-style-type : none;
 }
 #megamenusub li {
-	font-size : 12px;
 	font-weight : normal;
 	color : #333;
 	margin : 0;
@@ -360,7 +348,6 @@ ul.megamenu div.mm-item-content {
 	text-decoration : none;
 	border : none;
 	font-weight : normal;
-	font-size : 12px;
 	line-height : 22px;
 	margin : 0;
 }
@@ -376,7 +363,6 @@ ul.megamenu div.mm-item-content {
 }
 #navigation_primary p {
 	margin : 0 0 0 50px;
-	font-size : 12px;
 }
 #navigation_primary h1 {
 	font-family : Arial, Helvetica, sans-serif;
@@ -443,7 +429,6 @@ ul.megamenu div.mm-item-content {
 }
 #container_localnavigation li a {
 	font-family : Arial, Helvetica, sans-serif;
-	font-size : 12px;
 	color : #002280;
 	padding : 0 0 0  25px;
 	margin : 0;
@@ -456,7 +441,6 @@ ul.megamenu div.mm-item-content {
 }
 #container_localnavigation li a:hover {
 	font-family : Arial, Helvetica, sans-serif;
-	font-size : 12px;
 	color : #002280;
 	padding : 0 0 0 25px;
 	margin : 0;
@@ -472,7 +456,6 @@ ul.megamenu div.mm-item-content {
 	border-top : 6px solid #cacaca;
 	font-family : Arial, Helvetica, sans-serif;
 	font-weight : bold;
-	font-size : 12px;
 	text-transform : uppercase;
 	border-bottom : 1px solid #adadad;
 	background-image : none;
@@ -542,7 +525,6 @@ ul.megamenu div.mm-item-content {
 	padding : 0px;
 }
 #county_news ol a {
-	font-size : 12px;
 }
 #county_news .description {
 	display : none;
@@ -752,11 +734,10 @@ ul.megamenu div.mm-item-content {
 }
 .smalltext {
 	font-family : Arial, Helvetica, sans-serif;
-	font-size : 12px;
+	font-size : .8em;
 	color : #002280;
 }
 #baco_breadcrumb {
-	font-size: 12px;
 	margin : 10px 0 15px;
 	display : inline-block;
 }
@@ -775,12 +756,10 @@ ul.megamenu div.mm-item-content {
 	padding : 0;
 	font-family : Arial, Helvetica, sans-serif;
 	text-transform : uppercase;
-	font-size : 12px;
 	color : #444;
 	font-weight : bold;
 }
 #agencyname h1 {
-	font-size : 12px;
 	color : #444;
 	font-family : Arial, Helvetica, sans-serif;
 	text-transform : uppercase;
@@ -832,6 +811,7 @@ ul.megamenu div.mm-item-content {
 	background-position : left center;
 	background-repeat : no-repeat;
 	font-weight : normal;
+	font-size: 1.2em;
 }
 #baco_subnav a.smalltext:hover {
 	background-image : url(/sebin/m/n/most-requested-arrow-hover.gif);
@@ -860,7 +840,6 @@ ul.megamenu div.mm-item-content {
 #servicescontainer li a {
 	color : #002280;
 	font-family : Arial,Helvetica,sans-serif;
-	font-size : 12px;
 	margin : 0;
 	padding : 5px 0 5px 25px;
 	text-decoration : none;
@@ -869,7 +848,6 @@ ul.megamenu div.mm-item-content {
 #servicescontainer li a:hover {
 	color : #002280;
 	font-family : Arial,Helvetica,sans-serif;
-	font-size : 12px;
 	margin : 0;
 	padding : 5px 0 5px 25px;
 	text-decoration : underline;
@@ -885,7 +863,6 @@ ul.megamenu div.mm-item-content {
 }
 #services .title {
 	color : #444;
-	font-size : 12px;
 }
 #moreservices {
 	margin : 0 0 0 13px;
@@ -967,7 +944,6 @@ ul.megamenu div.mm-item-content {
 }
 #SECalendarTable .SECalendarEventName {
 	font-family : Arial, Helvetica, sans-serif;
-	font-size : 12px;
 	font-weight : bold;
 	padding-top : 5px;
 	padding-bottom : 5px;
@@ -1070,7 +1046,6 @@ ul.megamenu div.mm-item-content {
 }
 .SECalendarWeek {
 	font-family : Arial, Helvetica, sans-serif;
-	font-size : 12px;
 	background-color : #999;
 	color : #FFF;
 	font-weight : bold;
@@ -1211,7 +1186,6 @@ select {
 }
 #emailfriendtime {
 	font-family : Arial, Helvetica, sans-serif;
-	font-size : 12px;
 	font-style : italic;
 	margin-bottom : 15px;
 	padding-top : 25px;
@@ -1221,7 +1195,6 @@ select {
 	font-size : 11px;
 }
 #SEEventEmailFriendType strong {
-	font-size : 12px;
 }
 #emailfriendlocation {
 	margin-bottom : 10px;
@@ -1229,7 +1202,6 @@ select {
 	font-size : 11px;
 }
 #emailfriendlocation strong {
-	font-size : 12px;
 }
 #SEEventEmailFriendDesc {
 	font-family : Arial, Helvetica, sans-serif;
@@ -1292,7 +1264,6 @@ select {
 }
 #RemindMeForm .SEEventRemindmeLabel {
 	font-family : Arial, Helvetica, sans-serif;
-	font-size : 12px;
 	font-weight : bold;
 	padding-top : 10px;
 	padding-right : 10px;
@@ -1310,7 +1281,6 @@ select {
 }
 #SEEventRemindmeMessage {
 	font-family : Arial, Helvetica, sans-serif;
-	font-size : 12px;
 	font-weight : bold;
 	padding-top : 25px;
 	padding-right : 10px;
@@ -1348,7 +1318,6 @@ select {
 }
 #SEEventRemindMeDate {
 	font-family : Arial, Helvetica, sans-serif;
-	font-size : 12px;
 	font-style : italic;
 	padding-top : 20px;
 	padding-bottom : 10px;
@@ -1375,7 +1344,6 @@ select {
 	float : left;
 }
 #SEEventSearchStart {
-	font-size : 12px;
 	font-weight : bold;
 	padding-top : 10px;
 	padding-right : 10px;
@@ -1390,7 +1358,6 @@ select {
 	padding-left : 0px;
 }
 #SEEventSearchEnd {
-	font-size : 12px;
 	font-weight : bold;
 	padding-top : 10px;
 	padding-right : 10px;
@@ -1991,7 +1958,6 @@ input#mce-EMAIL {
 }
 #lookingfor_callout li a {
 	font-family : Arial, Helvetica, sans-serif;
-	font-size : 12px;
 	color : #002280;
 	padding : 0 0 0  25px;
 	margin : 0;
@@ -2004,7 +1970,6 @@ input#mce-EMAIL {
 }
 #lookingfor_callout li a:hover {
 	font-family : Arial, Helvetica, sans-serif;
-	font-size : 12px;
 	color : #002280;
 	padding : 0 0 0 25px;
 	margin : 0;
@@ -2020,7 +1985,6 @@ input#mce-EMAIL {
 	border-top : 6px solid #cacaca;
 	font-family : Arial, Helvetica, sans-serif;
 	font-weight : bold;
-	font-size : 12px;
 	text-transform : uppercase;
 	border-bottom : 1px solid #adadad;
 	background-image : none;
@@ -2542,7 +2506,6 @@ div.SECalendarAllDay div.SECalendarEventDetails {
 }
 .SECalendarListEvents td {
 	border-bottom : 1px dotted #333;
-	font-size : 12px;
 	padding : 15px 4px;
 }
 .SECalendarListEvents table tbody tr.odd {
@@ -2943,7 +2906,6 @@ li.SECalendarNoEvent {
 	color : #FFFFFF;
 	display : inline-block;
 	font-weight : normal;
-	font-size: 14px;
 	list-style-type : none;
 	padding : 5px 20px 6px;
 	text-decoration : none;
@@ -3335,7 +3297,6 @@ body, td {
 }
 #TableAlternativeRows caption {
 	font-family : Arial, Helvetica, sans-serif;
-	font-size : 12px;
 	text-align : left;
 	padding-top : 5px;
 	padding-right : 5px;
@@ -3374,7 +3335,6 @@ body, td {
 }
 #TableGrayBackground td {
 	font-family : Arial, Helvetica, sans-serif;
-	font-size : 12px;
 	border-bottom-width : 1px;
 	border-bottom-style : solid;
 	border-bottom-color : #CCC;
@@ -3391,7 +3351,6 @@ body, td {
 }
 #TableGrayBackground caption {
 	font-family : Arial, Helvetica, sans-serif;
-	font-size : 12px;
 	text-align : left;
 	padding-top : 5px;
 	padding-right : 5px;
@@ -3400,7 +3359,6 @@ body, td {
 }
 #TableWhiteBackground caption {
 	font-family : Arial, Helvetica, sans-serif;
-	font-size : 12px;
 	text-align : left;
 	padding-top : 5px;
 	padding-right : 5px;
@@ -3420,13 +3378,11 @@ body, td {
 }
 #TableWhiteBackground tr:hover {
 	font-family : Arial, Helvetica, sans-serif;
-	font-size : 12px;
 	font-weight : bold;
 	color : #CCC;
 }
 #TableWhiteBackground td {
 	font-family : Arial, Helvetica, sans-serif;
-	font-size : 12px;
 	border-bottom-width : 1px;
 	border-bottom-style : solid;
 	border-bottom-color : #e9e9e9;
@@ -3699,12 +3655,6 @@ body, td {
 }
 
 /*Contact Table*/
-
-#containertable {
-	font-size: 12px;
-}
-
-
 fieldset {
 	float : left;
 	width : 500px;
@@ -3780,7 +3730,6 @@ legend {
 }
 .seCheckboxLabel {
 	font-family : Arial, Helvetica, sans-serif;
-	font-size : 12px;
 	color : #000000;
 	font-weight : normal !important;
 }
@@ -3812,4 +3761,18 @@ select {
 	float : left;
 	text-align : left;
 	margin-top : 5px;
+}
+
+#errorDiv {
+	clear: both;
+}
+
+.image_left img {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+#relatedtopics .smalltext {
+	font-size: 1em;
 }

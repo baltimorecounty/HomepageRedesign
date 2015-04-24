@@ -204,7 +204,6 @@ body {
 }
 #navigation_primary p {
 	margin : 0 0 0 50px;
-	font-size : 12px;
 }
 #navigation_primary h1 {
 	font-family : Arial, Helvetica, sans-serif;
@@ -271,7 +270,6 @@ body {
 }
 #container_localnavigation li a {
 	font-family : Arial, Helvetica, sans-serif;
-	font-size : 12px;
 	color : #002280;
 	padding : 0 0 0  25px;
 	margin : 0;
@@ -284,7 +282,6 @@ body {
 }
 #container_localnavigation li a:hover {
 	font-family : Arial, Helvetica, sans-serif;
-	font-size : 12px;
 	color : #002280;
 	padding : 0 0 0 25px;
 	margin : 0;
@@ -300,7 +297,6 @@ body {
 	border-top : 6px solid #cacaca;
 	font-family : Arial, Helvetica, sans-serif;
 	font-weight : bold;
-	font-size : 12px;
 	text-transform : uppercase;
 	border-bottom : 1px solid #adadad;
 	background-image : none;
@@ -370,7 +366,6 @@ body {
 	padding : 0px;
 }
 #county_news ol a {
-	font-size : 12px;
 }
 #county_news .description {
 	display : none;
@@ -551,7 +546,6 @@ body {
 }
 .smalltext {
 	font-family : Arial, Helvetica, sans-serif;
-	font-size : 12px;
 	color : #002280;
 }
 #baco_breadcrumb {
@@ -573,12 +567,10 @@ body {
 	padding : 0;
 	font-family : Arial, Helvetica, sans-serif;
 	text-transform : uppercase;
-	font-size : 12px;
 	color : #444;
 	font-weight : bold;
 }
 #agencyname h1 {
-	font-size : 12px;
 	color : #444;
 	font-family : Arial, Helvetica, sans-serif;
 	text-transform : uppercase;
@@ -659,7 +651,6 @@ body {
 #servicescontainer li a {
 	color : #002280;
 	font-family : Arial,Helvetica,sans-serif;
-	font-size : 12px;
 	line-height: 16px;
 	margin : 0;
 	padding : 5px 0 5px 25px;
@@ -669,7 +660,6 @@ body {
 #servicescontainer li a:hover {
 	color : #002280;
 	font-family : Arial,Helvetica,sans-serif;
-	font-size : 12px;
 	margin : 0;
 	padding : 5px 0 5px 25px;
 	text-decoration : underline;
@@ -685,7 +675,6 @@ body {
 }
 #services .title {
 	color : #444;
-	font-size : 12px;
 }
 #moreservices {
 	margin : 0 0 0 13px;
@@ -767,7 +756,6 @@ body {
 }
 #SECalendarTable .SECalendarEventName {
 	font-family : Arial, Helvetica, sans-serif;
-	font-size : 12px;
 	font-weight : bold;
 	padding-top : 5px;
 	padding-bottom : 5px;
@@ -870,7 +858,6 @@ body {
 }
 .SECalendarWeek {
 	font-family : Arial, Helvetica, sans-serif;
-	font-size : 12px;
 	background-color : #999;
 	color : #FFF;
 	font-weight : bold;
@@ -1011,7 +998,6 @@ select {
 }
 #emailfriendtime {
 	font-family : Arial, Helvetica, sans-serif;
-	font-size : 12px;
 	font-style : italic;
 	margin-bottom : 15px;
 	padding-top : 25px;
@@ -1021,7 +1007,6 @@ select {
 	font-size : 11px;
 }
 #SEEventEmailFriendType strong {
-	font-size : 12px;
 }
 #emailfriendlocation {
 	margin-bottom : 10px;
@@ -1029,7 +1014,6 @@ select {
 	font-size : 11px;
 }
 #emailfriendlocation strong {
-	font-size : 12px;
 }
 #SEEventEmailFriendDesc {
 	font-family : Arial, Helvetica, sans-serif;
@@ -1092,7 +1076,6 @@ select {
 }
 #RemindMeForm .SEEventRemindmeLabel {
 	font-family : Arial, Helvetica, sans-serif;
-	font-size : 12px;
 	font-weight : bold;
 	padding-top : 10px;
 	padding-right : 10px;
@@ -1110,7 +1093,6 @@ select {
 }
 #SEEventRemindmeMessage {
 	font-family : Arial, Helvetica, sans-serif;
-	font-size : 12px;
 	font-weight : bold;
 	padding-top : 25px;
 	padding-right : 10px;
@@ -1148,7 +1130,6 @@ select {
 }
 #SEEventRemindMeDate {
 	font-family : Arial, Helvetica, sans-serif;
-	font-size : 12px;
 	font-style : italic;
 	padding-top : 20px;
 	padding-bottom : 10px;
@@ -1175,7 +1156,6 @@ select {
 	float : left;
 }
 #SEEventSearchStart {
-	font-size : 12px;
 	font-weight : bold;
 	padding-top : 10px;
 	padding-right : 10px;
@@ -1190,7 +1170,6 @@ select {
 	padding-left : 0px;
 }
 #SEEventSearchEnd {
-	font-size : 12px;
 	font-weight : bold;
 	padding-top : 10px;
 	padding-right : 10px;
@@ -1557,6 +1536,7 @@ select {
 	display : inline;
 }
 .tulipTVThumbMeta {
+	font-size: .94em;
 	padding : 0 0 10px;
 }
 .tulipTVThumbTitle {
@@ -1791,7 +1771,6 @@ input#mce-EMAIL {
 }
 #lookingfor_callout li a {
 	font-family : Arial, Helvetica, sans-serif;
-	font-size : 12px;
 	color : #002280;
 	padding : 0 0 0  25px;
 	margin : 0;
@@ -1804,7 +1783,6 @@ input#mce-EMAIL {
 }
 #lookingfor_callout li a:hover {
 	font-family : Arial, Helvetica, sans-serif;
-	font-size : 12px;
 	color : #002280;
 	padding : 0 0 0 25px;
 	margin : 0;
@@ -1820,7 +1798,6 @@ input#mce-EMAIL {
 	border-top : 6px solid #cacaca;
 	font-family : Arial, Helvetica, sans-serif;
 	font-weight : bold;
-	font-size : 12px;
 	text-transform : uppercase;
 	border-bottom : 1px solid #adadad;
 	background-image : none;
@@ -2076,7 +2053,6 @@ a.selectedtoggler img {
 .SECalendarListEvents td {
 	line-height: 16px;
 	border-bottom : 1px dotted #333;
-	font-size : 12px;
 	padding : 15px 4px;
 }
 td.SECalendarEventDate {

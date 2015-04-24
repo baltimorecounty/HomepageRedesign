@@ -1,143 +1,4 @@
 /*Modules*/
-.header {
-  /**
-   * Address `overflow` set to `hidden` in IE 8/9/10/11.
-   */
-  /**
-   * Address inconsistent `text-transform` inheritance for `button` and `select`.
-   * All other form control elements do not inherit `text-transform` values.
-   * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
-   * Correct `select` style inheritance in Firefox.
-   */
-  /**
-   * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
-   *    and `video` controls.
-   * 2. Correct inability to style clickable `input` types in iOS.
-   * 3. Improve usability and consistency of cursor style between image-type
-   *    `input` and others.
-   */
-  /**
-   * Re-set default cursor for disabled elements.
-   */
-  /**
-   * Remove inner padding and border in Firefox 4+.
-   */
-  /**
-   * Address Firefox 4+ setting `line-height` on `input` using `!important` in
-   * the UA stylesheet.
-   */
-  /**
-   * It's recommended that you don't attempt to style these elements.
-   * Firefox's implementation doesn't respect box-sizing, padding, or width.
-   *
-   * 1. Address box sizing set to `content-box` in IE 8/9/10.
-   * 2. Remove excess padding in IE 8/9/10.
-   */
-  /**
-   * Fix the cursor style for Chrome's increment/decrement buttons. For certain
-   * `font-size` values of the `input`, it causes the cursor style of the
-   * decrement button to change from `default` to `text`.
-   */
-  /**
-   * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
-   * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
-   *    (include `-moz` to future-proof).
-   */
-  /**
-   * Remove inner padding and search cancel button in Safari and Chrome on OS X.
-   * Safari (but not Chrome) clips the cancel button when the search input has
-   * padding (and `textfield` appearance).
-   */
-  /**
-   * Define consistent border, margin, and padding.
-   */
-  /**
-   * 1. Correct `color` not being inherited in IE 8/9/10/11.
-   * 2. Remove padding so people aren't caught out if they zero out fieldsets.
-   */
-  /**
-   * Remove default vertical scrollbar in IE 8/9/10/11.
-   */
-  /**
-   * Don't inherit the `font-weight` (applied by a rule above).
-   * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
-   */ }
-  .header input, .header button {
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-bottom: 0px;
-    margin-left: 0px;
-    padding-top: 0px;
-    padding-right: 0px;
-    padding-bottom: 0px;
-    padding-left: 0px;
-    border-top-width: 0px;
-    border-right-width-value: 0px;
-    border-bottom-width: 0px;
-    border-left-width-value: 0px; }
-  .header input,
-  .header optgroup,
-  .header select,
-  .header textarea {
-    color: inherit;
-    /* 1 */
-    font: inherit;
-    /* 2 */
-    margin: 0;
-    /* 3 */ }
-  .header button {
-    overflow: visible; }
-  .header button,
-  .header select {
-    text-transform: none; }
-  .header button,
-  .header html input[type="button"],
-  .header input[type="reset"],
-  .header input[type="submit"] {
-    -webkit-appearance: button;
-    /* 2 */
-    cursor: pointer;
-    /* 3 */ }
-  .header button[disabled],
-  .header html input[disabled] {
-    cursor: default; }
-  .header button::-moz-focus-inner,
-  .header input::-moz-focus-inner {
-    border: 0;
-    padding: 0; }
-  .header input {
-    line-height: normal; }
-  .header input[type="checkbox"],
-  .header input[type="radio"] {
-    box-sizing: border-box;
-    /* 1 */
-    padding: 0;
-    /* 2 */ }
-  .header input[type="number"]::-webkit-inner-spin-button,
-  .header input[type="number"]::-webkit-outer-spin-button {
-    height: auto; }
-  .header input[type="search"]::-webkit-search-cancel-button,
-  .header input[type="search"]::-webkit-search-decoration {
-    -webkit-appearance: none; }
-  .header fieldset {
-    border: 1px solid #c0c0c0;
-    margin: 0 2px;
-    padding: 0.35em 0.625em 0.75em; }
-  .header legend {
-    border: 0;
-    /* 1 */
-    padding: 0;
-    /* 2 */ }
-  .header textarea {
-    overflow: auto; }
-  .header optgroup {
-    font-weight: bold; }
-  .header input::-moz-focus-inner {
-    border: 0;
-    padding: 0;
-    margin-top: -2px;
-    margin-bottom: -2px; }
-
 /* Partials */
 .inline-list {
   margin: 0;
@@ -347,7 +208,7 @@ html {
 
 html, body {
   background: #dbdbdb;
-  color: #444444;
+  color: #444;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   margin: 0;
@@ -355,7 +216,7 @@ html, body {
   width: 100%; }
 
 img {
-  border: 1px solid #cccccc;
+  border: 1px solid #ccc;
   margin: 5px;
   padding: 5px; }
 
@@ -366,7 +227,6 @@ input[type="search"],
 input[type="text"],
 input[type="button"],
 input[type="submit"] {
-  -webkit-appearance: none;
   -webkit-border-radius: 0;
   border-radius: 0; }
 
@@ -377,33 +237,32 @@ input[type="submit"] {
   src: url("/sebin/u/y/PatuaOne-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("/sebin/i/z/PatuaOne-Regular-webfont.woff2") format("woff2"), url("/sebin/c/m/PatuaOne-Regular-webfont.woff") format("woff"), url("/sebin/c/o/PatuaOne-Regular-webfont.ttf") format("truetype"), url("/sebin/b/d/PatuaOne-Regular-webfont.svg#patua_oneregular") format("svg");
   font-weight: normal;
   font-style: normal; }
-
 @font-face {
   font-family: 'LatoSemiBold';
   src: url("/sebin/s/v/Lato-Semibold-webfont.eot");
   src: url("/sebin/s/v/Lato-Semibold-webfont.eot?#iefix") format("embedded-opentype"), url("/sebin/q/h/Lato-Semibold-webfont.woff2") format("woff2"), url("/sebin/y/z/Lato-Semibold-webfont.woff") format("woff"), url("/sebin/y/p/Lato-Semibold-webfont.ttf") format("truetype"), url("/sebin/v/j/Lato-Semibold-webfont.svg") format("svg");
   font-weight: normal;
   font-style: normal; }
-
 @font-face {
   font-family: 'Lato';
   src: url("/sebin/g/x/Lato-Bold-webfont.eot");
   src: url("/sebin/g/x/Lato-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("/sebin/w/q/Lato-Bold-webfont.woff2") format("woff2"), url("/sebin/k/i/Lato-Bold-webfont.woff") format("woff"), url("/sebin/i/t/Lato-Bold-webfont.ttf") format("truetype"), url("/sebin/h/i/Lato-Bold-webfont.svg") format("svg");
   font-weight: normal;
   font-style: normal; }
-
 .homepage body, .header body, .footer body {
   font-size: .95em;
   line-height: 1.5em;
-  color: #444444; }
+  color: #444; }
 .homepage p, .header p, .footer p {
   margin: 0 0 20px;
   line-height: 24px; }
 .homepage small, .header small, .footer small {
   font-size: 85%; }
 .homepage h1, .homepage h2, .homepage h3, .homepage h4, .homepage h5, .homepage h6, .header h1, .header h2, .header h3, .header h4, .header h5, .header h6, .footer h1, .footer h2, .footer h3, .footer h4, .footer h5, .footer h6 {
-  color: #444444;
-  font-weight: normal; }
+  color: #444;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased; }
 .homepage h1, .homepage h2, .header h1, .header h2, .footer h1, .footer h2 {
   font-family: "Patua One", sans-serif; }
 .homepage h3, .homepage h4, .homepage h5, .header h3, .header h4, .header h5, .footer h3, .footer h4, .footer h5 {
@@ -442,7 +301,7 @@ input[type="submit"] {
   height: 100%; }
 
 .secondary-header {
-  background: #333333;
+  background: #333;
   font-size: .85em;
   padding: 10px 0;
   width: 100%; }
@@ -452,7 +311,7 @@ input[type="submit"] {
     line-height: 11px;
     text-decoration: underline; }
     .secondary-header a:hover {
-      color: white; }
+      color: #fff; }
   .secondary-header .page-tools {
     text-align: right; }
     .secondary-header .page-tools a, .secondary-header .page-tools ul {
@@ -471,7 +330,7 @@ input[type="submit"] {
     display: block;
     position: absolute;
     z-index: 999;
-    top: 25px;
+    top: 17.5px;
     right: 0;
     padding: 10px; } }
 .primary-nav-container {
@@ -479,13 +338,13 @@ input[type="submit"] {
 
 .primary-nav {
   background: #c51110;
-  color: white;
+  color: #fff;
   list-style-type: none;
   height: 100%;
   margin: 0;
   padding: 0; }
   .primary-nav a {
-    color: white; }
+    color: #fff; }
   .primary-nav .primary-nav-item {
     background-color: #a90f0e;
     border-right: 5px solid #c51110;
@@ -542,8 +401,10 @@ input[type="submit"] {
 @media only screen and (min-width: 767px) and (max-width: 992px) {
   .homepage .primary-nav {
     width: 100%; }
+  .homepage .primary-nav .primary-nav-item .primary-nav-item__headline {
+    font-size: 1.5em; }
   .homepage .primary-nav .primary-nav-item a {
-    background: url("//baltimorecountymd.gov/sebin/l/t/little-arrow.png") no-repeat scroll 12.5px 22px rgba(0, 0, 0, 0);
+    background: url("//baltimorecountymd.gov/sebin/l/t/little-arrow.png") no-repeat scroll 12.5px 22px transparent;
     padding: 20px 0 20px 40px; }
   .homepage .primary-nav .primary-nav-item {
     margin: 0 0 5px; } }
@@ -570,7 +431,7 @@ input[type="submit"] {
   padding: 0; }
 
 .secondary-nav {
-  background: #333333;
+  background: #333;
   z-index: 999; }
   .secondary-nav .secondary-nav-list {
     padding: 12px 0 13px; }
@@ -598,7 +459,7 @@ input[type="submit"] {
 .brand a, .brand a:hover {
   text-decoration: none; }
 .brand h1 {
-  color: white; }
+  color: #fff; }
 .brand h1, .brand img {
   border: none; }
 .brand img {
@@ -609,7 +470,8 @@ input[type="submit"] {
   line-height: 28px;
   padding: 31.5px 0 29.5px;
   font-family: Lato, Arial, sans-serif;
-  font-weight: 700;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
   letter-spacing: .4px;
   margin: 0; }
 .brand .brand-logo, .brand .brand-heading {
@@ -624,11 +486,12 @@ input[type="submit"] {
     font-size: 1.4em; } }
 @media only screen and (max-width: 480px) {
   .homepage .brand {
-    padding: 5px; }
+    padding: 0 0 0 5px; }
     .homepage .brand .brand-heading {
       font-size: 1.4em;
       line-height: 25px;
-      margin: 10px 0 0; }
+      margin: 0;
+      padding-top: 27px; }
     .homepage .brand .brand-logo {
       height: 65px;
       width: 65px;
@@ -646,12 +509,12 @@ input[type="submit"] {
     text-align: left; } }
 .secondary-footer {
   background: #c51110;
-  color: white;
+  color: #fff;
   padding: 20px 0; }
   .secondary-footer a {
     color: white; }
   .secondary-footer .county-links-list-item {
-    border-right: 1px solid white;
+    border-right: 1px solid #fff;
     padding: 0 5px; }
     .secondary-footer .county-links-list-item:last-child {
       border-right: none; }
@@ -691,16 +554,16 @@ input[type="submit"] {
   margin: 15px 15px 0 0; }
 
 .footer {
-  background: #333333;
+  background: #333;
   color: #dbdbdb;
   font-size: .85em; }
   .footer a {
     color: #dbdbdb;
     text-decoration: underline; }
     .footer a:hover {
-      color: white; }
+      color: #fff; }
   .footer h2 {
-    color: white; }
+    color: #fff; }
   .footer h2, .footer img {
     border: none; }
   .footer ul, .footer ol {
@@ -723,6 +586,174 @@ input[type="submit"] {
     text-align: left; }
     .footer .county-links-list li:first-child {
       padding-left: 5px; } }
+.social-media-list {
+  list-style-type: none;
+  text-align: center; }
+  .social-media-list h1, .social-media-list a {
+    color: #fff; }
+  .social-media-list li {
+    padding-left: 0; }
+
+.social-media-list-item {
+  background-image: url("//staging.baltimorecountymd.gov/homepageredesign/assets/img/social-icons-sprite.png");
+  height: 37px;
+  width: 37px;
+  margin-right: 25px; }
+  .social-media-list-item a {
+    border: none;
+    text-decoration: none;
+    height: 38px;
+    width: 38px; }
+
+.social-media-list-item-facebook {
+  background-position: 0 0; }
+  .social-media-list-item-facebook:hover {
+    background-position: 0 -37px; }
+
+.social-media-list-item-twitter {
+  background-position: -38px 0; }
+  .social-media-list-item-twitter:hover {
+    background-position: -38px -37px; }
+
+.social-media-list-item-photos {
+  background-position: -76px 0; }
+  .social-media-list-item-photos:hover {
+    background-position: -76px -37px; }
+
+.social-media-list-item-youtube {
+  background-position: -114px 0; }
+  .social-media-list-item-youtube:hover {
+    background-position: -114px -37px; }
+
+.social-media-list-item-bcnow {
+  background-position: -152px 0; }
+  .social-media-list-item-bcnow:hover {
+    background-position: -152px -37px; }
+
+.social-media-list-gold .social-media-list-item-facebook {
+  background-position: 0 -74px; }
+  .social-media-list-gold .social-media-list-item-facebook:hover {
+    background-position: 0 -111px; }
+.social-media-list-gold .social-media-list-item-twitter {
+  background-position: -38px -74px; }
+  .social-media-list-gold .social-media-list-item-twitter:hover {
+    background-position: -38px -111px; }
+.social-media-list-gold .social-media-list-item-photos {
+  background-position: -76px -74px; }
+  .social-media-list-gold .social-media-list-item-photos:hover {
+    background-position: -76px -111px; }
+.social-media-list-gold .social-media-list-item-youtube {
+  background-position: -114px -74px; }
+  .social-media-list-gold .social-media-list-item-youtube:hover {
+    background-position: -114px -111px; }
+.social-media-list-gold .social-media-list-item-bcnow {
+  background-position: -152px -74px; }
+  .social-media-list-gold .social-media-list-item-bcnow:hover {
+    background-position: -152px -111px; }
+
+@media only screen and (max-width: 1200px) {
+  .social-media-list-item {
+    margin-right: 20px; } }
+@media only screen and (max-width: 1100px) {
+  .social-media-list-item {
+    margin-right: 15px; } }
+@media only screen and (max-width: 400px) {
+  .social-media-list-item {
+    margin-right: 10px; } }
+/*Resizer Container Class*/
+.resizer {
+  display: inline-block; }
+
+/*Resizer Links included in the Secondary Header*/
+.resizer-list {
+  margin: 0; }
+  .resizer-list li, .resizer-list li:first-child {
+    padding: 0 5px; }
+  .resizer-list button, .resizer-list .search-form .search-button, .search-form .resizer-list .search-button {
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased; }
+    .resizer-list button.active, .resizer-list .search-form .active.search-button, .search-form .resizer-list .active.search-button {
+      color: white; }
+
+.resizer-item {
+  color: #dbdbdb;
+  font-weight: bold;
+  text-decoration: underline; }
+  .resizer-item:hover {
+    color: white; }
+
+.resizer-item-smaller {
+  font-size: 1.6em; }
+
+.resizer-item-default {
+  font-size: 2.2em; }
+
+.resizer-item-larger {
+  font-size: 2.8em; }
+
+/*Text Resizer Classes to be applied to the main content*/
+.large-text {
+  font-size: 1.25em;
+  line-height: 27px; }
+
+.largest-text {
+  font-size: 1.45em;
+  line-height: 30px; }
+
+button, .search-form .search-button {
+  background: #feb30c;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1em;
+  font-weight: 700;
+  padding: 0 20px; }
+
+.btn-link {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: underline; }
+
+.link-btn {
+  background: #feb30c;
+  border: 1px solid #444;
+  padding: 10px;
+  color: #444;
+  text-decoration: none;
+  font-weight: 700;
+  font-family: Arial;
+  font-size: 1.1em; }
+  .link-btn:hover {
+    background: #fed372;
+    color: #444; }
+
+.view-full-site-btn {
+  color: white;
+  padding: 20px 10px; }
+
+.skip {
+  padding: 10px;
+  position: absolute;
+  top: -1000px;
+  left: -1000px;
+  height: 1px;
+  width: 1px;
+  text-align: left;
+  overflow: hidden;
+  z-index: 9999; }
+
+a.skip:active,
+a.skip:focus,
+a.skip:hover {
+  left: 0;
+  top: 0;
+  width: auto;
+  height: auto;
+  overflow: visible;
+  transition: top .25s linear;
+  z-index: 9999; }
+
 /*!
  * Bootstrap v3.3.2 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
@@ -1439,240 +1470,107 @@ input[type="submit"] {
 .affix {
   position: fixed; }
 
-.search, .cse input.gsc-input, input.gsc-input {
-  padding: 20px; }
-  .search .search-input, .search button, .search .gsc-search-button, .cse input.gsc-input .search-input, .cse input.gsc-input button, .cse input.gsc-input .gsc-search-button, input.gsc-input .search-input, input.gsc-input button, input.gsc-input .gsc-search-button {
-    border: none !important;
-    margin: 0 !important; }
-  .search .search-text, .cse input.gsc-input .search-text, input.gsc-input .search-text {
-    overflow: hidden; }
-  .search .search-label, .cse input.gsc-input .search-label, input.gsc-input .search-label {
-    position: absolute;
-    left: -999em; }
-  .search .search-input, .cse input.gsc-input .search-input, input.gsc-input .search-input {
-    float: left;
-    padding: 0px 20px;
-    width: 100%; }
-  .search div.gsc-clear-button, .cse input.gsc-input div.gsc-clear-button, input.gsc-input div.gsc-clear-button {
-    display: none; }
-
-input.gsc-search-button {
-  border-radius: 0 !important;
-  color: #444444 !important;
-  float: right;
-  background: #feb30c !important;
-  cursor: pointer;
-  font-family: Arial, Helvetica, sans-serif !important;
-  font-size: 17.6px !important;
-  font-weight: 700 !important;
-  padding: 20px 20px 40px !important; }
-
-.cse input.gsc-input, input.gsc-input {
-  background: white !important;
-  padding: 20px !important; }
-
-td.gsc-input {
-  padding-right: 0 !important; }
-
-td.gsc-clear-button {
-  width: 0 !important; }
-
-.cse form.gsc-search-box, form.gsc-search-box {
+#RateThisPageForm fieldset {
+  border: none !important;
   margin: 0 !important;
   padding: 0 !important; }
 
-.search .search-input, .search button, .search .gsc-search-button, .cse input.gsc-input .search-input, .cse input.gsc-input button, .cse input.gsc-input .gsc-search-button, input.gsc-input .search-input, input.gsc-input button, input.gsc-input .gsc-search-button {
-  border: none !important; }
+#RateThisPageForm .seFieldCell {
+  width: auto !important; }
 
-input.gsc-input, input.gsc-search-button {
-  border: 1px solid #999 !important; }
+#RateThisPageForm .seLabelCell {
+  text-align: left !important;
+  width: 80px !important; }
+
+#RateThisPageForm .seText {
+  margin: 0 !important;
+  text-align: left !important; }
+
+#RateThisPageForm .seButton {
+  margin: 0 !important; }
+
+#RateThisPageFormPOLICE fieldset {
+  border: none !important;
+  margin: 0 !important;
+  padding: 0 !important; }
+
+#RateThisPageFormPOLICE .seFieldCell {
+  width: auto !important; }
+
+#RateThisPageFormPOLICE .seLabelCell {
+  text-align: left !important;
+  width: 80px !important; }
+
+#RateThisPageFormPOLICE .seText {
+  margin: 0 !important;
+  text-align: left !important; }
+
+#RateThisPageFormPOLICE .seButton {
+  margin: 0 !important; }
+
+.search {
+  padding: 20px; }
+
+.search-form {
+  display: table;
+  width: 100%; }
+  .search-form .search-label {
+    position: absolute;
+    left: -999em; }
+  .search-form .table-cell {
+    display: table-cell;
+    width: 100%; }
+  .search-form .search-input, .search-form .search-button {
+    border: 1px solid #999; }
+  .search-form .search-input {
+    padding: 20px;
+    width: 99%; }
+  .search-form .search-button {
+    margin: 0;
+    padding: 18.5px 20px; }
+
+/*Google Autocomplete links*/
+.gsc-completion-title {
+  color: #002280 !important; }
 
 @media only screen and (max-width: 400px) {
-  .cse input.gsc-input, input.gsc-input {
-    padding: 4px !important; }
-
-  .cse input.gsc-search-button, input.gsc-search-button {
-    background: #feb30c !important;
-    font-size: 1.1em !important;
-    padding: 0 !important; } }
+  .homepage input::-webkit-input-placeholder {
+    color: transparent; }
+  .homepage input::-moz-placeholder {
+    color: transparent; }
+  .homepage input:-moz-placeholder {
+    /* Older versions of Firefox */
+    color: transparent; }
+  .homepage input:-ms-input-placeholder {
+    color: transparent; } }
 .search-internal {
   padding: 1.5px 0; }
-  .search-internal .search-input, .search-internal .cse input.gsc-input, .search-internal input.gsc-input {
-    font-size: 1.2em !important;
-    height: auto !important;
-    padding: 8px 10px !important; }
-  .search-internal input.gsc-search-button {
-    border-radius: 0 !important;
-    font-family: Arial, Helvetica, sans-serif !important;
-    font-size: 1.1em !important;
-    font-weight: 700 !important;
-    border: 0 !important;
-    height: auto !important;
-    padding: 10px 10px !important; }
+  .search-internal .search-input, .search-internal .search-button {
+    border: 1px solid #999;
+    height: auto; }
+  .search-internal .search-input {
+    font-size: 1.2em;
+    padding: 8px 10px; }
+  .search-internal .search-button {
+    border-radius: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    font-weight: 700;
+    padding: 9px 10px; }
 
-.social-media-list {
-  list-style-type: none;
-  text-align: center; }
-  .social-media-list h1, .social-media-list a {
-    color: white; }
-  .social-media-list li {
-    padding-left: 0; }
+.gsc-completion-container {
+  font-size: 1.2em !important;
+  font-weight: normal !important; }
 
-.social-media-list-item {
-  background-image: url("//staging.baltimorecountymd.gov/homepageredesign/assets/img/social-icons-sprite.png");
-  height: 37px;
-  width: 37px;
-  margin-right: 25px; }
-  .social-media-list-item a {
-    border: none;
-    text-decoration: none;
-    height: 38px;
-    width: 38px; }
+.gssb_a table, .gssb_a table tr, .gssb_a table tr td {
+  padding: 2.5px 5px !important; }
 
-.social-media-list-item-facebook {
-  background-position: 0 0; }
-  .social-media-list-item-facebook:hover {
-    background-position: 0 -37px; }
+.reView {
+  display: none; }
 
-.social-media-list-item-twitter {
-  background-position: -38px 0; }
-  .social-media-list-item-twitter:hover {
-    background-position: -38px -37px; }
-
-.social-media-list-item-photos {
-  background-position: -76px 0; }
-  .social-media-list-item-photos:hover {
-    background-position: -76px -37px; }
-
-.social-media-list-item-youtube {
-  background-position: -114px 0; }
-  .social-media-list-item-youtube:hover {
-    background-position: -114px -37px; }
-
-.social-media-list-item-bcnow {
-  background-position: -152px 0; }
-  .social-media-list-item-bcnow:hover {
-    background-position: -152px -37px; }
-
-.social-media-list-gold .social-media-list-item-facebook {
-  background-position: 0 -74px; }
-  .social-media-list-gold .social-media-list-item-facebook:hover {
-    background-position: 0 -111px; }
-.social-media-list-gold .social-media-list-item-twitter {
-  background-position: -38px -74px; }
-  .social-media-list-gold .social-media-list-item-twitter:hover {
-    background-position: -38px -111px; }
-.social-media-list-gold .social-media-list-item-photos {
-  background-position: -76px -74px; }
-  .social-media-list-gold .social-media-list-item-photos:hover {
-    background-position: -76px -111px; }
-.social-media-list-gold .social-media-list-item-youtube {
-  background-position: -114px -74px; }
-  .social-media-list-gold .social-media-list-item-youtube:hover {
-    background-position: -114px -111px; }
-.social-media-list-gold .social-media-list-item-bcnow {
-  background-position: -152px -74px; }
-  .social-media-list-gold .social-media-list-item-bcnow:hover {
-    background-position: -152px -111px; }
-
-@media only screen and (max-width: 1200px) {
-  .social-media-list-item {
-    margin-right: 20px; } }
-@media only screen and (max-width: 1100px) {
-  .social-media-list-item {
-    margin-right: 15px; } }
-@media only screen and (max-width: 400px) {
-  .social-media-list-item {
-    margin-right: 10px; } }
-/*Resizer Container Class*/
-.resizer {
-  display: inline-block; }
-
-/*Resizer Links included in the Secondary Header*/
-.resizer-list {
-  margin: 0; }
-  .resizer-list li, .resizer-list li:first-child {
-    padding: 0 5px; }
-  .resizer-list button.active {
-    color: white; }
-
-.resizer-item {
-  color: #dbdbdb;
-  font-weight: bold;
-  text-decoration: underline; }
-  .resizer-item:hover {
-    color: white; }
-
-.resizer-item-smaller {
-  font-size: 1.6em; }
-
-.resizer-item-default {
-  font-size: 2.2em; }
-
-.resizer-item-larger {
-  font-size: 2.8em; }
-
-/*Text Resizer Classes to be applied to the main content*/
-.large-text {
-  font-size: 1.25em;
-  line-height: 27px; }
-
-.largest-text {
-  font-size: 1.45em;
-  line-height: 30px; }
-
-button {
-  background: #feb30c;
-  cursor: pointer;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.1em;
-  font-weight: 700;
-  padding: 0 20px; }
-
-.btn-link {
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 0;
-  text-decoration: underline; }
-
-.link-btn {
-  background: #feb30c;
-  border: 1px solid #444444;
-  padding: 10px;
-  color: #444444;
-  text-decoration: none;
-  font-weight: 700;
-  font-family: Arial;
-  font-size: 1.1em; }
-  .link-btn:hover {
-    background: #fed372;
-    color: #444444; }
-
-.view-full-site-btn {
-  padding: 20px 10px; }
-
-.skip {
-  padding: 10px;
-  position: absolute;
-  top: -1000px;
-  left: -1000px;
-  height: 1px;
-  width: 1px;
-  text-align: left;
-  overflow: hidden;
-  z-index: 999; }
-
-a.skip:active,
-a.skip:focus,
-a.skip:hover {
-  left: 0;
-  top: 0;
-  width: auto;
-  height: auto;
-  overflow: visible;
-  transition: top .25s linear; }
-
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  .full-site-container {
+    display: none !important; } }
 /*This will ensure that the background colors will fill the screen*/
 body {
   min-width: 1200px; }
@@ -1682,11 +1580,6 @@ body {
   padding: 0;
   margin: 0; }
 
-#maincontainer p {
-  font-size: 12px;
-  line-height: 1.5em;
-  margin: 0 0 15px 0; }
-
 #maincontainer #calloutarea p {
   margin: 10px 0 15px; }
 
@@ -1694,7 +1587,6 @@ body {
   padding: 14px 0; }
 
 textarea,
-input,
 input[type="search"],
 input[type="text"],
 input[type="button"],
