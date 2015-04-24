@@ -1646,7 +1646,12 @@ input[type="submit"] {
   font-size: 21px;
   line-height: 1.2em;
   text-decoration: none;
-  color: #444; }
+  color: #444;
+  font-weight: bold;
+  margin: 10px 0 20px; }
+
+.seBlogViewPostTitle a {
+  text-decoration: none; }
 
 .postTitle {
   font-size: 21px;
