@@ -716,6 +716,32 @@ h3.calloutTitle {
 	table-layout: fixed;
 }
 
+.postTitle {
+    color: #444;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1.2em;
+    margin: 10px 0 20px;
+    
+}
+.postTitle a {
+	text-decoration: none;
+}
+
+
+.postAuthor{
+display:none;
+}
+
+.postCommentSummary{
+display:none;
+}
+
+.seBlogViewPostTitle {
+	clear: both;
+}
+
+
 @media all and (max-width: 600px){
 	body{}
 	#findingAids{background-color:#fff;background-image:none;margin:15px auto;padding:5px;width:80%;}

@@ -2062,6 +2062,7 @@ a.selectedtoggler img {
 	padding : 8px 8px 8px 0;
 	width : 500px;
 	border-top : 6px solid #CACACA;
+	clear: both;
 }
 
 .seBlogViewKeywords ul {
